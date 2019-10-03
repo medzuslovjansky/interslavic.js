@@ -29,5 +29,8 @@
   },
   "bugs": {
     "url": "https://github.com/medzuslovjansky/interslavic.js/issues"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.15"
   }
 }
