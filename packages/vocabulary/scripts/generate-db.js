@@ -1,6 +1,41 @@
 const _ = require('lodash');
 const { prefix, disambiguate } = require('./morphology');
 
+_ .chain(require('../external/steen-en'))
+  .slice(1)
+  .map(s => s.split('\t'))
+  .filter(s => s[0].includes('/'))
+  // .map(1)
+
+  //.filter(s => s[5].includes('alliance'))
+  // .flatMap(s => s.split(' '))
+  // .flatMap(s => s.split('/'))
+  // .flatMap(s => s.split('+'))
+  // .map(s => s.replace(/[\s*\(\)\:\~]/g, ''))
+  // .filter(s => s.length < 5)
+
+  // .map(s => {
+  //     s[5] = s[5]
+  //       .replace(/\s*\~?(be|c|s|h|k|cs|pl|uk|ru|bg|mk|sl|sb|sh|bm|sk|ub|yu|z|v|j)\~?\s*/g, ' ')
+  //       .replace(/  +/g, ' ')
+  //       .trim();
+
+  //     return s;
+  // })
+  // .filter(s => s[5].length > 0)
+  // .map(5)
+  // .map(s => s.replace(/\b(be|cs|pl|uk|ru|bg|mk|sl|sb|sh|sk|z|v|j|hsb|rue|ocs|cz|iw|ub|yu|bm|csb|dsb|ns|hr|cu|ps|sr|re|n|i|ij|in|iz|jc|jn|sx)\b/g, '__'))
+  // .map(s => s.replace(/~?__~?/g, '__'))
+  // .map(s => s.replace(/  +/g, ' '))
+  // .map(s => s.trim())
+  .uniq()
+  .sort()
+  .thru(x => x.join('\n'))
+  //.thru(x => x.map(s => `'${s}'`).join(' | '))
+  .tap(console.log)
+  .value();
+
+/*
 const resources = joinDictionaries({
   en: require('../external/steen-en').slice(1),
   pl: require('../external/steen-pl').slice(1),
@@ -83,3 +118,4 @@ function deserialize(line) {
 function uniqueId(entry) {
     return [entry.value, entry.irregularities, entry.morphology].join('\t');
 }
+*/
