@@ -1,0 +1,33 @@
+{
+  "name": "@interslavic/steen-pos",
+  "version": "0.0.0",
+  "description": "Abbreviation utilities to work with Jan van Steenbergen's database format",
+  "keywords": [
+    "interslavic",
+    "steenbergen"
+  ],
+  "author": "Yaroslav Serhieiev <noomorph@gmail.com>",
+  "homepage": "https://github.com/medzuslovjansky/interslavic.js",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medzuslovjansky/interslavic.js.git"
+  },
+  "scripts": {
+    "lint": "eslint src/**/*.ts",
+    "test": "jest"
+  },
+  "bugs": {
+    "url": "https://github.com/medzuslovjansky/interslavic.js/issues"
+  },
+  "devDependencies": {
+    "@interslavic/presets": "^0.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.0.3"
+  }
+}
