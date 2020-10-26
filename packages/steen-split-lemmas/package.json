@@ -1,0 +1,30 @@
+{
+  "name": "@interslavic/steen-split-lemmas",
+  "version": "0.0.0",
+  "description": "Lemma splitter utility to work with Jan van Steenbergen's database format",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint src/**/*.ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medzuslovjansky/interslavic.js.git"
+  },
+  "keywords": [
+    "interslavic",
+    "steenbergen"
+  ],
+  "author": "Yaroslav Serhieiv <noomorph@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/medzuslovjansky/interslavic.js/issues"
+  },
+  "homepage": "https://github.com/medzuslovjansky/interslavic.js#readme",
+  "devDependencies": {
+    "@interslavic/presets": "^0.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.0.3"
+  }
+}
