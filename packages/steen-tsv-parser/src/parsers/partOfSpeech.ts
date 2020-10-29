@@ -1,6 +1,6 @@
-import type { PartOfSpeech } from './types';
+import type { PartOfSpeech } from '../types/columns/PartOfSpeech';
 
-export function expandPOSAbbreviation(rawAbbr: string): PartOfSpeech {
+export function parsePartOfSpeech(rawAbbr: string): PartOfSpeech {
     if (typeof rawAbbr !== 'string') {
         throw new Error(`Expected a string, but got: ${JSON.stringify(rawAbbr)}`);
     }

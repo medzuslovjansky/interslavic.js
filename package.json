@@ -4,6 +4,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
     "lint": "lerna run lint --parallel",
+    "test": "lerna run test --parallel",
     "setup": "npm install && npm run bootstrap",
     "start": "lerna run start --parallel"
   },

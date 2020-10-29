@@ -1,0 +1,33 @@
+import {SimpleSynset} from "../columns/SimpleSynset";
+import {PartOfSpeech} from "../columns/PartOfSpeech";
+import {VoteStatus} from "../columns/VoteStatus";
+import {CrudeIntelligibilityReport} from "../columns/CrudeIntelligibilityReport";
+import {Genesis} from "../columns/Genesis";
+
+export type WordsRecord = {
+    id: number;
+    isv: SimpleSynset;
+    addition: string;
+    partOfSpeech: PartOfSpeech;
+    type: VoteStatus;
+    en: SimpleSynset;
+    sameInLanguages: CrudeIntelligibilityReport;
+    genesis: Genesis;
+    ru: SimpleSynset | null;
+    be: SimpleSynset | null;
+    uk: SimpleSynset | null;
+    pl: SimpleSynset | null;
+    cs: SimpleSynset | null;
+    sk: SimpleSynset | null;
+    bg: SimpleSynset | null;
+    mk: SimpleSynset | null;
+    sr: SimpleSynset | null;
+    hr: SimpleSynset | null;
+    sl: SimpleSynset | null;
+    cu: SimpleSynset | null;
+    de: SimpleSynset | null;
+    nl: SimpleSynset | null;
+    eo: SimpleSynset | null;
+    frequency: 1 | 2 | null;
+    using_example?: string;
+};
