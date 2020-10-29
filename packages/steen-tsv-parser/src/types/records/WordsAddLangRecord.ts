@@ -6,13 +6,13 @@ import {Genesis} from "../columns/Genesis";
 
 export type WordsAddLangRecord = {
     id: number;
-    isv: SimpleSynset;
+    isv: SimpleSynset | null;
     addition: string;
-    partOfSpeech: PartOfSpeech;
-    type: VoteStatus;
-    en: SimpleSynset;
+    partOfSpeech: PartOfSpeech | null;
+    type: VoteStatus | null;
+    en: SimpleSynset | null;
     sameInLanguages: CrudeIntelligibilityReport;
-    genesis: Genesis;
+    genesis: Genesis | null;
     ru: SimpleSynset | null;
     pl: SimpleSynset | null;
     cs: SimpleSynset | null;

@@ -3,16 +3,17 @@ import {PartOfSpeech} from "../columns/PartOfSpeech";
 import {VoteStatus} from "../columns/VoteStatus";
 import {CrudeIntelligibilityReport} from "../columns/CrudeIntelligibilityReport";
 import {Genesis} from "../columns/Genesis";
+import {CrudeFrequency} from "../atomic/CrudeFrequency";
 
 export type WordsRecord = {
     id: number;
-    isv: SimpleSynset;
+    isv: SimpleSynset | null;
     addition: string;
-    partOfSpeech: PartOfSpeech;
-    type: VoteStatus;
-    en: SimpleSynset;
+    partOfSpeech: PartOfSpeech | null;
+    type: VoteStatus | null;
+    en: SimpleSynset | null;
     sameInLanguages: CrudeIntelligibilityReport;
-    genesis: Genesis;
+    genesis: Genesis | null;
     ru: SimpleSynset | null;
     be: SimpleSynset | null;
     uk: SimpleSynset | null;
@@ -28,6 +29,6 @@ export type WordsRecord = {
     de: SimpleSynset | null;
     nl: SimpleSynset | null;
     eo: SimpleSynset | null;
-    frequency: 1 | 2 | null;
+    frequency: CrudeFrequency | null;
     using_example?: string;
 };

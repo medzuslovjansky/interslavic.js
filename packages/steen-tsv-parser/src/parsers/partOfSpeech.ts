@@ -1,11 +1,14 @@
 import type { PartOfSpeech } from '../types/columns/PartOfSpeech';
 
-export function parsePartOfSpeech(rawAbbr: string): PartOfSpeech {
+export function parsePartOfSpeech(rawAbbr: string): PartOfSpeech | null {
     if (typeof rawAbbr !== 'string') {
         throw new Error(`Expected a string, but got: ${JSON.stringify(rawAbbr)}`);
     }
 
-    const abbr = rawAbbr.trim();
+    let abbr = rawAbbr.trim();
+    if (abbr[0] === '#') {
+      abbr = abbr.slice(1); // TODO: add this metadata to part of speech
+    }
 
     if (abbr.startsWith('v.')) {
         return {
@@ -95,5 +98,5 @@ export function parsePartOfSpeech(rawAbbr: string): PartOfSpeech {
         return { name: 'suffix' };
     }
 
-    throw new Error(`Failed to expand the given abbreviation: ${JSON.stringify(rawAbbr)}`);
+    return null;
 }

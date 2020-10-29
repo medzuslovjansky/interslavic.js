@@ -57,8 +57,12 @@ describe('parsePartOfSpeech', () => {
         ["v.tr. ipf./pf.", { name: 'verb', transitive: true, imperfective: true, perfective: true }],
         ["v.tr. pf.", { name: 'verb', transitive: true, perfective: true }],
         ["v.tr.ipf", { name: 'verb', transitive: true, imperfective: true }],
+        ["#v.tr.ipf", { name: 'verb', transitive: true, imperfective: true }],
     ] as [string, Partial<PartOfSpeech>][])('should expand %j to object', (abbr: string, expected: Partial<PartOfSpeech>) => {
         const actual = parsePartOfSpeech(abbr);
+        if (!actual) {
+          fail('should have returned non-null');
+        }
 
         const pattern: any = { ...expected };
         for (const aKey of Object.keys(actual)) {
@@ -71,11 +75,11 @@ describe('parsePartOfSpeech', () => {
         expect(actual).toMatchObject(pattern);
     });
 
-    it('should throw on non-strings', () => {
+    it('should return null for non-strings', () => {
         expect(() => parsePartOfSpeech(null as any)).toThrowErrorMatchingSnapshot();
     });
 
-    it('should throw on unknown abbreviations', () => {
-        expect(() => parsePartOfSpeech('unknown')).toThrowErrorMatchingSnapshot();
+    it('should return null for unknown abbreviations', () => {
+        expect(parsePartOfSpeech('unknown')).toBe(null);
     });
 });

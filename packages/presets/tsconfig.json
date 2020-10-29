@@ -3,6 +3,7 @@
     "target": "es5",
     "module": "commonjs",
     "importHelpers": true,
+    "downlevelIteration": true,
     "declaration": true,
     "strict": true,
     "noImplicitAny": true,
