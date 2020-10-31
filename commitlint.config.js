@@ -6,9 +6,9 @@ module.exports = {
       'always',
       [
         // workspace packages
-        'package1',
-        'package2',
-        'eslint',
+        'odometer',
+        'presets',
+        'steen-utils',
         '*',
       ],
     ],

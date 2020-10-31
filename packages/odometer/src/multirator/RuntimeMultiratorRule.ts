@@ -6,7 +6,7 @@ export class RuntimeMultiratorRule implements MultiratorRule {
   readonly match;
   readonly partOfSpeech;
   readonly replaceWith;
-  readonly applies: (pos: PartOfSpeech) => boolean;
+  readonly applies: (pos?: PartOfSpeech) => boolean;
 
   constructor(rule: MultiratorRule) {
     this.id = rule.id;
@@ -20,7 +20,11 @@ export class RuntimeMultiratorRule implements MultiratorRule {
     if (shapeKeys.length === 0) {
       this.applies = () => true;
     } else {
-      this.applies = (pos: PartOfSpeech): boolean => {
+      this.applies = (pos?: PartOfSpeech): boolean => {
+        if (!pos) {
+          return false;
+        }
+
         for (const key of shapeKeys) {
           if (shape[key] !== pos[key]) {
             return false;

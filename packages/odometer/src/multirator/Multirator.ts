@@ -37,8 +37,8 @@ export class Multirator {
     }
   }
 
-  public process(lemma: string, partOfSpeech: PartOfSpeech): ProcessedLemma[] {
-    let uniqueResults = new Set<string>([lemma]);
+  public process(lemma: string | string[], partOfSpeech?: PartOfSpeech): ProcessedLemma[] {
+    let uniqueResults = new Set<string>(Array.isArray(lemma) ? lemma : [lemma]);
     const triggers = new Map<string, string[]>();
 
     for (const rule of this.rules) {
@@ -61,16 +61,11 @@ export class Multirator {
           finalReplacements.add(processedString);
 
           const replaceCount = intermediates.size - 1;
-          if (replaceCount > 0) {
-            if (!triggers.has(processedString)) {
-              triggers.set(processedString, []);
-            }
-
-            const appliedRules: string[] = triggers.get(processedString) || [];
+          if (!triggers.has(processedString)) {
+            const appliedRules: string[] = triggers.get(sourceString) || [];
             for (let i = 0; i < replaceCount; i++) {
               appliedRules.push(rule.id);
             }
-
             triggers.set(processedString, appliedRules);
           }
         }
