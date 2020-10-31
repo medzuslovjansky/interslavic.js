@@ -46,7 +46,7 @@ exports[`Russian multirator should convert Andora: Andora 1`] = `"андора"`
 
 exports[`Russian multirator should convert Anglija: Anglija 1`] = `"англия"`;
 
-exports[`Russian multirator should convert Angličan, Angličanin: Angličan, Angličanin 1`] = `"англичан, англичанин"`;
+exports[`Russian multirator should convert Angličan: Angličan 1`] = `"англичан"`;
 
 exports[`Russian multirator should convert Angola: Angola 1`] = `"ангола"`;
 
@@ -148,7 +148,7 @@ exports[`Russian multirator should convert Brěg Slonovoj Kosti: Brěg Slonovoj 
 
 exports[`Russian multirator should convert Budapest: Budapest 1`] = `"будапест"`;
 
-exports[`Russian multirator should convert Bulgar, Bulgarin: Bulgar, Bulgarin 1`] = `"булгар, булгарин"`;
+exports[`Russian multirator should convert Bulgar: Bulgar 1`] = `"булгар"`;
 
 exports[`Russian multirator should convert Bulgarija: Bulgarija 1`] = `"булгария"`;
 
@@ -214,7 +214,7 @@ exports[`Russian multirator should convert Egejsko morje: Egejsko morje 1`] = `"
 
 exports[`Russian multirator should convert Egipt: Egipt 1`] = `"эгипт"`;
 
-exports[`Russian multirator should convert Egipćan, Egipćanin: Egipćan, Egipćanin 1`] = `"эгипчан, эгипчанин; эгипцан, эгипцанин; эгипщан, эгипщанин"`;
+exports[`Russian multirator should convert Egipćan: Egipćan 1`] = `"эгипчан; эгипцан; эгипщан"`;
 
 exports[`Russian multirator should convert Ekvador: Ekvador 1`] = `"эквадор"`;
 
@@ -290,7 +290,7 @@ exports[`Russian multirator should convert Ilir: Ilir 1`] = `"илир"`;
 
 exports[`Russian multirator should convert Indija: Indija 1`] = `"индия"`;
 
-exports[`Russian multirator should convert Indijan, Indijanin: Indijan, Indijanin 1`] = `"индиян, индиянин"`;
+exports[`Russian multirator should convert Indijan: Indijan 1`] = `"индиян"`;
 
 exports[`Russian multirator should convert Indijanka: Indijanka 1`] = `"индиянка"`;
 
@@ -320,7 +320,7 @@ exports[`Russian multirator should convert Isus: Isus 1`] = `"исус"`;
 
 exports[`Russian multirator should convert Italija: Italija 1`] = `"италия"`;
 
-exports[`Russian multirator should convert Italijan, Italijanin: Italijan, Italijanin 1`] = `"италиян, италиянин"`;
+exports[`Russian multirator should convert Italijan: Italijan 1`] = `"италиян"`;
 
 exports[`Russian multirator should convert Izraelec: Izraelec 1`] = `"израелец; исраелец; выраелец"`;
 
@@ -472,7 +472,7 @@ exports[`Russian multirator should convert Maroko: Maroko 1`] = `"мароко"`
 
 exports[`Russian multirator should convert Mars: Mars 1`] = `"марс"`;
 
-exports[`Russian multirator should convert Marsian, Marsianin: Marsian, Marsianin 1`] = `"марсиан, марсианин"`;
+exports[`Russian multirator should convert Marsian: Marsian 1`] = `"марсиан"`;
 
 exports[`Russian multirator should convert Meksiko: Meksiko 1`] = `"мексико"`;
 
@@ -496,7 +496,7 @@ exports[`Russian multirator should convert Mlěčna dråga: Mlěčna dråga 1`] 
 
 exports[`Russian multirator should convert Mlěčny pųť: Mlěčny pųť 1`] = `"млечны поть; млечны путь; мелечны поть; мелечны путь"`;
 
-exports[`Russian multirator should convert Moldavija, Moldova: Moldavija, Moldova 1`] = `"молдавия, молдова"`;
+exports[`Russian multirator should convert Moldavija: Moldavija 1`] = `"молдавия"`;
 
 exports[`Russian multirator should convert Monako: Monako 1`] = `"монако"`;
 
@@ -664,7 +664,7 @@ exports[`Russian multirator should convert Slovenija: Slovenija 1`] = `"слов
 
 exports[`Russian multirator should convert Slovenka: Slovenka 1`] = `"словенка"`;
 
-exports[`Russian multirator should convert Slovjan, Slovjanin: Slovjan, Slovjanin 1`] = `"словян, словянин; словьян, словьянин; словъян, словъянин; словлян, словлянин; словльян, словльянин; словлъян, словлъянин"`;
+exports[`Russian multirator should convert Slovjan: Slovjan 1`] = `"словян; словьян; словъян; словлян; словльян; словлъян"`;
 
 exports[`Russian multirator should convert Slovjanka: Slovjanka 1`] = `"словянка; словьянка; словъянка; словлянка; словльянка; словлъянка"`;
 
@@ -1286,7 +1286,7 @@ exports[`Russian multirator should convert alt: alt 1`] = `"алт"`;
 
 exports[`Russian multirator should convert alt: alt 2`] = `"алт"`;
 
-exports[`Russian multirator should convert altana, altanka: altana, altanka 1`] = `"алтана, алтанка"`;
+exports[`Russian multirator should convert altana: altana 1`] = `"алтана"`;
 
 exports[`Russian multirator should convert alternativa: alternativa 1`] = `"алтернатива"`;
 
@@ -2262,7 +2262,7 @@ exports[`Russian multirator should convert bezpomoćny: bezpomoćny 1`] = `"бе
 
 exports[`Russian multirator should convert bezposrědnje: bezposrědnje 1`] = `"безпосредне; безпосреднье; безпосредние; безпосередне; безпосереднье; безпосередние; беспосредне; беспосреднье; беспосредние; беспосередне; беспосереднье; беспосередние"`;
 
-exports[`Russian multirator should convert bezposrědnji, bezposrědny: bezposrědnji, bezposrědny 1`] = `"безпосредни, безпосредный; безпосредньи, безпосредный; безпосреднъи, безпосредный; безпосредни, безпосредний; безпосредньи, безпосредний; безпосреднъи, безпосредний; безпосередни, безпосередный; безпосередньи, безпосередный; безпосереднъи, безпосередный; безпосередни, безпосередний; безпосередньи, безпосередний; безпосереднъи, безпосередний; беспосредни, безпосредный; беспосредньи, безпосредный; беспосреднъи, безпосредный; беспосредни, безпосредний; беспосредньи, безпосредний; беспосреднъи, безпосредний; беспосередни, безпосередный; беспосередньи, безпосередный; беспосереднъи, безпосередный; беспосередни, безпосередний; беспосередньи, безпосередний; беспосереднъи, безпосередний"`;
+exports[`Russian multirator should convert bezposrědnji: bezposrědnji 1`] = `"безпосредни; безпосредньи; безпосредний; безпосередни; безпосередньи; безпосередний; беспосредни; беспосредньи; беспосредний; беспосередни; беспосередньи; беспосередний"`;
 
 exports[`Russian multirator should convert bezprecedentny: bezprecedentny 1`] = `"безпрецедентный; безпрецедентний; беспрецедентный; беспрецедентний"`;
 
@@ -2478,7 +2478,7 @@ exports[`Russian multirator should convert bliže: bliže 1`] = `"ближе"`;
 
 exports[`Russian multirator should convert bližiti sę: bližiti sę 1`] = `"ближиться"`;
 
-exports[`Russian multirator should convert bližnji, bližny: bližnji, bližny 1`] = `"ближни, ближный; ближньи, ближный; ближнъи, ближный; ближни, ближний; ближньи, ближний; ближнъи, ближний"`;
+exports[`Russian multirator should convert bližnji: bližnji 1`] = `"ближни; ближньи; ближний"`;
 
 exports[`Russian multirator should convert bljudce: bljudce 1`] = `"блюдце; бльюдце; блъюдце; бльудце"`;
 
@@ -2510,7 +2510,7 @@ exports[`Russian multirator should convert blondinka: blondinka 1`] = `"блон
 
 exports[`Russian multirator should convert blågo: blågo 1`] = `"благо; болого"`;
 
-exports[`Russian multirator should convert blågodarim, blågodarjų: blågodarim, blågodarjų 1`] = `"благодарим, благодаре; благодарим, благодарье; благодарим, благодарие; благодарим, благодаръе; благодарим, благодарьо; благодарим, благодарю; благодарим, благодарью; благодарим, благодаръю; благодарим, благодарьу; бологодарим, бологодаре; бологодарим, бологодарье; бологодарим, бологодарие; бологодарим, бологодаръе; бологодарим, бологодарьо; бологодарим, бологодарю; бологодарим, бологодарью; бологодарим, бологодаръю; бологодарим, бологодарьу"`;
+exports[`Russian multirator should convert blågodarim: blågodarim 1`] = `"благодарим; бологодарим"`;
 
 exports[`Russian multirator should convert blågodariti: blågodariti 1`] = `"благодарить; бологодарить"`;
 
@@ -3194,7 +3194,7 @@ exports[`Russian multirator should convert bųben: bųben 1`] = `"бобен; б
 
 exports[`Russian multirator should convert bųblina: bųblina 1`] = `"боблина; бублина"`;
 
-exports[`Russian multirator should convert bųde/bųdųt: bųde/bųdųt 1`] = `"боде/бодот; буде/будут"`;
+exports[`Russian multirator should convert bųde: bųde 1`] = `"боде; буде"`;
 
 exports[`Russian multirator should convert bųdųći: bųdųći 1`] = `"бодочи; будучи; бодоци; будуци; бодощи; будущи"`;
 
@@ -3438,7 +3438,7 @@ exports[`Russian multirator should convert dalj: dalj 1`] = `"даль"`;
 
 exports[`Russian multirator should convert dalje: dalje 1`] = `"дале; далье; далие; далъе"`;
 
-exports[`Russian multirator should convert daljnji, daljny: daljnji, daljny 1`] = `"дальни, дальный; дальньи, дальный; дальнъи, дальный; дальни, дальний; дальньи, дальний; дальнъи, дальний"`;
+exports[`Russian multirator should convert daljnji: daljnji 1`] = `"дальни; дальньи; дальний"`;
 
 exports[`Russian multirator should convert daljši: daljši 1`] = `"дальши"`;
 
@@ -3510,7 +3510,7 @@ exports[`Russian multirator should convert darvinizm: darvinizm 1`] = `"дарв
 
 exports[`Russian multirator should convert data: data 1`] = `"дата"`;
 
-exports[`Russian multirator should convert dateljnik, dateljny padež: dateljnik, dateljny padež 1`] = `"дательник, дательны падеж"`;
+exports[`Russian multirator should convert dateljnik: dateljnik 1`] = `"дательник"`;
 
 exports[`Russian multirator should convert dati råbotų: dati råbotų 1`] = `"дать работо; дать работу; дать робото; дать роботу"`;
 
@@ -3766,7 +3766,7 @@ exports[`Russian multirator should convert devęťdesęt: devęťdesęt 1`] = `"
 
 exports[`Russian multirator should convert devęťdesęty: devęťdesęty 1`] = `"девятьдесяты; деветьдесеты; деватьдесаты"`;
 
-exports[`Russian multirator should convert devęťsȯt, devęťsto: devęťsȯt, devęťsto 1`] = `"девятьсот, девятьсто; девятьсет, девятьсто; деветьсот, деветьсто; деветьсет, деветьсто; деватьсот, деватьсто; деватьсет, деватьсто"`;
+exports[`Russian multirator should convert devęťsȯt: devęťsȯt 1`] = `"девятьсот; девятьсет; деветьсот; деветьсет; деватьсот; деватьсет"`;
 
 exports[`Russian multirator should convert dezerter: dezerter 1`] = `"дезертер"`;
 
@@ -3874,7 +3874,7 @@ exports[`Russian multirator should convert diplodok: diplodok 1`] = `"дипло
 
 exports[`Russian multirator should convert diplom: diplom 1`] = `"диплом"`;
 
-exports[`Russian multirator should convert diplomacija, diplomatija: diplomacija, diplomatija 1`] = `"дипломация, дипломатия"`;
+exports[`Russian multirator should convert diplomacija: diplomacija 1`] = `"дипломация"`;
 
 exports[`Russian multirator should convert diplomat: diplomat 1`] = `"дипломат"`;
 
@@ -3964,7 +3964,7 @@ exports[`Russian multirator should convert dneś: dneś 1`] = `"днес; дне
 
 exports[`Russian multirator should convert dnešnje: dnešnje 1`] = `"днешне; днешнье; днешние"`;
 
-exports[`Russian multirator should convert dnešnji, dnešny: dnešnji, dnešny 1`] = `"днешни, днешный; днешньи, днешный; днешнъи, днешный; днешни, днешний; днешньи, днешний; днешнъи, днешний"`;
+exports[`Russian multirator should convert dnešnji: dnešnji 1`] = `"днешни; днешньи; днешний"`;
 
 exports[`Russian multirator should convert dniti sę: dniti sę 1`] = `"дниться"`;
 
@@ -4186,7 +4186,7 @@ exports[`Russian multirator should convert domašnji spor: domašnji spor 1`] = 
 
 exports[`Russian multirator should convert domašnji zvěŕ: domašnji zvěŕ 1`] = `"домашни звер; домашньи звер; домашний звер; домашни зверь; домашньи зверь; домашний зверь; домашни зевер; домашньи зевер; домашний зевер; домашни зеверь; домашньи зеверь; домашний зеверь"`;
 
-exports[`Russian multirator should convert domašnji, domašny: domašnji, domašny 1`] = `"домашни, домашный; домашньи, домашный; домашнъи, домашный; домашни, домашний; домашньи, домашний; домашнъи, домашний"`;
+exports[`Russian multirator should convert domašnji: domašnji 1`] = `"домашни; домашньи; домашний"`;
 
 exports[`Russian multirator should convert domen: domen 1`] = `"домен"`;
 
@@ -4432,7 +4432,7 @@ exports[`Russian multirator should convert dotykati: dotykati 1`] = `"дотык
 
 exports[`Russian multirator should convert dotųd: dotųd 1`] = `"дотод; дотуд"`;
 
-exports[`Russian multirator should convert dovesti do/k: dovesti do/k 1`] = `"довесть до/к"`;
+exports[`Russian multirator should convert dovesti do: dovesti do 1`] = `"довесть до"`;
 
 exports[`Russian multirator should convert dovezti: dovezti 1`] = `"довезть"`;
 
@@ -4444,7 +4444,7 @@ exports[`Russian multirator should convert dovod: dovod 1`] = `"довод"`;
 
 exports[`Russian multirator should convert dovod: dovod 2`] = `"довод"`;
 
-exports[`Russian multirator should convert dovoditi do/k: dovoditi do/k 1`] = `"доводить до/к"`;
+exports[`Russian multirator should convert dovoditi do: dovoditi do 1`] = `"доводить до"`;
 
 exports[`Russian multirator should convert dovoljno: dovoljno 1`] = `"довольно"`;
 
@@ -4732,7 +4732,7 @@ exports[`Russian multirator should convert dva: dva 1`] = `"два"`;
 
 exports[`Russian multirator should convert dvadesęty: dvadesęty 1`] = `"двадесяты; двадесеты; двадесаты"`;
 
-exports[`Russian multirator should convert dvadesęť, dvadesęti: dvadesęť, dvadesęti 1`] = `"двадесять, двадесяти; двадесеть, двадесети; двадесать, двадесати"`;
+exports[`Russian multirator should convert dvadesęť: dvadesęť 1`] = `"двадесять; двадесеть; двадесать"`;
 
 exports[`Russian multirator should convert dvanadsęty: dvanadsęty 1`] = `"дванадсяты; дванадсеты; дванадсаты"`;
 
@@ -4798,7 +4798,7 @@ exports[`Russian multirator should convert dvor: dvor 1`] = `"двор"`;
 
 exports[`Russian multirator should convert dvor: dvor 2`] = `"двор"`;
 
-exports[`Russian multirator should convert dvorjan, dvorjanin: dvorjan, dvorjanin 1`] = `"дворян, дворянин; дворьян, дворьянин; дворъян, дворъянин"`;
+exports[`Russian multirator should convert dvorjan: dvorjan 1`] = `"дворян; дворьян; дворъян"`;
 
 exports[`Russian multirator should convert dvorjansky: dvorjansky 1`] = `"дворянскый; дворьянскый; дворъянскый; дворянский; дворьянский; дворъянский"`;
 
@@ -5212,7 +5212,7 @@ exports[`Russian multirator should convert ekskluzivny: ekskluzivny 1`] = `"эк
 
 exports[`Russian multirator should convert ekskursija: ekskursija 1`] = `"экскурсия"`;
 
-exports[`Russian multirator should convert ekspansija, ekspanzija: ekspansija, ekspanzija 1`] = `"экспансия, экспанзия"`;
+exports[`Russian multirator should convert ekspansija: ekspansija 1`] = `"экспансия"`;
 
 exports[`Russian multirator should convert ekspedicija: ekspedicija 1`] = `"экспедиция"`;
 
@@ -5448,7 +5448,7 @@ exports[`Russian multirator should convert evolucija: evolucija 1`] = `"эвол
 
 exports[`Russian multirator should convert evro: evro 1`] = `"эвро"`;
 
-exports[`Russian multirator should convert evropejsky, evropsky: evropejsky, evropsky 1`] = `"эвропейскы, эвропскый; эвропейскы, эвропский"`;
+exports[`Russian multirator should convert evropejsky: evropejsky 1`] = `"эвропейскый; эвропейский"`;
 
 exports[`Russian multirator should convert fabrika: fabrika 1`] = `"фабрика"`;
 
@@ -6032,7 +6032,7 @@ exports[`Russian multirator should convert gladky: gladky 1`] = `"гладкый
 
 exports[`Russian multirator should convert glagolica: glagolica 1`] = `"глаголица"`;
 
-exports[`Russian multirator should convert glagoličny, glagoľsky: glagoličny, glagoľsky 1`] = `"глаголичны, глаголскый; глаголичны, глаголский; глаголичны, глагольскый; глаголичны, глагольский"`;
+exports[`Russian multirator should convert glagoličny: glagoličny 1`] = `"глаголичный; глаголичний"`;
 
 exports[`Russian multirator should convert glezenj: glezenj 1`] = `"глезень"`;
 
@@ -6234,7 +6234,7 @@ exports[`Russian multirator should convert godišnica: godišnica 1`] = `"год
 
 exports[`Russian multirator should convert godišnje: godišnje 1`] = `"годишне; годишнье; годишние"`;
 
-exports[`Russian multirator should convert godišnji, godišny: godišnji, godišny 1`] = `"годишни, годишный; годишньи, годишный; годишнъи, годишный; годишни, годишний; годишньи, годишний; годишнъи, годишний"`;
+exports[`Russian multirator should convert godišnji: godišnji 1`] = `"годишни; годишньи; годишний"`;
 
 exports[`Russian multirator should convert godnosť: godnosť 1`] = `"годность"`;
 
@@ -6304,7 +6304,7 @@ exports[`Russian multirator should convert gorila: gorila 1`] = `"горила"`
 
 exports[`Russian multirator should convert goristy: goristy 1`] = `"гористый; гористий"`;
 
-exports[`Russian multirator should convert gorjan, gorjanin: gorjan, gorjanin 1`] = `"горян, горянин; горьян, горьянин; горъян, горъянин"`;
+exports[`Russian multirator should convert gorjan: gorjan 1`] = `"горян; горьян; горъян"`;
 
 exports[`Russian multirator should convert gorka: gorka 1`] = `"горка"`;
 
@@ -6620,9 +6620,9 @@ exports[`Russian multirator should convert gråh: gråh 1`] = `"грах; гор
 
 exports[`Russian multirator should convert gråhovy: gråhovy 1`] = `"граховый; граховий; гороховый; гороховий"`;
 
-exports[`Russian multirator should convert gråđan, gråđanin: gråđan, gråđanin 1`] = `"граджан, граджанин; граждан, гражданин; градан, граданин; гражан, гражанин; городжан, городжанин; горождан, горожданин; городан, городанин; горожан, горожанин"`;
+exports[`Russian multirator should convert gråđan: gråđan 1`] = `"граджан; граждан; градан; гражан; городжан; горождан; городан; горожан"`;
 
-exports[`Russian multirator should convert gråđan, gråđanin: gråđan, gråđanin 2`] = `"граджан, граджанин; граждан, гражданин; градан, граданин; гражан, гражанин; городжан, городжанин; горождан, горожданин; городан, городанин; горожан, горожанин"`;
+exports[`Russian multirator should convert gråđan: gråđan 2`] = `"граджан; граждан; градан; гражан; городжан; горождан; городан; горожан"`;
 
 exports[`Russian multirator should convert gråđanka: gråđanka 1`] = `"граджанка; гражданка; граданка; гражанка; городжанка; горожданка; городанка; горожанка"`;
 
@@ -7034,7 +7034,7 @@ exports[`Russian multirator should convert hođeńje: hođeńje 1`] = `"ходж
 
 exports[`Russian multirator should convert hoť by: hoť by 1`] = `"хоть бы"`;
 
-exports[`Russian multirator should convert hoť, hoti: hoť, hoti 1`] = `"хоть, хоти"`;
+exports[`Russian multirator should convert hoť: hoť 1`] = `"хоть"`;
 
 exports[`Russian multirator should convert hram: hram 1`] = `"храм"`;
 
@@ -7054,7 +7054,7 @@ exports[`Russian multirator should convert hrestomatija: hrestomatija 1`] = `"х
 
 exports[`Russian multirator should convert hriply: hriply 1`] = `"хриплый; хриплий"`;
 
-exports[`Russian multirator should convert hristijan, hristijanin: hristijan, hristijanin 1`] = `"християн, християнин"`;
+exports[`Russian multirator should convert hristijan: hristijan 1`] = `"християн"`;
 
 exports[`Russian multirator should convert hristijanizacija: hristijanizacija 1`] = `"християнизация"`;
 
@@ -7374,7 +7374,7 @@ exports[`Russian multirator should convert iluzorny: iluzorny 1`] = `"илузо
 
 exports[`Russian multirator should convert imajmo nadějų: imajmo nadějų 1`] = `"имаймо надее; имаймо надеие; имаймо надею"`;
 
-exports[`Russian multirator should convert imeniteljnik, imeniteljny padež: imeniteljnik, imeniteljny padež 1`] = `"именительник, именительны падеж"`;
+exports[`Russian multirator should convert imeniteljnik: imeniteljnik 1`] = `"именительник"`;
 
 exports[`Russian multirator should convert imennik: imennik 1`] = `"именник"`;
 
@@ -7454,9 +7454,9 @@ exports[`Russian multirator should convert iměti značeńje: iměti značeńje 
 
 exports[`Russian multirator should convert iměti žalj: iměti žalj 1`] = `"иметь жаль"`;
 
-exports[`Russian multirator should convert iměti, imati: iměti, imati 1`] = `"имети, имать"`;
+exports[`Russian multirator should convert iměti: iměti 1`] = `"иметь"`;
 
-exports[`Russian multirator should convert iměti, imati: iměti, imati 2`] = `"имети, имать"`;
+exports[`Russian multirator should convert iměti: iměti 2`] = `"иметь"`;
 
 exports[`Russian multirator should convert iměńje: iměńje 1`] = `"имене; именье; имение; именьие"`;
 
@@ -7556,7 +7556,7 @@ exports[`Russian multirator should convert inokto: inokto 1`] = `"инокто"`
 
 exports[`Russian multirator should convert inoliky: inoliky 1`] = `"иноликый; иноликий"`;
 
-exports[`Russian multirator should convert inoplanetjan, inoplanetjanin: inoplanetjan, inoplanetjanin 1`] = `"инопланетян, инопланетянин; инопланетьян, инопланетьянин; инопланетъян, инопланетъянин"`;
+exports[`Russian multirator should convert inoplanetjan: inoplanetjan 1`] = `"инопланетян; инопланетьян; инопланетъян"`;
 
 exports[`Russian multirator should convert inoskazańje: inoskazańje 1`] = `"иносказане; иносказанье; иносказание; иносказаньие"`;
 
@@ -7698,7 +7698,7 @@ exports[`Russian multirator should convert inženjer: inženjer 1`] = `"инже
 
 exports[`Russian multirator should convert inženjerstvo: inženjerstvo 1`] = `"инженерство; инженьерство; инженъерство"`;
 
-exports[`Russian multirator should convert inȯgda, inȯgdy: inȯgda, inȯgdy 1`] = `"иногда, иногды; инегда, инегды"`;
+exports[`Russian multirator should convert inȯgda: inȯgda 1`] = `"иногда; инегда"`;
 
 exports[`Russian multirator should convert ion: ion 1`] = `"ион"`;
 
@@ -8120,7 +8120,7 @@ exports[`Russian multirator should convert izlivati: izlivati 1`] = `"излив
 
 exports[`Russian multirator should convert izlišek: izlišek 1`] = `"излишек; ислишек; вылишек"`;
 
-exports[`Russian multirator should convert izlišnji, izlišny: izlišnji, izlišny 1`] = `"излишни, излишный; излишньи, излишный; излишнъи, излишный; излишни, излишний; излишньи, излишний; излишнъи, излишний; ислишни, излишный; ислишньи, излишный; ислишнъи, излишный; ислишни, излишний; ислишньи, излишний; ислишнъи, излишний; вылишни, излишный; вылишньи, излишный; вылишнъи, излишный; вылишни, излишний; вылишньи, излишний; вылишнъи, излишний"`;
+exports[`Russian multirator should convert izlišnji: izlišnji 1`] = `"излишни; излишньи; излишний; ислишни; ислишньи; ислишний; вылишни; вылишньи; вылишний"`;
 
 exports[`Russian multirator should convert izlomiti: izlomiti 1`] = `"изломить; исломить; выломить"`;
 
@@ -8500,9 +8500,9 @@ exports[`Russian multirator should convert izsměška: izsměška 1`] = `"изс
 
 exports[`Russian multirator should convert izsměšnik: izsměšnik 1`] = `"изсмешник; изсемешник; иссмешник; иссемешник; высмешник; высемешник"`;
 
-exports[`Russian multirator should convert izstava, izstavka: izstava, izstavka 1`] = `"изстава, изставка; исстава, изставка; выстава, изставка"`;
-
 exports[`Russian multirator should convert izstava: izstava 1`] = `"изстава; исстава; выстава"`;
+
+exports[`Russian multirator should convert izstava: izstava 2`] = `"изстава; исстава; выстава"`;
 
 exports[`Russian multirator should convert izstaviti: izstaviti 1`] = `"изставить; исставить; выставить"`;
 
@@ -8632,7 +8632,7 @@ exports[`Russian multirator should convert izvezti: izvezti 2`] = `"извезт
 
 exports[`Russian multirator should convert izvihnųti: izvihnųti 1`] = `"извихноть; извихнуть; исвихноть; исвихнуть; вывихноть; вывихнуть"`;
 
-exports[`Russian multirator should convert izvini, izvinite: izvini, izvinite 1`] = `"извини, извините; исвини, извините; вывини, извините"`;
+exports[`Russian multirator should convert izvini: izvini 1`] = `"извини; исвини; вывини"`;
 
 exports[`Russian multirator should convert izviniti sę: izviniti sę 1`] = `"извиниться; исвиниться; вывиниться"`;
 
@@ -8914,7 +8914,7 @@ exports[`Russian multirator should convert jaščer: jaščer 1`] = `"ящер"`
 
 exports[`Russian multirator should convert jaź: jaź 1`] = `"яз; язь"`;
 
-exports[`Russian multirator should convert je, jest: je, jest 1`] = `"е, ест; е, ьест; е, ъест; и, ест; и, ьест; и, ъест; ье, ьест"`;
+exports[`Russian multirator should convert je: je 1`] = `"е; и; ье; ие"`;
 
 exports[`Russian multirator should convert jebany: jebany 1`] = `"ебаный; ибаный; ебаний; ибаний; ьебаный; ьебаний"`;
 
@@ -8982,7 +8982,7 @@ exports[`Russian multirator should convert jednako: jednako 1`] = `"еднако
 
 exports[`Russian multirator should convert jednakovy: jednakovy 1`] = `"еднаковый; иднаковый; еднаковий; иднаковий; ьеднаковый; ьеднаковий"`;
 
-exports[`Russian multirator should convert jednakože, jednakže: jednakože, jednakže 1`] = `"еднакоже, еднакже; еднакоже, ьеднакже; еднакоже, ъеднакже; иднакоже, еднакже; иднакоже, ьеднакже; иднакоже, ъеднакже; ьеднакоже, ьеднакже"`;
+exports[`Russian multirator should convert jednakože: jednakože 1`] = `"еднакоже; иднакоже; ьеднакоже"`;
 
 exports[`Russian multirator should convert jednaky: jednaky 1`] = `"еднакый; иднакый; еднакий; иднакий; ьеднакый; ьеднакий"`;
 
@@ -9110,7 +9110,7 @@ exports[`Russian multirator should convert jerębina: jerębina 1`] = `"еряб
 
 exports[`Russian multirator should convert jesenj: jesenj 1`] = `"есень; исень; ьесень"`;
 
-exports[`Russian multirator should convert jesennji, jesenny: jesennji, jesenny 1`] = `"есенни, есенный; есенньи, есенный; есеннъи, есенный; есенни, ьесенный; есенньи, ьесенный; есеннъи, ьесенный; есенни, ъесенный; есенньи, ъесенный; есеннъи, ъесенный; исенни, есенный; исенньи, есенный; исеннъи, есенный; исенни, ьесенный; исенньи, ьесенный; исеннъи, ьесенный; исенни, ъесенный; исенньи, ъесенный; исеннъи, ъесенный; есенни, есенний; есенньи, есенний; есеннъи, есенний; есенни, ьесенний; есенньи, ьесенний; есеннъи, ьесенний; есенни, ъесенний; есенньи, ъесенний; есеннъи, ъесенний; исенни, есенний; исенньи, есенний; исеннъи, есенний; исенни, ьесенний; исенньи, ьесенний; исеннъи, ьесенний; исенни, ъесенний; исенньи, ъесенний; исеннъи, ъесенний; ьесенньи, ьесенный; ьесенньи, ьесенний"`;
+exports[`Russian multirator should convert jesennji: jesennji 1`] = `"есенни; есенньи; есенний; исенни; исенньи; исенний; ьесенньи; ьесенний"`;
 
 exports[`Russian multirator should convert jesetr: jesetr 1`] = `"есетр; исетр; ьесетр"`;
 
@@ -9216,7 +9216,7 @@ exports[`Russian multirator should convert junij: junij 1`] = `"уний; ьун
 
 exports[`Russian multirator should convert junior: junior 1`] = `"униор; ьуниор"`;
 
-exports[`Russian multirator should convert junoš, junoša: junoš, junoša 1`] = `"унош, юноша; унош, ьюноша; унош, ъюноша; ьунош, ьуноша"`;
+exports[`Russian multirator should convert junoš: junoš 1`] = `"унош; ьунош"`;
 
 exports[`Russian multirator should convert juny: juny 1`] = `"уный; уний; ьуный; ьуний"`;
 
@@ -9226,7 +9226,7 @@ exports[`Russian multirator should convert jurȯk: jurȯk 1`] = `"урок; ьу
 
 exports[`Russian multirator should convert jutrenja: jutrenja 1`] = `"утреня; утренья; утренъя; ьутреня"`;
 
-exports[`Russian multirator should convert jutrišnji, jutrišny: jutrišnji, jutrišny 1`] = `"утришни, ютришный; утришни, ьютришный; утришни, ъютришный; утришньи, ютришный; утришньи, ьютришный; утришньи, ъютришный; утришнъи, ютришный; утришнъи, ьютришный; утришнъи, ъютришный; утришни, ютришний; утришни, ьютришний; утришни, ъютришний; утришньи, ютришний; утришньи, ьютришний; утришньи, ъютришний; утришнъи, ютришний; утришнъи, ьютришний; утришнъи, ъютришний; ьутришньи, ьутришный; ьутришньи, ьутришний"`;
+exports[`Russian multirator should convert jutrišnji: jutrišnji 1`] = `"утришни; утришньи; утришний; ьутришньи; ьутришний"`;
 
 exports[`Russian multirator should convert jutro: jutro 1`] = `"утро; ьутро"`;
 
@@ -9274,9 +9274,9 @@ exports[`Russian multirator should convert językolomka: językolomka 1`] = `"я
 
 exports[`Russian multirator should convert językoslovec: językoslovec 1`] = `"языкословец; ьязыкословец; езыкословец; изыкословец; ьезыкословец"`;
 
-exports[`Russian multirator should convert językotvoritelj, językotvorec: językotvoritelj, językotvorec 1`] = `"языкотворитель, языкотворец; ьязыкотворитель, ьязыкотворец; езыкотворитель, езыкотворец; езыкотворитель, ьезыкотворец; езыкотворитель, ъезыкотворец; изыкотворитель, езыкотворец; изыкотворитель, ьезыкотворец; изыкотворитель, ъезыкотворец; ьезыкотворитель, ьезыкотворец; языкотворитель, ьязыкотворец; языкотворитель, ъязыкотворец"`;
+exports[`Russian multirator should convert językotvoritelj: językotvoritelj 1`] = `"языкотворитель; ьязыкотворитель; езыкотворитель; изыкотворитель; ьезыкотворитель"`;
 
-exports[`Russian multirator should convert językotvorjeńje, językotvorstvo: językotvorjeńje, językotvorstvo 1`] = `"языкотворене, языкотворство; языкотворьенье, языкотворство; языкотворъенъе, языкотворство; ьязыкотворьенье, ьязыкотворство; языкотворенье, языкотворство; языкотворъенье, языкотворство; езыкотворене, езыкотворство; езыкотворьенье, ьезыкотворство; езыкотворъенъе, ъезыкотворство; изыкотворене, езыкотворство; изыкотворьенье, ьезыкотворство; изыкотворъенъе, ъезыкотворство; ьезыкотворьенье, ьезыкотворство; езыкотворенье, езыкотворство; езыкотворъенье, ъезыкотворство; изыкотворенье, езыкотворство; изыкотворъенье, ъезыкотворство; языкотворене, ьязыкотворство; языкотворьенье, ьязыкотворство; языкотворъенъе, ьязыкотворство; языкотворене, ъязыкотворство; языкотворьенье, ъязыкотворство; языкотворъенъе, ъязыкотворство; языкотворенье, ьязыкотворство; языкотворъенье, ьязыкотворство; языкотворенье, ъязыкотворство; языкотворъенье, ъязыкотворство"`;
+exports[`Russian multirator should convert językotvorjeńje: językotvorjeńje 1`] = `"языкотворене; языкотворьенье; языкотворьение; языкотворъенье; ьязыкотворьенье; ьязыкотворьение; языкотворенье; языкотворение; языкотворьеньие; ьязыкотворьеньие; езыкотворене; езыкотворьенье; езыкотворьение; езыкотворъенье; изыкотворене; изыкотворьенье; изыкотворьение; изыкотворъенье; ьезыкотворьенье; ьезыкотворьение; езыкотворенье; езыкотворение; езыкотворьеньие; изыкотворенье; изыкотворение; изыкотворьеньие; ьезыкотворьеньие"`;
 
 exports[`Russian multirator should convert językověd: językověd 1`] = `"языковед; ьязыковед; езыковед; изыковед; ьезыковед"`;
 
@@ -9304,13 +9304,13 @@ exports[`Russian multirator should convert jęčmenny: jęčmenny 1`] = `"ячм
 
 exports[`Russian multirator should convert jų: jų 1`] = `"о; е; ьо; у; ьу"`;
 
-exports[`Russian multirator should convert k, ko: k, ko 1`] = `"к, ко"`;
+exports[`Russian multirator should convert k: k 1`] = `"к"`;
 
 exports[`Russian multirator should convert kabala: kabala 1`] = `"кабала"`;
 
 exports[`Russian multirator should convert kabalističny: kabalističny 1`] = `"кабалистичный; кабалистичний"`;
 
-exports[`Russian multirator should convert kabare, kabaret: kabare, kabaret 1`] = `"кабаре, кабарет"`;
+exports[`Russian multirator should convert kabare: kabare 1`] = `"кабаре"`;
 
 exports[`Russian multirator should convert kabarga: kabarga 1`] = `"кабарга"`;
 
@@ -9340,11 +9340,11 @@ exports[`Russian multirator should convert kajak: kajak 1`] = `"каяк"`;
 
 exports[`Russian multirator should convert kajati sę: kajati sę 1`] = `"каяться"`;
 
-exports[`Russian multirator should convert kak, kako: kak, kako 1`] = `"как, како"`;
+exports[`Russian multirator should convert kak: kak 1`] = `"как"`;
 
-exports[`Russian multirator should convert kak, kako: kak, kako 2`] = `"как, како"`;
+exports[`Russian multirator should convert kak: kak 2`] = `"как"`;
 
-exports[`Russian multirator should convert kak, kako: kak, kako 3`] = `"как, како"`;
+exports[`Russian multirator should convert kak: kak 3`] = `"как"`;
 
 exports[`Russian multirator should convert kakao: kakao 1`] = `"какао"`;
 
@@ -9640,7 +9640,7 @@ exports[`Russian multirator should convert kavka: kavka 1`] = `"кавка"`;
 
 exports[`Russian multirator should convert kavovy: kavovy 1`] = `"кавовый; кавовий"`;
 
-exports[`Russian multirator should convert kazahsky, kazašsky: kazahsky, kazašsky 1`] = `"казахскы, казашскый; казахскы, казашский"`;
+exports[`Russian multirator should convert kazahsky: kazahsky 1`] = `"казахскый; казахский"`;
 
 exports[`Russian multirator should convert kazarna: kazarna 1`] = `"казарна"`;
 
@@ -9680,7 +9680,7 @@ exports[`Russian multirator should convert každodenny: každodenny 1`] = `"ка
 
 exports[`Russian multirator should convert každogodišnje: každogodišnje 1`] = `"каждогодишне; каждогодишнье; каждогодишние"`;
 
-exports[`Russian multirator should convert každogodišnji, každogodišny: každogodišnji, každogodišny 1`] = `"каждогодишни, каждогодишный; каждогодишньи, каждогодишный; каждогодишнъи, каждогодишный; каждогодишни, каждогодишний; каждогодишньи, каждогодишний; каждогодишнъи, каждогодишний"`;
+exports[`Russian multirator should convert každogodišnji: každogodišnji 1`] = `"каждогодишни; каждогодишньи; каждогодишний"`;
 
 exports[`Russian multirator should convert každoročno: každoročno 1`] = `"каждорочно"`;
 
@@ -9730,7 +9730,7 @@ exports[`Russian multirator should convert kiosk: kiosk 1`] = `"киоск"`;
 
 exports[`Russian multirator should convert kirilica: kirilica 1`] = `"кирилица"`;
 
-exports[`Russian multirator should convert kiriličsky, kirilsky: kiriličsky, kirilsky 1`] = `"кирилическы, кирилскый; кирилическы, кирилский"`;
+exports[`Russian multirator should convert kiriličsky: kiriličsky 1`] = `"кирилическый; кирилический"`;
 
 exports[`Russian multirator should convert kisla smetana: kisla smetana 1`] = `"кисла сметана"`;
 
@@ -9878,7 +9878,7 @@ exports[`Russian multirator should convert klub: klub 1`] = `"клуб"`;
 
 exports[`Russian multirator should convert klåda: klåda 1`] = `"клада; колода"`;
 
-exports[`Russian multirator should convert klådec, klådeź: klådec, klådeź 1`] = `"кладец, кладез; кладец, кладезь; колодец, колодез; колодец, колодезь"`;
+exports[`Russian multirator should convert klådec: klådec 1`] = `"кладец; колодец"`;
 
 exports[`Russian multirator should convert klås: klås 1`] = `"клас; колос"`;
 
@@ -10418,7 +10418,7 @@ exports[`Russian multirator should convert kontrast: kontrast 1`] = `"контр
 
 exports[`Russian multirator should convert kontratenor: kontratenor 1`] = `"контратенор"`;
 
-exports[`Russian multirator should convert kontrola, kontrolj: kontrola, kontrolj 1`] = `"контрола, контроль"`;
+exports[`Russian multirator should convert kontrola: kontrola 1`] = `"контрола"`;
 
 exports[`Russian multirator should convert kontrolovati: kontrolovati 1`] = `"контроловать"`;
 
@@ -10462,7 +10462,7 @@ exports[`Russian multirator should convert kopańje: kopańje 1`] = `"копан
 
 exports[`Russian multirator should convert kopija: kopija 1`] = `"копия"`;
 
-exports[`Russian multirator should convert kopijovati, kopirovati: kopijovati, kopirovati 1`] = `"копиевати, копировать"`;
+exports[`Russian multirator should convert kopijovati: kopijovati 1`] = `"копиевать"`;
 
 exports[`Russian multirator should convert kopje: kopje 1`] = `"копе; копье; копие; копъе"`;
 
@@ -11410,15 +11410,15 @@ exports[`Russian multirator should convert kųt: kųt 1`] = `"кот; кут"`;
 
 exports[`Russian multirator should convert kųtny: kųtny 1`] = `"котный; котний; кутный; кутний"`;
 
-exports[`Russian multirator should convert kȯgda, kȯgdy: kȯgda, kȯgdy 1`] = `"когда, когды; кегда, кегды"`;
+exports[`Russian multirator should convert kȯgda: kȯgda 1`] = `"когда; кегда"`;
 
-exports[`Russian multirator should convert kȯgda, kȯgdy: kȯgda, kȯgdy 2`] = `"когда, когды; кегда, кегды"`;
+exports[`Russian multirator should convert kȯgda: kȯgda 2`] = `"когда; кегда"`;
 
-exports[`Russian multirator should convert kȯgda-libo, kȯgdy-libo: kȯgda-libo, kȯgdy-libo 1`] = `"когда-либо, когды-либо; кегда-либо, кегды-либо"`;
+exports[`Russian multirator should convert kȯgda-libo: kȯgda-libo 1`] = `"когда-либо; кегда-либо"`;
 
-exports[`Russian multirator should convert kȯgda-nebųď, kȯgdy-nebųď: kȯgda-nebųď, kȯgdy-nebųď 1`] = `"когда-небод, когды-небод; кегда-небод, кегды-небод; когда-небуд, когды-небуд; кегда-небуд, кегды-небуд; когда-небодь, когды-небодь; кегда-небодь, кегды-небодь; когда-небудь, когды-небудь; кегда-небудь, кегды-небудь"`;
+exports[`Russian multirator should convert kȯgda-nebųď: kȯgda-nebųď 1`] = `"когда-небод; кегда-небод; когда-небуд; кегда-небуд; когда-небодь; кегда-небодь; когда-небудь; кегда-небудь"`;
 
-exports[`Russian multirator should convert kȯgdakoli, kȯgdykoli: kȯgdakoli, kȯgdykoli 1`] = `"когдаколи, когдыколи; кегдаколи, кегдыколи"`;
+exports[`Russian multirator should convert kȯgdakoli: kȯgdakoli 1`] = `"когдаколи; кегдаколи"`;
 
 exports[`Russian multirator should convert kȯl: kȯl 1`] = `"кол; кел"`;
 
@@ -12232,7 +12232,7 @@ exports[`Russian multirator should convert lětańje: lětańje 1`] = `"лета
 
 exports[`Russian multirator should convert lětnji sȯlncevråt: lětnji sȯlncevråt 1`] = `"летни солнцеврат; летньи солнцеврат; летний солнцеврат; летни селнцеврат; летньи селнцеврат; летний селнцеврат; летни солнцеворот; летньи солнцеворот; летний солнцеворот; летни селнцеворот; летньи селнцеворот; летний селнцеворот"`;
 
-exports[`Russian multirator should convert lětnji, lětny: lětnji, lětny 1`] = `"летни, летный; летньи, летный; летнъи, летный; летни, летний; летньи, летний; летнъи, летний"`;
+exports[`Russian multirator should convert lětnji: lětnji 1`] = `"летни; летньи; летний"`;
 
 exports[`Russian multirator should convert lěto: lěto 1`] = `"лето"`;
 
@@ -12408,7 +12408,7 @@ exports[`Russian multirator should convert malovodny: malovodny 1`] = `"мало
 
 exports[`Russian multirator should convert malověrny: malověrny 1`] = `"маловерный; маловерний"`;
 
-exports[`Russian multirator should convert malpa, malpica: malpa, malpica 1`] = `"малпа, малпица"`;
+exports[`Russian multirator should convert malpa: malpa 1`] = `"малпа"`;
 
 exports[`Russian multirator should convert maltejsky: maltejsky 1`] = `"малтейскый; малтейский"`;
 
@@ -13512,7 +13512,7 @@ exports[`Russian multirator should convert muskus: muskus 1`] = `"мускус"`
 
 exports[`Russian multirator should convert muskusna krysa: muskusna krysa 1`] = `"мускусна крыса"`;
 
-exports[`Russian multirator should convert musliman, muslimanin: musliman, muslimanin 1`] = `"муслиман, муслиманин"`;
+exports[`Russian multirator should convert musliman: musliman 1`] = `"муслиман"`;
 
 exports[`Russian multirator should convert muslimanka: muslimanka 1`] = `"муслиманка"`;
 
@@ -13550,7 +13550,7 @@ exports[`Russian multirator should convert mylo: mylo 1`] = `"мыло"`;
 
 exports[`Russian multirator should convert mys: mys 1`] = `"мыс"`;
 
-exports[`Russian multirator should convert myslim, mysljų: myslim, mysljų 1`] = `"мыслим, мысле; мыслим, мыслье; мыслим, мыслие; мыслим, мыслъе; мыслим, мысльо; мыслим, мыслю; мыслим, мыслью; мыслим, мыслъю; мыслим, мысльу"`;
+exports[`Russian multirator should convert myslim: myslim 1`] = `"мыслим"`;
 
 exports[`Russian multirator should convert myslimo: myslimo 1`] = `"мыслимо"`;
 
@@ -13636,7 +13636,7 @@ exports[`Russian multirator should convert męčkati: męčkati 1`] = `"мячк
 
 exports[`Russian multirator should convert mědny dyhovy instrument: mědny dyhovy instrument 1`] = `"медны дыховы инструмент"`;
 
-exports[`Russian multirator should convert mědny, měděny: mědny, měděny 1`] = `"медны, меденый; медны, медений"`;
+exports[`Russian multirator should convert mědny: mědny 1`] = `"медный; медний"`;
 
 exports[`Russian multirator should convert měh: měh 1`] = `"мех"`;
 
@@ -13686,7 +13686,7 @@ exports[`Russian multirator should convert městečko: městečko 1`] = `"мес
 
 exports[`Russian multirator should convert městne izbory: městne izbory 1`] = `"местне изборы"`;
 
-exports[`Russian multirator should convert městnik, městny padež: městnik, městny padež 1`] = `"местник, местны падеж"`;
+exports[`Russian multirator should convert městnik: městnik 1`] = `"местник"`;
 
 exports[`Russian multirator should convert městnosť: městnosť 1`] = `"местность"`;
 
@@ -13742,7 +13742,7 @@ exports[`Russian multirator should convert měšati: měšati 1`] = `"мешат
 
 exports[`Russian multirator should convert měšek: měšek 1`] = `"мешек"`;
 
-exports[`Russian multirator should convert měšćan, měšćanin: měšćan, měšćanin 1`] = `"мещан, мещанин; мешцан, мешцанин"`;
+exports[`Russian multirator should convert měšćan: měšćan 1`] = `"мещан; мешцан"`;
 
 exports[`Russian multirator should convert měšćanstvo: měšćanstvo 1`] = `"мещанство; мешцанство"`;
 
@@ -14220,7 +14220,7 @@ exports[`Russian multirator should convert najraněje: najraněje 1`] = `"най
 
 exports[`Russian multirator should convert najranši: najranši 1`] = `"найранши"`;
 
-exports[`Russian multirator should convert najstarějši, najstarši: najstarějši, najstarši 1`] = `"найстарейши, найстарши"`;
+exports[`Russian multirator should convert najstarějši: najstarějši 1`] = `"найстарейши"`;
 
 exports[`Russian multirator should convert najveliky: najveliky 1`] = `"найвеликый; найвеликий"`;
 
@@ -15032,9 +15032,9 @@ exports[`Russian multirator should convert ne pozvaljaje sę: ne pozvaljaje sę 
 
 exports[`Russian multirator should convert ne slušati: ne slušati 1`] = `"не слушать"`;
 
-exports[`Russian multirator should convert ne sȯglasiti sę, ne sųglasiti sę: ne sȯglasiti sę, ne sųglasiti sę 1`] = `"не согласить ся, не согласиться; не сегласить ся, не согласиться; не согласить ся, не сугласиться; не сегласить ся, не сугласиться; не согласить се, не согласиться; не сегласить се, не согласиться; не согласить се, не сугласиться; не сегласить се, не сугласиться; не согласить са, не согласиться; не сегласить са, не согласиться; не согласить са, не сугласиться; не сегласить са, не сугласиться"`;
+exports[`Russian multirator should convert ne sȯglasiti sę: ne sȯglasiti sę 1`] = `"не согласиться; не сегласиться"`;
 
-exports[`Russian multirator should convert ne sȯglašati sę, ne sųglašati sę: ne sȯglašati sę, ne sųglašati sę 1`] = `"не соглашать ся, не соглашаться; не сеглашать ся, не соглашаться; не соглашать ся, не суглашаться; не сеглашать ся, не суглашаться; не соглашать се, не соглашаться; не сеглашать се, не соглашаться; не соглашать се, не суглашаться; не сеглашать се, не суглашаться; не соглашать са, не соглашаться; не сеглашать са, не соглашаться; не соглашать са, не суглашаться; не сеглашать са, не суглашаться"`;
+exports[`Russian multirator should convert ne sȯglašati sę: ne sȯglašati sę 1`] = `"не соглашаться; не сеглашаться"`;
 
 exports[`Russian multirator should convert ne trěba: ne trěba 1`] = `"не треба; не тереба"`;
 
@@ -15238,7 +15238,7 @@ exports[`Russian multirator should convert neljudsky: neljudsky 1`] = `"нелю
 
 exports[`Russian multirator should convert nelogičny: nelogičny 1`] = `"нелогичный; нелогичний"`;
 
-exports[`Russian multirator should convert nemaje, ne imaje: nemaje, ne imaje 1`] = `"немае, не имае; немае, не имаие"`;
+exports[`Russian multirator should convert nemaje: nemaje 1`] = `"немае; немаие"`;
 
 exports[`Russian multirator should convert nemalo: nemalo 1`] = `"немало"`;
 
@@ -15348,7 +15348,7 @@ exports[`Russian multirator should convert neodstųpny: neodstųpny 1`] = `"не
 
 exports[`Russian multirator should convert neodvråtimy: neodvråtimy 1`] = `"неодвратимый; неодвратимий; неодворотимый; неодворотимий"`;
 
-exports[`Russian multirator should convert neodčuđajemy, neodčuđimy: neodčuđajemy, neodčuđimy 1`] = `"неодчуджаемы, неодчуджимый; неодчуджаемы, неодчуджимий; неодчуждаемы, неодчуждимый; неодчуждаемы, неодчуждимий; неодчудаемы, неодчудимый; неодчудаемы, неодчудимий; неодчужаемы, неодчужимый; неодчужаемы, неодчужимий"`;
+exports[`Russian multirator should convert neodčuđajemy: neodčuđajemy 1`] = `"неодчуджаемый; неодчуджаемий; неодчуждаемый; неодчуждаемий; неодчудаемый; неодчудаемий; неодчужаемый; неодчужаемий"`;
 
 exports[`Russian multirator should convert neoficiaľno: neoficiaľno 1`] = `"неофициално; неофициально"`;
 
@@ -15448,7 +15448,7 @@ exports[`Russian multirator should convert neposlušny: neposlušny 1`] = `"не
 
 exports[`Russian multirator should convert neposrědnje: neposrědnje 1`] = `"непосредне; непосреднье; непосредние; непосередне; непосереднье; непосередние"`;
 
-exports[`Russian multirator should convert neposrědnji, neposrědny: neposrědnji, neposrědny 1`] = `"непосредни, непосредный; непосредньи, непосредный; непосреднъи, непосредный; непосредни, непосредний; непосредньи, непосредний; непосреднъи, непосредний; непосередни, непосередный; непосередньи, непосередный; непосереднъи, непосередный; непосередни, непосередний; непосередньи, непосередний; непосереднъи, непосередний"`;
+exports[`Russian multirator should convert neposrědnji: neposrědnji 1`] = `"непосредни; непосредньи; непосредний; непосередни; непосередньи; непосередний"`;
 
 exports[`Russian multirator should convert neposrědnosť: neposrědnosť 1`] = `"непосредность; непосередность"`;
 
@@ -15668,7 +15668,7 @@ exports[`Russian multirator should convert nesųmněno: nesųmněno 1`] = `"не
 
 exports[`Russian multirator should convert nesųmněny: nesųmněny 1`] = `"несомненый; несомнений; несумненый; несумнений; несомененый; несоменений; несумененый; несуменений"`;
 
-exports[`Russian multirator should convert nesȯglåśje, nesųglåśje: nesȯglåśje, nesųglåśje 1`] = `"несогласе, несогласе; несогласье, несогласье; несогласье, несогласие; несогласъе, несогласъе; несегласе, несогласе; несегласье, несогласье; несегласье, несогласие; несегласъе, несогласъе; несогласе, несугласе; несогласье, несугласье; несогласье, несугласие; несогласъе, несугласъе; несегласе, несугласе; несегласье, несугласье; несегласье, несугласие; несегласъе, несугласъе; несогласье, несогласьие; несегласье, несогласьие; несогласье, несугласьие; несегласье, несугласьие; несоголосе, несоголосе; несоголосье, несоголосье; несоголосье, несоголосие; несоголосъе, несоголосъе; несеголосе, несоголосе; несеголосье, несоголосье; несеголосье, несоголосие; несеголосъе, несоголосъе; несоголосе, несуголосе; несоголосье, несуголосье; несоголосье, несуголосие; несоголосъе, несуголосъе; несеголосе, несуголосе; несеголосье, несуголосье; несеголосье, несуголосие; несеголосъе, несуголосъе; несоголосье, несоголосьие; несеголосье, несоголосьие; несоголосье, несуголосьие; несеголосье, несуголосьие"`;
+exports[`Russian multirator should convert nesȯglåśje: nesȯglåśje 1`] = `"несогласе; несогласье; несогласие; несогласъе; несегласе; несегласье; несегласие; несегласъе; несогласьие; несегласьие; несоголосе; несоголосье; несоголосие; несоголосъе; несеголосе; несеголосье; несеголосие; несеголосъе; несоголосьие; несеголосьие"`;
 
 exports[`Russian multirator should convert nesȯvŕšeny vid: nesȯvŕšeny vid 1`] = `"несовршены вид; несевршены вид; несоврьшены вид; несеврьшены вид"`;
 
@@ -15758,9 +15758,9 @@ exports[`Russian multirator should convert neustrašnosť: neustrašnosť 1`] = 
 
 exports[`Russian multirator should convert neustrašny: neustrašny 1`] = `"неустрашный; неустрашний"`;
 
-exports[`Russian multirator should convert neustųplivosť, neustųpnosť: neustųplivosť, neustųpnosť 1`] = `"неустопливость, неустопность; неуступливость, неуступность"`;
+exports[`Russian multirator should convert neustųplivosť: neustųplivosť 1`] = `"неустопливость; неуступливость"`;
 
-exports[`Russian multirator should convert neustųplivy, neustųpny: neustųplivy, neustųpny 1`] = `"неустопливы, неустопный; неустопливы, неустопний; неуступливы, неуступный; неуступливы, неуступний"`;
+exports[`Russian multirator should convert neustųplivy: neustųplivy 1`] = `"неустопливый; неустопливий; неуступливый; неуступливий"`;
 
 exports[`Russian multirator should convert neutěšimy: neutěšimy 1`] = `"неутешимый; неутешимий"`;
 
@@ -15938,7 +15938,7 @@ exports[`Russian multirator should convert nikto: nikto 1`] = `"никто"`;
 
 exports[`Russian multirator should convert nikųdy: nikųdy 1`] = `"никоды; никуды"`;
 
-exports[`Russian multirator should convert nikȯgda, nikȯgdy: nikȯgda, nikȯgdy 1`] = `"никогда, никогды; никегда, никегды"`;
+exports[`Russian multirator should convert nikȯgda: nikȯgda 1`] = `"никогда; никегда"`;
 
 exports[`Russian multirator should convert nimfa: nimfa 1`] = `"нимфа"`;
 
@@ -16214,7 +16214,7 @@ exports[`Russian multirator should convert nužny: nužny 1`] = `"нужный; 
 
 exports[`Russian multirator should convert nyně: nyně 1`] = `"ныне"`;
 
-exports[`Russian multirator should convert nyněšnji, nyněšny: nyněšnji, nyněšny 1`] = `"нынешни, нынешный; нынешньи, нынешный; нынешнъи, нынешный; нынешни, нынешний; нынешньи, нынешний; нынешнъи, нынешний"`;
+exports[`Russian multirator should convert nyněšnji: nyněšnji 1`] = `"нынешни; нынешньи; нынешний"`;
 
 exports[`Russian multirator should convert nyrec: nyrec 1`] = `"нырец"`;
 
@@ -16258,7 +16258,7 @@ exports[`Russian multirator should convert něktory: něktory 1`] = `"некто
 
 exports[`Russian multirator should convert někųdy: někųdy 1`] = `"некоды; некуды"`;
 
-exports[`Russian multirator should convert někȯgda, někȯgdy: někȯgda, někȯgdy 1`] = `"некогда, некогды; некегда, некегды"`;
+exports[`Russian multirator should convert někȯgda: někȯgda 1`] = `"некогда; некегда"`;
 
 exports[`Russian multirator should convert němečsky: němečsky 1`] = `"немеческый; немеческий"`;
 
@@ -16286,9 +16286,9 @@ exports[`Russian multirator should convert nųđa: nųđa 2`] = `"ноджа; н
 
 exports[`Russian multirator should convert nųđa: nųđa 3`] = `"ноджа; нуджа; ножда; нужда; нода; нуда; ножа; нужа"`;
 
-exports[`Russian multirator should convert o, ob: o, ob 1`] = `"о, об"`;
-
 exports[`Russian multirator should convert o: o 1`] = `"о"`;
+
+exports[`Russian multirator should convert o: o 2`] = `"о"`;
 
 exports[`Russian multirator should convert oaza: oaza 1`] = `"оаза"`;
 
@@ -17130,7 +17130,7 @@ exports[`Russian multirator should convert oda: oda 1`] = `"ода; ота"`;
 
 exports[`Russian multirator should convert odbačati vlěvo: odbačati vlěvo 1`] = `"одбачать влево; одбачать велево; отбачать влево; отбачать велево"`;
 
-exports[`Russian multirator should convert odbačati vpravo/vdesno: odbačati vpravo/vdesno 1`] = `"одбачать вправо/вдесно; отбачать вправо/вдесно"`;
+exports[`Russian multirator should convert odbačati vpravo: odbačati vpravo 1`] = `"одбачать вправо; отбачать вправо"`;
 
 exports[`Russian multirator should convert odbirati: odbirati 1`] = `"одбирать; отбирать"`;
 
@@ -17162,7 +17162,7 @@ exports[`Russian multirator should convert odbor: odbor 1`] = `"одбор; от
 
 exports[`Russian multirator should convert odbočiti vlěvo: odbočiti vlěvo 1`] = `"одбочить влево; одбочить велево; отбочить влево; отбочить велево"`;
 
-exports[`Russian multirator should convert odbočiti vpravo/vdesno: odbočiti vpravo/vdesno 1`] = `"одбочить вправо/вдесно; отбочить вправо/вдесно"`;
+exports[`Russian multirator should convert odbočiti vpravo: odbočiti vpravo 1`] = `"одбочить вправо; отбочить вправо"`;
 
 exports[`Russian multirator should convert odbrati: odbrati 1`] = `"одбрать; отбрать"`;
 
@@ -17372,9 +17372,9 @@ exports[`Russian multirator should convert odkųsiti: odkųsiti 1`] = `"одко
 
 exports[`Russian multirator should convert odkųšati: odkųšati 1`] = `"одкошать; одкушать; откошать; откушать"`;
 
-exports[`Russian multirator should convert odkȯgda, odkȯgdy: odkȯgda, odkȯgdy 1`] = `"одкогда, одкогды; одкегда, одкегды; откогда, одкогды; откегда, одкегды"`;
+exports[`Russian multirator should convert odkȯgda: odkȯgda 1`] = `"одкогда; одкегда; откогда; откегда"`;
 
-exports[`Russian multirator should convert odkȯgda, odkȯgdy: odkȯgda, odkȯgdy 2`] = `"одкогда, одкогды; одкегда, одкегды; откогда, одкогды; откегда, одкегды"`;
+exports[`Russian multirator should convert odkȯgda: odkȯgda 2`] = `"одкогда; одкегда; откогда; откегда"`;
 
 exports[`Russian multirator should convert odlamyvati: odlamyvati 1`] = `"одламывать; отламывать"`;
 
@@ -17676,7 +17676,7 @@ exports[`Russian multirator should convert odrěkti sę: odrěkti sę 1`] = `"о
 
 exports[`Russian multirator should convert odrěkti: odrěkti 1`] = `"одречь; одеречь; отречь; отеречь"`;
 
-exports[`Russian multirator should convert odrěz, odrězȯk: odrěz, odrězȯk 1`] = `"одрез, одрезок; одрез, одрезек; одерез, одерезок; одерез, одерезек; отрез, одрезок; отрез, одрезек; отерез, одерезок; отерез, одерезек"`;
+exports[`Russian multirator should convert odrěz: odrěz 1`] = `"одрез; одерез; отрез; отерез"`;
 
 exports[`Russian multirator should convert odrězati: odrězati 1`] = `"одрезать; одерезать; отрезать; отерезать"`;
 
@@ -18012,7 +18012,7 @@ exports[`Russian multirator should convert ogladiti: ogladiti 1`] = `"оглад
 
 exports[`Russian multirator should convert oglašati: oglašati 1`] = `"оглашать"`;
 
-exports[`Russian multirator should convert ogluhnųti, oglušeti: ogluhnųti, oglušeti 1`] = `"оглухноти, оглушеть; оглухнути, оглушеть"`;
+exports[`Russian multirator should convert ogluhnųti: ogluhnųti 1`] = `"оглухноть; оглухнуть"`;
 
 exports[`Russian multirator should convert oglupěti: oglupěti 1`] = `"оглупеть"`;
 
@@ -18358,7 +18358,7 @@ exports[`Russian multirator should convert onesměljati: onesměljati 1`] = `"о
 
 exports[`Russian multirator should convert oni: oni 1`] = `"они"`;
 
-exports[`Russian multirator should convert onlajn, on-lajn: onlajn, on-lajn 1`] = `"онлайн, он-лайн"`;
+exports[`Russian multirator should convert onlajn: onlajn 1`] = `"онлайн"`;
 
 exports[`Russian multirator should convert ono: ono 1`] = `"оно"`;
 
@@ -18376,11 +18376,11 @@ exports[`Russian multirator should convert oněměti: oněměti 1`] = `"онем
 
 exports[`Russian multirator should convert onųdy: onųdy 1`] = `"оноды; онуды"`;
 
-exports[`Russian multirator should convert onȯgda, onȯgdy: onȯgda, onȯgdy 1`] = `"оногда, оногды; онегда, онегды"`;
+exports[`Russian multirator should convert onȯgda: onȯgda 1`] = `"оногда; онегда"`;
 
-exports[`Russian multirator should convert onȯgda, onȯgdy: onȯgda, onȯgdy 2`] = `"оногда, оногды; онегда, онегды"`;
+exports[`Russian multirator should convert onȯgda: onȯgda 2`] = `"оногда; онегда"`;
 
-exports[`Russian multirator should convert onȯgdašnji, onȯgdašny: onȯgdašnji, onȯgdašny 1`] = `"оногдашни, оногдашный; оногдашньи, оногдашный; оногдашнъи, оногдашный; оногдашни, оногдашний; оногдашньи, оногдашний; оногдашнъи, оногдашний; онегдашни, онегдашный; онегдашньи, онегдашный; онегдашнъи, онегдашный; онегдашни, онегдашний; онегдашньи, онегдашний; онегдашнъи, онегдашний"`;
+exports[`Russian multirator should convert onȯgdašnji: onȯgdašnji 1`] = `"оногдашни; оногдашньи; оногдашний; онегдашни; онегдашньи; онегдашний"`;
 
 exports[`Russian multirator should convert opadati: opadati 1`] = `"опадать"`;
 
@@ -18898,7 +18898,7 @@ exports[`Russian multirator should convert osmnadsęť: osmnadsęť 1`] = `"ос
 
 exports[`Russian multirator should convert osmoliti: osmoliti 1`] = `"осмолить"`;
 
-exports[`Russian multirator should convert osmsȯt, osmsto: osmsȯt, osmsto 1`] = `"осмсот, осмсто; осмсет, осмсто"`;
+exports[`Russian multirator should convert osmsȯt: osmsȯt 1`] = `"осмсот; осмсет"`;
 
 exports[`Russian multirator should convert osmy: osmy 1`] = `"осмы"`;
 
@@ -19030,7 +19030,7 @@ exports[`Russian multirator should convert ostroumje: ostroumje 1`] = `"остр
 
 exports[`Russian multirator should convert ostrov: ostrov 1`] = `"остров"`;
 
-exports[`Russian multirator should convert ostrovjan, ostrovjanin: ostrovjan, ostrovjanin 1`] = `"островян, островянин; островьян, островьянин; островъян, островъянин; островлян, островлянин; островльян, островльянин; островлъян, островлъянин"`;
+exports[`Russian multirator should convert ostrovjan: ostrovjan 1`] = `"островян; островьян; островъян; островлян; островльян; островлъян"`;
 
 exports[`Russian multirator should convert ostrugati: ostrugati 1`] = `"остругать"`;
 
@@ -19290,7 +19290,7 @@ exports[`Russian multirator should convert ověrjeny: ověrjeny 1`] = `"овер
 
 exports[`Russian multirator should convert ovųdy: ovųdy 1`] = `"оводы; овуды"`;
 
-exports[`Russian multirator should convert ovȯgda, ovȯgdy: ovȯgda, ovȯgdy 1`] = `"овогда, овогды; овегда, овегды"`;
+exports[`Russian multirator should convert ovȯgda: ovȯgda 1`] = `"овогда; овегда"`;
 
 exports[`Russian multirator should convert ovȯlgnųti: ovȯlgnųti 1`] = `"оволгноть; овелгноть; оволгнуть; овелгнуть"`;
 
@@ -19874,7 +19874,7 @@ exports[`Russian multirator should convert pečętaŕstvo: pečętaŕstvo 1`] = 
 
 exports[`Russian multirator should convert pečęť: pečęť 1`] = `"печять; печеть; печать"`;
 
-exports[`Russian multirator should convert phati sę do/za: phati sę do/za 1`] = `"пхаться до/за"`;
+exports[`Russian multirator should convert phati sę do: phati sę do 1`] = `"пхаться до"`;
 
 exports[`Russian multirator should convert phati: phati 1`] = `"пхать"`;
 
@@ -20320,9 +20320,9 @@ exports[`Russian multirator should convert podgrěvati: podgrěvati 1`] = `"по
 
 exports[`Russian multirator should convert podhod: podhod 1`] = `"подход"`;
 
-exports[`Russian multirator should convert podhoditi (k): podhoditi (k) 1`] = `"подходить (к)"`;
-
 exports[`Russian multirator should convert podhoditi: podhoditi 1`] = `"подходить"`;
+
+exports[`Russian multirator should convert podhoditi: podhoditi 2`] = `"подходить"`;
 
 exports[`Russian multirator should convert podimati: podimati 1`] = `"подимать"`;
 
@@ -20626,9 +20626,9 @@ exports[`Russian multirator should convert poděti sę: poděti sę 1`] = `"по
 
 exports[`Russian multirator should convert poděvati sę: poděvati sę 1`] = `"подеваться"`;
 
-exports[`Russian multirator should convert podȯjdti (k): podȯjdti (k) 1`] = `"подойдть (к); подейдть (к)"`;
-
 exports[`Russian multirator should convert podȯjdti: podȯjdti 1`] = `"подойдть; подейдть"`;
+
+exports[`Russian multirator should convert podȯjdti: podȯjdti 2`] = `"подойдть; подейдть"`;
 
 exports[`Russian multirator should convert podȯlg: podȯlg 1`] = `"подолг; поделг"`;
 
@@ -20880,7 +20880,7 @@ exports[`Russian multirator should convert pol: pol 1`] = `"пол"`;
 
 exports[`Russian multirator should convert pol: pol 2`] = `"пол"`;
 
-exports[`Russian multirator should convert pol-, polu-: pol-, polu- 1`] = `"пол-, полу-"`;
+exports[`Russian multirator should convert pol-: pol- 1`] = `"пол-"`;
 
 exports[`Russian multirator should convert pola: pola 1`] = `"пола"`;
 
@@ -21064,7 +21064,7 @@ exports[`Russian multirator should convert poni: poni 1`] = `"пони"`;
 
 exports[`Russian multirator should convert poniziti: poniziti 1`] = `"понизить"`;
 
-exports[`Russian multirator should convert poniž, poniže: poniž, poniže 1`] = `"пониж, пониже"`;
+exports[`Russian multirator should convert poniž: poniž 1`] = `"пониж"`;
 
 exports[`Russian multirator should convert ponižajųći: ponižajųći 1`] = `"понижаечи; понижаючи; понижаеци; понижаюци; понижаещи; понижающи"`;
 
@@ -21088,7 +21088,7 @@ exports[`Russian multirator should convert poněkoj: poněkoj 1`] = `"понек
 
 exports[`Russian multirator should convert poněktory: poněktory 1`] = `"понекторы"`;
 
-exports[`Russian multirator should convert poněkȯgda, poněkȯgdy: poněkȯgda, poněkȯgdy 1`] = `"понекогда, понекогды; понекегда, понекегды"`;
+exports[`Russian multirator should convert poněkȯgda: poněkȯgda 1`] = `"понекогда; понекегда"`;
 
 exports[`Russian multirator should convert pop-muzika: pop-muzika 1`] = `"поп-музика"`;
 
@@ -21144,7 +21144,7 @@ exports[`Russian multirator should convert poprobovati: poprobovati 1`] = `"по
 
 exports[`Russian multirator should convert poprositi: poprositi 1`] = `"попросить"`;
 
-exports[`Russian multirator should convert poprědnji, poprědny: poprědnji, poprědny 1`] = `"попредни, попредный; попредньи, попредный; попреднъи, попредный; попредни, попредний; попредньи, попредний; попреднъи, попредний; попередни, попередный; попередньи, попередный; попереднъи, попередный; попередни, попередний; попередньи, попередний; попереднъи, попередний"`;
+exports[`Russian multirator should convert poprědnji: poprědnji 1`] = `"попредни; попредньи; попредний; попередни; попередньи; попередний"`;
 
 exports[`Russian multirator should convert poprěk: poprěk 1`] = `"попрек; поперек"`;
 
@@ -21314,7 +21314,7 @@ exports[`Russian multirator should convert poslě: poslě 2`] = `"после"`;
 
 exports[`Russian multirator should convert poslědica: poslědica 1`] = `"последица; поселедица"`;
 
-exports[`Russian multirator should convert poslědnji, poslědny: poslědnji, poslědny 1`] = `"последни, последный; последньи, последный; последнъи, последный; последни, последний; последньи, последний; последнъи, последний; поселедни, поселедный; поселедньи, поселедный; поселеднъи, поселедный; поселедни, поселедний; поселедньи, поселедний; поселеднъи, поселедний"`;
+exports[`Russian multirator should convert poslědnji: poslědnji 1`] = `"последни; последньи; последний; поселедни; поселедньи; поселедний"`;
 
 exports[`Russian multirator should convert poslědovatelj: poslědovatelj 1`] = `"последователь; поселедователь"`;
 
@@ -21368,9 +21368,9 @@ exports[`Russian multirator should convert posrědničstvo: posrědničstvo 1`] 
 
 exports[`Russian multirator should convert posrědnje: posrědnje 1`] = `"посредне; посреднье; посредние; посередне; посереднье; посередние"`;
 
-exports[`Russian multirator should convert posrědnji, posrědny: posrědnji, posrědny 1`] = `"посредни, посредный; посредньи, посредный; посреднъи, посредный; посредни, посредний; посредньи, посредний; посреднъи, посредний; посередни, посередный; посередньи, посередный; посереднъи, посередный; посередни, посередний; посередньи, посередний; посереднъи, посередний"`;
+exports[`Russian multirator should convert posrědnji: posrědnji 1`] = `"посредни; посредньи; посредний; посередни; посередньи; посередний"`;
 
-exports[`Russian multirator should convert posrědnji, posrědny: posrědnji, posrědny 2`] = `"посредни, посредный; посредньи, посредный; посреднъи, посредный; посредни, посредний; посредньи, посредний; посреднъи, посредний; посередни, посередный; посередньи, посередный; посереднъи, посередный; посередни, посередний; посередньи, посередний; посереднъи, посередний"`;
+exports[`Russian multirator should convert posrědnji: posrědnji 2`] = `"посредни; посредньи; посредний; посередни; посередньи; посередний"`;
 
 exports[`Russian multirator should convert posrědstvom: posrědstvom 1`] = `"посредством; посередством"`;
 
@@ -21738,7 +21738,7 @@ exports[`Russian multirator should convert pozemny: pozemny 1`] = `"поземн
 
 exports[`Russian multirator should convert pozicija: pozicija 1`] = `"позиция"`;
 
-exports[`Russian multirator should convert pozirati (na): pozirati (na) 1`] = `"позирать (на)"`;
+exports[`Russian multirator should convert pozirati: pozirati 1`] = `"позирать"`;
 
 exports[`Russian multirator should convert pozitivno čislo: pozitivno čislo 1`] = `"позитивно число"`;
 
@@ -21770,7 +21770,7 @@ exports[`Russian multirator should convert pozornosť: pozornosť 1`] = `"поз
 
 exports[`Russian multirator should convert pozovati: pozovati 1`] = `"позовать"`;
 
-exports[`Russian multirator should convert pozrěti (na): pozrěti (na) 1`] = `"позреть (на); позереть (на)"`;
+exports[`Russian multirator should convert pozrěti: pozrěti 1`] = `"позреть; позереть"`;
 
 exports[`Russian multirator should convert pozvaljaje sę: pozvaljaje sę 1`] = `"позваляе ся; позваляие ся; позвальяе ся; позвальяие ся; позвалъяе ся; позвалъяие ся; позваляе се; позваляие се; позвальяе се; позвальяие се; позвалъяе се; позвалъяие се; позваляе са; позваляие са; позвальяе са; позвальяие са; позвалъяе са; позвалъяие са"`;
 
@@ -22068,7 +22068,7 @@ exports[`Russian multirator should convert pribiti: pribiti 1`] = `"прибит
 
 exports[`Russian multirator should convert pribivati: pribivati 1`] = `"прибивать"`;
 
-exports[`Russian multirator should convert priblizno, približno: priblizno, približno 1`] = `"приблизно, приближно"`;
+exports[`Russian multirator should convert priblizno: priblizno 1`] = `"приблизно"`;
 
 exports[`Russian multirator should convert približati sę: približati sę 1`] = `"приближаться"`;
 
@@ -23216,7 +23216,7 @@ exports[`Russian multirator should convert prošedšesť: prošedšesť 1`] = `"
 
 exports[`Russian multirator should convert prošedši: prošedši 1`] = `"прошедши"`;
 
-exports[`Russian multirator should convert prošlogodišnji, prošlogodišny: prošlogodišnji, prošlogodišny 1`] = `"прошлогодишни, прошлогодишный; прошлогодишньи, прошлогодишный; прошлогодишнъи, прошлогодишный; прошлогодишни, прошлогодишний; прошлогодишньи, прошлогодишний; прошлогодишнъи, прошлогодишний"`;
+exports[`Russian multirator should convert prošlogodišnji: prošlogodišnji 1`] = `"прошлогодишни; прошлогодишньи; прошлогодишний"`;
 
 exports[`Russian multirator should convert prošloročny: prošloročny 1`] = `"прошлорочный; прошлорочний"`;
 
@@ -23402,7 +23402,7 @@ exports[`Russian multirator should convert prědměsťje: prědměsťje 1`] = `"
 
 exports[`Russian multirator should convert prědnje: prědnje 1`] = `"предне; преднье; предние; передне; переднье; передние"`;
 
-exports[`Russian multirator should convert prědnji, prědny: prědnji, prědny 1`] = `"предни, предный; предньи, предный; преднъи, предный; предни, предний; предньи, предний; преднъи, предний; передни, передный; передньи, передный; переднъи, передный; передни, передний; передньи, передний; переднъи, передний"`;
+exports[`Russian multirator should convert prědnji: prědnji 1`] = `"предни; предньи; предний; передни; передньи; передний"`;
 
 exports[`Russian multirator should convert prědnosť: prědnosť 1`] = `"предность; передность"`;
 
@@ -23432,7 +23432,7 @@ exports[`Russian multirator should convert prědpoložiteljno: prědpoložiteljn
 
 exports[`Russian multirator should convert prědpoložiti: prědpoložiti 1`] = `"предположить; передположить"`;
 
-exports[`Russian multirator should convert prědposlědnji, prědposlědny: prědposlědnji, prědposlědny 1`] = `"предпоследни, предпоследный; предпоследньи, предпоследный; предпоследнъи, предпоследный; предпоследни, предпоследний; предпоследньи, предпоследний; предпоследнъи, предпоследний; предпоселедни, предпоселедный; предпоселедньи, предпоселедный; предпоселеднъи, предпоселедный; предпоселедни, предпоселедний; предпоселедньи, предпоселедний; предпоселеднъи, предпоселедний; передпоследни, передпоследный; передпоследньи, передпоследный; передпоследнъи, передпоследный; передпоследни, передпоследний; передпоследньи, передпоследний; передпоследнъи, передпоследний; передпоселедни, передпоселедный; передпоселедньи, передпоселедный; передпоселеднъи, передпоселедный; передпоселедни, передпоселедний; передпоселедньи, передпоселедний; передпоселеднъи, передпоселедний"`;
+exports[`Russian multirator should convert prědposlědnji: prědposlědnji 1`] = `"предпоследни; предпоследньи; предпоследний; предпоселедни; предпоселедньи; предпоселедний; передпоследни; передпоследньи; передпоследний; передпоселедни; передпоселедньи; передпоселедний"`;
 
 exports[`Russian multirator should convert prědpostavjati: prědpostavjati 1`] = `"предпоставять; предпоставьять; предпоставъять; предпоставлять; предпоставльять; предпоставлъять; передпоставять; передпоставьять; передпоставъять; передпоставлять; передпоставльять; передпоставлъять"`;
 
@@ -24250,7 +24250,7 @@ exports[`Russian multirator should convert pęťdesętničsky: pęťdesętničsk
 
 exports[`Russian multirator should convert pęťdesęty: pęťdesęty 1`] = `"пятьдесяты; петьдесеты; патьдесаты"`;
 
-exports[`Russian multirator should convert pęťsȯt, pęťsto: pęťsȯt, pęťsto 1`] = `"пятьсот, пятьсто; пятьсет, пятьсто; петьсот, петьсто; петьсет, петьсто; патьсот, патьсто; патьсет, патьсто"`;
+exports[`Russian multirator should convert pęťsȯt: pęťsȯt 1`] = `"пятьсот; пятьсет; петьсот; петьсет; патьсот; патьсет"`;
 
 exports[`Russian multirator should convert pěga: pěga 1`] = `"пега"`;
 
@@ -24288,7 +24288,7 @@ exports[`Russian multirator should convert pěšak: pěšak 1`] = `"пешак"`
 
 exports[`Russian multirator should convert pěše: pěše 1`] = `"пеше"`;
 
-exports[`Russian multirator should convert pěšehod, pěšehodec: pěšehod, pěšehodec 1`] = `"пешеход, пешеходец"`;
+exports[`Russian multirator should convert pěšehod: pěšehod 1`] = `"пешеход"`;
 
 exports[`Russian multirator should convert pěši: pěši 1`] = `"пеши"`;
 
@@ -24486,7 +24486,7 @@ exports[`Russian multirator should convert raketa: raketa 1`] = `"ракета"`
 
 exports[`Russian multirator should convert ralo: ralo 1`] = `"рало"`;
 
-exports[`Russian multirator should convert rama, ramka: rama, ramka 1`] = `"рама, рамка"`;
+exports[`Russian multirator should convert rama: rama 1`] = `"рама"`;
 
 exports[`Russian multirator should convert ramenny: ramenny 1`] = `"раменный; раменний"`;
 
@@ -24826,7 +24826,7 @@ exports[`Russian multirator should convert rodina: rodina 1`] = `"родина"`
 
 exports[`Russian multirator should convert roditelj: roditelj 1`] = `"родитель"`;
 
-exports[`Russian multirator should convert roditeljnik, roditeljny padež: roditeljnik, roditeljny padež 1`] = `"родительник, родительны падеж"`;
+exports[`Russian multirator should convert roditeljnik: roditeljnik 1`] = `"родительник"`;
 
 exports[`Russian multirator should convert roditeljsky: roditeljsky 1`] = `"родительскый; родительский"`;
 
@@ -26334,9 +26334,9 @@ exports[`Russian multirator should convert s pomoćjų: s pomoćjų 1`] = `"с �
 
 exports[`Russian multirator should convert s prijemnosťjų: s prijemnosťjų 1`] = `"с приемностье; с приемностие; с приемностьие; с приемностью"`;
 
-exports[`Russian multirator should convert s, so: s, so 1`] = `"с, со"`;
+exports[`Russian multirator should convert s: s 1`] = `"с"`;
 
-exports[`Russian multirator should convert s, so: s, so 2`] = `"с, со"`;
+exports[`Russian multirator should convert s: s 2`] = `"с"`;
 
 exports[`Russian multirator should convert sablja: sablja 1`] = `"сабля; саблья; саблъя"`;
 
@@ -26464,7 +26464,7 @@ exports[`Russian multirator should convert sanje: sanje 1`] = `"сане; сан
 
 exports[`Russian multirator should convert sankcija: sankcija 1`] = `"санкция"`;
 
-exports[`Russian multirator should convert sanskrit, sanskrt: sanskrit, sanskrt 1`] = `"санскрит, санскрт"`;
+exports[`Russian multirator should convert sanskrit: sanskrit 1`] = `"санскрит"`;
 
 exports[`Russian multirator should convert sarafan: sarafan 1`] = `"сарафан"`;
 
@@ -26538,7 +26538,7 @@ exports[`Russian multirator should convert sde: sde 1`] = `"сде"`;
 
 exports[`Russian multirator should convert sdeformovati: sdeformovati 1`] = `"сдеформовать"`;
 
-exports[`Russian multirator should convert sdešnji, sdešny: sdešnji, sdešny 1`] = `"сдешни, сдешный; сдешньи, сдешный; сдешнъи, сдешный; сдешни, сдешний; сдешньи, сдешний; сдешнъи, сдешний"`;
+exports[`Russian multirator should convert sdešnji: sdešnji 1`] = `"сдешни; сдешньи; сдешний"`;
 
 exports[`Russian multirator should convert sdirati: sdirati 1`] = `"сдирать"`;
 
@@ -26598,13 +26598,13 @@ exports[`Russian multirator should convert sedmnadsęty: sedmnadsęty 1`] = `"с
 
 exports[`Russian multirator should convert sedmnadsęť: sedmnadsęť 1`] = `"седмнадсять; седмнадсеть; седмнадсать"`;
 
-exports[`Russian multirator should convert sedmsȯt, sedmsto: sedmsȯt, sedmsto 1`] = `"седмсот, седмсто; седмсет, седмсто"`;
+exports[`Russian multirator should convert sedmsȯt: sedmsȯt 1`] = `"седмсот; седмсет"`;
 
 exports[`Russian multirator should convert sedmy: sedmy 1`] = `"седмы"`;
 
-exports[`Russian multirator should convert segda, segdy: segda, segdy 1`] = `"сегда, сегды"`;
+exports[`Russian multirator should convert segda: segda 1`] = `"сегда"`;
 
-exports[`Russian multirator should convert segdašnji, segdašny: segdašnji, segdašny 1`] = `"сегдашни, сегдашный; сегдашньи, сегдашный; сегдашнъи, сегдашный; сегдашни, сегдашний; сегдашньи, сегдашний; сегдашнъи, сегдашний"`;
+exports[`Russian multirator should convert segdašnji: segdašnji 1`] = `"сегдашни; сегдашньи; сегдашний"`;
 
 exports[`Russian multirator should convert segment: segment 1`] = `"сегмент"`;
 
@@ -26678,7 +26678,7 @@ exports[`Russian multirator should convert seliky: seliky 1`] = `"селикый
 
 exports[`Russian multirator should convert seliti sę: seliti sę 1`] = `"селиться"`;
 
-exports[`Russian multirator should convert seljan, seljanin: seljan, seljanin 1`] = `"селян, селянин; сельян, сельянин; селъян, селъянин"`;
+exports[`Russian multirator should convert seljan: seljan 1`] = `"селян; сельян; селъян"`;
 
 exports[`Russian multirator should convert seljanka: seljanka 1`] = `"селянка; сельянка; селъянка"`;
 
@@ -27040,7 +27040,7 @@ exports[`Russian multirator should convert skorpion: skorpion 1`] = `"скорп
 
 exports[`Russian multirator should convert skory: skory 1`] = `"скорый; скорий"`;
 
-exports[`Russian multirator should convert skorěje abo/ili pozdněje: skorěje abo/ili pozdněje 1`] = `"скорее або/или позднее; скореие або/или позднеие; скорее або/или позденее; скореие або/или позденеие"`;
+exports[`Russian multirator should convert skorěje abo pozdněje: skorěje abo pozdněje 1`] = `"скорее або позднее; скореие або позднеие; скорее або позденее; скореие або позденеие"`;
 
 exports[`Russian multirator should convert skorěje: skorěje 1`] = `"скорее; скореие"`;
 
@@ -27590,7 +27590,7 @@ exports[`Russian multirator should convert sobstvenosť: sobstvenosť 1`] = `"с
 
 exports[`Russian multirator should convert sobstveny: sobstveny 1`] = `"собственый; собствений"`;
 
-exports[`Russian multirator should convert sobě, si: sobě, si 1`] = `"собе, си"`;
+exports[`Russian multirator should convert sobě: sobě 1`] = `"собе"`;
 
 exports[`Russian multirator should convert socialist: socialist 1`] = `"социалист"`;
 
@@ -27974,9 +27974,9 @@ exports[`Russian multirator should convert srědnjevěčny: srědnjevěčny 1`] 
 
 exports[`Russian multirator should convert srědnji rod: srědnji rod 1`] = `"средни род; средньи род; средний род; середни род; середньи род; середний род"`;
 
-exports[`Russian multirator should convert srědnji, srědny: srědnji, srědny 1`] = `"средни, средный; средньи, средный; среднъи, средный; средни, средний; средньи, средний; среднъи, средний; середни, середный; середньи, середный; середнъи, середный; середни, середний; середньи, середний; середнъи, середний"`;
+exports[`Russian multirator should convert srědnji: srědnji 1`] = `"средни; средньи; средний; середни; середньи; середний"`;
 
-exports[`Russian multirator should convert srědnji, srědny: srědnji, srědny 2`] = `"средни, средный; средньи, средный; среднъи, средный; средни, средний; средньи, средний; среднъи, средний; середни, середный; середньи, середный; середнъи, середный; середни, середний; середньи, середний; середнъи, середний"`;
+exports[`Russian multirator should convert srědnji: srědnji 2`] = `"средни; средньи; средний; середни; середньи; середний"`;
 
 exports[`Russian multirator should convert srědoběžny: srědoběžny 1`] = `"средобежный; средобежний; середобежный; середобежний"`;
 
@@ -28078,7 +28078,7 @@ exports[`Russian multirator should convert startovati: startovati 1`] = `"ста
 
 exports[`Russian multirator should convert stary: stary 1`] = `"старый; старий"`;
 
-exports[`Russian multirator should convert starějši, starši: starějši, starši 1`] = `"старейши, старши"`;
+exports[`Russian multirator should convert starějši: starějši 1`] = `"старейши"`;
 
 exports[`Russian multirator should convert starěti: starěti 1`] = `"стареть"`;
 
@@ -28164,7 +28164,7 @@ exports[`Russian multirator should convert stih: stih 1`] = `"стих"`;
 
 exports[`Russian multirator should convert stihija: stihija 1`] = `"стихия"`;
 
-exports[`Russian multirator should convert stil, stilj: stil, stilj 1`] = `"стил, стиль"`;
+exports[`Russian multirator should convert stil: stil 1`] = `"стил"`;
 
 exports[`Russian multirator should convert stimul: stimul 1`] = `"стимул"`;
 
@@ -28412,7 +28412,7 @@ exports[`Russian multirator should convert studiti: studiti 1`] = `"студит
 
 exports[`Russian multirator should convert studnja: studnja 1`] = `"студня; студнья; студнъя"`;
 
-exports[`Russian multirator should convert stukati do/na/v dveri: stukati do/na/v dveri 1`] = `"стукать до/на/в двери"`;
+exports[`Russian multirator should convert stukati do dveri: stukati do dveri 1`] = `"стукать до двери"`;
 
 exports[`Russian multirator should convert stukati: stukati 1`] = `"стукать"`;
 
@@ -28922,7 +28922,7 @@ exports[`Russian multirator should convert sěť: sěť 1`] = `"сеть"`;
 
 exports[`Russian multirator should convert sŕbohrvatsky: sŕbohrvatsky 1`] = `"србохрватскый; србохрватский; срьбохрватскый; срьбохрватский"`;
 
-exports[`Russian multirator should convert sŕbolužičan, sŕbolužičanin: sŕbolužičan, sŕbolužičanin 1`] = `"срболужичан, срболужичанин; срьболужичан, срьболужичанин"`;
+exports[`Russian multirator should convert sŕbolužičan: sŕbolužičan 1`] = `"срболужичан; срьболужичан"`;
 
 exports[`Russian multirator should convert sŕbolužičsky: sŕbolužičsky 1`] = `"срболужическый; срболужический; срьболужическый; срьболужический"`;
 
@@ -29136,21 +29136,21 @@ exports[`Russian multirator should convert sȯdŕživati: sȯdŕživati 2`] = `"
 
 exports[`Russian multirator should convert sȯdŕžnik: sȯdŕžnik 1`] = `"содржник; седржник; содрьжник; седрьжник"`;
 
-exports[`Russian multirator should convert sȯglašati sę, sųglašati sę: sȯglašati sę, sųglašati sę 1`] = `"соглашать ся, соглашаться; сеглашать ся, соглашаться; соглашать ся, суглашаться; сеглашать ся, суглашаться; соглашать се, соглашаться; сеглашать се, соглашаться; соглашать се, суглашаться; сеглашать се, суглашаться; соглашать са, соглашаться; сеглашать са, соглашаться; соглашать са, суглашаться; сеглашать са, суглашаться"`;
+exports[`Russian multirator should convert sȯglašati sę: sȯglašati sę 1`] = `"соглашаться; сеглашаться"`;
 
-exports[`Russian multirator should convert sȯglåsiti sę, sųglåsiti sę: sȯglåsiti sę, sųglåsiti sę 1`] = `"согласить ся, согласиться; сегласить ся, согласиться; согласить ся, сугласиться; сегласить ся, сугласиться; согласить се, согласиться; сегласить се, согласиться; согласить се, сугласиться; сегласить се, сугласиться; согласить са, согласиться; сегласить са, согласиться; согласить са, сугласиться; сегласить са, сугласиться; соголосить ся, соголоситься; сеголосить ся, соголоситься; соголосить ся, суголоситься; сеголосить ся, суголоситься; соголосить се, соголоситься; сеголосить се, соголоситься; соголосить се, суголоситься; сеголосить се, суголоситься; соголосить са, соголоситься; сеголосить са, соголоситься; соголосить са, суголоситься; сеголосить са, суголоситься"`;
+exports[`Russian multirator should convert sȯglåsiti sę: sȯglåsiti sę 1`] = `"согласиться; сегласиться; соголоситься; сеголоситься"`;
 
-exports[`Russian multirator should convert sȯglåska, sųglåska: sȯglåska, sųglåska 1`] = `"согласка, согласка; сегласка, согласка; согласка, сугласка; сегласка, сугласка; соголоска, соголоска; сеголоска, соголоска; соголоска, суголоска; сеголоска, суголоска"`;
+exports[`Russian multirator should convert sȯglåska: sȯglåska 1`] = `"согласка; сегласка; соголоска; сеголоска"`;
 
-exports[`Russian multirator should convert sȯglåsno, sųglåsno: sȯglåsno, sųglåsno 1`] = `"согласно, согласно; сегласно, согласно; согласно, сугласно; сегласно, сугласно; соголосно, соголосно; сеголосно, соголосно; соголосно, суголосно; сеголосно, суголосно"`;
+exports[`Russian multirator should convert sȯglåsno: sȯglåsno 1`] = `"согласно; сегласно; соголосно; сеголосно"`;
 
-exports[`Russian multirator should convert sȯglåsnosť, sųglåsnosť: sȯglåsnosť, sųglåsnosť 1`] = `"согласность, согласность; сегласность, согласность; согласность, сугласность; сегласность, сугласность; соголосность, соголосность; сеголосность, соголосность; соголосность, суголосность; сеголосность, суголосность"`;
+exports[`Russian multirator should convert sȯglåsnosť: sȯglåsnosť 1`] = `"согласность; сегласность; соголосность; сеголосность"`;
 
-exports[`Russian multirator should convert sȯglåsny, sųglåsny: sȯglåsny, sųglåsny 1`] = `"согласны, согласный; согласны, согласний; сегласны, согласный; сегласны, согласний; согласны, сугласный; согласны, сугласний; сегласны, сугласный; сегласны, сугласний; соголосны, соголосный; соголосны, соголосний; сеголосны, соголосный; сеголосны, соголосний; соголосны, суголосный; соголосны, суголосний; сеголосны, суголосный; сеголосны, суголосний"`;
+exports[`Russian multirator should convert sȯglåsny: sȯglåsny 1`] = `"согласный; согласний; сегласный; сегласний; соголосный; соголосний; сеголосный; сеголосний"`;
 
-exports[`Russian multirator should convert sȯglåśje, sųglåśje: sȯglåśje, sųglåśje 1`] = `"согласе, согласе; согласье, согласье; согласье, согласие; согласъе, согласъе; сегласе, согласе; сегласье, согласье; сегласье, согласие; сегласъе, согласъе; согласе, сугласе; согласье, сугласье; согласье, сугласие; согласъе, сугласъе; сегласе, сугласе; сегласье, сугласье; сегласье, сугласие; сегласъе, сугласъе; согласье, согласьие; сегласье, согласьие; согласье, сугласьие; сегласье, сугласьие; соголосе, соголосе; соголосье, соголосье; соголосье, соголосие; соголосъе, соголосъе; сеголосе, соголосе; сеголосье, соголосье; сеголосье, соголосие; сеголосъе, соголосъе; соголосе, суголосе; соголосье, суголосье; соголосье, суголосие; соголосъе, суголосъе; сеголосе, суголосе; сеголосье, суголосье; сеголосье, суголосие; сеголосъе, суголосъе; соголосье, соголосьие; сеголосье, соголосьие; соголосье, суголосьие; сеголосье, суголосьие"`;
+exports[`Russian multirator should convert sȯglåśje: sȯglåśje 1`] = `"согласе; согласье; согласие; согласъе; сегласе; сегласье; сегласие; сегласъе; согласьие; сегласьие; соголосе; соголосье; соголосие; соголосъе; сеголосе; сеголосье; сеголосие; сеголосъе; соголосьие; сеголосьие"`;
 
-exports[`Russian multirator should convert sȯglåšeńje, sųglåšeńje: sȯglåšeńje, sųglåšeńje 1`] = `"соглашене, соглашене; соглашенье, соглашенье; соглашенье, соглашение; соглашенъе, соглашенье; сеглашене, соглашене; сеглашенье, соглашенье; сеглашенье, соглашение; сеглашенъе, соглашенье; соглашене, суглашене; соглашенье, суглашенье; соглашенье, суглашение; соглашенъе, суглашенье; сеглашене, суглашене; сеглашенье, суглашенье; сеглашенье, суглашение; сеглашенъе, суглашенье; соглашенье, соглашеньие; сеглашенье, соглашеньие; соглашенье, суглашеньие; сеглашенье, суглашеньие; соголошене, соголошене; соголошенье, соголошенье; соголошенье, соголошение; соголошенъе, соголошенье; сеголошене, соголошене; сеголошенье, соголошенье; сеголошенье, соголошение; сеголошенъе, соголошенье; соголошене, суголошене; соголошенье, суголошенье; соголошенье, суголошение; соголошенъе, суголошенье; сеголошене, суголошене; сеголошенье, суголошенье; сеголошенье, суголошение; сеголошенъе, суголошенье; соголошенье, соголошеньие; сеголошенье, соголошеньие; соголошенье, суголошеньие; сеголошенье, суголошеньие"`;
+exports[`Russian multirator should convert sȯglåšeńje: sȯglåšeńje 1`] = `"соглашене; соглашенье; соглашение; сеглашене; сеглашенье; сеглашение; соглашеньие; сеглашеньие; соголошене; соголошенье; соголошение; сеголошене; сеголошенье; сеголошение; соголошеньие; сеголошеньие"`;
 
 exports[`Russian multirator should convert sȯhnųti: sȯhnųti 1`] = `"сохноть; сехноть; сохнуть; сехнуть"`;
 
@@ -29188,9 +29188,9 @@ exports[`Russian multirator should convert sȯobčeńje: sȯobčeńje 1`] = `"с
 
 exports[`Russian multirator should convert sȯobčiti: sȯobčiti 1`] = `"сообчить; сеобчить"`;
 
-exports[`Russian multirator should convert sȯočati sę s, sųočati sę s: sȯočati sę s, sųočati sę s 1`] = `"соочаться с, соочаться с; сеочаться с, соочаться с; соочаться с, суочаться с; сеочаться с, суочаться с"`;
+exports[`Russian multirator should convert sȯočati sę s: sȯočati sę s 1`] = `"соочаться с; сеочаться с"`;
 
-exports[`Russian multirator should convert sȯočiti sę s, sųočiti sę s: sȯočiti sę s, sųočiti sę s 1`] = `"соочиться с, соочиться с; сеочиться с, соочиться с; соочиться с, суочиться с; сеочиться с, суочиться с"`;
+exports[`Russian multirator should convert sȯočiti sę s: sȯočiti sę s 1`] = `"соочиться с; сеочиться с"`;
 
 exports[`Russian multirator should convert sȯsati: sȯsati 1`] = `"сосать; сесать"`;
 
@@ -29214,7 +29214,7 @@ exports[`Russian multirator should convert sȯstojati sę iz: sȯstojati sę iz 
 
 exports[`Russian multirator should convert sȯtina: sȯtina 1`] = `"сотина; сетина"`;
 
-exports[`Russian multirator should convert sȯtka, sȯtnja: sȯtka, sȯtnja 1`] = `"сотка, сотня; сотка, сотнья; сотка, сотнъя; сетка, сетня; сетка, сетнья; сетка, сетнъя"`;
+exports[`Russian multirator should convert sȯtka: sȯtka 1`] = `"сотка; сетка"`;
 
 exports[`Russian multirator should convert sȯtkati: sȯtkati 1`] = `"соткать; сеткать"`;
 
@@ -29244,7 +29244,7 @@ exports[`Russian multirator should convert sȯvrěmennosť: sȯvrěmennosť 1`] 
 
 exports[`Russian multirator should convert sȯvrěmenny: sȯvrěmenny 1`] = `"современный; современний; севременный; севременний; совеременный; совеременний; севеременный; севеременний"`;
 
-exports[`Russian multirator should convert sȯvsěm, sȯvsim: sȯvsěm, sȯvsim 1`] = `"совсем, совсим; севсем, севсим; совесем, совсим; севесем, севсим"`;
+exports[`Russian multirator should convert sȯvsěm: sȯvsěm 1`] = `"совсем; севсем; совесем; севесем"`;
 
 exports[`Russian multirator should convert sȯvět: sȯvět 1`] = `"совет; севет"`;
 
@@ -29296,7 +29296,7 @@ exports[`Russian multirator should convert tabor: tabor 1`] = `"табор"`;
 
 exports[`Russian multirator should convert tabu: tabu 1`] = `"табу"`;
 
-exports[`Russian multirator should convert tadžičsky, tadžiksky: tadžičsky, tadžiksky 1`] = `"таджическы, таджикскый; таджическы, таджикский"`;
+exports[`Russian multirator should convert tadžičsky: tadžičsky 1`] = `"таджическый; таджический"`;
 
 exports[`Russian multirator should convert tajati: tajati 1`] = `"таять"`;
 
@@ -29336,7 +29336,7 @@ exports[`Russian multirator should convert tajny: tajny 1`] = `"тайный; т
 
 exports[`Russian multirator should convert tajsky: tajsky 1`] = `"тайскый; тайский"`;
 
-exports[`Russian multirator should convert tak, tako: tak, tako 1`] = `"так, тако"`;
+exports[`Russian multirator should convert tak: tak 1`] = `"так"`;
 
 exports[`Russian multirator should convert tako ... onako: tako ... onako 1`] = `"тако ... онако"`;
 
@@ -29924,7 +29924,7 @@ exports[`Russian multirator should convert triceratops: triceratops 1`] = `"тр
 
 exports[`Russian multirator should convert tridesęty: tridesęty 1`] = `"тридесяты; тридесеты; тридесаты"`;
 
-exports[`Russian multirator should convert tridesęť, tridesęti: tridesęť, tridesęti 1`] = `"тридесять, тридесяти; тридесеть, тридесети; тридесать, тридесати"`;
+exports[`Russian multirator should convert tridesęť: tridesęť 1`] = `"тридесять; тридесеть; тридесать"`;
 
 exports[`Russian multirator should convert trik: trik 1`] = `"трик"`;
 
@@ -29946,7 +29946,7 @@ exports[`Russian multirator should convert trinadsęty: trinadsęty 1`] = `"тр
 
 exports[`Russian multirator should convert trinadsęť: trinadsęť 1`] = `"тринадсять; тринадсеть; тринадсать"`;
 
-exports[`Russian multirator should convert trista, tristo: trista, tristo 1`] = `"триста, тристо"`;
+exports[`Russian multirator should convert trista: trista 1`] = `"триста"`;
 
 exports[`Russian multirator should convert triumfaľny lųk: triumfaľny lųk 1`] = `"триумфалны лок; триумфалны лук; триумфальны лок; триумфальны лук"`;
 
@@ -29964,7 +29964,7 @@ exports[`Russian multirator should convert trofej: trofej 1`] = `"трофей"`
 
 exports[`Russian multirator should convert troha: troha 1`] = `"троха"`;
 
-exports[`Russian multirator should convert trohy, trohų: trohy, trohų 1`] = `"трохы, трохо; трохы, троху"`;
+exports[`Russian multirator should convert trohy: trohy 1`] = `"трохы"`;
 
 exports[`Russian multirator should convert trojaky: trojaky 1`] = `"троякы"`;
 
@@ -30124,7 +30124,7 @@ exports[`Russian multirator should convert tvorec: tvorec 1`] = `"творец"`
 
 exports[`Russian multirator should convert tvoritelj: tvoritelj 1`] = `"творитель"`;
 
-exports[`Russian multirator should convert tvoriteljnik, tvoriteljny padež: tvoriteljnik, tvoriteljny padež 1`] = `"творительник, творительны падеж"`;
+exports[`Russian multirator should convert tvoriteljnik: tvoriteljnik 1`] = `"творительник"`;
 
 exports[`Russian multirator should convert tvoriti: tvoriti 1`] = `"творить"`;
 
@@ -30294,7 +30294,7 @@ exports[`Russian multirator should convert tųžiti sę: tųžiti sę 1`] = `"т
 
 exports[`Russian multirator should convert tųžiti: tųžiti 1`] = `"тожить; тужить"`;
 
-exports[`Russian multirator should convert tȯgda, tȯgdy: tȯgda, tȯgdy 1`] = `"тогда, тогды; тегда, тегды"`;
+exports[`Russian multirator should convert tȯgda: tȯgda 1`] = `"тогда; тегда"`;
 
 exports[`Russian multirator should convert tȯlkti: tȯlkti 1`] = `"толчь; телчь"`;
 
@@ -30472,15 +30472,15 @@ exports[`Russian multirator should convert ugryzti: ugryzti 1`] = `"угрызт
 
 exports[`Russian multirator should convert uhađati za: uhađati za 1`] = `"ухаджать за; ухаждать за; ухадать за; ухажать за"`;
 
-exports[`Russian multirator should convert uho, uško [@]: uho, uško [@] 1`] = `"ухо, ушко [@]"`;
-
 exports[`Russian multirator should convert uho: uho 1`] = `"ухо"`;
+
+exports[`Russian multirator should convert uho: uho 2`] = `"ухо"`;
 
 exports[`Russian multirator should convert uhoditi: uhoditi 1`] = `"уходить"`;
 
 exports[`Russian multirator should convert uhovŕtka: uhovŕtka 1`] = `"уховртка; уховрьтка"`;
 
-exports[`Russian multirator should convert uj, ujec: uj, ujec 1`] = `"уй, уец"`;
+exports[`Russian multirator should convert uj: uj 1`] = `"уй"`;
 
 exports[`Russian multirator should convert ujdti: ujdti 1`] = `"уйдть"`;
 
@@ -31072,7 +31072,7 @@ exports[`Russian multirator should convert utraćeny: utraćeny 1`] = `"утра
 
 exports[`Russian multirator should convert utreti: utreti 1`] = `"утреть"`;
 
-exports[`Russian multirator should convert utrišnji, utrišny: utrišnji, utrišny 1`] = `"утришни, утришный; утришньи, утришный; утришнъи, утришный; утришни, утришний; утришньи, утришний; утришнъи, утришний"`;
+exports[`Russian multirator should convert utrišnji: utrišnji 1`] = `"утришни; утришньи; утришний"`;
 
 exports[`Russian multirator should convert utro: utro 1`] = `"утро"`;
 
@@ -31188,7 +31188,7 @@ exports[`Russian multirator should convert uvěrjenosť: uvěrjenosť 1`] = `"у
 
 exports[`Russian multirator should convert uvěrjeny: uvěrjeny 1`] = `"увереный; уверьеный; уверъеный; уверений; уверьений; уверъений"`;
 
-exports[`Russian multirator should convert uzbečsky, uzbeksky: uzbečsky, uzbeksky 1`] = `"узбеческы, узбекскый; узбеческы, узбекский"`;
+exports[`Russian multirator should convert uzbečsky: uzbečsky 1`] = `"узбеческый; узбеческий"`;
 
 exports[`Russian multirator should convert uzda: uzda 1`] = `"узда"`;
 
@@ -31266,7 +31266,7 @@ exports[`Russian multirator should convert uši: uši 1`] = `"уши"`;
 
 exports[`Russian multirator should convert už ne: už ne 1`] = `"уж не"`;
 
-exports[`Russian multirator should convert už, uže: už, uže 1`] = `"уж, уже"`;
+exports[`Russian multirator should convert už: už 1`] = `"уж"`;
 
 exports[`Russian multirator should convert užas: užas 1`] = `"ужас"`;
 
@@ -31334,9 +31334,9 @@ exports[`Russian multirator should convert v zaměn: v zaměn 1`] = `"в зам�
 
 exports[`Russian multirator should convert v času: v času 1`] = `"в часу"`;
 
-exports[`Russian multirator should convert v, vo: v, vo 1`] = `"в, во"`;
+exports[`Russian multirator should convert v: v 1`] = `"в"`;
 
-exports[`Russian multirator should convert v, vo: v, vo 2`] = `"в, во"`;
+exports[`Russian multirator should convert v: v 2`] = `"в"`;
 
 exports[`Russian multirator should convert vabik: vabik 1`] = `"вабик"`;
 
@@ -31504,7 +31504,7 @@ exports[`Russian multirator should convert vděvati niť v iglų: vděvati niť 
 
 exports[`Russian multirator should convert vdȯhnųti: vdȯhnųti 1`] = `"вдохноть; вдехноть; вдохнуть; вдехнуть"`;
 
-exports[`Russian multirator should convert veb-sajt, vebsajt: veb-sajt, vebsajt 1`] = `"веб-сайт, вебсайт"`;
+exports[`Russian multirator should convert veb-sajt: veb-sajt 1`] = `"веб-сайт"`;
 
 exports[`Russian multirator should convert veb-strånica: veb-strånica 1`] = `"веб-страница; веб-стороница"`;
 
@@ -31636,7 +31636,7 @@ exports[`Russian multirator should convert vermut: vermut 1`] = `"вермут"`
 
 exports[`Russian multirator should convert vernisaž: vernisaž 1`] = `"вернисаж"`;
 
-exports[`Russian multirator should convert versija, verzija: versija, verzija 1`] = `"версия, верзия"`;
+exports[`Russian multirator should convert versija: versija 1`] = `"версия"`;
 
 exports[`Russian multirator should convert versta: versta 1`] = `"верста"`;
 
@@ -31796,7 +31796,7 @@ exports[`Russian multirator should convert vina: vina 1`] = `"вина"`;
 
 exports[`Russian multirator should convert vinegret: vinegret 1`] = `"винегрет"`;
 
-exports[`Russian multirator should convert viniteljnik, viniteljny padež: viniteljnik, viniteljny padež 1`] = `"винительник, винительны падеж"`;
+exports[`Russian multirator should convert viniteljnik: viniteljnik 1`] = `"винительник"`;
 
 exports[`Russian multirator should convert viniti za: viniti za 1`] = `"винить за"`;
 
@@ -31814,7 +31814,7 @@ exports[`Russian multirator should convert vino: vino 1`] = `"вино"`;
 
 exports[`Russian multirator should convert vinobrańje: vinobrańje 1`] = `"винобране; винобранье; винобрание; винобраньие"`;
 
-exports[`Russian multirator should convert vinogråd, vinogrådnik: vinogråd, vinogrådnik 1`] = `"виноград, виноградник; виногород, виногородник"`;
+exports[`Russian multirator should convert vinogråd: vinogråd 1`] = `"виноград; виногород"`;
 
 exports[`Russian multirator should convert vinogrådny: vinogrådny 1`] = `"виноградный; виноградний; виногородный; виногородний"`;
 
@@ -31956,21 +31956,21 @@ exports[`Russian multirator should convert vlada: vlada 1`] = `"влада"`;
 
 exports[`Russian multirator should convert vlada: vlada 2`] = `"влада"`;
 
-exports[`Russian multirator should convert vladati, vlåděti: vladati, vlåděti 1`] = `"владати, владеть; владати, володеть"`;
+exports[`Russian multirator should convert vladati: vladati 1`] = `"владать"`;
 
-exports[`Russian multirator should convert vladati, vlåděti: vladati, vlåděti 2`] = `"владати, владеть; владати, володеть"`;
+exports[`Russian multirator should convert vladati: vladati 2`] = `"владать"`;
 
-exports[`Russian multirator should convert vladati, vlåděti: vladati, vlåděti 3`] = `"владати, владеть; владати, володеть"`;
+exports[`Russian multirator should convert vladati: vladati 3`] = `"владать"`;
 
-exports[`Russian multirator should convert vladati, vlåděti: vladati, vlåděti 4`] = `"владати, владеть; владати, володеть"`;
+exports[`Russian multirator should convert vladati: vladati 4`] = `"владать"`;
 
-exports[`Russian multirator should convert vladati, vlåděti: vladati, vlåděti 5`] = `"владати, владеть; владати, володеть"`;
+exports[`Russian multirator should convert vladati: vladati 5`] = `"владать"`;
 
-exports[`Russian multirator should convert vladati, vlåděti: vladati, vlåděti 6`] = `"владати, владеть; владати, володеть"`;
+exports[`Russian multirator should convert vladati: vladati 6`] = `"владать"`;
 
-exports[`Russian multirator should convert vladati, vlåděti: vladati, vlåděti 7`] = `"владати, владеть; владати, володеть"`;
+exports[`Russian multirator should convert vladati: vladati 7`] = `"владать"`;
 
-exports[`Russian multirator should convert vladati, vlåděti: vladati, vlåděti 8`] = `"владати, владеть; владати, володеть"`;
+exports[`Russian multirator should convert vladati: vladati 8`] = `"владать"`;
 
 exports[`Russian multirator should convert vladaŕ: vladaŕ 1`] = `"владар; владарь"`;
 
@@ -32098,13 +32098,13 @@ exports[`Russian multirator should convert vně: vně 2`] = `"вне"`;
 
 exports[`Russian multirator should convert vnězemny: vnězemny 1`] = `"внеземный; внеземний; венеземный; венеземний"`;
 
-exports[`Russian multirator should convert vněšnji, vněšny: vněšnji, vněšny 1`] = `"внешни, внешный; внешньи, внешный; внешнъи, внешный; внешни, внешний; внешньи, внешний; внешнъи, внешний; венешни, венешный; венешньи, венешный; венешнъи, венешный; венешни, венешний; венешньи, венешний; венешнъи, венешний"`;
+exports[`Russian multirator should convert vněšnji: vněšnji 1`] = `"внешни; внешньи; внешний; венешни; венешньи; венешний"`;
 
 exports[`Russian multirator should convert vnųtri: vnųtri 1`] = `"внотри; внутри"`;
 
 exports[`Russian multirator should convert vnųtri: vnųtri 2`] = `"внотри; внутри"`;
 
-exports[`Russian multirator should convert vnųtrišnji, vnųtrišny: vnųtrišnji, vnųtrišny 1`] = `"внотришни, внотришный; внотришньи, внотришный; внотришнъи, внотришный; внотришни, внотришний; внотришньи, внотришний; внотришнъи, внотришний; внутришни, внутришный; внутришньи, внутришный; внутришнъи, внутришный; внутришни, внутришний; внутришньи, внутришний; внутришнъи, внутришний"`;
+exports[`Russian multirator should convert vnųtrišnji: vnųtrišnji 1`] = `"внотришни; внотришньи; внотришний; внутришни; внутришньи; внутришний"`;
 
 exports[`Russian multirator should convert vnųtrna valuta: vnųtrna valuta 1`] = `"внотрна валута; внутрна валута"`;
 
@@ -32330,7 +32330,7 @@ exports[`Russian multirator should convert vprěd: vprěd 1`] = `"впред; в
 
 exports[`Russian multirator should convert vpŕvo: vpŕvo 1`] = `"впрво; впрьво"`;
 
-exports[`Russian multirator should convert vpȯlně, vpȯlno: vpȯlně, vpȯlno 1`] = `"вполне, вполно; впелне, впелно; вполене, вполно; впелене, впелно"`;
+exports[`Russian multirator should convert vpȯlně: vpȯlně 1`] = `"вполне; впелне"`;
 
 exports[`Russian multirator should convert vraćati sę: vraćati sę 1`] = `"врачаться; врацаться; вращаться"`;
 
@@ -32434,7 +32434,7 @@ exports[`Russian multirator should convert vse: vse 1`] = `"все"`;
 
 exports[`Russian multirator should convert vse: vse 2`] = `"все"`;
 
-exports[`Russian multirator should convert vsegda, vsegdy: vsegda, vsegdy 1`] = `"всегда, всегды"`;
+exports[`Russian multirator should convert vsegda: vsegda 1`] = `"всегда"`;
 
 exports[`Russian multirator should convert vsejed: vsejed 1`] = `"всеед"`;
 
@@ -32542,7 +32542,7 @@ exports[`Russian multirator should convert vtęgnųti: vtęgnųti 1`] = `"втя
 
 exports[`Russian multirator should convert vtěljeńje: vtěljeńje 1`] = `"втелене; втельенье; втельение; втелъенье; втеленье; втеление; втельеньие; ветелене; ветельенье; ветельение; ветелъенье; ветеленье; ветеление; ветельеньие"`;
 
-exports[`Russian multirator should convert vtȯgda, vtȯgdy: vtȯgda, vtȯgdy 1`] = `"втогда, втогды; втегда, втегды"`;
+exports[`Russian multirator should convert vtȯgda: vtȯgda 1`] = `"втогда; втегда"`;
 
 exports[`Russian multirator should convert vualj: vualj 1`] = `"вуаль"`;
 
@@ -32702,7 +32702,7 @@ exports[`Russian multirator should convert včasny: včasny 1`] = `"вчасны
 
 exports[`Russian multirator should convert včera: včera 1`] = `"вчера"`;
 
-exports[`Russian multirator should convert včerašnji, včerašny: včerašnji, včerašny 1`] = `"вчерашни, вчерашный; вчерашньи, вчерашный; вчерашнъи, вчерашный; вчерашни, вчерашний; вчерашньи, вчерашний; вчерашнъи, вчерашний"`;
+exports[`Russian multirator should convert včerašnji: včerašnji 1`] = `"вчерашни; вчерашньи; вчерашний"`;
 
 exports[`Russian multirator should convert včleniti: včleniti 1`] = `"вчленить"`;
 
@@ -32912,13 +32912,13 @@ exports[`Russian multirator should convert vŕša: vŕša 1`] = `"врша; вр
 
 exports[`Russian multirator should convert vśako: vśako 1`] = `"всако; всяко"`;
 
-exports[`Russian multirator should convert vśakodenno, vśakodnevno: vśakodenno, vśakodnevno 1`] = `"всакоденно, всакодневно; всякоденно, всякодневно"`;
+exports[`Russian multirator should convert vśakodenno: vśakodenno 1`] = `"всакоденно; всякоденно"`;
 
-exports[`Russian multirator should convert vśakodenny, vśakodnevny: vśakodenny, vśakodnevny 1`] = `"всакоденны, всакодневный; всакоденны, всакодневний; всякоденны, всякодневный; всякоденны, всякодневний"`;
+exports[`Russian multirator should convert vśakodenny: vśakodenny 1`] = `"всакоденный; всакоденний; всякоденный; всякоденний"`;
 
 exports[`Russian multirator should convert vśakogodišnje: vśakogodišnje 1`] = `"всакогодишне; всакогодишнье; всакогодишние; всякогодишне; всякогодишнье; всякогодишние"`;
 
-exports[`Russian multirator should convert vśakogodišnji, vśakogodišny: vśakogodišnji, vśakogodišny 1`] = `"всакогодишни, всакогодишный; всакогодишньи, всакогодишный; всакогодишнъи, всакогодишный; всакогодишни, всакогодишний; всакогодишньи, всакогодишний; всакогодишнъи, всакогодишний; всякогодишни, всякогодишный; всякогодишньи, всякогодишный; всякогодишнъи, всякогодишный; всякогодишни, всякогодишний; всякогодишньи, всякогодишний; всякогодишнъи, всякогодишний"`;
+exports[`Russian multirator should convert vśakogodišnji: vśakogodišnji 1`] = `"всакогодишни; всакогодишньи; всакогодишний; всякогодишни; всякогодишньи; всякогодишний"`;
 
 exports[`Russian multirator should convert vśakoročno: vśakoročno 1`] = `"всакорочно; всякорочно"`;
 
@@ -33390,7 +33390,7 @@ exports[`Russian multirator should convert zadnji dvor: zadnji dvor 1`] = `"за
 
 exports[`Russian multirator should convert zadnji prohod: zadnji prohod 1`] = `"задни проход; задньи проход; задний проход"`;
 
-exports[`Russian multirator should convert zadnji, zadny: zadnji, zadny 1`] = `"задни, задный; задньи, задный; заднъи, задный; задни, задний; задньи, задний; заднъи, задний"`;
+exports[`Russian multirator should convert zadnji: zadnji 1`] = `"задни; задньи; задний"`;
 
 exports[`Russian multirator should convert zadovaljati sę: zadovaljati sę 1`] = `"задоваляться; задовальяться; задовалъяться"`;
 
@@ -33502,7 +33502,7 @@ exports[`Russian multirator should convert zahvorěvati: zahvorěvati 1`] = `"з
 
 exports[`Russian multirator should convert zahvorěvańje: zahvorěvańje 1`] = `"захвореване; захвореванье; захворевание; захвореваньие"`;
 
-exports[`Russian multirator should convert zaimę, zaimennik: zaimę, zaimennik 1`] = `"заимя, заименник; заиме, заименник; заима, заименник"`;
+exports[`Russian multirator should convert zaimę: zaimę 1`] = `"заимя; заиме; заима"`;
 
 exports[`Russian multirator should convert zainteresovany: zainteresovany 1`] = `"заинтересованый; заинтересований"`;
 
@@ -34128,7 +34128,7 @@ exports[`Russian multirator should convert zatmjeńje: zatmjeńje 1`] = `"зат
 
 exports[`Russian multirator should convert zatměvati: zatměvati 1`] = `"затмевать; затемевать"`;
 
-exports[`Russian multirator should convert zato že, zatože: zato že, zatože 1`] = `"зато же, затоже"`;
+exports[`Russian multirator should convert zato že: zato že 1`] = `"зато же"`;
 
 exports[`Russian multirator should convert zato: zato 1`] = `"зато"`;
 
@@ -34184,7 +34184,7 @@ exports[`Russian multirator should convert zautraka: zautraka 1`] = `"заутр
 
 exports[`Russian multirator should convert zautrakati: zautrakati 1`] = `"заутракать"`;
 
-exports[`Russian multirator should convert zautrišnji, zautrišny: zautrišnji, zautrišny 1`] = `"заутришни, заутришный; заутришньи, заутришный; заутришнъи, заутришный; заутришни, заутришний; заутришньи, заутришний; заутришнъи, заутришний"`;
+exports[`Russian multirator should convert zautrišnji: zautrišnji 1`] = `"заутришни; заутришньи; заутришний"`;
 
 exports[`Russian multirator should convert zauvažati: zauvažati 1`] = `"зауважать"`;
 
@@ -34614,7 +34614,7 @@ exports[`Russian multirator should convert zubrova trava: zubrova trava 1`] = `"
 
 exports[`Russian multirator should convert zubrovka: zubrovka 1`] = `"зубровка"`;
 
-exports[`Russian multirator should convert zvateljnik, zvateljny padež: zvateljnik, zvateljny padež 1`] = `"звательник, звательны падеж"`;
+exports[`Russian multirator should convert zvateljnik: zvateljnik 1`] = `"звательник"`;
 
 exports[`Russian multirator should convert zvati: zvati 1`] = `"звать"`;
 
@@ -34740,7 +34740,7 @@ exports[`Russian multirator should convert Črna Gora: Črna Gora 1`] = `"чрн
 
 exports[`Russian multirator should convert Črno morje: Črno morje 1`] = `"чрно море"`;
 
-exports[`Russian multirator should convert Črnogorjan, Črnogorjanin: Črnogorjan, Črnogorjanin 1`] = `"чрногорян, чрногорянин; чрногорьян, чрногорьянин; чрногоръян, чрногоръянин"`;
+exports[`Russian multirator should convert Črnogorjan: Črnogorjan 1`] = `"чрногорян; чрногорьян; чрногоръян"`;
 
 exports[`Russian multirator should convert Črvena Armija: Črvena Armija 1`] = `"чрвена армия"`;
 
@@ -34908,7 +34908,7 @@ exports[`Russian multirator should convert četyri: četyri 1`] = `"четыри
 
 exports[`Russian multirator should convert četyridesęty: četyridesęty 1`] = `"четыридесяты; четыридесеты; четыридесаты"`;
 
-exports[`Russian multirator should convert četyridesęť, četyridesęti: četyridesęť, četyridesęti 1`] = `"четыридесять, четыридесяти; четыридесеть, четыридесети; четыридесать, четыридесати"`;
+exports[`Russian multirator should convert četyridesęť: četyridesęť 1`] = `"четыридесять; четыридесеть; четыридесать"`;
 
 exports[`Russian multirator should convert četyrikråtno: četyrikråtno 1`] = `"четырикратно; четырикоротно"`;
 
@@ -34916,7 +34916,7 @@ exports[`Russian multirator should convert četyrinadsęty: četyrinadsęty 1`] 
 
 exports[`Russian multirator should convert četyrinadsęť: četyrinadsęť 1`] = `"четыринадсять; четыринадсеть; четыринадсать"`;
 
-exports[`Russian multirator should convert četyrista, četyristo: četyrista, četyristo 1`] = `"четыриста, четыристо"`;
+exports[`Russian multirator should convert četyrista: četyrista 1`] = `"четыриста"`;
 
 exports[`Russian multirator should convert četyrivųgȯľnik: četyrivųgȯľnik 1`] = `"четыривоголник; четыривогелник; четыривуголник; четыривугелник; четыривогольник; четыривогельник; четыривугольник; четыривугельник"`;
 
@@ -35282,9 +35282,9 @@ exports[`Russian multirator should convert šahta: šahta 1`] = `"шахта"`;
 
 exports[`Russian multirator should convert šahy: šahy 1`] = `"шахы"`;
 
-exports[`Russian multirator should convert šal, šalik: šal, šalik 1`] = `"шал, шалик"`;
-
 exports[`Russian multirator should convert šal: šal 1`] = `"шал"`;
+
+exports[`Russian multirator should convert šal: šal 2`] = `"шал"`;
 
 exports[`Russian multirator should convert šalěti: šalěti 1`] = `"шалеть"`;
 
@@ -35356,7 +35356,7 @@ exports[`Russian multirator should convert šesťdesęt: šesťdesęt 1`] = `"ш
 
 exports[`Russian multirator should convert šesťdesęty: šesťdesęty 1`] = `"шестьдесяты; шестьдесеты; шестьдесаты"`;
 
-exports[`Russian multirator should convert šesťsȯt, šesťsto: šesťsȯt, šesťsto 1`] = `"шестьсот, шестьсто; шестьсет, шестьсто"`;
+exports[`Russian multirator should convert šesťsȯt: šesťsȯt 1`] = `"шестьсот; шестьсет"`;
 
 exports[`Russian multirator should convert šev: šev 1`] = `"шев"`;
 
@@ -35400,7 +35400,7 @@ exports[`Russian multirator should convert šiška: šiška 1`] = `"шишка"`
 
 exports[`Russian multirator should convert škaf: škaf 1`] = `"шкаф"`;
 
-exports[`Russian multirator should convert škala, skala: škala, skala 1`] = `"шкала, скала"`;
+exports[`Russian multirator should convert škala: škala 1`] = `"шкала"`;
 
 exports[`Russian multirator should convert škarpetka: škarpetka 1`] = `"шкарпетка"`;
 

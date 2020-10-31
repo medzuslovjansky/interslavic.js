@@ -1,19 +1,7 @@
-export type Entry = {
-  id: string;
-  lemma: string;
-  partOfSpeech: string;
-};
+import {bare} from "@interslavic/steen-utils";
 
-function split(tsv: string): Entry[] {
-  return tsv
-    .trim()
-    .split('\n')
-    .map(line => line.split('\t').map(s => s.trim()))
-    .map(([id, lemma, partOfSpeech]) => ({
-      id,
-      lemma,
-      partOfSpeech
-    } as Entry));
+function split(tsv: string) {
+  return bare.parse(tsv);
 }
 
 const data = split(`
@@ -14759,7 +14747,7 @@ const data = split(`
 22237	svědȯčstvo	n.
 21168	svědȯk	m.anim.
 12757	svědomje	n.sg.
-6219	svědomo	
+6219	svědomo	#adv.
 6217	svědomosť	f.
 6218	svědomy	adj.
 24005	svekr	m.anim.
@@ -17926,8 +17914,8 @@ const data = split(`
 9475	žuželka	f.
 `);
 
-export function getCases(nth: number, outOf: number): Entry[] {
-    return data.filter((_item, index) => {
-        return nth === (index % outOf);
-    });
+export function getCases(nth: number, outOf: number) {
+  return [...data].filter((_item, index) => {
+    return nth === (index % outOf);
+  });
 }

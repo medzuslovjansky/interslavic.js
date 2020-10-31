@@ -1,3 +1,4 @@
+import {BareRecord} from "./types/records/BareRecord";
 import {WordsRecord} from "./types/records/WordsRecord";
 import {WordsAddLangRecord} from "./types/records/WordsAddLangRecord";
 import * as parsers from './parsers';
@@ -55,3 +56,11 @@ export const wordsAddLang = new TSVParser<WordsAddLangRecord>({
   he: parsers.synset,
   da: parsers.synset,
 });
+
+export const bare = new TSVParser<BareRecord>({
+  id: parsers.id,
+  isv: parsers.synset,
+  partOfSpeech: parsers.partOfSpeech,
+});
+
+export * from './types';
