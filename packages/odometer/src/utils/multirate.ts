@@ -26,7 +26,7 @@ export class Multirator {
     }
 
     convert(str: string, pos?: string): string[] {
-        const variants = this.rules.reduce(function (variants: Set<string>, rule: MultiratorRule) {
+        const resultingVariants = this.rules.reduce(function (variants: Set<string>, rule: MultiratorRule) {
             const [predicate, search, replacements] = rule;
             if (pos && !predicate(pos)) {
                 return variants;
@@ -34,10 +34,10 @@ export class Multirator {
 
             const results = new Set<string>();
 
-            for (const str of variants) {
+            for (const variantStr of variants) {
                 for (const replacement of replacements) {
-                    const intermediates = new Set([str]);
-                    let newString = str;
+                    const intermediates = new Set([variantStr]);
+                    let newString = variantStr;
                     do {
                         newString = newString.replace(search, replacement);
                         if (intermediates.has(newString)) {
@@ -53,6 +53,6 @@ export class Multirator {
             return results;
         }, new Set<string>([str]))
 
-        return [...variants];
+        return [...resultingVariants];
     }
 }
