@@ -1,17917 +1,17918 @@
 import {bare} from "@interslavic/steen-utils";
 
 function split(tsv: string) {
-  return bare.parse(tsv);
+  return bare.parse(tsv.trim());
 }
 
 const data = split(`
-5101	a takože	conj.
-1855	a	conj.
-24020	abak	m.
-6114	abažur	m.
-35658	abdikacija	f.
-11	abdikovati	v.intr. ipf.
-35691	abeceda	f.
-24026	Abhaz	m.anim.
-6165	Abhazija	f.sg.
-36565	abhazsky	adj.
-24029	ablativ	m.
-6375	abo	conj.
-24031	abolicionist	m.anim.
-24032	abolicionizm	m.sg.
-34768	abonement	m.
-6117	abonent	m.
-6119	abonovati	v.tr. ipf.
-24038	abort	m.
-24039	abrakadabra	f.sg.
-24042	abrikos	m.
-24044	absces	m.
-24045	abscisa	f.
-15	absencija	f.sg.
-24047	absint	m.sg.
-24050	absolutizm	m.sg.
-6123	absolutno	adv.
-6120	absolutny	adj.
-24054	absorbcija	f.sg.
-19625	absorbovati	v.tr. ipf.
-24056	abstrahovati	v.tr. ipf./pf.
-19626	abstrakcija	f.
-35132	abstrakt	m.
-19627	abstraktny	adj.
-6124	absurd	m.
-35784	absurdnosť	f.
-6125	absurdny	adj.
-1986	aby	conj.
-17101	ače	conj.
-35331	ačekoli	conj.
-24065	adadžo	n.
-24067	adamovo jablȯko	n.
-24068	adaptacija	f.
-24069	adapter	m.
-24070	adaptovati	v.tr. ipf./pf.
-24071	adekvatny	adj.
-6126	adept	m.anim.
-24076	adjutant	m.anim.
-2848	administracija	f.
-17108	administrativny	adj.
-96	administrator	m.anim.
-24081	administrovati	v.tr. ipf.
-24082	admiral	m.anim.
-24084	admiraľstvo	n.
-35592	adopcija	f.
-19628	adoptovati	v.tr. ipf.
-24086	adrenalin	m.sg.
-17109	adres	m.
-248	adresa	f.
-24089	adresat	m.anim.
-4540	adresovati	v.tr. ipf.
-36739	Adriatičsko morje	n.
-24093	adventist	m.anim.
-97	advokat	m.anim.
-24096	advokatura	f.sg.
-36566	Adžarija	f.sg.
-36348	aerodinamičny	adj.
-36349	aerodinamika	f.sg.
-33084	aerodrom	m.
-3423	aeronavtičny	adj.
-3424	aeronavtika	f.sg.
-6129	aeroplan	m.
-99	aeroport	m.
-19629	afazija	f.sg.
-19630	afektivny	adj.
-35513	afera	f.
-5754	Afganistan	m.sg.
-5755	afgansky	adj.
-36756	aforizm	m.
-4743	Afrika	f.sg.
-36719	Afrikanėc	m.anim.
-36720	Afrikanka	f.
-32850	afrikansky mråvojed	m.anim.
-106	afrikansky	adj.
-24102	Afroamerikanec	m.anim.
-36283	afrodiziak	m.
-24105	agava	f.
-113	agencija	f.
-24107	agent	m.anim.
-24110	agentura	f.
-24111	agitacija	f.sg.
-24112	agitator	m.anim.
-24113	agitka	f.
-24114	agitovati	v.intr. ipf.
-35785	aglomeracija	f.
-19631	aglutinacija	f.sg.
-24116	aglutinativny	adj.
-24118	agnosticizm	m.sg.
-24119	agnostik	m.anim.
-24120	agonija	f.sg.
-24121	agonizovati	v.intr. ipf.
-24124	agrarny	adj.
-24125	agregat	m.
-24127	agresija	f.sg.
-24128	agresivny	adj.
-24129	agresor	m.anim.
-24130	agrikultura	f.sg.
-24131	agronom	m.anim.
-24132	agronomičny	adj.
-24133	agronomija	f.sg.
-24134	ah	intj.
-24135	aha	intj.
-4886	ahoj	intj.
-24136	aj	intj.
-24137	ajsberg	m.
-24138	akacija	f.
-16262	akademičsky	adj.
-4639	akademija	f.
-24141	akademik	m.anim.
-34994	akańje	n.sg.
-6130	akcent	m.
-24148	akcentovati	v.tr. ipf.
-24149	akcentuacija	f.sg.
-4951	akceptacija	f.sg.
-111	akceptovati	v.tr. ipf.
-115	akcija	f.
-2849	akcija	f.
-24152	akcioner	m.anim.
-24153	akcionerny kapital	m.sg.
-24154	akciz	m.
-24155	aklimatizacija	f.sg.
-24156	aklimatizovati	v.intr. ipf.
-6387	akne	n.sg.
-17112	ako by	conj.
-17113	ako by	conj.
-17114	ako by	conj.
-6133	ako li	conj.
-23672	ako ne	conj.
-17076	ako	conj.
-17110	ako	adv.
-32593	akolada	f.
-36472	akolada	f.
-24161	akomodacija	f.
-24163	akompanement	m.sg.
-24164	akompaniator	m.anim.
-24165	akompanovati	v.tr. ipf.
-24167	akord	m.
-24168	akordeon	m.
-24169	akr	m.
-24173	akrobat	m.anim.
-34769	akrobatika	f.sg.
-24174	akrobatka	f.
-24175	akrobatsky	adj.
-33563	aksamit	m.sg.
-33564	aksamitny	adj.
-32543	aksiaľny	adj.
-24180	aksioma	f.
-119	akt	m.
-2307	aktivist	m.anim.
-24189	aktivistka	f.
-35786	aktivitet	m.
-16921	aktivno	adv.
-5142	aktivnosť	f.
-43	aktivny	adj.
-24190	aktivovati	v.tr. ipf.
-6134	aktor	m.anim.
-24194	aktorka	f.
-36683	aktorsky	adj.
-24197	aktrisa	f.
-34899	aktualizacija	f.
-34900	aktualizovati	v.tr. ipf./pf.
-17117	aktuaľnosť	f.
-5125	aktuaľny	adj.
-20330	akula	f.
-24201	akumulacija	f.
-24202	akumulator	m.
-24203	akumulovati	v.tr. ipf.
-24204	akurat	adv.
-24205	akuratnosť	f.
-24206	akuratny	adj.
-24207	akustičny	adj.
-24208	akustika	f.
-24210	akušerka	f.
-24211	akušersky	adj.
-24212	akušerstvo	n.sg.
-24213	akut	m.
-16922	akuzativ	m.
-24216	akvamarin	m.
-24217	akvarelist	m.anim.
-24218	akvarelj	m.
-24219	akvarium	m.
-24220	akvedukt	m.
-24223	alabastr	m.
-24224	alarm	m.
-133	Albanec	m.anim.
-4732	Albanija	f.sg.
-6388	Albanka	f.
-142	albansky	adj.
-23563	albatros	m.anim.
-24248	album	m.
-134	ale	conj.
-24229	alegoričny	adj.
-5856	alegorija	f.
-24231	aleja	f.
-36743	alergičny	adj.
-36742	alergija	f.
-45	alfabet	m.
-3968	alfabetičny	adj.
-32939	alga	f.
-23490	algebra	f.sg.
-23492	algoritm	m.
-24238	alhimija	f.sg.
-24239	alhimik	m.anim.
-107	alians	m.
-24240	alibi	n.indecl.
-24241	aligator	m.anim.
-24244	alimenty	m.pl.
-24245	aliteracija	f.
-24267	aljur	m.sg.
-4647	alkohol	m.
-4648	alkoholičny	adj.
-23277	alkoholik	m.anim.
-24274	alkoholizm	m.sg.
-24253	alkov	m.
-24279	allegro	n.
-24254	almanah	m.
-24281	almaz	m.
-24282	alo	intj.
-24283	aloe	n.sg.
-15759	alpijsky	adj.
-5757	alpinist	m.anim.
-24256	alpinizm	m.sg.
-59	Alpy	f.pl.
-23443	alt	m.
-32998	alt	m.
-35767	altana, altanka	f.
-24259	alternativa	f.
-17119	alternativny	adj.
-24261	altruist	m.anim.
-24262	altruističny	adj.
-24263	altruizm	m.sg.
-22608	aluminij	m.sg.
-24265	aluminijevy	adj.
-35536	aluzija	f.
-24269	alveolarny	adj.
-5919	Alžirija	f.sg.
-35594	amater	m.anim.
-36059	ambar	m.
-127	ambasada	f.
-24290	ambicija	f.
-32530	ambiciozny	adj.
-36759	ambivalentnosť	f.
-36758	ambivalentny	adj.
-24291	ambrazura	f.
-24294	ameba	f.
-131	Amerika	f.sg.
-136	Amerikanec	m.anim.
-6400	Amerikanka	f.
-6404	Amerikanska Samoa	f.sg.
-12580	Amerikanske Děvičje Ostrovy	m.pl.
-52	amerikansky	adj.
-24296	ametist	m.
-23198	amfetamin	m.sg.
-23197	amfiteatr	m.
-19632	amin	intj.
-24298	amnestija	f.sg.
-24299	amnestovati	v.tr. ipf./pf.
-36331	amnezija	f.
-24301	amonij	m.sg.
-24302	amonijak	m.sg.
-24304	amoraľny	adj.
-24305	amortizacija	f.sg.
-3835	amortizator	m.
-24307	amortizovati	v.tr. ipf./pf.
-34096	amputacija	f.
-34095	amputovati	v.tr. ipf./pf.
-36760	amulet	m.
-32325	amunicija	f.sg.
-35336	anahroničny	adj.
-35337	anahronizm	m.
-24309	analfabet	m.anim.
-24310	analfabetizm	m.sg.
-14440	analitično	adv.
-4172	analitičny	adj.
-904	analitik	m.anim.
-4171	analiza	f.
-3969	analizovati	v.tr. ipf.
-16411	anaľny	adj.
-23209	analogičny	adj.
-23208	analogija	f.
-32110	anamneza	f.
-24311	ananas	m.
-5057	anarhija	f.sg.
-5058	anarhist	m.anim.
-23491	anarhizm	m.sg.
-23494	anatomičny	adj.
-23493	anatomija	f.sg.
-24312	Andora	f.sg.
-5718	anekdota	f.
-36190	aneksija	f.
-36191	aneksovati	v.tr. ipf./pf.
-20331	anemičny	adj.
-20332	anemija	f.sg.
-19633	anestezija	f.sg.
-36752	anestezija	f.
-229	angel	m.anim.
-24314	anglicizm	m.
-20333	Angličan, Angličanin	m.anim.
-35052	Anglija	f.sg.
-19634	anglijskojęzyčny	adj.
-23464	anglijsky rožek	m.
-2850	anglijsky	adj.
-19635	anglosaksonsky	adj.
-256	Angola	f.sg.
-36537	animacija	f.
-36700	animovany film	m.
-36798	anis	m.sg.
-3797	anketa	f.
-32722	anketa	f.
-35755	anomalija	f.
-3949	anonimny	adj.
-34753	antagonist	m.anim.
-35738	antagonizm	m.
-4898	Antarktida	f.sg.
-32494	antena	f.
-16368	anti-	prefix
-36753	antibiotik	m.
-16367	antičnosť	f.
-16369	antičny	adj.
-17120	antihrist	m.anim.
-35717	antikvariat	m.
-32493	antilopa	f.
-22629	antimon	m.sg.
-35432	antipatija	f.
-22808	antisemitizm	m.sg.
-36754	antitělo	n.
-35825	antologija	f.
-23495	antropologija	f.sg.
-4952	anulacija	f.
-37	anulovati	v.tr. ipf./pf.
-16250	anus	m.
-19636	aorist	m.
-6263	aparat	m.
-39	apelacija	f.
-15689	apelacijny sųd	m.
-15690	apelacijny	adj.
-15692	apelant	m.anim.
-60	apelovati	v.intr. ipf.
-6422	apendektomija	f.sg.
-15764	apendiks	m.
-150	apetit	m.sg.
-36574	aplikacija	f.
-15240	aplodovańje	n.sg.
-5624	aplodovati	v.tr. ipf.
-36316	apokalipsa	f.
-36315	apokaliptičny	adj.
-32728	aposteriorny	adj.
-6167	apostol	m.anim.
-32556	apostrof	m.
-4026	aprilj	m.sg.
-32727	apriorny	adj.
-35575	Arab	m.anim.
-35576	Arabka	f.
-2166	arabsky	adj.
-36413	aranževati	v.tr. ipf./pf.
-36414	aranžman	m.
-19637	arbiter	m.anim.
-36761	arbitraž	m.
-38	arcivojevoda	m.anim.
-5789	arešt	m.sg.
-122	areštovati	v.tr. ipf.
-22388	Argentina	f.sg.
-22389	argentinsky	adj.
-22614	argon	m.sg.
-19638	argument	m.
-19639	argumentacija	f.
-19640	argumentovati	v.intr. ipf.
-4382	arhaičny	adj.
-4383	arhaizm	m.
-4419	arheolog	m.anim.
-4420	arheologičny	adj.
-4418	arheologija	f.sg.
-6166	arhiepiskop	m.anim.
-36677	arhipelag	m.
-4893	arhitekt	m.anim.
-4894	arhitektura	f.sg.
-35659	arhitekturny	adj.
-35235	arhiv	m.
-35281	arhivny	adj.
-35236	arhivovati	v.tr. ipf./pf.
-5721	aristokracija	f.sg.
-5720	aristokrat	m.anim.
-5722	aristokratičny	adj.
-17124	aristokratka	f.
-21256	aritmetika	f.sg.
-17126	arka	f.
-23500	Arktičny okean	m.sg.
-5920	arktičny	adj.
-6206	Arktika	f.sg.
-5059	Armenija	f.sg.
-5060	arměnsky	adj.
-123	armija	f.
-1851	arogancija	f.sg.
-35635	arogantny	adj.
-24324	aromat	m.
-22625	arsen	m.sg.
-34	arsenal	m.
-35705	artefakt	m.
-15244	arterija	f.
-24325	artikulacija	f.
-24326	artilerija	f.sg.
-33	artist	m.anim.
-15768	artističny	adj.
-31843	as	m.
-24327	asfalt	m.sg.
-24328	asfaltobeton	m.sg.
-36762	asimetričny	adj.
-16263	asimilacija	f.sg.
-6246	asimilovati	v.tr. ipf.
-35787	asociacija	f.
-19641	aspekt	m.
-21257	asteroid	m.
-31854	astma	f.sg.
-22973	astrolog	m.anim.
-16264	astrologičny	adj.
-4895	astrologija	f.sg.
-24330	astronavt	m.anim.
-21258	astronom	m.anim.
-16265	astronomičny	adj.
-18	astronomija	f.sg.
-32	ataka	f.
-3970	atakovati	v.tr. ipf.
-23503	ateist	m.anim.
-23502	ateizm	m.sg.
-16923	atematičny	adj.
-23526	Atiny	f.pl.
-23497	Atlantičny okean	m.sg.
-35020	atlantičny	adj.
-35093	atlet	m.anim.
-35095	atletičny	adj.
-35094	atletika	f.sg.
-35084	atmosfera	f.
-4661	atom	m.
-23321	atomna bomba	f.
-23184	atrakcija	f.
-35788	atraktivny	adj.
-36065	atut	m.
-36825	au!	intj.
-36757	aura	f.
-36767	aureola	f.
-36748	autist	m.anim.
-36749	autističny	adj.
-36747	autizm	m.
-24332	avangarda	f.
-24334	avanpost	m.
-24335	avans	m.
-24337	avansovati	v.intr. ipf./pf.
-24339	avansovy	adj.
-24346	Avar	m.anim.
-5766	avarija	f.
-24348	avarijny	adj.
-3053	avgust	m.sg.
-62	aviacija	f.sg.
-17133	aviakarta	f.
-64	avialinija	f.
-24356	aviator	m.anim.
-233	avizo	n.
-36074	avokado	n.
-70	Avstralija	f.sg.
-5756	avstralijsky	adj.
-75	Avstrija	f.sg.
-35339	Avstrijec	m.anim.
-35338	avstrijsky	adj.
-22810	avtentičny	adj.
-2888	avto	n.
-24363	avtobiografičny	adj.
-24365	avtobiografija	f.
-14449	avtobomba	f.
-82	avtobus	m.
-35255	avtobusna linija	f.
-35254	avtobusna postojka	f.
-24370	avtograf	m.
-24371	avtohton	m.anim.
-24374	avtokracija	f.
-24375	avtokrat	m.anim.
-83	avtomagistralj	m.
-4358	avtomat	m.
-24377	avtomat	m.
-4360	avtomatično	adv.
-4359	avtomatičny	adj.
-24383	avtomatika	f.sg.
-24384	avtomatizacija	f.sg.
-24385	avtomatizm	m.
-24386	avtomatizovati	v.tr. ipf.
-23496	avtomobil	m.
-14451	avtomobiľny	adj.
-17129	avtonomija	f.sg.
-17130	avtonomny	adj.
-6449	avtopromysl	m.sg.
-87	avtor	m.anim.
-24393	avtoritarny	adj.
-10869	avtoritativno	adv.
-10871	avtoritativny	adj.
-15772	avtoritet	m.
-15774	avtoritetno	adv.
-15775	avtoritetnosť	f.sg.
-15776	avtoritetny	adj.
-15773	avtoritety	m.pl.
-5034	avtorizacija	f.
-5033	avtorizovati	v.tr. ipf.
-35314	avtorka	f.
-35237	avtorsko pravo	n.
-24398	avtorsky	adj.
-17131	avtorstvo	n.sg.
-35868	avtostop	m.
-35870	avtostopnik	m.anim.
-35869	avtostopovati	v.intr. ipf./pf.
-24399	avtostrada	f.
-6451	avtostrahovka	f.
-6452	avtozavod	m.
-24400	avtožir	m.
-24401	azalija	f.
-36744	azbest	m.
-16924	azbuka	f.
-76	Azerbajdžan	m.sg.
-92	Azija	f.sg.
-542	azijatsky	adj.
-24407	azimut	m.
-22600	azot	m.sg.
-24409	azotisty	adj.
-24410	azotny	adj.
-17135	Azovsko morje	n.sg.
-36440	aztečsky	adj.
-36439	Aztek	m.anim.
-24411	azurny	adj.
-3591	až	adv.
-2435	baba	f.
-6460	babica	f.
-24425	babin	adj.
-24429	babka	f.
-24430	babsky	adj.
-6459	babuška	f.
-35187	bacil	m.
-32766	badminton	m.sg.
-5070	bagatela	f.
-1579	bagatelizovati	v.tr. ipf.
-2438	bagaž	m.
-384	bagno	n.
-22453	bahamsky	adj.
-22452	Bahamy	f.pl.
-24437	bajati	v.intr. ipf.
-34833	bajati	v.intr. ipf.
-6465	bajka	f.
-36392	bajonet	m.
-6466	bajt	m.
-24443	bak	m.
-24444	bak	m.
-24445	bakalavr	m.
-24448	baken	m.
-35440	bakenbardy	f.pl.
-24453	baklažan	m.
-23505	bakterija	f.
-24458	bakteriologija	f.sg.
-24459	bal	m.
-31963	bala	f.
-24461	balada	f.
-24464	balalajka	f.
-2440	balans	m.
-24467	balansir	m.
-24468	balansovati	v.intr. ipf.
-24469	balast	m.sg.
-24470	baldahin	m.
-24471	balerina	f.
-6102	balet	m.
-24474	balističny	adj.
-24476	balistika	f.sg.
-35340	balkansky	adj.
-16824	Balkany	m.pl.
-153	balkon	m.
-24482	balon	m.
-24483	balotovati	v.tr. ipf./pf.
-23506	Baltičsko morje	n.sg.
-4737	baltičsky	adj.
-24484	balustrada	f.
-31785	balvan	m.
-31786	balvan	m.
-24487	balzam	m.
-24489	balzamovati	v.tr. ipf./pf.
-24490	bambus	m.
-31717	banaľny	adj.
-24492	banan	m.
-2439	banda	f.
-24494	bandaž	m.
-493	bandit	m.anim.
-24499	banditizm	m.sg.
-24500	bandura	f.
-24502	bandžo	n.
-21847	baner	m.
-24503	banja	f.
-4668	bank	m.
-24506	banka	f.
-33326	banka	f.
-24507	banket	m.
-24508	bankir	m.anim.
-16925	banknota	f.
-36391	bankrot	m.anim.
-24510	bankrotstvo	n.
-23757	baobab	m.
-24513	baptist	m.anim.
-24514	baptizm	m.
-24515	bar	m.
-24516	baraban	m.
-14453	barak	m.
-32414	barak	m.
-2436	baran	m.anim.
-24520	baranina	f.sg.
-24522	barbaris	m.
-24524	bard	m.anim.
-6471	barel	m.
-159	bariera	f.
-24529	barikada	f.
-24530	barikadovati	v.tr. ipf.
-24533	barkarola	f.
-24534	barkas	m.
-31977	barmen	m.anim.
-154	barok	m.sg.
-24535	baroko	n.
-24536	barometr	m.
-24538	baron	m.anim.
-24539	baronesa	f.
-20334	barsuk	m.anim.
-1868	barva	f.
-24541	barvinȯk	m.
-5873	barviti	v.tr. ipf.
-5872	barvivo	n.
-21259	barvna olovka	f.
-24542	baryj	m.sg.
-24544	baryton	m.
-24545	barža	f.
-24546	bas	m.
-2437	basen	m.
-36210	Bask	m.anim.
-24549	basketbol	m.sg.
-36209	baskijsky	adj.
-1846	basnj	f.
-6483	basnjesloveny	adj.
-19642	basnjevy	adj.
-24552	basta	intj.
-35240	bastard	m.
-24553	bastion	m.
-36569	baškirsky	adj.
-24559	batalion	m.
-24560	baterija	f.
-35632	Bavarija	f.sg.
-35724	bavarsky	adj.
-2418	baviti	v.tr. ipf.
-157	bavȯlna	f.sg.
-6487	baza danyh	f.
-156	baza	f.
-24565	bazalt	m.sg.
-16730	bazar	m.
-24567	bazilik	m.
-31749	bazilika	f.
-20335	bazilisk	m.anim.
-19643	bazovati na	v.tr. ipf.
-24570	bazovati sę na	v.refl. ipf.
-20336	bděńje	n.sg.
-20338	bděti	v.intr. ipf.
-20339	bditeljnosť	f.sg.
-20340	bditeljny	adj.
-2442	běda	f.sg.
-3836	běda	f.sg.
-2443	bědny	adj.
-2444	bedrenec	m.anim.
-24576	bedreny	adj.
-2445	bedro	n.
-20341	běg	m.
-20342	běg	m.
-20343	běg	m.
-35981	běgaj!	intj.
-2441	běgati	v.intr. ipf.
-20344	běglosť	f.sg.
-20345	běgly	adj.
-36637	běgly	adj.
-32533	běgstvo	n.
-1219	běgti	v.intr. ipf.
-20346	běgun	m.anim.
-35523	bejsbol	m.sg.
-24583	bělavy	adj.
-24584	bělěti	v.intr. ipf.
-2865	Belgija	f.sg.
-4426	belgijsky	adj.
-23521	Bělgråd	m.sg.
-24586	bělilo	n.
-31731	běliti	v.tr. ipf.
-22454	Beliz	m.sg.
-2446	bělmo	n.
-24591	bělobrådy	adj.
-24595	bělȯk	m.
-24600	bělopery	adj.
-2447	Bělorus	m.anim.
-2448	Běloruś	f.sg.
-2864	bělorussky	adj.
-24604	bělosť	f.sg.
-24605	bělovlåsy	adj.
-24606	bělozųby	adj.
-2679	běly	adj.
-23409	benzin	m.
-19493	Berlin	m.sg.
-36647	berserk	m.anim.
-22601	berylij	m.sg.
-24609	běs	m.anim.
-1811	besěda	f.
-2880	besědovati	v.intr. ipf.
-24612	běsiti sę	v.refl. ipf.
-31757	běsnosť	f.sg.
-24613	běsny	adj.
-1721	beton	m.sg.
-3972	betonny	adj.
-3044	betonomešalka	f.
-3415	bez malogo	adv.
-4946	bez obzira na	prep.
-1434	bez	prep.
-3971	bezbarvny	adj.
-19644	bezbolěsno	adv.
-19645	bezbolěsny	adj.
-33128	bezbožje	n.sg.
-33131	bezbožnik	m.anim.
-33123	bezbožny	adj.
-33127	bezbožny	adj.
-24618	bezbrådy	adj.
-35125	bezbrånny	adj.
-17137	bezčesťje	n.sg.
-24620	bezčestny	adj.
-31742	bezčestny	adj.
-4837	bezdětny	adj.
-2335	bezdna	f.
-24626	bezdomny	adj.
-24627	bezdȯnny	adj.
-24628	bezdȯžďje	n.sg.
-14455	bezdrěvny	adj.
-24630	bezdušny	adj.
-19646	bezdyšny	adj.
-24633	bezglåvy	adj.
-24635	bezhvosty	adj.
-14458	bezhybny	adj.
-6515	bezimenno	adv.
-6516	bezimenny	adj.
-36638	bezizhodnosť	f.sg.
-17138	bezizhodny	adj.
-35411	bezkarnosť	f.sg.
-35410	bezkarny	adj.
-14457	bezkolorny	adj.
-6517	bezkonečje	n.sg.
-4296	bezkonečno	adv.
-6519	bezkonečnosť	f.sg.
-6520	bezkonečny	adj.
-6522	bezkoristny	adj.
-24637	bezkostny	adj.
-31733	bezkrily	adj.
-24638	bezkrȯvny	adj.
-6524	bezlěsny	adj.
-6525	bezlistny	adj.
-24644	bezljudny	adj.
-20348	bezměrnosť	f.sg.
-33138	bezměrny	adj.
-20351	bezmȯlvny	adj.
-24646	bezmozgy	adj.
-36175	bezmytny	adj.
-36721	beznadějnosť	f.
-4345	beznadějny	adj.
-24647	beznogy	adj.
-17141	bezolovny	adj.
-20842	bezopasnosť	f.sg.
-20844	bezopasny	adj.
-24650	bezpamętny	adj.
-19494	bezpartijny	adj.
-20846	bezpečnosť	f.sg.
-20847	bezpečny	adj.
-24652	bezpery	adj.
-20848	bezplatny	adj.
-24653	bezplodny	adj.
-33019	bezplodny	adj.
-19649	bezpokojęći	adj.
-22974	bezpokojeńje	n.
-36698	bezpokojiti sę	v.refl. ipf.
-19654	bezpokojiti	v.tr. ipf.
-19659	bezpokojny	adj.
-19661	bezpokojstvo	n.sg.
-5837	bezpomoćno	adv.
-5836	bezpomoćnosť	f.sg.
-5835	bezpomoćny	adj.
-5090	bezposrědnje	adv.
-1792	bezposrědnji, bezposrědny	adj.
-178	bezprecedentny	adj.
-3517	bezprěryvno	adv.
-6536	bezprěryvny	adj.
-3493	bezpričinny	adj.
-33236	bezprikladny	adj.
-33232	bezpriměrny	adj.
-17142	bezråbotica	f.sg.
-28504	bezradostny	adj.
-36639	bezrodny	adj.
-24655	bezrogy	adj.
-24656	bezrųky	adj.
-24657	bezsiľny	adj.
-20352	bezsmyslica	f.sg.
-21261	bezsmysľny	adj.
-24658	bezsněžny	adj.
-24659	bezsȯnnica	f.sg.
-24660	bezsȯnny	adj.
-24661	bezstrašny	adj.
-16267	bezstydnosť	f.sg.
-16266	bezstydny	adj.
-3974	bezšumnosť	f.sg.
-177	bezšumny	adj.
-6544	beztęžno	adv.
-6545	beztęžnosť	f.sg.
-6546	beztęžny	adj.
-24008	bezumje	n.sg.
-15247	bezumnik	m.anim.
-15248	bezumny	adj.
-4214	bezusiľje	n.sg.
-4213	bezusiľno	adv.
-4215	bezusiľnosť	f.sg.
-4212	bezusiľny	adj.
-21263	bezuslovny	adj.
-33156	bezuspěšny	adj.
-33157	bezutěšny	adj.
-33436	bezvěŕje	n.sg.
-5051	bezvěstny	adj.
-24664	bezvětŕje	n.
-24665	bezvinny	adj.
-34434	bezvkųsny	adj.
-22486	bezvladnosť	f.sg.
-22487	bezvladnosť	f.sg.
-22485	bezvladny	adj.
-22484	bezvlasťje	n.sg.
-24666	bezvlåsy	adj.
-24668	bezvodny	adj.
-17143	bezvyhodny	adj.
-35126	bezzaščitny	adj.
-179	běženec	m.anim.
-6552	běženica	f.
-23754	běžeńje	n.
-24671	beževy	adj.
-24672	bezzųby	adj.
-5040	bezzvųčny	adj.
-4760	Biblija	f.
-5844	biblijsky	adj.
-35088	bibliografičny	adj.
-35087	bibliografija	f.
-4364	biblioteka	f.
-4365	bibliotekaŕ	m.anim.
-24673	bič	m.
-34987	bičevati	v.tr. ipf.
-35994	bifštek	m.
-35872	bilbord	m.
-1760	bilet	m.
-35293	binarny	adj.
-35227	binoklj	m.
-20849	biografija	f.
-3975	biolog	m.anim.
-3976	biologičny	adj.
-1780	biologija	f.sg.
-17145	biskup	m.anim.
-35992	biskvit	m.
-22635	bismut	m.sg.
-4049	biti	v.tr. ipf.
-24678	biťje	n.
-24679	bitka	f.
-20353	bitva	f.
-35833	Bizantija	f.sg.
-35834	Bizantijska imperija	f.sg.
-35341	bizantijsky	adj.
-637	biznes	m.
-15785	biznesmen	m.anim.
-14464	biznesny	adj.
-32788	bizon	m.anim.
-24681	bižuterija	f.
-35181	bjuleten	m.
-3978	bjurokracija	f.
-2452	bjurokrat	m.anim.
-3979	bjurokratičny	adj.
-3176	bjust	m.
-17146	blågo	n.
-4927	blågodarę	prep.
-4885	blågodarim, blågodarjų	intj.
-4889	blågodariti	v.tr. ipf.
-6575	blågodarjeńje	n.
-6576	blågodarno	adv.
-4905	blågodarnosť	f.sg.
-4903	blågodarny	adj.
-23755	blågomilosť	f.
-15251	blågomily	adj.
-23756	blågoprijętny	adj.
-21264	blågorodny	adj.
-22975	blågosklonnosť	f.sg.
-14466	blågosklonny	adj.
-19662	blågosklonny	adj.
-5574	blågoslavjati	v.tr. ipf.
-5573	blågosloviti	v.tr. pf.
-5901	blågoslovjeńje	n.
-6587	blågoslovjeńje	n.
-6588	blågoslovny	adj.
-21713	blågostańje	n.sg.
-22146	blågotvorny	adj.
-22214	Blågověšćeńje	n.sg.
-22297	blågovolěti	v.intr. ipf.
-22299	blågovoljny	adj.
-35598	blågozvųčnosť	f.sg.
-35599	blågozvučny	adj.
-36893	blågoželańje	n.
-6050	blågoželati	v.intr. ipf.
-620	blågy	adj.
-24683	blåna	f.
-36376	blåtna kųpělj	f.
-14225	blåtna lavina	f.
-24684	blåtny	adj.
-3463	blåto	n.
-312	blazn	m.anim.
-24688	blazniti sę	v.refl. ipf.
-24689	blaznovati	v.intr. ipf.
-24690	blědněti	v.intr. ipf.
-24692	blědosť	f.sg.
-2453	blědy	adj.
-24693	blejati	v.intr. ipf.
-33405	blekdžek	m.sg.
-24694	blen	m.
-5073	blěsk	m.
-2456	blěskati	v.intr. ipf.
-5066	blěskavica	f.
-24717	blěskavy	adj.
-5869	blěsklivy	adj.
-2035	blěsknųti	v.intr. pf.
-24697	blěstěti	v.intr. ipf.
-24698	blin	m.
-3426	bliz	adv.
-3746	blizko	adv.
-4916	blizko	prep.
-3980	blizkosť	f.sg.
-6603	Blizky Iztok	m.sg.
-2455	Blizky Vȯzhod	m.sg.
-3287	blizky	adj.
-192	bliznec	m.anim.
-7406	blizneci	m.pl.
-24701	Blizneci	m.pl.
-7404	bliznečky	f.pl.
-7407	bliznečsky	adj.
-6610	blizši	adj.
-6609	bliže	adv.
-24702	bližiti sę	v.refl. ipf.
-24703	bližnji, bližny	adj.
-35437	bljudce	n.
-24704	bljudo	n.
-36473	bljudo	n.
-24705	bljunųti	v.intr. pf.
-2458	bljušč	m.
-24707	bljuvati	v.intr. ipf.
-36781	bljuvotina	f.
-16778	blog	m.
-2460	blȯha	f.
-2459	blok	m.
-4953	blokada	f.
-33085	blokflejta	f.
-193	blokovati	v.tr. ipf.
-17150	blondin	m.anim.
-2457	blondinka	f.
-6189	blųd	m.
-2461	blųditi	v.intr. ipf.
-24713	blųdny	adj.
-24714	blųkati	v.intr. ipf.
-20850	boa	f.
-701	bob	m.
-24721	bobovy	adj.
-2434	bobr	m.anim.
-6620	bobŕja damba	f.
-15253	bobŕji	adj.
-36502	bobslej	m.
-323	boćan	m.anim.
-14454	bȯčka	f.
-36179	bočny poględ	m.
-3981	bočny	adj.
-14452	bȯčva	f.
-31753	bodati sę	v.refl. ipf.
-24726	bodati	v.tr. ipf.
-24727	bodec	m.
-24728	bodlivy	adj.
-24730	bȯdnaŕ	m.anim.
-36422	bodnųti sę	v.refl. pf.
-36421	bodnųti	v.tr. pf.
-20354	bodrosť	f.sg.
-20355	bodry	adj.
-2855	bog	m.anim.
-14471	bogač	m.anim.
-24736	bogatěti	v.intr. ipf.
-6624	bogatosť	f.sg.
-6628	bogatstvo	n.
-6629	bogatši	adj.
-212	bogaty	adj.
-14473	bogatyr	m.anim.
-17152	bogatyrsko	adv.
-17151	bogatyrsky	adj.
-4510	bogohuliti	v.intr. ipf.
-4512	bogohuljeńje	n.sg.
-4511	bogohuľnik	m.anim.
-6636	bogohuľno	adv.
-4513	bogohuľny	adj.
-17153	bogohuľstvo	n.
-17154	Bogojavjeńje	n.sg.
-20357	bogomolka	f.
-17156	Bogorodica	f.sg.
-17157	bogoslovec	m.anim.
-17158	bogoslovje	n.sg.
-17159	bogoslužba	f.
-17160	bogoslužeńje	n.
-16926	bogyni	f.
-32037	bohanka	f.
-35231	Bohemija	f.sg.
-2464	boj	m.
-20358	boj	m.
-2465	bojati sę	v.refl. ipf.
-6641	bojazlivo	adv.
-6642	bojazlivy	adj.
-4769	bojaznj	f.
-6644	bojazno	adv.
-6645	bojazny	adj.
-24746	bojec	m.anim.
-2466	bojevati	v.intr. ipf.
-6169	bojevnik	m.anim.
-6651	bojevy	adj.
-2324	bojka	f.
-4954	bojkot	m.
-2919	bojkotovati	v.tr. ipf.
-35420	bojna glåvica	f.
-24748	bojny	adj.
-765	bok	m.
-6657	bolěsno	adv.
-6658	bolěsny	adj.
-2011	bolěti	v.intr. ipf.
-36690	bolěti	v.intr. ipf.
-6661	bolězlivo	adv.
-31784	bolězlivy	adj.
-14475	bolěznj	f.
-14028	bolěznjetvorny	adj.
-23478	boliglåv	m.
-2467	bolinka	f.
-22434	Bolivija	f.sg.
-22435	bolivijsky	adj.
-1132	bolj	m.
-34901	bolje ili menje	adv.
-16915	bolje	adv.
-201	boljnica	f.
-202	boljny	adj.
-1824	boljšesť	f.
-35660	boljši	adj.
-208	bomba	f.
-2469	bombardovati	v.tr. ipf.
-24758	bonbon	m.
-22602	bor	m.sg.
-24759	bor	m.
-207	boŕba	f.sg.
-23988	bordelj	m.
-24763	Bordo	m.sg.
-24764	bordovy	adj.
-17165	borec	m.anim.
-17168	boriti sę	v.refl. ipf.
-24766	borovik	m.
-1852	bȯršč	m.sg.
-24769	bȯrščevnik	m.
-1379	Bosnija i Hercegovina	f.sg.
-35871	Bosnija	f.sg.
-606	bosnijsky	adj.
-20359	bosnjačsky	adj.
-6170	Bosnjak	m.anim.
-24772	bosonogy	adj.
-31754	bosti sę	v.refl. ipf.
-24733	bosti	v.tr. ipf.
-2463	bosy	adj.
-23325	botaničny sad	m.
-23324	botaničny	adj.
-23323	botanik	m.anim.
-23322	botanika	f.sg.
-36488	Botsvana	f.sg.
-1455	bȯz	m.
-36282	bȯzina	f.
-26843	božja kråvka	f.
-6262	božji	adj.
-5295	božsky	adj.
-17169	božstvo	n.
-2479	bråda	f.
-24782	brådač	m.anim.
-24783	brådaty	adj.
-5886	brådavica	f.
-473	brådavička	f.
-36028	brådobrivec	m.anim.
-24786	brahtati sę	v.refl. ipf.
-36111	Brajlovo pismo	n.
-24787	brak	m.
-34778	brakonier	m.anim.
-34777	brakonierstvo	n.sg.
-2478	bråna	f.
-24792	bråniti	v.tr. ipf.
-23984	braslet	m.
-7405	brat bliznec	m.anim.
-1588	brat ili sestra	m.anim.
-219	brat	m.anim.
-24795	bratati sę	v.refl. ipf.
-1877	brati	v.tr. ipf.
-23522	Bratislava	f.sg.
-24799	bratja	m.pl.
-6098	bratobijstvo	n.
-24801	bratov	adj.
-6681	bratska ljubȯv	f.sg.
-6021	bratsky	adj.
-1461	bratstvo	n.
-35655	bravo	intj.
-221	bråzda	f.
-24805	bråzditi	v.intr. ipf.
-2473	Brazilija	f.sg.
-4753	braziľsky	adj.
-6081	Brěg Slonovoj Kosti	m.sg.
-2474	brěg	m.
-24808	brěgovy	adj.
-24810	brěk	m.
-24811	breknųti	v.intr. ipf.
-16338	brěmę	n.
-17170	brěmennosť	f.
-17171	brěmenny	adj.
-24815	brenčati	v.intr. ipf.
-214	brend	m.
-24818	brenknųti	v.intr. ipf.
-17173	brěst	m.
-24836	brešljan	m.
-218	brěza	f.
-6697	brězenj	m.sg.
-24824	brěžny	adj.
-6699	bridko	adv.
-2475	bridky	adj.
-6698	bridky	adj.
-21265	bridž	m.sg.
-24826	briket	m.
-6702	Britanske Děvičje Ostrovy	m.pl.
-2470	britansky	adj.
-34140	briti sę	v.refl. ipf.
-5283	briti	v.tr. ipf.
-2480	britva	f.
-24828	brjuhaty	adj.
-2477	brjuho	n.
-36592	brjušny	adj.
-1337	bŕlog	m.
-24831	Brno	n.sg.
-4772	brod	m.
-24833	broditi	v.intr. ipf.
-31789	broditi	v.intr. ipf.
-17175	broj	m.
-22626	brom	m.sg.
-16797	brȯnja	f.
-6706	bronza	f.
-36153	bronzova doba	f.
-6707	bronzovy	adj.
-35183	brošura	f.
-2308	brȯv	f.
-24837	brť	f.
-24838	brtnik	m.anim.
-17176	brukva	f.
-24842	brus	m.
-36810	Bruselj	m.
-24843	brusiti	v.tr. ipf.
-6711	brusnica	f.
-162	brutaľnosť	f.
-2483	brutaľny	adj.
-24845	bruto	adv.
-24847	bŕvno	n.
-24849	bryzgati	v.tr. ipf.
-24850	bryzgnųti	v.tr. pf.
-36783	brza pomoć	f.sg.
-23651	brzina	f.
-5584	brzo	adv.
-5583	brzy	adj.
-17177	buba	f.
-1802	bųben	m.
-33328	bųblina	f.
-2484	bučati	v.intr. ipf.
-223	buda	f.
-19665	Budapest	m.sg.
-22979	bųde/bųdųt	v.aux. ipf.
-20360	budiľnik	m.
-23511	budist	m.anim.
-22980	buditelj	m.anim.
-34791	buditi sę	v.tr. ipf.
-2485	buditi	v.tr. ipf.
-23510	budizm	m.sg.
-14481	budka	f.
-918	budovati	v.tr. ipf.
-1847	bųdųći	adj.
-224	bųdųćnosť	f.sg.
-1968	budynȯk	m.
-22972	budžet	m.
-36675	bufer obměna	m.
-36674	bufer	m.
-36676	buferna pamęť	f.
-35103	bufet	m.
-24860	buhati	v.intr. ipf.
-24863	buhnųti	v.intr. pf.
-24864	buhta	f.
-6722	bujno	adv.
-6723	bujnosť	f.sg.
-24867	bujny	adj.
-2309	buk	m.
-1325	buket	m.
-2486	bukva	f.
-16755	bukvaľno	adv.
-16754	bukvaľny	adj.
-24871	bukvica	f.
-4725	Bulgar, Bulgarin	m.anim.
-1541	Bulgarija	f.sg.
-17179	bulgarizacija	f.sg.
-6729	Bulgarka	f.
-2482	bulgarsky	adj.
-36095	bulj-bulj	intj.
-24873	bulka	f.
-35245	bulvar	m.
-31762	bumerang	m.
-32996	bunker	m.
-35033	bunt	m.
-6732	buntovati sę	v.refl. ipf.
-226	buntovnik	m.anim.
-1801	buriti	v.tr. ipf.
-6736	burja větra	f.
-2451	burja	f.
-24876	burjan	m.
-6737	buŕlivy	adj.
-24878	buŕny	adj.
-16745	butylka	f.
-1821	by	particle
-24886	byček	m.anim.
-24885	byčji	adj.
-1791	byk	m.anim.
-24887	Byk	m.anim.
-17180	bylina	f.
-24889	bylina	f.
-6743	byly	adj.
-1498	bystro	adv.
-3977	bystrosť	f.sg.
-1762	bystry	adj.
-24894	byt	m.sg.
-35085	byti dȯlžen	v.aux. ipf.
-6750	Byti ili ne byti? To jest pytańje	phrase
-10343	byti ostråžny	v.ipf.
-17182	byti podobny	v.ipf.
-23728	byti prěhlåđeny	v.ipf.
-2449	byti prinuđeny	v.ipf.
-4190	byti sȯglåsny	v.ipf.
-593	byti	v.intr. ipf.
-24896	byti	v.intr. ipf.
-160	byťje	n.sg.
-6753	bytosť	f.
-14462	bytosť	f.
-17183	byvati	v.intr. ipf.
-24900	byvol	m.anim.
-2993	byvši	adj.
-33361	bzděti	v.intr. ipf.
-33362	bzdnųti	v.intr. pf.
-5758	caŕ	m.anim.
-17187	carica	f.
-17188	carica	f.
-35835	Carigrad	m.sg.
-35940	caŕsky	adj.
-24903	caŕstvo	n.
-24904	cědilo	n.
-2374	cěditi	v.tr. ipf.
-883	cegla	f.
-19666	ceglina	f.
-2204	cěliti	v.intr. ipf.
-421	cělj	m.
-34996	ćelja	f.
-36353	cěljeva grupa	f.
-36358	cěljevy język	m.
-4391	cělkom	adv.
-3009	cělkovito	adv.
-4143	cělkovity	adj.
-36585	cělo čislo	n.
-32747	cělo	adv.
-34925	cělodenny	adj.
-34924	cělodnevny	adj.
-19667	cělosť	f.sg.
-6767	cělovańje	n.sg.
-6769	cělovatelj	m.anim.
-3010	cělovati	v.tr. ipf.
-1027	cěly	adj.
-3008	cement	m.
-1568	cěna	f.
-24918	cěniti	v.tr. ipf.
-2281	cěnnosť	f.
-1409	cěnny	adj.
-23017	centigram	m.
-23021	centilitr	m.
-4422	centimetr	m.
-1263	centr	m.
-1706	centrala	f.
-23223	centraľna nervna sistema	f.sg.
-31748	Centraľny Komitet	m.
-1727	centraľny	adj.
-2194	centrizm	m.sg.
-5296	cenzura	f.sg.
-5297	cenzurovati	v.tr. ipf.
-2193	cěp	m.
-4649	cepelin	m.
-35692	cěsaŕ	m.anim.
-35693	cěsaŕstvo	n.
-32252	Cetińje	n.sg.
-24921	cěvka	f.
-34775	cibulica	f.
-1543	cibulja	f.
-6784	cibuljevity	adj.
-14486	cibuljevy	adj.
-116	cicka	f.
-6786	cicky	f.pl.
-17210	cifra	f.
-35119	cigara	f.
-460	cigareta	f.
-32070	cikl	m.
-32071	cikličny	adj.
-22628	cin	m.sg.
-22624	cink	m.sg.
-6265	cirk	m.
-24924	cirkulacija	f.sg.
-24925	cirkulj	m.
-36390	cirkumfleks	m.
-4955	citat	m.
-2999	citovati	v.tr. ipf.
-36832	citra	f.
-2998	civil	m.anim.
-23527	civilizacija	f.
-35749	civilizovany	adj.
-1879	civiľny	adj.
-32266	cmokati	v.intr. ipf.
-35435	colj	m.
-16928	crkȯv	f.
-4386	crkȯvnoslovjansky	adj.
-35168	crkȯvny	adj.
-1707	crkva	f.
-22748	ćuđezemec	m.anim.
-25079	ćuđezemny	adj.
-610	ćuđi	adj.
-36629	ćuđi	adj.
-3416	ćuđina	f.sg.
-1182	ćuđinec	m.anim.
-6928	ćuđinka	f.
-31965	cukina	f.
-2243	cukr	m.sg.
-3838	cukrka	f.
-6103	cunami	n.indecl.
-6794	cvekla	f.
-24929	cvěliti	v.intr. ipf.
-24937	cvěsti	v.intr. ipf.
-1720	cvět	m.
-14487	cvět	m.
-8792	cvětati	v.intr. ipf.
-8791	cvětenj	m.sg.
-24933	cvěteńje	n.sg.
-35014	cvětna kapusta	f.
-8794	cvětnųti	v.intr. ipf.
-22985	cvětny pyl	m.
-24935	cvětny	adj.
-8793	cvětųći	adj.
-20852	cviliti	v.intr. ipf.
-35090	cvŕček	m.anim.
-33590	cvŕkati	v.intr. ipf.
-33591	cvŕkot	m.
-24939	čad	m.
-24941	čaditi	v.intr. ipf.
-1714	čaj	m.
-6796	čajiljnja	f.
-23472	čajka	f.
-23473	čajka	f.
-35626	čajna lȯžička	f.
-36256	čajna vrěčka	f.
-4792	čajnik	m.
-36255	čajny paketik	m.
-4883	čao!	intj.
-2372	čaplja	f.
-2212	čar	m.
-4831	čaroděj	m.anim.
-4830	čarodějnica	f.
-16870	čarovati	v.intr. ipf.
-6802	čarovnica	f.
-6805	čarovnik	m.anim.
-24953	čarovny	adj.
-24954	čary	m.pl.
-4270	čas	m.
-1278	časina	f.
-33334	časom	adv.
-17190	časoměr	m.
-17191	časopis	m.
-21266	časoslov	m.
-23639	časova zona	f.
-17073	časovańje	n.sg.
-2165	časovnik	m.
-23640	časovy pas	m.
-29	časovy	adj.
-1732	čaša	f.
-24961	čaška	f.
-35294	čat	m.
-5921	čečensky	adj.
-24964	čečetka	f.
-2312	Čečnja	f.sg.
-24942	čędo	n.
-4730	Čeh	m.anim.
-2991	Čehija	f.sg.
-17193	čehoslovačsky	adj.
-17194	Čehoslovakija	f.sg.
-17195	čehoslovakizm	m.sg.
-3497	ček	m.
-23319	čekaljnja	f.
-17196	čekańje	n.sg.
-3003	čekati	v.intr. ipf.
-23460	čelesta	f.
-17197	čeličny	adj.
-17198	čelik	m.sg.
-24967	čeljaď	f.sg.
-6820	čeljusť	f.
-36026	čelka	f.
-24969	čeľny	adj.
-6821	čelo	n.
-24971	čelo	n.
-14491	čem	conj.
-23459	čembalo	n.
-24973	čemerica	f.
-1705	čempion	m.anim.
-2492	čempionat	m.
-1194	čemu	adv.
-4034	čemu-nebųď	adv.
-1753	čep	m.
-24975	čepec	m.
-6825	čerep	m.
-2356	čerešnja	f.
-24985	česalo	n.
-2227	česati	v.tr. ipf.
-510	česnȯk	m.sg.
-1730	čęsť mȯlvy	f.
-24993	čęsť světa	f.
-1731	čęsť	f.
-3033	česť	f.
-19669	čęstěje	adv.
-6810	čęsti mȯlvy	f.pl.
-6839	čęstica	f.
-6840	čęstično	adv.
-17202	čestigodny	adj.
-32531	čestiljubivy	adj.
-6842	čestitati	v.tr. ipf./pf.
-5944	čestiti	v.tr. ipf.
-4664	čęstka	f.
-22981	čestnosť	f.
-1551	čestny	adj.
-137	čęsto	adv.
-17208	čęstota	f.
-2273	čęsty	adj.
-36642	Češka	f.
-2417	češsky	adj.
-16454	četveraky	num.diff.
-16427	četverčęta	n.pl.
-16458	četverka	num.subst.
-16441	četverny	num.mult.
-16431	četvero	num.coll.
-5275	četvŕt	m.
-6853	četvŕtina	num.fract.
-638	četvŕtȯk	m.
-636	četvŕty	num.ord.
-2856	četyri	num.card.
-2857	četyridesęť, četyridesęti	num.card.
-19668	četyridesęty	num.ord.
-16448	četyrikråtno	adv.
-1180	četyrinadsęť	num.card.
-23682	četyrinadsęty	num.ord.
-1022	četyrista, četyristo	num.card.
-15269	četyrivųgȯľnik	m.
-15268	četyrokųtnik	m.
-6254	či	conj.
-14495	či	particle
-1179	čij	pron.poss.
-19601	čijkoli	pron.poss.
-14496	čij-libo	pron.poss.
-190	čij-nebųď	pron.poss.
-5759	Čile	n.sg.
-6867	Čilijec	m.anim.
-6868	Čilijka	f.
-5760	čilijsky	adj.
-25011	čim ... tym ...	adv.
-17211	čim raněje	adv.
-17212	čim skorěje	adv.
-14497	čimno	adv.
-1594	čin	m.
-6872	činitelj	m.
-906	činiti	v.tr. ipf.
-6876	činovnica	f.
-584	činovnik	m.anim.
-6880	čip	m.
-6879	čips	m.
-25014	čir	m.
-33589	čir	m.
-17214	čisliti	v.tr. ipf.
-25015	čisľny	adj.
-590	čislo	n.
-17215	čislo	n.
-17074	čislovnik	m.
-25018	čistina	f.
-4465	čistiti	v.tr. ipf.
-25020	čistosť	f.sg.
-25021	čistota	f.sg.
-582	čisty	adj.
-4366	čitaljnja	f.
-4363	čitatelj	m.anim.
-35827	čitateljnik	m.
-6885	čitati	v.tr. ipf.
-17216	čitkody	m.pl.
-25026	čiž	m.anim.
-14499	članȯk	m.
-640	člen	m.anim.
-25028	člen	m.
-25029	člen	m.
-32620	členistonogy	m.anim.
-598	členȯk	m.
-599	členstvo	n.
-6261	člověčji	adj.
-14500	člověčnosť	n.sg.
-25031	člověčny	adj.
-25032	člověčsky	adj.
-600	člověčstvo	n.sg.
-592	člověk	m.anim.
-6894	člověkoljubec	m.anim.
-36604	člověkoljubivy	adj.
-6893	člověkoljubje	n.sg.
-6892	člověk-pavųk	m.anim.
-601	čmelj	m.anim.
-3499	čokolada	f.
-25037	čȯln	m.
-2959	črěda	f.
-25040	črěmha	f.
-5299	črěp	m.
-25045	črěvo	n.
-4473	črěz	prep.
-23336	črězměrno	adv.
-22983	črězměrnosť	f.sg.
-22984	črězměrny	adj.
-4716	črka	f.
-23508	črna dira	f.
-1343	Črna Gora	f.sg.
-32943	črna vdova	f.
-25048	črněti	v.intr. ipf.
-17219	črnica	f.
-25049	črnica	f.
-6906	črnik	m.anim.
-3695	črnilo	n.
-25051	črniti	v.tr. ipf.
-6908	Črno morje	n.sg.
-25052	črnobylj	m.
-14504	črnoględnica	f.
-14505	črnoględnik	m.anim.
-6027	črnoględnosť	f.sg.
-6026	črnoględny	adj.
-349	Črnogorjan, Črnogorjanin	m.anim.
-348	črnogorsky	adj.
-25053	črnota	f.
-25054	črnuška	f.
-520	črny	adj.
-24978	črpak	m.
-619	črpati	v.tr. ipf.
-24981	črstvěti	v.intr. ipf.
-24982	črstvy	adj.
-24983	črt	m.anim.
-696	črta	f.
-3569	črtati	v.tr. ipf.
-25058	črtež	m.
-24984	črtov	adj.
-345	črv	m.anim.
-25060	črvec	m.anim.
-19514	Črvena Armija	f.
-33403	Črvena Kapučka	f.
-6914	črvene fasolje	f.pl.
-6915	črvenec	m.anim.
-25061	črveněti	v.intr. ipf.
-6916	črvenica	f.
-6830	črvenj	m.sg.
-23662	črvenogrlka	f.
-6919	črveny krvinȯk	m.
-101	črveny	adj.
-36530	črvilo	n.
-25066	črvivy	adj.
-2266	črvjak	m.anim.
-25068	črvotočina	f.
-17220	čtiti	v.tr. ipf.
-34620	čto bolje	adv.
-21268	čto sę tyče	prep.
-16762	čto vyše	adv.
-19670	čto	pron.int.
-19602	čtokoli	pron.indef.
-14502	čto-libo	pron.indef.
-1786	čto-nebųď	pron.indef.
-25070	čub	m.
-25071	čubaty	adj.
-25072	čučati	v.intr. ipf.
-4251	čudak	m.anim.
-23677	čudesny	adj.
-5044	čuditi sę	v.refl. ipf.
-25073	čuditi	v.tr. ipf.
-17231	čudno	adv.
-17232	čudny	adj.
-25074	čudny	adj.
-1184	čudo	n.
-25077	čudom	adv.
-25078	čudotvorec	m.anim.
-19671	čudovistny	adj.
-608	čudovišče	n.
-36098	čuma	f.
-611	čuti	v.tr. ipf.
-6931	čuťje	n.
-6933	čuťje	n.
-6934	čutlivo	adv.
-4165	čutlivosť	f.sg.
-4164	čutlivy	adj.
-25083	čutny	adj.
-17223	čuvańje	n.sg.
-17224	čuvańje	n.sg.
-36570	Čuvašija	f.sg.
-4909	čuvašsky	adj.
-17228	čuvati sę	v.refl. ipf.
-17226	čuvati	v.intr. ipf.
-17227	čuvati	v.intr. ipf.
-6938	čuvstveno	adv.
-6939	čuvstveny	adj.
-2896	čuvstvo	n.
-12869	da by	conj.
-2371	da	intj.
-17233	da	conj.
-17234	da	particle
-25087	dača	f.
-25088	dadaizm	m.sg.
-25090	dagerotipija	f.
-3031	Dagestan	m.sg.
-6945	dakle	adv.
-25092	daktylologija	f.sg.
-25093	daktyloskopija	f.sg.
-5219	daleko	adv.
-35228	dalekoględ	m.
-17236	dalekoskok	m.
-6950	Daleky Iztok	m.sg.
-4758	Daleky Vȯzhod	m.sg.
-612	daleky	adj.
-25098	daleměr	m.
-3566	dalj	m.
-1177	dalje	adv.
-25102	daljnji, daljny	adj.
-3032	daljši	adj.
-35907	Dalmatija	f.sg.
-35908	dalmatinsky	adj.
-25103	daltonist	m.anim.
-25104	daltonizm	m.sg.
-17237	dama	f.
-25105	dama	f.
-25106	dama	f.
-34966	damast	m.
-3548	dane	m.pl.
-1178	Danija	f.sg.
-5063	danina	f.
-25111	danj	f.
-25112	dannik	m.anim.
-14509	danȯk	m.
-25113	dansing	m.
-4427	dansky	adj.
-5697	dany	adj.
-36467	daoizm	m.
-4520	dar krve	m.
-6960	dar	m.
-17240	dar	m.
-4521	daritelj krve	m.anim.
-4325	daritelj	m.anim.
-4324	dariti	v.tr. ipf.
-17241	dariti	v.tr.ipf
-25122	darmojed	m.anim.
-36842	darmovo	adv.
-25123	darmovy	adj.
-6966	darovańje krve	n.
-6965	darovańje	n.
-6970	darovati	v.tr. ipf.
-17242	darovati	v.tr. ipf.
-17243	darovity	adj.
-25127	darvinist	m.anim.
-25128	darvinizm	m.sg.
-1967	data	f.
-1966	dateljnik, dateljny padež	m.
-6973	dati råbotų	v.pf.
-22987	dati zajem	v.pf.
-664	dati	v.tr. pf.
-16930	dativ	m.
-25133	datovati	v.tr. ipf./pf.
-36072	datulja	f.
-15276	daunlodovańje	n.sg.
-15278	daunlodovati	v.tr. ipf.
-25134	davač	m.anim.
-6979	davati råbotų	v.ipf.
-22986	davati zajem	v.ipf.
-2898	davati	v.tr. ipf.
-25136	davec	m.anim.
-25137	daviti	v.tr. ipf.
-25139	davno	adv.
-2861	davny	adj.
-1982	daže	adv.
-2623	dbati	v.intr. ipf.
-1236	debata	f.
-25144	debatovati	v.intr. ipf.
-25146	debelěti	v.intr. ipf.
-25147	debely	adj.
-25148	debet	m.
-25150	debjut	m.
-25151	debjutant	m.anim.
-25152	debjutovati	v.intr. ipf./pf.
-25153	deblokovati	v.intr. ipf./pf.
-25155	decembr	m.sg.
-25158	Děd Mråz	m.anim.
-1436	děd	m.anim.
-7068	dědȯk	m.anim.
-25161	dědov	adj.
-25162	dedukcija	f.
-25163	deduktivny	adj.
-25164	defekt	m.
-2907	defenestracija	f.sg.
-25165	deficit	m.
-2624	definicija	f.
-4956	definiovati	v.tr. ipf.
-23693	definitivno	adv.
-23692	definitivny	adj.
-288	defis	m.
-15281	defisovańje	n.sg.
-15282	defisovany	adj.
-15280	defisovati	v.tr. ipf.
-289	deformovati	v.tr. ipf.
-25167	degenerat	m.anim.
-25168	degenerativny	adj.
-25169	degenerovati	v.intr. ipf./pf.
-25170	degeť	m.
-25171	degradacija	f.
-25172	degradovati	v.tr. ipf./pf.
-25173	degustacija	f.
-25175	degustovati	v.tr. ipf./pf.
-25089	dęgylj	m.
-6986	dějajųći premier-ministr	m.anim.
-36057	dějańja apostolov	n.pl.
-6987	dějańja	n.pl.
-6988	dějańje	n.
-6990	dějateljnosť	f.sg.
-6992	dějati sę	v.refl. ipf.
-6991	dějati	v.tr. ipf.
-33034	dekadent	m.anim.
-33035	dekadentsky	adj.
-33036	dekadentstvo	n.sg.
-751	dekembr	m.sg.
-35941	deklamovati	v.tr. ipf./pf.
-216	deklaracija	f.
-35906	dekolonizacija	f.sg.
-36123	dekolt	m.
-23170	dekoracija	f.
-296	dękovati	v.intr. ipf.
-3175	dekret	m.
-4884	dękujų	intj.
-4899	dękujųći	prep.
-2612	děl	m.
-2613	děl	m.
-3771	děl	m.
-211	dělati	v.tr. ipf.
-25182	dělba	f.
-35170	delegacija	f.
-35171	delegat	m.anim.
-20361	delfin	m.anim.
-25184	delfińji	adj.
-25185	delikatno	adv.
-25186	delikatnosť	f.sg.
-19672	delikatny	adj.
-15694	delikt	m.
-19673	deliričny	adj.
-36012	děliti sę	v.refl. ipf.
-1754	děliti	v.tr. ipf.
-3545	děljeńje	n.
-2616	dělo	n.
-17246	dělo	n.
-35514	dělo	n.
-699	deminutiv	m.
-760	demisija	f.
-35279	demografičny	adj.
-35280	demografija	f.sg.
-2878	demokracija	f.
-2621	demokrat	m.anim.
-2622	demokratičny	adj.
-772	demonstracija	f.
-623	demonstrativny	adj.
-6266	demonstrovati	v.tr. ipf.
-7016	denj oplakyvańja	m.
-4053	denj poslě dnja	adv.
-5199	denj rođeńja	m.
-1845	denj	m.
-25194	denny	adj.
-17264	denonočje	n.
-25195	dentist	m.anim.
-36772	departament	m.
-36773	departament	m.
-2487	deportacija	f.
-398	deportovati	v.tr. ipf./pf.
-17248	depresija	f.
-36183	depresivny	adj.
-36184	deprimovany	adj.
-36182	deprimovati	v.tr. ipf./pf.
-36441	deprimujųći	adj.
-35469	desert	m.
-1517	desęť	num.card.
-16437	desętero	num.coll.
-2851	desętilěťje	n.
-7024	desętina	num.fract.
-16464	desętka	num.subst.
-1515	desęty	num.ord.
-276	dęsna	f.
-25202	desnica	f.
-32169	desnorųky	adj.
-25203	desny	adj.
-32478	despot	m.anim.
-1516	despotičny	adj.
-35734	destabilizacija	f.sg.
-35733	destabilizovati	v.tr. ipf./pf.
-17250	destalinizacija	f.sg.
-79	deševy	adj.
-2619	detalj	m.
-19674	detaljevany	adj.
-298	dětę	n.
-35472	detektiv	m.anim.
-1308	dętel	m.anim.
-17251	dętelina	f.
-7033	dětętko	n.
-16731	děti sę	v.refl. ipf.
-1191	děti	v.tr. ipf.
-4832	děti	f.pl.
-7035	dětinsko	adv.
-4836	dětinskosť	f.sg.
-4834	dětinsky	adj.
-4833	dětinstvo	n.sg.
-35828	detonator	m.
-4835	dětsky	adj.
-25212	dětstvo	n.sg.
-16414	děva	f.
-25213	Děva	f.
-25215	devalvacija	f.
-16413	děvčę	n.
-300	děvčina	f.
-5959	děvėc	m.anim.
-299	děveŕ	m.anim.
-2620	devęť	num.card.
-2181	devęťdesęt	num.card.
-23689	devęťdesęty	num.ord.
-16436	devętero	num.coll.
-16404	devętina	num.fract.
-16463	devętka	num.subst.
-886	devętnadsęť	num.card.
-23685	devętnadsęty	num.ord.
-1298	devęťsȯt, devęťsto	num.card.
-1922	devęty	num.ord.
-7069	Děvica Marija	f.sg.
-5956	děvica	f.
-5960	Děvičje Ostrovy	m.pl.
-7053	děvičji	adj.
-5958	děvičstvo	n.sg.
-25230	deviz	m.
-25231	děvka	f.
-25233	devon	m.
-25234	děvstvo	n.sg.
-25238	dezerter	m.anim.
-25239	dezertovati	v.intr. ipf./pf.
-25240	dezinfekcija	f.sg.
-25241	dezinfikovati	v.tr. ipf./pf.
-19675	dezinformacija	f.
-25243	dezinsekcija	f.sg.
-25244	děža	f.
-25246	dežurny	adj.
-31822	dežurstvo	n.
-32111	diagnostičny	adj.
-35672	diagnostika	f.sg.
-32109	diagnoza	f.
-35795	diagram	m.
-35943	diahroničny	adj.
-305	diakon	m.anim.
-17252	diakritičny znak	m.
-15807	dialekt	m.
-35942	dialektičny	adj.
-56	dialog	m.
-17253	diamant	m.
-25248	diamantovy	adj.
-1591	diametr	m.
-34934	diapozitiv	m.
-31836	diareja	f.sg.
-35243	diaspora	f.
-36831	diatoničny	adj.
-2975	diavȯl	m.anim.
-35991	diavȯľsko	adv.
-35577	dieta	f.
-16931	digitaľny	adj.
-35258	digraf	m.
-36132	dihotomija	f.
-14521	diko	adv.
-21270	dikobraz	m.anim.
-14522	dikosť	f.sg.
-3182	diktator	m.anim.
-23533	diktatura	f.
-33140	diktovati	v.tr. ipf./pf.
-15296	diky labęď	m.anim.
-15297	diky mak	m.
-14520	diky	adj.
-34846	dilema	f.
-35622	diler	m.anim.
-22995	dinamičny	adj.
-22996	dinamika	f.sg.
-34762	dinamit	m.sg.
-34591	dinamo	n.
-35873	dinar	m.
-1735	dinastija	f.
-32476	dinozavr	m.anim.
-23534	dioda	f.
-36634	diplodok	m.
-35628	diplom	m.
-23535	diplomacija, diplomatija	f.
-275	diplomat	m.anim.
-382	diplomatičny	adj.
-23507	dira	f.
-25467	diravy	adj.
-739	direktiva	f.
-272	direktor	m.anim.
-23509	dirigent	m.anim.
-36034	dirkovač	m.
-6104	disciplina	f.
-35739	disertacija	f.
-35510	diskreditovati	v.tr. ipf./pf.
-36170	diskretny	adj.
-32602	diskriminacija	f.sg.
-32603	diskriminovati	v.intr. ipf./pf.
-2488	diskusija	f.
-15818	diskusijny	adj.
-301	diskutovati	v.intr. ipf.
-35296	diskvalifikacija	f.
-35295	diskvalifikovati	v.tr. ipf./pf.
-1101	displej	m.
-35944	distancevati sę	v.refl. ipf./pf.
-304	distribucija	f.
-25252	divan	m.
-25253	divina	f.sg.
-25254	diviti	v.tr. ipf.
-7063	divnějši	adj.
-3531	divny	adj.
-3351	divo	n.
-14523	divo	adv.
-14528	divosť	f.sg.
-14525	divy	adj.
-36173	dizajn	m.
-32466	dizelj	m.sg.
-32467	dizeľny motor	m.
-2489	dlånj	f.
-25259	dlåto	n.
-7071	dlja uspěha!	intj.
-1557	dlja	prep.
-21271	dnem	adv.
-36885	Dněpr	m.sg.
-5288	dneś	adv.
-36886	Dněstr	m.sg.
-17256	dnešnje	adv.
-17254	dnešnji, dnešny	adj.
-7077	dnevnica	f.
-17257	dnevnik	m.
-25265	dnevny	adj.
-17259	dniti sę	v.refl. ipf.
-2490	dno	n.
-7082	do časa	adv.
-7083	do dneś	adv.
-7085	do dolu	adv.
-17260	do doma	adv.
-17261	do gory	adv.
-4879	do viděńja!	intj.
-2134	do	prep.
-17263	doba	f.
-21272	dobaviti	v.tr. pf.
-21273	dobavjati	v.tr. ipf.
-25269	doběgati do	v.intr. ipf.
-7105	Dobra noć!	intj.
-7091	dobra volja	f.
-25273	dobrěti	v.intr. ipf.
-14291	dobro informovany	adj.
-7095	Dobro jutro!	intj.
-7096	dobro nastrojeńje	n.
-7097	dobro obdarjeny	adj.
-7098	dobro orųdovany	adj.
-15131	dobro osvědomjeny	adj.
-16276	Dobro utro!	intj.
-2491	dobro	adv.
-17268	dobro	n.
-19481	dobrobyt	m.sg.
-17273	dobročinnosť	f.sg.
-17275	dobročinstvo	n.
-25274	dobroděj	m.anim.
-4878	Dobrodošli!	intj.
-7101	dobrodušny	adj.
-32465	dobronaměrny	adj.
-5870	dobropoględny	adj.
-4410	dobrosť	f.sg.
-25275	dobrota	f.sg.
-25276	dobrovoljec	m.anim.
-17277	dobrovoljny	adj.
-16277	Dobry denj!	intj.
-7106	Dobry večer!	intj.
-1144	dobry	adj.
-35371	dobyti ponovno	v.tr. pf.
-3192	dobyti	v.tr. pf.
-7110	dobyti	v.tr. pf.
-1145	dobytȯk	m.
-22988	dobyvatelj	m.anim.
-35370	dobyvati ponovno	v.tr. ipf.
-3191	dobyvati	v.tr. ipf.
-7113	dobyvati	v.tr. ipf.
-1084	dȯćera	f.
-7117	dȯćerka	f.
-7119	dȯćerska ljubȯv	f.
-6023	dȯćersky	adj.
-35250	dȯći	f.
-7114	dočasny	adj.
-311	dodati	v.tr. pf.
-7124	dodati	v.tr. pf.
-36195	dodatno	adv.
-36196	dodatny	adj.
-35191	dodatȯčno	adv.
-7126	dodatȯčny	adj.
-4088	dodatȯk	m.
-4089	dodatȯk	m.
-7129	dodava	f.
-1704	dodavati	v.tr. ipf.
-7133	dodavati	v.tr. ipf.
-35706	dodneś	adv.
-35222	dodo	m.anim.
-25287	doganjati	v.tr. ipf.
-25285	dogarjati	v.tr. ipf.
-7135	doględati	v.tr. ipf.
-7138	doględěti	v.tr. pf.
-25286	dognati	v.tr. pf.
-14534	dogoditi sę	v.refl. pf.
-31826	dogorěti	v.tr. pf.
-5534	dogovarjati sę	v.refl. ipf.
-2899	dogovarjati	v.tr. ipf.
-125	dogovor	m.
-583	dogovor	m.
-4192	dogovoriti sę	v.refl. pf.
-655	dogovoriti	v.tr. pf.
-35158	dogovorny	adj.
-17283	dȯhnųti	v.intr. pf.
-17284	dohod	m.
-5344	dohoditi	v.intr. ipf.
-5345	dojdti	v.intr. pf.
-5347	dojehati	v.intr. pf.
-17285	dojem	m.
-5349	dojezd	m.
-5348	doježđati	v.intr. ipf.
-1181	dojiti	v.tr. ipf.
-31810	dok	m.
-2041	dokaz	m.
-7161	dokazati	v.tr. pf.
-25294	dokazati	v.tr. pf.
-7162	dokazyvati	v.tr. ipf.
-19676	dokladati	v.tr. ipf.
-19536	dokolě	adv.
-19539	dokolě	conj.
-17286	dokonati	v.tr. pf.
-7163	dokonce	adv.
-7164	dokončeńje	n.
-15207	dokončeny	adj.
-7165	dokončiti	v.tr. pf.
-17288	dokonyvati	v.tr. ipf.
-2042	doktor	m.anim.
-36424	doktor	m.anim.
-35807	doktorat	m.
-2040	doktrina	f.
-7166	dokųd	adv.
-2029	dokument	m.
-35270	dokumentacija	f.sg.
-35176	dokumentaľny film	m.
-35297	dokumentovati	v.tr. ipf./pf.
-16480	dol	m.
-2933	dolar	m.
-1593	dȯlbti	v.tr. ipf.
-2030	dȯlg	m.
-20363	dȯlgo	adv.
-19486	dȯlgočasiti sę	v.refl. ipf.
-19485	dȯlgočasiti	v.tr. ipf.
-19482	dȯlgočaśje	n.sg.
-19487	dȯlgočasnica	f.
-19488	dȯlgočasnik	m.anim.
-19490	dȯlgočasny	adj.
-19489	dȯlgočašeny	adj.
-17299	dȯlgodenstvo	n.
-33038	dȯlgohvosty papugaj	m.anim.
-33037	dȯlgohvosty	adj.
-7172	dȯlgosť žiťja	f.
-3406	dȯlgosť	f.
-25308	dȯlgota	f.
-35308	dȯlgotrajny	adj.
-7174	dȯlgověčnosť	f.sg.
-7175	dȯlgověčny	adj.
-17301	dȯlgoživeny	adj.
-17302	dȯlgoživosť	f.sg.
-17303	dȯlgoživostno råziskyvańje	n.
-17304	dȯlgoživostny	adj.
-3051	dȯlgy	adj.
-2883	dolina	f.
-35488	doľno oblěčeńje	n.sg.
-185	doľnolužičsky	adj.
-19677	doľnosŕbsky	adj.
-19678	doľny	adj.
-20364	doložiti	v.tr. pf.
-7179	dȯlžen	adj.
-31743	dȯlžina valy	f.
-23656	dȯlžina vȯlny	f.
-23657	dȯlžina	f.
-25312	dȯlžiti	v.tr. ipf.
-25313	dȯlžnik	m.anim.
-3699	dȯlžnosť	f.
-3573	dȯlžny	adj.
-6161	dȯlžny	adj.
-3162	dom	m.
-16825	doma	adv.
-36433	domašnja gospodynja	f.
-23194	domašnje životno	n.
-17311	domašnji spor	m.
-23195	domašnji zvěŕ	m.anim.
-17305	domašnji, domašny	adj.
-7186	domče	n.
-36356	domen	m.
-36357	domenno imę	n.
-20365	doměška	f.
-35172	dominacija	f.sg.
-36109	dominanta	f.
-22455	Dominikanska Republika	f.sg.
-694	dominovati	v.tr. ipf.
-17308	domněvati	v.tr. ipf.
-17310	domorodny	adj.
-21274	domorodny	adj.
-25318	domosěd	m.anim.
-16826	domov	adv.
-17312	domovina	f.
-17313	domovy arešt	m.sg.
-25319	domovy	adj.
-20366	domysl	m.
-20369	domysliti sę	v.refl. pf.
-20368	domysljati sę	v.refl. ipf.
-20370	domysľny	adj.
-3813	donesti	v.tr. pf.
-4275	donositelj	m.anim.
-20372	donositelj	m.anim.
-3691	donositi	v.tr. ipf.
-7198	dopis	m.
-6065	dopisnik	m.anim.
-6062	dopisyvańje	n.
-6064	dopisyvatelj	m.anim.
-6061	dopisyvati	v.tr. ipf.
-6208	dopoka ne	conj.
-6207	dopoka	conj.
-36242	dopȯlniteljny	adj.
-7204	dopȯlniti	v.tr. pf.
-7206	dopȯlnjati	v.tr. ipf.
-7205	dopȯlnjeńje	n.
-34890	dopȯlnjeńje	n.
-17317	dopȯlnjeny	adj.
-34868	dopȯlzati	v.intr. ipf.
-34869	dopȯlzti	v.intr. pf.
-17320	dopŕva	adv.
-36755	dopustimy	adj.
-7207	dopustiti	v.tr. pf.
-20862	dopustiti	v.tr. pf.
-7208	dopušćati	v.tr. ipf.
-20859	dopušćati	v.tr. ipf.
-7211	dorastati	v.intr. ipf.
-16416	doråsti	v.intr. pf.
-23050	doråstla	f.
-7212	doråstlosť	f.sg.
-15304	doråstly	adj.
-22992	doråstly	m.anim.
-7213	doråzuměti sę	v.refl. pf.
-7214	doråzuměvańje	n.sg.
-7215	doråzuměvati sę	v.refl. ipf.
-7216	dorųčati	v.tr. ipf.
-7218	dorųčiti	v.tr. pf.
-17322	dosada	f.
-17326	dosaditi sę	v.refl. pf.
-17325	dosaditi	v.tr. pf.
-21276	dosaditi	v.tr. pf.
-17327	dosadny	adj.
-17328	dosadny	adj.
-21277	dosadny	adj.
-17324	dosađati sę	v.refl. ipf.
-17323	dosađati	v.tr. ipf.
-21275	dosađati	v.tr. ipf.
-7221	dosęgajemy	adj.
-1686	dosęgati	v.tr. ipf.
-5104	dosęgneńje	n.
-1059	dosęgnųti	v.tr. pf.
-7228	dosęžeńje	n.
-7222	dosęženy	adj.
-2039	dȯska	f.
-4208	doskonaliti	v.tr. ipf.
-4210	doskonalosť	f.sg.
-4207	doskonaly	adj.
-17330	doslědno	adv.
-35162	doslědnosť	f.sg.
-17331	doslědny	adj.
-16753	doslovno	adv.
-16752	doslovny	adj.
-423	dosť	adv.
-1900	dostati	v.tr. pf.
-7241	dostati	v.tr. pf.
-7242	dostatȯčno	adv.
-7244	dostatȯčnosť	f.sg.
-2510	dostatȯčny	adj.
-3791	dostatȯk	m.
-21716	dostatȯk	m.
-7248	dostava	f.
-2511	dostavati	v.tr. ipf.
-7266	dostavati	v.tr. ipf.
-21715	dostavati	v.tr. ipf.
-7253	dostavitelj internetnej služby	m.anim.
-7251	dostavitelj	m.anim.
-3105	dostaviti	v.tr. pf.
-21727	dostaviti	v.tr. pf.
-20	dostavjati	v.tr. ipf.
-21726	dostavjati	v.tr. ipf.
-23420	dostavka i popytka	phrase
-5577	dostavka	f.
-21853	dostigati	v.tr. ipf.
-21855	dostigati	v.tr. ipf.
-21854	dostignųti	v.tr. pf.
-21856	dostignųti	v.tr. pf.
-21721	dostojenstvo	n.
-21722	dostojenstvo	n.
-21725	dostojnik	m.anim.
-484	dostojnosť	f.sg.
-3057	dostojny	adj.
-3842	dostojny	adj.
-21719	dostojny	adj.
-21720	dostojny	adj.
-17334	dostųp	m.
-6045	dostųpnosť	f.sg.
-3054	dostųpny	adj.
-7258	dostųpny	adj.
-25345	dosyta	adv.
-25344	dȯščeny	adj.
-22119	dotknųti sę	v.refl. pf.
-481	dotknųti	v.tr. pf.
-19622	dotolě	adv.
-465	dotųd	adv.
-22120	dotykati sę	v.refl. ipf.
-1146	dotykati	v.tr. ipf.
-21280	dovědati sę	v.refl. ipf.
-21283	dověděti sę	v.refl. pf.
-36845	dověriti sę	v.refl. pf.
-3844	dověriti	v.tr. pf.
-36844	dověrjati sę	v.refl. ipf.
-3843	dověrjati	v.tr. ipf.
-36843	dověrjati	v.intr. ipf.
-23982	dověŕje	n.sg.
-7271	dověrjeńje	n.sg.
-22325	dověrny	adj.
-35918	dovesti do/k	v.tr. pf.
-7274	dovezti	v.tr. pf.
-22372	dovnųtra	prep.
-22373	dovnųtra	adv.
-3310	dovod	m.
-22249	dovod	m.
-35917	dovoditi do/k	v.tr. ipf.
-7276	dovoljno	adv.
-25348	dovoljny	adj.
-7277	dovoz	m.
-22414	dovoz	m.
-7278	dovoziti	v.tr. ipf.
-7279	dovoznik	m.anim.
-22566	dovŕšati	v.tr. ipf.
-35298	dovŕšenosť	f.sg.
-35289	dovŕšeny	adj.
-22567	dovŕšiti	v.tr. pf.
-14539	dozad	adv.
-22891	dozor	m.
-4115	dozrěly	adj.
-14301	dozrěno vino	n.
-14302	dozrěny	adj.
-4113	dozrěti	v.intr. pf.
-4114	dozrěvati	v.intr. ipf.
-17338	dozvaljaje sę	phrase
-435	dozvaljati	v.tr. ipf.
-7283	dozvolimy	adj.
-414	dozvoliti	v.tr. pf.
-32670	dozvoljeńje	n.
-7287	dozvoljeny	adj.
-1902	dȯžď	m.
-35032	dȯžďevy črvjak	m.anim.
-25352	dȯžďevy	adj.
-7291	dȯžditi	v.intr. ipf.
-25355	dȯždlivy	adj.
-7292	dȯždnik	m.
-4486	dožiti	v.tr. pf.
-3719	dožitny	adj.
-17335	doživeti	v.tr. ipf.
-17339	drabina	f.
-419	dråga	f.
-35839	drågocěnnosť	f.sg.
-23995	drågocěnny	adj.
-35042	drågoukazatelj	m.
-432	drågy	adj.
-36362	drågy	adj.
-20373	drakon	m.anim.
-23694	drama	f.
-36340	dramatično	adv.
-1903	dramatičny	adj.
-35790	dramaturgija	f.
-436	drapati	v.tr. ipf.
-442	drapnųti	v.tr. pf.
-440	drastičny	adj.
-23220	dražlivy	adj.
-25360	dražniti	v.tr. ipf.
-35036	dråžny znak	m.
-35037	dråžny	adj.
-2513	drěmati	v.intr. ipf.
-31832	drěmlivosť	f.sg.
-31831	drěmlivy	adj.
-449	drěmnųti	v.intr. pf.
-25362	drěmota	f.
-25363	drěn	m.
-36112	dresura	f.
-33986	dreti grlo	phrase
-1529	dreti	v.tr. ipf.
-7307	drěvěny dom	m.
-23455	drěvěny dyhovy instrument	m.
-2512	drěvěny	adj.
-35197	drěvny vųgȯlj	m.
-7308	drěvny	adj.
-25368	drěvny	adj.
-2137	drěvo	n.
-5292	drěvo	n.
-7312	drěvorěžeńje	n.sg.
-17340	drěvorųb	m.anim.
-7314	drgańje	n.sg.
-14540	drgati	v.intr. ipf.
-34661	drgnųti	v.intr. pf.
-7318	dŕkańje	n.sg.
-4693	dŕkati	v.intr. ipf.
-7319	dŕkatnik	m.anim.
-25371	drn	m.
-36415	drob	m.
-25374	drobiti	v.tr. ipf.
-36062	drobjenec	m.
-7320	drobne	m.pl.
-25375	drobny	adj.
-25376	dropja	f.
-16423	drozd	m.anim.
-1603	drožđe	f.pl.
-14542	drug	m.anim.
-7328	drugar	m.anim.
-17342	drugorędny	adj.
-784	drugy	num.ord.
-5076	drugy	adj.
-7331	družba	f.
-25384	družba	m.anim.
-25385	družica	f.
-5882	družina	f.
-7333	družiti sę	v.refl. ipf.
-25388	družka	f.
-7336	družny	adj.
-25389	družny	adj.
-7337	družstvo	n.
-25392	drva	n.pl.
-17341	drvosěk	m.anim.
-35027	dŕzati	v.intr. ipf.
-25395	dŕzky	adj.
-25396	dŕznųti	v.intr. pf.
-25397	dŕzosť	f.sg.
-5231	dŕžak	m.
-25398	držalo	n.
-6185	dŕžati glådovkų	v.ipf.
-17344	dŕžati sę něčego	v.refl. ipf.
-2617	dŕžati	v.tr. ipf.
-25399	držati	v.intr. ipf.
-1756	dŕžava	f.
-17346	dŕžavnik	m.anim.
-35173	dŕžavnosť	f.sg.
-6268	dŕžavny	adj.
-7343	dŕžka	f.
-451	dųb	m.
-25404	dųbiti	v.tr. ipf.
-7345	dubliti	v.tr. ipf.
-14544	dubljeńje	n.
-25405	dųbovy	adj.
-25407	duda	f.
-25408	dudaŕ	m.anim.
-17347	dudy	f.pl.
-36091	duel	m.
-292	dųga	f.
-434	duh	m.anim.
-17348	duh	m.
-6198	duhovenstvo	n.sg.
-6197	duhovnik	m.anim.
-284	duhovny	adj.
-2520	dumati	v.tr. ipf.
-23532	Dunaj	m.sg.
-25416	dųnųti	v.intr. pf.
-1655	dupa	f.
-36513	dupja	f.
-35291	duplikat	m.
-36512	duplo	n.
-25424	durenj	m.anim.
-34192	durěti	v.intr. ipf.
-14546	durno	adv.
-14547	durnosť	f.
-2521	durny	adj.
-34087	duš	m.
-703	duša	f.
-7357	dušeńje	n.sg.
-17349	duševny	adj.
-2543	dušiti	v.tr. ipf.
-7358	dušlivy	adj.
-7359	dušny	adj.
-683	dųti	v.tr. ipf.
-5233	duty	adj.
-7364	duzina	f.
-14548	duže	adv.
-4459	duži	adj.
-457	dva	num.card.
-458	dvadesęť, dvadesęti	num.card.
-19681	dvadesęty	num.ord.
-2515	dvanadsęť	num.card.
-23680	dvanadsęty	num.ord.
-2964	dvasto	num.card.
-7369	dvě tretiny	num.fract.
-2929	dveri	f.pl.
-7393	dveŕnik	m.anim.
-23678	dvěstě	num.card.
-469	dvigati sę	v.refl. ipf.
-468	dvigati	v.tr. ipf.
-471	dvignųti	v.tr. pf.
-3180	dvižeńje	n.
-36092	dvoboj	m.
-16452	dvojaky	num.diff.
-17355	dvojce toliko	adv.
-16426	dvojčany	adj.
-15306	dvojčę	n.
-7402	dvojčęta	n.pl.
-472	dvoje	num.coll.
-19682	dvojina	f.
-25443	dvojiti	v.tr. ipf.
-7414	dvojka	num.subst.
-25445	dvojka	f.
-7415	dvojna komnata	f.
-17357	dvojnik	m.anim.
-7417	dvojno	adv.
-7412	dvojny agent	m.anim.
-14552	dvojny standard	m.
-476	dvojny	adj.
-15310	dvojostry meč	m.
-15309	dvojostry	adj.
-16492	dvojstveno čislo	n.
-22118	dvojtočka	f.
-5212	dvor	m.
-25452	dvor	m.
-16810	dvorjan, dvorjanin	m.anim.
-16811	dvorjansky	adj.
-7421	dvorjanstvo	n.sg.
-16763	dvucifreny	adj.
-14549	dvuetapovy	adj.
-14550	dvuetažny avtobus	m.
-7376	dvuetažny	adj.
-17358	dvuglåska	f.
-25440	dvuglåvy	adj.
-22994	dvujęzyčnosť	f.sg.
-22993	dvujęzyčny	adj.
-7370	dvukolesny	adj.
-1800	dvukråtno	adv.
-7410	dvukråtny	adj.
-7380	dvulicevy	adj.
-17359	dvuličny	adj.
-7381	dvumotorovy	adj.
-17361	dvupěv	m.
-17362	dvusmysľnosť	f.
-17363	dvusmysľny	adj.
-2882	dvustrånny	adj.
-7371	dvustųpny	adj.
-7389	dvutonovy	adj.
-25456	dvuvlasťje	n.sg.
-31872	dvuvyměrny	adj.
-17365	dvuznačnosť	f.
-17367	dvuznačny	adj.
-22852	dvuznačny	adj.
-25457	dvuženec	m.anim.
-17364	dvuženstvo	n.sg.
-7057	dyh	m.
-3468	dyhańje	n.sg.
-25459	dyhati	v.intr. ipf.
-25460	dyhavica	f.sg.
-23454	dyhovy instrument	m.
-25461	dyhtěti	v.intr. ipf.
-2027	dym	m.
-5582	dymiti cigaretojų	v.ipf.
-1257	dymiti	v.intr. ipf.
-25463	dymnik	m.
-2310	dynja	f.
-17368	dyšati	v.intr. ipf.
-35481	dyšnik	m.
-35482	dyšno grlo	n.
-5049	džaz	m.sg.
-475	đban	m.
-7426	đbanȯk	m.
-17369	džem	m.
-3291	džentelmen	m.anim.
-35893	džin	m.
-19683	džinsy	m.pl.
-31851	džoker	m.anim.
-507	Džordžija	f.sg.
-23583	džudo	n.sg.
-21286	džungla	f.
-36326	ebenovo drěvo	n.
-22074	edem	m.
-16932	edukacija	f.sg.
-16933	edukacijny	adj.
-3580	efekt	m.
-19684	efektivnosť	f.sg.
-480	efektivny	adj.
-19685	egalitarny	adj.
-36741	Egejsko morje	n.
-35865	Egipćan, Egipćanin	m.anim.
-4756	Egipt	m.sg.
-4757	egiptsky	adj.
-22393	egoist	m.anim.
-22394	egoističny	adj.
-22392	egoizm	m.sg.
-17370	egotizm	m.sg.
-3600	egzistencija	f.sg.
-15832	egzistovańje	n.sg.
-4087	egzistovati	v.intr. ipf.
-35789	egzotičny	adj.
-23998	eho	n.
-14558	ejakulacija	f.
-17558	ejakulat	m.
-14559	ejakulovati	v.intr. ipf.
-5883	ekipa	n.
-2519	ekolog	m.anim.
-35267	ekologičny	adj.
-23540	ekologija	f.sg.
-16795	ekonom	m.anim.
-1778	ekonomičny	adj.
-17371	ekonomija	f.
-15834	ekonomika	f.sg.
-7438	ekran	m.
-15836	ekskavator	m.
-26665	ekskavator	m.
-2077	ekskluzivny	adj.
-3597	ekskursija	f.
-3582	ekspansija, ekspanzija	f.sg.
-35716	ekspedicija	f.
-4851	eksperiment	m.
-20374	eksperimentaľny	adj.
-4852	eksperimentovati	v.intr. ipf.
-1049	ekspert	m.anim.
-5639	eksploatacija	f.sg.
-5638	eksploatovati	v.tr. ipf.
-4802	eksplodovati	v.intr. ipf.
-4797	eksplozija	f.
-4799	eksplozivny	adj.
-35974	eksponencialny	adj.
-4960	eksport	m.sg.
-371	eksportovati	v.tr. ipf.
-25473	eksterier	m.
-25474	ekstragovati	v.tr. ipf./pf.
-35131	ekstrakt	m.
-35128	ekstrapolacija	f.
-16905	ekstremist	m.anim.
-1685	ekstremističny	adj.
-16906	ekstremizm	m.sg.
-35683	ekumeničny	adj.
-22436	Ekvador	m.sg.
-22437	ekvadorsky	adj.
-34928	ekvator	m.
-35285	ekvivalent	m.
-36133	ekvivalentny	adj.
-23228	elastičnosť	f.sg.
-19686	elastičny	adj.
-21287	elegantny	adj.
-53	električnosť	f.sg.
-4444	električny	adj.
-23675	elektrifikacija	f.sg.
-36373	elektrik	m.anim.
-23674	elektrokucija	f.
-4660	elektron	m.
-23542	elektronična pošta	f.sg.
-4445	elektroničny	adj.
-2302	elektronika	f.sg.
-35	elektrostancija	f.
-2922	elektrošokovo orųžje	n.
-36374	elektrotehnik	m.anim.
-23541	elektrotehnika	f.sg.
-17372	element	m.
-35208	elementarny	adj.
-35169	eliminovati	v.tr. ipf./pf.
-17373	elisa	f.
-19687	elita	f.
-1314	elizija	f.sg.
-35750	emancipacija	f.sg.
-6082	embargo	n.
-4957	emigracija	f.
-4963	emigrant	m.anim.
-2213	emigrovati	v.intr. ipf.
-35971	eminencija	f.
-2522	emisija	f.
-5300	emocija	f.
-561	emocionaľny	adj.
-19688	enciklopedičny	adj.
-19689	enciklopedija	f.
-33567	endemičny	adj.
-35673	energetičny	adj.
-2936	energetika	f.sg.
-35674	energičny	adj.
-1909	energija	f.sg.
-485	entitet	m.
-3586	entuziast	m.anim.
-7448	entuziastično	adv.
-7449	entuziastičny	adj.
-7452	entuziazm	m.sg.
-7451	entuziazmovati	v.tr. ipf.
-23543	enzim	m.
-6172	eparhija	f.
-7453	epicentr zemjetręseńja	m.
-35019	epicentr	m.
-35919	epičsky	adj.
-33566	epidemija	f.
-25475	epigraf	m.
-6171	episkop	m.anim.
-35894	episkopaľny	adj.
-35603	epitet	m.
-35581	epizod	m.
-4698	epoha	f.
-4497	era	f.
-6105	erotičny	adj.
-23695	erupcija	f.
-25478	esej	m.
-15858	eskadron	m.
-35367	eskalacija	f.
-35366	eskalovati	v.intr. ipf./pf.
-486	eskortovati	v.tr. ipf.
-31775	esperantist	m.anim.
-7456	esperanto	n.
-7455	esperantsky	adj.
-35110	estetičny	adj.
-35109	estetika	f.sg.
-488	Estonija	f.sg.
-4435	estonsky	adj.
-23240	estrada	f.
-33598	estuarij	m.
-23244	etap	m.
-2524	etaž	m.
-23545	etičny	adj.
-23544	etika	f.sg.
-23696	etiketa	f.
-4369	etimologičny	adj.
-4368	etimologija	f.sg.
-22776	Etiopija	f.sg.
-22777	etiopsky	adj.
-6173	etnična čistka	f.
-35224	etničnosť	f.
-1734	etničny	adj.
-20863	etnograf	m.anim.
-20864	etnografija	f.sg.
-5052	evakuacija	f.
-5053	evakuovati	v.tr. ipf.
-17376	evangeľje	n.
-19690	eventuaľno	adv.
-2033	eventuaľny	adj.
-25481	Evfrat	m.sg.
-23546	evolucija	f.sg.
-25482	Evrazija	f.sg.
-946	evro	n.
-1555	Evropa	f.sg.
-3038	Evropejec	m.anim.
-35822	Evropejka	f.
-7467	Evropejska Unija	f.sg.
-1906	Evropejsky Sȯjųz	m.sg.
-1905	evropejsky, evropsky	adj.
-490	fabrika	f.
-35570	fabrikant	m.anim.
-25487	fabrikovati	v.tr. ipf.
-23437	fagot	m.
-34759	fajka	f.
-14562	fajl	m.
-36201	faklja	f.
-5180	faks	m.
-2525	fakt	m.
-35391	faktičny	adj.
-16781	faktor	m.
-35537	faktura	f.
-35167	fakultativny	adj.
-35530	fakultet	m.
-35487	falsifikacija	f.
-35486	falsifikovati	v.tr. ipf./pf.
-5301	falšivy	adj.
-768	fanat	m.
-19691	fanatično	adv.
-687	fanatičny	adj.
-23457	fanfara	f.
-3959	fantastičny	adj.
-35909	fantastika	f.sg.
-19692	fantazija	f.
-25491	fantom	m.anim.
-32516	faraon	m.anim.
-5095	farba	f.
-5096	farbovati	v.tr. ipf.
-36484	Farerske ostrovy	m.pl.
-36485	farersky	adj.
-6269	farsa	f.
-34923	fartuh	m.
-31794	fasada	f.
-23273	fasolja	f.
-5303	fašist	m.anim.
-35751	fašističny	adj.
-5302	fašizm	m.sg.
-31793	fataľny	adj.
-25493	fatamorgana	f.
-140	faulj	m.
-19693	faza	f.
-23470	fazan	m.anim.
-23246	fazovańje	n.sg.
-3063	federacija	f.
-3013	federaľny	adj.
-1320	federativny	adj.
-35959	fehtovańje	n.sg.
-33198	fejerverk	m.
-23555	feminizm	m.sg.
-32719	feniks	m.anim.
-19694	fenomen	m.
-413	fermer	m.anim.
-2139	festival	m.
-34782	feudalizm	m.sg.
-34783	feudaľny	adj.
-2303	fevruaŕ	m.sg.
-17377	fialka	f.
-25497	figa	f.
-1673	figura	f.
-17378	fikcija	f.sg.
-17379	fiktivny	adj.
-36605	filantrop	m.anim.
-36606	filantropičny	adj.
-36607	filantropija	n.sg.
-7482	filial	m.
-7483	filiaľny	adj.
-36487	filipinsky	adj.
-36486	Filipiny	f.pl.
-36288	film črtany	m.
-36287	film rysovany	m.
-418	film	m.
-35177	filmografija	f.
-495	filmovati	v.tr. ipf./pf.
-35344	filolog	m.
-35343	filologija	f.sg.
-2526	filozof	m.anim.
-496	filozofija	f.
-36442	filozofsky	adj.
-4949	filtr	m.
-4950	filtrovati	v.tr. ipf.
-17380	financije	f.pl.
-15874	finančnik	m.anim.
-2527	finansist	m.anim.
-5150	finansovati	v.tr. ipf.
-1931	finansovy	adj.
-36073	finik	m.
-35937	finitny	adj.
-3028	Finlandija	f.sg.
-4434	finsky	adj.
-5274	fioletovy	adj.
-16780	firma	f.
-36528	fiskaľny	adj.
-35490	fitilj	m.
-3027	fizičny	adj.
-2498	fizika	f.sg.
-32498	fizioterapija	f.sg.
-32499	fizioterapist	m.anim.
-36087	fjuzelaž	m.
-20375	flamingo	m.anim.
-19695	flavorizacija	f.
-32277	flegma	f.sg.
-32278	flegmatičny	adj.
-23434	flejta	f.
-23465	flejta-pikolo	f.
-35542	fleka	f.
-19696	fleksibiľny	adj.
-25504	fleksija	f.
-16746	fleška	f.
-32902	flirtovati	v.intr. ipf.
-16744	fljaška	f.
-36009	flomaster	m.
-32384	flota	f.
-32385	flotilja	f.
-22604	fluor	m.sg.
-25506	fokus	m.
-25507	fokus	m.
-36784	folija	f.
-17382	folklor	m.
-35792	folklorny	adj.
-34950	fon	m.
-1016	fond	m.
-25508	fonema	f.
-2678	fonetičny	adj.
-35945	fonetika	f.sg.
-36416	fonologičny	adj.
-2499	fonologija	f.sg.
-36417	font	m.
-2001	forma	f.
-19697	formalizacija	f.sg.
-19698	formalizovati	v.tr. ipf.
-35600	formaľnosť	f.
-20376	formaľny	adj.
-35048	format	m.
-25511	formovańje	n.
-25512	formovati	v.tr. ipf./pf.
-5181	formula	f.
-5182	formulaŕ	m.
-19699	formulovati	v.tr. ipf.
-23430	fortepiano	n.
-2306	fortifikacija	f.sg.
-3026	forum	m.
-22611	fosfor	m.sg.
-34932	fotka	f.
-4398	fotografičny	adj.
-807	fotografija	f.
-4396	fotografovati	v.tr. ipf.
-19700	fragment	m.
-19701	fragmentacija	f.sg.
-36463	fragmentarny	adj.
-21288	frak	m.
-1342	frakcija	f.
-1188	Francija	f.sg.
-20377	Francuz	m.anim.
-19702	francuzskojęzyčny	adj.
-1020	francuzsky	adj.
-21290	frank	m.
-35780	franksky	adj.
-14563	fraze	n.indecl.
-17383	fraznik	m.
-35648	freska	f.
-19703	freudovsky	adj.
-36027	frizer	m.anim.
-19704	front	m.
-34678	frustracija	f.
-34677	frustrovany	adj.
-34676	frustrovati	v.tr. ipf./pf.
-17384	fundacija	f.
-19705	fundament	m.
-23559	fundamentalističny	adj.
-23558	fundamentalizm	m.sg.
-2583	funikulor	m.
-1289	funkcija	f.
-35303	funkcionaľny	adj.
-227	funkcionovati	v.intr. ipf.
-5723	funt	m.
-7499	funt	m.
-25518	furgon	m.
-2585	futbol	m.sg.
-17386	futro	n.
-35830	fuzija	f.
-25520	gabardin	m.sg.
-36178	gaće	f.pl.
-7505	gad	m.anim.
-16477	gad	m.anim.
-25529	gadati	v.intr. ipf.
-7506	gaďji	adj.
-25533	gaďji	adj.
-25530	gadny	adj.
-35157	gadžet	m.
-2586	gaj	m.
-22438	Gajana	f.sg.
-22439	gajansky	adj.
-17387	gajdy	f.pl.
-23564	galaktika	f.
-25537	galanterija	f.
-25539	galantny	adj.
-25540	galera	f.
-995	galerija	f.
-25542	galeta	f.
-6174	Galicija	f.sg.
-25543	galicizm	m.
-25544	galij	m.sg.
-6175	Galisija	f.sg.
-25551	galon	m.
-25552	galop	m.
-25553	galopovati	v.intr. ipf./pf.
-1725	galųź	f.
-17388	galųzka	f.
-25557	galvanizacija	f.
-25558	galvanizm	m.sg.
-25559	galvanizovati	v.intr. ipf./pf.
-25547	galvanometr	m.
-25560	gama	f.
-25561	gamaša	f.
-25562	gambit	m.
-2587	Gana	f.sg.
-25564	gangrena	f.
-25566	gangster	m.anim.
-2588	gansky	adj.
-3648	garancija	f.
-14565	garant	m.anim.
-14567	garantovany	adj.
-14568	garantovati	v.tr. ipf.
-2589	garaž	m.
-25574	gardenija	f.
-25575	garderoba	f.
-33584	gargulja	f.
-25578	garnirovati	v.tr. ipf.
-25579	garnitura	f.
-2203	garnizon	m.
-25583	gasilo	n.
-4232	gasitelj	m.anim.
-25584	gasiti	v.tr. ipf.
-514	gaslo	n.
-2670	gasnųti	v.intr. ipf.
-25586	gastrit	m.sg.
-25587	gastronom	m.anim.
-25589	gaubica	f.
-818	gavrån	m.anim.
-1990	gaz	m.
-25593	gaza	f.
-25594	gazela	f.
-4064	gazeta	f.
-36876	gazna komora	f.
-25599	gazovana voda	f.
-25600	gazovati	v.tr. ipf./pf.
-25601	gazovati	v.intr. ipf.
-1991	gazovod	m.
-35567	gej	m.anim.
-36407	gekon	m.anim.
-34722	gel	m.
-17390	gen	m.
-25603	generacija	f.
-1605	general	m.anim.
-35427	generalizacija	f.
-35424	generalizovati	v.tr. ipf./pf.
-19706	generaľno	adv.
-32061	generaľny sekretaŕ	m.anim.
-1276	generaľny	adj.
-35910	generator	m.
-23993	generičny	adj.
-31890	generovati	v.tr. ipf./pf.
-35554	genetičny	adj.
-35808	genetika	f.
-19707	geneza	f.
-17391	geniaľnosť	f.
-17392	geniaľny	adj.
-17394	genij	m.anim.
-17091	genitiv	m.
-5065	genocid	m.
-17395	genoterapija	f.
-17396	genovo ozdravjeńje	n.sg.
-23996	geograf	m.anim.
-23997	geografičny	adj.
-2382	geografija	f.
-23569	geolog	m.anim.
-23570	geologičny	adj.
-23568	geologija	f.sg.
-23571	geometrija	f.
-35129	geopolitičny	adj.
-32471	gepard	m.anim.
-21291	geranj	m.
-829	gerb	m.
-35813	geriatričny	adj.
-35812	geriatrija	f.
-25608	germanizacija	f.
-4736	germansky	adj.
-589	gest	m.
-32127	gestikulovati	v.intr. ipf.
-2667	geto	n.
-33540	gigabajt	m.
-836	gigant	m.anim.
-33535	gigantsky	adj.
-36536	gimnastika	f.
-23444	gitara	f.
-1766	glåd	m.
-25616	gladiti	v.tr. ipf.
-25617	gladiti	v.tr. ipf.
-25618	gladkosť	f.
-837	gladky	adj.
-5235	glådny	adj.
-25621	glådovati	v.intr. ipf.
-6186	glådovka	f.
-827	glågol	m.
-35155	glagolica	f.
-35678	glagoličny, glagoľsky	adj.
-5824	glågoľny vid	m.
-2365	glås	m.
-17398	glås	m.
-17400	glåsiti	v.tr. ipf.
-17401	glåska	f.
-35652	glåsne struny	f.pl.
-4545	glåsnik	m.
-7538	glåsno	adv.
-5246	glåsny	adj.
-1336	glåsovańje	n.
-3780	glåsovatelj	m.anim.
-58	glåsovati	v.intr. ipf.
-40	glåva	f.
-3306	glåva	f.
-17403	glåva	f.
-25629	glåvaŕ	m.anim.
-25630	glåvaty	adj.
-25631	glåvica	f.
-7546	glåvna strånica	f.
-4408	glåvnik	m.anim.
-36202	glåvnja	f.
-5852	glåvno	adv.
-3508	glåvnokomandovač	m.anim.
-2012	glåvny gråd	m.
-2671	glåvny	adj.
-14572	glåvolomka	f.
-35578	ględač	m.anim.
-7561	ględęći na	prep.
-2003	ględěti	v.intr. ipf.
-17407	ględišče	n.
-25637	ględnųti	v.intr. pf.
-25639	glezenj	m.
-7562	glina	f.
-7566	gliněny	adj.
-1765	glist	m.anim.
-35077	globalizacija	f.
-35794	globalizovati	v.tr. ipf./pf.
-2002	globaľno potepljeńje	n.sg.
-34758	globaľny	adj.
-35899	globus	m.
-25645	glodati	v.tr. ipf.
-25646	glog	m.
-36685	glosarij	m.
-51	glųb	m.
-7571	glųbina	f.
-14573	glųbinny	adj.
-36361	glųbinny	adj.
-19708	glųboko	adv.
-1757	glųboky	adj.
-5867	glųbši	adj.
-36094	glug-glug	intj.
-25656	gluhnųti	v.intr. ipf.
-33005	gluhoněmy	adj.
-25657	gluhota	f.
-33007	gluhuněmota	f.
-1128	gluhy	adj.
-991	glupec	m.anim.
-25661	glupěti	v.intr. ipf.
-7579	glupo	adv.
-7580	gluposť	f.
-1751	glupy	adj.
-25666	glušiti	v.tr. ipf.
-1815	gnati	v.tr. ipf.
-35483	gněde vųglje	m.pl.
-1812	gnědy	adj.
-1305	gnesti	v.tr. ipf.
-110	gnet	m.sg.
-1127	gněv	m.sg.
-7593	gněvati sę	v.refl. ipf.
-2250	gněvati	v.tr. ipf.
-25677	gněvlivy	adj.
-3433	gněvny	adj.
-25680	gnězditi sę	v.refl. ipf.
-35650	gnězdko	n.
-2666	gnězdo	n.
-727	gnida	f.
-25683	gnilosť	f.
-5307	gnily	adj.
-5306	gniti	v.intr. ipf.
-25684	gniťje	n.sg.
-2183	gnoj	m.
-25687	gnoj	m.
-25689	gnojišče	n.
-25692	gnojiti sę	v.refl. ipf.
-25691	gnojiti	v.tr. ipf.
-31893	gnojivo	n.
-36126	gnom	m.anim.
-25695	gnusny	adj.
-31897	gnusny	adj.
-17411	gnųti	v.intr. ipf.
-14576	go	pron.pers.
-3083	god	m.
-17412	godišnica	f.
-14578	godišnje	adv.
-14579	godišnji, godišny	adj.
-17413	goditi sę	v.refl. ipf.
-7598	godnosť	f.
-2584	godny	adj.
-17415	godovati	v.intr. ipf.
-14581	godovno	adv.
-14582	godovy	adj.
-14583	gody	m.pl.
-25701	gogolj	m.anim.
-25702	gojiti	v.tr. ipf.
-25704	golěnj	f.
-21292	golf	m.sg.
-34141	goliti sę	v.refl. ipf.
-25707	goliti	v.tr. ipf.
-25708	goliti	v.tr. ipf.
-25709	gȯlk	m.
-25710	golobrådy	adj.
-25712	gololed	m.sg.
-21293	goloslovny	adj.
-25715	golota	f.
-7600	gȯltańje	n.sg.
-17418	gȯltati sȯlzy	v.ipf.
-5304	gȯltati	v.tr. ipf.
-25649	gȯltka	f.
-25650	gȯltnųti	v.tr. pf.
-7599	gȯltȯk	m.
-1656	golųb	m.anim.
-25719	golųbica	f.
-25718	golųbji	adj.
-25722	goly	adj.
-25724	gon	m.
-17419	gonec	m.anim.
-32990	gong	m.
-17420	gonišče	n.
-17421	goniti	v.tr. ipf.
-25728	gonitva	f.
-17422	gonka	f.
-17424	gonščik avtomobiljev	m.anim.
-17423	gonščik	m.anim.
-1429	gora	f.
-17425	gorčica	f.
-25732	gorčiti	v.intr. ipf.
-5666	gȯrdosť	f.
-2673	gȯrdy	adj.
-3665	goręće	adv.
-3666	goręći	adj.
-3659	goręćnja	f.
-17427	goręčka	f.
-17426	gorělka	f.
-401	gorěti	v.intr. ipf.
-25735	goricvět	m.
-34427	gorila	f.
-5232	goristy	adj.
-25730	gorjan, gorjanin	m.anim.
-7607	gorka	f.
-25738	goŕknųti	v.intr. ipf.
-25739	goŕkosť	f.
-2381	goŕky	adj.
-17428	gorlivy	adj.
-32528	gorlivy	adj.
-1376	gornik	m.anim.
-68	gornolužičsky	adj.
-19709	gornosŕbsky	adj.
-36024	gorsko pasmo	n.
-36023	gorsky lanec	m.
-25743	gorsky	adj.
-7619	gorše	adv.
-1985	gorši	adj.
-17430	goršiti	v.tr. ipf.
-25745	gospoď	m.anim.
-25746	gospodaŕ	m.anim.
-31902	gospodaŕ	m.anim.
-16793	gospodaŕstvo	n.
-16794	gospodaŕstvo	n.
-36197	gospodica	f.
-3290	gospodin	m.anim.
-5258	gospodynja	f.
-25749	gospođa	f.
-1854	gosť	m.anim.
-35029	gosteprijemny	adj.
-35028	gosteprijemstvo	n.sg.
-7627	gostiljnja	f.
-25752	gostinec	m.
-5234	gostinica	f.
-35031	gostinnosť	f.
-35030	gostinny	adj.
-1693	gostiti	v.tr. ipf.
-35927	gotičsky	adj.
-25761	gotovina	f.
-257	gotoviti	v.tr. ipf.
-7631	gotovo	adv.
-2289	gotovy	adj.
-35926	gotsky	adj.
-7634	govędina	f.
-25765	govęďji	adj.
-25763	govędo	n.
-25766	govněny	adj.
-316	govno	n.
-2674	govor	m.
-4544	govoritelj	m.anim.
-754	govoriti	v.tr. ipf.
-2676	grab	m.
-23406	graběž	f.
-952	grabiti	v.tr. ipf.
-23399	grabiti	v.intr. ipf.
-25771	grabiti	v.tr. ipf.
-25774	grabje	f.pl.
-671	gråd	m.
-2665	grad	m.
-25782	grådišče	n.
-17433	grådonačeľnik	m.anim.
-17435	grådsky	adj.
-2905	gråđan, gråđanin	m.anim.
-15698	gråđan, gråđanin	m.anim.
-7660	gråđanka	f.
-7663	gråđansky	adj.
-7653	gråđanstvo	n.sg.
-7654	gråđanstvo	n.sg.
-36779	grafična karta	f.
-35684	grafičny	adj.
-17436	grafitka	f.
-2545	gråh	m.
-25789	gråhovy	adj.
-23015	gram	m.
-6328	gramatičny	adj.
-1831	gramatika	f.
-33087	gramofon	m.
-33210	gramota	f.
-33207	gramotnosť	f.
-33208	gramotnosť	f.
-33205	gramotny	adj.
-33206	gramotny	adj.
-36279	granat	m.
-36281	granata	f.
-36280	granatno jablȯko	n.
-1265	granatomet	m.
-1264	granica	f.
-25793	graničiti	v.intr. ipf.
-23999	granit	m.sg.
-35793	grant	m.
-2668	gravirovati	v.tr. ipf.
-23572	gravitacija	f.
-2347	grb	m.
-23891	grbač	m.anim.
-16407	grbaty	adj.
-25798	grbiti sę	v.refl. ipf.
-5665	grditi	v.tr. ipf.
-1920	grebenj	m.
-738	grebti	v.tr. ipf.
-25802	grebti	v.tr. ipf.
-33926	grebti	v.tr. ipf.
-2675	Grecija	f.sg.
-3474	greča	f.
-3183	grečsky	adj.
-1750	grěh	m.
-36068	grejpfrut	m.
-20378	Grek	m.anim.
-782	greměti	v.intr. ipf.
-3181	gremųća zmija	f.
-36482	Grenlandija	f.sg.
-36483	grenlandsky	adj.
-2010	grěšiti	v.intr. ipf.
-17438	grěšiti	v.intr. ipf.
-17441	grěška	f.
-7680	grěšnica	f.
-2625	grěšnik	m.anim.
-25813	grěšny	adj.
-1882	grěti	v.tr. ipf.
-25815	gręź	f.
-2544	gręznųti	v.intr. ipf.
-673	grib	m.
-20379	grifon	m.anim.
-23422	gril	m.
-4271	grip	m.sg.
-4272	gripovy	adj.
-674	griva	f.
-722	grivna	f.
-25821	grivna	f.
-25822	grlica	f.
-492	grlo	n.
-5272	grn	m.
-25826	grnčaŕ	m.anim.
-35192	grnčaŕstvo	n.sg.
-2282	grnec	m.
-69	grnųti	v.tr. ipf.
-688	grob	m.
-3506	grob	m.
-4138	grobaŕ	m.anim.
-17442	grobišče	n.
-7693	grobokopatelj	m.anim.
-25837	grohtati	v.intr. ipf.
-2990	grom	m.
-6327	gromada	f.
-25839	gromada	f.
-17443	gromaditi	v.tr. ipf.
-676	gronostaj	m.anim.
-17444	groš	m.
-2567	groši	m.pl.
-19710	groteskovy	adj.
-690	groza	f.
-1885	groźba	f.
-25849	grozď	m.
-36079	grozdinka	f.
-25846	grozďje	n.
-2568	groziti	v.intr. ipf.
-691	grozny	adj.
-7701	grozny	adj.
-1930	grsť	f.
-1927	grtanj	f.
-25855	grubosť	f.
-680	Gruby Nacionaľny Produkt [GNP]	m.sg.
-36063	gruby pěsȯk	m.
-1736	gruby	adj.
-17445	grųď	f.
-2611	gruda	f.
-25860	grųdny	adj.
-1787	grupa	f.
-3950	grupovati	v.tr. ipf.
-16935	grupovy	adj.
-2569	grupy	f.pl.
-2570	gruša	f.
-25863	gruševy	adj.
-698	Gruzija	f.sg.
-1040	gruzinsky	adj.
-7688	gryzati	v.tr. ipf.
-668	gryzti	v.tr. ipf.
-2171	gųba	f.
-7712	gųba	f.
-32332	gubernator	m.anim.
-13416	gubi sę!	intj.
-36652	gubiti sę	v.refl. ipf.
-36253	gubiti tęžinų	v.intr. ipf.
-17447	gubiti	v.tr. ipf.
-25871	gubiti	v.tr. ipf.
-17446	gųbka	f.
-5281	guma	f.
-1752	gumno	n.
-2571	gųś	m.anim.
-36100	gųsak	m.anim.
-25882	gųsę	n.
-429	gųsenica	f.
-25883	gųśji	adj.
-14591	gųslaŕ	m.anim.
-7715	gųsli	m.pl.
-16469	gųsljaŕ	m.anim.
-16468	gųslje	f.pl.
-25888	gųstěti	v.intr. ipf.
-25890	gųstiti	v.tr. ipf.
-25899	gųsťje	n.
-25892	gųsto	adv.
-25893	gųstosť	f.
-25894	gųstota	f.
-5308	gųsty	adj.
-25896	gųšća	f.
-22384	Gvatemala	f.sg.
-22385	gvatemaľsky	adj.
-16782	Gvineja	f.sg.
-2574	gvozď	m.
-2912	gybati	v.intr. ipf.
-35205	gybkosť	f.
-17397	gybky	adj.
-2917	gybnųti	v.intr. pf.
-25904	ha!	intj.
-25525	haček	m.
-22456	Haiti	m.indecl.
-22457	haitiansky	adj.
-31874	hak	m.
-25910	halucinacija	f.
-25911	halucinovati	v.intr. ipf.
-25912	halupa	f.
-3651	halva	f.
-25913	hamak	m.
-35190	hamburger	m.
-35823	hameleon	m.anim.
-25914	handbol	m.sg.
-25915	hantelj	f.
-33502	haos	m.
-33504	haotično	adv.
-33503	haotičny	adj.
-3184	harakter	m.
-16936	harakterističny	adj.
-1763	harakteristika	f.
-16937	harakterizovati	v.tr. ipf.
-25921	harem	m.
-23445	harfa	f.
-25922	harmoničny	adj.
-3656	harmonija	f.
-25924	harmonika	f.
-7724	harmonizovati	v.intr. ipf.
-25928	harpun	m.
-3012	harta	f.
-23199	hašiš	m.sg.
-7727	hata	f.
-25930	hazard	m.
-25931	hazardna igra	f.
-19711	hebrejsky	adj.
-16938	hegemonija	f.
-35359	hej	intj.
-23408	heker	m.anim.
-25905	hektar [ha]	m.
-23020	hektolitr	m.
-23023	hektometr	m.
-22598	helij	m.sg.
-25933	helikopter	m.
-14592	helma	f.
-4663	hemičny	adj.
-2573	hemija	f.
-2572	hemikalija	f.
-7743	hepa	f.
-7744	hepatit	m.sg.
-7745	hepovy	adj.
-2575	heroin	m.sg.
-7747	heroina	f.
-3185	heroj	m.anim.
-32180	herpes	m.sg.
-19712	heterogennosť	f.
-20380	heterogenny	adj.
-32804	hiacint	m.
-4864	hidravličny	adj.
-20381	hiena	f.
-25936	hierarh	m.anim.
-25937	hierarhičny	adj.
-19714	hierarhija	f.
-25940	hieroglif	m.
-25941	hieroglifny	adj.
-35188	higiena	f.
-35189	higieničny	adj.
-33365	hihot	m.sg.
-33364	hihotati sę	v.refl. ipf.
-7748	himera	f.
-7750	himersky	adj.
-4865	himn	m.
-23574	hinduizm	m.sg.
-4548	hiperlink	m.
-17448	hipersvęź	f.
-19715	hipnotizovati	v.tr. ipf.
-19716	hipnoza	f.
-20382	hipopotam	m.anim.
-34999	hipoteka	f.
-19518	hipotetičny	adj.
-19517	hipoteza	f.
-17449	hirugičny	adj.
-17450	hirugija	f.
-17451	hirurg	m.anim.
-36829	histeričny	adj.
-36828	histerija	f.sg.
-16466	historičny	adj.
-2496	historija	f.
-34889	historik	m.anim.
-2576	hlåd	m.
-25951	hlåděti	v.intr. ipf.
-5276	hlådiľnik	m.
-17456	hlåditi sę	v.refl. ipf.
-17454	hlåditi	v.tr. ipf.
-7759	hlådnějši	adj.
-4466	hlådno	adv.
-4617	hlådnosť	f.
-2579	hlådny	adj.
-17453	hlåđeńje	n.sg.
-1109	hlåpčik	m.anim.
-3335	hlåpec	m.anim.
-4338	hlåpstvo	n.sg.
-89	hlěb	m.
-90	hlěv	m.
-17457	hlipati	v.intr. ipf.
-17458	hlipnųti	v.intr. pf.
-22613	hlor	m.sg.
-33719	hloroform	m.sg.
-2578	hmelj	m.sg.
-25975	hmeljny	adj.
-32815	hmuriti sę	v.refl. ipf.
-32816	hmuriti sę	v.refl. ipf.
-32814	hmuriti	v.tr. ipf.
-23575	hobi	m.indecl.
-35271	hobist	m.anim.
-25979	hobot	m.
-3742	hod	m.sg.
-3845	hoďba	f.
-25982	hodec	m.anim.
-7784	hoditelj	m.anim.
-17461	hoditeljka	f.
-2590	hoditi	v.intr. ipf.
-7782	hodnik	m.
-25984	hodulja	f.
-7780	hođeńje	n.sg.
-5802	hokej na ledu	m.sg.
-5801	hokej	m.sg.
-35740	Holandija	f.sg.
-35741	holandsky	adj.
-35099	holera	f.
-17462	holesterol	m.sg.
-544	hȯlm	m.
-20384	homjak	m.anim.
-23412	homogenizovati	v.tr. ipf.
-19717	homogennosť	f.
-19718	homogenny	adj.
-17463	homonim	m.
-35566	homoseksualist	m.anim.
-1511	homoseksuaľny	adj.
-2582	homųt	m.
-22386	Honduras	m.sg.
-22387	hondurassky	adj.
-23449	hor	m.
-32504	horeografija	f.
-19719	horizont	m.
-19720	horizontaľny	adj.
-23011	horoskop	m.
-706	horųgva	f.
-25997	hoť by	adv.
-2581	hoť, hoti	conj.
-35268	hotel	m.
-2971	hotěti	v.aux. ipf.
-1828	hovati	v.tr. ipf.
-25999	hråbrec	m.anim.
-4611	hråbrosť	f.
-2607	hråbry	adj.
-4890	hram	m.
-26006	hrånitelj	m.anim.
-36791	hråniti sę	v.refl. ipf.
-19721	hråniti	v.tr. ipf.
-17464	hrånjenec	m.anim.
-17466	hrapati	v.intr. ipf.
-1639	hråpavy	adj.
-17467	hrapnųti	v.intr. pf.
-26013	hrčati	v.intr. ipf.
-20385	hrček	m.anim.
-841	hrebet	m.
-1928	hrebet	m.
-67	hrebetny mozȯk	m.
-26012	hrebetny	adj.
-3114	hrěn	m.
-26015	hrěnovy	adj.
-35996	hrěnviršla	f.
-35826	hrestomatija	f.
-26010	hręšč	m.
-35456	hriply	adj.
-302	hristijan, hristijanin	m.anim.
-17468	hristijanizacija	f.
-17470	hristijanka	f.
-2606	hristijansky	adj.
-1640	hristijanstvo	n.sg.
-17471	Hristos	m.anim.
-22620	hrom	m.sg.
-26018	hromati	v.intr. ipf.
-36830	hromatičny	adj.
-34408	hroměti	v.intr. ipf.
-26019	hromosť	f.
-26021	hromy	adj.
-35718	hronika	f.
-35774	hronikaŕ	m.anim.
-35398	hronologičny	adj.
-35397	hronologija	f.
-2577	hrt	m.anim.
-26024	hrupati	v.intr. ipf.
-31916	hrupkavy	adj.
-1245	hrust	m.
-26026	hrustati	v.intr. ipf.
-26028	hrųšč	m.anim.
-4727	Hrvat	m.anim.
-2580	Hrvatija	f.sg.
-4728	hrvatsky	adj.
-7739	htěti	v.aux. ipf.
-26030	htivy	adj.
-36251	hudnųti	v.intr. ipf.
-17472	hųdožnica	f.
-14594	hųdožnik	m.anim.
-17473	hųdožno	adv.
-14595	hųdožny	adj.
-17474	hųdožstvo	n.
-26033	hudy	adj.
-2064	huj	m.
-14596	hujesȯs	m.anim.
-6226	huligan	m.anim.
-35744	humanističny	adj.
-2592	humanitarny	adj.
-35743	humanizm	m.sg.
-3668	humor	m.
-19722	humorističny	adj.
-19495	hunta	f.
-35656	hura	intj.
-35837	husit	m.anim.
-14598	Hvala!	intj.
-2593	hvala	f.
-7828	hvala	prep.
-26041	hvalebny	adj.
-2890	hvaliti	v.tr. ipf.
-17477	hvastati sę	v.refl. ipf.
-35476	hvat	m.
-2591	hvatati	v.tr. ipf.
-34776	hvějati sę	v.refl. ipf.
-708	hvějati	v.tr. ipf.
-20865	hvějati	v.tr. ipf.
-7835	hvilja nazad	adv.
-7836	hvilja tomu	adv.
-3846	hvilja	f.
-17482	hvoja	f.
-26045	hvoja	f.
-36260	hvojny lěs	m.
-26047	hvorěti	v.intr. ipf.
-17483	hvoroba sŕdca	f.
-3543	hvoroba	f.
-7840	hvoroblivo	adv.
-36691	hvoroblivy	adj.
-3541	hvory	adj.
-17484	hvost	m.
-26051	hvošč	m.
-26052	hyba	f.
-26053	hybiti	v.intr. ipf.
-10362	hybny	adj.
-7751	hytrec	m.anim.
-15329	hytrica	f.
-7752	hytro	adv.
-7753	hytrosť	f.
-17452	hytry	adj.
-36224	i ... i ...	conj.
-36223	I slěpa veverica poněkȯgda najde orěh	phrase
-36343	i t.d.	adv.
-36341	i tako dalje	adv.
-718	i	conj.
-26056	ibis	m.anim.
-3457	ibo	conj.
-206	ideal	m.
-26058	idealist	m.anim.
-26059	idealističny	adj.
-26060	idealizacija	f.
-26061	idealizm	m.sg.
-26062	idealizovati	v.tr. ipf./pf.
-2595	ideaľny	adj.
-3372	ideja	f.
-12913	identični blizneci	m.pl.
-35748	identičnosť	f.
-2597	identičny	adj.
-16421	identifikacija	f.
-35274	identifikator	m.
-15906	identifikovati	v.tr. ipf.
-19723	identitet	m.sg.
-26069	ideografija	f.
-2103	ideolog	m.anim.
-23576	ideologičny	adj.
-715	ideologija	f.
-26073	idila	f.
-26074	idiličny	adj.
-26075	idiom	m.
-36363	idiomatičny	adj.
-23229	idiot	m.anim.
-26077	idiotizm	m.
-23230	idiotsky	adj.
-26078	idol	m.anim.
-26079	idolopoklonnik	m.anim.
-13823	idti vprěd	v.ipf.
-15654	idti vzad	v.ipf.
-2104	idti	v.intr. ipf.
-2105	igla	f.
-36259	iglasty lěs	m.
-36258	iglasty	adj.
-26082	iglica	f.
-26083	iglu	n.indecl.
-26084	ignorovańje	n.sg.
-2596	ignorovati	v.tr. ipf.
-26086	igo	n.
-2598	igra	f.
-19724	igrač	m.anim.
-19725	igračka	f.
-22390	igračka	f.
-16940	igrašna karta	f.
-2599	igrati	v.tr. ipf.
-26094	igrek	m.
-2600	igrišče	n.
-26096	igrivy	adj.
-26097	iguana	f.
-26098	igumen	m.anim.
-26099	igumenja	f.
-26100	ikati	v.intr. ipf.
-26101	ikava	f.
-303	ikra	f.
-3504	il	m.sg.
-766	ili ... ili ...	conj.
-724	ili	conj.
-36561	Ilinojs	m.sg.
-1504	Ilir	m.anim.
-26106	iljm	m.
-26107	ilovy	adj.
-35300	ilustracija	f.
-19726	ilustrovati	v.tr. ipf.
-35602	iluzija	f.
-34849	iluzionist	m.anim.
-26108	iluzorny	adj.
-36882	imajmo nadějų	adv.
-16340	imę	n.
-16342	imę	n.
-5975	imeniteljnik, imeniteljny padež	m.
-874	iměńje	n.
-786	imennik	m.
-3745	imennik	m.anim.
-17486	imenno	adv.
-3486	imenovati	v.tr. ipf.
-3325	iměti dělo s	v.ipf.
-36890	iměti na myslji	v.tr. ipf.
-36928	iměti na umu	v.tr. ipf.
-17485	iměti nadějų	v.ipf.
-33179	iměti njuh za něčto	phrase
-876	iměti pravdų	v.ipf.
-36402	iměti smysl	v. ipf.
-23339	iměti važnosť	v.intr. ipf.
-23340	iměti značeńje	v.intr. ipf.
-3847	iměti žalj	v.ipf.
-417	iměti, imati	v.aux. ipf.
-875	iměti, imati	v.tr. ipf.
-4958	imigracija	f.
-98	imigrant	m.anim.
-4959	imigrovati	v.intr. ipf.
-36437	imitacija	f.
-36438	imitovati	v.tr. ipf./pf.
-896	imperator	m.anim.
-2630	imperatorica	f.
-16942	imperfekt	m.sg.
-23852	imperializm	m.sg.
-35710	imperija	f.
-35953	implantovati	v.tr. ipf./pf.
-23846	imponovati	v.tr. ipf.
-23847	imponujųći	adj.
-4961	import	m.sg.
-4962	importovati	v.tr. ipf.
-36856	impotencija	f.
-36857	impotentny	adj.
-23848	improvizacija	f.
-16943	improvizovati	v.intr. ipf.
-1206	impuls	m.
-23850	impulsivny	adj.
-17487	imųći	adj.
-35814	imunitet	m.sg.
-35815	imunny	adj.
-17488	imųtȯk	m.
-3764	inače	adv.
-7904	inako	adv.
-7905	inaky	adj.
-19572	inamo	adv.
-19727	inavguraľny	adj.
-35035	incest	m.sg.
-4914	incident	m.
-2631	inde	adv.
-16783	indeks	m.
-26122	indigo	n.
-1068	Indija	f.sg.
-6405	Indijan, Indijanin	m.anim.
-6406	Indijanka	f.
-6408	indijansky	adj.
-36364	Indijec	m.anim.
-36365	Indijka	f.
-23498	Indijsky okean	m.sg.
-4749	indijsky	adj.
-15915	individ	m.anim.
-26123	individuaľnosť	f.
-5138	individuaľny	adj.
-2634	indoarijsky	adj.
-897	indoevropejsky	adj.
-1667	indoiransky	adj.
-6106	Indonezija	f.sg.
-19728	indonezsky	adj.
-35180	industriaľny	adj.
-23474	indyk	m.anim.
-36823	inercija	f.
-2006	infekcija	f.
-521	infinitiv	m.
-16784	inflacija	f.
-769	informacija	f.
-7895	informant	m.anim.
-36448	informatik	m.anim.
-36447	informatika	f.sg.
-19729	informativny	adj.
-862	informovany	adj.
-863	informovati	v.tr. ipf.
-23579	infračrveno světlo	n.
-35756	infračrveny	adj.
-16364	infrastruktura	f.
-35558	ingredient	m.
-209	Inguš	m.anim.
-1783	Ingušetija	f.sg.
-1300	ingušsky	adj.
-32377	inicializacija	f.
-32376	inicializovati	v.tr. ipf./pf.
-5309	iniciativa	f.
-26125	inje	n.
-26128	injekcija	f.
-33250	inkubator	m.
-1319	inočij	pron.poss.
-307	inočto	pron.indef.
-2633	inȯgda, inȯgdy	adv.
-26129	inohod	m.sg.
-155	inokto	pron.indef.
-19594	inoliky	adj.
-35275	inoplanetjan, inoplanetjanin	m.anim.
-5855	inoskazańje	n.
-21873	inostrånec	m.anim.
-35685	inovacija	f.
-35753	inovativny	adj.
-7912	inovrěmenno	adv.
-7913	inozemec	m.anim.
-7914	inozemny	adj.
-17490	insekt	m.anim.
-35897	inspiracija	f.
-35896	inspirovati	v.tr. ipf./pf.
-2495	instalacija	f.
-4968	instalovati	v.tr. ipf.
-32805	instinkt	m.
-19730	institucija	f.
-26131	institut	m.
-11062	instruktor	m.anim.
-15478	instruktorka	f.
-2858	instrument	m.
-16944	instrumental	m.
-4789	instrumentaľny	adj.
-34947	integracija	f.
-36084	integritet	m.
-34946	integrovati	v.tr. ipf./pf.
-3174	intelektual	m.anim.
-19731	intelektuaľny	adj.
-36332	intensivnosť	f.
-2859	intensivny	adj.
-34853	interakcija	f.
-34852	interaktivny	adj.
-1330	interes	m.
-19732	interesno	adv.
-2500	interesny	adj.
-15928	interesovati sę	v.refl. ipf.
-34992	interesovati	v.tr. ipf.
-7916	interfejs	m.
-36231	interier	m.
-36232	interierny dizajn	m.
-31778	interlingvist	m.anim.
-31777	interlingvističny	adj.
-31776	interlingvistika	f.
-31779	internacionalizm	m.sg.
-3177	internacionalizovati	v.tr. ipf.
-17491	internet	m.sg.
-35278	internetny	adj.
-4988	interpretacija	f.
-4987	interpretovati	v.tr. ipf.
-23620	interpunkcija	f.
-16945	interrogativny zaimennik	m.
-35867	interval	m.
-35304	intervencija	f.
-1819	intervju	n.indecl.
-35512	intriga	f.
-35809	intrigovati	v.tr. ipf.
-35810	intrigujųći	adj.
-12090	introspekcija	f.
-6159	intuicija	f.
-35161	intuitivny	adj.
-2493	inųdy	adv.
-34576	invalid	m.anim.
-34575	invalidsky vozȯk	m.
-19496	invazija	f.
-23851	inventarizacija	f.
-4986	investicija	f.
-15933	investor	m.anim.
-1480	investovati	v.tr. ipf.
-864	iny	adj.
-4846	inženjer	m.anim.
-290	inženjerstvo	n.sg.
-4658	ion	m.
-1613	iračsky	adj.
-2505	Irak	m.sg.
-1782	Iran	m.sg.
-2497	iransky	adj.
-32474	irbis	m.anim.
-22631	iridij	m.sg.
-34967	iris	m.
-34968	iris	m.
-188	Irlandija	f.sg.
-4432	irlandsky	adj.
-19733	ironičny	adj.
-19734	ironija	f.
-7924	iskaľnik	m.
-36573	iskańje	n.
-7925	iskatelj	m.anim.
-1012	iskati	v.tr. ipf.
-1011	iskra	f.
-3848	iskrenosť	f.
-2024	iskreny	adj.
-26141	iskriti	v.intr. ipf.
-23580	islam	m.sg.
-35559	islamsky	adj.
-4430	Islandija	f.sg.
-4431	islandsky	adj.
-7935	istina	f.
-7936	istinlivo	adv.
-7937	istinlivy	adj.
-7938	istinno	adv.
-5108	istinnosť	f.
-3309	istinny	adj.
-14604	istnovati	v.intr. ipf.
-3333	isto	adv.
-5310	isty	adj.
-26147	Isus Hristos	m.anim.
-17492	Isus	m.anim.
-7947	itak	adv.
-2503	Italija	f.sg.
-20386	Italijan, Italijanin	m.anim.
-643	italijansky	adj.
-35301	iteracija	f.
-26150	iva	f.
-1646	iver	m.
-26152	ivovy	adj.
-12065	iz drugoj stråny	adv.
-12067	iz jednoj stråny	adv.
-644	iz	prep.
-7953	iz-	prefix
-641	izba	f.
-26155	izbava	f.
-26156	izbavitelj	m.anim.
-5887	izbaviti sę	v.refl. pf.
-17493	izbaviti	v.tr. pf.
-17495	izbaviti	v.tr. pf.
-5888	izbavjati sę	v.refl. ipf.
-17497	izbavjati	v.tr. ipf.
-17499	izbavjati	v.tr. ipf.
-26160	izbavjeńje	n.sg.
-1647	izběgati	v.intr. ipf.
-1953	izběgati	v.intr. ipf.
-36474	izběgati	v.intr. ipf.
-7962	izběgomy	adj.
-642	izběgti	v.intr. pf.
-1875	izběgti	v.intr. pf.
-36475	izběgti	v.intr. pf.
-26161	izbica	f.
-7964	izbirajemosť	f.
-7965	izbiramy	adj.
-7966	izbirańje	n.sg.
-7968	izbiratelj	m.anim.
-7974	izbirateljstvo	n.
-4334	izbirati	v.tr. ipf.
-23862	izbiti	v.tr. pf.
-23864	izbivati	v.tr. ipf.
-26163	izbljuvati	v.intr. pf.
-1641	izbombardovati	v.tr. pf.
-7977	izbor ljudij	m.
-4333	izbor	m.
-7970	izborny koledž	m.
-7971	izborny komitet	m.
-7969	izborny podvod	m.
-1642	izbory	m.pl.
-17509	izbrany	adj.
-4335	izbrati	v.tr. pf.
-1630	izbudovati	v.tr. pf.
-4796	izbuh	m.
-4800	izbuhati	v.intr. ipf.
-4798	izbuhlivy	adj.
-4801	izbuhnųti	v.intr. pf.
-26167	izbytȯk	m.
-26169	izcěliti sę	v.refl. pf.
-36660	izcěliti	v.tr. pf.
-31720	izcěljati sę	v.refl. ipf.
-36661	izcěljati	v.tr. ipf.
-35983	izčezaj!	intj.
-3550	izčezati	v.intr. ipf.
-7988	izčezneńje	n.
-3557	izčeznųti	v.intr. pf.
-5879	izčisliti	v.tr. pf.
-5878	izčisljati	v.tr. ipf.
-3417	izčisljeńje	n.
-16726	izčistiti	v.tr. pf.
-17511	izčrkańje	n.
-3253	izčrkati	v.tr. ipf.
-3271	izčrknųti	v.tr. pf.
-2143	izčrpati	v.tr. pf.
-1643	izčrpyvati	v.tr. ipf.
-36226	izdajnik	m.anim.
-21295	izdaleka	adv.
-16733	izdańje	n.
-19873	izdatelj	m.anim.
-4855	izdateljstvo	n.
-29069	izdati zamųž	v.tr. pf.
-4854	izdati	v.tr. pf.
-17514	izdati	v.tr. pf.
-4779	izdavati sę	v.refl. ipf.
-34252	izdavati zamųž	v.tr. ipf.
-4853	izdavati	v.tr. ipf.
-17517	izdavati	v.tr. ipf.
-3732	izdělati	v.tr. pf.
-2384	izdojiti	v.tr. pf.
-19272	izdȯlbti	v.tr. pf.
-1798	izdŕžlivy	adj.
-7996	izdumati	v.tr. pf.
-17523	izganjańje	n.sg.
-1692	izganjati	v.tr. ipf.
-26175	izgladiti	v.tr. pf.
-1696	izglåsiti	v.tr. pf.
-749	izglašati	v.tr. ipf.
-5812	izględ	m.
-5811	izględati	v.intr. ipf.
-33354	izględati	v.intr. ipf.
-13923	izględka	f.
-33355	izględnųti	v.intr. pf.
-17527	izgnanec	m.
-17528	izgnańje	n.sg.
-19279	izgnanstvo	n.sg.
-1695	izgnati	v.tr. pf.
-5593	izgniti	v.intr. pf.
-16827	izgoda	f.
-17531	izgodny	adj.
-26179	izgojiti	v.tr. pf.
-1795	izgorěti	v.intr. pf.
-5553	izgovarjati	v.tr. ipf.
-1797	izgovor	m.
-4370	izgovoriti	v.tr. pf.
-33706	izgovorka	f.
-26181	izguba	f.
-36653	izgubiti sę	v.refl. pf.
-36254	izgubiti tęžinų	v.intr. pf.
-26182	izgubiti	v.tr. pf.
-26183	izgubiti	v.tr. pf.
-26174	izgynųti	v.intr. pf.
-17532	izhod luny	m.
-5356	izhod	m.
-32745	izhod	m.
-5355	izhoditi	v.intr. ipf.
-35259	izhodny kod	m.
-14606	izigrańje	n.sg.
-3936	izigratelj	m.anim.
-1674	izigrati	v.tr. pf.
-1703	izigryvati	v.tr. ipf.
-5515	izimati	v.tr. ipf.
-35372	iziskati ponovno	v.tr. pf.
-17540	iziskati	v.tr. pf.
-35373	iziskyvati ponovno	v.tr. ipf.
-17543	iziskyvati	v.tr. ipf.
-4145	izjasniti	v.tr. pf.
-4144	izjasnjati	v.tr. ipf.
-4146	izjasnjeńje	n.
-3413	izjaviti sę	v.refl. pf.
-17547	izjaviti	v.tr. pf.
-3412	izjavjati sę	v.refl. ipf.
-17548	izjavjati	v.tr. ipf.
-35474	izjavjeńje	n.sg.
-5484	izjehati	v.intr. pf.
-5514	izjęti	v.tr. pf.
-5497	izjezd	m.
-5485	izježđati	v.intr. ipf.
-1610	izkalkulovati	v.tr. pf.
-16946	izkazańje	n.
-19735	izkladati	v.tr. ipf.
-20387	izključajųći	prep.
-2504	izključati	v.tr. ipf.
-3918	izključati	v.tr. ipf.
-8018	izključeńje	n.
-8024	izključeńje	n.
-8025	izključiteljno	adv.
-8026	izključiteljny	adj.
-482	izključiti	v.tr. pf.
-3920	izključiti	v.tr. pf.
-17552	izključno	adv.
-8023	izkljuvati	v.tr. ipf.
-5777	izkonavči	adj.
-2523	izkopati	v.tr. pf.
-17555	izkopyvati	v.tr. ipf.
-26191	izkoreniti	v.tr. pf.
-32044	izkorenjati	v.tr. ipf.
-5155	izkoristati	v.tr. pf.
-35261	izkoristiti	v.tr. pf.
-5570	izkoristyvati	v.tr. ipf.
-17557	izkositi	v.tr. pf.
-36922	izkovati	v.tr. pf.
-36921	izkovyvati	v.tr. ipf.
-8033	izkrikati	v.tr. ipf.
-8035	izkriknųti	v.tr. pf.
-8031	izkrviti do smŕti	v.tr. pf.
-4515	izkrviti	v.tr. pf.
-31422	izkup	m.
-3445	izkųpati	v.tr. pf.
-26193	izkupiti	v.tr. pf.
-19736	izkus	m.
-3603	izkusiti	v.tr. pf.
-19743	izkusny	adj.
-4781	izkušati	v.tr. ipf.
-19740	izkušeńje	n.
-3606	izkušenosť	f.
-3607	izkušeny	adj.
-35776	izkydati	v.tr. ipf.
-35777	izkydnųti	v.tr. pf.
-19744	izlagati	v.tr. ipf.
-36663	izlěčiti sę	v.refl. pf.
-4131	izlěčiti	v.tr. pf.
-36549	izlęgti sę	v.refl. pf.
-36547	izlęgti	v.tr. pf.
-17561	izlet	m.
-26196	izlišek	m.
-27228	izlišnji, izlišny	adj.
-26197	izliti	v.tr. pf.
-36396	izlivati	v.tr. ipf.
-26198	izlomiti	v.tr. pf.
-26199	izloviti	v.tr. pf.
-19745	izložiti	v.tr. pf.
-33357	izmagateljstvo	n.sg.
-31423	izmagati	v.tr. ipf.
-5737	izmama	f.
-15699	izmamitelj	m.anim.
-5736	izmamiti	v.tr. pf.
-5735	izmamjati	v.tr. ipf.
-15701	izmamnica	f.
-5738	izmamnik	m.anim.
-4915	iz-među	prep.
-3944	izměna	f.
-1081	izměniti	v.tr. pf.
-711	izměnjati	v.tr. ipf.
-3496	izměnjeńje	n.
-5596	izměriti	v.tr. pf.
-26204	izmesti	v.tr. pf.
-19748	izměstiti	v.tr. pf.
-19746	izměšćati	v.tr. ipf.
-19747	izměšćeńje	n.sg.
-35982	izmětaj sę!	intj.
-32600	izmětati	v.tr. ipf.
-17568	izmirati	v.intr. ipf.
-1597	izmočiti	v.intr. pf.
-36917	izmodelovati	v.tr. pf.
-36924	izmodelovati	v.tr. pf.
-33356	izmogti	v.tr. pf.
-26205	izmoriti	v.tr. pf.
-17569	izmrěti	v.intr. pf.
-3599	izmųčeny	adj.
-1595	izmysl	m.
-8060	izmyslitelj	m.anim.
-8061	izmysliti	v.tr. pf.
-8063	izmysljati	v.tr. ipf.
-17570	izmysljeńje	n.
-3610	izmysljeny	adj.
-17571	izmysljeny	adj.
-1796	iz-nad	prep.
-36802	iznahoditi	v.tr. ipf.
-8068	iznahodlivo	adv.
-8069	iznahodlivosť	f.
-8070	iznahodlivy	adj.
-603	iznahodnik	m.anim.
-36804	iznahodȯk	m.
-36803	iznajdti	v.tr. pf.
-23316	iznajęti	v.tr. pf.
-23315	iznajmati	v.tr. ipf.
-26207	iznemogti	v.intr. pf.
-23729	iznenada	adv.
-26208	iznenadsko	adv.
-5459	iznesti	v.tr. pf.
-26209	izniknųti	v.intr. pf.
-35758	izniščeńje	n.
-35759	izniščiti	v.tr. pf.
-5458	iznositi	v.tr. ipf.
-4680	iznova	adv.
-33358	iznuda	f.
-33360	iznuditi	v.tr. pf.
-33359	iznuđati	v.tr. ipf.
-16391	iznuriti	v.intr. pf.
-8082	iznurjati	v.intr. ipf.
-26211	izobara	f.
-20395	izobličati	v.tr. ipf.
-20396	izobličiti	v.tr. pf.
-771	izobraziti	v.tr. pf.
-1865	izobražati	v.tr. ipf.
-19750	izobražeńje	n.
-26213	izoglosa	f.
-5354	izȯjdti	v.intr. pf.
-4965	izolacija	f.
-26214	izolator	m.
-21298	izolovany	adj.
-2015	izolovati	v.tr. ipf.
-31929	izopačati	v.tr. ipf.
-26216	izopačiti	v.tr. pf.
-26217	izorati	v.tr. pf.
-26218	izpadati	v.intr. ipf.
-36716	izpasti	v.intr. pf.
-26219	izpekti	v.tr. pf.
-26220	izpepeliti	v.tr. pf.
-36799	izphańje	n.
-32917	izphati	v.tr. pf.
-32918	izphati	v.tr. pf.
-32915	izpihati	v.tr. ipf.
-32916	izpihati	v.tr. ipf.
-2608	izpiti	v.tr. pf.
-8087	izplaćati	v.tr. ipf.
-26222	izplåšiti	v.tr. pf.
-4277	izplata	f.
-8089	izplatiti	v.tr. pf.
-13945	izplatny spisȯk	m.
-26223	izplěti	v.tr. pf.
-35124	izpljunųti	v.tr. pf.
-35123	izpljuvati	v.tr. ipf.
-34907	izpluti	v.intr. pf.
-34311	izplyvati	v.intr. ipf.
-34313	izplyvati	v.intr. ipf.
-36726	izplyvati	v.intr. ipf.
-34314	izplyvti	v.intr. pf.
-34315	izplyvti	v.intr. pf.
-2926	iz-pod	prep.
-597	izpȯlniti	v.tr. pf.
-2501	izpȯlnjati	v.tr. ipf.
-36609	izpȯlnjeńje	n.sg.
-17573	izpȯlzati	v.intr. ipf.
-17574	izpȯlzti	v.intr. pf.
-19752	izpověď	f.
-22218	izpovědati	v.tr. ipf.
-22219	izpověděti	v.tr. pf.
-22798	izprašati	v.tr. ipf.
-32299	izprati mozg	v.tr. pf.
-32305	izprati	v.tr. pf.
-2502	izpraviti	v.tr. pf.
-2507	izpravjati	v.tr. ipf.
-26231	izpråzdniti	v.tr. pf.
-31723	izpråzdnjati	v.tr. ipf.
-3043	iz-prěd	prep.
-32773	izpręgati	v.tr. ipf.
-32774	izpręgti	v.tr. pf.
-17575	izprobovańje	n.sg.
-17576	izprobovati	v.tr. pf.
-17577	izprobovyvati	v.tr. ipf.
-16735	izprodany	adj.
-22797	izprositi	v.tr. pf.
-26232	izpŕva	adv.
-26233	izpųditi	v.tr. pf.
-13952	izpųkly	adj.
-5240	izpustiti	v.tr. pf.
-5241	izpušćati	v.tr. ipf.
-16396	izpytati	v.tr. pf.
-20868	izpytati	v.tr. pf.
-16395	izpytyvati	v.tr. ipf.
-20869	izpytyvati	v.tr. ipf.
-681	izråbiti	v.tr. pf.
-8103	izråbotati	v.tr. pf.
-8106	izråbotyvati	v.tr. ipf.
-6084	izrađati sę	v.refl. ipf.
-26239	Izraelec	m.anim.
-4741	Izraelj	m.sg.
-4742	izraeľsky	adj.
-1688	izråsti	v.intr. pf.
-3725	izråvniti sę	v.refl. pf.
-19754	izråvniti	v.tr. pf.
-3723	izravnjati sę	v.refl. ipf.
-19753	izravnjati	v.tr. ipf.
-8115	izraz	m.
-36718	izraziti sę	v.refl. pf.
-2609	izraziti	v.tr. pf.
-17584	izraznosť	f.
-17586	izrazny	adj.
-36717	izražati sę	v.refl. ipf.
-682	izražati	v.tr. ipf.
-719	izražeńje	n.
-21301	izrěčeńje	n.
-21303	izrěkati	v.tr. ipf.
-21305	izrěkti	v.tr. pf.
-8120	izrězati	v.tr. pf.
-36918	izrězyvati	v.tr. ipf.
-6085	izroditi sę	v.refl. pf.
-31433	izrodȯk	m.anim.
-21307	izrođeńje	n.sg.
-6086	izrođeny	adj.
-17587	izrųbati	v.tr. pf.
-17588	izrųbyvati	v.tr. ipf.
-23867	izrvati	v.tr. pf.
-23866	izryvati	v.tr. ipf.
-36425	izsěkati	v.tr. ipf.
-19755	izsěkti	v.tr. pf.
-36426	izseliti sę	v.refl. pf.
-5710	izseliti	v.tr. pf.
-36427	izseljati sę	v.refl. ipf.
-5711	izseljati	v.tr. ipf.
-17589	izseljenec	m.anim.
-17590	izseljenica	f.
-5712	izseljeńje	n.sg.
-8123	izslati	v.tr. pf.
-20398	izslavjati sę	v.refl. ipf.
-20397	izslavjati	v.tr. ipf.
-32751	izslědȯk	m.
-35390	izslědovańje	n.sg.
-1937	izslědovatelj	m.anim.
-21308	izslědovati	v.tr. ipf.
-20400	izsloviti sę	v.refl. pf.
-20399	izsloviti	v.tr. pf.
-12348	izslušańje	n.
-36533	izslušati	v.tr. pf.
-36532	izslušivati	v.tr. ipf.
-13967	izsmějati	v.tr. pf.
-13965	izsmějivańje	n.sg.
-4133	izsmějivati	v.tr. ipf.
-13968	izsměška	f.
-4134	izsměšnik	m.anim.
-17591	izsměvka	f.
-34583	izsȯhnųti	v.intr. pf.
-4151	izsȯsati	v.tr. pf.
-20401	iz-srěd	prep.
-8126	izstava, izstavka	f.
-16614	izstava	f.
-2602	izstaviti	v.tr. pf.
-931	izstavjati	v.tr. ipf.
-35563	izstavjeńje	n.sg.
-33599	izstrěl	m.
-35676	izstrěliti	v.tr. pf.
-3505	izstųpati	v.intr. ipf.
-21985	izstųpati	v.intr. ipf.
-3535	izstųpiti	v.intr. pf.
-21993	izstųpiti	v.intr. pf.
-13947	izsunųti	v.tr. pf.
-13951	izsunųťje	n.sg.
-13953	izsunųty	adj.
-33097	izsušati	v.tr. ipf.
-33098	izsušiti	v.tr. pf.
-13949	izsuvati	v.tr. ipf.
-34582	izsyhati	v.intr. ipf.
-17592	izsylańje	n.sg.
-8131	izsylati	v.tr. ipf.
-26245	izsypati	v.tr. pf.
-5567	izsysati	v.tr. ipf.
-34002	izšiti	v.tr. pf.
-34001	izšivati	v.tr. ipf.
-4845	izškoliti	v.tr. pf.
-22052	iztęg	m.
-3850	iztęgati	v.tr. ipf.
-3849	iztęgnųti	v.tr. pf.
-6070	iztěkati	v.intr. ipf.
-22066	iztěkati	v.intr. ipf.
-6072	iztekti	v.intr. pf.
-22067	iztekti	v.intr. pf.
-2393	iztirati	v.tr. ipf.
-26247	iztkati	v.tr. pf.
-26249	iztočiti	v.tr. pf.
-23538	Iztočna Evropa	f.sg.
-22070	iztočnik	m.
-17594	iztočnoslovjansky	adj.
-13636	iztočny	adj.
-15642	iztok	m.sg.
-26250	iztok	m.
-26251	iztȯlkti	v.tr. pf.
-3277	iztratiti	v.tr. pf.
-34955	iztręsati	v.tr. ipf.
-34954	iztręsti	v.tr. pf.
-5545	iztreti	v.tr. pf.
-22139	iztrgati	v.tr. ipf.
-22140	iztrgnųti	v.tr. pf.
-3820	iztŕpěti	v.tr. pf.
-16400	iztvarjati	v.tr. ipf.
-16397	iztvor	m.
-16398	iztvoriti	v.tr. pf.
-16399	iztvorjeńje	n.sg.
-31724	izučati	v.tr. ipf.
-26256	izučiti	v.tr. pf.
-13934	izumirańje	n.sg.
-5774	izumirati	v.intr. ipf.
-20402	izumrěly	adj.
-5769	izumreti	v.intr. pf.
-36915	izvajati	v.tr. pf.
-763	izvaljnjati	v.tr. ipf.
-22217	izvědy	m.pl.
-558	izvesti	v.tr. pf.
-36764	izvesti	v.tr. pf.
-17596	izvěstitelj	m.anim.
-3688	izvěstiti	v.tr. pf.
-17595	izvěsťje	n.
-14314	izvěstnik	m.anim.
-26264	izvěstny	adj.
-14315	izvěstoglåsitelj	m.anim.
-14316	izvěstoglåšeńje	n.
-22215	Izvěstovańje	n.sg.
-3692	izvěšćati	v.tr. ipf.
-5511	izvezti	v.tr. pf.
-8146	izvezti	v.tr. pf.
-26265	izvihnųti	v.tr. pf.
-3390	izvini, izvinite	intj.
-32398	izviniti sę	v.refl. pf.
-634	izviniti	v.tr. pf.
-32400	izvinjajųći	adj.
-32397	izvinjati sę	v.refl. ipf.
-633	izvinjati	v.tr. ipf.
-32399	izvinjeńje	n.
-22512	izvlastniti	v.tr. pf.
-22511	izvlastnjati	v.tr. ipf.
-36722	izvlěkati	v.tr. ipf.
-26267	izvlěkti	v.tr. pf.
-26269	izvně	adv.
-22395	izvnųtra	adv.
-22276	izvod	m.
-22280	izvod	m.
-5540	izvoditi	v.tr. ipf.
-36763	izvoditi	v.tr. ipf.
-8156	izvodlivosť	f.
-8157	izvodlivy	adj.
-17598	izvođeńje	n.
-8158	izvolimosť	f.
-8159	izvolimy	adj.
-14611	izvoliti	v.tr. pf.
-14612	izvoljeńje	n.
-8168	izvoljeny	adj.
-2956	izvoljniti	v.tr. pf.
-14610	izvoljny	adj.
-26270	izvor	m.
-5907	izvoz	m.
-5510	izvoziti	v.tr. ipf.
-16181	izvoziti	v.tr. ipf.
-22662	izvraćati	v.tr. ipf.
-5629	izvråćeny	adj.
-22661	izvråtiti	v.tr. pf.
-2506	iz-za	prep.
-8172	iže	pron.rel.
-26272	ižica	f.
-5858	izznačati	v.tr. ipf.
-5859	izznačeńje	n.
-5857	izznačiti	v.tr. pf.
-8177	izzȯv	m.
-6244	izzvati	v.tr. pf.
-6243	izzyvati	v.tr. ipf.
-2932	izžęti	v.tr. pf.
-1602	ja	pron.pers.
-17601	jablånj	f.
-26275	jablȯčny	adj.
-282	jablȯko	n.
-2109	jad	m.
-26282	jadovity	adj.
-36740	Jadransko morje	n.
-1576	jagnę	n.
-26285	jagnętina	f.
-26284	jagnęťji	adj.
-26286	jagniti sę	v.refl. ipf.
-1580	jagoda	f.
-26287	jagoda	f.
-26289	jagodny	adj.
-32472	jaguar	m.anim.
-4708	jajca	n.pl.
-1478	jajce	n.
-8209	jajcebělȯk	m.
-8214	jaječko	n.
-36552	jajėčna skorlupa	f.
-35431	jaječny krem	m.
-26291	jaječny	adj.
-36848	jak	m.
-17602	jalovec	m.
-26293	jalověti	v.intr. ipf.
-26294	jalovica	f.
-26296	jalovy	adj.
-36640	jalovy	adj.
-36641	jalovy	adj.
-4995	jama	f.
-16785	Jamajka	f.sg.
-22458	jamajsky	adj.
-2106	januaŕ	m.sg.
-19756	Japonec	m.anim.
-3052	Japonija	f.sg.
-1528	japonsky	adj.
-118	jar	m.
-26299	jar	m.
-35544	jard	m.
-26303	jarka	f.
-26304	jarky	adj.
-3042	jaŕmo	n.
-26306	jarosť	f.
-26307	jarovy	adj.
-26308	jasenėc	m.
-17603	jasenj	m.
-17605	jasla-sadȯk	m.
-26311	jasli	m.pl.
-26312	jasněti	v.intr. ipf.
-17607	jasno	adv.
-4147	jasnosť	f.
-26317	jasnota	f.
-13615	jasnovidec	m.anim.
-13614	jasnovidka	f.
-17608	jasnovidnosť	f.
-734	jasny	adj.
-33082	jasny	adj.
-527	jastręb	m.anim.
-878	jaščer	m.anim.
-26324	jatrȯv	f.
-17609	java	f.
-17611	java	f.
-36480	Java	f.sg.
-36481	javansky	adj.
-534	javiti sę	v.refl. pf.
-36730	javiti sę	v.refl. pf.
-3612	javjati sę	v.refl. ipf.
-36731	javjati sę	v.refl. ipf.
-8240	javjeńje	n.
-17612	javjeńje	n.
-26327	javno	adv.
-8241	javny	adj.
-26329	javor	m.
-26330	javorovy	adj.
-26331	jaź	m.anim.
-26332	jaz	m.
-20403	jazvec	m.anim.
-8245	je, jest	v.ipf.
-4461	jebańje	n.sg.
-8248	jebany	adj.
-8249	jebatelj	m.anim.
-528	jebati	v.tr. ipf.
-35993	jebeno	adv.
-2862	jęčati	v.intr. ipf.
-1574	jęčmenj	m.
-36479	jęčmenj	m.
-16798	jęčmenny	adj.
-2944	jeda	f.
-26340	jedak	m.anim.
-8259	jedańje	n.sg.
-15347	jedatelj	m.anim.
-1592	jedati	v.intr. ipf.
-16799	jedeńje	n.sg.
-532	jedin drugogo	pron.rec.
-8268	jedin protiv drugomu	adv.
-531	jedin	num.card.
-19757	jedinačka	f.
-19758	jedinak	m.anim.
-26345	jedinec	m.anim.
-5174	jedinica	f.
-36735	jedinka	num.subst.
-533	jedinnadsęť	num.card.
-23679	jedinnadsęty	num.ord.
-8278	jedino pytańje vrěmene	phrase
-5098	jedino	adv.
-17615	jedinovy	adj.
-915	jedinstveno čislo	n.
-8282	jedinstveny	adj.
-19759	jedinstveny	adj.
-8283	jedinstvo	n.sg.
-999	jediny	adj.
-26349	jedivo	n.
-8255	jedlivy	adj.
-8296	jednako	adv.
-24009	jednakovy	adj.
-21309	jednakože, jednakže	adv.
-2702	jednaky	adj.
-35251	jednina	f.
-17617	jednobožstvo	n.sg.
-3852	jednočasno	adv.
-3851	jednočasny	adj.
-17618	jednoglåsno	adv.
-17619	jednoglåsny	adj.
-19761	jednojęzyčny	adj.
-741	jednokråtno	adv.
-33398	jednokråtny	adj.
-8276	jednonočka	f.
-8275	jednonočny seks	m.sg.
-8274	jednonočny	adj.
-26352	jednonogy	adj.
-21310	jednoobrazny	adj.
-26353	jednooky	adj.
-32326	jednopoly	adj.
-21311	jednorodnosť	f.
-21312	jednorodny	adj.
-19762	jednorog	m.anim.
-26355	jednorųky	adj.
-16947	jednosložny	adj.
-8301	jednosměrny	adj.
-740	jednosť	f.
-5673	jednostajnosť	f.
-5674	jednostajny	adj.
-8306	jednostrånno	adv.
-1781	jednostrånny	adj.
-16948	jednovrěmenno	adv.
-22574	jednovrěmenny	adj.
-17620	jednoznačno	adv.
-17625	jednoznačny	adj.
-19764	jednoznačny	adj.
-19763	jednoženstvo	n.sg.
-22943	jedomy	adj.
-8200	jędrna energija	f.
-8201	jędrna sposobnosť	f.
-8202	jędrno odstrašeńje	n.sg.
-8205	jędrny reaktor	m.
-2108	jędrny	adj.
-3748	jędrny	adj.
-2107	jędro	n.
-2354	jedva	adv.
-14627	jedvab	m.sg.
-512	jego	pron.poss.
-716	jego	pron.pers.
-6256	jegov	pron.poss.
-8320	jehati želěznicejų	v.ipf.
-2175	jehati	v.intr. ipf.
-2195	jej	pron.poss.
-3015	jej	pron.pers.
-6257	jejin	pron.poss.
-26364	jela	f.
-26365	jelec	m.anim.
-26366	jelenę	n.
-26368	jelenina	f.
-2202	jelenj	m.anim.
-26367	jeleńji	adj.
-3058	jelito	n.
-17616	jelo	n.
-3017	jemela	f.
-5922	Jemen	m.sg.
-2771	jemu	pron.pers.
-26374	jen	m.
-8328	jer	conj.
-15354	jerbo za	prep.
-8329	jerbo	conj.
-26375	jerębina	f.
-25939	jerej	m.anim.
-26376	jeremiada	f.
-443	jesenj	f.
-26378	jesennji, jesenny	adj.
-26379	jesetr	m.anim.
-26380	jesetrina	f.
-19765	jestestvo	n.sg.
-19767	jestestvo	n.sg.
-19491	jesti	v.tr. ipf.
-23673	jestli ne	conj.
-8335	jestli trěba	adv.
-2353	jestli	conj.
-14605	jestvovati	v.intr. ipf.
-8341	ješče dva	num.
-1076	ješče	adv.
-16800	jęti	v.tr. ipf.
-14628	jętra	n.pl.
-2322	Jevrej	m.anim.
-2546	jevrejskoslovjansky	adj.
-255	jevrejsky	adj.
-3572	jezda	f.
-17629	jezdec	m.anim.
-26388	jezdec	m.anim.
-19175	jezditi na velosipedu	v.ipf.
-540	jezditi	v.intr. ipf.
-8349	jezerny	adj.
-2547	jezero	n.
-26392	jezuit	m.anim.
-17630	Jezus	m.anim.
-31978	języček	m.
-31979	języčkovy	adj.
-17631	języčny	adj.
-541	język	m.
-545	język	m.
-36102	językolomka	f.
-17632	językoslovec	m.anim.
-19768	językotvoritelj, językotvorec	m.anim.
-19770	językotvorjeńje, językotvorstvo	n.sg.
-551	językověd	m.anim.
-4443	językovědstvo	n.sg.
-17633	językoznańje	n.sg.
-8354	językoznavec	m.anim.
-19772	językoznavstvo	n.sg.
-846	jež	m.anim.
-3825	ježdna čęsť	f.
-26394	ježina	f.
-34830	ježiti sę	v.refl. ipf.
-26395	ježiti	v.tr. ipf.
-35952	jidiš	m.sg.
-2601	jih	pron.poss.
-2603	jih	pron.pers.
-6258	jihny	pron.poss.
-1871	jim	pron.pers.
-22630	jod	m.sg.
-23660	joga	f.
-4638	jogurt	m.
-5923	Jordanija	f.sg.
-4436	jordansky	adj.
-4815	jų	pron.pers.
-5924	jubilej	m.
-23582	judaizm	m.sg.
-1527	jug	m.sg.
-36380	jugoiztočny	adj.
-36381	jugoiztok	m.sg.
-129	Jugoslavija	f.sg.
-35350	jugoslavizm	m.sg.
-4867	jugoslavsky	adj.
-36382	jugovȯzhod	m.sg.
-36383	jugovȯzhodny	adj.
-36384	jugozapad	m.sg.
-36385	jugozapadny	adj.
-3125	julij	m.sg.
-26403	junak	m.anim.
-26404	junak	m.anim.
-26405	junec	m.anim.
-2550	junij	m.sg.
-5803	junior	m.anim.
-26407	junoš, junoša	m.anim.
-26408	juny	adj.
-21313	Jupiter	m.sg.
-2549	jurisdikcija	f.
-26410	jurȯk	m.anim.
-26412	jutrenja	f.
-8364	jutrišnji, jutrišny	adj.
-8366	jutro	n.
-4746	Južna Amerika	f.sg.
-22772	Južna Koreja	f.sg.
-8367	južna polsfera	f.sg.
-10849	južno sijańje	n.sg.
-4186	južno	adv.
-553	Južnoafrikanska Republika	f.sg.
-35018	južnoafrikansky	adj.
-4747	južnoamerikansky	adj.
-35136	južnoevropejsky	adj.
-22774	južnokorejsky	adj.
-4425	južnoslovjansky	adj.
-23501	Južny okean	m.sg.
-23634	Južny polus	m.sg.
-2548	južny	adj.
-518	k, ko	prep.
-26417	kabaček	m.
-26420	kabala	f.
-26421	kabalističny	adj.
-26423	kabare, kabaret	m.
-26424	kabarga	f.
-4409	kabelj	m.
-36002	kabina	f.
-36715	kabinet	m.
-17635	kačer	m.anim.
-519	kaď	f.
-26429	kadiľnica	f.
-26430	kadilo	n.
-26432	kaditi	v.intr. ipf.
-22627	kadmij	m.sg.
-658	kadȯlb	m.
-11144	kadry	m.pl.
-35874	kafe	n.indecl.
-24439	kajak	f.
-26437	kajati sę	v.refl. ipf.
-1193	kak, kako	adv.
-2043	kak, kako	prep.
-3437	kak, kako	adv.
-34784	kakao	n.indecl.
-26439	kakati	v.intr. ipf.
-1421	kako ... tako i ...	conj.
-5035	kako by	conj.
-17637	kako možno ranějše	adv.
-17638	kako možno skorěje	adv.
-36619	kako prědtym	adv.
-36618	kako prěđe	adv.
-36620	kako raněje	adv.
-17639	kako sę govori	phrase
-6107	kako sę tvŕdi	phrase
-16828	kako toliko	adv.
-23868	kakoby	adv.
-19606	kakokoli	adv.
-14630	kako-libo	adv.
-2712	kako-nebųď	adv.
-3796	kakosť	f.
-497	kakostny	adj.
-34756	kaktus	m.
-1454	kaky	pron.indef.
-19605	kakykoli	pron.indef.
-14631	kaky-libo	pron.indef.
-2711	kaky-nebųď	pron.indef.
-341	kal	m.sg.
-26442	kal	m.sg.
-22616	kalcij	m.sg.
-20870	kalendaŕ	m.
-35817	Kalifornija	f.sg.
-20871	kaligraf	m.anim.
-35687	kaligrafičny	adj.
-20872	kaligrafija	f.
-22615	kalij	m.sg.
-26444	kalina	f.
-26447	kaliti	v.tr. ipf.
-6164	kalka	f.
-4966	kalkulacija	f.
-2553	kalkulovati	v.tr. ipf.
-26449	kaľny	adj.
-448	kaluža	f.
-26453	kameněti	v.intr. ipf.
-26455	kamenisty	adj.
-1313	kamenj	m.
-36154	kamenna doba	f.
-26459	kamenny	adj.
-20404	kamenolom	m.
-26461	kamenovati	v.tr. ipf.
-851	kamera	f.
-4227	kameraman	m.anim.
-26462	kamion	m.
-19553	kamo	adv.
-19607	kamokoli	adv.
-19569	kamo-libo	adv.
-19568	kamo-nebųď	adv.
-2556	kampanija	f.
-35824	kamuflaž	m.sg.
-2321	Kanada	f.sg.
-2561	kanadsky	adj.
-23266	kanal	m.
-23269	kanalizacija	f.
-23268	kanalizovati	v.tr. ipf.
-23489	kanarka	f.
-16723	kancelarija	f.
-36330	kancler	m.anim.
-2007	kandidat	m.anim.
-33406	kandidatura	f.
-6270	kandidovati	v.tr. ipf.
-22959	kanibal	m.anim.
-22960	kanibalizm	m.sg.
-22961	kanibaľsky	adj.
-927	kanja	f.
-26465	kanja	f.
-5202	kanoe	n.indecl.
-17640	kanon	m.
-35914	kanoničny	adj.
-5761	kanonizovati	v.tr. ipf.
-2557	kapati	v.intr. ipf.
-36103	kapela	f.
-32457	kaper	m.anim.
-32458	kaperstvo	n.sg.
-32707	kapital	m.
-23513	kapitalist	m.anim.
-23514	kapitalističny	adj.
-23512	kapitalizm	m.sg.
-3489	kapitan	m.anim.
-2558	kapitulacija	f.
-4969	kapitulovati	v.tr. ipf.
-1813	kapja	f.
-33402	kapjušon	m.
-26470	kapnųti	v.intr. pf.
-604	kapriz	m.
-4252	kaprizny	adj.
-4253	kaprizovati	v.intr. ipf.
-2559	kapsula	f.
-33401	kapuca	f.
-36423	kapusta	f.
-631	kara	f.
-16815	karabin	m.
-19773	karaibsky	adj.
-35441	karamel	m.
-2683	karantina	f.
-2564	karaś	m.anim.
-23584	karate	n.indecl.
-2565	karati	v.tr. ipf.
-35408	karati	v.tr. ipf.
-35694	kardinal	m.anim.
-23699	kareta	f.
-35015	karfiol	m.
-36577	kari	n.
-21314	kariera	f.
-2566	karierist	m.anim.
-26750	karies	m.sg.
-36286	karikatura	f.
-2426	karlik	m.anim.
-35970	karnaval	m.
-19774	karny	adj.
-32225	karo	n.
-870	karp	m.anim.
-2868	karta	f.
-23239	karta	f.
-20873	kartina	f.
-2989	kartofelj	m.
-22803	karton	m.
-36538	karuselj	f.
-36369	kaseta	f.
-34586	kastracija	f.
-26478	kastrovati	v.tr. ipf./pf.
-2563	kaša	f.
-1830	kašelj	m.
-3520	kašljati	v.intr. ipf.
-5979	kaštan	m.
-17641	kaštanovy	adj.
-4729	Kašub	m.anim.
-176	kašubsky	adj.
-26485	kat	m.anim.
-36586	kat	m.
-19775	katalansky	adj.
-33415	katalog	m.
-35059	Katalonija	f.sg.
-32447	Katar	m.sg.
-32453	katarsky	adj.
-4911	katastrofa	f.
-4913	katastrofičny	adj.
-17643	katę	n.
-165	katedrala	f.
-36705	kategorično	adv.
-35597	kategoričny	adj.
-47	kategorija	f.
-19776	kategorizacija	f.
-36113	kategorizovati	v.tr. ipf./pf.
-2233	katka	f.
-17644	katȯčka	f.
-23516	katolicizm	m.sg.
-2985	katoličsky	adj.
-3000	katolik	m.anim.
-2560	kava	f.
-32075	kavalerija	f.
-3484	kavarnja	f.
-26487	kavka	f.
-35062	Kavkaz	m.sg.
-26488	kavovy	adj.
-23645	kazahsky, kazašsky	adj.
-1410	Kazahstan	m.sg.
-32415	kazarna	f.
-3116	kazati sę	v.refl. ipf.
-1971	kazati	v.tr. ipf.
-26491	kazati	v.tr. ipf.
-32512	kazino	n.
-26492	kaziti	v.tr. ipf.
-26493	kazniti	v.tr. ipf.
-26494	kaznj	f.
-8428	každodenny	adj.
-8429	každogodišnje	adv.
-8430	každogodišnji, každogodišny	adj.
-8431	každoročno	adv.
-8432	každoročny	adj.
-937	každy	adj.
-942	kde	adv.
-19603	kdekoli	adv.
-14569	kde-libo	adv.
-1794	kde-nebųď	adv.
-35857	kelner	m.anim.
-36644	kelnerka	f.
-35726	Kelt	m.anim.
-4738	keltsky	adj.
-32138	kemping	m.
-20406	kenguru	m.anim.
-35194	keramičny	adj.
-35193	keramika	f.
-16764	kěšenj	f.
-26497	khaki	n.indecl.
-34921	kilim	m.
-33538	kilobajt	m.
-2275	kilogram	m.
-4421	kilometr	m.
-35046	kinematografija	f.
-4795	kino	n.
-36261	kinooperator	m.anim.
-34848	kiosk	m.
-452	Kipr	m.sg.
-1417	kirilica	f.
-34781	kiriličsky, kirilsky	adj.
-36529	kisla smetana	f.
-26513	kita	f.
-4752	Kitaj	m.sg.
-8448	Kitajec	m.anim.
-8449	Kitajka	f.
-552	kitajsky	adj.
-36070	kivi	n.indecl.
-2340	klåda	f.
-26520	klådec, klådeź	m.
-26522	kladivo	n.
-19777	klanjati sę	v.refl. ipf.
-23433	klarnet	m.
-2265	klås	m.
-3503	klas	m.
-35257	klasa	f.
-8458	klasična muzika	f.
-36156	klasičny kostjum	m.
-8459	klasičny	adj.
-4967	klasifikacija	f.
-2892	klasifikovati	v.tr. ipf.
-26526	klåsiti sę	v.refl. ipf.
-35532	klasna komnata	f.
-901	klasti	v.tr. ipf.
-26528	klåti	v.tr. ipf.
-32009	klåti	v.tr. ipf.
-36765	klåti	v.tr. ipf.
-36546	klåtiti sę	v.refl. ipf.
-574	klåtiti	v.tr. ipf.
-23458	klavesin	m.
-8462	klaviatura	f.
-23431	klavir	m.
-8461	klaviša	f.
-2555	klęčati	v.intr. ipf.
-1540	klej	m.
-26532	klejiti	v.tr. ipf.
-23297	klejky	adj.
-26534	klęknųti	v.intr. pf.
-26536	klen	m.
-1274	klěnj	m.anim.
-26537	klenovy	adj.
-4091	klěskańje	n.sg.
-4090	klěskati	v.tr. ipf.
-20408	klěšč	m.anim.
-26545	klěšča	f.
-1662	klěšče	f.pl.
-17655	klęti	v.intr. ipf.
-4518	klětka krve	f.
-787	klětka	f.
-4517	klětka	f.
-14645	klětȯčna terapija	f.
-8472	klětȯčno ozdravjeńje	n.sg.
-8473	klětȯčny	adj.
-17657	klętva	f.
-17658	klętva	f.
-3001	kleveta	f.
-26555	klevetati	v.intr. ipf.
-26556	klevetnik	m.anim.
-5121	klicati	v.tr. ipf.
-32575	klicati	v.tr. ipf.
-32573	klička	f.
-5139	klient	m.anim.
-14646	klienti	m.pl.
-14647	klientsky	adj.
-8476	klientstvo	n.sg.
-8477	klik	m.
-32567	klik	m.
-32561	klika	f.
-5120	kliknųti	v.tr. pf.
-32579	kliknųti	v.tr. pf.
-17659	klima	f.
-2986	klimaks	m.
-2214	klimat	m.
-35878	klimatizacija	f.
-35877	klimatizator	m.
-8482	klimatsko potepljeńje	n.sg.
-8481	klimatsky	adj.
-1368	klin	m.
-19779	kliničny	adj.
-35555	klinika	f.
-8484	kliše	n.indecl.
-2240	ključ	m.
-26560	ključaŕ	m.anim.
-32016	ključna kosť	f.
-26562	ključnica	f.
-19784	ključnik	m.anim.
-35216	ključno slovo	n.
-19786	ključny	adj.
-26564	kljukva	f.
-19787	kljun	m.
-26566	kljunųti	v.tr. pf.
-1958	kljusati	v.intr. ipf.
-788	kljuvati	v.tr. ipf.
-26570	klobuk	m.
-2191	klȯk	m.
-26571	klokot	m.sg.
-26572	klokotati	v.intr. ipf.
-19780	klon	m.
-19782	kloniti sę	v.refl. ipf.
-789	kloniti	v.tr. ipf.
-32136	kloun	m.anim.
-26576	klozet	m.
-31886	klub	m.
-26578	klųbȯk	m.
-36805	kmin	m.
-17660	kmotr	m.anim.
-17661	kmotra	f.
-8501	knęgynja	f.
-8502	knęź	m.anim.
-17662	knęžić	m.anim.
-26585	knęžna	f.
-16801	knęžny	adj.
-35911	knęžstvo	n.
-1981	kniga	f.
-32056	knigarnja	f.
-6204	kniževnosť	f.
-6205	kniževny	adj.
-4405	knižka	f.
-17663	knopka	f.
-35489	knot	m.
-20409	koala	f.
-550	koalicija	f.
-22622	kobalt	m.sg.
-26588	kobčik	m.anim.
-20410	kobra	f.
-20411	kobyla	f.
-26592	kočerga	f.
-16951	kod	m.
-16950	kodifikacija	f.
-35695	kodifikovati	v.tr. ipf./pf.
-8505	kodovati	v.tr. ipf.
-31966	kofein	m.sg.
-2230	kȯgda, kȯgdy	adv.
-26594	kȯgda, kȯgdy	conj.
-19610	kȯgdakoli, kȯgdykoli	adv.
-14649	kȯgda-libo, kȯgdy-libo	adv.
-120	kȯgda-nebųď, kȯgdy-nebųď	adv.
-143	kogo	pron.int.
-35931	kohezija	f.
-5693	koj	pron.int.
-5694	koj	pron.rel.
-21315	kojkoli	pron.indef.
-5695	koj-nebųď	pron.indef.
-23196	kokain	m.sg.
-23701	koketka	f.
-32900	koketny	adj.
-32901	koketovati	v.intr. ipf.
-25534	kokodakati	v.intr. ipf.
-36274	kokos	m.
-36276	kokosova palma	f.
-36275	kokosovy orěh	m.
-26596	kokoška	f.
-2253	kokot	m.anim.
-33643	koktejl	m.
-1949	kol	m.
-26599	kȯl	m.
-1957	kolač	m.
-81	kolaps	m.
-2370	kȯlbasa	f.
-8504	kȯlbasa	f.
-36539	kolěbanka	f.
-21316	kolěbati sę	v.refl. ipf.
-26605	kolěbati	v.tr. ipf.
-26607	kolěbka	f.
-26608	kolęda	f.
-8519	koledž	m.
-5762	kolega	m.anim.
-19788	kolěja	f.
-36603	kolekcija	f.
-32739	kolektiv	m.
-32740	kolektivny	adj.
-2201	kolěno	n.
-35875	kolhoz	m.
-4174	kolibri	m.anim.
-26619	količek	m.
-17665	koliko ja věm	adv.
-5780	koliko ja znajų	adv.
-1275	koliko	adv.
-1948	koliko	conj.
-19613	kolikokoli	adv.
-14655	koliko-libo	adv.
-23100	koliko-nebųď	adv.
-16952	kolikoraky	adj.
-4869	kolikosť	f.
-19595	kolikråt	adv.
-19587	koliky	adj.
-8518	koljce	n.
-1332	kolo	n.
-4917	kolo	prep.
-17666	kolokrěslo	n.
-16953	kolona	f.
-32072	kolona	f.
-20412	koloniaľny	adj.
-34179	kolonija	f.
-36494	kolonist	m.anim.
-4970	kolonizacija	f.
-36493	kolonizator	m.anim.
-283	kolonizovati	v.tr. ipf./pf.
-1955	kolor	m.
-35890	kolorovati	v.tr. ipf.
-19790	kolovati	v.intr. ipf.
-17668	kolovråt	m.
-23700	kolpak	m.
-22440	Kolumbija	f.sg.
-22441	kolumbijsky	adj.
-26615	kȯlzati sę	v.refl. ipf.
-26616	kȯlzky	adj.
-2242	koma	f.
-23428	koma	f.
-3855	komanda	f.
-2876	komar	m.anim.
-16954	kombinacija	f.
-26625	kombinatorny	adj.
-16955	kombinovati	v.tr. ipf.
-36645	komedija	f.
-2877	komentaŕ	m.
-36317	komentator	m.anim.
-568	komentovati	v.tr. ipf.
-5148	komerciaľny	adj.
-23427	kometa	f.
-3507	komfort	m.
-26627	komfortno	adv.
-36478	komfortny	adj.
-4403	komičny	adj.
-8537	komik	m.anim.
-36289	komiks	m.
-8538	komin	m.
-8539	kominjaŕ	m.anim.
-854	komisaŕ	m.anim.
-1964	komisija	f.
-1110	komitet	m.
-815	komnata	f.
-1842	komora	f.
-36880	komorna muzika	f.sg.
-36878	komorny concert	m.
-36879	komorny orkestr	m.
-33088	kompakt-disk	m.
-793	kompanija	f.
-32931	kompas	m.
-35376	kompatibiľnosť	f.
-35375	kompatibiľny	adj.
-4972	kompensacija	f.
-524	kompensovati	v.tr. ipf./pf.
-35965	kompetentnosť	f.
-35964	kompetentny	adj.
-820	kompeticija	f.
-17670	kompetitivny	adj.
-15957	kompjuter	m.
-15958	kompjuterizovany	adj.
-15959	kompjuterizovati	v.tr. ipf.
-32313	kompjuterna myš	f.
-15960	kompjuterny	adj.
-34675	kompleks	m.
-36587	kompletno	adv.
-4378	kompletnosť	f.
-4377	kompletny	adj.
-4971	komplikacija	f.
-15952	komplikovany	adj.
-821	komplikovati	v.tr. ipf.
-20148	komponent	m.
-8544	komponovati	v.tr. ipf.
-35582	kompozicija	f.
-816	kompozitor	m.anim.
-16956	kompromis	m.
-16957	kompromisny	adj.
-736	komunikacija	f.
-1277	komunikovati	v.intr. ipf.
-2074	komunist	m.anim.
-1065	komunističny	adj.
-4402	komunizm	m.sg.
-35120	koncentracija	f.
-16958	koncentrovati	v.tr. ipf.
-15963	koncepcija	f.
-20413	konceptuaľny	adj.
-4782	koncert	m.
-4785	koncert	m.
-23363	končati sę	v.refl. ipf.
-535	končati	v.tr. ipf.
-16960	končina	f.
-21697	kondicija	n.
-16959	kondicional	m.
-35876	kondicioner	m.
-15683	konduktor	m.anim.
-15365	konec tydnja	m.
-536	konec	m.
-14659	konečnik	m.
-17674	konečno	adv.
-17676	konečnosť	f.
-8557	konečny	adj.
-35912	konfederacija	f.
-799	konferencija	f.
-844	konfiskovati	v.tr. ipf.
-822	konflikt	m.
-824	konfrontacija	f.
-32454	Kongo	n.sg.
-32455	kongolezsky	adj.
-823	kongres	m.
-26640	koničina	f.
-26642	konina	f.
-1038	konj	m.anim.
-17673	konj	m.anim.
-4645	konjak	m.
-26645	konjaŕ	m.anim.
-32074	konjaŕ	m.anim.
-809	konjugacija	f.
-808	konjunkcija	f.
-20414	konkluzija	f.
-23108	konkretno	adv.
-810	konkretny	adj.
-4973	konkurencija	f.
-17679	konkurencijny	adj.
-35262	konkurent	m.anim.
-811	konkurovati	v.intr. ipf.
-812	konkurs	m.
-26650	konnica	f.
-19792	konnik	m.anim.
-26652	konny	adj.
-8572	konopja	f.
-26657	konopjany	adj.
-35013	konotacija	f.
-33321	konserva	f.
-17680	konservativec	m.anim.
-8574	konservativnosť	f.
-2889	konservativny	adj.
-8583	konservatizm	m.sg.
-8584	konservovany	adj.
-1120	konservovati	v.tr. ipf.
-2119	konsilium	m.
-19793	konsistencija	f.
-26658	konsky	adj.
-26659	konsonant	m.
-17681	konspiracija	f.
-36049	konspirator	m.anim.
-35836	Konstantinopol	m.sg.
-1984	konstitucija	f.
-35233	konstitucijny	adj.
-4873	konstrukcija	f.
-4872	konstruovati	v.tr. ipf.
-5926	konsul	m.anim.
-5927	konsulat	m.
-5127	konsultacija	f.
-35568	konsultant	m.anim.
-1856	konsumerizm	m.sg.
-2054	kontakt	m.
-36206	kontaktna sočevica	f.
-36395	kontejner	m.
-19794	kontekst	m.
-2112	kontinent	m.
-6210	kontinentaľny šelf	m.
-15973	kontingent	m.
-35332	kontinuum	m.
-3328	konto	n.
-4156	kontrabanda	f.
-8576	kontrabanda	f.
-4158	kontrabandnik	m.anim.
-4159	kontrabandny	adj.
-15367	kontrabandovańje	n.sg.
-4157	kontrabandovati	v.tr. ipf.
-23441	kontrabas	m.
-35844	kontracepcija	f.
-19795	kontrakcija	f.
-2146	kontrarevolucija	f.
-19796	kontrast	m.
-33001	kontratenor	m.anim.
-3483	kontrola, kontrolj	f.
-832	kontrolovati	v.tr. ipf.
-3482	kontrolovati	v.tr. ipf.
-19797	konvencija	f.
-35047	konvencionaľny	adj.
-19798	konvent	m.
-36684	konversija	f.
-16372	konvoj	m.
-1669	kooperacija	f.
-839	kooperovati	v.intr. ipf.
-36213	koordinacija	f.
-35225	koordinata	f.
-835	koordinator	m.anim.
-35226	koordinovati	v.tr. ipf./pf.
-26664	kopa	f.
-3739	kopaljnja	f.
-26666	kopańje	n.sg.
-834	kopati	v.tr. ipf.
-32080	kopějka	f.
-36813	Kopenhagen	m.
-2113	kopija	f.
-3519	kopijovati, kopirovati	v.tr. ipf.
-26674	kopje	n.
-26679	kopȯť	f.
-828	kopr	m.
-538	kopriva	f.
-26678	koprivny	adj.
-8596	koprova supa	f.
-8597	koprove ogurky	m.pl.
-14662	koprovy	adj.
-35838	koptsky	adj.
-26680	kopytnik	m.
-2116	kopyto	n.
-764	kora	f.
-26685	kora	f.
-358	korab	m.
-17682	korabnica	f.
-17683	korabnik	m.anim.
-21317	korabokrušenec	m.anim.
-21318	korabokrušeńje	n.
-26688	koral	m.anim.
-26689	Koran	m.
-848	kordon	m.
-6176	Koreja	f.sg.
-22768	korejsky	adj.
-26694	korekcija	f.
-26696	korektny	adj.
-26697	korektor	m.anim.
-17684	korelativ	m.
-26699	korenisty	adj.
-26700	koreniti sę	v.refl. ipf.
-2913	korenj	m.
-26702	korenj	m.
-6063	korespondencija	f.
-6056	korespondent	m.anim.
-26707	koriandr	m.sg.
-26708	korica	f.
-1435	koričnevy	adj.
-26709	koridor	m.
-19799	korigovati	v.tr. ipf.
-1509	korisť	f.
-5189	koristati	v.tr. ipf.
-35260	koristiti	v.tr. ipf.
-16961	koristnik	m.anim.
-6271	koristny	adj.
-8610	koriti	v.tr. ipf.
-4302	korka	f.
-36833	kornet	m.
-35663	kornijsky	adj.
-23189	korȯk	m.
-857	korona	f.
-35682	koronacija	f.
-36462	koronavirus	m.
-1623	koronovati	v.tr. ipf.
-35383	korporacija	f.
-35527	korporativny	adj.
-4618	korpus	m.
-867	korupcija	f.
-26718	korveta	f.
-26719	koryfej	m.anim.
-649	koryto	n.
-26725	koryto	n.
-1622	kos	m.anim.
-2965	kosa	f.
-26729	kosa	f.
-26731	kosaŕ	m.
-26732	kośba	f.
-17689	kositi	v.tr. ipf.
-26738	kosm	m.
-26739	kosmaty	adj.
-36682	kosmetička	f.
-36680	kosmetičny	adj.
-36681	kosmetik	m.anim.
-36679	kosmetika	f.sg.
-17690	kosmična stancija	f.
-17692	kosmičny korab	m.
-17691	kosmičny	adj.
-26741	kosmonavt	m.anim.
-17694	kosmos	m.
-26743	kosooky	adj.
-1508	Kosovo	n.sg.
-868	kosovsky	adj.
-871	kosť	f.
-22459	Kostarika	f.sg.
-22460	kostarikansky	adj.
-8623	kostel	m.
-33588	kostěnka	f.
-26744	kostěny	adj.
-26751	kostjum	m.
-26746	kostka	f.
-26748	kostlivy	adj.
-23330	kostno jędro	n.
-733	kostny mozȯk	m.
-26749	kostny	adj.
-2635	kosy	adj.
-5658	koš odpadov	m.
-5194	koš	m.
-5195	košaŕka	f.
-26754	košeńje	n.sg.
-32090	košerny	adj.
-1465	koštovati	v.tr. ipf.
-4794	košulja	f.
-1093	kot	m.anim.
-26759	kotę	n.
-23185	kotel	m.
-34416	kotiti sę	v.refl. ipf.
-26763	kotka	f.
-26764	kotlaŕ	m.anim.
-35880	kotlet	m.
-26765	kotlina	f.
-26766	kotlovina	f.
-26772	kotva	f.
-2419	kovač	m.anim.
-26774	kovaljnja	f.
-26775	kovańje	n.sg.
-530	kovati	v.tr. ipf.
-33929	kovčeg	m.
-34922	koverec	m.
-34168	koverta	f.
-8635	kovina	f.
-26780	kovny	adj.
-26781	kovylj	m.sg.
-74	koza	f.
-8637	kozačsky	adj.
-8638	kozak	m.anim.
-32021	kozel odpušćeńja	m.anim.
-26784	kozel	m.anim.
-26785	kozina	f.
-26786	koźja bråda	f.
-32096	koźja bråda	f.
-26787	koźji	adj.
-26791	Kozorog	m.anim.
-36064	kozyŕ	m.
-1473	koža	f.
-23212	koženy	adj.
-17695	kožuh	m.
-26798	kožuhaŕ	m.anim.
-17696	krab	m.anim.
-791	kråbka	f.
-26802	kradež	f.
-36171	kradom	adv.
-855	krađa	f.
-4124	krah	m.
-860	kraj	m.
-3579	kraj	m.
-36164	krajec	m.
-4998	krajevid	m.
-36211	Krajina Baskov	f.
-4559	krajina	f.
-19801	krajina	f.
-8647	krajnec	m.anim.
-8650	krajno opasny	adj.
-30	krajno	adv.
-8651	krajnosť	f.
-36207	krajny termin	m.
-757	krajny	adj.
-25790	krakati	v.intr. ipf.
-26816	krålica	f.
-20415	krålik	m.anim.
-1380	krålj	m.anim.
-17697	krålj	m.anim.
-31852	krålj	m.anim.
-26812	kråljev	adj.
-1658	kråljeva	f.
-20874	kråljevska boa	f.
-20875	kråljevsky udav	m.anim.
-1832	kråljevsky	adj.
-559	kråljevstvo	n.
-1094	krasa	f.
-16725	krasavec	m.anim.
-16724	krasavica	f.
-26823	krasiti	v.tr. ipf.
-20416	krasivosť	f.
-8660	krasivši	adj.
-2698	krasivy	adj.
-8662	krasnějši	adj.
-8663	krasnica	f.
-21319	krasnorěčivosť	f.
-21320	krasnorěčivy	adj.
-8664	krasnosť	f.
-3790	krasny	adj.
-20876	krasopis	m.
-20877	krasopisec	m.anim.
-2695	krasota	f.
-2642	kråsta	f.
-26829	kråstavy	adj.
-26804	krasti sę	v.refl. ipf.
-627	krasti	v.tr. ipf.
-19803	kråtko	adv.
-26833	kråtkonogy	adj.
-26836	kråtkosť	f.
-35282	kråtkotrajny	adj.
-8669	kråtkovidnik	m.anim.
-8671	kråtkovidnosť	f.
-8673	kråtkovidny	adj.
-2641	kråtky	adj.
-8668	-kråtno	suffix
-1600	kråva	f.
-17698	kravata	f.
-26840	kråvji	adj.
-849	krč	m.
-850	krčiti	v.tr. ipf.
-847	krčma	f.
-26848	kreativnosť	f.
-32029	kreativny	adj.
-3495	kreda	f.
-35104	kredenc	m.
-3525	kredit	m.
-26869	krěhky	adj.
-32032	krem	m.
-26853	kremenisty	adj.
-3039	kremenj	m.
-26856	kremenny	adj.
-36198	Kremlj	m.
-22609	kremnij	m.sg.
-26858	kremovy	adj.
-35905	kreol	m.
-19804	kreoľsky	adj.
-26859	krěpěti	v.intr. ipf.
-26860	krěpiti	v.tr. ipf.
-26862	krěpkosť	f.
-4047	krěpky	adj.
-3022	krěposť	f.
-26864	kresalo	n.
-26865	kresati	v.tr. ipf.
-2700	krěslo	n.
-2428	krest	m.
-35720	krestitelj	m.anim.
-2699	krestiti	v.tr. ipf.
-17704	krestna mati	f.
-17705	krestny otec	m.anim.
-6177	krestovy pohod	m.
-6182	krešćeńje	n.
-23231	kreten	m.anim.
-23233	kretensky	adj.
-33641	krevetka	f.
-1091	kričati	v.tr. ipf.
-895	krijumčariti	v.tr. ipf.
-3215	krik	m.
-35091	kriket	m.
-747	kriknųti	v.tr. pf.
-26943	krilaty	adj.
-2637	krilo	n.
-35707	kripta	f.
-23162	kristal	m.
-35365	kristalizovati	v.tr. ipf./pf.
-23163	kristaľny	adj.
-19807	kriterij	m.
-2639	kritičny	adj.
-80	kritik	m.anim.
-35039	kritika	f.
-2164	kritikovati	v.tr. ipf.
-26879	kriva	f.
-19808	krivda	f.
-19809	krivda	f.
-3752	krivditi	v.intr. ipf.
-3534	krivina	f.
-19811	kriviti	v.tr. ipf.
-26882	krivoboky	adj.
-26883	krivonogy	adj.
-19814	krivoprisęžničstvo	n.sg.
-26888	krivošija	f.
-26890	krivota	f.
-4762	krivověrnik	m.anim.
-4763	krivověrstvo	n.sg.
-748	krivy	adj.
-3366	krivy	adj.
-4765	krivy	adj.
-26893	krivy	adj.
-138	kriza	f.
-6181	križ	m./f.
-35934	križenosec	m.anim.
-33748	križevka	f.
-17708	križišče	n.
-26850	krjakati	v.intr. ipf.
-758	krma	f.
-859	krmiti	v.tr. ipf.
-3735	krmjeńje	n.
-8717	krmna trųbka	f.
-14666	krmny	adj.
-8722	kroček	m.
-26868	krȯha	f.
-19816	kroj	m.
-19817	kroj	m.
-19818	krojač	m.anim.
-19819	krojiti	v.tr. ipf.
-852	krok	m.
-35447	kroket	m.
-35448	kroket	m.
-5298	krokodil	m.anim.
-3461	kromě togo	adv.
-318	kromě	prep.
-35719	kronika	f.
-35775	kronikaŕ	m.anim.
-26906	kropilo	n.
-26907	kropiti	v.intr. ipf.
-32052	krȯšiti sę	v.refl. ipf.
-26916	krȯšiti	v.tr. ipf.
-508	krȯt	m.anim.
-26910	krotiti	v.tr. ipf.
-26911	krotky	adj.
-26912	krotosť	f.
-1899	krȯv	f.
-14667	krȯvna infekcija	f.
-4519	krȯvno těljče	n.
-4523	krȯvny pritisk	m.
-17709	krȯvny	adj.
-26920	krtovina	f.
-880	krųg	m.
-15371	krųgla	f.
-19497	krųgly stol	m.
-2341	krųgly	adj.
-26925	krųgovy	adj.
-26926	krupa	f.
-26929	krušina	f.
-19823	krųtiti sę	v.refl. ipf.
-19820	krųtiti	v.tr. ipf.
-26931	kruty	adj.
-26932	krųžeńje	n.
-32054	krųžiti sę	v.refl. ipf.
-26933	krųžiti	v.tr. ipf.
-36543	krųžno križišče	n.
-4514	krvaviti	v.intr. ipf.
-36436	krvavjeńje	n.
-8738	krvavši	adj.
-4524	krvavy	adj.
-4516	krvinȯk	m.
-6434	krvonosny sųd	m.
-26941	krvopijec	m.anim.
-26940	krvoproliťje	n.sg.
-22065	krvotok	m.
-17710	Krym	m.sg.
-35234	krymsky	adj.
-17711	krysa	f.
-17712	kryti sę	v.refl. ipf.
-2638	kryti	v.tr. ipf.
-17713	krzno	n.
-32027	ksenofob	m.anim.
-32026	ksenofobija	f.
-4786	ksilofon	m.
-3019	kto	pron.int.
-21322	ktokoli	pron.indef.
-322	kto-nebųď	pron.indef.
-2643	ktory	pron.rel.
-4189	ktory	pron.int.
-19614	ktorykoli	pron.indef.
-14670	ktory-libo	pron.indef.
-2954	ktory-nebųď	pron.indef.
-240	kub	m.
-16278	Kuba	f.sg.
-2646	Kubanec	m.anim.
-16279	kubansky	adj.
-35956	kubičny	adj.
-5779	kubȯk	m.
-26955	kųdělj	f.
-498	kųdeŕ	m.
-26958	kųdlaty	adj.
-26960	kųdravy	adj.
-244	kųdy	adv.
-19615	kųdykoli	adv.
-19551	kųdy-libo	adv.
-2688	kųdy-nebųď	adv.
-34761	kufer	m.
-3518	kuhaŕ	m.anim.
-8755	kuhaŕka	f.
-35196	kuhaŕsky	adj.
-23567	kuhaŕstvo	n.sg.
-8756	kuhati	v.tr. ipf.
-8758	kuhenny	adj.
-1790	kuhnja	f.
-26963	kukati	v.intr. ipf.
-22397	kukla	f.
-254	kųkolj	m.
-17714	kukučka	f.
-8760	kukuruza	f.
-26966	kulik	m.anim.
-35195	kulinarny	adj.
-3475	kulja	f.
-1295	kuljemet	m.
-26967	kuljgati	v.intr. ipf.
-26968	kuljgavy	adj.
-8764	kulminacija	f.
-8765	kulminovati	v.intr. ipf.
-36308	kult	m.
-35723	kultivar	m.
-1301	kultura	f.
-2647	kulturny	adj.
-17715	kum	m.anim.
-17716	kuma	f.
-4771	kuna	f.
-26974	kup	m.
-1294	kupa	f.
-3452	kųpaljnja	f.
-3454	kųpańje	n.sg.
-26977	kųpati sę	v.refl. ipf.
-3453	kųpati	v.tr. ipf.
-26979	kupec	m.anim.
-26980	kupec	m.anim.
-3451	kųpělj	f.
-26982	kųpina	f.
-258	kupiti	v.tr. pf.
-26984	kupja	f.
-26987	kupola	f.
-35016	kupon	m.
-17717	kupoprodaž	f.
-2648	kupovatelj	m.anim.
-2884	kupovati	v.tr. ipf.
-26989	kur	m.anim.
-1231	kura	f.
-8776	kurec	m.
-26992	kurętina	f.
-26993	kurgan	m.
-33722	kuriozny	adj.
-26996	kuriti	v.tr. ipf.
-26997	kurivo	n.
-26994	kuŕji	adj.
-26999	kurnik	m.
-27000	kuropatva	f.
-265	kurort	m.
-3229	kurs	m.
-245	kursiv	m.sg.
-32231	kursivny	adj.
-36243	kursor	m.
-246	kurva	f.
-27002	kųs	m.
-32123	kus	m.
-17718	kųsati	v.tr. ipf.
-27005	kųsnųti	v.tr. pf.
-247	kųsȯk	m.
-23800	kust	m.
-17720	kustomizovańje	n.
-17721	kustomizovati	v.tr. ipf./pf.
-27007	kusy	adj.
-27009	kusy	adj.
-249	kųt	m.
-27011	kųtny	adj.
-23151	kuvalda	f.
-2645	Kuvejt	m.sg.
-35571	kuzen	m.anim.
-35572	kuzina	f.
-27013	kuznja	f.
-4415	kvadrat	m.
-4416	kvadratny	adj.
-27016	kvakati	v.intr. ipf.
-36460	kvalifikacija	f.
-20417	kvalifikovati	v.tr. ipf.
-35736	kvalitet	m.
-35323	kvantitativny	adj.
-23621	kvantova mehanika	f.
-32030	kvarc	m.sg.
-36838	kvarta	f.
-1538	kvartal	m.
-27017	kvartira	f.
-8787	kvas	m.
-27018	kvas	m.sg.
-2644	kvasiti	v.intr. ipf.
-6272	kvestija	f.
-20878	kvičati	v.intr. ipf.
-36839	kvinta	f.
-27024	kvintesencija	f.
-35477	kvitancija	f.
-34847	kviz	m.
-27026	kvokati	v.intr. ipf.
-2728	kvorum	m.
-406	kydati	v.tr. ipf.
-2352	kydnųti	v.tr. pf.
-17645	kyhati	v.intr. ipf.
-17646	kyhnųti	v.intr. pf.
-360	kyj	m.
-17647	Kyjev	m.sg.
-35662	kyjevsky	adj.
-26501	kyla	f.
-17649	kymati	v.intr. ipf.
-17650	kymnųti	v.intr. pf.
-26503	kypěńje	n.sg.
-2366	kypěti	v.intr. ipf.
-23644	kyrgyzsky	adj.
-152	Kyrgyzstan	m.sg.
-14644	kysle ogurky	m.pl.
-23038	kyslina	f.
-22603	kyslorod	m.sg.
-1418	kysly	adj.
-26510	kysnųti	v.intr. ipf.
-20407	kyt	m.anim.
-17652	kyvati	v.intr. ipf.
-17653	kyvnųti	v.intr. pf.
-36888	Laba	f.sg.
-1303	labęď	m.anim.
-27028	labęďji	adj.
-35560	laboratorija	f.
-27030	lageŕ	m.
-21323	lagodno	adv.
-21327	lagodnosť	f.
-21331	lagodny	adj.
-27032	laj	m.
-27033	lajańje	n.sg.
-253	lajati	v.intr. ipf.
-27036	lajno	n.sg.
-36849	lak	m.
-27037	lakomec	m.anim.
-27039	lakomstvo	n.
-27040	lakomy	adj.
-32146	lakoničny	adj.
-385	låkȯť	m.
-36850	lakovati	v.tr. ipf.
-33581	lama	f.
-27041	lamańje	n.
-266	lamati	v.tr. ipf.
-20879	lampa	f.
-17723	lancuh	m.
-17724	lanec	m.
-27044	lanjėc	m.
-5951	lanji	adv.
-32142	lanjka	f.
-5953	lansky	adj.
-502	lapa	f.
-4701	lapati	v.tr. ipf.
-35499	lapka	f.
-27049	Laplandija	f.
-23585	laser	m.
-268	lasica	f.
-27052	laska	f.
-32147	laska	f.
-32148	laska	f.
-32150	laska	f.
-267	laskati	v.tr. ipf.
-27053	laskati	v.tr. ipf.
-3226	laskavy	adj.
-32152	laskavy	adj.
-32153	laskavy	adj.
-32154	laskavy	adj.
-5675	laso	n.
-2650	lastovica	f.
-27059	latati	v.tr. ipf.
-32263	lateks	m.anim.
-16962	latinica	f.
-2649	latinsky	adj.
-879	Latvija	f.sg.
-4724	Latyš	m.anim.
-4723	latyšsky	adj.
-32157	lava	f.
-32601	lavanda	f.
-8807	lavina	f.
-27062	lavka	f.
-33569	lavr	m.
-32220	lavreat	m.anim.
-19825	laziti	v.intr. ipf.
-19826	laziti	v.intr. ipf.
-27066	laznja	f.
-27067	le	adv.
-32158	le	adv.
-27068	lěčebny	adj.
-8809	lěčeńje	n.
-4269	lěčiljnja	f.
-14673	lěčitelj	m.anim.
-36662	lěčiti sę	v.refl. ipf.
-4130	lěčiti	v.tr. ipf.
-2729	led	m.sg.
-17725	leděna gora	f.
-36230	leděna svěća	f.
-27072	leděněti	v.intr. ipf.
-27073	leděniti	v.tr. ipf.
-27074	leděny	adj.
-27076	lednik	m.
-5908	ledolomač	m.
-32159	ledovec	m.
-19827	ledovity	adj.
-14674	ledva	adv.
-8816	lędvica	f.
-8818	lędvičny kamenj	m.
-8817	lędvičny	adj.
-19498	legalizovati	v.tr. ipf.
-19499	legaľny	adj.
-20420	lęgati	v.tr. ipf.
-1307	legenda	f.
-35920	legendarny	adj.
-35353	legija	f.
-35352	legion	m.
-35504	legitimny	adj.
-8826	legke pěnęzy	m.pl.
-2652	legko	adv.
-19829	legkomysljny	adj.
-3286	legkosť	f.
-16482	legkověrny	adj.
-884	legky	adj.
-27273	legovišče	n.
-19830	legše	adv.
-17726	legši	adj.
-36548	lęgti sę	v.refl. ipf.
-20418	legti	v.intr. pf.
-20421	lęgti	v.tr. ipf.
-894	lehitsky	adj.
-23758	lejka	f.
-27098	lejtenant	m.anim.
-407	lěk	m.
-2873	lěkaŕ	m.anim.
-27103	lěkaŕka	f.
-8831	lěkaŕsky	adj.
-27105	lěkaŕstvo	n.
-2694	lekcija	f.
-35946	leksika	f.
-16963	leksikaľny	adj.
-295	leksikon	m.
-35210	lektor	m.anim.
-27110	lelek	m.anim.
-2653	lemeš	m.
-306	len	m.sg.
-27114	lenišče	n.
-27115	lěniti sę	v.refl. ipf.
-15374	lěnivec	m.anim.
-8836	lěnivo	adv.
-27118	lěnivosť	f.
-8837	lěnivy	adj.
-27122	lěnjesť	f.
-1482	lěnji	adj.
-32469	leopard	m.anim.
-27126	lepetańje	n.sg.
-27127	lepetati	v.intr. ipf.
-23296	lěpilo	n.
-32869	lěpiti sę	v.refl. ipf.
-2298	lěpiti	v.tr. ipf.
-8839	lěpje	adv.
-27207	lěpkosť	f.
-23294	lěpky	adj.
-23872	lěpo	adv.
-27131	lěpota	f.
-32468	lepra	f.
-2299	lěpši	adj.
-3315	lěpy	adj.
-2651	lěs	m.
-36334	lesbijka	f.
-36335	lesbijsky	adj.
-17731	lěsisty	adj.
-2654	lěska	f.
-2655	leskati	v.intr. ipf.
-2697	lesknųti	v.intr. pf.
-27141	lěsnik	m.anim.
-27140	lěsny orěh	m.
-8848	lěsny požar	m.
-23461	lěsny rog	m.
-3632	lěsny	adj.
-5850	lěsȯk	m.
-27145	lesť	f.
-17732	lěstvica	f.
-27147	lešč	m.anim.
-27148	leščina	f.
-3626	let	m.
-14676	lěta	n.pl.
-19831	letač	m.anim.
-16879	lětajųća myš	f.
-8852	lětalo	n.
-8855	lětańje	n.sg.
-1202	lětati	v.intr. ipf.
-19832	letěti	v.intr. ipf.
-16275	letišče	n.
-309	-lěťje	n.
-17733	lětnji sȯlncevråt	m.
-27156	lětnji, lětny	adj.
-2661	lěto	n.
-35962	letȯk	m.
-20880	lětopis	m.
-20882	lětopisec	m.anim.
-17734	letova kabina	f.
-27161	lětovati	v.intr. ipf.
-27162	lětovišče	n.
-2656	lev	m.anim.
-27163	Lev	m.anim.
-27165	lěvak	m.anim.
-2696	lěvica	f.
-27167	lěvica	f.
-8859	levji	adj.
-32167	lěvorųky	adj.
-308	lěvy	adj.
-2660	lězti	v.intr. ipf.
-19833	lězti	v.intr. ipf.
-2659	ležati	v.intr. ipf.
-35987	ležęći velosiped	m.
-35988	ležiped	m.
-2427	ležišče	n.
-14678	ležkovina	f.
-17735	lgańje	n.sg.
-17736	lgaŕ	m.anim.
-17737	lgaŕka	f.
-2658	lgati	v.intr. ipf.
-2657	li	conj.
-17738	li	particle
-32448	Liban	m.sg.
-32449	libansky	adj.
-19502	liberalizacija	f.
-19501	liberalizm	m.sg.
-19503	liberalizovati	v.tr. ipf.
-205	liberaľny	adj.
-317	Libija	f.sg.
-2710	libijsky	adj.
-22300	libovoljny	adj.
-889	lice	n.
-8872	lice	n.
-8876	liceměr	m.anim.
-27186	liceměriti	v.intr. ipf.
-3011	liceměŕje	n.sg.
-8875	liceměrka	f.
-8877	liceměrno	adv.
-8878	liceměrny	adj.
-35778	licencija	f.
-36277	liči	n.indecl.
-20422	ličinka	f.
-19834	lično	adv.
-3261	ličnosť	f.
-770	ličny	adj.
-321	lider	m.anim.
-2663	lift	m.
-17740	liga	f.
-16964	ligatura	f.
-35484	lignit	m.sg.
-2687	Lihtenštejn	m.sg.
-27192	lihva	f.
-32170	lihva	f.
-32172	lihvaŕ	m.anim.
-32176	lihvaŕsky	adj.
-32177	lihvaŕstvo	n.sg.
-5313	lihy	adj.
-5315	lihy	adj.
-27193	lihy	adj.
-36366	lihy	adj.
-32873	liker	m.
-32883	likvidacija	f.
-32887	likvidator	m.anim.
-32877	likvidovati	v.tr. ipf./pf.
-27196	lilovy	adj.
-33323	limfa	f.
-33324	limfatičny vųzel	m.
-319	limitovati	v.tr. ipf.
-5239	limon	m.
-35585	limonada	f.
-34755	limuzina	f.
-27198	lin	m.anim.
-36846	linčevati	v.tr. ipf./pf.
-35711	linearny	adj.
-19835	lingvističny	adj.
-2664	linija	f.
-8885	linijka	f.
-2885	linjati	v.intr. ipf.
-6329	link	m.
-32726	linza	f.
-342	lipa	f.
-27200	lipan	m.anim.
-8890	lipenj	m.sg.
-36811	Lisabon	m.
-27212	lisę	n.
-327	lisica	f.
-27215	lisička	f.
-27214	liśji	adj.
-1397	list	m.
-2863	list	m.
-27221	lisťje	n.sg.
-27219	listny	adj.
-23859	listȯk	m.
-8895	listopad	m.sg.
-27223	listopad	m.sg.
-35963	listovka	f.
-335	lišaj	m.
-27225	lišaj	m.
-36435	lišati	v.tr. ipf.
-20423	lišiti	v.tr. pf.
-27229	litera	f.
-6203	literarny	adj.
-340	literatura	f.
-27231	literaturny język	m.
-35017	literaturny	adj.
-338	liti	v.tr. ipf.
-20424	liti	v.tr. ipf.
-22599	litij	m.sg.
-343	litȯvsky	adj.
-23019	litr	m.
-332	liturgičny	adj.
-16965	liturgija	f.
-331	Litva	f.sg.
-4720	Litvanec	m.anim.
-8903	Litvanka	f.
-333	liva	f.
-14683	livada	f.
-27236	livny	adj.
-27237	lizańje	n.sg.
-334	lizati	v.tr. ipf.
-8907	liznųti	v.tr. pf.
-22398	ljaljka	f.
-27242	ljněny	adj.
-27144	ljstiti	v.tr. ipf.
-32205	ljstivy	adj.
-14684	ljuba	f.
-8908	ljubezno	adv.
-3225	ljubezny	adj.
-20431	ljubimec	m.anim.
-27245	ljubimy	adj.
-20432	ljubitelj	m.anim.
-35593	ljubitelj	m.anim.
-356	ljubiti	v.tr. ipf.
-32248	Ljubljana	f.sg.
-20433	ljubopytnosť	f.
-20434	ljubopytny	adj.
-32202	ljubosť	f.
-5247	ljubȯv	f.
-8916	ljubȯvnica	f.
-5248	ljubȯvnik	m.anim.
-8918	ljubȯvno	adv.
-5892	ljubȯvny	adj.
-8919	ljubȯvny	adj.
-27256	ljuby	m.anim.
-27257	ljud	m.
-1941	ljudi	f.pl.
-27259	ljudny	adj.
-14686	ljudobijstvo	n.sg.
-17749	ljudojed	m.anim.
-22953	ljudojedsky	adj.
-17750	ljudojedstvo	n.sg.
-8921	ljudova sila	f.
-22956	ljudožerec	m.anim.
-22958	ljudožersky	adj.
-22957	ljudožerstvo	n.sg.
-8924	ljudskomašinovy interfejs	m.
-5316	ljudskosť	f.
-4306	ljudsky	adj.
-8925	ljudstvo	n.sg.
-14688	ljudstvo	n.sg.
-23759	ljuljati	v.tr. ipf.
-34760	ljuljka	f.
-35768	ljutnja	f.
-27266	ljutosť	f.
-8928	ljuty	m.sg.
-27267	ljuty	adj.
-27166	ljvę	n.
-27168	ljvica	f.
-2494	lȯb	m.
-8929	lobanja	f.
-34851	lobi	m.indecl.
-17741	lobist	m.anim.
-27269	loboda	f.
-5788	lobovati	v.intr. ipf.
-537	loď	f.
-2886	lodka	f.
-32130	logaritm	m.
-19836	logično	adv.
-363	logičny	adj.
-8933	logika	f.
-32186	logopedija	f.
-17742	logovati sę	v.refl. ipf.
-20426	loj	m.sg.
-32757	lojalist	m.anim.
-32756	lojaľnosť	f.
-1249	lojaľny	adj.
-27276	lojiti	v.tr. ipf.
-35702	lokalitet	m.
-27280	lokati	v.tr. ipf.
-16966	lokativ	m.
-27282	loknųti	v.tr. pf.
-5669	lokomotiva	f.
-27286	lom	m.
-32192	lom	m.
-27287	lomiti	v.tr. ipf.
-27288	lomjeńje	n.sg.
-19837	lomlivy	adj.
-23523	London	m.sg.
-366	lono	n.
-17744	lono	n.
-367	lopata	f.
-27298	lopatka	f.
-27302	lopuh	m.
-35455	lori	m.anim.
-386	loś	m.anim.
-32264	losion	m.
-36036	loskotati	v.tr. ipf.
-27309	losoś	m.anim.
-27308	lososina	f.
-8941	loše	adv.
-3446	loši	adj.
-35229	loterija	f.
-352	lov	m.
-17745	lovec	m.anim.
-32197	lovec	m.anim.
-27314	lovečsky	adj.
-8944	lovhata	f.
-27315	lovišče	n.
-8945	lovitelj	m.anim.
-12057	loviti rybų	v.ipf.
-1564	loviti	v.tr. ipf.
-27318	loviti	v.tr. ipf.
-27319	lovitva	f.
-8947	lovjeńje	n.sg.
-27321	lovny	adj.
-36158	loza	f.
-16268	lȯž	f.
-20429	lože	n.
-1893	lȯžica	f.
-20430	ložišče	n.
-353	lȯžka	f.
-27329	lȯžnosť	f.
-32196	lȯžnosť	f.
-17746	lȯžny	adj.
-339	luč	m./f.
-375	lučiti	v.tr. ipf.
-20436	lučše	adv.
-14533	lučši	adj.
-27338	ludy	adj.
-374	lųk	m.
-17751	luk	m.
-27340	lųk	m.
-376	lųka	f.
-27344	lukavstvo	n.sg.
-27345	lukavy	adj.
-36646	lųkostrělėc	m.anim.
-31866	lukovica	f.
-17752	lukovy	adj.
-2701	Luksemburg	m.sg.
-4910	luksemburžsky	adj.
-23588	luminescencija	f.
-2690	luna	f.
-27348	lunatik	m.anim.
-4119	lunno světlo	n.sg.
-15988	lunny	adj.
-27351	lupina	f.
-27352	lupiti	v.tr. ipf.
-27353	luska	f.
-27355	luskati	v.tr. ipf.
-27358	luščina	f.
-27359	luščiti	v.tr. ipf.
-35796	luteransky	adj.
-2691	lužičsky	adj.
-2662	lyko	n.
-27365	lysěti	v.intr. ipf.
-27366	lysina	f.
-27368	lyska	f.
-329	lysy	adj.
-6108	lyža	f.
-27374	lžec	m.anim.
-27375	lživosť	f.
-17753	lživy	adj.
-379	maćeha	f.
-16786	Madagaskar	m.sg.
-359	Madjar	m.anim.
-8964	Madjarija	f.sg.
-27381	madjarizacija	f.
-8966	Madjarka	f.
-2681	madjarsky	adj.
-36812	Madrid	m.
-19838	magazin	m.
-23989	magazin	m.
-19839	magičny	adj.
-3230	magistr	m.anim.
-36066	magnat	m.anim.
-23589	magnet	m.
-23590	magnetičny	adj.
-12198	magnetny polus	m.
-33086	magnetofon	m.
-22607	magnezij	m.sg.
-20438	mah	m.
-5729	mahati glåvojų	v.ipf.
-34490	mahati hvostom	phrase
-960	mahati	v.intr. ipf.
-23132	mahinacija	f.
-5730	mahnųti glåvojų	v.pf.
-203	mahnųti	v.intr. pf.
-264	maj	m.sg.
-27391	majak	m.
-19840	majonez	m.
-35079	major	m.anim.
-23697	majsky hrųšč	m.anim.
-20884	majstr	m.anim.
-20885	majstrovsko dělo	n.
-34779	majstrovsky	adj.
-1451	mak	m.
-3256	Makedonec	m.anim.
-4726	Makedonija	f.sg.
-2866	makedonsky	adj.
-34785	makijaž	m.sg.
-27397	makovka	f.
-27399	maksimaľno	adv.
-16422	maksimaľny	adj.
-2689	maksimum	m.
-22770	malajsky	adj.
-22769	Malajzija	f.sg.
-35107	malarija	f.
-20446	malenjkosť	f.
-8982	malenjky	adj.
-27401	malěti	v.intr. ipf.
-1621	malina	f.
-27405	malinovy	adj.
-20886	maljaŕ	m.anim.
-36551	maljaŕ	m.anim.
-5097	maljevati	v.tr. ipf.
-1535	malo	adv.
-17755	malodušny	adj.
-20447	malokrvje	n.sg.
-20448	malolětny	adj.
-27412	maloljudny	adj.
-32226	maloměrny	adj.
-20450	malomȯlvny	adj.
-27415	malosť	f.
-31981	malosť	f.
-20451	malovažny	adj.
-22323	malověrny	adj.
-27416	malovodny	adj.
-383	malpa, malpica	f.
-220	Malta	f.sg.
-36817	maltejsky	adj.
-35010	maltretovati	v.tr. ipf.
-2682	maly	adj.
-2707	mama	f.
-27423	mamin	adj.
-17757	mamiti	v.tr. ipf.
-27429	mamlivy	adj.
-33537	mamut	m.anim.
-2708	mandat	m.
-32507	mandolina	f.
-3236	manera	f.
-16747	maněrka	f.
-32333	manevr	m.
-35921	manevrovati	v.tr. ipf./pf.
-32334	manevry	m.pl.
-22621	mangan	m.sg.
-36071	mango	n.
-35348	manifest	m.
-4984	manipulacija	f.
-4983	manipulovati	v.tr. ipf.
-32445	manžeta	f.
-35754	mapa	f.
-32995	marakasy	m.pl.
-36075	marakuja	f.
-34443	marcipan	m.sg.
-8997	marec	m.sg.
-27434	marena	f.
-35747	marginalizacija	f.
-35746	marginalizovati	v.tr. ipf./pf.
-34419	marginaľny	adj.
-22806	marihuana	f.
-32989	marimba	f.
-22400	marionetka	f.
-22848	marka	f.
-36008	marker	m.
-17762	marlivo	adv.
-17763	marlivosť	f.
-17764	marlivy	adj.
-35436	marmelada	f.
-5928	Maroko	n.sg.
-23592	Mars	m.sg.
-23593	Marsian, Marsianin	m.anim.
-19504	marš	m.
-35369	maršal	m.
-2869	marširovati	v.intr. ipf.
-35589	maršrut	m.
-27436	maršrutka	f.
-36891	marulja	f.
-34420	marža	f.
-23594	masa	f.
-36337	masakra	f.
-19841	masakrovati	v.tr. ipf.
-33370	masaž	m.
-33371	masirovati	v.tr. ipf.
-33372	masivny	adj.
-27438	maska	f.
-32129	maskovati	v.tr. ipf./pf.
-2703	maslina	f.
-9002	maslinovy olej	m.
-9001	maslinovy	adj.
-27440	masljak	m.
-2704	maslo	n.
-5804	masovy	adj.
-2686	masť	f.
-27441	mastiti	v.tr. ipf.
-4974	masturbacija	f.
-15995	masturbovańje	n.sg.
-2685	masturbovati	v.intr. ipf.
-2684	mašina	f.
-27446	mašinaľno	adv.
-17765	mašinist	m.anim.
-17766	mašinopisec	m.anim.
-17767	mašinostrojeńje	n.sg.
-27447	mat	m.
-36664	matč	m.
-4322	matčina	f.
-36602	matematičny	adj.
-2709	matematik	m.anim.
-892	matematika	f.
-204	material	m.
-27449	materiaľny	adj.
-3289	materija	f.
-27450	materin	adj.
-20452	materinsky	adj.
-27452	materinstvo	n.sg.
-23650	maternica	f.
-17769	materska klětka	f.
-9008	materska ljubȯv	f.
-6022	matersky	adj.
-17770	mati	f.
-35975	matrica	f.
-27459	matuška	f.
-4891	mavzolej	m.
-2705	maź	f.
-1934	mazati	v.tr. ipf.
-36262	mazati	v.tr. ipf.
-20453	mazilo	n.
-20455	mazivo	n.
-1935	mę	pron.pers.
-163	mebelj	m.
-32971	meblovati	v.tr. ipf./pf.
-32999	mecosopran	m.
-164	meč	m.
-909	męč	m.
-911	męčkati	v.tr. ipf.
-35443	mečta	f.
-35445	mečtatelj	m.anim.
-35446	mečtateljny	adj.
-35444	mečtati	v.intr. ipf.
-639	med	m.sg.
-2715	měď	m./f.
-27471	medalist	m.anim.
-27472	medalistka	f.
-5805	medalj	f.
-16004	medbrat	m.anim.
-4897	medicina	f.
-6275	medija	n.pl.
-5045	meditacija	f.
-5043	meditovati	v.intr. ipf.
-36451	medium	m.anim.
-4525	medliti	v.intr. ipf.
-14691	medlo	adv.
-2421	medly	adj.
-14692	medly	adj.
-23456	mědny dyhovy instrument	m.
-27474	mědny, měděny	adj.
-27478	medonosny	adj.
-27479	medovar	m.anim.
-27480	medovina	f.
-27481	medovy	adj.
-396	medsestra	f.
-27482	medunka	f.
-20458	meduza	f.
-2394	medvěď	m.anim.
-20459	medvěď-grizli	m.anim.
-27484	medvědica	f.
-32508	medvědik	m.
-9034	medvěďje objęťje	n.
-27488	medvěďji	adj.
-9035	medvědny	adj.
-27486	medvěđę	n.
-27487	medvěđina	f.
-2280	međa	f.
-27490	međny	adj.
-16863	među drugymi	adv.
-16829	među inymi	adv.
-2713	među	prep.
-4929	među	prep.
-32246	međudŕžavny	adj.
-27492	međugoŕje	n.
-35879	međugrådny	adj.
-31841	međugrådsky	adj.
-31839	međukontinentaľny	adj.
-35745	međukulturny	adj.
-19843	međuljudsky	adj.
-19842	međumeťje	n.
-2714	međunarodny	adj.
-32413	međuplanetarny	adj.
-27494	međurěčje	n.
-31842	međuregionaľny	adj.
-4442	međuslovjansky	adj.
-17772	međusobny	adj.
-1789	međutym	adv.
-22483	međuvlasťje	n.
-22575	međuvrěmę	n.
-17773	međuvrěmenno	adv.
-31840	međuzvězdny	adj.
-33539	megabajt	m.
-403	měh	m.
-4862	mehaničny	adj.
-35773	mehanik	m.anim.
-4863	mehanika	f.
-4861	mehanizm	m.
-4353	měhuŕ	m.
-9046	měhurny	adj.
-33327	měhurȯk	m.
-35368	mejnstrim	m.sg.
-27501	mekati	v.intr. ipf.
-27502	mękčeti	v.intr. ipf.
-17784	mękčiti	v.tr. ipf.
-27507	mękko	adv.
-4245	mękkosť	f.
-36336	mękkotěly	m.anim.
-515	mękky	adj.
-2870	meksikansky	adj.
-22461	Meksiko	n.sg.
-9047	mękše	adv.
-27511	mělina	f.
-27513	mělj	f.
-1459	mělky	adj.
-27515	měľnik	m.anim.
-35947	melodičny	adj.
-4767	melodija	f.
-32239	memorandum	m.
-27517	memorial	m.
-1489	měna	f.
-4803	mene	pron.pers.
-33809	menedžer	m.anim.
-27525	menj	m.anim.
-32926	měnjati sę	v.refl. ipf.
-20461	měnjati	v.tr. ipf.
-2854	menje	adv.
-23042	menju	m.indecl.
-27527	měnlivy	adj.
-17774	menstruacija	f.
-391	menši	adj.
-1537	menšinstvo	n.
-19844	mentaľnosť	f.
-19845	mentaľny	adj.
-34933	mentor	m.anim.
-2076	měra	f.
-27533	meridian	m.
-20466	měrilo	n.
-1995	měriti	v.tr. ipf.
-27536	měriti	v.intr. ipf.
-885	měrjeńje	n.
-20467	měrka	f.
-23649	Merkurij	m.sg.
-27539	měrny	adj.
-27541	měrny	adj.
-20468	měrodajny	adj.
-23041	měrodajny	adj.
-20887	męsaŕ	m.anim.
-20888	męsarnja	f.
-1456	měsęc	m.
-4697	měsęc	m.
-27546	měsęčina	f.
-9066	měsęčna gazeta	f.
-17776	měsęčnica	f.
-27547	měsęčnik	m.
-9063	měsęčno světlo	n.
-14696	měsęčno	adv.
-9065	měsęčny žurnal	m.
-4116	měsęčny	adj.
-14695	měsęčny	adj.
-27552	męsisty	adj.
-20480	měsiti	v.tr. ipf.
-27553	męsnik	m.anim.
-27554	męsny	adj.
-513	męso	n.
-17785	męsojed	m.anim.
-22944	męsojedny	adj.
-27557	Mesopotamija	f.sg.
-22945	męsožerec	m.anim.
-22946	męsožerny	adj.
-3464	městečko	n.
-19847	mesti	v.tr. ipf.
-36142	městne izbory	m.pl.
-16493	městnik, městny padež	m.
-3436	městnosť	f.
-3728	městny	adj.
-5200	město rođeńja	n.
-2721	město	n.
-9076	městoimę	n.
-17778	městopoložeńje	n.
-27564	mešalka	f.
-20470	měšanec	m.anim.
-20471	měšanec	m.anim.
-20475	měšanina	f.
-4155	měšatelj	m.
-2839	měšati	v.tr. ipf.
-20478	měšćan, měšćanin	m.anim.
-20479	měšćanstvo	n.sg.
-27569	měšek	m.
-19848	met	m.
-27630	męta	f.
-34863	meta	f.
-35816	metabolizm	m.sg.
-19849	metafor	m.
-5255	metal	m.
-36247	metaličny	adj.
-35098	metalurgija	f.sg.
-17780	metati monetų	v.ipf.
-17781	metati těnj na	v.ipf.
-2716	metati	v.tr. ipf.
-2720	mětati	v.tr. ipf.
-27573	meteńje	n.
-36003	meteorit	m.
-1424	meteorolog	m.anim.
-5974	mętež	m.
-27575	mętežny	adj.
-27576	męti	v.tr. ipf.
-19850	metla	f.
-17783	metnųti těnj na	v.pf.
-397	metnųti	v.tr. pf.
-2867	metoda	f.
-2719	metr	m.
-35948	metrika	f.
-2979	metro	n.
-32882	metropolija	f.
-27582	mezalians	m.
-1369	mězga	f.
-951	mgla	f.
-9093	mglati	v.intr. ipf.
-4135	mglisty	adj.
-4804	mi	pron.pers.
-36338	midija	f.
-9095	mig	m.
-9097	migańje	n.sg.
-2180	migati	v.intr. ipf.
-5980	migdalj	m.
-858	mignųti	v.intr. pf.
-35246	migracija	f.
-27597	mikrobus	m.
-23018	mikrogram	m.
-23012	mikroskop	m.
-23013	mikroskopičny	adj.
-31744	mikrovaľna peć	f.
-31745	mikrovȯlnova peć	f.
-2724	miliard	num.card.
-2218	milicija	f.
-23016	miligram	m.
-23022	mililitr	m.
-23014	milimetr	m.
-235	milion	num.card.
-5317	militantny	adj.
-32741	militarizm	m.sg.
-21341	milja	f.
-2726	miljny kamenj	m.
-16485	milosŕďje	n.sg.
-16486	milosŕdny	adj.
-23333	milosť	f.
-27599	milostivy	adj.
-34780	milostynja	f.
-9110	milovany	adj.
-9111	milovati	v.tr. ipf.
-27606	milovati	v.tr. ipf.
-36249	milovati	v.tr. ipf.
-1898	mily	adj.
-34881	mim	m.anim.
-32128	mimičny	adj.
-34882	mimika	f.
-746	mimo	prep.
-19851	mimohodęći	adv.
-17786	mimohodny	adj.
-5992	mimohodȯm	adv.
-22303	mimovoljno	adv.
-22302	mimovoljny	adj.
-405	minaret	m.
-16301	mineral	m.
-16302	mineraľna voda	f.
-9117	minet	m.
-35302	miniatura	f.
-27613	minibus	m.
-36355	minimalističny	adj.
-36354	minimalizm	m.sg.
-18718	minimalizovati	v.tr. ipf./pf.
-2916	minimaľny	adj.
-2732	minimum	m.
-23466	Ministerstvo Finansov	n.
-23477	Ministerstvo Obråny	n.
-35642	Ministerstvo Pravosųďja	n.
-23326	Ministerstvo Vněšnjih Děl	n.
-23327	Ministerstvo Vnųtrišnjih Děl	n.
-2730	ministerstvo	n.
-2733	ministr	m.anim.
-20482	minovati	v.tr. ipf.
-23520	Minsk	m.sg.
-17788	minųlosť	f.sg.
-2734	minųly	adj.
-16969	minus	m.
-2727	minuta	f.
-888	minųti	v.tr. pf.
-2401	mir	m.sg.
-20488	mir	m.sg.
-27623	miraž	m.
-20489	miriti	v.tr. ipf.
-404	mirny	adj.
-893	misija	f.
-35360	misionaŕ	m.
-5201	miska	f.
-23300	mističny	adj.
-35601	mistifikacija	f.
-23299	mistik	m.anim.
-23281	mit	m.
-23282	mitičny	adj.
-23284	mitologičny	adj.
-23283	mitologija	f.
-33009	mizantrop	m.anim.
-33010	mizantropija	f.
-36099	mjau	intj.
-36596	mjaukati	v.intr. ipf.
-36597	mjauknųti	v.intr. pf.
-32735	mjuzikl	m.
-27631	mlåćeńje	n.sg.
-17789	mlådčica	f.
-17790	mlådčik	m.anim.
-27633	mlådę	n.
-167	mlådec	m.anim.
-9146	mlådečstvo	n.sg.
-27636	mlådenec	m.anim.
-27637	mlådensky	adj.
-27638	mlåděti	v.intr. ipf.
-27639	mlådež	f.
-35305	mlådežny	adj.
-9131	mlådica	f.
-9133	mlådosť	f.
-9134	mlådostno	adv.
-15387	mlådostnosť	f.
-9135	mlådostny	adj.
-9136	mlådoženih	m.anim.
-27632	mlådoženka	f.
-9137	mlådši	adj.
-499	mlådy	adj.
-23152	mlåt	m.
-27650	mlåťba	f.
-27649	mlåtiti	v.tr. ipf.
-310	mlåtȯk	m.
-34439	mlavy	adj.
-27654	mlěčaj	m.
-23566	Mlěčna dråga	f.
-23565	Mlěčny pųť	m.sg.
-9142	mlěčny	adj.
-27657	mlěkaŕ	m.anim.
-2735	mlěko	n.
-925	mlěti	v.tr. ipf.
-27661	mlězivo	n.sg.
-27662	mljaskati	v.intr. ipf.
-34441	mlo	adv.
-34440	mlosť	f.
-34438	mly	adj.
-23140	mlyn	m.
-23150	mlynaŕ	m.anim.
-1183	mně	pron.pers.
-917	mněńje	n.
-2923	mněti	v.tr. ipf.
-17796	mněvati	v.tr. ipf.
-34865	mnih	m.anim.
-19852	mniška	f.
-2736	mnogo	adv.
-2738	mnogo	adv.
-19853	mnogobarvny	adj.
-17797	mnogobožstvo	n.sg.
-20490	mnogocentričny	adj.
-27674	mnogočisľny	adj.
-19854	mnogojęzyčny	adj.
-16450	mnogokråtno	adv.
-32565	mnogokråtny	adj.
-19855	mnogokulturny	adj.
-16333	mnogokųtnik	m.
-5131	mnogolětny	adj.
-19856	mnogoljudny	adj.
-32617	mnogonožky	f.pl.
-20491	mnogoraky	adj.
-21343	mnogorěčivy	adj.
-21344	mnogoslovny	adj.
-16971	mnogosložny	adj.
-34917	mnogostrånny	adj.
-16334	mnogovųgȯľnik	m.
-17077	mnogy	adj.
-35252	množina	f.
-3698	množinstvo	n.
-16972	množiteljny čislovnik	m.
-19858	množiti	v.tr. ipf.
-2740	množstveno čislo	n.
-3084	množstvo	n.
-36434	množstvo	n.
-4975	mobilizacija	f.
-2741	mobilizovati	v.tr. ipf.
-35742	mobiľnosť	f.
-32256	mobiľny telefon	m.
-32257	mobiľny	adj.
-635	moć	f.
-27687	moćněti	v.intr. ipf.
-9165	moćno	adv.
-9166	moćnosť	f.
-9167	moćnosť	f.
-2743	moćny	adj.
-27677	moč	f.
-624	močar	m.
-27681	močarny	adj.
-27683	močevina	f.
-1829	močiti sę	v.refl. ipf.
-4161	močiti	v.tr. ipf.
-15389	moda	f.
-19859	model	m.
-36916	modelovati	v.tr. ipf.
-36923	modelovati	v.tr. ipf.
-5905	modernizacija	f.
-5904	modernizovati	v.tr. ipf.
-900	moderny	adj.
-35647	modifikacija	f.
-35646	modifikovati	v.tr. ipf./pf.
-27691	modistka	f.
-9169	modny	adj.
-27692	modrěti	v.intr. ipf.
-27693	modrina	f.
-27694	modriti	v.tr. ipf.
-27695	modrooky	adj.
-2742	modry	adj.
-910	mogti	v.aux. ipf.
-20495	mogųći	adj.
-27700	mogųtny	adj.
-2008	mogyla	f.
-2754	mȯh	m.sg.
-920	moj	pron.poss.
-27710	moknųti	v.intr. ipf.
-27711	mokrěti	v.intr. ipf.
-27712	mokrica	f.
-17801	mokrišče	n.
-14705	mokriti	v.tr. ipf.
-27715	mokrosť	f.
-27716	mokrota	f.
-2147	mokry	adj.
-27718	mȯlčalivy	adj.
-3361	mȯlčańje	n.sg.
-1862	mȯlčati	v.intr. ipf.
-9187	mȯlčno	adv.
-9188	mȯlčny	adj.
-3258	Moldavija, Moldova	f.sg.
-27722	moldavsky	adj.
-23596	molekula	f.
-16011	molekularny	adj.
-35011	molestovati	v.tr. ipf.
-27727	molitevnik	m.
-494	moliti sę	v.refl. ipf.
-2178	molitva	f.
-1861	molj	m.anim.
-27730	mȯlknųti	v.intr. ipf.
-5050	mȯlnja	f.
-9192	mȯlva	f.
-2179	mȯlviti	v.tr. ipf.
-1859	moment	m.
-5119	momentaľno	adv.
-34864	monah	m.anim.
-34866	monahynja	f.
-27734	Monako	n.sg.
-1860	monarh	m.anim.
-1863	monarhija	f.
-34073	monastyr	m.
-4464	moneta	f.
-22764	Mongolija	f.sg.
-22765	mongoľsky	adj.
-27736	monisto	n.
-32838	monogram	m.
-32254	monolit	m.
-32255	monolitny	adj.
-32253	monolog	m.
-19520	monopol	m.
-23597	monoteizm	m.sg.
-4205	montaža	f.
-15390	montovańje	n.sg.
-5682	montovati	v.tr. ipf.
-1858	monument	m.
-4118	monumentaľny	adj.
-35045	moped	m.
-20496	mor	m.
-2761	mora	f.
-27740	moral	m.
-23698	moralizovati	v.intr. ipf.
-24000	moraľnosť	f.
-32285	moraľny	adj.
-14711	morati	v.aux. ipf.
-2753	Moravija	f.sg.
-35840	moravsky	adj.
-23704	morda	f.
-19860	morfem	m.
-23202	morfin	m.sg.
-35217	morfologija	f.
-34832	moriti sę	v.refl. ipf.
-20497	moriti	v.tr. ipf.
-20498	moriti	v.tr. ipf.
-5935	morjak	m.anim.
-2745	morje	n.
-5934	morjeplavatelj	m.anim.
-20890	morjeplavstvo	n.sg.
-19861	morny	adj.
-9217	moŕska stěna	f.
-32938	moŕska trava	f.
-32937	moŕska vodoråsť	f.
-20499	moŕska zvězda	f.
-929	moŕsko dno	n.
-36625	moŕsky jež	m.
-20500	moŕsky konik	m.anim.
-27754	moŕsky	adj.
-36085	morva	f.
-35452	morž	m.anim.
-4722	moskȯvsky	adj.
-4721	Moskva	f.sg.
-2747	most	m.
-27761	mošna	f.
-27763	mošna	f.
-3211	motati	v.tr. ipf.
-32628	motiv	m.
-646	motivacija	f.
-2749	motivovati	v.tr. ipf.
-36290	motocikl	m.
-27767	motȯk	m.
-21345	motor	m.
-27769	motovilo	n.
-27770	motto	n.
-5676	motvųz	m.
-645	motyka	f.
-2748	motylik	m.anim.
-21346	motylj	m.anim.
-2750	Mozambik	m.sg.
-935	mozg	m.
-9230	mozgova proteza	f.
-17805	mozgovy udar	m.
-9229	mozgovy	adj.
-2395	mozȯčna kosť	f.
-27777	mozolj	f.
-934	može byti	phrase
-9232	može	adv.
-9246	možlivo	adv.
-2752	možlivosť	f.
-280	možlivy	adj.
-19144	možno najskorěje	adv.
-926	možno	adv.
-3395	možnosť	f.
-3336	možny	adj.
-27788	mråčiti sę	v.refl. ipf.
-27789	mråčnosť	f.
-6033	mråčny	adj.
-6031	mråk	m.
-35051	mramor	m.sg.
-17810	mråvišče	n.
-19862	mråvja kopa	f.
-27795	mråvji	adj.
-785	mråvka	f.
-32505	mråvojed	m.anim.
-27797	mråz	m.
-4496	mråzilka	f.
-9269	mråzina	f.
-4140	mråziti	v.tr. ipf.
-27800	mråzny	adj.
-17812	mråzosušati	v.tr. ipf.
-9264	mråzosušeńje	n.sg.
-9270	mråzosušeny	adj.
-9263	mråzosušiti	v.tr. pf.
-17811	mråženy	adj.
-27802	mrčati	v.tr. ipf.
-34493	mrdati	v.intr. ipf.
-34497	mrdnųti	v.intr. pf.
-286	mrěža	f.
-27806	mŕknųti	v.intr. ipf.
-928	mrkva	f.
-23899	mrmjati	v.tr. ipf.
-22954	mŕša	f.
-27807	mŕščina	f.
-31912	mrščiti brvi	v.intr. ipf.
-27809	mrščiti sę	v.refl. ipf.
-27808	mrščiti	v.tr. ipf.
-22955	mŕšejed	m.anim.
-27810	mŕtvec	m.anim.
-27811	mŕtvečina	f.
-27813	mŕtvěti	v.intr. ipf.
-32295	mŕtvěti	v.intr. ipf.
-22908	mŕtvozornik	m.anim.
-1793	mŕtvy	adj.
-3339	mŕtvy	adj.
-34463	mŕzavec	m.anim.
-34466	mŕzko	adv.
-34459	mŕzkosť	f.
-3561	mŕzky	adj.
-2746	mrznųti	v.intr. ipf.
-5599	msta	f.
-27820	mstitelj	m.anim.
-5597	mstiti	v.tr. ipf.
-5600	mstivy	adj.
-23595	mša	f.
-14717	mu	pron.pers.
-32309	mučańje	n.sg.
-32310	mučati	v.intr. ipf.
-27824	mųčenica	f.
-32296	mųčeničstvo	n.sg.
-27825	mųčenik	m.anim.
-3856	mųčeńje	n.
-9274	mųčiljnja	f.
-9275	mųčitelj	m.anim.
-27828	mųčiteljny	adj.
-9273	mųčiti do smŕti	v.ipf.
-1173	mųčiti	v.tr. ipf.
-9279	mudak	m.anim.
-27833	mųdo	n.
-23760	mųdrec	m.anim.
-27835	mųdrěti	v.intr. ipf.
-9280	mųdrosť	f.
-2751	mųdry	adj.
-2760	muha	f.
-27843	muholovka	f.
-27844	muholovka	f.
-27845	muhomor	m.
-905	mųka	f.
-17816	mųka	f.
-27849	mukańje	n.sg.
-27850	mukati	v.intr. ipf.
-27851	mulj	m.sg.
-35797	multikulturny	adj.
-32364	mumija	f.
-14719	musěti	v.aux. ipf.
-3995	muskul	m.
-32513	muskus	m.sg.
-32514	muskusna krysa	f.
-922	musliman, muslimanin	m.anim.
-35798	muslimanka	f.
-35799	muslimansky	adj.
-27858	muška	f.
-20501	mųť	f.
-19863	mutant	m.anim.
-20503	mųtiti	v.tr. ipf.
-20504	mųtiti	v.tr. ipf.
-27861	mųtněti	v.intr. ipf.
-27862	mųtnosť	f.
-20506	mųtny	adj.
-936	muzej	m.
-198	muzika	f.
-32737	muzikaľna grupa	f.
-4791	muzikaľny	adj.
-1452	muzikant	m.anim.
-1521	mųž	m.anim.
-3313	mųž	m.anim.
-27871	mųžev	adj.
-3402	mųžiti sę	v.refl. ipf.
-9292	mųžskosť	f.
-2755	mųžsky rod	m.
-5251	mųžsky	adj.
-4406	mųžstvo	n.
-2722	my	pron.pers.
-27882	myliti sę	v.refl. ipf.
-27880	myliti	v.tr. ipf.
-27881	myliti	v.tr. ipf.
-36144	myľnica	f.
-1878	mylo	n.
-27885	mys	m.
-27887	myslim, mysljų	phrase
-9310	myslimo	adv.
-32318	myslimy	adj.
-27888	myslitelj	m.anim.
-14724	mysliti o	v.tr. ipf.
-2744	mysliti	v.tr. ipf.
-2731	myslj	f.
-27905	mysljeńje	n.sg.
-27886	mysljenny	adj.
-1573	myš	f.
-27898	myšasty	adj.
-9129	myšca	f.
-23045	myšelovka	f.
-27904	myškovati	v.intr. ipf.
-1788	myti	v.tr. ipf.
-36176	mytnica	f.
-27911	myto	n.
-2757	na dol	adv.
-27957	na dȯlgo	adv.
-9317	na dolu	adv.
-33735	na glås	adv.
-16765	na glåvų naseljeńja	adv.
-17821	na javu	adv.
-28005	na javu	adv.
-17822	na počętku	adv.
-36212	na polovině drågy	adv.
-19864	na prěkor	prep.
-9318	na ščęsťje	adv.
-17823	na vŕhu	adv.
-17825	na vśakų okoľnosť	adv.
-17824	na vśaky slučaj	adv.
-2758	na žalosť	adv.
-33330	na živo	adv.
-33331	na živo	adv.
-2756	na	prep.
-4939	na	prep.
-27916	nabajati	v.intr. pf.
-34834	nabajati	v.intr. pf.
-20508	naběg	m.
-27920	naběgati sę	v.refl. pf.
-17826	nabirati	v.tr. ipf.
-20513	nabiti	v.tr. pf.
-20511	nabivati	v.tr. ipf.
-20516	naboj	m.
-17829	nabožny	adj.
-17831	nabrati	v.tr. pf.
-27930	nabreknųti	v.intr. pf.
-27931	nabrěžna	f.
-32382	nabuhati	v.intr. ipf.
-27932	nabuhnųti	v.intr. pf.
-27933	nabyti	v.tr. pf.
-32383	nabyvati	v.tr. ipf.
-33363	nabzděti	v.intr. pf.
-22823	nacionalist	m.anim.
-17834	nacionalističny	adj.
-2759	nacionalizacija	f.
-5318	nacionalizm	m.sg.
-4964	nacionalizovati	v.tr. ipf.
-1522	nacist	m.anim.
-2739	nacističny	adj.
-22824	nacizm	m.sg.
-34203	načaditi	v.intr. pf.
-9323	načeľnik policije	m.anim.
-9324	načeľnik štaba	m.anim.
-948	načeľnik	m.anim.
-9325	načęlo	n.
-1502	načęti sę	v.refl. pf.
-22780	načęti	v.tr. pf.
-14727	načęťje	n.
-27937	načętȯk	m.
-5516	načinati sę	v.refl. ipf.
-22779	načinati	v.tr. ipf.
-27940	načitati sę	v.refl. pf.
-27938	načrpati	v.tr. pf.
-21347	načrtati	v.tr. pf.
-27941	načto	adv.
-2765	nad	prep.
-4932	nad	prep.
-9330	nad-	prefix
-17835	nadalje	adv.
-25121	nadarmo	adv.
-17083	nadati	v.tr. pf.
-16974	nadavati	v.tr. ipf.
-3132	naděja	f.
-17836	nadějati sę	v.refl. ipf.
-36881	nadějny	adj.
-32618	nadělati	v.tr. pf.
-17837	naděti	v.tr. pf.
-17838	naděti	v.tr. pf.
-17840	naděvati	v.tr. ipf.
-17841	naděvati	v.tr. ipf.
-27952	nadežny	adj.
-17843	nadglåvišče	n.
-5814	nadględati	v.ipf.
-5817	nadględěti	v.pf.
-5357	nadigrati	v.tr. pf.
-5358	nadigryvati	v.tr. ipf.
-36556	nadir	m.
-19865	nadljudsky	adj.
-23335	nadměrno	adv.
-23334	nadměrnosť	f.
-20517	nadměrny	adj.
-36457	nadmnožstvo	n.
-35396	nadnacionaľny	adj.
-22162	nadobyčajny	adj.
-6278	nadȯhneńje	n.sg.
-6277	nadȯhnųti	v.tr. pf.
-19866	nadoprošćeny	adj.
-20892	nadpis	m.
-27958	nadpis	m.
-36310	nadprirodny	adj.
-5621	nadųti	v.tr. pf.
-33039	nadųty	adj.
-33040	nadųty	adj.
-19867	nadųvati	v.tr. ipf.
-22936	nadužiti	v.tr. pf.
-22935	naduživati	v.tr. ipf.
-6276	nadyhati	v.tr. ipf.
-2924	nadzirati	v.tr. ipf.
-2766	nadzor	m.
-35186	nadzornik	m.anim.
-2763	nafta	f.
-2762	naftoprovod	m.
-32806	naganjati strah někomu	phrase
-32811	naganjati	v.tr. ipf.
-36236	naglåvna nametka	f.
-36672	naględny	adj.
-4247	naglo	adv.
-9350	nagly kolaps	m.
-2764	nagly	adj.
-15398	nagly	adj.
-32808	nagnati strah někomu	phrase
-27975	nagnati	v.tr. pf.
-27976	nagnojiti	v.tr. pf.
-17846	nagnųti	v.tr. pf.
-9353	nagorno	adv.
-27981	nagorny	adj.
-27982	nagosť	f.
-27983	nagota	f.
-28644	nagȯtky	m.pl.
-27984	nagovoriti	v.tr. ipf.
-943	nagråda	f.
-4121	nagråditi	v.tr. pf.
-4122	nagrađati	v.tr. ipf.
-27991	nagrěti	v.tr. pf.
-32416	nagrěvati	v.tr. ipf.
-17850	nagromaditi	v.tr. pf.
-17848	nagromađati	v.tr. ipf.
-17849	nagromađeńje	n.
-5319	nagy	adj.
-17845	nagybati	v.tr. ipf.
-27998	nahmuriti	v.tr. pf.
-32818	nahmurjeny	adj.
-14285	nahoditi sę	v.refl. ipf.
-2055	nahoditi	v.tr. ipf.
-15399	nahodka	f.
-17851	nahodnosť	f.
-28002	nahvatati	v.tr. pf.
-17854	naigrati	v.tr. pf.
-17856	naigryvati	v.tr. ipf.
-9357	naivnik	m.anim.
-16722	naivnosť	f.
-16721	naivny	adj.
-28004	naj-	prefix
-9359	najblizši	adj.
-9358	najbliže	adv.
-9360	najbogatši	adj.
-16916	najbolje	adv.
-35661	najboljši	adj.
-20519	najčęstěje	adv.
-23044	najdalje	adv.
-23043	najdaljši	adj.
-9361	najdivnějši	adj.
-781	najdti	v.tr. pf.
-32423	najedati sę	v.refl. ipf.
-9365	najem	m.sg.
-28010	najemnica	f.
-32854	najemnik	m.anim.
-9409	najemny råbotnik	m.anim.
-32860	najemny ubijca	m.anim.
-28012	najemny	adj.
-28006	najesti sę	v.refl. pf.
-9410	najęti	v.tr. pf.
-17861	najęti	v.tr. pf.
-17860	najezd	m.
-36046	najezdnik	m.anim.
-34831	naježiti sę	v.refl. pf.
-31962	naježiti	v.tr. pf.
-5868	najglųbši	adj.
-9369	najgorše	adv.
-779	najgorši	adj.
-9371	najhlådnějši	adj.
-9372	najkrasivši	adj.
-9373	najkrasnějši	adj.
-9374	najkrvavši	adj.
-17862	najlegši	adj.
-17863	najlěpje	adv.
-2770	najlěpši	adj.
-3280	najlučši	adj.
-9377	najmalo	adv.
-32859	najmatelj	m.anim.
-5512	najmati	v.tr. ipf.
-9408	najmati	v.tr. ipf.
-35889	najmě	adv.
-9379	najmękši	adj.
-4718	najmenje	adv.
-9381	najmenši	adj.
-2769	najmnogo	adv.
-9382	najnizši	adj.
-3841	najnovějši	adj.
-16282	najpozdněje	adv.
-9383	najpozdnějši	adj.
-17866	najprostějši	adj.
-19868	najpŕvo	adv.
-16283	najraněje	adv.
-9384	najranši	adj.
-9386	najstarějši, najstarši	adj.
-20520	najvęće	adv.
-9364	najvęćši	adj.
-14734	najveliky	adj.
-1488	najvyše	adv.
-9390	najzimnějši	adj.
-3281	najzly	adj.
-32013	nakalati	v.tr. ipf.
-28022	nakapati	v.intr. pf.
-5790	nakaz na arešt	m.
-9393	nakaz	m.
-3061	nakazati	v.tr. pf.
-3112	nakazyvati	v.tr. ipf.
-19869	naklad	m.
-19871	naklad	m.
-28027	naklad	m.
-6087	nakladati	v.tr. ipf.
-28028	nakladati	v.tr. ipf.
-21348	naklanjati	v.tr. ipf.
-28032	naklåti na	v.tr. pf.
-19875	naklon	m.
-21349	nakloniti	v.tr. pf.
-35936	naklonjeńje	n.
-28040	naklonjeny	adj.
-19876	naklonnosť	f.
-28041	nakolěnnik	m.
-17869	nakonec	adv.
-28042	nakopati	v.tr. pf.
-32865	nakopyvati	v.tr. ipf.
-23040	nakovaljnja	f.
-5594	nakrmiti	v.tr. pf.
-23703	nakryti	v.tr. pf.
-23702	nakryvati	v.tr. ipf.
-28025	nakydati	v.tr. pf.
-32677	nakydyvati	v.tr. ipf.
-28051	nalagati	v.tr. ipf.
-32679	nalagati	v.tr. ipf.
-20521	nalegati	v.intr. ipf.
-20522	nalegti	v.intr. pf.
-19878	nalet	m.
-9398	nalěvo	adv.
-1010	naležati	v.intr. ipf.
-20523	naležity	adj.
-28058	naliti	v.tr. ipf.
-28059	nalivati	v.tr. pf.
-28060	nalivka	f.
-21350	nalivno pero	n.
-6088	naložiti	v.tr. pf.
-28030	naložiti	v.tr. pf.
-20525	naložnica	f.
-2925	nam	pron.pers.
-28065	namastiti	v.tr. pf.
-32875	namašćati	v.tr. ipf.
-32233	namazati	v.tr. pf.
-32234	namazyvati	v.tr. ipf.
-9402	naměr	m.
-5153	naměriti	v.tr. pf.
-5151	naměrjati	v.tr. ipf.
-20527	naměstnik	m.anim.
-4162	namočiti	v.tr. pf.
-9405	namokriti	v.tr. pf.
-9406	namontovati	v.tr. pf.
-23705	namordnik	m.
-28074	namotati	v.tr. pf.
-32866	namotyvati	v.tr. ipf.
-32320	namyliti	v.tr. pf.
-32321	namyljati	v.tr. ipf.
-28077	nanesti	v.tr. pf.
-33511	nanizati	v.tr. pf.
-3858	nanos	m.
-28080	nanositi	v.tr. ipf.
-5964	nanovo	adv.
-35419	naočila	n.pl.
-28081	naopak	adv.
-28082	naostriti	v.tr. pf.
-3441	napad	m.
-20894	napad	m.
-955	napadati	v.tr. ipf.
-2031	napadati	v.tr. ipf.
-28084	napadnik	m.anim.
-20898	napadny	adj.
-28089	napajati	v.tr. ipf.
-32705	napajati	v.tr. ipf.
-36250	napajati	v.tr. ipf.
-36807	napaljeny	adj.
-16750	napamęť	adv.
-36724	naparfumovati sę	v.refl. pf.
-23878	naparfumovati	v.tr. pf.
-32948	napasti sę	v.refl. pf.
-957	napasti	v.intr. pf.
-28091	napasti	v.tr. pf.
-9417	napastnik	m.anim.
-28095	napęti	v.tr. pf.
-20900	napętosť	f.
-20901	napęty	adj.
-28096	napěv	m.
-32923	naphati	v.tr. pf.
-28097	napihati	v.tr. ipf.
-28098	napinati	v.tr. ipf.
-28099	napirati	v.intr. ipf.
-6280	napis	m.
-958	napisati	v.tr. pf.
-28102	napiti sę	v.refl. pf.
-32955	napiti sę	v.refl. pf.
-2927	napitȯk	m.
-32956	napivati sę	v.refl. ipf.
-32957	napivati sę	v.refl. ipf.
-28106	napljuvati	v.intr. pf.
-20903	naplyv	m.
-4094	napoj	m.
-28109	napojiti	v.tr. pf.
-32706	napojiti	v.tr. pf.
-35531	napojnica	f.
-17876	napȯlniti perami	v.tr. pf.
-1089	napȯlniti	v.tr. pf.
-2928	napominati	v.tr. ipf.
-23875	napomněńje	n.
-2768	napomněti	v.tr. pf.
-20904	napor	m.
-20905	napor	m.
-17877	naposlěd	adv.
-17880	naposlědȯk	adv.
-16975	napr.	adv.
-3292	napravdų	adv.
-5548	napraviti sę	v.refl. pf.
-5550	napraviti	v.tr. pf.
-28120	napraviti	v.tr. pf.
-33047	napraviti	v.tr. pf.
-3658	napravjati sę	v.refl. ipf.
-5549	napravjati	v.tr. ipf.
-33051	napravjati	v.tr. ipf.
-33053	napravjati	v.tr. ipf.
-28121	napravo	adv.
-28122	napråzdno	adv.
-28123	napråzdny	adj.
-2791	naprěd	adv.
-20907	naprěd	adv.
-28129	naprěti	v.intr. pf.
-20909	napręžeńje	n.
-28130	napriklad	adv.
-28131	napriměr	adv.
-15403	naprostrina	f.
-4067	naprotiv	prep.
-28135	napŕstȯk	m.
-2767	naprųžeńje	n.
-20910	naprųžiti	v.tr. pf.
-20913	napustiti	v.tr. pf.
-20912	napušćati	v.tr. ipf.
-33056	narastati	v.intr. ipf.
-28139	naråsti	v.intr. pf.
-36238	narcis	m.
-36240	narcističny	adj.
-36239	narcizm	m.
-21351	narěčena	f.
-21352	narěčeny	m.anim.
-9440	narěčje	n.
-9441	narěčje	n.
-21353	narěkańje	n.
-21354	narěkati	v.intr. ipf.
-33141	narěkati	v.tr. ipf.
-28145	narěkti	v.tr. pf.
-28148	narězati	v.tr. ipf.
-950	narkoman	m.anim.
-36284	narkomanija	f.
-33077	narkotik	m.
-36285	narkoza	f.
-28149	naročito	adv.
-21356	naročity	adj.
-1013	narod	m.
-28153	naroditi	v.tr. pf.
-9444	narodna vojna	f.
-16976	narodnosť	f.
-4307	narodny	adj.
-6096	narodobijstvo	n.sg.
-20914	narodopis	m.
-17884	narodopisec	m.anim.
-28156	narođeńje	n.
-28157	narožny	adj.
-36788	narųčati	v.tr. ipf.
-36787	narųčiti	v.tr. pf.
-28158	narųčje	n.sg.
-23985	narųčka	f.
-36790	narųčka	f.
-28159	narųčny časovnik	m.
-2788	narušati	v.tr. ipf.
-9445	narušeńje	n.
-1645	narušiti	v.tr. pf.
-28163	narvati	v.tr. pf.
-5542	narysovati	v.tr. pf.
-33188	naryvati	v.tr. ipf.
-982	nas	pron.pers.
-33191	nasad	m.
-28169	nasaditi	v.tr. pf.
-33190	nasađati	v.tr. ipf.
-34136	nascati	v.intr. pf.
-28172	nasěděti sę	v.refl. pf.
-21360	nasědka	f.
-28174	nasěkati	v.tr. ipf.
-17885	nasěkomo	n.
-28175	nasěkti	v.tr. pf.
-3776	naseliti	v.tr. pf.
-3781	naseljati	v.tr. ipf.
-2787	naseljeńje	n.
-3782	naseljeny	adj.
-578	nasiľje	n.sg.
-21361	nasiľnik	m.anim.
-9453	nasiľno	adv.
-9454	nasiľnosť	f.
-9455	nasiľny	adj.
-36043	nasilovańje	n.
-36865	naskakati	v.intr. ipf.
-36866	naskakati	v.intr. ipf.
-36867	naskakati	v.intr. ipf.
-28183	naskočiti	v.intr. pf.
-28184	naskočiti	v.intr. pf.
-36864	naskočiti	v.intr. pf.
-9456	naskoro	adv.
-14737	naskroz	adv.
-28186	naslåda	f.
-28189	naslåditi sę	v.refl. pf.
-28187	naslåditi	v.tr. pf.
-33275	naslađati sę	v.refl. ipf.
-33278	naslađati	v.tr. ipf.
-1195	naslěditi	v.tr. pf.
-9459	naslědnica	f.
-969	naslědnik	m.anim.
-9462	naslědnik	m.anim.
-9464	naslědnosť	f.
-15404	naslědny	adj.
-161	naslědȯk	m.
-28196	naslědovańje	n.
-36688	naslědovańje	n.sg.
-9466	naslědovati	v.tr. ipf.
-21363	naslědovati	v.tr. ipf.
-761	naslědstvo	n.
-28200	naslušati sę	v.refl. pf.
-28204	nasmeška	f.
-28206	nasmoliti	v.tr. pf.
-35866	nasos	m.
-28209	naspati sę	v.refl. pf.
-21730	nastati	v.intr. pf.
-21728	nastavati	v.intr. ipf.
-9468	nastaviti	v.tr. pf.
-9469	nastaviti	v.tr. pf.
-28215	nastaviti	v.tr. pf.
-33149	nastaviti	v.tr. pf.
-33150	nastavjati	v.tr. ipf.
-33151	nastavjati	v.tr. ipf.
-33152	nastavjati	v.tr. ipf.
-33153	nastavjati	v.tr. ipf.
-17888	nastavjeńja	n.pl.
-17889	nastavjeńje	n.
-21733	nastavȯk	m.
-28219	nastěnny	adj.
-28220	nastěž	adv.
-28221	nastignųti	v.tr. pf.
-21732	nastojati	v.intr. pf.
-28225	nastojčivy	adj.
-2779	nastojęći	adj.
-36847	nastojivati	v.intr. ipf.
-20915	nastoľna lampa	f.
-20916	nastoľna světilka	f.
-28227	nastradati sę	v.refl. pf.
-33420	nastrajati	v.tr. ipf.
-33421	nastrajati	v.tr. ipf.
-36673	nastrašiti sę	v.refl. pf.
-28228	nastrašiti	v.tr. pf.
-21906	nastråžiti sę	v.refl. pf.
-2777	nastrojeńje	n.
-9472	nastrojevy	adj.
-28232	nastrojiti	v.tr. pf.
-28233	nastrojiti	v.tr. pf.
-17891	nastrojky	f.pl.
-3040	nastųpajųći	adj.
-21928	nastųpati	v.intr. ipf.
-33299	nastųpati	v.intr. ipf.
-21929	nastųpiti	v.intr. pf.
-28236	nastųpiti	v.intr. pf.
-28238	nastųpnica	f.
-28239	nastųpnik	m.anim.
-9474	nastųpny	adj.
-19879	nasųćny	adj.
-33096	nasųćny	adj.
-28260	nasyćati	v.tr. pf.
-28261	nasyćeńje	n.sg.
-21998	nasyp	m.
-28259	nasypati	v.tr. pf.
-28262	nasytiti	v.tr. pf.
-1993	naš	pron.poss.
-2776	naša era	f.
-28251	našeptati	v.tr. pf.
-17886	našijnik	m.
-28253	našiti	v.tr. pf.
-28255	našivati	v.tr. ipf.
-28265	natęgati	v.tr. ipf.
-28267	natęgnųti	v.tr. ipf.
-28146	natěšiti sę	v.refl. pf.
-14741	natipkati	v.tr. pf.
-28271	natirati	v.tr. ipf.
-2775	natisk	m.
-4826	natiskati	v.tr. ipf.
-3755	natisknųti	v.tr. pf.
-28278	natočiti	v.tr. pf.
-33428	natočiti	v.tr. pf.
-28280	natoliko	adv.
-5601	natȯlkati sę	v.refl. ipf.
-2790	natȯlkti sę	v.refl. pf.
-28285	natreti	v.tr. pf.
-22606	natrij	m.sg.
-28288	natŕpěti sę	v.refl. pf.
-28290	natruditi sę	v.refl. pf.
-22044	natųga	f.
-3411	naturalističny	adj.
-3410	naturalizm	m.sg.
-3409	naturaľny	adj.
-28292	natvoriti	v.tr. pf.
-9483	natvrđeńje	n.sg.
-985	naučiti sę	v.refl. pf.
-3540	naučiti	v.tr. pf.
-2782	naučnik	m.anim.
-3997	naučny	adj.
-2005	nauka	f.
-28306	naušnica	f.
-28307	naušnik	m.
-16748	naušniky	m.pl.
-28309	navaga	f.
-22186	naval	m.
-22221	navěditi	v.tr. pf.
-22220	navěđati	v.tr. ipf.
-28319	navěky	adv.
-28322	navěsiti	v.tr. pf.
-28316	navesti	v.tr. pf.
-31938	navesti	v.tr. pf.
-28324	navěšati	v.tr. ipf.
-9490	navet	adv.
-17892	navětrny	adj.
-20529	navęzati	v.intr. pf.
-28326	navęzati	v.tr. pf.
-20530	navęzyvati	v.intr. ipf.
-33213	navęzyvati	v.tr. ipf.
-20531	navigacija	f.
-35898	navigator	m.anim.
-28334	naviti	v.tr. pf.
-28335	navivati	v.tr. ipf.
-28336	navlåčka	f.
-22519	navlåka	f.
-29781	navlåžiti	v.tr. pf.
-33464	navlěkati	v.tr. ipf.
-28338	navlěkti	v.tr. pf.
-28342	navoditi	v.tr. ipf.
-31933	navoditi	v.tr. ipf.
-35500	navodnica	f.
-22551	navodniti	v.tr. pf.
-28343	navodnjańje	n.
-22550	navodnjati	v.tr. ipf.
-28346	navoščiti	v.tr. pf.
-28351	navråžiti	v.intr. pf.
-22161	navyk	m.
-17893	navyše	adv.
-28355	navznak	adv.
-2781	nazad	adv.
-9494	nazadno	adv.
-9495	nazadnosť	f.
-9496	nazadny	adj.
-32964	nazdråviti	v.intr. pf.
-32962	nazdravjati	v.intr. ipf.
-28357	nazemny	adj.
-3622	naznačati	v.tr. ipf.
-22855	naznačati	v.tr. ipf.
-22858	naznačati	v.tr. ipf.
-23292	naznačeny	adj.
-3623	naznačiti	v.tr. pf.
-22856	naznačiti	v.tr. pf.
-22859	naznačiti	v.tr. pf.
-5183	nazva	f.
-971	nazvany	adj.
-2786	nazvati	v.tr. pf.
-16284	nazyvati sę	v.refl. ipf.
-2783	nazyvati	v.tr. ipf.
-5987	ne bųde	adv.
-5986	ne bylo	adv.
-9553	ne dozvaljaje sę	phrase
-3563	ne ględęći na	prep.
-17895	ne imaje značeńja	phrase
-35354	ne ljubiti	v.tr. ipf.
-21368	ne poslušati	v.tr. pf.
-14751	ne pozvaljaje sę	phrase
-21367	ne slušati	v.tr. ipf.
-35248	ne sȯglasiti sę, ne sųglasiti sę	v.refl. pf.
-35247	ne sȯglašati sę, ne sųglašati sę	v.refl. ipf.
-9525	Ne trati vrěmene!	phrase
-9526	ne trěba	phrase
-16285	Ne trěba	phrase
-2784	ne	adv.
-3989	ne	intj.
-2020	neadekvatnosť	f.
-19880	neadekvatny	adj.
-34429	neandertalec	m.anim.
-972	nebesky	adj.
-5683	nebesno tělo	n.
-9530	nebesny	adj.
-3547	nebezpečnosť	f.
-3549	nebezpečny	adj.
-4904	neblågodarny	adj.
-2792	nebo	n.
-33199	nebodrap	m.
-17896	nebogy	adj.
-9537	nebojazlivosť	f.
-9540	nebojazlivy	adj.
-9541	nebojaznik	m.anim.
-35387	nebožčik	m.
-14757	nebrěžnosť	f.
-14756	nebrěžny	adj.
-19881	nebsky	adj.
-14745	nebystry	adj.
-28375	nebyťje	n.sg.
-17898	nebyvaly	adj.
-4033	něčemu	adv.
-28376	nečestivy	adj.
-28378	nečestny	adj.
-2772	něčij	pron.poss.
-2481	nečistota	f.
-3556	nečisty	adj.
-19882	něčto	pron.indef.
-14746	nedaleky	adj.
-9545	nedavno	adv.
-963	nedavny	adj.
-16253	nedbalosť	f.
-16255	nedbaly	adj.
-35389	nedějųći	adj.
-9547	nedělja	f.
-36671	nedobro	adv.
-28389	nedobry	adj.
-33135	nedobry	adj.
-20532	nedomȯlvka	f.
-20533	nedonosȯk	m.anim.
-36114	nedopustimy	adj.
-20534	nedoråzuměńje	n.
-20535	nedoråzuměti	v.tr. pf.
-20536	nedoråzuměvati	v.tr. ipf.
-32227	nedoråzvity	adj.
-35664	nedoslědno	adv.
-35665	nedoslědnosť	f.
-35666	nedoslědny	adj.
-19883	nedostatȯčno	adv.
-17899	nedostatȯčnosť sŕdca	f.
-1018	nedostatȯk	m.
-21737	nedostatȯk	m.
-36148	nedostavati	v.intr. ipf.
-19885	nedostojny	adj.
-17900	nedostųpny	adj.
-36083	nedotykajemosť	f.
-36082	nedotykajemy	adj.
-22172	nedouměńje	n.sg.
-33435	nedověra	f.
-35299	nedovŕšenosť	f.
-35290	nedovŕšeny	adj.
-36686	nedozvoljeny	adj.
-35955	nedŕžavny	adj.
-28396	nedųg	m.
-34772	nedvižimosť	f.
-35916	neefektivny	adj.
-20537	neformaľny	adj.
-2173	negativny	adj.
-28398	negodny	adj.
-33183	negodny	adj.
-33186	negodny	adj.
-17907	negodovańje	n.sg.
-9555	negotovy	adj.
-28400	negramotnosť	f.
-33200	negramotnosť	f.
-33202	negramotny	adj.
-33204	negramotny	adj.
-34915	negybky	adj.
-9556	Nehaj sila bųde s tobojų!	phrase
-9558	nehaj	particle
-2900	nehati	v.tr. pf.
-33112	neizběžno	adv.
-33115	neizběžnosť	f.
-33111	neizběžny	adj.
-35074	neizgoda	f.
-35075	neizgodny	adj.
-35511	neizgovorlivy	adj.
-36418	neizměnjeny	adj.
-19886	neizměnny	adj.
-33136	neizměrimy	adj.
-16861	neizvěstny	adj.
-35264	nejasny	adj.
-35388	nejestvujųći	adj.
-23262	nejlon	m.
-23263	nejlonovy	adj.
-2297	někako	adv.
-983	někaky	adj.
-19567	někamo	adv.
-35412	nekaznivosť	f.
-35413	nekaznivy	adj.
-2172	někde	adv.
-2794	někȯgda, někȯgdy	adv.
-5696	někoj	pron.indef.
-9575	několiko dnjev nazad	adv.
-17911	několiko dnjev tomu	adv.
-9576	několiko razov	adv.
-2396	několiko	adv.
-16451	několikokråtno	adv.
-19888	nekompetencija	f.
-19889	nekompletny	adj.
-19890	nekonsistencija	f.
-17912	nekrasna katȯčka	f.
-17913	nekrasny	adj.
-4082	někto	pron.indef.
-5692	něktory	adj.
-1001	někųdy	adv.
-1767	nelegaľny	adj.
-28414	neljudsky	adj.
-19891	nelogičny	adj.
-5985	nemaje, ne imaje	adv.
-2793	nemalo	adv.
-28417	nemaly	adj.
-2774	Němcija	f.sg.
-2780	Němec	m.anim.
-984	němečsky	adj.
-28421	něměti	v.intr. ipf.
-23764	nemilosŕdno	adv.
-23763	nemilosŕdny	adj.
-28424	nemilosť	f.
-28423	nemilostivy	adj.
-28425	nemily	adj.
-33120	neminujemosť	f.
-33118	neminujemy	adj.
-28427	nemirny	adj.
-28428	Němka	f.
-967	nemnogo	adv.
-28431	nemnogy	adj.
-21364	nemnožko	adv.
-20539	nemoć	f.
-20540	nemoćny	adj.
-32286	nemoraľny	adj.
-28435	němosť	f.
-28436	němota	f.
-16286	nemožlivosť	f.
-4561	nemožlivy	adj.
-20541	nemožno	adv.
-9587	nemožnosť	f.
-9588	nemožny	adj.
-28438	nemųdry	adj.
-949	němy	adj.
-32387	nenadežny	adj.
-32623	nenaměrjeny	adj.
-19893	nenarušimy	adj.
-33816	nenasytnik	m.anim.
-33013	nenasytnosť	f.
-28441	nenasytny	adj.
-16977	nenaučny	adj.
-968	nenaviděti	v.tr. ipf.
-5293	nenavisť	f.sg.
-28446	nenavistny	adj.
-33261	neniščimy	adj.
-4105	nenormaľno	adv.
-4104	nenormaľnosť	f.
-4103	nenormaľny	adj.
-33109	neobhodimosť	f.
-33105	neobhodimy	adj.
-19894	neobjasnimy	adj.
-28447	neobjętny	adj.
-17914	neobrazovany	adj.
-23706	neobyčno	adv.
-6281	neobyčny	adj.
-22893	neobzrimy	adj.
-3860	neočekyvano	adv.
-9598	neočekyvanosť	f.
-9599	neočekyvany	adj.
-33229	neodčuđajemy, neodčuđimy	adj.
-35690	neoddělimy	adj.
-9601	neodgovorno	adv.
-9602	neodgovornosť	f.
-9603	neodgovorny	adj.
-23881	neodložny	adj.
-36651	neodobrjeńje	n.sg.
-4063	neodpovědaľnosť	f.
-4062	neodpovědaľny	adj.
-28450	neodstųpny	adj.
-33116	neodvråtimy	adj.
-35165	neoficiaľno	adv.
-35164	neoficiaľny	adj.
-19895	neograničeny	adj.
-28451	neohota	f.
-14750	neohotno	adv.
-9607	neohotny	adj.
-35714	neolit	m.sg.
-35715	neolitičny	adj.
-35949	neologizm	m.
-22605	neon	m.sg.
-19896	neopisujemy	adj.
-9608	neoprěděljeno	adv.
-9609	neoprěděljeny	adj.
-9638	neoriginaľny	adj.
-33467	neoskvŕnjeny	adj.
-9610	neosnovany	adj.
-35324	neosporimy	adj.
-35864	neostråžno	adj.
-35863	neostråžny	adj.
-16978	neoznačeny	adj.
-16979	neoznačiteljny zaimennik	m.
-32450	Nepal	m.sg.
-32451	nepaľsky	adj.
-20542	nepamętny	adj.
-33230	neparno čislo	n.
-28455	neparny	adj.
-19897	nepisany	adj.
-28457	neplodny	adj.
-2017	nepodatlivy	adj.
-28459	nepodobny	adj.
-17917	nepogoda	f.
-3378	nepokoj	m.sg.
-36699	nepokojiti sę	v.refl. ipf.
-3862	nepokojiti	v.tr. ipf.
-28464	nepokorny	adj.
-17918	nepȯlnomožnica	f.
-17920	nepȯlnomožnik	m.anim.
-17922	nepȯlnomožnosť	f.
-17924	nepȯlnomožny	adj.
-17926	nepȯlnosposobnica	f.
-17928	nepȯlnosposobnik	m.anim.
-17930	nepȯlnosposobnosť	f.
-17932	nepȯlnosposobny	adj.
-28465	nepȯlny	adj.
-19898	nepomoćny	adj.
-33634	nepopravimy	adj.
-36339	nepopravimy	adj.
-9614	nepopravny	adj.
-28466	neporędny	adj.
-994	neporędȯk	m.sg.
-28468	neporočny	adj.
-36081	neporušimosť	f.
-36080	neporušimy	adj.
-28469	neposěda	m.anim.
-36397	neposědlivosť	f.
-21365	neposědlivy	adj.
-23707	neposlušnosť	f.
-23708	neposlušny	adj.
-992	neposrědnje	adv.
-5798	neposrědnji, neposrědny	adj.
-9618	neposrědnosť	f.
-28471	nepostojanny	adj.
-5786	nepotrěbny	adj.
-6004	nepovaga	f.
-35641	nepoznajemy	adj.
-36687	nepozvoljeny	adj.
-35160	nepraktičnosť	f.
-35156	nepraktičny	adj.
-19899	nepravda	f.
-28476	nepravdivy	adj.
-35202	nepravdopodobny	adj.
-3364	nepraviľny	adj.
-28480	nepravy	adj.
-28481	nepravy	adj.
-34838	neprědvidimy	adj.
-34839	neprědvidlivy	adj.
-17937	neprěhodny	adj.
-19901	neprěstanno	adv.
-28482	neprěstanny	adj.
-28483	neprigodnosť	f.
-28484	neprigodny	adj.
-1160	neprijatelj	m.anim.
-28487	neprijateljsky	adj.
-28488	neprijateljstvo	n.sg.
-33016	neprijemlivy	adj.
-28493	neprijemny	adj.
-23810	neprijętnosť	f.
-28490	neprijętny	adj.
-28494	neprimětny	adj.
-9637	neprirodny	adj.
-22809	neprirodny	adj.
-28495	nepristojnosť	f.
-28496	nepristojny	adj.
-28497	nepristųpnosť	f.
-28498	nepristųpny	adj.
-28499	nepritomny	adj.
-33495	nepritomny	adj.
-35881	neprivykly	adj.
-17938	neprodyšny	adj.
-28501	neprohodny	adj.
-33821	nepromokajemy	adj.
-14752	neprosty	adj.
-9628	neprozråčimosť	f.
-9629	neprozråčno	adv.
-9630	neprozråčnosť	f.
-9631	neprozråčny	adj.
-23598	Neptun	m.sg.
-28502	neråbotny	adj.
-19902	neracionaľny	adj.
-28503	nerado	adv.
-28511	neråvnosť	f.
-9639	neråvny	adj.
-36689	neråvny	adj.
-28505	neråzlųčny	adj.
-19903	neråzuměńje	n.sg.
-16980	neråzumlivy	adj.
-28507	neråzumny	adj.
-34515	neråzvity	adj.
-28508	neręd	m.sg.
-36443	nerědko	adv.
-33505	nerędnosť	f.
-16982	nerędny	adj.
-28509	nerędny	adj.
-23776	neregularno	adv.
-33506	neregularnosť	f.
-16981	neregularny	adj.
-23213	nerv	m.
-23224	nervny	adj.
-23226	nervoznosť	f.
-23222	nervozny	adj.
-19905	nesamovoljny	adj.
-35618	nesčisljeny	adj.
-17959	nesgoda	f.
-28516	neskromny	adj.
-28517	neslavny	adj.
-28518	neslyhany	adj.
-17939	nesmělo	adv.
-17940	nesmělosť	f.
-9640	nesměly	adj.
-9641	nesmysľny	adj.
-20544	nesnosny	adj.
-33509	nesȯglåśje, nesųglåśje	n.
-996	nesȯvŕšeny vid	m.
-35256	nesȯvŕšeny	adj.
-9642	nespokojny	adj.
-5909	nespokojstvo	n.sg.
-35636	nesposobny	adj.
-19908	nespravědlivy	adj.
-23879	nesrųčny	adj.
-35929	nestabiľnosť	f.
-35276	nestabiľny	adj.
-9644	nestaly	adj.
-35574	nestera	f.
-20547	nesti jajca	v.tr. ipf.
-1161	nesti	v.tr. ipf.
-3203	nesųmněno	adv.
-6540	nesųmněny	adj.
-9648	nesvědomo	adv.
-6222	nesvědomosť	f.
-6223	nesvědomy	adj.
-19904	nesvęzany	adj.
-14753	neščęsťje	n.
-19906	neščęsťje	n.
-9652	neščęstlivo	adv.
-9653	neščęstlivy	adj.
-16908	neščęstny slučaj	m.
-3386	neščęstny	adj.
-31991	neškodlivy	adj.
-35573	netij	m.anim.
-3682	netočny	adj.
-35067	netolerantnosť	f.
-35069	netolerantny	adj.
-16862	netopyŕ	m.anim.
-28532	netrězvy	adj.
-36709	netŕpělivosť	f.sg.
-28533	netŕpělivy	adj.
-28534	netŕpěńje	n.sg.
-35068	netŕpimosť	f.
-19909	netŕpimy	adj.
-35070	netŕpimy	adj.
-9660	neubojazno	adv.
-9661	neubojazny	adj.
-28535	neučeny	adj.
-28536	neučtivy	adj.
-34975	neudačnik	m.anim.
-34974	neudačny	adj.
-17941	neudobno	adv.
-17942	neudobny	adj.
-35073	neudobstvo	n.
-28538	neugasimy	adj.
-22163	neuk	m.anim.
-22164	neuk	m.anim.
-28540	neuměńje	n.sg.
-28541	neuměrny	adj.
-35638	neuměstny	adj.
-28542	neumny	adj.
-34980	neumolimy	adj.
-9662	neumorjeno	adv.
-9663	neumorjenosť	f.
-9664	neumorjeny	adj.
-32625	neumysľno	adv.
-28543	neumysľny	adj.
-24654	neurodny	adj.
-21370	neurođaj	m.
-6550	neuspěh	m.
-28546	neuspěšny	adj.
-9665	neustalo	adv.
-9666	neustalosť	f.
-9667	neustaly	adj.
-9668	neustrašno	adv.
-9669	neustrašnosť	f.
-9672	neustrašny	adj.
-36649	neustųplivosť, neustųpnosť	adj.
-17943	neustųplivy, neustųpny	adj.
-28548	neutěšimy	adj.
-17944	nevažno	intj.
-23341	nevažny	adj.
-4901	nevdęčny	adj.
-19912	nevědomy	adj.
-28551	neveliky	adj.
-28554	nevěŕje	n.sg.
-22326	nevěrnik	m.anim.
-28555	nevěrnosť	f.
-28556	nevěrny	adj.
-28557	nevěrny	adj.
-4562	nevěrojętny	adj.
-997	nevěsta	f.
-9677	nevěstinsky	adj.
-22222	nevěža	f.
-23710	nevidimo	adv.
-23709	nevidimy	adj.
-5957	nevinnosť	f.
-1157	nevinny	adj.
-28568	nevinovaty	adj.
-9679	nevojnovy	adj.
-22308	nevolja	f.
-22310	nevolja	f.
-28575	nevoljnica	f.
-22311	nevoljnik	m.anim.
-28577	nevoljny	adj.
-28578	nevoljny	adj.
-4533	nevrolog	m.anim.
-4535	nevrologičny	adj.
-4534	nevrologija	f.sg.
-9680	nevromorfny	adj.
-35832	nevtralizacija	f.
-35831	nevtralizovati	v.tr. ipf./pf.
-5037	nevtraľnosť	f.
-5036	nevtraľny	adj.
-4659	nevtron	m.
-17947	nezabųďka	f.
-31774	nezabytny	adj.
-17948	nezadovaljati	v.tr. ipf.
-17953	nezadovoliti	v.tr. pf.
-17950	nezadovoljeny	adj.
-3679	nezakonny	adj.
-17955	nezaležno	adv.
-1019	nezaležnosť	f.sg.
-1425	nezaležny	adj.
-9684	nezasluženy	adj.
-17956	nezavisno	adv.
-17957	nezavisnosť	f.
-17958	nezavisny	adj.
-28582	nezdråvy	adj.
-3059	nezgrabny	adj.
-28587	nezly	adj.
-9686	neznačny	adj.
-17960	neznajemy	adj.
-28589	neznańje	n.sg.
-28590	neznany	adj.
-217	než	conj.
-6260	neželi	conj.
-36162	neženjenec	m.anim.
-16983	neživy	adj.
-36612	neživy	adj.
-23711	něžnosť	f.
-23712	něžny	adj.
-1628	ni ... ni ...	conj.
-4032	ničemu	adv.
-993	ničij	pron.poss.
-19913	ničto	pron.indef.
-1021	niderlandsky	adj.
-2795	Niderlandy	m.pl.
-4754	Nigerija	f.sg.
-4755	nigerijsky	adj.
-3344	nijedin	pron.indef.
-1835	nikako	adv.
-3345	nikaky	adj.
-19570	nikamo	adv.
-16787	Nikaragua	f.sg.
-22463	nikaraguansky	adj.
-2186	nikde	adv.
-22623	nikelj	m.sg.
-2908	nikȯgda, nikȯgdy	adv.
-19585	nikoliko	adv.
-32835	nikotin	m.sg.
-4	nikto	pron.indef.
-1106	nikųdy	adv.
-23599	Nil	m.sg.
-20548	niľsky konj	m.anim.
-36713	nimfa	f.
-36714	nimfa	f.
-9709	niša	f.
-36725	niša	f.
-33262	niščęći	adj.
-3554	niščeńje	n.
-8073	niščimy	adj.
-5749	niščitelj	m.
-5767	niščitelj	m.anim.
-19749	niščiteljsky	adj.
-2799	niščiti	v.tr. ipf.
-8076	niščivo kritikovańje	n.sg.
-8075	niščivo	adv.
-8078	niščivosť	f.
-8077	niščivy	adj.
-14762	niševy	adj.
-1738	niť	f.
-17966	nitka	f.
-956	niva	f.
-9712	nizańje	n.sg.
-28617	nizati	v.tr. ipf.
-1205	nizina	f.
-28619	nizinny	adj.
-9716	nizko	adv.
-28622	nizkosť	f.
-33267	nizkosť	f.
-402	nizky	adj.
-28620	nizky	adj.
-9719	nizši	adj.
-1002	niže	adv.
-19914	nižnosť	f.
-19915	nižny	adj.
-28627	njuans	m.
-28628	njuh	m.
-1003	njuhati	v.intr. ipf.
-28631	njuhnųti	v.intr. pf.
-14764	no	conj.
-23600	Nobelova nagråda	f.
-195	noć	f.
-21371	noćejų	adv.
-3863	noćevati	v.intr. ipf.
-17967	noćiś	adv.
-28637	noćleg	m.
-31887	noćny klub	m.
-4343	noćny	adj.
-28638	nočnik	m.anim.
-17969	Noeva arka	f.
-1230	noga	f.
-23124	nogavica	f.
-23120	nogavice	f.pl.
-23125	nogavka	f.
-23121	nogavky	f.pl.
-1229	nogȯť	m.
-2060	nomer	m.
-2812	nominacija	f.
-16984	nominativ	m.
-4976	nominovati	v.tr. ipf.
-34926	non-stop	adv.
-36643	nonšalantny	adj.
-28648	nora	f.
-21372	norka	f.
-36131	norma	f.
-16985	normaľno	adv.
-23354	normaľnosť	f.
-5260	normaľny	adj.
-28651	norovisty	adj.
-4428	Norvegija	f.sg.
-4429	norvežsky	adj.
-961	nos	m.
-28655	nosač	m.anim.
-20550	nosilka	n.pl.
-20553	nosilka	n.pl.
-28658	nositelj	m.anim.
-1034	nositi	v.tr. ipf.
-1037	nositi	v.tr. ipf.
-28660	nosny	adj.
-28661	nosȯk	m.
-28662	nosȯk	m.
-20555	nosorog	m.anim.
-23981	nosovka	f.
-36266	nosovy ubrusok	m.
-28663	nosovy	adj.
-4620	nostalgičny	adj.
-4619	nostalgija	f.
-28665	nošeńje	n.sg.
-23451	nota	f.
-36115	notacija	f.
-15707	notaŕ	m.anim.
-16986	notorično	adv.
-36319	notoričnosť	f.
-16987	notoričny	adj.
-22759	noty	f.pl.
-22775	Nova Zelandija	f.sg.
-28666	novak	m.anim.
-9737	novembr	m.sg.
-28668	novina	f.
-28669	novina	f.
-28672	novinka	f.
-9738	noviny	f.pl.
-34904	novogodišnja jelka	f.
-34903	novogodišnje drěvo	n.
-36449	novogrėčsky	adj.
-20556	novohebrejsky	adj.
-19916	novonarođeny	adj.
-35616	novoprišelec	m.anim.
-35485	novorođenec	m.anim.
-9739	novoslověnsky	adj.
-1237	novosť	f.
-33264	novosť	f.
-1510	novosti	f.pl.
-22147	novotvor	m.
-22148	novotvor	m.
-4907	novozelandsky	adj.
-2804	novy	adj.
-2397	nozdra	f.
-1014	nož	m.
-5282	nožice	f.pl.
-28687	nožnica	f.
-28691	nråv	m.
-28692	nråv	m.
-28693	nrěst	m.
-33248	nrěstilišče	n.
-33249	nrěstilišče	n.
-28694	nrěstiti sę	v.refl. ipf.
-19917	nu	intj.
-17971	nuda	f.
-17974	nuditi sę	v.refl. ipf.
-17973	nuditi	v.tr. ipf.
-17975	nudny	adj.
-1426	nųđa	f.
-2807	nųđa	f.
-33251	nųđa	f.
-35677	nuklearna fuzija	f.
-35675	nuklearny	adj.
-1015	nula	num.card.
-2809	nulovy	num.ord.
-35841	numeričny	adj.
-36608	nutrija	f.
-28707	nužny	adj.
-5698	nyně	adv.
-19918	nyněšnji, nyněšny	adj.
-28700	nyrec	m.anim.
-9750	nyrjańje	n.sg.
-9751	nyrjatelj	m.anim.
-9752	nyrjati	v.intr. ipf.
-3113	nyrka	f.
-9756	nyrkovy kamenj	m.
-9755	nyrkovy	adj.
-28712	nyrnųti	v.intr. pf.
-9757	o, ob	prep.
-28713	o	intj.
-34376	oaza	f.
-998	oba	num.card.
-19535	obače	adv.
-28716	obadva	num.card.
-16842	obagriti	v.tr. pf.
-16988	obćeslovjansky	adj.
-35783	obćežiťje	n.
-1000	obći	adj.
-20917	občina	f.
-20919	občiti s	v.ipf.
-20918	občiti	v.intr. ipf.
-23085	občudovańje	n.
-23713	občudovatelj	m.anim.
-23084	občudovati	v.tr. ipf.
-1493	obdariti	v.tr. pf.
-5544	obdarjati	v.tr. ipf.
-4550	obdarjeny	adj.
-28724	obdirati	v.tr. ipf.
-23083	obdiv	m.sg.
-23078	obdivjati	v.tr. ipf.
-9770	obdobje	n.
-34086	obdreti	v.tr. pf.
-9771	obdumati	v.tr. pf.
-9772	oběćańje	n.
-990	oběćati	v.tr. pf.
-22401	oběćivati	v.tr. ipf.
-2038	oběd	m.
-9775	obědati	v.intr. ipf./pf.
-28729	obědny	adj.
-28731	oběgati	v.tr. pf.
-28732	obělěti	v.intr. pf.
-28733	oběliti	v.tr. pf.
-16848	obezčestiti	v.tr. pf.
-16850	obezčestiti	v.tr. pf.
-16849	obezčešćeńje	n.
-773	obezglåviti	v.tr. pf.
-1587	obezglåvjati	v.tr. ipf.
-5376	obezhråbriti	v.tr. pf.
-5375	obezhrabrjati	v.tr. ipf.
-19655	obezpokojiti	v.tr. pf.
-5374	obezsiliti	v.tr. pf.
-5373	obezsiljati	v.tr. ipf.
-16854	obezuměti	v.intr. pf.
-17980	obezuměvati	v.intr. ipf.
-3727	obględati	v.tr. ipf.
-3729	obględěti	v.tr. pf.
-28738	obglodati	v.tr. pf.
-9783	obgovarjati	v.tr. ipf.
-9782	obgovoriti	v.tr. pf.
-28740	obgryzati	v.tr. ipf.
-28741	obgryzti	v.tr. pf.
-28743	obhod	m.
-33195	obhod	m.
-23103	obhoditi sę bez	v.refl. ipf.
-17988	obhoditi sę s	v.refl. ipf.
-28745	obhoditi sę	v.refl. ipf.
-5369	obhoditi	v.tr. ipf.
-28746	obhodna dråga	f.
-17990	obhvaćati	v.tr. ipf.
-17992	obhvatiti	v.tr. pf.
-2806	obida	f.
-28749	obiděti	v.tr. pf.
-34071	obiđati	v.tr. ipf.
-28750	obiľje	n.
-35207	obiľno	adv.
-35206	obiľny	adj.
-3476	obimati	v.tr. ipf.
-1005	objasniti	v.tr. pf.
-2023	objasnjati	v.tr. ipf.
-3608	objasnjeńje	n.
-28758	objava	f.
-1006	objaviti sę	v.refl. pf.
-9801	objaviti sę	v.refl. pf.
-9798	objaviti	v.tr. pf.
-17995	objaviti	v.tr. pf.
-17996	objaviti	v.tr. pf.
-17997	objavjańje	n.
-9803	objavjati sę	v.refl. ipf.
-9804	objavjati sę	v.refl. ipf.
-9802	objavjati	v.tr. ipf.
-17998	objavjati	v.tr. ipf.
-17999	objavjati	v.tr. ipf.
-28762	objedati sę	v.refl. ipf.
-9806	objediniti	v.tr. pf.
-9807	objedinjati	v.tr. ipf.
-13222	objedinjeńje	n.sg.
-2811	Objedinjeno Kråljevstvo	n.sg.
-2810	objedinjeno	adv.
-9810	objedinjeny	adj.
-28766	objehati	v.tr. pf.
-3759	objekt	m.
-19920	objektiv	m.
-32934	objektivnosť	f.
-19921	objektivny	adj.
-18000	objem	m.sg.
-28765	objesti sę	v.refl. pf.
-3477	objęti	v.tr. pf.
-5010	objęťje	n.
-23882	objezd	m.
-28774	objezditi	v.tr. pf.
-28776	obježđati	v.tr. ipf.
-19922	obkaljati	v.tr. ipf.
-19923	obkoliti	v.tr. pf.
-28779	obkradati	v.tr. ipf.
-33740	obkrasti	v.tr. pf.
-22532	oblačati	v.tr. ipf.
-28784	oblaček	m.
-28782	oblåčeńje	n.
-22528	oblåčiti	v.tr. pf.
-28783	oblåčny	adj.
-20557	oblagati	v.tr. ipf.
-20559	oblagati	v.tr. ipf.
-28786	oblajati	v.tr. pf.
-34077	oblajivati	v.tr. ipf.
-1125	oblåk	m.
-28788	oblamyvati	v.tr. ipf.
-1570	oblasť	f.
-9820	oblasť	f.
-9822	oblastny	adj.
-23530	oblěčeńje	n.
-23740	oblěčeny	adj.
-28794	obleděněti	v.intr. pf.
-19926	oblegčati	v.tr. ipf.
-28795	oblegčeńje	n.
-19929	oblegčiti	v.tr. pf.
-22524	oblěkati	v.tr. ipf.
-22526	oblěkati	v.tr. ipf.
-22520	oblěkti	v.tr. pf.
-22523	oblěkti	v.tr. pf.
-28801	oblet	m.
-28802	oblětati	v.tr. ipf.
-28803	obletěti	v.tr. pf.
-1880	obličje	n.
-20560	obličje	n.
-28809	oblik	m.
-28810	oblinjati	v.tr. pf.
-3786	obliti	v.tr. pf.
-3785	oblivati	v.tr. ipf.
-18004	oblizati	v.tr. pf.
-18005	oblizyvati	v.tr. ipf.
-10172	obljubjeny	adj.
-28817	oblomiti	v.tr. pf.
-20561	obložiti	v.tr. pf.
-20563	obložiti	v.tr. pf.
-36222	obložka	f.
-28822	oblupiti	v.tr. pf.
-28823	obluščiti	v.tr. pf.
-1881	obly	adj.
-28826	oblysěti	v.intr. pf.
-2800	obman	m.
-4218	obman	m.
-9833	obmannik	m.anim.
-5740	obmanųti	v.tr. pf.
-18009	obmanųti	v.tr. pf.
-9831	obmanyvatelj	m.anim.
-4216	obmanyvati	v.tr. ipf.
-18014	obmanyvati	v.tr. ipf.
-28830	obmazati	v.tr. pf.
-36263	obmazati	v.tr. pf.
-34091	obmazyvati	v.tr. ipf.
-2977	obmeđati	v.tr. ipf.
-18016	obmeđeńje	n.
-3724	obmeđeny	adj.
-2801	obmeđiti	v.tr. pf.
-3585	obměn	m.
-28835	obměniti	v.tr. pf.
-34081	obměnjati	v.tr. ipf.
-5371	obmotati	v.tr. pf.
-28840	obmotka	f.
-5372	obmotyvati	v.tr. ipf.
-20564	obmŕlosť	f.
-20565	obmŕly	adj.
-18020	obmysliti	v.tr. pf.
-18018	obmysljati	v.tr. ipf.
-23737	obmysljeńje	n.
-21373	obnarodovati	v.tr. ipf./pf.
-151	obnavjati	v.tr. ipf.
-34417	obnavjati	v.tr. ipf.
-5321	obnažati sę	v.refl. ipf.
-33746	obnažati	v.tr. ipf.
-28845	obnažiti sę	v.refl. pf.
-5320	obnažiti	v.tr. pf.
-28846	obnesti	v.tr. pf.
-34078	obnesti	v.tr. pf.
-19932	obniziti	v.tr. pf.
-19930	obnižati	v.tr. ipf.
-19931	obnižeńje	n.
-29473	obnjuhati	v.tr. pf.
-34442	obnjuhyvati	v.tr. ipf.
-28849	obnositi	v.tr. ipf.
-28850	obnositi	v.tr. ipf.
-28851	obnova	f.
-241	obnoviti	v.tr. pf.
-29477	obnoviti	v.tr. pf.
-9847	obnovjeńje	n.
-35425	obobćati	v.tr. ipf.
-35428	obobćeńje	n.
-35426	obobćiti	v.tr. pf.
-28853	obod	m.
-242	obogaćati	v.tr. ipf.
-28855	obogatěti	v.intr. pf.
-2217	obogatiti	v.tr. pf.
-14768	obognjeodparnjati	v.tr. ipf.
-14767	obognjeodporniti	v.tr. pf.
-23432	oboj	m.
-28857	obojaky	num.diff.
-18025	obȯjdti sę bez	v.refl. pf.
-18023	obȯjdti sę	v.refl. pf.
-5370	obȯjdti	v.tr. pf.
-16438	oboje	num.coll.
-28859	obora	f.
-9852	oboråvnosť	f.
-9853	oboråvny	adj.
-21375	obȯrvanec	m.anim.
-9855	obosobjeńje	n.
-9854	obosobjenosť	f.
-28866	obȯzrěti sę	v.refl. pf.
-18026	obožańje	n.
-2817	obožati	v.tr. ipf.
-21685	obråbotati	v.tr. pf.
-21377	obråbotyvati	v.tr. ipf.
-28867	obraćańje	n.
-22682	obraćati sę k	v.refl. ipf.
-22674	obraćati sę	v.refl. ipf.
-22676	obraćati sę	v.refl. ipf.
-22678	obraćati sę	v.refl. ipf.
-3206	obraćati	v.tr. ipf.
-22665	obraćati	v.tr. ipf.
-22667	obraćati	v.tr. ipf.
-22670	obraćati	v.tr. ipf.
-34146	obraćati	v.tr. ipf.
-34850	obraćati	v.tr. ipf.
-18027	obråćeńje	n.
-28873	obradovati sę	v.refl. pf.
-28872	obradovati	v.tr. pf.
-3551	obråna	f.
-1672	obråniti	v.tr. pf.
-973	obranjati	v.tr. ipf.
-19933	obrånny mehanizm	m.
-35115	obrånny	adj.
-33067	obrastati něčim	v.intr. ipf.
-28879	obråsti něčim	v.intr. pf.
-2852	obråt	m.
-22684	obråt	m.
-28882	obråt	m.
-34112	obråt	m.
-14770	obråtitelj	m.anim.
-22681	obråtiti sę k	v.refl. pf.
-22675	obråtiti sę	v.refl. pf.
-22677	obråtiti sę	v.refl. pf.
-22679	obråtiti sę	v.refl. pf.
-3209	obråtiti	v.tr. pf.
-22666	obråtiti	v.tr. pf.
-22668	obråtiti	v.tr. pf.
-22671	obråtiti	v.tr. pf.
-22673	obråtiti	v.tr. pf.
-34147	obråtiti	v.tr. pf.
-6187	obråtno	adv.
-18030	obråtny	adj.
-22685	obråtny	adj.
-22686	obråtny	adj.
-962	obraz	m.
-18031	obrazec	m.
-21378	obrazec	m.
-21380	obrazny	adj.
-21384	obrazȯk	m.
-1031	obrazovańje	n.
-21385	obrazovańje	n.
-9872	obrazovany	adj.
-35930	obrazovateljny	adj.
-19934	obrazovity	adj.
-1032	obręd	m.
-2798	obrędny	adj.
-16844	obrěmeniti	v.tr. pf.
-16845	obrěmenjati	v.tr. ipf.
-9878	obrězańje	n.
-9879	obrězati	v.tr. pf.
-34142	obriti sę	v.refl. pf.
-28907	obriti	v.tr. pf.
-28909	obŕnųti sę	v.refl. pf.
-34151	obŕnųti sę	v.refl. pf.
-28908	obŕnųti	v.tr. pf.
-34153	obŕnųti	v.tr. pf.
-34154	obŕnųti	v.tr. pf.
-21387	obrok	m.
-21388	obrųb	m.
-21390	obrųb	m.
-2796	obrųč	m.
-9885	obrųčka	f.
-21392	obrušati sę	v.refl. ipf.
-21393	obrušiti sę	v.refl. pf.
-28919	obrvati	v.tr. pf.
-5263	obrys	m.
-9887	obrysovati	v.tr. ipf.
-28923	obryvati	v.tr. ipf.
-28925	obryvȯk	m.
-28926	obryzgati	v.tr. ipf.
-29585	obsada	f.
-29587	obsaditi	v.tr. pf.
-34553	obsađati	v.tr. ipf.
-28928	obscati	v.tr. pf.
-33477	obscennosť	f.
-33476	obscenny	adj.
-28929	obsęg	m.sg.
-28930	obsęgati	v.tr. ipf.
-28931	obsęgnųti	v.tr. pf.
-29597	obsějati	v.tr. pf.
-28935	obsějivati	v.tr. ipf.
-33383	obsěkati	v.tr. ipf.
-28933	obsěkti	v.tr. pf.
-23247	observacija	f.
-35763	observatorija	f.
-19935	observovati	v.tr. ipf.
-36309	obsesija	f.
-35142	obsęžny	adj.
-18032	obsidian	m.
-4225	obslědovańje	n.
-9891	obslědovatelj	m.anim.
-4224	obslědovati	v.tr. ipf.
-5706	obsluga	f.
-5167	obslugovati	v.tr. ipf.
-5704	obslužiti	v.tr. pf.
-28939	obsȯhnųti	v.intr. pf.
-34123	obsȯhnųti	v.intr. pf.
-34124	obsȯhnųti	v.intr. pf.
-28940	obsrati	v.tr. pf.
-18034	obsrědina	f.
-9895	obstajati	v.intr. ipf.
-9897	obstajati	v.intr. ipf.
-1090	obstanavjati sę	v.refl. ipf.
-34789	obstanavjati	v.tr. ipf.
-2797	obstanoviti sę	v.refl. pf.
-34790	obstanoviti	v.tr. pf.
-21930	obstųpati	v.tr. ipf.
-21931	obstųpiti	v.tr. pf.
-3067	obsvětliti	v.tr. pf.
-1713	obsvětljati	v.tr. ipf.
-28950	obsyhati	v.intr. ipf.
-34125	obsyhati	v.intr. ipf.
-34127	obsyhati	v.intr. ipf.
-9888	obsypati	v.tr. pf.
-16287	obsypyvati	v.tr. ipf.
-32822	obširno	adv.
-32821	obširnosť	f.
-28946	obširny	adj.
-36219	obšiťje	f.
-36218	obšivka	f.
-3133	obtestovati	v.tr. pf.
-16846	obtęžati	v.tr. ipf.
-16847	obtęžiti	v.tr. pf.
-34174	obtirati sę	v.refl. ipf.
-28960	obtirati	v.tr. ipf.
-34173	obtreti sę	v.refl. pf.
-28962	obtreti	v.tr. pf.
-28965	obučati	v.tr. ipf.
-28966	obučeńje	n.
-28967	obučiti	v.tr. pf.
-28969	obuh	m.
-19936	obustrånny	adj.
-28970	obuti sę	v.refl. pf.
-22760	obuv	f.
-28972	obuvati sę	v.refl. ipf.
-22761	obuvka	f.
-32087	obuvnik	m.anim.
-28974	obuzdati	v.tr. pf.
-33815	obuzdyvati	v.tr. ipf.
-4488	obvadnjati	v.tr. ipf.
-16288	obvažati	v.tr. ipf.
-14771	obvažiti	v.tr. pf.
-28980	obvesti	v.tr. pf.
-22225	obvěstiti	v.tr. pf.
-22224	obvěšćati	v.tr. ipf.
-3760	obvęzati	v.tr. pf.
-28989	obvęzati	v.tr. ipf.
-36610	obvęzno	adv.
-35885	obvęzny	adj.
-95	obvęzȯk	m.
-3757	obvęzyvati	v.tr. ipf.
-34191	obvęzyvati	v.tr. ipf.
-762	obviniti za	v.tr. pf.
-16291	obvinjati za	v.tr. ipf.
-4504	obvinjeńje	n.
-28998	obviti	v.tr. pf.
-28999	obvivati	v.tr. ipf.
-22250	obvod	m.
-29000	obvoditi	v.tr. ipf.
-4489	obvodniti	v.tr. pf.
-2930	obyčaj	m.
-18036	obyčajno	adv.
-18040	obyčajny	adj.
-22165	obyčajny	adj.
-3341	obyčno	adv.
-2019	obyčny	adj.
-3199	obydva	num.card.
-4069	obyvatelj	m.anim.
-9794	obyvatelj	m.anim.
-18043	obyvati	v.tr. ipf.
-29007	obzirati sę	v.refl. ipf.
-22894	obzor	m.
-29008	obzor	m.
-29009	obžegti	v.tr. pf.
-22965	obžerstvo	n.sg.
-29011	obžigati	v.tr. ipf.
-29015	obžirati sę	v.refl. ipf.
-32650	obžrati sę	v.refl. pf.
-18049	ocelj	f.sg.
-18050	oceljevy	adj.
-14	ocěniti	v.tr. pf.
-144	ocěnjati	v.tr. ipf.
-5147	ocěnjeńje	n.
-29019	ocěnka	f.
-1035	ocet	m.
-9920	očariti	v.pf.
-9921	očarovany	adj.
-21395	očarovateljny	adj.
-9923	očarovati	v.tr. pf.
-18045	očarovati	v.pf.
-16893	očarovyvati	v.tr. ipf.
-18047	očarovyvati	v.ipf.
-35230	očekyvańje	n.
-36884	očekyvany	adj.
-1233	očekyvati	v.tr. ipf.
-20920	očevidec	m.anim.
-3960	očevidno	adv.
-3961	očevidny	adj.
-4876	oči	f.pl.
-29028	očistitelj	m.anim.
-29029	očistiti	v.tr. pf.
-29030	očišćati	v.tr. ipf.
-29031	očišćeńje	n.
-29033	očny	adj.
-20566	očrkati	v.tr. ipf.
-20567	očrknųti	v.tr. pf.
-29035	očrniti	v.tr. pf.
-32657	očrnjati	v.tr. ipf.
-23690	od davna	adv.
-18054	od nyně	adv.
-3638	od počętka	adv.
-18058	od sejčas	adv.
-3060	od stråny	prep.
-613	od	prep.
-1234	od	prep.
-34139	oda	f.
-5649	odbačati vlěvo	v.intr. ipf.
-36711	odbačati vpravo/vdesno	v.intr. ipf.
-29040	odběgati	v.intr. ipf.
-29042	odběgti	v.intr. pf.
-19937	odbirati	v.tr. ipf.
-29045	odbirati	v.tr. ipf.
-29050	odbiti sę	v.refl. pf.
-34100	odbiti sę	v.refl. pf.
-20572	odbiti	v.tr. pf.
-20573	odbiti	v.tr. pf.
-34101	odbiti	v.tr. pf.
-34103	odbivati sę	v.refl. ipf.
-34104	odbivati sę	v.refl. ipf.
-20568	odbivati	v.tr. ipf.
-20570	odbivati	v.tr. ipf.
-34102	odbivati	v.tr. ipf.
-29052	odblěsk	m.
-5650	odbočiti vlěvo	v.intr. pf.
-36712	odbočiti vpravo/vdesno	v.intr. pf.
-29055	odbor	m.
-19938	odbrati	v.tr. pf.
-32534	odbrati	v.tr. pf.
-16741	odbyti sę	v.refl. pf.
-16740	odbyvati sę	v.refl. ipf.
-34209	odčajano	adv.
-29057	odčajany	adj.
-29058	odčajati sę	v.refl. pf.
-34215	odčajati	v.tr. pf.
-34224	odčajivati sę	v.refl. ipf.
-34210	odčajivati	v.tr. ipf.
-9938	odčiniti	v.tr. pf.
-18060	odčinjati	v.tr. ipf.
-6284	odčitati	v.tr. pf.
-6283	odčityvati	v.tr. ipf.
-6211	odčuđati	v.tr. ipf.
-6212	odčuđiti	v.tr. pf.
-19939	odčuvati	v.tr. ipf.
-34237	oddaliti sę	v.refl. pf.
-29065	oddaliti	v.tr. pf.
-34236	oddaljati sę	v.refl. ipf.
-29066	oddaljati	v.tr. ipf.
-29063	oddaljeńje	n.
-16989	oddaljeny	adj.
-29067	oddańje	n.
-35533	oddanosť	f.
-18062	oddany	adj.
-5379	oddati	v.tr. pf.
-5378	oddavati	v.tr. ipf.
-5187	odděl	m.
-14820	odděl	m.
-2951	odděliti	v.tr. pf.
-3016	odděljati	v.tr. ipf.
-29072	odděljeńje	n.
-907	odděljeny	adj.
-3991	odděľno	adv.
-3990	odděľny	adj.
-34253	oddirati	v.tr. ipf.
-5604	oddȯhnųti	v.intr. pf.
-29074	oddreti	v.tr. pf.
-14775	oddyh	m.
-4072	oddyhati	v.intr. ipf.
-16837	oděđa	f.
-16840	oděti	v.tr. pf.
-23742	oděty	adj.
-16838	oděvati	v.tr. ipf.
-18065	oděž	f.
-5971	odgadati	v.tr. pf.
-5970	odgadyvati	v.tr. ipf.
-16831	odglås	m.
-29114	odgnųti	v.tr. pf.
-35938	odgovarjajųći	adj.
-5382	odgovarjati	v.tr. ipf.
-34094	odgovarjati	v.tr. ipf.
-3240	odgovor	m.
-3242	odgovoriti	v.tr. pf.
-29087	odgovoriti	v.tr. pf.
-9953	odgovorno	adv.
-9954	odgovornosť	f.
-9955	odgovorny	adj.
-29089	odgrebati	v.tr. ipf.
-29090	odgrebti	v.tr. pf.
-5648	odgryzati	v.tr. ipf.
-5647	odgryzti	v.tr. pf.
-34261	odgybati	v.tr. ipf.
-23743	odhod	m.
-2968	odhoditi	v.intr. ipf.
-14777	odhođeńje	n.
-15415	odidti od	v.tr. pf.
-19941	odigrati sę	v.refl. pf.
-19943	odigryvati roljų	v.ipf.
-19944	odigryvati sę	v.refl. ipf.
-33739	odimańje	n.
-18066	odimati	v.tr. ipf.
-18067	odimati	v.tr. ipf.
-33737	odimati	v.tr. ipf.
-8	odinųd	adv.
-18068	odjaviti sę	v.refl. pf.
-18070	odjavjati sę	v.refl. ipf.
-35979	odjebi sę!	intj.
-5486	odjehati	v.intr. pf.
-18072	odjęti	v.tr. pf.
-18073	odjęti	v.tr. pf.
-33738	odjęti	v.tr. pf.
-5498	odjezd	m.
-5487	odježđati	v.intr. ipf.
-9964	odkazańje	n.
-4626	odkazati sę	v.refl. pf.
-19946	odkazati	v.tr. pf.
-4629	odkazyvati sę	v.refl. ipf.
-19948	odkazyvati	v.tr. ipf.
-2225	odkladati	v.tr. ipf.
-5568	odkladati	v.tr. ipf.
-19954	odklanjati	v.tr. ipf.
-36870	odklanjati	v.tr. ipf.
-34255	odklejati sę	v.refl. ipf.
-34254	odklejati	v.tr. ipf.
-34256	odklejiti sę	v.refl. pf.
-29108	odklejiti	v.tr. pf.
-23128	odključati sę	v.refl. ipf.
-23130	odključati	v.tr. ipf.
-23129	odključiti sę	v.refl. pf.
-23131	odključiti	v.tr. pf.
-19958	odkloniti	v.tr. pf.
-36871	odkloniti	v.tr. pf.
-18075	odklonjeńje	n.
-36872	odklonjeńje	n.
-14781	odkȯgda, odkȯgdy	adv.
-19529	odkȯgda, odkȯgdy	conj.
-1017	odkryti	v.tr. pf.
-3559	odkryťje	n.
-19963	odkrytka	f.
-35473	odkryvańje	n.
-9979	odkryvatelj	m.anim.
-2028	odkryvati	v.tr. ipf.
-750	odkųd	adv.
-1166	odkųd-nebųď	adv.
-19617	odkųdykoli	adv.
-14782	odkųdy-libo	adv.
-4703	odkųsiti	v.tr. pf.
-4702	odkųšati	v.tr. ipf.
-1004	odkydati	v.tr. ipf.
-132	odkydnųti	v.tr. pf.
-5587	odlamyvati	v.tr. ipf.
-34258	odlěpiti sę	v.refl. pf.
-29110	odlěpiti	v.tr. pf.
-34259	odlěpjati sę	v.refl. ipf.
-34257	odlěpjati	v.tr. ipf.
-2978	odlětati	v.intr. ipf.
-2025	odletěti	v.intr. pf.
-19965	odličati	v.tr. ipf.
-19966	odličiti	v.tr. pf.
-10377	odlično	adv.
-10378	odličny	adj.
-36920	odliti	v.tr. pf.
-20574	odliv	m.
-36919	odlivati	v.tr. ipf.
-18076	odlogovati sę	v.refl. ipf./pf.
-2026	odlomiti	v.tr. pf.
-5741	odlomȯk	m.
-2984	odložiti	v.tr. pf.
-5569	odložiti	v.tr. pf.
-18080	odmesti	v.tr. pf.
-18081	odmětati	v.tr. ipf.
-19973	odmetati	v.tr. ipf.
-19974	odmetati	v.tr. ipf.
-19971	odmeteńje	n.
-19977	odmetnųti	v.tr. pf.
-19978	odmetnųti	v.tr. pf.
-1255	odmstiti	v.tr. pf.
-1728	odněkųd	adv.
-23343	odnesti sę k	v.refl. pf.
-4672	odnesti	v.tr. pf.
-10000	odnesti	v.tr. pf.
-1222	odnikųd	adv.
-1746	odnositeljno	adv.
-16990	odnositeljny zaimennik	m.
-35263	odnositeljny	adj.
-20577	odnositi sę k	v.refl. ipf.
-4671	odnositi	v.tr. ipf.
-10004	odnositi	v.tr. ipf.
-4107	odnosno	prep.
-10007	odnosno	adv.
-1992	odnošeńje	n.
-10012	odobriti	v.tr. pf.
-10013	odobrjati	v.tr. ipf.
-10011	odobrjeńje	n.sg.
-181	odȯjdti	v.intr. pf.
-29115	odolěti	v.tr. pf.
-34272	odolěvati	v.tr. ipf.
-35850	odomašniti	v.tr. pf.
-35849	odomašnjati	v.tr. ipf.
-23536	odomašnjeńje	n.
-18083	odomašnjeny	adj.
-19545	odonųd	adv.
-21397	odosobniti	v.tr. pf.
-21396	odosobnjati	v.tr. ipf.
-19544	odovųd	adv.
-5662	odpadati	v.intr. ipf.
-20921	odpadky	m.pl.
-20924	odpadnik	m.anim.
-5657	odpady	m.pl.
-5663	odpasti	v.intr. pf.
-23610	odpečętati	v.tr. pf.
-23613	odpečętȯk	m.
-32536	odpečętyvati	v.tr. pf.
-29124	odpęti	v.tr. pf.
-32921	odphati	v.tr. pf.
-32919	odpihati	v.tr. ipf.
-29128	odpiliti	v.tr. pf.
-34280	odpiljati	v.tr. ipf.
-29129	odpinati	v.tr. ipf.
-10016	odpirati sę	v.refl. ipf.
-34298	odpis	m.
-29136	odpisati	v.tr. pf.
-29137	odpisati	v.tr. pf.
-34295	odpisyvati	v.tr. ipf.
-34296	odpisyvati	v.tr. ipf.
-10020	odpiši vsim	phrase
-4480	odplaćati	v.tr. ipf.
-4481	odplaćati	v.tr. ipf.
-34305	odplaćati	v.tr. ipf.
-500	odplata	f.
-29143	odplata	f.
-29144	odplata	f.
-4479	odplatiti	v.tr. pf.
-4482	odplatiti	v.tr. pf.
-29146	odplatiti	v.tr. pf.
-29148	odplesti	v.tr. pf.
-29147	odpletati	v.tr. ipf.
-34909	odpluti	v.intr. pf.
-19980	odplyvati	v.intr. ipf.
-36727	odplyvati	v.intr. ipf.
-19981	odplyvti	v.intr. pf.
-5605	odpočęti	v.intr. pf.
-3296	odpočinȯk	m.sg.
-3295	odpočivati	v.intr. ipf.
-19982	odpor	m.
-10032	odpornosť	f.
-4235	odporny	adj.
-2390	odpověď	f.
-10035	odpovědaľno	adv.
-10042	odpovědaľnosť	f.
-320	odpovědaľny	adj.
-2189	odpovědati	v.tr. ipf.
-3161	odpovědati	v.tr. ipf.
-2972	odpověděti	v.tr. pf.
-6282	odpovědnik	m.
-34106	odprašati sę	v.refl. ipf.
-34107	odprašati sę	v.refl. ipf.
-16293	odprašati	v.tr. ipf.
-10045	odpråšiti	v.tr. pf.
-20926	odprava	f.
-29167	odpraviti sę	v.refl. pf.
-20929	odpraviti	v.tr. pf.
-20931	odpraviti	v.tr. pf.
-34348	odpravjati sę	v.refl. ipf.
-20933	odpravjati	v.tr. ipf.
-20934	odpravjati	v.tr. ipf.
-29169	odpravjeńje	n.
-29170	odpravny punkt	m.
-10017	odprěti sę	v.refl. pf.
-29181	odprositi sę	v.refl. pf.
-34105	odprositi sę	v.refl. pf.
-20935	odpųditi	v.tr. pf.
-5054	odpusk	m.
-34299	odpust	m.
-18089	odpustiti	v.tr. pf.
-29187	odpustiti	v.tr. pf.
-18087	odpušćati	v.tr. ipf.
-29191	odpušćati	v.tr. ipf.
-20937	odpušćeńje	n.
-36889	Odra	f.sg.
-21398	odračati	v.tr. ipf.
-29196	odraditi	v.tr. pf.
-34349	odrađati	v.tr. ipf.
-29198	odraz	m.
-29200	odraziti sę	v.refl. pf.
-5558	odraziti	v.tr. pf.
-21401	odraziti	v.tr. pf.
-13479	odråzlika	f.
-29202	odražati sę	v.refl. ipf.
-5557	odražati	v.tr. ipf.
-21400	odražati	v.tr. ipf.
-29203	odrěčeńje	n.
-35644	odrěčeńje	n.
-21402	odrěčny	adj.
-22356	odręd	m.
-21404	odrěkati sę	v.refl. ipf.
-21406	odrěkati	v.tr. ipf.
-21410	odrěkti sę	v.refl. pf.
-21408	odrěkti	v.tr. pf.
-29213	odrěz, odrězȯk	m.
-4439	odrězati	v.tr. pf.
-5556	odrězyvati	v.tr. ipf.
-21415	odročiti	v.tr. pf.
-18091	odroda	f.
-18093	odrųbati	v.tr. pf.
-18094	odrųbyvati	v.tr. ipf.
-29223	odrvati	v.tr. pf.
-29226	odryti	v.tr. pf.
-29227	odryvati	v.tr. ipf.
-34361	odryvati	v.tr. ipf.
-29233	odsěděti	v.tr. pf.
-34369	odsěđati	v.tr. ipf.
-29239	odsěkati	v.tr. ipf.
-29240	odsěkti	v.tr. pf.
-5547	odskakati	v.intr. ipf.
-3708	odskočiti	v.intr. pf.
-29248	odslanjati	v.tr. ipf.
-29116	odslati	v.tr. pf.
-34374	odsloniti	v.tr. pf.
-29249	odslužiti	v.tr. pf.
-29250	odsȯhnųti	v.intr. pf.
-3714	odstati	v.intr. pf.
-10054	odstava	f.
-3713	odstavati	v.intr. ipf.
-19983	odstaviti	v.tr. pf.
-19985	odstavjati	v.tr. ipf.
-10058	odstråniti	v.tr. pf.
-21878	odstråniti	v.tr. pf.
-21880	odstråniti	v.tr. pf.
-21882	odstråniti	v.tr. pf.
-21874	odstranjati	v.tr. ipf.
-21876	odstranjati	v.tr. ipf.
-21877	odstranjati	v.tr. ipf.
-21881	odstranjati	v.tr. ipf.
-4371	odstrašati	v.tr. ipf.
-4372	odstrašiti	v.tr. pf.
-5110	odstrěliti	v.tr. pf.
-29253	odstrigati	v.tr. ipf.
-29255	odstrigti	v.tr. pf.
-21948	odstųp	m.
-21949	odstųp	m.
-21950	odstųp	m.
-14787	odstųpańje	n.
-29257	odstųpańje	n.
-4627	odstųpati	v.intr. ipf.
-5074	odstųpati	v.intr. ipf.
-10063	odstųpati	v.intr. ipf.
-21934	odstųpati	v.intr. ipf.
-21937	odstųpati	v.tr. ipf.
-15417	odstųpiti od	v.tr. pf.
-4628	odstųpiti	v.intr. pf.
-5075	odstųpiti	v.intr. pf.
-21941	odstųpiti	v.intr. pf.
-21942	odstųpiti	v.intr. pf.
-21945	odstųpiti	v.tr. pf.
-10065	odstųpjeńje	n.
-21951	odstųpnik	m.anim.
-36228	odstųpnik	m.anim.
-19541	odśųd	adv.
-20938	odsunųti	v.tr. pf.
-36665	odsųtnosť	f.sg.
-33492	odsųtny	adj.
-10066	odsųtstvo	n.sg.
-36666	odsųtstvovati	v.intr. ipf.
-20940	odsuvati	v.tr. ipf.
-34375	odsyhati	v.intr. ipf.
-29271	odsylati	v.tr. pf.
-29264	odščepiti	v.tr. pf.
-29265	odščepjati	v.tr. ipf.
-29266	odščepȯk	m.
-4304	odšlupati	v.tr. pf.
-5552	odšlupyvati	v.tr. ipf.
-29274	odtajati	v.tr. pf.
-29275	odtęgati	v.tr. ipf.
-29277	odtęgnųti	v.tr. pf.
-29278	odtěkati	v.intr. ipf.
-34382	odtěkati	v.intr. ipf.
-29279	odtekti	v.intr. pf.
-34383	odtekti	v.intr. pf.
-29280	odtěnȯk	m.
-34384	odtirati	v.tr. ipf.
-3756	odtisk pŕsta	m.
-22095	odtisk	m.
-22096	odtisk	m.
-22097	odtisk	m.
-23611	odtiskati	v.tr. ipf.
-23612	odtisknųti	v.tr. pf.
-29282	odtreti	v.tr. pf.
-54	odtųd	adv.
-16295	odučati	v.tr. ipf.
-10071	odučeny	adj.
-10072	odučiti	v.tr. pf.
-29284	odurěti	v.intr. pf.
-10074	odvadnjati	v.tr. ipf.
-1423	odvaga	f.
-3420	odvažny	adj.
-4674	odvesti	v.tr. pf.
-10085	odvět	m.
-36387	odvęzati	v.tr. pf.
-5509	odvezti	v.tr. pf.
-14788	odvezti	v.tr. pf.
-36386	odvęzyvati	v.tr. ipf.
-5380	odvinųti	v.tr. pf.
-5381	odvivati	v.tr. ipf.
-22538	odvlåčivati	v.tr. ipf.
-23884	odvlåčivati	v.tr. ipf.
-23886	odvlěčeńje	n.
-23885	odvlěčeny	adj.
-22536	odvlěkati	v.tr. ipf.
-36873	odvlěkati	v.tr. ipf.
-22537	odvlěkti	v.tr. pf.
-23883	odvlěkti	v.tr. pf.
-4673	odvoditi	v.tr. ipf.
-10093	odvodniti	v.tr. pf.
-5508	odvoziti	v.tr. ipf.
-14789	odvoziti	v.tr. ipf.
-10098	odvožeńje	n.
-1042	odvraćati	v.tr. ipf.
-4688	odvraćati	v.tr. ipf.
-22691	odvraćati	v.tr. ipf.
-4689	odvråćeńje	n.
-1121	odvråtiti	v.tr. pf.
-4687	odvråtiti	v.tr. pf.
-22692	odvråtiti	v.tr. pf.
-10107	odvråtlivy	adj.
-4679	odvråtno	adv.
-10110	odvråtny	adj.
-19987	odvŕgańje	n.
-1175	odvŕgati	v.tr. ipf.
-797	odvŕgnųti	v.tr. pf.
-32868	odvŕtka	f.
-1122	odvśųd	adv.
-36321	odvykati sę	v.refl. ipf.
-36320	odvykati	v.tr. ipf.
-36323	odvyknųti sę	v.refl. pf.
-36322	odvyknųti	v.tr. pf.
-14790	odzavisiti	v.tr. pf.
-15420	odzavisny	adj.
-22865	odznaka	f.
-29809	odzvati sę	v.refl. pf.
-32459	odzvati	v.tr. pf.
-22915	odzyv	m.
-29822	odzyvati sę	v.refl. ipf.
-32460	odzyvati	v.tr. ipf.
-19505	oficer	m.anim.
-16991	oficiaľno	adv.
-291	oficiaľny	adj.
-3761	ofis	m.
-29291	ogarȯk	m.
-29292	ogladiti	v.tr. pf.
-173	oglåsiti	v.tr. pf.
-1481	oglašati	v.tr. ipf.
-5078	oglåšeńje	n.
-29296	oglåvnik	m.
-18099	oględ	m.
-3379	oględati	v.tr. ipf.
-5551	oględěti	v.tr. pf.
-29304	ogluhnųti, oglušeti	v.intr. pf.
-29305	oglupěti	v.intr. pf.
-29307	oglušiti	v.tr. pf.
-18101	ognišče	n.
-29308	ognjeny	adj.
-4236	ognjeodporny	adj.
-29314	ognojiti	v.tr. pf.
-34143	ogoliti sę	v.refl. pf.
-29316	ogoliti	v.tr. pf.
-29317	ogoliti	v.tr. pf.
-18103	ogon	m.
-826	ogȯnj	m.
-18104	ogorčati	v.tr. ipf.
-18106	ogorčiti	v.tr. pf.
-34395	ogovarjańje	n.
-34393	ogovarjati	v.tr. ipf.
-34394	ogovarjati	v.tr. ipf.
-18108	ogovor	m.
-29318	ogovoriti	v.tr. pf.
-34396	ogovoriti	v.tr. pf.
-23401	ograbiti	v.tr. pf.
-23400	ograbjati	v.tr. ipf.
-3613	ogråda	f.
-18112	ogråditi	v.tr. pf.
-18109	ograđati	v.tr. ipf.
-29328	ogråđeńje	n.
-16297	ograničati	v.tr. ipf.
-10129	ograničeńje	n.
-19988	ograničeny	adj.
-10131	ograničiti	v.tr. pf.
-4329	ogražati	v.tr. ipf.
-29331	ogrěti	v.tr. pf.
-29332	ogrěvati	v.tr. ipf.
-18113	ogrlica	f.
-1048	ogromny	adj.
-14794	ogromny	adj.
-4328	ogroziti	v.tr. pf.
-10138	ogrožeńje	n.
-10139	ogroženy	adj.
-29340	ogurȯk	m.
-29341	ohati	v.intr. ipf.
-29344	ohlåděti	v.intr. pf.
-29342	ohlåditi	v.tr. pf.
-29345	ohlađati	v.tr. ipf.
-29346	ohlåđeńje	n.sg.
-3552	ohota	f.
-18114	ohotnik	m.anim.
-3865	ohotno	adv.
-10142	ohotnosť	f.
-3864	ohotny	adj.
-2118	ohråna	f.
-1326	ohråniti	v.tr. pf.
-1563	ohranjati	v.tr. ipf.
-29353	ohrånny	adj.
-29354	ohroměti	v.intr. pf.
-29356	oj!	intj.
-29357	oje	n.
-29361	okameněti	v.intr. pf.
-29362	okameněti	v.intr. pf.
-5362	okameniti	v.tr. pf.
-5364	okameniti	v.tr. pf.
-5361	okamenjati	v.tr. ipf.
-5363	okamenjati	v.tr. ipf.
-32994	okarina	f.
-10149	okazalo sę	phrase
-1457	okazati sę	v.refl. pf.
-19990	okazati	v.tr. pf.
-3396	okazija	f.
-29365	okazyvaje sę	phrase
-1612	okazyvati sę	v.refl. ipf.
-19991	okazyvati	v.tr. ipf.
-5261	okean	m.
-4896	Okeanija	f.sg.
-29368	oklevetati	v.tr. pf.
-1989	okno	n.
-1	oko	n.
-19994	okolice	f.pl.
-29373	okoličny	adj.
-32327	okolina	f.
-18117	okoľna priroda	f.
-3502	okoľnosť	f.
-5797	okoľny	adj.
-2117	okolo	prep.
-19995	okolo	prep.
-36654	okolorovati	v.tr. pf.
-36328	okȯnnica	f.
-29380	okȯnny	adj.
-10159	okop	m.
-29385	okotiti sę	v.refl. pf.
-29386	okovany	adj.
-29387	okovati	v.tr. pf.
-18119	okovy	m.pl.
-29391	okrajina	f.
-34421	okrajina	f.
-29392	okrajny	adj.
-29398	okrěpnųti	v.intr. pf.
-5538	okrestiti	v.tr. pf.
-29403	okropiti	v.tr. pf.
-29404	okropjati	v.tr. ipf.
-19997	okrųg	m.
-5366	okrųgliti	v.tr. pf.
-5365	okrųgljati	v.tr. ipf.
-29410	okrųglosť	f.
-29411	okrųgly	adj.
-16806	okrutnosť	f.
-16805	okrutny	adj.
-234	okrųžati	v.tr. ipf.
-2803	okrųžiti	v.tr. pf.
-29416	okrųžna dråga	f.
-146	oksid	m.
-36834	oktava	f.
-1988	oktobr	m.sg.
-35423	okuljary	m.pl.
-29422	okunj	m.anim.
-10168	okupacija	f.
-10169	okupant	m.anim.
-2111	okupovati	v.tr. ipf.
-1497	olej	m.
-36077	olejna rěpka	f.
-16788	oligarh	m.anim.
-16789	oligarhija	f.
-18121	olimpijske igry	f.pl.
-35021	olimpijsky	adj.
-35006	olivka	f.
-684	oljha	f.
-29432	olověny	adj.
-21417	olovka	f.
-10173	olovny	adj.
-10	olovo	n.sg.
-29434	oltaŕ	m.
-4625	omal	adv.
-18123	omam	m.
-18125	omamiti	v.tr. pf.
-18130	omamnik	m.anim.
-29435	oman	m.
-31814	omar	m.anim.
-29436	omastiti	v.tr. pf.
-29440	omesti	v.tr. pf.
-29439	omětati	v.tr. ipf.
-5893	omiljeny	adj.
-29441	omlåděti	v.intr. pf.
-29442	omlåditi	v.tr. pf.
-27642	omlađati	v.tr. ipf.
-34436	omlet	m.
-29446	omlěti	v.intr. pf.
-34437	omlěvati	v.intr. ipf.
-29452	omŕtvěti	v.intr. pf.
-4686	omŕziti	v.tr. pf.
-10178	omŕzlivy	adj.
-10179	omŕzno	adv.
-10180	omŕzny	adj.
-19998	omŕžajųći	adj.
-5608	omŕžati	v.tr. ipf.
-4685	omŕžeńje	n.
-3404	omųženy	adj.
-3403	omųžiti sę	v.refl. pf.
-29456	omųžiti	v.tr. pf.
-2150	on	pron.pers.
-792	ona	pron.pers.
-10202	onako	adv.
-19580	onaky	adj.
-19565	onamo	adv.
-32515	ondatra	f.
-19533	onde	adv.
-35621	one	pron.pers.
-32831	oněměti	v.intr. pf.
-21419	onesměliti	v.tr. pf.
-21418	onesměljati	v.tr. ipf.
-73	oni	pron.pers.
-35615	onlajn, on-lajn	adv.
-2821	ono	pron.pers.
-16883	onȯgda, onȯgdy	adv.
-16885	onȯgda, onȯgdy	adv.
-34941	onȯgdašnji, onȯgdašny	adj.
-19600	onoj	pron.dem.
-19583	onoliko	adv.
-19591	onoliky	adj.
-36291	onomatopeja	f.
-29478	onuća	f.
-19548	onųdy	adv.
-3062	opačny	adj.
-29481	opadati	v.intr. ipf.
-36006	opakovańje	n.
-36004	opakovati	v.tr. pf.
-36007	opakovka	f.
-36005	opakovyvati	v.tr. ipf.
-29484	opaliti	v.tr. pf.
-29485	opaljati	v.tr. ipf.
-4136	opalȯk	m.
-29486	opariti	v.tr. pf.
-34177	oparjati	v.tr. ipf.
-14800	opasna burja	f.
-10218	opasno prědprijęťje	n.
-10217	opasno	adv.
-4682	opasnosť	f.
-4681	opasny	adj.
-29482	opasti	v.intr. pf.
-34076	opat	m.anim.
-35012	opatka	f.
-34075	opatstvo	n.
-18132	opcija	f.
-35166	opcionaľny	adj.
-3302	opeka	f.
-3301	opekati	v.tr. ipf.
-36267	opeklina	f.
-10223	opekun	m.anim.
-18133	opekun	m.anim.
-20942	opekun	m.anim.
-18134	opekunstvo	n.sg.
-20943	opekunstvo	n.sg.
-29495	openjka	f.
-3	opera	f.
-18135	operacija	f.
-32736	opereta	f.
-29498	operiti sę	v.refl. pf.
-34508	operjati sę	v.refl. ipf.
-29497	operjeńje	n.
-685	opęť	adv.
-36055	opica	f.
-23200	opij	m.sg.
-20944	opirati sę	v.refl. ipf.
-32540	opirati sę	v.refl. ipf.
-20000	opis	m.
-35306	opisateljny	adj.
-2	opisati	v.tr. pf.
-686	opisyvati	v.tr. ipf.
-29511	opiti sę	v.refl. pf.
-29510	opiti	v.tr. pf.
-32713	opivati sę	v.refl. ipf.
-32712	opivati	v.tr. ipf.
-3766	oplačeny	adj.
-10229	oplakati	v.tr. pf.
-10230	oplakyvańje	n.sg.
-10231	oplakyvati	v.tr. ipf.
-29519	oplěti	v.tr. pf.
-35122	opljunųti	v.tr. pf.
-29521	opljuvati	v.tr. ipf.
-18146	oploditi	v.tr. pf.
-18139	oplođati	v.tr. ipf.
-18141	oplođeńje	n.
-18143	oplođeny	adj.
-29525	opluti	v.tr. pf.
-34310	oplyvati	v.tr. ipf.
-20947	opora	f.
-20001	oporędčati	v.tr. ipf.
-20002	oporędčeny	adj.
-20003	oporędčiti	v.tr. pf.
-29531	oporny	adj.
-29532	opozdniti sę	v.refl. pf.
-34518	opozdniti	v.tr. pf.
-34517	opozdnjati sę	v.refl. ipf.
-34519	opozdnjati	v.tr. ipf.
-2820	opozdnjeńje	n.
-355	opozicija	f.
-10233	opoznati	v.tr. pf.
-10234	opoznavati	v.tr. ipf.
-1559	oprašćati	v.tr. ipf.
-29536	oprava	f.
-29537	opravdańje	n.
-32538	opravdańje	n.
-10235	opravdati	v.tr. pf.
-29538	opravdati	v.tr. pf.
-10236	opravdyvati	v.tr. ipf.
-32537	opravdyvati	v.tr. ipf.
-20948	opraviti	v.tr. pf.
-20951	opraviti	v.tr. pf.
-20953	opravjati	v.tr. ipf.
-20957	opravjati	v.tr. ipf.
-35415	opravniti	v.tr. pf.
-35416	opravnjati	v.tr. ipf.
-35414	opravnjeny	adj.
-34532	opråzdniti	v.tr. pf.
-34536	opråzdnjati	v.tr. ipf.
-29544	oprěděliti	v.tr. pf.
-32606	oprěděljati	v.tr. ipf.
-10237	oprěděljeno	adv.
-10238	oprěděljeny	adj.
-20958	oprěti sę	v.refl. pf.
-29547	oprěti sę	v.refl. pf.
-10239	oprętno	adv.
-10240	oprętnosť	f.
-10241	oprętny	adj.
-2132	oprostiti	v.tr. pf.
-20004	oprošćeńje	n.
-13334	oprošćeny	adj.
-22578	oprovŕgati	v.tr. ipf.
-22579	oprovŕgnųti	v.tr. pf.
-20582	optika	f.
-35640	optimaľny	adj.
-36352	optimizovati	v.tr. ipf./pf.
-794	opublikovati	v.tr. pf.
-10244	opuhati	v.intr. ipf.
-10243	opuhly	adj.
-10245	opuhneny	adj.
-16299	opuhnųti	v.intr. pf.
-2909	opustašati	v.tr. ipf.
-29554	opustěti	v.intr. pf.
-10246	opustiti	v.tr. pf.
-20966	opustiti	v.tr. pf.
-20967	opustiti	v.tr. pf.
-14807	opustošeńje	n.
-1546	opustošiti	v.tr. pf.
-10250	opušćati	v.tr. ipf.
-20960	opušćati	v.tr. ipf.
-20962	opušćati	v.tr. ipf.
-9758	opušćeńje	n.
-10249	opušćeny	adj.
-23154	opyliti	v.tr. pf.
-23153	opyljati	v.tr. ipf.
-23155	opyljeńje	n.
-20969	opyt	m.
-23308	opyt	m.
-29559	orač	m.anim.
-35895	orakul	m.anim.
-34426	orangutan	m.anim.
-29561	oranica	f.
-29562	orańje	n.
-32348	oranžerija	f.
-539	oranževy	adj.
-34547	orašati	v.tr. ipf.
-34548	orašati	v.tr. ipf.
-34549	orašati	v.tr. ipf.
-34550	orašati	v.tr. ipf.
-34551	orašati	v.tr. ipf.
-22890	orati	v.ipf.
-36774	orbita	f.
-35969	orden	m.
-36015	orden	m.
-1086	orěh	m.
-29566	orěhovka	f.
-5982	orěhovo maslo	n.
-29567	orěhovy	adj.
-2398	orel	m.anim.
-36768	oreol	m.
-34788	orěšarka	f.
-20005	organ	m.
-36165	organ	m.
-36166	organ	m.
-20583	organičny	adj.
-6343	Organizacija Sěveroatlantičskogo Dogovora	f.sg.
-1123	Organizacija Sjedinjenyh Narodov	f.sg.
-1064	organizacija	f.
-330	organizator	m.anim.
-23602	organizm	m.
-4977	organizovati	v.tr. ipf./pf.
-32595	orgija	f.
-1124	orientacija	f.
-3801	orientovati sę	v.refl. ipf.
-31759	origami	n.indecl.
-16036	originaľno	adv.
-16037	originaľnosť	f.
-1956	originaľny	adj.
-33797	oriti	v.tr. ipf.
-23448	orkestr	m.
-29571	orlę	n.
-29572	orľji	adj.
-35475	ornament	m.
-20006	ornitologičny	adj.
-20007	ornitologija	f.sg.
-29576	orny	adj.
-29577	orositi	v.tr. pf.
-34543	orositi	v.tr. pf.
-34544	orositi	v.tr. pf.
-34545	orositi	v.tr. pf.
-34546	orositi	v.tr. pf.
-4394	ortografičny	adj.
-4393	ortografija	f.
-2278	orųďje	n.
-29579	orųďje	n.
-3434	orųdovańje	n.
-3588	orųdovańje	n.
-10263	orųdovany	adj.
-10264	orųdovati	v.tr. ipf.
-10265	orųdovati	v.tr. ipf.
-10268	orųžeńje	n.
-29580	orųžiti	v.tr. ipf.
-2816	orųžje	n.sg.
-10269	orųžjenosec	m.anim.
-29582	orųžny	adj.
-2815	oś	f.
-2369	osa	f.
-2967	osaditi sę	v.refl. pf.
-29588	osaditi	v.tr. pf.
-21420	osadȯk	m.
-34554	osađati	v.tr. ipf.
-29590	osamotiti sę	v.refl. pf.
-14812	osamotiti	v.tr. pf.
-29591	osědati	v.intr. ipf.
-29592	osedlati	v.tr. pf.
-29594	osědly	adj.
-1112	osel	m.anim.
-29599	osel	m.anim.
-29603	oseliti sę	v.refl. pf.
-36495	oseljenėc	m.anim.
-29601	oseljeńje	n.
-29595	osęsti	v.intr. pf.
-6178	Osetija	f.sg.
-36562	osetinsky	adj.
-29666	ośevy	adj.
-29614	osika	f.
-21424	osiliti	v.tr. pf.
-21422	osiljati	v.tr. ipf.
-22801	osiroćeny	adj.
-29616	osirotěti	v.intr. pf.
-22800	osirotiti	v.tr. pf.
-29618	osivěti	v.intr. pf.
-29621	oskopiti	v.tr. pf.
-29623	oskubati	v.tr. pf.
-34592	oskubyvati	v.tr. ipf.
-34608	oskųdno	adv.
-34611	oskųdnosť	f.
-34602	oskųdny	adj.
-29627	oskvŕnitelj	m.anim.
-33472	oskvŕniti	v.tr. pf.
-33470	oskvŕnjati	v.tr. ipf.
-29626	oskvŕnjeńje	n.
-29629	oslaběti	v.intr. pf.
-4670	oslabiti	v.tr. pf.
-14815	oslabiti	v.tr. pf.
-4669	oslabjati	v.tr. ipf.
-14816	oslabjati	v.tr. ipf.
-10290	oslabjeńje	n.
-1052	oslabjeny	adj.
-10292	oslåditi	v.tr. pf.
-29635	oslę	n.
-29636	oslěpiti	v.tr. pf.
-29637	oslěpjati	v.tr. ipf.
-29638	oslěpjeńje	n.
-29639	oslěpnųti	v.intr. pf.
-29640	oslica	f.
-14817	osloženiti	v.tr. pf.
-14818	osloženjati	v.tr. ipf.
-18153	osložnjeńje	n.
-314	osm	num.card.
-35345	osmansky	adj.
-29646	osmažiti	v.tr. pf.
-2970	osmdesęt	num.card.
-10283	osmdesęty	num.ord.
-29649	osměliti sę	v.refl. pf.
-10991	osměliti	v.tr. pf.
-34569	osměljati sę	v.refl. ipf.
-16317	osměljati	v.tr. ipf.
-29650	osmerka	num.subst.
-16435	osmero	num.coll.
-10296	osmina	num.fract.
-16462	osmka	num.subst.
-108	osmnadsęť	num.card.
-15424	osmnadsętina	num.fract.
-16465	osmnadsęty	num.ord.
-29653	osmoliti	v.tr. pf.
-36136	ośmonog	m.anim.
-2838	osmsȯt, osmsto	num.card.
-2824	osmy	num.ord.
-10299	osmysljeno	adv.
-10300	osmysljenosť	f.
-10301	osmysljeny	adj.
-29656	osněžiti	v.tr. pf.
-2049	osnova	f.
-29658	osnova	f.
-29659	osnova	f.
-29660	osnovańje	n.
-18156	osnovany na	adj.
-10304	osnovatelj	m.anim.
-2938	osnovateljny	adj.
-2115	osnovati	v.tr. pf.
-29663	osnovati	v.tr. pf.
-18158	osnovno	adv.
-2831	osnovny	adj.
-13	osnovyvati	v.tr. ipf.
-2210	osoba	f.
-5080	osoblivo	adv.
-20008	osoblivosť	f.
-5747	osoblivy	adj.
-10320	osobna pomsta	f.
-10312	osobna potrěba	f.
-10314	osobna vojna	f.
-10315	osobnik	m.anim.
-4293	osobno	adv.
-10317	osobnosť	f.
-29668	osobny avtomobil	m.
-10319	osobny kompjuter	m.
-16992	osobny zaimennik	m.
-4292	osobny	adj.
-29670	osoliti	v.tr. pf.
-29612	osȯt	m.
-18163	osȯvrěmenniti	v.tr. pf.
-18159	osȯvrěmennjati	v.tr. ipf.
-18161	osȯvrěmennjeńje	n.
-21999	ospa	f.
-5910	osparjati	v.tr. ipf.
-5939	osporiti	v.tr. pf.
-32547	osråmiti	v.tr. pf.
-32548	osråmiti	v.tr. pf.
-29675	osrědȯk	m.
-29686	osť	f.
-16993	ostaly	adj.
-29676	ostanky	m.pl.
-29677	ostarěti	v.intr. pf.
-466	ostati	v.intr. pf.
-3297	ostatny	adj.
-1918	ostatȯk	m.
-2834	ostavati	v.intr. ipf.
-825	ostaviti	v.tr. pf.
-21739	ostaviti	v.tr. pf.
-505	ostavjati	v.tr. ipf.
-21738	ostavjati	v.tr. ipf.
-10330	ostavjeńje	n.
-3201	ostavjeny	adj.
-29683	ostavka	f.
-10342	Ostråžno!	intj.
-3480	ostråžno	adv.
-29688	ostråžnosť	f.
-3478	ostråžny	adj.
-29691	ostrěgati sę	v.refl. ipf.
-18167	ostrěgati	v.tr. ipf.
-18166	ostrěgti	v.tr. pf.
-23090	ostrěžeńje	n.
-31999	ostriga	f.
-29693	ostrigati	v.tr. ipf.
-5024	ostrigti	v.tr. pf.
-32892	ostriti	v.tr. ipf.
-29697	ostrižeńje	n.
-4499	ostŕje	n.
-10339	ostro	adv.
-29698	ostroga	f.
-18168	ostroumje	n.
-10341	Ostrov Man	m.sg.
-2044	ostrov	m.
-29700	ostrovjan, ostrovjanin	m.anim.
-29702	ostrugati	v.tr. pf.
-947	ostry	adj.
-29713	ostuditi	v.tr. pf.
-29715	osųd	m.sg.
-2036	osųditi	v.tr. pf.
-7	osųđati	v.tr. ipf.
-32550	osųđeńje	n.
-29718	osušati	v.tr. ipf.
-29719	osušiti	v.tr. pf.
-34655	osvajati	v.tr. ipf.
-34657	osvajati	v.tr. ipf.
-15709	osvatiti sę	v.refl. pf.
-29721	osvěćati	v.tr. ipf.
-32355	osvęćati	v.tr. ipf.
-29722	osvěćeńje	n.
-23888	osvědamjati sę	v.refl. ipf.
-23887	osvědomiti sę	v.refl. pf.
-29723	osvętiti	v.tr. pf.
-29724	osvětiti	v.tr. pf.
-10354	osvětliti	v.tr. pf.
-10357	osvětljati	v.tr. ipf.
-34650	osvětljeńje	n.
-18169	osvěžati	v.tr. ipf.
-18171	osvěžiti	v.tr. pf.
-18175	osvobađati sę	v.refl. ipf.
-450	osvobađati	v.tr. ipf.
-18179	osvoboditi sę od	v.refl. pf.
-18178	osvoboditi sę	v.refl. pf.
-881	osvoboditi	v.tr. pf.
-29729	osvobođeńje	n.
-29730	osvojiti	v.tr. ipf.
-34654	osvojiti	v.tr. ipf.
-22000	osypky	m.pl.
-16856	ošalěti	v.intr. pf.
-29732	oščeniti sę	v.refl. pf.
-10364	otcevska ljubȯv	f.
-6024	otcevsky	adj.
-29737	otčim	m.anim.
-4268	otčina	f.
-2048	otec	m.anim.
-2046	otečstvo	n.
-6137	otęgčati	v.tr. ipf.
-6138	otęgčati	v.tr. ipf.
-6140	otęgčiti	v.tr. pf.
-6141	otęgčiti	v.tr. pf.
-29743	oteliti sę	v.refl. pf.
-18181	otěniti	v.tr. pf.
-18180	otěnjati	v.tr. ipf.
-5967	otęžeńje	n.
-5968	otęženy	adj.
-6285	otišati	v.tr. ipf.
-6286	otišiti	v.tr. pf.
-22073	otok	m.
-2823	otrava	f.
-29752	otravitelj	m.anim.
-3779	otraviti	v.tr. pf.
-3777	otravjati	v.tr. ipf.
-29751	otravjeńje	n.
-29754	otravny	adj.
-34957	otręsati	v.tr. ipf.
-34958	otręsti	v.tr. pf.
-29758	otrězvěti	v.intr. pf.
-29759	otrězviti	v.tr. pf.
-34674	otrězvjati	v.tr. ipf.
-1066	otrųby	f.pl.
-6144	otrudniti	v.tr. pf.
-6143	otrudnjati	v.tr. ipf.
-10381	otrudnjeńje	n.
-34693	otųpělosť	f.
-34687	otųpěly	adj.
-29767	otųpěti	v.intr. pf.
-29768	otųpiti	v.tr. pf.
-34698	otųpjati	v.tr. ipf.
-2399	otvarjati	v.tr. ipf.
-3662	otvor	m.
-2037	otvoriti	v.tr. pf.
-10095	otvorjeny parašut	m.
-10094	otvorjeny tenisny čempionat	m.
-1056	otvorjeny	adj.
-29770	otvŕděti	v.intr. pf.
-10387	ov	pron.dem.
-10388	ovako	adv.
-19579	ovaky	adj.
-34986	ovaľny	adj.
-19563	ovamo	adv.
-628	ovca	f.
-32023	ovčaŕ	m.anim.
-20009	ovčarnja	f.
-32024	ovčaŕsky pes	m.anim.
-14821	ovde	adv.
-32942	ovdověly	adj.
-29773	ovdověti	v.intr. pf.
-29774	ovějati	v.tr. pf.
-28986	ovějivati	v.tr. ipf.
-29775	Oven	m.anim.
-29776	oven	m.anim.
-18183	ověnčati	v.tr. ipf.
-18184	ověnčiti	v.tr. pf.
-10391	ověriti	v.tr. pf.
-10392	ověrjati	v.tr. ipf.
-10390	ověrjeny	adj.
-912	oves	m.sg.
-20012	ovinųti	v.tr. pf.
-20010	ovivati	v.tr. ipf.
-22493	ovladnųti	v.tr. pf.
-22494	ovladnųti	v.tr. pf.
-22489	ovladyvati	v.tr. ipf.
-22491	ovladyvati	v.tr. ipf.
-2827	ovoć	m.
-19525	ovȯgda, ovȯgdy	adv.
-29783	ovȯlgnųti	v.intr. pf.
-19582	ovoliko	adv.
-19590	ovoliky	adj.
-29784	ovoščiti	v.tr. pf.
-890	ovplyvniti	v.tr. pf.
-2828	ovplyvnjati	v.tr. ipf.
-36051	ovråtnik	f.
-19547	ovųdy	adv.
-34715	ozdabjati	v.tr. ipf.
-29788	ozdoba	f.
-29789	ozdobiti	v.tr. pf.
-36544	ozdobny	adj.
-29790	ozdråvěti	v.intr. pf.
-10400	ozdråviti	v.tr. pf.
-10401	ozdravjati	v.tr. ipf.
-10402	ozdravjeńje	n.
-36819	ozdråvnica	f.
-29792	ozębti	v.intr. pf.
-29793	ozeleniti	v.intr. pf.
-29794	ozelenjati	v.intr. ipf.
-10405	ozemisko	adv.
-10404	ozemisky	adj.
-10403	ozemja	f.
-29795	ozimina	f.
-29796	ozimy	adj.
-36859	ozlobiti sę	v.refl. pf.
-29799	ozlobiti	v.tr. pf.
-29800	ozlobjeńje	n.
-1069	označati	v.tr. ipf.
-10414	označati	v.tr. ipf.
-22862	označati	v.tr. ipf.
-10413	označeńje	n.
-18192	označeny	adj.
-1070	označiti	v.tr. pf.
-18194	označiti	v.tr. pf.
-22863	označiti	v.tr. pf.
-22864	oznaka	f.
-29807	oznamenovati	v.tr. pf.
-34735	oznamenovati	v.tr. pf.
-34736	oznamenovyvati	v.tr. ipf.
-34737	oznamenovyvati	v.tr. ipf.
-22861	oznaniti	v.tr. pf.
-22860	oznanjati	v.tr. ipf.
-32847	ozon	m.sg.
-32849	ozonovy sloj	m.sg.
-29810	ozvěrěti	v.intr. pf.
-3400	oženiti sę	v.refl. pf.
-29812	oženiti	v.tr. pf.
-3401	oženjeny	adj.
-29815	ožiti	v.intr. pf.
-29816	oživati	v.intr. ipf.
-29818	oživiti	v.tr. pf.
-36452	oživjati	v.tr. ipf.
-14822	oživjeno	adv.
-14823	oživjeny	adj.
-29820	ožȯltěti	v.intr. pf.
-29821	ožrěbiti sę	v.refl. pf.
-10418	pa	conj.
-18195	pacient	m.anim.
-29824	pad	m.
-20970	padalina	f.
-1771	padati	v.intr. ipf.
-261	padež	m.
-20971	padųčnica	f.
-32134	pajac	m.anim.
-3447	paket	m.
-1063	Pakistan	m.sg.
-22766	pakistansky	adj.
-5471	pakovati	v.tr. ipf.
-1058	pala	f.
-2830	palac	m.
-31750	palačinka	f.
-1841	palatalizacija	f.
-23305	palatka	f.
-35434	palec	m.
-2825	palestinsky	adj.
-2829	paliti	v.tr. ipf.
-14826	paliti	v.tr. ipf.
-2826	palivo	n.
-944	paljto	n.
-29827	palka	f.
-16040	palma	f.
-36159	palmeta	f.
-1961	pamęť	f.
-1960	pamętati	v.tr. ipf.
-4117	pamętnik	m.
-10438	pamętny	adj.
-35182	pamflet	m.
-350	pan	m.anim.
-35932	panaceja	f.
-22464	Panama	f.sg.
-22465	panamsky	adj.
-29832	pancyŕ	m.
-4501	pancyrovoz	m.
-23261	pančoha	f.
-36272	panda	f.
-10444	panel orųdij	m.
-2359	pani	f.
-20014	panika	f.
-18197	paniker	m.anim.
-35049	panorama	f.
-16996	panslavist	m.anim.
-16997	panslavističny	adj.
-16998	panslavizm	m.sg.
-23143	pantofle	m.pl.
-1356	papa	m.anim.
-36067	papaja	f.
-506	papir	m.
-35315	papirny	adj.
-32614	papirus	m.
-29838	papka	f.
-1075	papråť	f.
-35460	paprika	f.
-6109	Papua Nova Gvineja	f.sg.
-23144	papuče	f.pl.
-4570	papugaj	m.anim.
-18200	para prikladov	f.
-2257	para	f.
-4993	para	f.
-29842	parada	f.
-16999	paradigm	m.
-29843	paradny kostjum	m.
-543	paradoks	m.
-2377	paradoksaľny	adj.
-35421	parafija	f.
-15522	paragraf	m.
-22442	Paragvaj	m.sg.
-22443	paragvajsky	adj.
-23206	paralela	f.
-23207	paraleľny	adj.
-29848	paraliza	f.
-16790	paralizovati	v.tr. ipf.
-35933	parametr	m.
-29849	parapet	m.
-4066	parašut	m.
-29851	parašutist	m.anim.
-23773	paravan	m.
-1820	parazit	m.anim.
-29855	parazitizm	m.sg.
-29856	parazitny	adj.
-29857	parazitovati	v.intr. ipf.
-23876	parfum	m.
-36723	parfumovati sę	v.refl. ipf.
-23877	parfumovati	v.tr. ipf.
-29859	pariti	v.intr. ipf.
-18201	Pariž	m.sg.
-4906	parižsky	adj.
-32408	park	m.
-32410	parkovati sę	v.refl. ipf./pf.
-32409	parkovati	v.tr. ipf./pf.
-32411	parkovišče	n.
-1185	parlament	m.
-35061	parlamentarny	adj.
-23635	parna mašina	f.
-33231	parno čislo	n.
-36702	parny valec	m.
-29861	parny	adj.
-29863	parny	adj.
-35218	parodija	f.
-35422	parohija	f.
-10456	parola	f.
-22413	parovoz	m.
-32036	paršivy	adj.
-17000	particip	m.
-2994	partija	f.
-23452	partitura	f.
-2911	partner	m.anim.
-36090	partnerka	f.
-5161	partnerstvo	n.
-18202	pas	m.
-36621	pasaž	m.
-36622	pasaž	m.
-3005	pasažer	m.anim.
-2906	pasažersky	adj.
-36710	pasians	m.sg.
-2400	pasivny	adj.
-5264	pasport	m.
-20972	pasť	f.
-32945	pasti sę	v.refl. ipf.
-5015	pasti	v.intr. pf.
-5017	pasti	v.tr. ipf.
-20975	pastuh	m.anim.
-20978	pastva	f.
-20979	pastvišče	n.
-20980	pastyŕ	m.anim.
-20981	pastyŕ	m.anim.
-36302	pat	m.
-23769	patent	m.
-35680	patriarh	m.anim.
-35681	patriarhat	m.
-35461	patriot	m.anim.
-35462	patriotičny	adj.
-35463	patriotizm	m.sg.
-20015	patronizovati	v.tr. ipf.
-10465	pauza	f.
-10466	pauzovati	v.intr. ipf.
-33651	pav	m.anim.
-23097	pavian	m.anim.
-10467	pavųčina	f.
-10469	pavųčja niť	f.
-431	pavųk	m.anim.
-35316	pazigrafija	f.
-1697	pazuha	f.
-2842	pčela	f.
-29868	pčelaŕ	m.anim.
-36029	pčelaŕstvo	n.sg.
-29869	pčeliny	adj.
-29871	pčeľji	adj.
-29870	pčeľnik	m.
-20983	peć	m.
-14829	pečenj	f.
-278	pečęť	f.
-23616	pečętaŕ	m.anim.
-23609	pečętaŕstvo	n.sg.
-2358	pečętati	v.tr. ipf.
-18203	pečivo	n.
-23604	pedagog	m.anim.
-23605	pedagogičny	adj.
-23603	pedagogika	f.
-753	pedofil	m.anim.
-1539	pěga	f.
-2375	pěgavy	adj.
-29872	pěhota	f.
-20985	pekaŕ	m.anim.
-20986	pekarnja	f.
-29873	pekľny	adj.
-29874	peklo	n.
-20989	pekti sę	v.refl. ipf.
-2840	pekti	v.tr. ipf.
-2277	pelena	f.
-36235	pelerina	f.
-16796	pelikan	m.anim.
-2256	pelun	m.
-32470	pemza	f.
-869	pěna	f.
-2187	pendžabsky	adj.
-14589	pěnęz	m.
-4417	pěnęzy	m.pl.
-10488	pěnęžny	adj.
-16046	penis	m.
-16047	penisovy	adj.
-1717	penj	m.
-36375	pěnna kųpělj	f.
-4847	pensija	f.
-16050	pensijny fond	m.
-16049	pensijny	adj.
-2833	pensioner	m.anim.
-9340	penthaus	m.
-15397	penthausny	adj.
-2832	pepel	m.sg.
-10490	pepelavy	adj.
-34855	pepelisty	adj.
-36745	pepeľnik	m.
-3136	peprec	m.
-29879	percepcija	f.
-17001	perfekt	m.
-36033	perforator	m.
-32613	pergament	m.
-32097	periferija	f.
-32098	periferijny	adj.
-16052	period	m.
-35811	periodičny	adj.
-4787	perkusija	f.
-23289	perla	f.
-36177	perlovo proso	n.
-2336	pero	n.
-3994	pero	n.
-10496	perovy	adj.
-35900	Persija	f.sg.
-35902	persijec	m.anim.
-35901	persijsky	adj.
-2343	personal	m.
-17002	personaľny zaimennik	m.
-29883	personaľny	adj.
-23079	personaž	m.
-36185	personifikacija	f.
-4294	perspektiva	f.
-10498	Peru	m.indecl.
-10499	Peruanec	m.anim.
-14830	Peruansky	adj.
-10500	Perun	m.anim.
-14831	perun	m.
-4318	perverzija	f.
-4320	perverznik	m.anim.
-10503	perverzno	adv.
-4319	perverznosť	f.
-4317	perverzny	adj.
-2345	pes	m.anim.
-5750	pěsennik	m.anim.
-6030	pesimist	m.anim.
-6028	pesimističny	adj.
-6029	pesimizm	m.sg.
-2344	pěsnja	f.
-18207	pěsȯčna burja	f.
-29886	pěsȯčny	adj.
-426	pěsȯk	m.
-1962	pęsť	f.
-36248	pesticid	m.
-615	pestry	adj.
-18208	pěšak	m.anim.
-659	pěše	adv.
-236	pěšehod, pěšehodec	m.anim.
-1079	pěši	adj.
-908	pęť	num.card.
-44	pęta	f.
-2176	pęťdesęt	num.card.
-32329	pęťdesętničsky	adj.
-23687	pęťdesęty	num.ord.
-16455	pęteraky	num.diff.
-16428	pęterčęta	n.pl.
-34564	pęterka	num.subst.
-16443	pęterny	num.mult.
-16432	pętero	num.coll.
-35848	peticija	f.
-10535	pętikųtnik	m.
-10533	pętina	num.fract.
-10534	pętivųgȯľnik	m.
-16459	pętka	num.subst.
-2368	pętnadsęť	num.card.
-23683	pętnadsęty	num.ord.
-35541	pętno	n.
-474	pętȯk	m.
-2279	pęťsȯt, pęťsto	num.card.
-1876	pęty	num.ord.
-10537	pěvańje	n.sg.
-1469	pěvatelj	m.anim.
-237	pěvati	v.tr. ipf.
-32924	phati sę do/za	v.refl. ipf.
-32905	phati	v.tr. ipf.
-32907	phnųti	v.tr. pf.
-32491	pianist	m.anim.
-32492	pianistka	f.
-5825	pica	f.
-20016	pidžin	m.
-36367	piedestal	m.
-34969	pigment	m.
-23278	pijanica	m./f.
-35728	pijanstvo	n.sg.
-14834	pijany	adj.
-388	pijavica	f.
-10591	pijemy	adj.
-35588	pikantny	adj.
-15437	pikirovańje	n.
-10547	pikirovati	v.intr. ipf.
-15436	pikirovka	f.
-15439	pikirovnica	f.
-10549	pikirovnik	m.anim.
-23423	piknik	m.
-32223	piky	f.pl.
-2222	pila	f.
-34282	pilina	f.
-34281	piliti	v.tr. ipf.
-16305	pilot	m.anim.
-33408	pilulka	f.
-20990	pinati	v.tr. ipf.
-32769	ping-pong	m.sg.
-20586	pingvin	m.anim.
-6287	pion	m.
-3262	pioner	m.anim.
-10554	pir	m.
-10555	piramida	f.
-10556	piramidovy	adj.
-1959	pirat	m.anim.
-32456	piratstvo	n.sg.
-10558	piroman	m.anim.
-10560	piromaničny	adj.
-10559	piromanija	f.
-10563	pirotehničny sklad	m.
-10562	pirotehničny	adj.
-10564	pirotehnik	m.anim.
-10561	pirotehnika	f.
-10565	pirovati	v.intr. ipf.
-20992	pisaľny stol	m.
-10568	pisańje	n.
-3939	pisatelj	m.anim.
-15680	pisati nanovo	v.ipf.
-141	pisati	v.tr. ipf.
-5984	pisemny	adj.
-1147	piskati	v.intr. ipf.
-20993	piśmę	n.
-2988	piśmennosť	f.
-23119	piśmennosť	f.
-3002	piśmo	n.
-20995	piśmo	n.
-5981	pistacija	f.
-2087	pistolet	m.
-10580	pistoľnik	m.anim.
-14838	pišati	v.intr. ipf.
-5684	piščeti	v.intr. ipf.
-18209	pišęća mašina	f.
-18210	pišęći stroj	m.
-1973	piti	v.tr. ipf.
-10590	pitna voda	f.
-4181	pitny	adj.
-35494	pivnica	f.
-35495	pivnica	f.
-2067	pivo	n.
-35730	pivovar	m.anim.
-35729	pivovarnja	f.
-35731	pivovarsky	adj.
-29902	pizda	f.
-10598	pižama	f.
-3210	plač	m.sg.
-10601	plačlivy	adj.
-35219	plagiat	m.
-2261	plakat	m.
-2177	plakati	v.intr. ipf.
-380	plåmenj	m.
-2872	plan	m.
-581	planeta	f.
-36624	plankton	m.
-650	planovati	v.tr. ipf.
-29904	planšet	m.
-2373	plast	m.
-36925	plastelin	m.
-18211	plastičny	adj.
-18212	plastik	m.sg.
-18213	plastikovy	adj.
-2378	plašč	m.
-4276	plata	f.
-10615	plaťba	f.
-10617	plaťbovy	adj.
-10616	plaťby	f.pl.
-3800	platform	m.
-22632	platina	f.sg.
-10619	platitelj	m.anim.
-2114	platiti	v.tr. ipf.
-94	plåtno	n.
-10625	plavańje	n.
-20997	plavati	v.intr. ipf.
-20999	plavny	adj.
-21001	plåvy	adj.
-5196	plaž	f.
-36910	plebiscit	m.
-16344	plemę	n.
-14841	plemenec	m.anim.
-14842	plemenica	f.
-23403	plen	m.
-23405	pleniti	v.tr. ipf.
-18223	pleskańje	n.sg.
-18224	pleskati	v.tr. ipf.
-18225	plesknųti	v.tr. pf.
-2068	plěsnj	f.
-5019	plesti	v.tr. ipf.
-32092	pletenka	f.
-31722	plěti	v.tr. ipf.
-36060	plěva	f.
-36061	plěvnja	f.
-35543	pljama	f.
-1348	pljuća	f.
-3275	pljunųti	v.intr. pf.
-36852	pljuskati	v.intr. ipf.
-36853	pljusknųti	v.intr. pf.
-32509	pljuš	m.sg.
-32510	pljuševy	adj.
-1105	pljuvati	v.intr. ipf.
-1346	plod	m.
-1377	plod	m.
-23024	ploditi	v.tr. ipf.
-23025	ploditi	v.tr. ipf.
-36121	plodnosť	f.
-2402	plodny	adj.
-5224	plosky	adj.
-1372	plošča	f.
-1963	plȯť	f.
-5223	plot	m.
-34867	plȯť	f.
-1972	plug	m.
-16970	plus	m.
-17003	pluskvamperfekt	m.
-34913	pluti	v.intr. ipf.
-22638	plutonij	m.sg.
-10626	plyvti	v.intr. ipf.
-18226	pnevmonija	f.
-21009	pnųti	v.tr. pf.
-36703	po mojemu mněńju	adv.
-10648	po mojemu skromnomu mněńju	adv.
-18227	po odnošeńju k	prep.
-35696	po pričině	prep.
-36147	po slučaju	prep.
-36233	po strělkě časovnika	adv.
-36271	po svaťbě povęzany	adj.
-2215	po	prep.
-4941	po	prep.
-4942	po	prep.
-4943	po	prep.
-10642	po	prep.
-10644	po	prep.
-10645	po	prep.
-10647	po	prep.
-10655	poběda	f.
-34982	poběditelj	m.anim.
-18232	poběditi	v.intr. pf.
-18229	poběđati	v.intr. ipf.
-35862	poběgti	v.intr. pf.
-4050	pobiti	v.intr. pf.
-10652	pobiťje	n.
-10653	pobity	adj.
-35143	poblågodariti	v.tr. pf.
-36892	poblågoželati	v.intr. pf.
-20018	poblåžlivosť	f.
-20019	poblåžlivy	adj.
-10656	poblizu	adv.
-103	pobrěžny	adj.
-2159	pobuditi	v.tr. pf.
-580	pobuđati	v.tr. ipf.
-18233	pobuđeńje	n.
-4549	pobyťje	n.
-112	pocělovati	v.intr. pf.
-1129	pocělunȯk	m.
-10668	pocěluvka	f.
-1085	počekati	v.intr. ipf.
-22788	počęti sę	v.tr. pf.
-1078	počęti	v.tr. pf.
-10672	počęťje	n.
-10669	počętkovo	adv.
-10670	počętkovy	adj.
-20021	počętkujųći	adj.
-35335	počętkujųći	m.anim.
-1077	počętȯk	m.
-18234	počin	m.
-10675	počinati sę	v.refl. ipf.
-2835	počinati	v.tr. ipf.
-23889	počrveněti	v.intr. pf.
-29916	počuťje	n.
-3134	počva	f.
-10678	pod nakazom	prep.
-10679	pod voditeljstvom	prep.
-10681	pod vodstvom	prep.
-737	pod	prep.
-4933	pod	prep.
-35393	podańje	n.
-18235	podanȯk	m.
-4323	podariti	v.tr. pf.
-5580	podarȯk	m.
-5160	podati	v.tr. pf.
-18238	podavatelj	m.anim.
-18243	podavati parų prikladov	v.ipf.
-5159	podavati	v.tr. ipf.
-35887	podbirati	v.tr. ipf.
-1448	podbrådȯk	m.
-35888	podbrati	v.tr. pf.
-1626	podčas	prep.
-2053	podčrkati	v.tr. ipf.
-2837	podčrknųti	v.tr. pf.
-4085	poddańje	n.
-18244	poddany	m.anim.
-4084	poddati sę	v.refl. pf.
-36428	poddati	v.tr. pf.
-10693	poddavajemosť	f.
-10694	poddavajemy	adj.
-4083	poddavati sę	v.refl. ipf.
-10697	poddavati	v.tr. ipf.
-856	poddŕžati	v.tr. pf.
-10699	poddŕživańje	n.
-1951	poddŕživati	v.tr. ipf.
-36400	poddŕžka	f.
-5575	podękovati	v.intr. pf.
-1952	poděl	m.
-36011	poděliti sę	v.refl. pf.
-2241	poděliti	v.tr. pf.
-18249	poděti sę	v.refl. pf.
-18251	poděvati sę	v.refl. ipf.
-18253	podglåvnica	f.
-16306	podględ	m.
-5385	podględati	v.intr. ipf.
-5387	podględěti	v.intr. pf.
-36558	podgoŕje	n.
-18254	podgovarjati	v.tr. ipf.
-18255	podgovoriti	v.tr. pf.
-23892	podgrěti	v.tr. pf.
-23893	podgrěvati	v.tr. ipf.
-20022	podgrupa	f.
-18256	podhod	m.
-18259	podhoditi (k)	v.intr. ipf.
-18257	podhoditi	v.intr. ipf.
-5176	podimati	v.tr. ipf.
-23241	podium	m.
-5177	podjęti	v.tr. pf.
-20595	podkategorija	f.
-35535	podkazka	f.
-11099	podklad	m.
-32682	podkladati	v.tr. ipf.
-36904	podključati sę	v.refl. ipf.
-36898	podključati	v.tr. ipf.
-36901	podključiti sę	v.refl. pf.
-36895	podključiti	v.tr. pf.
-453	podkopati	v.tr. pf.
-2199	podkopyvati	v.tr. ipf.
-36826	podkova	f.
-32095	podkovati	v.tr. pf.
-26778	podkovyvati	v.tr. ipf.
-20024	podkrěpiti	v.tr. pf.
-20025	podkrěpjati	v.tr. ipf.
-36595	podkryvje	n.
-5791	podkup	m.
-10724	podkupiti	v.tr. pf.
-10723	podkupovati	v.tr. ipf.
-10725	podkupstvo	n.sg.
-32683	podlagati	v.tr. ipf.
-18260	podle	prep.
-15446	podlec	m.anim.
-20596	podležati	v.intr. ipf.
-4493	podliti	v.tr. pf.
-4492	podlivati	v.tr. ipf.
-20598	podlivka	f.
-1115	podloga	f.
-20600	podloga	f.
-32684	podložiti	v.tr. pf.
-36245	podložka dlja myši	f.
-36244	podložka	f.
-18262	podly	adj.
-20603	podměniti	v.tr. pf.
-20602	podměnjati	v.tr. ipf.
-20027	podmet	m.
-36456	podmnožstvo	n.
-34631	podmoŕsky	adj.
-33718	podnapisy	m.pl.
-18264	podnebje	n.
-33560	podnebje	n.
-18265	podnebne izměny	f.pl.
-18266	podnebny	adj.
-20604	podnos	m.
-18267	podnožišče	n.
-10729	podnurjati	v.tr. ipf.
-14850	podoba	f.
-14851	podoba	f.
-18268	podobati sę	v.refl. ipf.
-2404	podobno	adv.
-3866	podobnosť	f.
-1718	podobny	adj.
-33514	pododděl	m.
-34766	podȯjdti (k)	v.intr. pf.
-36534	podȯjdti	v.intr. pf.
-34920	podokȯnnik	m.
-10739	podȯlg	prep.
-36169	podȯšva	f.
-16475	podpaliti	v.tr. pf.
-15453	podpaljač	m.anim.
-16474	podpaljati	v.tr. ipf.
-10743	podpaljeńje	n.
-35657	podpazuha	f.
-10761	podpirany od	adj.
-1114	podpirati	v.tr. ipf.
-36303	podpis	m.
-3086	podpisati	v.tr. pf.
-10750	podpiska	f.
-10751	podpisnik	m.anim.
-1117	podpisyvati	v.tr. ipf.
-2296	podpor	m.
-10758	podporiti	v.tr. pf.
-21010	podporka	f.
-10759	podpornik	m.anim.
-10760	podporny	adj.
-18271	podråstka	f.
-18272	podråstȯk	m.anim.
-36445	podråzděl	m.
-33516	podråzděliti	v.tr. pf.
-33517	podråzděljati	v.tr. ipf.
-33518	podråzděljeńje	n.
-22358	podręditi	v.tr. pf.
-22360	podrędny	adj.
-22359	podręđati	v.tr. ipf.
-21426	podrobnosť	f.
-35083	podrobny	adj.
-1116	podrųčnik	m.
-10763	podrųčny	adj.
-10764	podružiti sę	v.refl. pf.
-6288	podsekretaŕ	m.anim.
-10769	podslušati	v.tr. pf.
-10767	podslušivańje	n.
-10768	podslušivatelj	m.anim.
-22778	podslušivati	v.tr. ipf.
-5389	podsměhati sę	v.refl. ipf.
-5390	podsměhnųti sę	v.refl. pf.
-21752	podstava	f.
-36145	podstavka na mylo	f.
-10772	podstrěkańje	n.
-10774	podstrěkatelj	m.anim.
-5612	podstrěkati	v.tr. ipf.
-4494	podstrěknųti	v.tr. ipf.
-21959	podstųpati k	v.intr. ipf.
-21960	podstųpiti k	v.intr. pf.
-18273	podsvědomje	n.
-10779	podsvědomo	adv.
-6220	podsvědomosť	f.
-6221	podsvědomy	adj.
-35438	podtaliŕka	f.
-34623	podtekst	m.
-36446	podtip	m.
-10783	podtiskańje	n.
-10782	podtiskati	v.tr. ipf.
-20029	podtisknųti	v.tr. pf.
-34627	podton	m.
-14860	podtrimati	v.tr. pf.
-14861	podtrimyvańje	n.
-14862	podtrimyvati	v.tr. ipf.
-5267	poduška	f.
-17085	podvajati	v.tr. ipf.
-35496	podval	m.
-6014	podvažati	v.tr. ipf.
-6016	podvažiti	v.tr. pf.
-22195	podvęzka	f.
-18274	podvig	m.
-10788	podvisiti	v.tr. pf.
-3142	podvodna loď	f.
-10727	podvodnica	f.
-34629	podvodno těčeńje	n.
-23272	podvodny	adj.
-17005	podvojiti	v.tr. ipf.
-35564	podvŕgańje	n.
-22584	podvŕgati	v.tr. ipf.
-22585	podvŕgnųti	v.tr. pf.
-16310	podzemje	n.
-23573	podzemna voda	f.
-36655	podzemny svět	m.sg.
-16308	podzemny	adj.
-10741	podzirati	v.tr. ipf.
-10742	podzirlivy	adj.
-10740	podzrěny	adj.
-1770	podzrěti	v.tr. pf.
-2093	podzrěvati	v.tr. ipf.
-921	poema	f.
-16311	poet	m.anim.
-23714	poetičny	adj.
-20030	poezija	f.
-36041	pogaršati	v.tr. ipf.
-34386	pogladiti	v.tr. pf.
-34387	pogladiti	v.tr. pf.
-18276	poglåvȯk	m.
-2405	poględ	m.
-3357	poględ	m.
-10796	poględańje vitrin	n.
-10798	poględatelj vitrin	m.anim.
-10797	poględatelj	m.anim.
-5819	poględati	v.ipf.
-31879	poglųbiti	v.tr. pf.
-25654	poglųbjati	v.tr. ipf.
-3868	pogoda	f.
-18277	pogȯltnųti sȯlzy	v.pf.
-10800	pogȯltnųti	v.tr. pf.
-18278	pogon	m.
-18279	pogon	m.
-10801	pogorno	adv.
-36042	pogoršiti	v.tr. pf.
-36572	pogovoriti	v.intr. pf.
-36368	pograničje	n.
-36444	pograničny	adj.
-5664	pogrdlivy	adj.
-35565	pogreb	m.
-36498	pogrebati	v.tr. ipf.
-36499	pogrebti	v.tr. pf.
-18282	pogrěšiti	v.intr. pf.
-491	pogrěška	f.
-21428	pogrųziti	v.tr. pf.
-21427	pogrųžati	v.tr. ipf.
-4308	pogynati	v.intr. ipf.
-4309	pogynųti	v.intr. pf.
-18284	pohmeľje	n.
-3661	pohod	m.
-18285	pohod	m.
-23894	pohodka	f.
-18286	pohođeńje	n.
-32335	pohođeńje	n.
-36318	pohota	f.
-23102	pohristijaniti	v.tr. pf.
-23101	pohristijanjati	v.tr. ipf.
-29921	pohva	f.
-10813	pohvala	f.
-522	pohvaliti	v.tr. pf.
-26040	pohvaľny	adj.
-10814	pohvaly	f.pl.
-6153	pohybka	f.
-10806	pohyćańje	n.
-4351	pohyćati	v.tr. ipf.
-10808	pohyćenec	m.anim.
-4350	pohyćeńje	n.
-10809	pohyćeny	adj.
-4352	pohytitelj	m.anim.
-4349	pohytiti	v.tr. pf.
-18289	poiskati	v.tr. pf.
-20031	poiskyvati	v.tr. ipf.
-29922	pojas	m.
-10817	pojaviti sę	v.refl. pf.
-16312	pojavjati sę	v.refl. ipf.
-10818	pojavjeńje	n.
-4027	pojdti	v.intr. pf.
-20034	pojedinȯk	m.
-3274	pojehati	v.intr. pf.
-18291	pojęti	v.tr. pf.
-5005	pojęťje	n.
-1917	pojezd	m.
-32703	pojiti	v.tr. ipf.
-17006	pojmańje	n.
-18292	pojmati	v.tr. ipf.
-10828	poka	conj.
-31968	pokajańje	n.
-31970	pokajati sę	v.refl. pf.
-1916	pokarati	v.tr. pf.
-35409	pokarati	v.tr. pf.
-20035	pokarjati	v.tr. ipf.
-1915	pokazati	v.tr. pf.
-20037	pokazny	adj.
-1108	pokazyvati	v.tr. ipf.
-32062	poker	m.sg.
-10829	pokladati	v.tr. ipf.
-32591	poklicati	v.intr. ipf.
-32592	poklik	m.
-36105	poklon	m.
-36591	pokloniti sę	v.refl. pf.
-18294	pokoj	m.sg.
-35386	pokojnik	m.
-35385	pokojny	adj.
-23115	pokoliko	conj.
-2431	pokoljeńje	n.
-14847	pokoriti	v.tr. pf.
-20040	pokoriti	v.tr. pf.
-14846	pokorjeny	adj.
-5028	pokornosť	f.
-5026	pokorny	adj.
-18296	pokositi	v.tr. pf.
-23895	pokrčati ramenami	v.ipf.
-21429	pokrčiti ramenami	v.pf.
-18297	pokrestiti	v.tr. pf.
-10838	pokromě	adv.
-14867	pokrȯvnik	m.anim.
-6158	pokrȯvnosť	f.
-6154	pokrȯvny	adj.
-1769	pokryti	v.tr. pf.
-18298	pokryťje	n.
-523	pokryv	m.
-4506	pokryva	f.
-29926	pokryvalo	n.
-158	pokryvati	v.tr. ipf.
-32114	pokupka	f.
-18299	pokus	m.
-23896	pokusiti	v.tr. pf.
-23897	pokusiti	v.tr. pf.
-347	pokušati	v.tr. ipf.
-23898	pokušati	v.tr. ipf.
-20043	pokušeńje na něčije žiťje	n.
-1172	pokušeńje	n.
-23309	pokušeńje	n.
-3218	pol-, polu-	prefix
-1351	pol	m.
-32331	pol	m.
-21012	pola	f.
-2843	polabsky	adj.
-36851	polakovati	v.tr. pf.
-23606	polarizacija	f.
-10847	polarno sijańje	n.sg.
-1514	polarny	adj.
-10850	poldenj	m.
-36327	polder	m.
-21014	poldnik	m.
-36203	polěno	n.
-10851	polet	m.
-2921	poletěti	v.intr. pf.
-1352	polěv	prep.
-5284	polica	f.
-2836	policija	f.
-2206	policijnik	m.anim.
-10855	policijny	adj.
-10857	polirati	v.tr. ipf.
-18300	politbjuro	n.
-23607	politeizm	m.sg.
-23772	politi	v.tr. pf.
-373	političny	adj.
-853	politik	m.anim.
-1950	politika	f.
-23636	politologija	f.sg.
-23771	polivati	v.tr. ipf.
-20605	polivka	f.
-1869	Poljak	m.anim.
-3671	poljana	f.
-3670	poljanka	f.
-3614	polje	n.
-28406	poljny klen	m.
-36139	poljny konik	m.
-16918	poljny	adj.
-2844	Poljska	f.sg.
-2935	poljsky	adj.
-10889	poljzovati	v.tr. ipf.
-14872	pȯlk	m.
-1207	pȯlkovnik	m.anim.
-1082	pȯlniti	v.tr. ipf.
-3799	pȯlno	adv.
-5257	polnoć	f.
-10867	pȯlnolětnosť	f.
-21003	pȯlnolětny	adj.
-18301	pȯlnoluńje	n.
-10868	pȯlnomoćje	n.
-18302	pȯlnomoćnik	m.anim.
-36883	pȯlny naděje	adj.
-3141	pȯlny	adj.
-17007	polovica	f.
-35127	polovičny	adj.
-3232	polovina	f.
-21015	polovnik	m.anim.
-3501	položeńje	n.
-10875	položeny	adj.
-1284	položiti	v.tr. pf.
-4699	polučati	v.tr. ipf.
-4700	polučiti	v.tr. pf.
-5259	poludńje	n.
-3260	poluostrov	m.
-10888	poluostrovny	adj.
-20044	polus	m.
-35842	polusamoglåska	f.
-35361	poluvojenny	adj.
-18304	pȯlzati	v.intr. ipf.
-36045	pȯlzavica	f.
-18306	pȯlzti	v.intr. ipf.
-36044	pȯlzųća råstlina	f.
-18303	pȯlž	m.anim.
-2205	pomagati	v.intr. ipf.
-14873	pomalo	adv.
-14874	pomaly	adj.
-4344	pomaranča	f.
-10893	pomarančevy	adj.
-32232	pomazati	v.tr. pf.
-36069	pomelo	n.
-20611	poměstiti	v.tr. pf.
-23249	poměšany	adj.
-20609	poměšćati	v.tr. ipf.
-36780	poměščeńje	n.
-36476	pomfritky	f.pl.
-1283	pomidor	m.
-23857	pomilovańje	n.
-23855	pomilovati	v.tr. pf.
-1745	pomimo	prep.
-20655	pomiriti	v.tr. pf.
-36037	pomirjeńje	n.sg.
-570	pomněti	v.tr. ipf.
-29940	pomnik	m.
-3945	pomoć	f.
-5831	pomoćnik	m.anim.
-5834	pomoćnosť	f.
-100	pomoćny	adj.
-2229	pomogti	v.intr. pf.
-585	pomoŕsky	adj.
-6089	pompa	f.
-34502	pomrdati	v.intr. pf.
-14875	pomsta	f.
-29461	pomyliti sę	v.refl. pf.
-29460	pomyliti	v.tr. pf.
-34475	pomyljeny	adj.
-29458	pomylka	f.
-20045	pomysl	m.
-35854	pomysliti	v.tr. pf.
-10904	ponad	prep.
-18309	pončik	m.
-709	ponedělȯk	m.
-33343	poněkde	adv.
-33335	poněkȯgda, poněkȯgdy	adv.
-35113	poněkoj	pron.indef.
-35112	poněktory	pron.indef.
-10909	poneže	conj.
-23271	poni	m.anim.
-34860	poniziti	v.tr. pf.
-3144	poniž, poniže	prep.
-34861	ponižajųći	adj.
-34858	ponižati	v.tr. ipf.
-34859	ponižeńje	n.
-14876	ponje	adv.
-5961	ponovno	adv.
-5963	ponovny	adj.
-23265	ponožka	f.
-36268	popaljenina	f.
-1133	popel	m.sg.
-10912	popelavy	adj.
-34854	popelisty	adj.
-36746	popeľnica	f.
-5560	popiti	v.tr. pf.
-4243	popivati	v.tr. ipf.
-14877	poplava	f.
-10916	poplaviti	v.tr. pf.
-16315	poplavjati	v.tr. ipf.
-34910	popluti	v.intr. pf.
-10917	poplyvti	v.intr. pf.
-23627	pop-muzika	f.
-10918	popoldenj	m.
-10919	popoldenno spańje	n.
-10920	popoldenny	adj.
-10921	popȯlno	adv.
-10922	popȯlnosť	f.
-10923	popȯlny	adj.
-281	popoludńje	n.
-18311	popȯlzati	v.intr. ipf.
-18313	popȯlzti	v.intr. pf.
-1136	poprav	prep.
-21430	poprava	f.
-4528	popraviti	v.tr. pf.
-4527	popravjati	v.tr. ipf.
-4529	popravjeńje	n.
-10931	popravka	f.
-4531	popravnosť	f.
-4530	popravny	adj.
-21018	poprěčnik	m.
-21019	poprěčny	adj.
-20046	poprědnji, poprědny	adj.
-228	poprěk	prep.
-21021	poprěk	adv.
-3428	poprěměnno	adv.
-23311	poprobovati	v.tr. pf.
-23901	poprositi	v.tr. pf.
-4123	popŕśje	n.
-21023	poprųga	f.
-29944	popularnosť	f.
-662	popularny	adj.
-35342	populizm	m.sg.
-23060	popustiti	v.tr. pf.
-23059	popušćati	v.tr. ipf.
-23421	popytka i dostavka	phrase
-10937	pora spati	phrase
-23353	poråbiti	v.tr. pf.
-23352	poråbovati	v.tr. ipf.
-14878	poraditi	v.tr. pf.
-23029	porađati	v.tr. ipf.
-23031	porađati	v.tr. ipf.
-1135	poraniti	v.tr. pf.
-18317	poranjeńje	n.
-23903	poråsti	v.intr. pf.
-18319	poråvniti	v.tr. pf.
-3143	poraziti	v.tr. pf.
-21431	poraziti	v.tr. pf.
-20612	poråzuměti sę	v.refl. pf.
-20613	poråzuměvati sę	v.refl. ipf.
-5539	poražati	v.tr. ipf.
-21433	poražka	f.
-3783	porcija	f.
-5198	poręd	prep.
-3145	porędȯk	m.
-2360	porno	n.sg.
-32060	pornografičny	adj.
-32059	pornografija	f.
-10946	porod	m.
-23028	poroditi	v.tr. pf.
-36627	poroditi	v.tr. pf.
-36628	poroditi	v.tr. pf.
-21434	porok	m.
-14879	porota	f.
-15472	porotnica	f.
-15474	porotnik	m.anim.
-14880	porotny	adj.
-21777	port	m.
-17008	portal	m.
-23251	porter	m.
-23253	portier	m.anim.
-34757	portmone	n.indecl.
-4793	portret	m.
-16424	Portugalec	m.anim.
-979	Portugalija	f.sg.
-16425	Portugalka	f.
-1353	portugaľsky	adj.
-18321	porųbati	v.tr. pf.
-10961	porųčati sę	v.refl. ipf.
-10960	porųčenec	m.anim.
-3440	porųčeńje	n.
-10955	porųčeny	adj.
-5849	porųčitelj	m.anim.
-3649	porųčiteljstvo	n.
-10959	porųčiti sę	v.refl. pf.
-21436	porųčnik	m.anim.
-21437	porušiti	v.tr. pf.
-21438	poryv	m.
-21439	posada	f.
-34189	poscati sę	v.refl. pf.
-1220	posěćati	v.tr. ipf.
-18322	posěćeńje	n.
-10965	posědańje	n.
-16316	posědatelj	m.anim.
-1138	posědati	v.tr. ipf.
-10964	posědlivy	adj.
-10963	posědnik	m.anim.
-33241	posějati	v.tr. pf.
-18323	posěkati	v.tr. pf.
-18325	posěkti	v.tr. pf.
-6058	poseljeńje	n.
-17009	posesivny zaimennik	m.
-21442	posęsti	v.tr. pf.
-25756	posětitelj	m.anim.
-1024	posětiti	v.tr. pf.
-36794	poskųpiti sę	v.refl. pf.
-21443	poslanec	m.anim.
-2133	poslańje	n.
-2974	poslannik	m.anim.
-1912	poslati	v.tr. pf.
-2058	poslě	prep.
-10975	poslě	adv.
-18328	poslědica	f.
-2323	poslědnji, poslědny	adj.
-4139	poslědovatelj	m.anim.
-10980	poslědovateljno	adv.
-2333	poslědovateljny	adj.
-34870	poslědovati	v.tr. pf.
-2327	poslědstvo	n.
-18330	poslěporodny	adj.
-10984	poslětręšeńje	n.
-10968	poslizgnųti sę	v.refl. pf.
-71	poslušati	v.tr. pf.
-5032	poslušnosť	f.
-5031	poslušny	adj.
-17010	posluživati sę	v.refl. ipf.
-36509	posměšišče	n.
-20615	posmotriti	v.intr. pf.
-34938	posmŕtno	adv.
-34937	posmŕtny	adj.
-3430	posȯl	m.anim.
-33027	posoliti	v.tr. pf.
-33029	posoljeny	adj.
-6019	posȯvětovati	v.tr. pf.
-33225	pospati	v.intr. pf.
-5914	pospěh	m.
-3272	pospěšiti	v.intr. pf.
-23814	pospěšno	adv.
-23056	posrany	adj.
-29674	posrěbriti	v.tr. pf.
-33384	posrěbrjati	v.tr. ipf.
-33385	posrěbrjeny	adj.
-3154	posrěd	prep.
-3257	posrědkovati	v.intr. ipf.
-5172	posrědničstvo	n.sg.
-1150	posrědnik	m.anim.
-5091	posrědnje	adv.
-487	posrědnji, posrědny	adj.
-21449	posrědnji, posrědny	adj.
-692	posrědstvom	prep.
-21745	postanavjati	v.tr. ipf.
-21747	postanoviti	v.tr. pf.
-21749	postanovjeńje	n.
-21453	postarati sę	v.refl. pf.
-21455	postarěti	v.intr. pf.
-35001	postaviti pytańje	v.pf.
-11008	postaviti	v.tr. pf.
-16323	postaviti	v.tr. pf.
-11009	postavjati	v.tr. ipf.
-16320	postavjati	v.tr. ipf.
-11010	postavjeńje	n.
-16321	postavjeńje	n.
-11013	postelina	f.
-33443	posteliti	v.tr. pf.
-11012	postelj	f.
-15477	posteljny klop	m.anim.
-21862	postigati	v.tr. ipf.
-21864	postignųti	v.tr. pf.
-33446	postlati	v.tr. pf.
-21741	postojanno	adv.
-20047	postojanny	adj.
-35253	postojka	f.
-5866	postrah	m.
-21883	postrånny	adj.
-21884	postrånny	adj.
-23625	pȯstrųg	m.anim.
-36464	postulat	m.
-36465	postulovati	v.tr. ipf./pf.
-21955	postųp	m.
-21957	postųp	m.
-4231	postųpańje	n.
-21953	postųpati s	v.ipf.
-1471	postųpati	v.intr. ipf.
-21954	postųpiti s	v.pf.
-3148	postųpiti	v.intr. pf.
-1174	postųpka	f.
-1154	postųpno	adv.
-20051	postųpny	adj.
-3527	posųda	f.
-35478	posuvnik	m.
-3070	posvęćati	v.tr. ipf.
-35534	posvęćeńje	n.
-18333	posvęćeny	adj.
-22229	posvědčati	v.tr. ipf.
-22227	posvědčiti	v.tr. pf.
-35580	posvědčiti	v.intr. pf.
-652	posvętiti	v.tr. pf.
-1025	posylati	v.tr. ipf.
-5751	posylka	f.
-34896	poščęditi	v.tr. pf.
-3259	poškoditi	v.intr. pf.
-16326	poškođeńje	n.
-11039	poškođeny	adj.
-4642	pošta	f.
-21024	poštaŕ	m.anim.
-35400	poštny kod	m.
-21025	poštny uręd	m.
-35399	poštny	adj.
-3869	pot	m.sg.
-4240	potapjati	v.tr. ipf.
-29744	potemněti	v.intr. pf.
-3149	potencial	m.
-4373	potenciaľny	adj.
-4314	potěńje	n.
-4313	potěti	v.intr. ipf.
-34871	potiti sę	v.refl. ipf.
-22075	potok	m.
-22077	potok	m.
-3150	potom	adv.
-3157	potomȯk	m.anim.
-32729	potomstvo	n.sg.
-3152	potop	m.
-4241	potopiti	v.tr. pf.
-18334	potrajati	v.intr. pf.
-11056	potrěba	f.
-29955	potrěbno	adv.
-1296	potrěbny	adj.
-1165	potrěbovati	v.tr. ipf.
-34956	potręsati	v.tr. ipf.
-3901	potręsti	v.tr. pf.
-29956	potrohų	adv.
-3151	potrvati	v.intr. pf.
-121	potvŕditi	v.tr. pf.
-1167	potvŕđati	v.tr. ipf.
-6224	potvŕđeńje	n.
-18346	potvŕđeny	adj.
-16327	poučati	v.tr. ipf.
-11064	poučeńje	n.
-11063	poučiti	v.tr. pf.
-18353	pouka	f.
-6003	povaga	f.
-20052	považańje	n.sg.
-616	považati	v.tr. ipf.
-36108	považeny	adj.
-3153	považiti	v.tr. pf.
-36296	povědač	m.anim.
-3870	povědati	v.tr. ipf.
-3871	pověděti	v.tr. pf.
-12478	povědka prěd spańjem	f.
-3407	povědka	f.
-2996	poveliteljny	adj.
-22330	pověriti	v.tr. pf.
-22332	pověriti	v.tr. pf.
-22329	pověrjati	v.tr. ipf.
-22331	pověrjati	v.tr. ipf.
-22328	pověŕje	n.
-22335	pověrjennik	m.anim.
-22336	pověrjennik	m.anim.
-11074	poveseliti sę	v.refl. pf.
-34190	pověsiti	v.tr. pf.
-22226	pověsť	f.
-20053	povęzanosť	f.
-22194	povęzka	f.
-5999	povinen	adj.
-18357	povinno sę	phrase
-29961	povinny	adj.
-22539	povlåka	f.
-35549	povlěkati za sobojų	v.tr. ipf.
-35550	povlěkti za sobojų	v.tr. pf.
-11075	povod	m.
-36146	povodom	prep.
-29962	povoljno	adv.
-33708	povoljny	adj.
-29963	povoz	m.
-3204	povraćati	v.ipf.
-3202	povråt	m.
-3205	povråtiti	v.pf.
-4705	povråtiti	v.pf.
-34874	povråtna informacija	f.
-11076	povråtna klaviša	f.
-11084	povråtna svęź	f.
-22694	povråtny bilet	m.
-22697	povråtny moment	m.
-22695	povråtny	adj.
-4706	povråtȯk	m.
-18362	povråz	m.
-5628	povrěmenno	adv.
-614	povŕh	prep.
-18365	povŕhnja	f.
-18366	povŕhnosť	f.
-22568	povŕhny	adj.
-22660	povŕnųti	v.tr. pf.
-18367	povŕšina	f.
-22659	povŕtati	v.tr. ipf.
-22344	povsednji	adj.
-11087	povstanec	m.anim.
-1460	povstańje	n.
-11088	povstati	v.intr. pf.
-34883	povstavati	v.intr. ipf.
-2000	povtarjati	v.tr. ipf.
-2305	povtoriti	v.tr. pf.
-3809	povtorno	adv.
-36626	povtorny	adj.
-3687	povysiti	v.tr. pf.
-5546	povyšati	v.tr. ipf.
-1299	povyše	prep.
-11094	povyše	adv.
-3686	povyšeńje	n.
-11098	povyši	adj.
-35417	poza	f.
-14064	pozaďje	n.
-5193	pozadu	adv.
-23389	pozajęti	v.tr. pf.
-35631	pozajęto slovo	m.
-22391	pozajmati	v.tr. ipf.
-11102	pozastaviti	v.tr. pf.
-11103	pozastavjeńje	n.
-35479	pozautra	adv.
-3359	pozdněje	adv.
-11106	pozdnějši	adj.
-717	pozdno	adv.
-2267	pozdny	adj.
-18368	pozdråv	intj.
-1226	pozdråviti	v.tr. pf.
-1679	pozdravjati	v.tr. ipf.
-11111	pozemny	adj.
-1225	pozicija	f.
-18371	pozirati (na)	v.intr. ipf.
-36120	pozitivno čislo	n.
-1415	pozitivny	adj.
-32973	pozlaćati	v.tr. ipf.
-32975	pozlåćeny	adj.
-32976	pozlåta	f.
-29798	pozlåtiti	v.tr. pf.
-15480	poznanec	m.anim.
-35066	poznańje	n.
-6324	poznati	v.tr. pf.
-18376	poznati	v.tr. pf.
-6323	poznavati	v.tr. ipf.
-18377	poznavati	v.tr. ipf.
-4381	pozor	m.
-11115	pozornosť	f.
-29969	pozȯv	m.
-34885	pozovati	v.intr. ipf.
-20055	pozrěti (na)	v.intr. pf.
-11121	pozvaljaje sę	phrase
-11124	pozvaljati sobě	v.ipf.
-3156	pozvaljati	v.tr. ipf.
-18379	pozvańje	n.
-36168	pozvati sę na	v.refl. pf.
-6194	pozvati v sųd	v.pf.
-3155	pozvati	v.tr. pf.
-11117	pozvolimy	adj.
-11120	pozvoliti sobě	v.pf.
-2946	pozvoliti	v.tr. pf.
-3823	pozvoniti	v.pf.
-36167	pozyvati sę na	v.refl. ipf.
-6193	pozyvati v sųd	v.tr. ipf.
-20054	požaliti	v.tr. pf.
-4173	požar	m.
-4237	požarna služba	f.
-15485	požarnik	m.anim.
-11128	požarny	adj.
-11129	požarogasnik	m.
-2875	požędańje	n.
-411	požędati	v.tr. pf.
-11132	požędati	v.tr. pf.
-35471	poželany	adj.
-35470	poželati	v.tr. pf.
-32984	požęti	v.intr. pf.
-36056	požiraľnik	m.
-14913	požirańje	n.
-11134	požirati	v.ipf.
-11135	poživjeńje	n.
-18378	požrěti	v.tr. pf.
-3147	požrtvovati	v.tr. pf.
-35501	pra-	prefix
-11137	prababica	f.
-11138	praca	f.
-18380	pracodavec	m.anim.
-14917	pracovati	v.intr. ipf.
-11141	pracovito	adv.
-11142	pracovitosť	f.
-11143	pracovity	adj.
-11140	pracovnik	m.anim.
-35152	pradavny	adj.
-11145	pradědȯk	m.anim.
-2073	pråg	m.
-23519	Praga	f.sg.
-3574	pråh	m.
-35997	pråhosȯsaľnik	m.
-20616	praindoevropejsky	adj.
-20056	prajęzyk	m.
-11147	praksa	f.
-20057	praktično	adv.
-35159	praktičnosť	f.
-3146	praktičny	adj.
-4079	praktika	f.
-3957	praktikovati	v.tr. ipf.
-21459	pralěs	m.
-36107	pralna mašina	f.
-35804	praotec	m.anim.
-3158	praroditelj	m.anim.
-16345	pråsę	n.
-1228	pråsętko	n.
-4387	praslovjansky	adj.
-21027	prašćati sę	v.refl. ipf.
-21026	prašćati	v.tr. ipf.
-5273	pråšek	m.
-14919	pråšiti	v.ipf.
-11146	pråšna burja	f.
-32298	prati mozg	v.tr. ipf.
-32303	prati	v.tr. ipf.
-33937	pråti	v.tr. ipf.
-3159	pravda	f.
-11154	pravdivo	adv.
-11155	pravdivosť	f.
-3307	pravdivy	adj.
-11159	pravdopodobno	adv.
-11161	pravdopodobnosť	f.
-11162	pravdopodobny	adj.
-18383	pravedny	adj.
-1870	pravica	f.
-5211	praviľno	adv.
-20059	praviľnosť	f.
-20060	praviľny	adj.
-21031	praviľny	adj.
-3087	pravilo	n.
-3077	praviti	v.tr. ipf.
-11167	pravnik	m.anim.
-3711	pravny	adj.
-1826	pravo	n.
-3163	pravopis	m.
-11172	pravopisańje	n.
-35024	pravopisec	m.anim.
-35025	pravopisny	adj.
-32168	pravorųky	adj.
-21034	Pravoslavje	n.sg.
-3088	pravoslavny	adj.
-35697	pravosť	f.
-35698	pravosť	f.
-11175	pravosųďje	n.
-11176	pravosųdnosť	f.
-21035	pravověrny	adj.
-11177	pravovųgȯľnik	m.
-1164	pravy	adj.
-21036	pravy	adj.
-22895	pravzor	m.
-33552	pråzdničny	adj.
-18389	pråzdnik	m.
-35307	pråzdnina	f.
-3248	pråzdnovati	v.tr. ipf.
-5653	pråzdnověŕje	n.
-5654	pråzdnověrny	adj.
-16335	pråzdny	adj.
-10492	pŕdak	m.
-573	pŕděti	v.intr. ipf.
-3160	prěadresovati	v.tr. pf.
-29977	preambula	f.
-20617	prěběglik	m.anim.
-5397	prěbudovati	v.tr. pf.
-5398	prěbudovyvati	v.tr. ipf.
-18390	prěbyvańje	n.
-16812	prěbyvati	v.intr. ipf.
-919	precedent	m.
-35883	prěcěniti	v.tr. pf.
-35882	prěcěnjati	v.tr. ipf.
-11185	prěčęsto	adv.
-20619	prěčiti	v.tr. ipf.
-20620	prěčnik	m.
-14921	prěd davnym časom	adv.
-11195	prěd davnym vrěmenem	adv.
-4097	prěd hviljejų	adv.
-11200	prěd nekoliko dnjev	adv.
-4379	prěd vsem	adv.
-1200	prěd	prep.
-4935	prěd	prep.
-11189	prěd	m.
-21038	prěd	prep.
-11202	prědańje	n.
-1189	prědati	v.tr. pf.
-3247	prědati	v.tr. pf.
-35613	prědati	v.tr. pf.
-36545	predator	m.anim.
-1825	prědavati	v.tr. ipf.
-3246	prědavati	v.tr. ipf.
-35612	prědavati	v.tr. ipf.
-35609	prědavnica	f.
-35611	prědavničsky	adj.
-35608	prědavnik	m.anim.
-35610	prědavstvo	n.sg.
-20621	prědběžny	adj.
-11211	prědčasny	adj.
-23807	prědčuťje	n.
-23904	prědčuvati	v.tr. ipf.
-11214	prědgråďje	n.
-11216	prědgrådny	adj.
-23608	prědhistoričny	adj.
-1199	prědhistorija	f.
-501	prědhoditi	v.tr. ipf.
-35639	prědhodnik	m.anim.
-14924	prědhodny	adj.
-23439	prědigra	f.
-36800	prědigra	f.
-34891	predikat	m.
-36370	predikat	m.
-15491	prědimenovany	adj.
-11219	prědki	m.pl.
-11220	prědkladati	v.tr. ipf.
-602	prědlagati	v.tr. ipf.
-5955	prědlanji	adv.
-1158	prědlog	m.
-5122	prědložeńje	n.
-35667	prědložitelj	m.anim.
-1687	prědložiti	v.tr. pf.
-11228	prědložlivy	adj.
-17018	prědložnik	m.
-3168	prědměsťje	n.
-11231	prědměstny	adj.
-3171	prědmet	m.
-3329	prědmet	m.
-11232	prědmet	m.
-11235	prědmet	m.
-18398	prědminųly	adj.
-20061	prědnje	adv.
-3639	prědnji, prědny	adj.
-16836	prědnosť	f.
-21041	prědnosť	f.
-1578	prědȯjdti	v.tr. pf.
-3129	prědȯk	m.anim.
-6146	prědoplatnik	m.anim.
-21043	prědpis	m.
-35310	prědpisati	v.tr. pf.
-35309	prědpisyvati	v.tr. ipf.
-5407	prědplaćati	v.intr. ipf.
-5408	prědplatiti	v.intr. pf.
-11241	prědpočitańje	n.
-3787	prědpočitati	v.tr. ipf.
-5324	prědpoklad	m.
-3130	prědpokladati	v.tr. ipf.
-20062	prědpolagati	v.tr. ipf.
-11247	prědpoložeńje	n.
-20065	prědpoložiteljno	adv.
-18400	prědpoložiti	v.tr. pf.
-4305	prědposlědnji, prědposlědny	adj.
-16759	prědpostavjati	v.tr. ipf.
-29984	prědpotopny	adj.
-14926	prědpověď	f.
-11250	prědpovědati	v.tr. ipf.
-14927	prědpověděti	v.tr. pf.
-5164	prědprijemstvo	n.
-35201	prědprijęti	v.tr. pf.
-35200	prědprijmati	v.tr. ipf.
-15492	prědprimetny	adj.
-17020	prědråstka	f.
-3131	prědsědatelj	m.anim.
-6292	prědsědateljstvo	n.sg.
-11254	prědsědati	v.intr. ipf.
-14928	prědsědnik	m.anim.
-11256	prědskazańje	n.
-2897	prědskazati	v.tr. pf.
-3127	prědskazyvati	v.tr. ipf.
-18407	prědslovje	n.
-21762	prědstati	v.intr. pf.
-21769	prědstava	f.
-21761	prědstavati	v.intr. ipf.
-1203	prědstavitelj	m.anim.
-5171	prědstaviteljstvo	n.
-5406	prědstaviti sobě	v.refl. pf.
-2422	prědstaviti	v.tr. pf.
-5405	prědstavjati sobě	v.refl. ipf.
-1524	prědstavjati	v.tr. ipf.
-21766	prědstavjati	v.tr. ipf.
-11264	prědstavjeńje	n.
-21763	prědstojęći	adj.
-4080	prědsųďje	n.
-6290	prědsųdny	adj.
-20066	prědsųdȯk	m.
-2423	prědšedši	adj.
-22079	prědteča	f.
-36623	prědtym	adv.
-3128	prěduprěditi	v.tr. pf.
-21047	prěduprěditi	v.tr. pf.
-21048	prěduprěditi	v.tr. pf.
-1884	prěduprěđati	v.tr. ipf.
-21045	prěduprěđati	v.tr. ipf.
-21046	prěduprěđati	v.tr. ipf.
-20067	prěduprěđeńje	n.
-23095	prěduprěđeńje	n.
-36466	prěduslovje	n.
-36575	prědustavjeńje	n.
-35584	prědvčera	adv.
-29987	prědvečer	m.
-22231	prědvěsťje	n.
-5403	prědviděti	v.tr. pf.
-34836	prědvidimy	adj.
-34837	prědvidlivy	adj.
-5404	prědvidyvati	v.tr. ipf.
-3575	prědvrěmenny	adj.
-23357	prědvyšati	v.tr. ipf.
-22871	prědznak	m.
-32106	pręđa	f.
-3763	prěđe	adv.
-16758	preferovati	v.tr. ipf.
-805	prefiks	m.
-11284	prěględ	m.
-4075	prěględati	v.tr. ipf.
-4076	prěględěti	v.tr. pf.
-11295	prěględka	f.
-18414	prěgovory	m.pl.
-18415	prěgråda	f.
-23726	prěhlåditi sę	v.refl. pf.
-23727	prěhlađati sę	v.refl. ipf.
-23725	prěhlåđeńje	n.
-19506	prěhod	m.
-36524	prêhoditi ulicų	phrase
-2425	prěhoditi	v.intr. ipf.
-11298	prěhodny	adj.
-18419	prěhodny	adj.
-31908	prěhytriti	v.tr. pf.
-31909	prěhytrjati	v.tr. ipf.
-5521	prěimenovati	v.tr. pf.
-34893	prěimenovyvati	v.tr. ipf.
-18420	prěinačati	v.tr. ipf.
-18421	prěinačeńje	n.
-18422	prěinačeny	adj.
-18423	prěinačiti	v.tr. pf.
-36525	prêjdti ulicų	phrase
-1711	prějdti	v.intr. pf.
-5004	prějęti	v.tr. pf.
-5003	prějmati	v.tr. ipf.
-35800	prěklad	m.
-35801	prěkladatelj	m.anim.
-35802	prěkladati	v.tr. ipf.
-11303	prěključ	m.
-11301	prěključati	v.tr. ipf.
-11302	prěključiti	v.tr. pf.
-21462	prěkrasny	adj.
-36345	prěkryvańje	n.
-36344	prěkryvati sę	v.refl. ipf.
-14930	prěkydańje	n.
-23908	prělěpy	adj.
-23907	prělet	m.
-20068	prěletny	adj.
-29989	prěljubstvo	n.sg.
-20625	prělom	m.
-20626	prělom	m.
-32190	prělom	m.
-35803	prěložiti	v.tr. pf.
-3263	preludija	f.
-20627	prěmagati	v.tr. ipf.
-32972	prěmeblovati	v.tr. ipf./pf.
-2407	prěměna	f.
-18429	prěměniti sę	v.refl. pf.
-18428	prěměniti	v.tr. pf.
-18427	prěměnjati sę	v.refl. ipf.
-18426	prěměnjati	v.tr. ipf.
-35526	prěměnna	f.
-35525	prěměnny	adj.
-6233	prěměstiti sę	v.refl. pf.
-6230	prěměstiti	v.tr. pf.
-6232	prěměšćati sę	v.refl. ipf.
-6228	prěměšćati	v.tr. ipf.
-11308	prěmešćeńje	n.
-2976	premiera	f.
-2846	premier-ministr	m.anim.
-2845	prěmnogo	adv.
-11527	prěmo	adv.
-20633	prěmogti	v.tr. pf.
-4413	prěmokųtnik	m.
-4414	prěmokųtny	adj.
-2982	prěmȯlviti	v.intr. pf.
-2337	prěmȯlvjati	v.intr. ipf.
-11313	prěmotańje	n.
-4250	prěmotati	v.tr. pf.
-5554	prěmotyvati	v.tr. ipf.
-1209	prěmy	adj.
-36181	prěnapęti	v.tr. pf.
-36180	prěnapinati	v.tr. ipf.
-15408	prěnebrěgati	v.tr. ipf.
-15410	prěnebrěgti	v.tr. pf.
-9633	prěnebrěžeńje	n.sg.
-5394	prěnesti	v.tr. pf.
-36265	prěnesti	v.tr. pf.
-4195	prěnoćevati	v.intr. pf.
-5393	prěnositi	v.tr. ipf.
-36264	prěnositi	v.tr. ipf.
-20635	prěnosny	adj.
-20636	prěnosny	adj.
-22704	prěobraćati	v.tr. ipf.
-22706	prěobraćati	v.tr. ipf.
-22702	prěobråtiti	v.tr. pf.
-22707	prěobråtiti	v.tr. pf.
-11320	prěobraziti	v.tr. pf.
-11322	prěobražati	v.tr. ipf.
-20069	prěobražeńje	n.
-36601	prěocěniti	v.tr. pf.
-36600	prěocěnjati	v.tr. ipf.
-35288	prěoděti sę	v.refl. pf.
-35287	prěoděvati sę	v.refl. ipf.
-35679	preparat	m.
-21049	prěpirati sę	v.refl. ipf.
-11324	prěpisańje	n.
-11325	prěpisany	adj.
-5530	prěpisati	v.tr. pf.
-21050	prěpiska	f.
-5529	prěpisyvati	v.tr. ipf.
-34911	prěpluti	v.tr. pf.
-1850	prěplyvati	v.tr. ipf.
-36728	prěplyvati	v.tr. ipf.
-34325	prěplyvti	v.tr. pf.
-20070	prěpȯlnjeny	adj.
-11332	prěpona	f.
-35213	prěporųčati	v.tr. ipf.
-35214	prěporųčiti	v.tr. pf.
-35215	prěporųka	f.
-3529	prěprava	f.
-3539	prěpraviti	v.tr. pf.
-3528	prěpravjati	v.tr. ipf.
-11337	prěprogramovati	v.tr. pf.
-33068	prěrastati	v.tr. ipf.
-11338	prěråsti	v.tr. pf.
-16832	prěråzkazańje	n.
-16833	prěråzkazati	v.tr. pf.
-16834	prěråzkazyvati	v.tr. ipf.
-21464	prěrěčeńje	n.
-21465	prěrěkati sę	v.refl. ipf.
-21466	prěrěkti sę	v.refl. pf.
-11339	prěrězati	v.tr. pf.
-23359	prěroditi sę	v.refl. pf.
-23360	prěrođeńje	n.
-1772	prěrvati	v.tr. pf.
-21467	prěryv	m.
-11340	prěryvańje	n.
-1849	prěryvati	v.tr. ipf.
-1726	presa	f.
-2326	presa-konferencija	f.
-1358	presa-reliz	m.
-21469	prěsěčeńje	n.
-36214	prěsědańje	n.
-36215	prěsědati	v.intr. ipf.
-5402	prěsěkati	v.tr. ipf.
-5401	prěsěkti	v.tr. pf.
-11349	prěselenec	m.anim.
-11350	prěselenica	f.
-32969	prěseliti sę	v.refl. pf.
-11352	prěseliti	v.tr. pf.
-32968	prěseljati sę	v.refl. ipf.
-11353	prěseljati	v.tr. ipf.
-32970	prěseljeńje	n.
-36216	prěsęsti	v.intr. pf.
-2244	preskva	f.
-4291	prěslědovańje	n.
-4290	prěslědovati	v.tr. ipf.
-21470	prěslědovati	v.tr. ipf.
-18431	prěslěpiti	v.tr. pf.
-36360	pręslica	f.
-5991	prěslušati	v.tr. pf.
-14932	prěslušivańje	n.
-5990	prěslušivati	v.tr. ipf.
-36038	prěsměriti	v.tr. pf.
-36039	prěsměrjati	v.tr. ipf.
-36040	prěsměrjeńje	n.
-11359	prěsměšnik	m.anim.
-11361	prěspati	v.intr. pf.
-29995	prěstarati sę	v.refl. pf.
-18436	prěstati	v.intr. pf.
-18437	prěstavati	v.intr. ipf.
-21760	prěstaviti sę	v.refl. pf.
-2009	prěstaviti	v.tr. pf.
-21757	prěstavjati sę	v.refl. ipf.
-2931	prěstavjati	v.tr. ipf.
-18456	pręsti	v.intr. ipf.
-18457	pręsti	v.tr. ipf.
-33712	prěstigati	v.tr. ipf.
-29996	prěstignųti	v.tr. pf.
-20071	prestiž	m.sg.
-20072	prestižny	adj.
-36389	prěstol	m.
-1709	prěstrašeny	adj.
-293	prěstrašiti	v.tr. pf.
-11371	prěstrělka	f.
-18438	prěstųpańje	n.
-18439	prěstųpati	v.tr. ipf.
-36371	prěstųpati	v.tr. ipf.
-18440	prěstųpiti	v.tr. pf.
-36372	prěstųpiti	v.tr. pf.
-21961	prěstųpnik	m.anim.
-21962	prěstųpnik	m.anim.
-32336	prěstųpnosť	f.
-21052	prěstųpny god	m.
-21963	prěstųpny	adj.
-18441	prěstųpȯk	m.
-23747	prěsunųti	v.tr. pf.
-23744	prěsuvati	v.tr. ipf.
-11372	prěsvęzati	v.tr. pf.
-11374	prěsvęzyvati	v.tr. ipf.
-14935	prěškoda	f.
-16329	prětečeńje	n.
-6074	prětěkati	v.intr. ipf.
-6076	prětekti	v.intr. pf.
-32532	pretenciozny	adj.
-35966	pretendovati na	v.intr. ipf./pf.
-35968	pretendovati	v.tr. ipf./pf.
-35967	pretenzija	f.
-21053	prěti	v.ipf.
-35985	prětok rěky	m.
-16878	prětȯlmačiti	v.tr. pf.
-21055	prětraviti	v.tr. pf.
-21056	prětravjati	v.tr. ipf.
-2364	prětŕpěti	v.tr. pf.
-22149	prětvarjati	v.tr. ipf.
-22150	prětvoriti	v.tr. pf.
-22287	prěuveličati	v.tr. ipf.
-35604	prěuveličeńje	n.
-22288	prěuveličiti	v.tr. pf.
-22175	prěvaga	f.
-21058	prěvariti	v.tr. pf.
-21057	prěvarjati	v.tr. ipf.
-35241	prěvažajųći	adj.
-6006	prěvažati	v.intr. ipf.
-6007	prěvažiti	v.intr. pf.
-35242	prěvažno	adv.
-35819	prevencija	f.
-35820	preventivny	adj.
-3872	prěvesti	v.tr. pf.
-5396	prěvezti	v.tr. pf.
-22499	prěvladnųti	v.pf.
-22497	prěvladyvati	v.ipf.
-1565	prěvlađeńje	n.
-20073	prěvod	m.
-22254	prěvod	m.
-1571	prěvoditelj	m.anim.
-3055	prěvoditi	v.tr. ipf.
-11388	prěvođeńje	n.
-18448	prěvoz	m.
-23112	prěvoz	m.
-18444	prěvȯzhoditi	v.tr. ipf.
-5395	prěvoziti	v.tr. ipf.
-18447	prěvȯzȯjdti	v.tr. pf.
-22698	prěvråt	m.
-16062	prěvråtnik	m.anim.
-22700	prěvråtny	adj.
-22729	prěvysiti	v.tr. pf.
-22728	prěvyšati	v.tr. ipf.
-2284	prěz	prep.
-16063	prezentacija	f.
-2329	prezident	m.anim.
-31747	prezidentsky	adj.
-31746	prezidium	m.
-11394	prězimę	n.
-30000	prězir	m.
-22896	prězirati	v.tr. ipf.
-1710	prězměrno	adv.
-18450	prěznačati	v.tr. ipf.
-11396	prěznačeńje	n.
-18452	prěznačeny za	adj.
-18454	prěznačiti	v.tr. pf.
-3516	prězravo	adv.
-3515	prězravy	adj.
-20074	prězrěńje	n.
-9634	prězrěti	v.tr. pf.
-11400	prězvati	v.tr. pf.
-11401	prězvišče	n.
-16332	prězyvati	v.tr. ipf.
-4179	prěžitelj	m.anim.
-3604	prěžiti	v.tr. pf.
-4178	prěžiti	v.tr. pf.
-4331	prěžiti	v.tr. pf.
-4180	prěžiťje	n.
-22939	prěžitȯk	m.
-11409	prěživańje	n.
-4330	prěživati	v.tr. ipf.
-11412	prěživati	v.tr. ipf.
-11402	prěživimosť	f.
-11403	prěživimy	adj.
-21059	pręžka	f.
-34065	prěžuvati	v.tr. pf.
-621	pri	prep.
-4607	pri	prep.
-36138	pribiti	v.tr. pf.
-36137	pribivati	v.tr. ipf.
-23813	priblizno, približno	adv.
-18458	približati sę	v.refl. ipf.
-17011	približeny	adj.
-23671	približiti sę	v.refl. pf.
-18459	pribor	m.
-11416	pribrěžje	n.
-18462	pribyti	v.intr. pf.
-18463	pribyvati	v.intr. ipf.
-1467	pricěliti	v.pf.
-3020	pričęsťje	n.
-2412	pričina	f.
-2363	pričiniti	v.pf.
-1500	pričinjati	v.ipf.
-36347	pričisliti k	v.tr. pf.
-36346	pričisljati k	v.tr. ipf.
-35781	pridati	v.tr. pf.
-18465	pridatȯk	m.
-35782	pridavati	v.tr. ipf.
-17012	pridavnik	m.
-4229	pridělańje	n.
-4228	pridělati	v.tr. pf.
-18467	priděliti	v.tr. pf.
-18466	priděljati	v.tr. ipf.
-36563	Pridněstrovje	n.sg.
-36564	pridněstrovsky	adj.
-6180	pridŕživati sę	v.refl. ipf.
-14937	pridumati	v.tr. pf.
-35145	prigađati sę	v.refl. ipf.
-36598	priględati sę	v.refl. ipf.
-11426	priględati	v.tr. ipf.
-36599	priględěti sę	v.refl. pf.
-11427	priględěti	v.tr. pf.
-18469	prignųti	v.tr. pf.
-3126	prigoda	f.
-35144	prigoditi sę	v.refl. pf.
-3050	prigodny	adj.
-18471	prigodny	adj.
-1140	prigotoviti	v.tr. pf.
-23770	prigotovjeńje	n.
-4163	prigråd	m.
-35779	prigraničny	adj.
-18468	prigybati	v.tr. ipf.
-23750	prihod	m.
-1139	prihoditi	v.intr. ipf.
-11436	prijateliti sę	v.refl. ipf.
-1141	prijatelj	m.anim.
-4342	prijateljka	f.
-14938	prijateljska igra	f.
-11439	prijateljska strěľba	f.
-11438	prijateljskosť	f.
-4128	prijateljsky	adj.
-4129	prijateljstvo	n.
-5563	prijati	v.tr. ipf.
-5564	prijati	v.tr. ipf.
-11445	prijatlivy	adj.
-18472	prijaviti sę	v.refl. pf.
-18474	prijavjati sę	v.refl. ipf.
-1151	prijdti	v.intr. pf.
-5206	prijehati	v.intr. pf.
-18476	prijem	m.
-18477	prijem	m.
-33015	prijemlivy	adj.
-18478	prijemnik	m.
-11450	prijemnosť	f.
-3774	prijemny	adj.
-11433	prijemny	adj.
-18479	prijęti sę	v.refl. pf.
-3374	prijęti	v.tr. pf.
-35078	prijęťje	n.
-11454	prijętno	adv.
-23812	prijętnosť	f.
-3314	prijętny	adj.
-5208	priježđati	v.intr. ipf.
-32339	prijmajųća krajina	f.
-18480	prijmati sę	v.refl. ipf.
-11467	prijmati	v.tr. ipf.
-30223	prikaz	m.
-20076	prikazati	v.tr. pf.
-20078	prikazyvati	v.tr. ipf.
-3595	priklad	m.
-20079	prikladati	v.tr. ipf.
-3650	prikop	m.
-1143	prilagateljno imę	n.
-20639	prilegly	adj.
-32870	prilěpiti sę	v.refl. pf.
-5561	prilěpiti	v.tr. pf.
-21471	prilětati	v.intr. ipf.
-21472	priletěti	v.intr. pf.
-3769	priličny	adj.
-20642	priliv	m.
-20645	priloga	f.
-11465	priložeńje	n.
-11466	priložiti	v.tr. pf.
-36903	prilųčati sę	v.refl. ipf.
-36897	prilųčati	v.tr. ipf.
-36900	prilųčiti sę	v.refl. pf.
-36894	prilųčiti	v.tr. pf.
-36835	prima	f.
-33214	primamka	f.
-35320	primarny	adj.
-30011	primat	m.anim.
-33486	priměćati	v.tr. ipf.
-20650	priměniti	v.tr. pf.
-20649	priměnjati	v.tr. ipf.
-35515	priměnjeńje	n.
-3590	priměr	m.
-20651	priměrny	adj.
-33487	primětiti	v.tr. pf.
-34918	primětka	f.
-20654	primiŕje	n.
-35198	primitivny	adj.
-11470	primoŕje	n.
-390	prinajmenje	adv.
-20656	prinaležati	v.intr. ipf.
-20657	prinaležnosť	f.
-16065	princ	m.anim.
-2247	princesa	f.
-5327	princip	m.
-30012	principiaľny	adj.
-3221	prinesti	v.tr. pf.
-20658	prinos	m.
-3220	prinositi	v.tr. ipf.
-23617	printer	m.
-2136	prinuditi	v.tr. pf.
-1976	prinuđati	v.tr. ipf.
-3631	prinuđeny	adj.
-2135	prioritet	m.
-21061	pripadati	v.intr. ipf.
-21063	pripasti	v.intr. pf.
-21065	pripęti	v.tr. pf.
-21068	pripinati	v.tr. ipf.
-18486	pripisati	v.tr. pf.
-18487	pripisyvati	v.tr. ipf.
-34912	pripluti	v.intr. pf.
-34914	priplyvati	v.intr. ipf.
-36733	priplyvati	v.intr. ipf.
-36732	priplyvti	v.intr. pf.
-5942	pripominati sobě	v.tr. ipf.
-1208	pripominati	v.tr. ipf.
-5943	pripomněti sobě	v.tr. pf.
-2004	pripomněti	v.tr. pf.
-21073	pripraviti	v.tr. pf.
-21075	pripraviti	v.tr. pf.
-21076	pripravjati	v.tr. ipf.
-21078	pripravjati	v.tr. ipf.
-21082	pripustiti	v.tr. pf.
-21083	pripustiti	v.tr. pf.
-21079	pripušćati	v.tr. ipf.
-21080	pripušćati	v.tr. ipf.
-20085	priråstka	f.
-11480	priroda	f.
-36522	prirodne resursy	m.pl.
-11482	prirodničny	adj.
-18488	prirodno	adv.
-11484	prirodnosť	f.sg.
-1215	prirodny	adj.
-21473	prirodopis	m.sg.
-22216	prirodovědstvo	n.sg.
-22853	prirodoznavstvo	n.sg.
-21474	prirųčnik	m.
-11486	prirųčny	adj.
-678	prisęga	f.
-35699	prisęgati	v.tr. ipf.
-35686	prisęgnųti	v.tr. pf.
-15497	prisęžna	f.
-1396	prisęžni	m.pl.
-11490	prisęžny	m.anim.
-36902	prisjediniti sę	v.refl. pf.
-36896	prisjediniti	v.tr. pf.
-36905	prisjedinjati sę	v.refl. ipf.
-36899	prisjedinjati	v.tr. ipf.
-35147	prislati	v.tr. pf.
-18489	prislovica	f.
-18490	prislovje	n.
-17013	prislovnik	m.
-1216	prislovȯk	m.
-21476	prispěti	v.intr. pf.
-21477	prispěvati	v.intr. ipf.
-18491	prisposobiti	v.tr. pf.
-18493	prisposobjati	v.tr. ipf.
-35529	prisposobjeńja	n.pl.
-18495	prisposobjeńje	n.
-35528	prisposobjeny objekt	m.
-11493	pristanišče	n.
-21775	pristanj	m.
-21770	pristojati	v.intr. ipf.
-21772	pristojny	adj.
-21896	pristrastny	adj.
-34377	pristrigati	v.tr. ipf.
-34378	pristrigti	v.tr. pf.
-6188	pristųp	m.
-21969	pristųp	m.
-2059	pristųpati do	v.intr. ipf.
-21964	pristųpati k	v.intr. ipf.
-2391	pristųpiti do	v.intr. pf.
-21967	pristųpiti k	v.intr. pf.
-11494	pristųpjeńje	n.
-22008	prisųditi	v.tr. pf.
-22010	prisųditi	v.tr. pf.
-34892	prisųdȯk	m.
-22007	prisųđati	v.tr. ipf.
-22009	prisųđati	v.tr. ipf.
-14939	prisųtnosť	f.
-14940	prisųtny	adj.
-11502	prisųtstvo	n.sg.
-23860	prisųtstvovati pri	v.intr. ipf.
-22022	prisvajati	v.tr. ipf.
-36496	prisvojeńje	n.sg.
-17014	prisvojiteljny zaimennik	m.
-22021	prisvojiti	v.tr. pf.
-1130	prisvojny	adj.
-35146	prisylati	v.tr. ipf.
-23256	prišiti	v.tr. pf.
-23174	pritęgańje	n.
-23178	pritęgati	v.tr. ipf.
-23173	pritęglivosť	f.
-22046	pritęglivy	adj.
-23179	pritęgnųti	v.tr. pf.
-4522	pritisk krvi	m.sg.
-4300	pritisk	m.sg.
-18498	pritiskańje	n.
-4298	pritiskati	v.tr. ipf.
-4299	pritisknųti	v.tr. pf.
-22080	pritok	m.
-22081	pritok	m.
-33496	pritomny	adj.
-33497	pritomny	adj.
-18499	pritvarjati sę	v.refl. ipf.
-18501	pritvoriti sę	v.refl. pf.
-18500	pritvorny	adj.
-22151	pritvorstvo	n.sg.
-5861	priučati sę	v.refl. ipf.
-32979	priučati	v.tr. ipf.
-5863	priučeny	adj.
-5862	priučiti sę	v.refl. pf.
-32980	priučiti	v.tr. pf.
-23180	privabiti	v.tr. pf.
-23182	privabjati	v.tr. ipf.
-6294	privatnosť	f.
-6293	privatny	adj.
-31950	privesti	v.tr. pf.
-31952	privesti	v.tr. pf.
-22404	privět	m.
-22405	privětlivy	adj.
-22197	privęzannosť	f.
-21482	privęzati	v.tr. pf.
-3471	privezti	v.tr. pf.
-21483	privęzyvati	v.tr. ipf.
-6099	prividěńje	n.
-22425	prividěńje	n.
-35292	prividno	adv.
-35551	prividny	adj.
-21033	privilegija	f.
-15502	privitańje	n.
-11515	privitany	adj.
-1965	privitati	v.tr. pf.
-23175	privlåčivati	v.tr. ipf.
-22501	privlastniti sobě	v.tr. pf.
-22502	privlastnjati sobě	v.tr. ipf.
-23172	privlěkateljnosť	f.
-22543	privlěkateljny	adj.
-23176	privlěkati	v.tr. ipf.
-23177	privlěkti	v.tr. pf.
-11517	privoditi	v.tr. ipf.
-31946	privoditi	v.tr. ipf.
-22315	privoliti	v.pf.
-22314	privoljati	v.ipf.
-3470	privoziti	v.tr. ipf.
-22588	privŕženec	m.anim.
-20086	privyčaj	m.
-11519	privykati sę	v.refl. ipf.
-1268	privykati	v.tr. ipf.
-2392	privykly	adj.
-5864	privykneny	adj.
-11520	privyknųti sę	v.refl. pf.
-351	privyknųti	v.tr. pf.
-4564	prizemjati sę	v.refl. ipf.
-22750	prizemje	n.
-36734	prizemjeńje	n.
-4565	prizemjiti sę	v.refl. pf.
-3014	prizemny	adj.
-22875	priznak	m.
-11524	priznańje	n.
-2287	priznati	v.tr. pf.
-1214	priznavati	v.tr. ipf.
-22899	prizrak	m.
-22916	prizvańje	n.
-22917	prizvańje	n.
-20087	prizvati	v.tr. pf.
-20088	prizyvati	v.tr. ipf.
-22941	priživnik	m.anim.
-3069	pŕnik	m.
-1210	pro-	prefix
-23307	proba	f.
-20659	proběg	m.
-17015	proběgańje	n.
-36021	probijati sę	v.refl. ipf.
-36017	probiti sę	v.refl. pf.
-5414	probiti	v.tr. pf.
-5413	probivati	v.tr. ipf.
-18503	probkovańje	n.
-745	problem	m.
-20660	problematičny	adj.
-11538	probna jezda	f.
-18504	probny	adj.
-18506	probȯk	m.
-11542	probovati snova	v.tr. ipf.
-238	probovati	v.tr. ipf.
-3165	probuditi sę	v.refl. pf.
-23312	probuđeny	adj.
-804	procedura	f.
-2406	procent	m.
-6184	proces	m.
-33192	procesija	f.
-139	procitovati	v.tr. pf.
-32803	prȯč iz drågy!	phrase
-1217	prȯč	adv.
-23912	pročistiti	v.tr. pf.
-23911	pročišćati	v.tr. ipf.
-1190	pročitati	v.tr. pf.
-4263	prodati	v.tr. pf.
-4262	prodavati	v.tr. ipf.
-4264	prodavec	m.anim.
-11549	prodavica	f.
-2262	prodaž	f.
-36020	prodirati sę	v.refl. ipf.
-1007	prodȯlžati	v.tr. ipf.
-4594	prodȯlžati	v.tr. ipf.
-4384	prodȯlžeńje	n.
-4385	prodȯlžeńje	n.
-36294	prodȯlžeńje	n.
-1872	prodȯlžiti	v.tr. pf.
-4595	prodȯlžiti	v.tr. pf.
-36018	prodreti sę	v.refl. pf.
-35178	producent	m.anim.
-20089	produkcija	f.
-3078	produkovati	v.tr. ipf.
-5328	produkt	m.
-35174	produktivny	adj.
-11558	produmati	v.tr. pf.
-20090	profanacija	f.
-20091	profanovati	v.tr. ipf.
-4650	profesija	f.
-34919	profesional	m.anim.
-35325	profesionalizacija	f.
-35326	profesionalizovati	v.tr. ipf./pf.
-4652	profesionaľnosť	f.
-4651	profesionaľny	adj.
-48	profesor	m.anim.
-23227	profil	m.
-14943	proganjańje	n.
-14944	proganjany	adj.
-14942	proganjati	v.tr. ipf.
-18511	proglås	m.
-18514	proglåsiti	v.tr. pf.
-18512	proglašati	v.tr. ipf.
-18513	proglåšeńje	n.
-33731	prognoza	f.
-21461	progȯltati	v.tr. ipf.
-18413	progȯltnųti sȯlzy	v.pf.
-18412	progȯltnųti	v.tr. pf.
-31	programa	f.
-23618	programist	m.anim.
-11564	programovati	v.tr. ipf.
-6237	progres	m.
-6238	progresivny	adj.
-18515	prohlåda	f.
-18520	prohlåditi sę	v.refl. pf.
-18517	prohlåditi	v.tr. pf.
-18521	prohlådnosť	f.
-18522	prohlådny	adj.
-15503	prohod	m.
-35586	prohoditi sę	v.refl. ipf.
-5480	prohoditi	v.tr. ipf.
-35587	prohoďka	f.
-20661	prohodny	adj.
-23361	proigranec	m.anim.
-5422	proigrati	v.tr. pf.
-5423	proigryvati	v.tr. ipf.
-11566	proizhoditi iz	v.ipf.
-4843	proizhođeńje	n.
-22082	proiztěkati	v.intr. ipf.
-22084	proiztekti	v.intr. pf.
-11568	proizvesti	v.tr. pf.
-22261	proizvod	m.
-35569	proizvoditelj	m.anim.
-11569	proizvoditi	v.tr. ipf.
-22259	proizvodstvo	n.sg.
-22318	proizvoljny	adj.
-19919	projav	m.
-5325	projaviti	v.tr. pf.
-5326	projavjati	v.tr. ipf.
-35349	projavjeńje	n.
-5481	projdti	v.tr. pf.
-5488	projehati	v.intr. pf.
-5651	projekcija	f.
-430	projekt	m.
-5099	projektant	m.anim.
-4362	projektovańje	n.
-4361	projektovati	v.tr. ipf.
-18524	projęti	v.tr. pf.
-5489	proježđati	v.intr. ipf.
-18525	projmati	v.tr. ipf.
-18526	proklęti	v.tr. pf.
-18527	proklęti	v.intr. pf.
-20093	proklęťje	n.
-35990	proklęto	adv.
-18528	proklętstvo	n.
-36704	proklęty	adj.
-1221	prokontrolovati	v.tr. pf.
-2269	prokrijumčariti	v.tr. pf.
-6295	prokuratura	f.
-2943	prokuror	m.anim.
-5588	prolamyvati	v.tr. ipf.
-5519	proletariat	m.sg.
-5520	proletaŕsky	adj.
-1223	proleženina	f.
-6152	proliti	v.tr. pf.
-6151	prolivati	v.tr. ipf.
-20662	prolom	m.
-36301	prolom	m.
-4614	prolomiti	v.tr. pf.
-1211	promysl	m.
-2315	promysľnik	m.anim.
-35179	promysľny	adj.
-32301	promyti mozg	v.tr. pf.
-32300	promyvati mozg	v.tr. ipf.
-6298	pronevěriti	v.tr. pf.
-6296	pronevěrjati	v.tr. ipf.
-18530	pronevěrjeńje	n.
-4456	pronikańje	n.
-4454	pronikati	v.intr. ipf.
-35552	proniklivy	adj.
-4455	proniknųti	v.intr. pf.
-4310	propadati	v.intr. ipf.
-21085	propadati	v.intr. ipf.
-21086	propadati	v.intr. ipf.
-5329	propaganda	f.
-5330	propagovati	v.tr. ipf.
-11592	propasť	f.
-11594	propasť	f.
-21088	propasť	f.
-4311	propasti	v.intr. pf.
-21089	propasti	v.intr. pf.
-21090	propasti	v.intr. pf.
-18532	propeler	m.
-35765	propiti	v.tr. pf.
-35764	propivati	v.tr. ipf.
-4081	proponovati	v.tr. ipf.
-23784	proporcija	f.
-23783	proporcionaľno	adv.
-23782	proporcionaľny	adj.
-22233	propověď	f.
-5124	propozicija	f.
-21092	propust	m.
-21093	propust	m.
-35643	propust	m.
-18534	propustiti	v.tr. pf.
-18533	propušćati	v.tr. ipf.
-33585	proročsky	adj.
-2235	prorok	m.anim.
-36300	proryv	m.
-22794	prośak	m.anim.
-1232	prośba	f.
-3353	prosim	intj.
-1853	prositi	v.tr. ipf.
-36582	proslaviti sę	v.refl. pf.
-1227	proslaviti	v.tr. pf.
-36578	proslaviti	v.tr. pf.
-36581	proslavjati sę	v.refl. ipf.
-36576	proslavjati	v.tr. ipf.
-36579	proslavjati	v.tr. ipf.
-428	proslavjeny	adj.
-3937	proso	n.
-4197	prospati	v.intr. pf.
-33222	prospati	v.tr. pf.
-36453	prostačsky	adj.
-21096	prostak	m.anim.
-21098	prostak	m.anim.
-21765	prostata	f.
-18540	prostějši	adj.
-21885	prostirati	v.tr. ipf.
-21886	prostirati	v.tr. ipf.
-21100	prostiti sę	v.refl. pf.
-21099	prostiti	v.tr. pf.
-1748	prostitutka	f.
-3753	prosto	adv.
-5531	prostor	m.
-1437	prostosť	f.
-11611	prostrånna klaviša	f.
-16478	prostrånny	adj.
-21889	prostrånny	adj.
-21890	prostrånny	adj.
-11610	prostrånstvo	n.
-21887	prostrěti	v.tr. pf.
-21888	prostrěti	v.tr. pf.
-11613	prostrina	f.
-33418	prostuditi sę	v.refl. pf.
-33419	prostuđati sę	v.refl. ipf.
-2334	prosty	adj.
-22013	prosvěćańje	n.
-22014	prosvěćańje	n.
-5783	prosvěćati	v.tr. ipf.
-3642	prosvět	m.
-6202	prosvěta	f.
-5784	prosvětiti	v.tr. pf.
-30030	prošćaľny	adj.
-18535	prošćańje	n.
-36523	prošćati sę	v.refl. ipf.
-547	prošćati	v.tr. ipf.
-2288	prošedšesť	f.sg.
-981	prošedši	adj.
-5945	prošlogodišnji, prošlogodišny	adj.
-11622	prošloročny	adj.
-11623	prošlosť	f.sg.
-11624	prošly	adj.
-11626	prošų	intj.
-34752	protagonist	m.anim.
-23915	protęga	f.
-23916	protęgati sę	v.refl. ipf.
-23917	protęgnųti sę	v.refl. pf.
-23619	protein	m.
-5419	protěkati	v.intr. ipf.
-5418	protekti	v.intr. pf.
-36491	protektorat	m.
-46	protest	m.
-361	protestant	m.anim.
-4609	protestant	m.anim.
-33729	protestantsky	adj.
-898	protestovati	v.intr. ipf.
-17016	protetičny	adj.
-17087	proteza	f.
-22047	protęžeńje	n.
-22048	protęžny	adj.
-362	protiv	prep.
-5479	protivdějati	v.intr. ipf.
-1073	protivdějstvo	n.sg.
-2331	protiviti sę	v.refl. ipf.
-20666	protivlegly	adj.
-2881	protivnik	m.anim.
-4389	protivno	adv.
-17017	protivnosť	f.
-4388	protivny	adj.
-20667	protivpoloženy	adj.
-4206	protivpožarny	adj.
-36117	protivraketna obråna	f.
-21484	protivrěčiti	v.intr. ipf.
-23802	protivrěčnosť	f.
-23804	protivrěčny	adj.
-975	protokol	m.
-4657	proton	m.
-34841	prototip	m.
-34842	prototipičny	adj.
-21485	protreti	v.tr. pf.
-18545	prověriti	v.tr. pf.
-18544	prověrjati	v.tr. ipf.
-36697	prověrka	f.
-5506	provesti	v.tr. pf.
-18546	provesti	v.tr. pf.
-4623	provětriti	v.tr. pf.
-4624	provětrjati	v.tr. ipf.
-22427	providěńje	n.
-22428	Providěńje	n.
-35466	provinciaľny	adj.
-1733	provincija	f.
-11645	provod	m.
-22255	provod	m.
-3279	provoditi	v.tr. ipf.
-3537	provoditi	v.tr. ipf.
-4230	provoditi	v.intr. ipf.
-11651	provodnik želěznice	m.anim.
-22256	provodnik	m.anim.
-22257	provodnik	m.anim.
-22258	provodnik	m.
-18548	provođati	v.tr. ipf.
-14950	provođeńje	n.
-18549	provođeńje	n.
-707	provokacija	f.
-175	provokatorsky	adj.
-4978	provokovati	v.tr. ipf.
-23921	provŕćati	v.tr. ipf.
-20094	provŕgati	v.tr. ipf.
-20095	provŕgnųti	v.tr. pf.
-23920	provŕtiti	v.tr. pf.
-20096	proza	f.
-11656	prozråčno	adv.
-6214	prozråčnosť	f.
-6213	prozråčny	adj.
-18551	proživati	v.intr. ipf.
-1450	pŕś	f.
-21486	prskati	v.intr. ipf.
-21686	prsknųti	v.intr. pf.
-1723	pŕst	m.
-30033	pŕstenj	m.
-21103	prųga	f.
-35634	Prusija	f.sg.
-16760	prųt	m.
-3833	prųžina	f.
-21105	prųžiti	v.tr. ipf.
-21107	prųžny	adj.
-18553	pŕva světova vojna	f.
-16912	pŕvak	m.anim.
-16913	pŕvenstvo	n.
-18554	pŕvěstȯk	m.
-20097	pŕvo	adv.
-21488	pŕvobraz	m.
-18555	pŕvobytny	adj.
-10506	pŕvonačęľno	adv.
-10508	pŕvonačęľnosť	f.
-10509	pŕvonačęľny	adj.
-22353	pŕvorędny	adj.
-21489	pŕvorodstvo	n.sg.
-18559	pŕvotny	adj.
-20098	pŕvovzor	m.
-3621	pŕvy raz	m.
-1572	pŕvy	num.ord.
-18563	pryšč	m.
-35977	psalm	m.
-35978	psaltyŕ	m.
-35406	psevdo-	prefix
-35407	psevdonauka	f.
-18564	psevdonim	m.
-33734	psica	f.
-20099	psihiatričny	adj.
-20100	psihičny	adj.
-16819	psiholog	m.anim.
-16820	psihologičny	adj.
-16818	psihologija	f.sg.
-16817	psihopat	m.anim.
-3264	psihopatičny	adj.
-36701	psihovati	v.intr. ipf.
-1224	pšenica	f.
-15507	ptačę	n.
-14952	ptačji	adj.
-14951	ptak	m.anim.
-1111	ptica	f.
-4478	ptičji	adj.
-15508	ptička	f.
-36163	pubertet	m.
-23991	publičny dom	m.
-1213	publičny	adj.
-18565	publika	f.
-4979	publikacija	f.
-1212	publikovati	v.tr. ipf.
-3250	puč	m.
-31813	puding	m.
-21108	pųditi	v.tr. ipf.
-11669	puh	m.
-4773	puhnųti	v.intr. ipf.
-11670	puhovy	adj.
-32275	pųhyŕ	m.
-30415	pųkati	v.intr. ipf.
-30417	pųknųti	v.intr. pf.
-36031	pulover	m.
-21110	pult	m.
-32475	puma	f.
-2095	punkt	m.
-23806	pųp	m.
-18566	pųpȯk	m.
-30041	purizm	m.sg.
-23765	purpur	m.
-30042	purpurny	adj.
-32541	pustěti	v.intr. ipf.
-11676	pustina	f.
-18568	pustiti	v.tr. pf.
-21119	pustošiti	v.tr. ipf.
-1083	pusty	adj.
-21121	pusty	adj.
-2154	pustynja	f.
-18570	pustynnik	m.anim.
-18567	pušćati	v.tr. ipf.
-14954	pušiti	v.tr. ipf.
-16814	puška	f.
-2155	pųť	m./f.
-18571	pųť	m./f.
-4357	pųtnik	m.anim.
-11681	pųtovańje	n.
-5937	pųtovatelj	m.anim.
-11685	pųtovateljka	f.
-2156	pųtovati	v.intr. ipf.
-4356	pųtujųći	m.anim.
-2246	pyl	m.
-10553	pyliti	v.intr. ipf.
-23362	pylȯk	m.
-6090	pyšnosť	f.
-6091	pyšny	adj.
-32559	pytaľnik	m.
-32560	pytaľny znak	m.
-5768	pytańje	n.
-17021	pytateljny zaimennik	m.
-5938	pytati	v.tr. ipf.
-10592	pytlivy	adj.
-21122	pytlivy	adj.
-5331	råb	m.anim.
-30047	rabarbara	f.
-30048	rabat	m.
-11987	råbimy	adj.
-30050	rabin	m.anim.
-2955	råbiti	v.tr. ipf.
-3701	råbota	f.
-1250	råbotati	v.intr. ipf.
-20101	råbotči	adj.
-35374	råbotna sila	f.
-30621	råbotnica	f.
-19507	råbotničsky	adj.
-11992	råbotničstvo	n.sg.
-5332	råbotnik	m.anim.
-30623	råbotny	adj.
-18579	råbotodatelj	m.anim.
-30051	råbsky	adj.
-1080	råbstvo	n.sg.
-30053	råbynja	f.
-55	racionalizacija	f.
-36351	racionalizovany	adj.
-34862	racionalizovati	v.tr. ipf./pf.
-36350	racionalizovati	v.tr. ipf./pf.
-20102	racionaľno	adv.
-16337	racionaľny	adj.
-30056	rad	adj.
-4108	rada	f.
-2301	radar	m.
-7209	radca	m.anim.
-11697	raděje	adv.
-30057	radi	prep.
-887	radiacija	f.
-22636	radij	m.sg.
-174	radikaľny	adj.
-171	radio	n.
-731	radioaktivny	adj.
-23288	radiolog	m.anim.
-23287	radiologija	f.sg.
-22015	radioskopija	f.
-36221	radiotelevizijna korporacija	f.
-17022	radiovy	adj.
-4109	raditi	v.tr. ipf.
-11702	radničstvo	n.sg.
-3316	radosť	f.
-11706	radostno	adv.
-803	radostny	adj.
-3455	radovati sę	v.refl. ipf.
-30061	radovati	v.tr. ipf.
-5179	rady	adj.
-32347	rafinerija	f.
-20103	rafinovany	adj.
-35540	rahunȯk	m.
-1496	raj	m.
-30064	rajsky	adj.
-18581	rak pustynnik	m.anim.
-18580	rak	m.
-30066	rak	m.anim.
-30067	Rak	m.anim.
-172	raketa	f.
-30075	ralo	n.
-5158	rama, ramka	f.
-16343	ramę	n.
-30077	ramenny	adj.
-18582	rana	f.
-14958	ranec	m.
-11716	ranečnik	m.anim.
-4061	raněje	adv.
-11719	rang	m.
-16072	rang	m.
-35562	ranimosť	f.
-35561	ranimy	adj.
-1381	raniti	v.tr. ipf.
-30079	ranji	adj.
-1383	rano	adv.
-4060	ranši	adj.
-517	rany	adj.
-902	raport	m.
-11725	rasa	f.
-23623	rasist	m.anim.
-23624	rasističny	adj.
-23622	rasizm	m.sg.
-11726	rasovo stereotipovańje	n.
-11727	rasovo unižeńje	n.
-11729	rasovy	adj.
-3684	råst	m.
-21491	råst	m.
-3037	råsti	v.intr. ipf.
-6245	råstlina	f.
-35508	råstlinovod	m.anim.
-22947	råstlinožerec	m.anim.
-22948	råstlinožerny	adj.
-21493	råstly	adj.
-23923	råstȯk	m.
-1382	ratifikacija	f.
-1119	ratifikovati	v.tr. ipf.
-1118	ratuš	m.
-1331	raund	m.
-11737	råvěsničska sěť	f.
-15509	råvěsničsky	adj.
-30086	råvěsnik	m.anim.
-12023	råvnako	adv.
-21494	råvnańje	n.
-2248	råvnina	f.
-6059	råvniti sę	v.refl. ipf.
-15511	råvniti	v.tr. ipf.
-5860	råvno kako	conj.
-3592	råvno	adv.
-23205	råvnoběžny	adj.
-18584	råvnodenstvo	n.
-11740	råvnodušnosť	f.
-21496	råvnodušny	adj.
-18585	råvnohalo	n.
-35148	råvnoliko	adv.
-23780	råvnoměrno	adv.
-20669	råvnoměrnosť	f.
-20670	råvnoměrny	adj.
-32281	råvnonogy	f.pl.
-18586	råvnopravnosť	f.
-18588	råvnopravny	adj.
-30091	råvnosť	f.
-21497	råvnovaga	f.
-21499	råvnověśje	n.
-12030	råvnoznačnik	m.
-36134	råvnoznačny	adj.
-1242	råvny	adj.
-2239	råvny	adj.
-3877	råvny	adj.
-489	raz	m.
-11745	raz	adv.
-30100	råzběgati sę	v.refl. ipf.
-30101	råzběgati sę	v.refl. ipf.
-30103	råzběgti sę	v.refl. pf.
-35356	råzběsniti	v.tr. pf.
-35355	råzběsnjati	v.tr. ipf.
-11748	råzbirati	v.tr. ipf.
-16472	råzbirati	v.tr. ipf.
-11750	råzbiti	v.tr. pf.
-3473	råzbity	adj.
-30104	råzbivati	v.tr. ipf.
-20674	råzboj	m.
-30116	råzbojnica	f.
-20675	råzbojnik	m.anim.
-30118	råzbojny napad	m.
-34929	råzbojny	adj.
-11752	råzbolěti sę	v.refl. pf.
-33753	råzbolěvati sę	v.refl. ipf.
-11753	råzbor	m.
-11749	råzbrati	v.tr. pf.
-16473	råzbrati	v.tr. pf.
-3878	råzbuditi	v.tr. pf.
-2295	råzcvěsti	v.intr. pf.
-15372	råzcvět	m.
-1103	råzcvětati	v.intr. ipf.
-30131	råzčesati	v.tr. pf.
-30134	råzčistiti	v.tr. pf.
-33774	råzčišćati	v.tr. ipf.
-30136	råzčuliti	v.tr. pf.
-33777	råzčuljati	v.tr. ipf.
-3675	råzdati	v.tr. pf.
-3652	råzdavati	v.tr. ipf.
-6053	råzděl	m.
-595	råzděliti	v.tr. pf.
-2249	råzděljati	v.tr. ipf.
-33755	råzděti sę	v.refl. pf.
-30143	råzděti	v.tr. pf.
-33756	råzděvati sę	v.refl. ipf.
-30145	råzděvati	v.tr. ipf.
-30147	råzdirańje	n.
-20104	råzdirati	v.tr. ipf.
-30150	råzdniti sę	v.refl. pf.
-33787	råzdȯlbati	v.tr. ipf.
-30151	råzdȯlbti	v.tr. pf.
-30152	råzdor	m.
-23221	råzdražlivosť	f.
-759	råzdražlivy	adj.
-11771	råzdražniti	v.tr. pf.
-11772	råzdražnjati	v.tr. ipf.
-2409	råzdražnjeńje	n.
-23799	råzdražnjeno	adv.
-23797	råzdražnjeny	adj.
-20105	råzdreti	v.tr. pf.
-20106	råzdrety	adj.
-30158	råzdrobiti	v.tr. pf.
-30159	råzdrobjati	v.tr. ipf.
-30160	råzdrobjeńje	n.
-2847	råzdųti	v.tr. pf.
-1558	råzdųvati	v.tr. ipf.
-18592	råzdvajati	v.tr. ipf.
-30165	råzdvojeńje	n.
-18593	råzdvojiti	v.tr. pf.
-30167	råzgadati	v.tr. pf.
-33765	råzgadyvati	v.tr. ipf.
-30168	råzganjati	v.tr. ipf.
-30169	råzgarjati sę	v.refl. ipf.
-30170	råzgladiti	v.tr. pf.
-32662	råzglađati	v.tr. ipf.
-18596	råzglåsiti	v.tr. pf.
-18594	råzglašati	v.tr. ipf.
-30174	råzględ	m.
-5822	råzględati sę	v.refl. ipf.
-11776	råzględati	v.tr. ipf.
-5823	råzględěti sę	v.refl. pf.
-11777	råzględěti	v.tr. pf.
-30176	råzgnati	v.tr. pf.
-23924	råzgněvany	adj.
-2349	råzgněvati	v.tr. pf.
-30180	råzgon	m.
-30182	råzgorěti sę	v.refl. pf.
-5426	råzgovarjati	v.intr. ipf.
-720	råzgovor	m.
-30184	råzgovoriti sę	v.refl. pf.
-18598	råzgovornik	m.
-32664	råzgovorny język	m.
-30186	råzgovorny	adj.
-30187	råzgrabiti	v.tr. pf.
-30188	råzgrabiti	v.tr. pf.
-30189	råzgrabjati	v.tr. ipf.
-33921	råzgrabjati	v.tr. ipf.
-30191	råzgråditi	v.tr. pf.
-33820	råzgrađati	v.tr. pf.
-33759	råzgraničati	v.tr. ipf.
-30192	råzgraničiti	v.tr. pf.
-30196	råzgrěti	v.tr. pf.
-30197	råzgrěvańje	n.
-30198	råzgrěvati	v.tr. ipf.
-30200	råzgrom	m.
-30201	råzgromiti	v.tr. pf.
-30203	råzgryzati	v.tr. ipf.
-30204	råzgryzti	v.tr. pf.
-18600	råzhod	m.
-5424	råzhoditi sę	v.refl. ipf.
-30210	råzhodny	adj.
-30214	råzigrati sę	v.refl. pf.
-33792	råzigrati	v.tr. pf.
-33796	råzigryvati sę	v.refl. ipf.
-33794	råzigryvati	v.tr. ipf.
-11787	råziskati	v.tr. pf.
-18602	råziskyvańje dȯlgoživosti	n.
-11788	råziskyvańje	n.
-11789	råziskyvatelj	m.anim.
-11790	råziskyvati	v.tr. ipf.
-21503	raziteljny	adj.
-21505	raziti	v.tr. ipf.
-35358	råzjariti	v.tr. pf.
-35357	råzjarjati	v.tr. ipf.
-18605	råzjasniti	v.tr. pf.
-18603	råzjasnjati	v.tr. ipf.
-11791	råzjebany	adj.
-4266	råzjebati	v.tr. pf.
-11793	råzjebyvati	v.tr. ipf.
-36908	råzjedati	v.tr. ipf.
-30215	råzjediniti	v.tr. pf.
-33824	råzjedinjati	v.tr. ipf.
-33771	råzjehati sę	v.refl. pf.
-36909	råzjesti	v.tr. pf.
-30218	råzježđati sę	v.refl. ipf.
-30219	råzkajańje	n.
-30220	råzkajati sę	v.refl. pf.
-30221	råzkalati	v.tr. ipf.
-33887	råzkaz	m.
-21507	råzkazati	v.tr. pf.
-17023	råzkaznik	m.
-36295	råzkaznik	m.anim.
-20126	råzkazyvati	v.tr. ipf.
-5532	råzklad	m.
-5781	råzklad	m.
-18607	råzkladati	v.tr. ipf.
-32691	råzkladati	v.tr. ipf.
-30233	råzklåti	v.tr. pf.
-33828	råzklejati	v.tr. ipf.
-30234	råzklejiti	v.tr. pf.
-11797	råzkodovati	v.tr. ipf.
-30237	råzkol	m.
-30238	råzkopati	v.tr. pf.
-33829	råzkopyvati	v.tr. ipf.
-30239	råzkoš	f.
-30240	råzkoš	f.
-30242	råzkošny	adj.
-30243	råzkošny	adj.
-30244	råzkovati	v.tr. pf.
-33868	råzkovyvati	v.tr. ipf.
-33866	råzkrajati	v.tr. ipf.
-30247	råzkričati sę	v.refl. pf.
-30251	råzkrojiti	v.tr. pf.
-30253	råzkrȯšiti	v.tr. pf.
-33855	råzkrųćati sę	v.tr. ipf.
-33853	råzkrųćati	v.tr. ipf.
-33852	råzkrųtiti sę	v.tr. pf.
-30254	råzkrųtiti	v.tr. pf.
-30256	råzkryti	v.tr. pf.
-30257	råzkryťje	n.
-30258	råzkryvati	v.tr. ipf.
-36412	råzkvartirovańje	n.sg.
-36411	råzkvartirovati	v.tr. pf.
-24162	råzkvartirovyvati	v.tr. ipf.
-30226	råzkydati	v.tr. pf.
-33826	råzkydyvati	v.tr. ipf.
-30261	råzlad	m.
-33836	råzladiti	v.tr. pf.
-33840	råzlađati	v.tr. ipf.
-30263	råzlagati	v.tr. ipf.
-32692	råzlagati	v.tr. ipf.
-30264	råzlajati sę	v.refl. pf.
-5589	råzlamyvati	v.tr. ipf.
-20677	råzlegati sę	v.refl. ipf.
-20678	råzlegti sę	v.refl. pf.
-30269	råzlěniti sę	v.refl. pf.
-30270	råzlětati sę	v.refl. ipf.
-30271	råzletěti sę	v.refl. pf.
-17024	råzličajųći čislovnik	m.
-4695	råzličati sę	v.refl. ipf.
-11804	råzličati	v.tr. ipf.
-20107	råzličeńje	n.
-30276	råzličiti	v.tr. pf.
-27	råzličje	n.
-11802	råzličnosť	f.
-2211	råzličny	adj.
-14963	råzlika	f.
-14964	råzlikovati sę	v.refl. ipf.
-30278	råzliti	v.tr. pf.
-30279	råzliťje	n.
-30280	råzliv	m.
-30282	råzlivati	v.tr. ipf.
-14965	råzlog	m.
-30286	råzlom	m.
-4615	råzlomiti	v.tr. pf.
-36217	råzložeńje klaviatury	n.
-18608	råzložiti	v.tr. pf.
-30231	råzložiti	v.tr. pf.
-20108	råzlųčati	v.tr. ipf.
-30290	råzlųčeńje	n.
-20109	råzlųčiti	v.tr. pf.
-30292	råzlųčnik	m.anim.
-30293	råzlųka	f.
-11807	råzmah krila	n.
-20681	råzmah	m.
-30298	råzmazati	v.tr. pf.
-33894	råzmazyvati	v.tr. ipf.
-30300	råzmękčati	v.tr. ipf.
-30301	råzmękčiti	v.tr. pf.
-3596	råzměna	f.
-17	råzměniti	v.tr. pf.
-324	råzměnjati	v.tr. ipf.
-36	råzměr	m.
-30308	råzměriti	v.tr. pf.
-30309	råzměrjati	v.tr. ipf.
-30317	råzmesti	v.tr. pf.
-128	råzměstiti	v.tr. pf.
-5973	råzměšany	adj.
-23250	råzměšany	adj.
-1041	råzměšati	v.tr. pf.
-12376	råzměšati	v.tr. pf.
-1262	råzměšćati	v.tr. ipf.
-11817	råzměšćeńje	n.
-3004	råzměšivati	v.tr. ipf.
-16898	råzměšivati	v.tr. ipf.
-30315	råzmětati	v.tr. ipf.
-30316	råzmetati	v.tr. pf.
-32245	råzmęti	v.tr. pf.
-32599	råzmetyvati	v.tr. ipf.
-33900	råzminovati sę	v.refl. ipf.
-30318	råzminųti sę	v.refl. pf.
-30320	råzmlåtiti	v.tr. pf.
-30321	råzmlěti	v.tr. pf.
-23626	råzmnažańje	n.
-33291	råzmnažati sę	v.refl. ipf.
-30322	råzmnažati	v.tr. ipf.
-30323	råzmnožeńje	n.
-33293	råzmnožiti sę	v.refl. pf.
-30324	råzmnožiti	v.tr. pf.
-30326	råzmokati	v.intr. ipf.
-30327	råzmoknųti	v.intr. pf.
-5633	råzmontovati	v.tr. pf.
-30329	råzmotati	v.tr. pf.
-23065	råzmråziti	v.tr. pf.
-23066	råzmražati	v.tr. ipf.
-5046	råzmysliti	v.tr. pf.
-11827	råzmysljańje	n.
-3348	råzmysljati	v.tr. ipf.
-20112	råzmysljeńje	n.
-30337	råzmyti	v.tr. pf.
-30338	råzmyvati	v.tr. ipf.
-20686	råznesti sę	v.refl. pf.
-5501	råznesti	v.tr. pf.
-11834	råznica	f.
-30345	råzniti sę	v.refl. ipf.
-21508	råznorodnosť	f.
-21509	råznorodny	adj.
-30349	råznos	m.
-20687	råznositi sę	v.refl. ipf.
-5499	råznositi	v.tr. ipf.
-2034	råzny	adj.
-41	råzočarovańje	n.
-5900	råzočarovany	adj.
-5898	råzočarovati	v.tr. pf.
-5899	råzočarovyvati	v.tr. ipf.
-35645	råzȯjdti sę	v.refl. pf.
-14960	razȯm	adv.
-21510	razȯm	adv.
-30357	råzorati	v.tr. pf.
-30359	råzoriti	v.tr. pf.
-33803	råzorjati	v.tr. ipf.
-30358	råzorjeńje	n.
-23010	råzorųžati	v.tr. ipf.
-6240	råzorųžeńje	n.
-23009	råzorųžiti	v.tr. pf.
-20114	råzpad	m.
-2271	råzpadati sę	v.refl. ipf.
-18610	råzpakovati	v.tr. pf.
-18612	råzpakovyvati	v.tr. ipf.
-30374	råzpaliti sę	v.refl. pf.
-30370	råzpaliti	v.tr. pf.
-33934	råzpaljati sę	v.refl. ipf.
-33930	råzpaljati	v.tr. ipf.
-30377	råzparjati	v.tr. ipf.
-2050	råzpasti sę	v.refl. pf.
-30379	råzpěniti	v.intr. pf.
-30381	råzpęti na križ	v.tr. pf.
-30380	råzpęti	v.tr. pf.
-33944	råzpęti	v.tr. pf.
-21124	råzpęťje	n.
-21125	råzpęťje	n.
-33952	råzpinati na križ	v.tr. ipf.
-33947	råzpinati	v.tr. ipf.
-33950	råzpinati	v.tr. ipf.
-34338	råzplesti	v.tr. pf.
-34334	råzpletati	v.tr. ipf.
-34905	råzplyvati sę	v.refl. ipf.
-34906	råzplyvti sę	v.refl. pf.
-20839	råzpoložeńje	n.
-30389	råzpoložeńje	n.
-2914	råzpor	m.
-23927	råzporęditi	v.tr. pf.
-23929	råzporęđati	v.tr. ipf.
-22363	råzporęđeńje	n.
-22364	råzporęđeńje	n.
-22883	råzpoznańje	n.
-11844	råzpoznati	v.tr. pf.
-22882	råzpoznati	v.tr. pf.
-36455	råzpoznavajemosť	f.sg.
-36454	råzpoznavajemy	v.tr. ipf.
-30398	råzpoznavańje	n.
-11845	råzpoznavati	v.tr. ipf.
-22880	råzpoznavati	v.tr. ipf.
-33955	råzprašati	v.tr. ipf.
-33954	råzpråšiti	v.tr. pf.
-30401	råzpråti	v.tr. pf.
-21129	råzprava	f.
-21130	råzprava	f.
-23069	råzprava	f.
-21126	råzprja	f.
-32671	råzprodati	v.tr. pf.
-30404	råzprodavati	v.tr. ipf.
-30406	råzprostirati sę	v.refl. ipf.
-21892	råzprostirati	v.tr. ipf.
-33907	råzprostråniti sę	v.refl. pf.
-20123	råzprostråniti	v.tr. pf.
-33908	råzprostranjati sę	v.refl. ipf.
-20117	råzprostranjati	v.tr. ipf.
-20120	råzprostrånjeńje	n.
-20122	råzprostrånjeny	adj.
-21893	råzprostrěti	v.tr. pf.
-30416	råzpųklina	f.
-1887	råzpustiti	v.tr. pf.
-21139	råzpustiti	v.tr. pf.
-21141	råzpustiti	v.tr. pf.
-2362	råzpušćati	v.tr. ipf.
-21134	råzpušćati	v.tr. ipf.
-21136	råzpušćati	v.tr. ipf.
-3564	råzpušćeńje	n.
-3530	råzpųťje	n.
-5989	råzpytati	v.tr. pf.
-11851	råzpytyvańje	n.
-5988	råzpytyvati	v.tr. ipf.
-5144	råzråbotati	v.tr. pf.
-5543	råzråbotyvati	v.tr. ipf.
-11855	råzradovati	v.tr. pf.
-30426	råzrastańje	n.
-30427	råzrastati sę	v.refl. ipf.
-30428	råzråsti sę	v.refl. pf.
-18618	råzråzniti	v.tr. pf.
-18617	råzraznjati	v.tr. ipf.
-22362	råzręd	m.
-18619	råzrěšati	v.tr. ipf.
-17025	råzrěšeńje	n.
-18621	råzrěšiti	v.tr. pf.
-30432	råzrěz	m.
-30434	råzrězati	v.tr. pf.
-18623	råzrųbati	v.tr. pf.
-18625	råzrųbyvati	v.tr. ipf.
-30439	råzruměniti sę	v.refl. pf.
-4777	råzrušati	v.tr. ipf.
-14967	råzrušeńje	n.
-30441	råzrušitelj	m.
-3553	råzrušiti	v.tr. pf.
-14968	råzrušnosť	f.
-30443	råzrvati	v.tr. pf.
-30444	råzryti	v.tr. pf.
-30445	råzryv	m.
-30446	råzryvati	v.tr. ipf.
-30447	råzryvati	v.tr. ipf.
-11858	råzsada	f.
-30449	råzsaditi	v.tr. pf.
-30450	råzsadnik	m.
-30451	råzsađati	v.tr. ipf.
-30135	råzsčitati	v.tr. pf.
-35903	råzsčityvati	v.tr. ipf.
-30453	råzsedlati	v.tr. pf.
-34000	råzsedlyvati	v.tr. ipf.
-36751	råzsějany professor	m.anim.
-36750	råzsějany	adj.
-33244	råzsějati	v.tr. pf.
-33242	råzsějivati	v.tr. ipf.
-21517	råzselina	f.
-30361	råzslati	v.tr. pf.
-6236	råzslěditi	v.tr. pf.
-6235	råzslědovańje	n.
-6234	råzslědovati	v.tr. ipf.
-34013	råzsmatrjati	v.tr. pf.
-30462	råzsmějati sę	v.refl. pf.
-4055	råzsměliti	v.tr. pf.
-4059	råzsměljati	v.tr. ipf.
-23930	råzsměšati	v.tr. ipf.
-23931	råzsměšiti	v.tr. pf.
-30464	råzsmotriti	v.tr. pf.
-18627	råzsŕditi	v.tr. pf.
-21780	råzstati sę	v.refl. pf.
-21778	råzstavati sę	v.refl. ipf.
-5632	råzstaviti	v.tr. pf.
-21787	råzstaviti	v.tr. pf.
-5631	råzstavjati	v.tr. ipf.
-21784	råzstavjati	v.tr. ipf.
-5630	råzstavjeńje	n.
-33449	råzsteliti	v.tr. pf.
-33452	råzstlati	v.tr. pf.
-21782	råzstojańje	n.
-21913	råzstrajati	v.tr. ipf.
-30476	råzstrěl	m.
-34016	råzstrěliti	v.tr. pf.
-30477	råzstrěljati	v.tr. ipf.
-30480	råzstroj	m.
-21918	råzstrojiti	v.tr. pf.
-36194	råzstrojstvo	n.
-23933	råzsųditi	v.intr. pf.
-3311	råzsųdny	adj.
-3312	råzsųdȯk	m.sg.
-22011	råzsųdȯk	m.sg.
-34021	råzsųđati	v.intr. ipf.
-11868	råzsųđeńje	n.
-22016	råzsvět	m.
-21687	råzsvětliti sę	v.refl. pf.
-21519	råzsvětljati sę	v.refl. ipf.
-30499	råzsvirěpěti	v.intr. pf.
-30517	råzsylati	v.tr. ipf.
-30518	råzsylka	f.
-22001	råzsyp	m.
-11859	råzsypany	adj.
-1149	råzsypati	v.tr. pf.
-1866	råzsypyvati	v.tr. ipf.
-30504	råzščep	m.
-30505	råzščepiti	v.tr. pf.
-30506	råzščepjati	v.tr. ipf.
-11871	råzšifrovati	v.tr. ipf.
-11877	råzširiti sę	v.refl. pf.
-1162	råzširiti	v.tr. pf.
-36388	råzširjati sę	v.refl. ipf.
-587	råzširjati	v.tr. ipf.
-3601	råzširjeńje	n.
-11873	råzširjeny	adj.
-23484	råzšnurovati	v.tr. pf.
-23483	råzšnurovyvati	v.tr. ipf.
-30522	råztajati	v.tr. pf.
-30523	råztapjati	v.tr. ipf.
-3025	råztęgati sę	v.refl. ipf.
-30525	råztęgati	v.tr. ipf.
-1290	råztęgnųti sę	v.refl. pf.
-30526	råztęgnųti	v.tr. pf.
-30527	råztěkati sę	v.refl. ipf.
-30528	råztekti sę	v.refl. pf.
-30530	råztirati	v.tr. ipf.
-33461	råztȯlkati	v.tr. ipf.
-30536	råztȯlkti	v.tr. pf.
-30537	råztȯlstěti	v.intr. pf.
-817	råztopiti	v.tr. pf.
-30539	råztȯptati	v.tr. pf.
-34038	råztȯptyvati	v.tr. ipf.
-16768	råztraćati	v.tr. ipf.
-30541	råztrata	f.
-34041	råztrata	f.
-16771	råztratiti	v.tr. pf.
-30546	råztrěskati	v.tr. ipf.
-30547	råztrěsknųti	v.tr. pf.
-30549	råztreti	v.tr. pf.
-30550	råztrgati	v.tr. ipf.
-30551	råztrgnųti	v.tr. pf.
-17026	råztrojiti	v.tr. pf.
-23426	råztrųbiti	v.tr. pf.
-22153	råztvarjati	v.tr. ipf.
-22155	råztvor	m.
-22154	råztvoriti	v.tr. pf.
-657	råzum	m.
-30562	råzuměje sę	phrase
-4347	råzumějemo	adv.
-4348	råzumějemosť	f.
-4346	råzumějemy	adj.
-23071	råzuměńje	n.
-2102	råzuměti	v.tr. ipf.
-11894	råzumlivo	adv.
-11895	råzumlivosť	f.
-11896	råzumlivy	adj.
-30566	råzumnica	f.
-30567	råzumnik	m.anim.
-3807	råzumno	adv.
-11914	råzumno	adv.
-4169	råzumnosť	f.
-4167	råzumny	adj.
-11915	råzumny	adj.
-4166	råzumovati	v.intr. ipf.
-30570	råzuti sę	v.refl. pf.
-30571	råzuvati sę	v.refl. ipf.
-22188	råzvaliny	f.pl.
-30575	råzvaliti sę	v.refl. pf.
-34056	råzvaliti sę	v.refl. pf.
-34050	råzvaliti	v.tr. pf.
-34051	råzvaliti	v.tr. pf.
-34058	råzvaljati sę	v.refl. ipf.
-34060	råzvaljati sę	v.refl. ipf.
-34052	råzvaljati	v.tr. ipf.
-34053	råzvaljati	v.tr. ipf.
-35114	råzvažańje	n.
-6010	råzvažati	v.tr. ipf.
-6011	råzvažiti	v.tr. pf.
-30576	råzvědati	v.tr. pf.
-3255	råzvědka	f.
-34034	råzvědyvati	v.tr. ipf.
-30580	råzveseliti	v.tr. pf.
-30581	råzveseljati	v.tr. ipf.
-22264	råzvesti sę	v.refl. pf.
-5507	råzvesti	v.tr. pf.
-35506	råzvesti	v.tr. pf.
-22198	råzvęzati	v.tr. pf.
-30582	råzvezti	v.tr. pf.
-22199	råzvęzyvati	v.tr. ipf.
-23554	råzviti sę	v.refl. pf.
-1282	råzviti	v.tr. pf.
-30584	råzviti	v.tr. pf.
-5100	råzviťje	n.
-11909	råzvivajųći	adj.
-2318	råzvivańje	n.
-23553	råzvivati sę	v.refl. ipf.
-2101	råzvivati	v.tr. ipf.
-30583	råzvivati	v.tr. ipf.
-22262	råzvod	m.
-22263	råzvoditi sę	v.refl. ipf.
-3565	råzvoditi	v.tr. ipf.
-35505	råzvoditi	v.tr. ipf.
-22552	råzvoďje	n.
-30586	råzvodny	adj.
-18631	råzvoj	m.
-34062	råzvoziti	v.tr. ipf.
-22703	råzvråt	m.
-22708	råzvråt	m.
-22713	råzvråtnica	f.
-22709	råzvråtnik	m.anim.
-22712	råzvråtnosť	f.
-14832	råzvråtny	adj.
-30590	råžen	m.
-30593	råzžegti	v.tr. pf.
-22966	råzžerati	v.tr. ipf.
-32646	råzžigati	v.tr. ipf.
-22970	råzžrěti	v.tr. pf.
-30594	råzžuvati	v.tr. pf.
-25365	rdest	m.
-1235	rđa	f.
-3828	rđavy	adj.
-3803	reagovati	v.intr. ipf.
-712	reakcija	f.
-6093	reaktor	m.
-35080	realist	m.anim.
-35082	realističny	adj.
-3102	realizacija	f.
-35081	realizm	m.sg.
-4980	realizovati	v.tr. ipf.
-16077	reaľnosť	f.
-2216	reaľny	adj.
-1045	rebro	n.
-1046	recept	m.
-1999	recesija	f.
-2196	rěč	f.
-11984	rěč	f.
-3758	rěčeńje	n.
-14973	rěčnik	m.
-2283	ręd	m.
-3798	ręd	m.
-22350	ręd	m.
-36016	ręd	m.
-20690	redagovati	v.tr. ipf.
-4859	redakcija	f.
-18633	redakcijny	adj.
-4858	redaktor	m.anim.
-4860	redaktovati	v.tr. ipf.
-20128	rědko	adv.
-23778	rědkosť	f.
-23766	redkȯvka	f.
-2272	rědky	adj.
-11927	rędnosť	f.
-17027	rędny	adj.
-36143	rędȯk	m.
-36025	rędovy	m.anim.
-30601	redukcija	f.
-5644	redukovati	v.tr. ipf.
-17028	referencija	f.
-2197	referendum	m.
-17029	refleksivny zaimennik	m.
-1243	reforma	f.
-4981	reformacija	f.
-4848	reformovati	v.tr. ipf.
-1279	refren	m.
-34875	refundacija	f.
-3048	region	m.
-2973	regionaľny	adj.
-4982	registracija	f.
-36299	registracijna tablica	f.
-36298	registracijny znak	m.
-2140	registrovati	v.tr. ipf.
-20130	regresija	f.
-17030	regularizacija	f.
-23775	regularno	adv.
-5672	regularnosť	f.
-5671	regularny	adj.
-20131	regulator ritma sŕdca	m.
-20691	regulovati	v.tr. ipf.
-36887	Rejn	m.sg.
-2285	rěka	f.
-3422	reklama	f.
-30605	reklamacija	f.
-11941	reklamny	adj.
-11942	reklamodatelj	m.anim.
-11939	reklamovańje	n.
-3421	reklamovati	v.tr. ipf.
-35212	rekomendacija	f.
-5126	rekomendovati	v.tr. ipf./pf.
-4874	rekonstrukcija	f.
-2332	rekonstruovati	v.tr. ipf.
-1241	rekord	m.
-1550	rekreacija	f.
-5014	rěkti	v.tr. ipf.
-35770	rektor	m.anim.
-33697	rekviem	m.
-17031	relativny zaimennik	m.
-1074	religija	f.
-88	religiozny	adj.
-30608	relikt	m.
-32289	relikvija	f.
-18634	remenj	m.
-3233	remesľnik	m.anim.
-1566	remeslo	n.
-33724	remont	m.
-1519	remontovati	v.tr. ipf.
-36227	renegat	m.anim.
-2949	renesansa	f.
-23285	rentgenovy luč	m.
-23286	rentgenovy snimȯk	m.
-35185	reorganizacija	f.
-35184	reorganizovati	v.tr. ipf./pf.
-14974	rěpa	f.
-36379	rěpa	f.
-36078	rěpka	f.
-36333	replika	f.
-6300	represija	f.
-19508	reprezentovati	v.tr. ipf.
-20132	reprodukovati	v.tr. ipf.
-2945	republika	f.
-35519	republikanec	m.anim.
-35520	republikansky	adj.
-21522	reputacija	f.
-18639	ręsa	f.
-35737	respekt	m.sg.
-30610	restavracija	f.
-34930	restavrovati	v.tr. ipf./pf.
-30611	restoran	m.
-1759	resurs	m.
-11952	rěšajųći	adj.
-2338	rěšati	v.tr. ipf.
-11954	rěšati	v.tr. ipf.
-1238	rěšeńje	n.
-11957	rěšeńje	n.
-18635	rěšeny	adj.
-23777	rěšiteljno	adv.
-35522	rěšiteljnosť	f.
-11955	rěšiteljny	adj.
-1256	rěšiti	v.tr. pf.
-11960	rěšiti	v.tr. pf.
-1251	rešta	f.
-20692	retoromansky	adj.
-36505	rev	m.
-36521	revanš	m.
-30612	revenj	m.
-35433	reverans	m.
-4074	revidovati	v.tr. ipf.
-4077	revizija	f.
-23768	revmatičny	adj.
-23767	revmatizm	m.sg.
-1945	revnivosť	f.
-1668	revnivy	adj.
-2860	revolucija	f.
-11966	revolucijna boŕba	f.
-11967	revolucijna gvardija	f.
-14975	revolucijnizm	m.sg.
-11969	revolucijnosť	f.
-4078	revolucijny	adj.
-3266	revolucioner	m.anim.
-36503	revti	v.intr. ipf.
-3397	rězati	v.tr. ipf.
-1244	rezerva	f.
-35860	rezervacija	f.
-35861	rezervat	m.
-35858	rezervovati	v.tr. ipf.
-18637	rezjume	n.indecl.
-35521	rezolucija	f.
-1259	rezultat	m.
-3023	rezumovati	v.tr. ipf.
-2123	režim	m.
-3741	režim	m.
-35752	režiser	m.anim.
-23525	Rim	m.sg.
-23524	Rimska imperija	f.sg.
-18640	rimskokatoličsky	adj.
-838	rimsky	adj.
-11979	riť	f.
-20133	ritm	m.
-32240	ritmičny	adj.
-36127	ritual	m.
-36128	rituaľny	adj.
-14978	rizično	adv.
-1253	rizičny	adj.
-1254	rizik	m.
-1366	rizikovati	v.tr. ipf.
-3948	robot	m.
-18641	ročnica	f.
-11995	ročno	adv.
-11996	ročny	adj.
-1246	rod	m.
-3222	rod	m.
-11998	rod	m.
-21523	rod	m.
-20134	rodimy	adj.
-4690	rodina	f.
-1947	roditelj	m.anim.
-1946	roditeljnik, roditeljny padež	m.
-36241	roditeljsky	adj.
-2198	roditi sę	v.refl. ipf.
-2325	roditi	v.tr. ipf.
-5184	rodna nazva	f.
-20693	rodny	adj.
-6097	rodobijstvo	n.sg.
-21142	rodopis	m.sg.
-21143	rodopisec	m.anim.
-21526	rodoslovje	n.
-36378	rodoslovje	n.
-2122	rodstveny	adj.
-12010	rodstvo	n.sg.
-12001	rođeńje	n.
-18644	Rođeńje	n.
-2207	rođeny	adj.
-400	rog	m.
-36806	rogaty	adj.
-33966	roj	m.
-34355	rojiti sę	v.refl. ipf.
-12014	rok	m.
-18647	rokada	f.
-31863	rokenrol	m.sg.
-18648	rokirovati	v.intr. ipf./pf.
-23628	rok-muzika	f.
-2063	rolja	f.
-35283	roljeva igra	f.
-23601	roman	m.
-4735	romansky	adj.
-1240	romanš	m.sg.
-2182	romantičny	adj.
-34931	Romantizm	m.sg.
-36174	romb	m.
-18649	roptańje	n.sg.
-18651	roptati	v.intr. ipf.
-36658	ropuha	f.
-18653	rosa	f.
-1044	Rosija	f.sg.
-30630	Rosijska Federacija	f.sg.
-3036	rosijsky	adj.
-26	rotacija	f.
-12022	rov	m.
-149	roza	f.
-30632	rozga	f.
-5268	rozovy	adj.
-12035	roževy	adj.
-22633	rtųť	f.sg.
-18657	rųbati	v.tr. ipf.
-23467	rubin	m.
-32081	rublj	m.
-5845	rųčiti sę	v.refl. pf.
-21528	rųčka	f.
-21529	rųčka	f.
-18660	rųčnik	m.
-18661	rųčno	adv.
-18662	rųčny	adj.
-5640	ruda	f.
-35209	rudimentarny	adj.
-36777	rudnik	m.
-32675	rudy	adj.
-3186	ruh	m.
-20135	ruina	f.
-20136	ruinovati	v.tr. ipf.
-12039	rujenj	m.sg.
-34176	rųka v rųkě	adv.
-2357	rųka	f.
-21531	rųkav	m.
-21532	rųkav	m.
-18664	rųkavica	f.
-21533	rųkoděľstvo	n.sg.
-18667	rųkojęť	f.
-16412	rųkopis	m.
-18669	rųkopleskańje	n.sg.
-18670	rųkopleskati	v.intr. ipf.
-18672	rųkoplesknųti	v.intr. pf.
-20694	rųkopoložeńje	n.
-5891	rųkovati	v.tr. ipf.
-3696	rųkovoditelj	m.anim.
-18675	rųkovoditi	v.tr. ipf.
-3697	rųkovodstvo	n.
-18666	rųky do gory!	phrase
-7812	rukzak	m.
-33404	ruletka	f.
-4646	rum	m.
-23890	ruměnec	m.
-33919	ruměněti	v.intr. ipf.
-370	Rumunija	f.sg.
-4433	rumunsky	adj.
-36648	runa	f.
-33397	runo	n.
-1269	Rus	m.anim.
-35346	rusifikacija	f.
-35347	rusifikovati	v.tr. ipf./pf.
-1272	rusinsky	adj.
-2311	russky	adj.
-32674	rusy	adj.
-21536	rušiti	v.tr. ipf.
-20137	rutensky	adj.
-32067	rutina	f.
-32069	rutinny	adj.
-36531	ruž	m.
-21539	rvati sę	v.refl. ipf.
-21537	rvati	v.tr. ipf.
-21538	rvati	v.tr. ipf.
-1682	ryba	f.
-2339	rybak	m.anim.
-12059	rybaŕ	m.anim.
-2304	rybnik	m.
-27310	rybolov	m.
-12058	rybolovstvo	n.sg.
-30648	Ryby	f.pl.
-12062	rycaŕ	m.anim.
-18676	rydati	v.intr. ipf.
-30650	ryđi	adj.
-34356	rygati	v.intr. ipf.
-34358	rygnųti	v.intr. pf.
-34360	rylo	n.
-32131	ryma	f.
-32133	rymovati sę	v.refl. ipf.
-32132	rymovati	v.tr. ipf.
-1252	ryś	m.anim.
-21542	rysovanka	f.
-3568	rysovati	v.tr. ipf.
-33969	ryti	v.intr. ipf.
-3821	ryž	m.sg.
-5827	s izključeńjem	prep.
-4947	s obzirȯm na	prep.
-1267	s pomoćjų	prep.
-12070	s prijemnosťjų	intj.
-1280	s, so	prep.
-2061	s, so	prep.
-35960	sablja	f.
-35961	sabljevańje	n.sg.
-2157	sad	m.
-12075	saditi	v.tr. ipf.
-34405	sadovnik	m.anim.
-18761	sađa	f.
-36540	safari	n.
-21548	Sahara	f.sg.
-30653	sajt	m.
-36155	sako	n.
-35130	sakraľny	adj.
-35829	sakristija	f.
-23453	saksofon	m.
-35633	Saksonija	f.sg.
-269	sala	f.
-32183	salata	f.
-20723	salo	n.
-5719	salon	m.
-22466	Salvador	m.sg.
-22467	salvadorsky	adj.
-2219	sam	pron.pers.
-5253	samec	m.anim.
-5222	samica	f.
-169	samit	m.
-20170	samo	adv.
-35502	samo-	prefix
-12084	samoanaliza	f.
-18769	samobytny	adj.
-35149	samodostatȯčnosť	f.
-35150	samodostatȯčny	adj.
-18771	samodŕžec	m.anim.
-16490	samoglåska	f.
-18772	samogon	m.sg.
-33788	samohvaľstvo	n.sg.
-35041	samokat	m.
-35040	samokritika	f.
-814	samolet	m.
-23809	samoljubec	m.anim.
-23808	samoljubny	adj.
-12083	samoobsluga	f.
-16356	samoobsluga	f.
-18774	samoocěna	f.
-12089	samoposmatrjańje	n.
-5342	samoråzumno	adv.
-5690	samoråzumny	adj.
-813	samorod	m.
-18775	samostojno	adv.
-18776	samostojnosť	f.
-18777	samostojny	adj.
-21549	samosųd	m.sg.
-21551	samota	f.
-21553	samotnosť	f.
-1362	samotny	adj.
-36135	samoubijny	adj.
-4154	samoubijstvo	n.
-15528	samoubiti	v.intr. pf.
-30657	samouk	m.anim.
-16737	samovar	m.
-21554	samovlada	f.
-22482	samovlasťje	n.sg.
-21557	samovoljny	adj.
-21558	samozvanec	m.anim.
-270	samy	adj.
-36818	sanatorij	m.
-36469	sandala	f.
-36500	sanje	f.pl.
-6241	sankcija	f.
-36501	sańky	f.pl.
-35203	sanskrit, sanskrt	m.sg.
-30659	sarafan	m.
-32251	Sarajevo	n.sg.
-36140	saranča	f.
-35855	sarkastičny	adj.
-35856	sarkazm	m.sg.
-35708	sarkofag	m.
-16094	satelit	m.
-36129	satira	f.
-36130	satiričny	adj.
-23629	Saturn	m.sg.
-32446	Saudijec	m.anim.
-5929	Saudovska Arabija	f.sg.
-33521	sauna	f.
-30660	saundtrek	m.
-18677	sběgati sę	v.refl. ipf.
-18679	sběgti sę	v.refl. pf.
-2236	sbirańje	n.sg.
-3788	sbirati sę	v.refl. ipf.
-2918	sbirati	v.tr. ipf.
-35138	sbirka	f.
-20138	sbližańje	n.sg.
-18681	sbližati sę	v.refl. ipf.
-18682	sbližiti sę	v.refl. pf.
-5229	sbogom!	intj.
-3738	sbor	m.
-4704	sborka	f.
-18683	sbornik	m.
-17034	sborny čislovnik	m.
-1978	sbože	n.
-5442	sbudovati	v.tr. pf.
-34135	scati	v.intr. ipf.
-20726	scena	f.
-20727	scenarij	m.
-35539	sčet	m.
-35617	sčisliti	v.tr. pf.
-1285	sčitati	v.tr. pf.
-5619	sčityvati	v.tr. ipf.
-18685	sdanlivo	adv.
-18686	sdanlivy	adj.
-14204	sdavati sę	v.refl. ipf.
-14987	sde	adv.
-2874	sdeformovati	v.tr. pf.
-5441	sdělati	v.tr. pf.
-35851	sdešnji, sdešny	adj.
-34353	sdirati	v.tr. ipf.
-17520	sdȯhnųti	v.intr. pf.
-18688	sdrěmnųti	v.intr. pf.
-34351	sdreti	v.tr. pf.
-17522	sdyhati	v.intr. ipf.
-4025	sę	pron.refl.
-4812	sebe	pron.refl.
-35503	sebe-	prefix
-21560	seběčnjak	m.anim.
-18790	seběčno	adv.
-18791	seběčnosť	f.
-18792	seběčny	adj.
-21561	sebeljubje	n.sg.
-15530	sebesmŕtiti	v.intr. ipf.
-21562	sěča	f.
-21563	sěča	f.
-22811	sěčenj	m.sg.
-4441	sědališče	n.
-18793	sědati	v.intr. ipf.
-12124	sěděńje	n.sg.
-1286	sěděti	v.intr. ipf.
-15532	sědiljnja	f.
-33999	sedlati	v.tr. ipf.
-16489	sedlo	n.
-1287	sedm	num.card.
-2052	sedmdesęt	num.card.
-12116	sedmdesęty	num.ord.
-34562	sedmerka	num.subst.
-16434	sedmero	num.coll.
-1288	sedmica	f.
-18794	sedmično	adv.
-18795	sedmičny	adj.
-16403	sedmina	num.fract.
-16461	sedmka	num.subst.
-1107	sedmnadsęť	num.card.
-12119	sedmnadsętina	num.fract.
-12120	sedmnadsęty	num.ord.
-1367	sedmsȯt, sedmsto	num.card.
-50	sedmy	num.ord.
-18796	sědnųti	v.intr. pf.
-12818	sědy	adj.
-21568	sęgati	v.intr. ipf.
-19523	segda, segdy	adv.
-35151	segdašnji, segdašny	adj.
-35625	segment	m.
-21570	sęgnųti	v.intr. pf.
-166	sego dnja	adv.
-1536	segodenny	adj.
-35805	segregacija	f.
-1347	sej	pron.dem.
-5334	sějati	v.tr. ipf.
-1604	sejčas	adv.
-3789	sejčasno	adv.
-5117	sejčasno	adv.
-12135	sejčasnosť	f.
-3532	sejčasny	adj.
-12138	sejčasny	adj.
-18798	sěkati	v.tr. ipf.
-1270	sekcija	f.
-18800	sěknųti	v.tr. pf.
-3879	sekret	m.
-6094	sekretaŕ	m.anim.
-35614	sekretariat	m.
-18802	sekretaŕka	f.
-3880	sekretny	adj.
-16355	seks	m.sg.
-32853	seksi	adj.
-35106	seksist	m.anim.
-35105	seksizm	m.sg.
-36840	seksta	f.
-32852	seksuaľno privlěkateljny	adj.
-35244	seksuaľnosť	f.
-1784	seksuaľny	adj.
-35538	sekta	f.
-3398	sěkti	v.tr. ipf.
-35518	sektor	m.
-21567	sěkųća	f.
-170	sekunda	f.
-36836	sekunda	f.
-35321	sekundarny	adj.
-35772	sekvencija	f.
-2947	sěkyra	f.
-35491	selfi	m.indecl.
-19581	seliko	adv.
-19596	selikråt	adv.
-19588	seliky	adj.
-21565	seliti sę	v.refl. ipf.
-3166	seljan, seljanin	m.anim.
-18806	seljanka	f.
-187	selo	n.
-20173	seľsky	adj.
-35043	semafor	m.
-20174	semantičny	adj.
-35935	semantika	f.
-12152	sěmę	n.
-34767	sěmę	n.
-35892	sěmejstvo	n.
-2987	sěmja	f.
-5764	senat	m.
-35553	senator	m.anim.
-4994	sěno	n.sg.
-35163	sentimentaľny	adj.
-15713	senzor	m.
-22826	separatist	m.anim.
-3267	separatističny	adj.
-22825	separatizm	m.sg.
-1156	septembr	m.sg.
-36841	septima	f.
-22612	sěra	f.sg.
-31758	serenada	f.
-35286	serial	m.
-5522	serija	f.
-4840	seriozno	adv.
-4839	seriozny	adj.
-30679	serpentin	m.
-35591	server	m.
-1375	servis	m.
-1560	sěry	adj.
-36096	seržant	m.anim.
-12168	sesterska ljubȯv	f.
-6025	sestersky	adj.
-5610	sęsti	v.intr. pf.
-7401	sestra bliznečka	f.
-1389	sestra	f.
-4244	sestrinstvo	n.sg.
-1373	sěť	f.
-30682	sětevy	adj.
-1311	sětka	f.
-2411	sěver	m.sg.
-4744	Sěverna Amerika	f.sg.
-12184	Sěverna Dakota	f.sg.
-12185	Sěverna Irlandija	f.sg.
-12186	Sěverna Karolina	f.sg.
-22771	Sěverna Koreja	f.sg.
-36815	Sěverna Makedonija	f.
-12187	sěverna polsfera	f.sg.
-12190	Sěverne Marijanske Ostrovi	m.pl.
-656	Sěverno morje	n.sg.
-14998	sěverno sijańje	n.sg.
-4183	sěverno	adv.
-4745	sěvernoamerikansky	adj.
-35135	sěvernoevropejsky	adj.
-12181	sěvernoirlandsky	adj.
-22773	sěvernokorejsky	adj.
-15534	sěvernomorsky	adj.
-618	sěvernoslovinsky	adj.
-20729	sěverny jelenj	m.anim.
-1938	sěverny polus	m.sg.
-4182	sěverny	adj.
-16467	Sěveroatlantičsky Alians	m.sg.
-12200	sěveroiztočny	adj.
-12201	sěveroiztok	m.sg.
-12203	sěverovȯzhod	m.sg.
-12205	sěverovȯzhodny	adj.
-12206	sěverozapad	m.sg.
-12208	sěverozapadny	adj.
-1943	sezon	m.
-4457	sezonny	adj.
-21572	sęženj	f.
-35760	sfera	f.
-35761	sferičny	adj.
-5591	sgnesti	v.tr. pf.
-3630	sgnųti	v.tr. pf.
-14231	sgodno s	prep.
-5559	sgrěšiti	v.intr. pf.
-3629	sgybati	v.tr. ipf.
-18814	shema	f.
-32282	shematičny plan	m.
-18815	shematičny	adj.
-31982	shizma	f.
-5445	shoditi sę	v.refl. ipf.
-5433	shoditi	v.intr. ipf.
-18689	shodka	f.
-23994	shodnosť	f.
-18691	shodny	adj.
-18692	shovati	v.tr. pf.
-36792	shråniti sę	v.refl. pf.
-18696	shråniti	v.tr. pf.
-18694	shranjati	v.tr. ipf.
-18695	shrånjeńje	n.sg.
-36252	shudnųti	v.intr. pf.
-1051	shvatiti	v.tr. pf.
-4811	si	pron.refl.
-19509	Siberija	f.sg.
-35735	sidr	m.
-18816	signal	m.
-1196	signalizovati	v.tr. ipf.
-12214	sikati	v.intr. ipf.
-36293	sikvel	m.
-12218	sila volje	f.
-1309	sila	f.
-30684	silaba	f.
-30685	silabičny	adj.
-22610	silicij	m.sg.
-21573	siliti sę	v.refl. ipf.
-697	siľno	adv.
-1312	siľno	adv.
-1310	siľny	adj.
-12221	simbol	m.
-3138	simboličny	adj.
-35395	simbolika	f.
-35394	simbolizm	m.sg.
-1392	simbolizovati	v.tr. ipf.
-20730	simetričnosť	f.
-20731	simetričny	adj.
-4783	simfonija	f.
-30688	simpatičny	adj.
-31760	simpatija	f.
-35732	simpatizant	m.anim.
-32112	simptom	m.
-35362	simulacija	f.
-35363	simulovati	v.tr. ipf./pf.
-34740	sinhronizacija	f.
-34741	sinhronizovati	v.tr. ipf./pf.
-23471	sinica	f.
-12226	sinji ekran smŕti	m.
-511	sinji	adj.
-16102	sinonim	m.
-3140	sintaksa	f.
-17035	sintetičny	adj.
-19516	sinteza	f.
-32500	sintezator	m.
-30692	sinusit	m.sg.
-35951	sionizm	m.sg.
-34750	sirena	f.
-34751	sirena	f.
-32340	Sirija	f.sg.
-32341	sirijsky	adj.
-30693	Sirin	m.anim.
-22799	sirota	f.
-32542	sirotěti	v.intr. ipf.
-22802	sirotišče	n.
-1317	sistema	f.
-1316	sistematičny	adj.
-1360	situacija	f.
-33375	sivěti	v.intr. ipf.
-12231	sivy	adj.
-36738	sjedati	v.tr. ipf.
-8260	sjedeny	adj.
-3705	sjediniti sę	v.refl. pf.
-2085	sjediniti	v.tr. pf.
-15556	sjediniti	v.tr. pf.
-3704	sjedinjati sę	v.refl. ipf.
-2942	sjedinjati	v.tr. ipf.
-15557	sjedinjati	v.tr. ipf.
-1895	Sjedinjene Štaty Ameriky	m.pl.
-3513	sjedinjeńje	n.
-12433	sjedinjenosť	f.
-12432	sjedinjeny	adj.
-18697	sjem	m.
-19492	sjesti	v.tr. pf.
-20139	sjęti	v.tr. pf.
-1384	sjezd	m.
-18701	sjezd	m.
-12234	skakańje	n.sg.
-12233	skakanna dȯska	f.
-3707	skakati	v.intr. ipf.
-729	skala	f.
-35468	skamenělosť	f.
-35467	skameněly	adj.
-35405	skandal	m.
-36468	skandaľny	adj.
-22617	skandij	m.sg.
-35721	Skandinavija	f.sg.
-35722	skandinavsky	adj.
-3882	skarb	m.
-18818	skarbnica	f.
-3883	skarbnik	m.anim.
-12239	skaredno	adv.
-4776	skaredny	adj.
-15000	skarga	f.
-15001	skaržiti sę	v.refl. ipf.
-1318	skazati	v.tr. pf.
-12242	skazka	f.
-33525	skeč	m.
-35092	skelet	m.
-18819	skenovati	v.tr. ipf.
-3080	skeptičny	adj.
-30698	skica	f.
-23562	skipetr	m.
-20144	sklad	m.
-4463	skladati sę iz	v.refl. ipf.
-20695	skladati sę	v.refl. ipf.
-3628	skladati	v.tr. ipf.
-20145	skladišče	n.
-4555	skladovati	v.tr. ipf.
-18703	sklanjati sę k	v.refl. ipf.
-18702	sklanjati	v.tr. ipf.
-32025	sklejiti	v.tr. pf.
-30700	skljanka	f.
-12252	sklon	m.
-20150	sklon	m.
-18707	skloniti sę k	v.refl. pf.
-18706	skloniti	v.tr. pf.
-17038	sklonjeńje	n.
-12253	sklonnosť	f.
-12255	sklonny	adj.
-3750	skočiti	v.intr. pf.
-33272	skok	m.
-34936	skȯlzavka	f.
-16967	skombinovati	v.tr. pf.
-1321	skompensovati	v.tr. pf.
-6135	skomplikovati	v.tr. pf.
-23364	skončiti sę	v.refl. pf.
-12258	skončiti	v.tr. pf.
-12259	skonfiskovati	v.tr. pf.
-23365	skonstruovany język	m.
-34588	skopiti	v.tr. ipf.
-32250	Skopje	n.sg.
-36782	skora pomoć	f.sg.
-12261	skorěje abo/ili pozdněje	adv.
-12260	skorěje	adv.
-15004	skorěje	adv.
-4065	skorlupa	f.
-1324	skoro	adv.
-3208	skoro	adv.
-3747	skoro	adv.
-20732	skorpion	m.anim.
-30705	Skorpion	m.anim.
-32342	skory	adj.
-3726	skot	m.sg.
-32038	skotnik	m.anim.
-36314	skotobojnja	f.
-20733	skovrånȯk	m.anim.
-3139	skraćati	v.tr. ipf.
-953	skråćeńje	n.
-17039	skråćeny	adj.
-647	skråtiti	v.tr. pf.
-18820	skrb	f.
-18821	skrběti	v.intr. ipf.
-35637	skrinja s orųďjami	f.
-18822	skrinja	f.
-12269	skripač	m.anim.
-18823	skripačka	f.
-12850	skripěńje	n.sg.
-18824	skripěti	v.intr. ipf.
-12270	skripka	f.
-18827	skripnųti	v.intr. pf.
-36611	skript	m.
-20157	skriviti	v.tr. pf.
-23332	skrob	m.sg.
-5871	skromno	adv.
-5709	skromnosť	f.
-5029	skromny	adj.
-12275	skroz	adv.
-35607	skrupulozny	adj.
-18710	skryti sę	v.refl. pf.
-20160	skryti	v.tr. pf.
-36172	skryto	adv.
-23369	skryty	adj.
-36506	skryvališče	n.
-18711	skryvati sę	v.refl. ipf.
-20161	skryvati	v.tr. ipf.
-34595	skubnųti	v.intr. pf.
-29624	skubti	v.intr. ipf.
-12276	skuhati	v.tr. pf.
-36926	skulptor	m.anim.
-1322	skulptura	f.
-20734	skunks	m.anim.
-32144	skųpec	m.anim.
-3647	skupina	f.
-36793	skųpiti sę	v.refl. ipf.
-12278	skųposť	f.
-12280	skųpy	adj.
-36220	skųpy	adj.
-35038	skuter	m.
-20735	skvorec	m.anim.
-36208	skvoter	m.anim.
-23372	skvrčati	v.intr. ipf.
-12281	slabec	m.anim.
-34616	slaběti	v.intr. ipf.
-12282	slabo	adv.
-12283	slabosť	f.
-23204	slaboumny	adj.
-1341	slaby	adj.
-35725	slåd	m.sg.
-33279	slåditi	v.tr. ipf.
-23734	slådko	adv.
-12287	slådkosť	f.
-447	slådky	adj.
-15006	slådnica	f.
-15536	slådnik	m.anim.
-12286	slådoled	m.sg.
-34935	slajd	m.
-3886	slåma	f.
-35727	slåmka	f.
-33028	slåny	adj.
-21575	slati	v.tr. ipf.
-1339	slava	f.
-21576	slava	f.
-1329	slåvej	m.anim.
-23979	Slavija	f.sg.
-34557	slavist	m.anim.
-34556	slavistika	f.
-36580	slaviti sę	v.refl. ipf.
-1315	slaviti	v.tr. ipf.
-36583	slaviti	v.tr. ipf.
-1340	slavjeńje	n.sg.
-36584	slavjeńje	n.sg.
-12295	slavno	adv.
-1338	slavny	adj.
-21577	slěd	m.
-3380	slěditi	v.tr. ipf.
-21579	slěditi	v.tr. ipf.
-12301	slědny	adj.
-35139	slědovateljno	adv.
-1939	slědovati	v.tr. ipf.
-866	slědstvo	n.
-1378	slědujųći	adj.
-1293	slegka	adv.
-35904	sleng	m.
-12305	slěpec	m.anim.
-12306	slěpica	f.
-34571	slěpnųti	v.intr. ipf.
-2941	slěpy	adj.
-32346	slězena	f.
-35984	slězi iz mene!	intj.
-4733	Slęzk	m.sg.
-4734	slęzsky	adj.
-18712	slgati	v.intr. pf.
-18839	slimak	m.anim.
-1292	slina	f.
-18713	sliti sę	v.refl. pf.
-36393	sliti	v.tr. pf.
-36906	sliv rěky	m.
-446	sliva	f.
-18714	slivańje	n.
-20698	slivańje	n.
-18715	slivati sę	v.refl. ipf.
-36394	slivati	v.tr. ipf.
-30713	slivovica	f.
-31883	sliź	m./f.
-12246	slizgalka	f.
-12249	slizgati	v.intr. ipf.
-16358	slizgnųti	v.intr. pf.
-12250	slizky	adj.
-35986	sljuda	f.
-17040	slog	m.
-35950	slogan	m.
-32848	sloj	m.
-3460	slomiti	v.tr. pf.
-3462	slomjeny	adj.
-1684	slon	m.anim.
-15539	Slovačka	f.
-1390	slovačsky	adj.
-4731	Slovak	m.anim.
-1350	Slovakija	f.sg.
-1349	slovenačsky	adj.
-12320	Slovenec	m.anim.
-3082	Slovenija	f.sg.
-12319	Slovenka	f.
-16228	slovensky	adj.
-23118	slovesnosť	f.
-18840	slovesny	adj.
-1357	Slovjan, Slovjanin	m.anim.
-34555	slovjanizacija	f.
-10294	slovjanizovati	v.tr. ipf./pf.
-12325	Slovjanka	f.
-1355	slovjansky	adj.
-4719	slovjanstvo	n.sg.
-23980	Slovjanščina	f.sg.
-15011	slovničstvo	n.
-1328	slovnik	m.
-32840	slovny	adj.
-1361	slovo	n.
-17041	slovosbor	m.
-1370	složeno slovo	n.
-12336	složenosť	f.
-6145	složeny	adj.
-20701	složiti sę	v.refl. pf.
-3627	složiti	v.tr. pf.
-1333	slučaj	m.
-16360	slučajno	adv.
-35381	slučajnosť	f.
-3943	slučajny	adj.
-20740	slučati sę	v.refl. ipf.
-20162	slųčati	v.tr. ipf.
-15013	slučiti sę	v.refl. pf.
-20166	slųčiti	v.tr. pf.
-12341	slučka	f.
-1334	sluga	m.anim.
-6042	sluh	m.
-30722	slum	m.
-16749	slušalky	f.pl.
-12343	slušatelj	m.anim.
-1247	slušati	v.tr. ipf.
-1327	služba	f.
-18843	služebnik	m.anim.
-33532	služebno pųtovańje	n.
-30724	služebny	adj.
-2121	služiti	v.intr. ipf.
-21580	slynųti	v.intr. ipf.
-1335	slyšati	v.tr. ipf.
-21581	slyti	v.intr. ipf.
-20741	smalec	m.
-35175	smaragd	m.
-20742	smatrjati	v.intr. ipf.
-34637	smažiti	v.tr. ipf.
-12349	smęčkati	v.tr. pf.
-425	směh	m.
-2237	smějati sę	v.refl. ipf.
-18720	smękčati	v.tr. ipf.
-18721	smękčiti	v.tr. pf.
-4058	smělosť	f.
-4056	směly	adj.
-20703	směna	f.
-2062	smenšati	v.tr. ipf.
-5634	smenšeńje	n.
-1297	smenšiti	v.tr. pf.
-5214	směr	m.
-20704	směr	m.
-20705	směrnica	f.
-3740	směs	m.
-5092	směsta	adv.
-12372	směšany	adj.
-14273	směšany	adj.
-1817	směšati	v.tr. pf.
-14274	směšati	v.tr. pf.
-18845	směšivati	v.tr. ipf.
-36508	směška	f.
-15551	směšnosť	f.
-5227	směšny	adj.
-30730	smeť	f.
-5972	smetana	f.
-35450	smęteńje	n.sg.
-18847	smeti	f.pl.
-21582	směti	v.tr. ipf.
-36736	smetjaŕ	m.anim.
-36737	smetjaŕsky voz	m.
-36729	smetnik	m.
-32259	smlåtiti	v.tr. pf.
-5620	smlěti	v.tr. pf.
-30731	smogti	v.aux. pf.
-30732	smokva	f.
-2071	smola	f.
-33283	smoliti	v.tr. ipf.
-20744	smotriti	v.intr. ipf.
-33175	smråd	m.
-20177	smŕditi	v.intr. ipf.
-26370	smrěk	m.
-34763	smrf	m.anim.
-33659	smrkač	m.anim.
-33657	smrkati sę	v.refl. ipf.
-33656	smrkati	v.intr. ipf.
-32888	smrščeny	adj.
-32890	smrščiti brvi	v.intr. pf.
-32891	smrščiti sę	v.refl. pf.
-32889	smrščiti	v.tr. pf.
-2070	smŕť	f.
-34939	smŕteljny	adj.
-18851	smŕteľna hvoroba	f.
-15552	smŕteopasny	adj.
-23515	smŕtna kaznj	f.
-12382	smŕtny	adj.
-12384	smŕtonosny	adj.
-16739	sms	m.
-14067	smućati	v.tr. ipf.
-20708	smųćati	v.tr. ipf.
-14066	smųćeny	adj.
-23832	smųćeny	adj.
-20711	smųtiti	v.tr. pf.
-20712	smųtiti	v.tr. pf.
-23834	smųtno	adv.
-617	smųtny	adj.
-23833	smųtȯk	m.
-36106	smyček	m.
-20715	smykati	v.tr. ipf.
-3324	smysl	m.
-20716	smysľny	adj.
-12388	smysly	m.pl.
-12389	snabděti	v.tr. pf.
-16357	snabděvati	v.tr. ipf.
-12390	snaha	f.
-18852	snědańje	n.
-18853	snědati	v.intr. ipf.
-2209	sněg	m.
-30736	Sněgurȯčka	f.
-5439	snesti	v.tr. pf.
-15678	snetvarjati	v.tr. ipf.
-15677	snetvoriti	v.tr. pf.
-12395	sněženj	m.sg.
-30737	sněžinka	f.
-4160	sněžiti	v.intr. ipf.
-23290	sněžnoběly	adj.
-36125	sněžny člověk	m.
-32473	sněžny leopard	m.anim.
-18722	snimȯk	m.
-5215	sniti	v.tr. ipf.
-5636	sniziti	v.tr. pf.
-33527	snizu	adv.
-5635	snižati	v.tr. ipf.
-5637	snižeńje	n.
-2127	snižka	f.
-5440	snositi	v.tr. ipf.
-20718	snosny	adj.
-15019	snova i snova	adv.
-3104	snova	adv.
-34003	snovati	v.tr. ipf.
-18723	snuđeny	adj.
-337	sobě, si	pron.refl.
-30739	sȯbrańje	n.
-3784	sȯbrati sę	v.refl. pf.
-1494	sȯbrati	v.tr. pf.
-24013	sobstvenik	m.anim.
-21583	sobstvenosť	f.
-21585	sobstveny	adj.
-2350	sȯbyťje	n.
-22822	socialist	m.anim.
-2223	socialističny	adj.
-22821	socializm	m.sg.
-20178	sociaľny	adj.
-23631	sociolog	m.anim.
-23632	sociologičny	adj.
-23630	sociologija	f.sg.
-30740	sočevica	f.
-36205	sočevica	f.
-34940	sȯčuvstvovati	v.intr. ipf.
-23276	soda	f.
-35379	Sȯdružstvo narodov	n.sg.
-35402	Sȯdružstvo Nezavisnyh Dŕžav	n.sg.
-3942	sȯdŕžańje	n.
-23751	sȯdŕžanosť	f.
-72	sȯdŕžati	v.tr. pf.
-2163	sȯdŕživati	v.tr. ipf.
-12103	sȯdŕživati	v.tr. ipf.
-12106	sȯdŕžnik	m.
-18857	Sofija	f.sg.
-35249	softver	m.sg.
-4191	sȯglåsiti sę, sųglåsiti sę	v.refl. ipf.
-20196	sȯglåśje, sųglåśje	n.sg.
-16491	sȯglåska, sųglåska	f.
-364	sȯglåsno, sųglåsno	prep.
-6301	sȯglåsnosť, sųglåsnosť	f.
-20198	sȯglåsny, sųglåsny	adj.
-18858	sȯglašati sę, sųglašati sę	v.refl. ipf.
-4193	sȯglåšeńje, sųglåšeńje	n.
-34119	sȯhnųti	v.intr. ipf.
-34121	sȯhnųti	v.intr. ipf.
-35100	soja	f.
-5446	sȯjdti sę	v.refl. pf.
-5434	sȯjdti	v.intr. pf.
-36535	sojka	f.
-1385	sȯjųz	m.
-1387	sȯjųznik	m.anim.
-2075	sok	m.
-35999	sokoiztiskivačka	f.
-20746	sokol	m.anim.
-35998	sokovnik	m.
-12441	solarny	adj.
-19510	solidarnosť	f.
-19511	solidarny	adj.
-20179	solidny	adj.
-33026	soliti	v.tr. ipf.
-1441	solj	f.
-33030	soljeny	adj.
-33031	soljnica	f.
-560	sȯlnce	n.
-18860	sȯlncevråt	m.
-23633	sȯlnečna sistema	f.
-3887	sȯlnečny	adj.
-35199	solo	n.
-548	sȯlza	f.
-32324	sȯlzotvorny gaz	m.
-20707	sȯmknųti	v.tr. pf.
-2057	sȯn	m.
-4784	sonata	f.
-30747	sonda	f.
-30748	sondovati	v.tr. ipf./pf.
-36110	sonet	m.
-23055	sȯobćati sę	v.refl. ipf.
-21169	sȯobćati	v.tr. ipf.
-21171	sȯobčeńje	n.
-21172	sȯobčiti	v.tr. pf.
-36052	sȯočati sę s, sųočati sę s	v.refl. ipf.
-36053	sȯočiti sę s, sųočiti sę s	v.refl. ipf.
-33699	sopelj	m.
-33000	sopran	m.
-3223	sort	m.
-34894	sortovati	v.tr. ipf./pf.
-4150	sȯsati	v.tr. ipf.
-23591	sȯsavec	m.anim.
-35995	sosiska	f.
-12739	sȯska	f.
-30750	sosna	f.
-21794	sȯstav	m.
-4202	sȯstaviti	v.tr. pf.
-4201	sȯstavjati	v.tr. ipf.
-18867	sȯstavjeńje	n.
-35557	sȯstavna čęsť	f.
-35556	sȯstavny	adj.
-1874	sȯstojati sę iz	v.refl. ipf.
-16405	sȯtina	num.fract.
-5793	sȯtka, sȯtnja	f.
-34857	sȯtkati	v.tr. pf.
-2915	sȯtny	num.ord.
-18868	sȯučęsťje	n.sg.
-15715	sȯučęstnica	f.
-12459	sȯučęstničstvo	n.sg.
-4301	sȯučęstnik	m.anim.
-454	sova	f.
-4474	sȯvět	m.
-5149	sȯvětničstvo	n.sg.
-4341	sȯvětnik	m.anim.
-4475	sȯvětovati	v.tr. ipf.
-2080	Sovětsky Sȯjųz	m.sg.
-30757	Sovětsky Svęź	m.sg.
-1398	sovětsky	adj.
-16729	sovka	f.
-22506	sȯvladnųti	v.tr. pf.
-22508	sȯvladnųti	v.tr. pf.
-22505	sȯvladyvati	v.tr. ipf.
-22507	sȯvladyvati	v.tr. ipf.
-35382	sȯvpadeńje	n.
-15026	sȯvrěmennik	m.anim.
-5903	sȯvrěmennosť	f.
-5902	sȯvrěmenny	adj.
-22569	sȯvŕšati	v.tr. ipf.
-36808	sȯvŕšati	v.intr. ipf.
-12764	sȯvŕšenosť	f.
-1742	sȯvŕšeny vid	m.
-15052	sȯvŕšeny	adj.
-22571	sȯvŕšiti	v.tr. pf.
-36809	sȯvŕšiti	v.intr. pf.
-20180	sȯvsěm, sȯvsim	adv.
-22744	sȯzdati	v.tr. pf.
-22743	sȯzdavati	v.tr. ipf.
-5431	sȯzvati	v.tr. pf.
-5429	sȯzyvati	v.tr. ipf.
-32632	sȯžegti	v.tr. pf.
-5607	sȯžrati	v.tr. pf.
-21144	spad	m.
-21146	spad	m.
-5661	spadati	v.intr. ipf.
-18724	spakovati sę	v.refl. pf.
-5472	spakovati	v.tr. pf.
-455	spaliti	v.tr. pf.
-5197	spaljnja	f.
-4194	spańje	n.sg.
-21147	spasati	v.tr. ipf.
-23373	spaseńje	n.
-12481	spasitelj	m.anim.
-5660	spasti	v.intr. pf.
-21150	spasti	v.tr. pf.
-2224	spati	v.intr. ipf.
-5129	specialist	m.anim.
-36306	specializacija	f.
-564	speciaľno	adv.
-31716	speciaľnosť	f.
-1907	speciaľny	adj.
-4404	specifičny	adj.
-35668	specifika	f.
-36911	spektakl	m.
-35364	spektr	m.
-2902	spekulacija	f.
-35925	spekulativny	adj.
-16361	spekulovati	v.intr. ipf.
-33655	sperma	f.
-33654	spermatozoid	m.
-3254	spěšiti	v.intr. ipf.
-12490	spěšny	adj.
-30761	spěvańje	n.sg.
-12491	spěvati	v.tr. pf.
-21151	spirati sę	v.refl. ipf.
-4541	spis	m.
-5525	spisati	v.tr. pf.
-2895	spisȯk	m.
-5526	spisyvati	v.tr. ipf.
-34330	splesti	v.tr. pf.
-23026	sploditi	v.tr. pf.
-30763	spod	m.
-26226	spodnica	f.
-36557	spodobati sę	v.refl. pf.
-461	spokojno	adv.
-463	spokojny	adj.
-12502	spokojstvo	n.sg.
-17043	spokrȯvnjeny	adj.
-1479	spoľny	adj.
-2254	spolȯčenstvo	n.
-3509	spolȯčnosť	f.
-3393	spolȯčny	adj.
-18879	spolupracovati	v.intr. ipf.
-18880	spoluråbotyvati	v.intr. ipf.
-14157	spomaliti	v.tr. pf.
-14158	spomaljati	v.tr. ipf.
-10891	spomaljeńje	n.
-12515	spominati	v.tr. ipf.
-12514	spomněti	v.tr. pf.
-21152	spona	f.
-34175	sponka	f.
-1477	sponsor	m.anim.
-20183	spontanno	adv.
-2319	spontanny	adj.
-2385	spor	m.
-36305	sporadično	adv.
-35464	sporadičny	adj.
-12520	sporåzuměvańje	n.sg.
-20184	sporiti	v.intr. ipf.
-12521	sporlivy	adj.
-12522	sporno	adv.
-2021	sporny	adj.
-2022	sport	m.
-18882	sportivny	adj.
-2387	sportnik	m.anim.
-3237	sposob	m.
-422	sposobnosť	f.
-2386	sposobny	adj.
-34873	spotěti	v.intr. pf.
-34872	spotiti sę	v.refl. pf.
-22123	spotknųti sę	v.refl. pf.
-35524	spotrěbitelj	m.anim.
-5714	spotrěbiti	v.tr. pf.
-5715	spotrěbjeńje	n.sg.
-5713	spotrěbovati	v.tr. ipf.
-22122	spotykati sę	v.refl. ipf.
-34520	spozdniti sę	v.refl. pf.
-34522	spozdnjati sę	v.refl. ipf.
-34524	spozdnjeńje	n.
-3443	spoznati	v.tr. pf.
-3418	spoznavati	v.tr. ipf.
-2072	sprašati	v.tr. ipf.
-2879	spravědlivosť	f.
-661	spravědlivy	adj.
-30768	sprědu	adv.
-18727	spręgati	v.tr. ipf.
-29545	spręsti	v.tr. pf.
-21154	sprěti sę	v.refl. pf.
-21155	spręžeńje	n.
-4132	sprijateliti sę	v.refl. pf.
-2238	sprositi	v.tr. pf.
-86	sprotiviti sę	v.refl. pf.
-5708	sprotivjeńje	n.
-5622	spuhnųti	v.intr. pf.
-21160	spust	m.
-21161	spust	m.
-35821	spusť	f.
-2692	spustiti sę	v.refl. pf.
-21162	spustiti	v.tr. pf.
-21165	spustiti	v.tr. pf.
-1503	spušćati sę	v.refl. ipf.
-21156	spušćati	v.tr. ipf.
-21159	spušćati	v.tr. ipf.
-12547	spųtnik	m.
-8086	spytati	v.tr. pf.
-23468	sråka	f.
-23824	sråm	m.sg.
-23825	sråmęžlivy	adj.
-23816	sråmiti	v.tr. ipf.
-23817	sråmiti	v.tr. ipf.
-23821	sråmny	adj.
-23822	sråmny	adj.
-23818	sråmota	f.
-23819	sråmotny	adj.
-35958	sråst	m.
-33075	srastańje	n.
-33072	srastati sę	v.refl. ipf.
-18730	sråsti sę	v.refl. pf.
-479	srati	v.intr. ipf.
-20168	sråvnimy	adj.
-35220	sråvniteljny	adj.
-1142	sråvniti	v.tr. pf.
-679	sråvnjati	v.tr. ipf.
-3510	sråvnjeńje	n.
-26242	sråzumělosť	f.
-2693	sråzuměti	v.tr. pf.
-2410	Sŕb	m.anim.
-2200	Sŕbija	f.sg.
-20186	sŕbohrvatsky	adj.
-20187	sŕbolužičan, sŕbolužičanin	m.anim.
-20188	sŕbolužičsky	adj.
-591	sŕbskohrvatsky	adj.
-145	sŕbsky	adj.
-32224	sŕdca	n.pl.
-3081	sŕdce	n.
-865	sŕdcevina	f.
-22816	sŕdcevina	f.
-36877	sŕdėčna komora	f.
-12553	sŕdečno	adv.
-18884	sŕdečnosȯsųdny	adj.
-12554	sŕdečnosť	f.
-18886	sŕdečny napad	m.
-3167	sŕdečny	adj.
-21586	sŕdečny	adj.
-14993	sŕditi	v.tr. ipf.
-23752	sŕdity	adj.
-14994	sŕdnosť	f.
-30771	srěbristy	adj.
-3941	srěbrny	adj.
-2260	srěbro	n.sg.
-3117	srěd	prep.
-3107	srěda	f.
-2188	srědina	f.
-12563	srědišče	n.
-12566	srědnje	n.
-1712	srědnjevěčje	n.sg.
-18890	srědnjevěčny	adj.
-12571	Srědnji Iztok	m.sg.
-2065	srědnji rod	m.
-12572	Srědnji Vȯzhod	m.sg.
-1544	srědnji, srědny	adj.
-5191	srědnji, srědny	adj.
-21588	srědoběžny	adj.
-21589	srědotěčny	adj.
-2432	srědstvo	n.
-21590	srědstvo	n.
-2433	Srědzemno morje	n.sg.
-20748	srna	f.
-18643	srodnica	f.
-12577	srodnik	m.anim.
-15033	srodno slovo	n.
-12578	srodny	adj.
-21543	srodstvo	n.
-1364	sŕp	m.
-12165	sŕpenj	m.sg.
-18891	sŕsť	f.
-18731	srųbati	v.tr. pf.
-18733	srųbyvati	v.tr. ipf.
-14305	srųčny	adj.
-20169	sruinovati	v.tr. pf.
-21546	ssědati sę	v.refl. ipf.
-21547	ssęsti sę	v.refl. pf.
-35351	SSSR	m.sg.
-30777	SŠA	m.pl.
-36304	stabilizacija	f.
-34701	stabilizovati	v.tr. ipf./pf.
-35928	stabiľnosť	f.
-577	stabiľny	adj.
-7236	stačiti	v.intr. ipf.
-35818	stadija	f.
-21703	stado	n.
-21705	staja	f.
-22820	stalinizm	m.sg.
-1395	stalj	f.sg.
-35328	stalosť	f.
-35329	stalosť	f.
-18892	stalovy	adj.
-20749	staly	adj.
-21709	staly	adj.
-1403	stancija	f.
-1394	standard	m.
-20752	standardizacija	f.
-20753	standardizovati	v.tr. ipf.
-20754	standardny	adj.
-16479	stańje	n.
-21700	stanȯk	m.
-18893	stanovišče	n.
-21696	stanoviti	v.tr. ipf.
-6303	stanųti	v.intr. pf.
-5617	stapjati	v.tr. ipf.
-23936	staranno	adv.
-730	staranny	adj.
-21591	starati sę	v.refl. ipf.
-15566	starci	m.pl.
-15564	starec	m.anim.
-3581	starějši, starši	adj.
-12587	starěńje	n.sg.
-12589	starěti	v.intr. ipf.
-12592	starinna infrastruktura	f.
-12591	starinny	adj.
-17044	starocrkȯvnoslovjansky	adj.
-16365	starodavny	adj.
-36450	starogrėčsky	adj.
-20755	starohebrejsky	adj.
-23049	staromodny	adj.
-17045	staroslovjansky	adj.
-12595	starosť	f.
-22791	start	m.
-22792	startovati	v.tr. ipf./pf.
-30783	Stary Svět	m.sg.
-1399	stary	adj.
-4563	stati sę	v.refl. pf.
-2952	stati	v.aux. pf.
-18896	statičny	adj.
-1405	statija	f.
-18897	statističny	adj.
-18898	statistika	f.
-12603	statnosť	f.
-21698	statny	adj.
-1402	statuja	f.
-1023	status	m.
-30787	statut	m.
-1810	stavati	v.aux. ipf.
-35624	staviti na něčto	v.tr. ipf.
-35000	staviti pytańje	v.ipf.
-21692	staviti	v.tr. ipf.
-21694	stavjati	v.tr. ipf.
-21710	stavka	f.
-21711	stavka	f.
-4710	steblo	n.
-22086	stečeńje	n.
-36632	stegozavr	m.
-33526	steklěna čaša	f.
-23719	steklěny	adj.
-32349	stekľnik	m.
-1408	steklo	n.
-18737	stekti	v.intr. pf.
-33437	steliti	v.tr. ipf.
-1406	stěna	f.
-18900	stěnj	m.
-6304	stereotip	m.
-35847	sterilizacija	f.
-35846	sterilizovati	v.tr. ipf./pf.
-35845	steriľny	adj.
-18901	stežka	f.
-21849	stigati	v.tr. ipf.
-21852	stigati	v.tr. ipf.
-21848	stignųti	v.tr. pf.
-21850	stignųti	v.tr. pf.
-18907	stih	m.
-30790	stihija	f.
-239	stil, stilj	m.
-35418	stimul	m.
-4985	stimulacija	f.
-723	stimulovati	v.tr. ipf.
-30791	stiskati	v.tr. ipf.
-33545	stisknųti	v.tr. pf.
-33440	stlati	v.tr. ipf.
-2184	sto	num.card.
-36058	stodola	f.
-32077	stog	m.
-12618	Stoj!	intj.
-2083	stojati	v.intr. ipf.
-21688	stojati	v.tr. ipf.
-32732	stojišče	n.
-32733	stojišče	n.
-32734	stojišče	n.
-21708	stojka na rųkah	f.
-21706	stojka	f.
-36401	stojka	f.
-36814	Stokholm	m.
-16449	stokråtno	adv.
-1414	stol	m.
-30795	stol	m.
-1562	stolěťje	n.
-30798	stolica	f.
-18908	stoličny	adj.
-35096	stoljaŕ	m.anim.
-1663	stolka	f.
-32767	stoľny tenis	m.
-35627	stolova lȯžica	f.
-30799	stȯlp	m.
-4255	ston	m.
-12626	stonańje	n.sg.
-4254	stonati	v.intr. ipf.
-32616	stonožka	f.
-16111	stop	intj.
-3996	stopa	f.
-670	stopiti	v.tr. pf.
-5618	stopjeńje	n.
-12632	storočnik	m.anim.
-16406	stotina	num.fract.
-61	stoty	num.ord.
-21894	stradati	v.intr. ipf.
-767	strah	m.
-4469	strahlivec	m.anim.
-12645	strahlivo	adv.
-4471	strahlivosť	f.
-4470	strahlivy	adj.
-1416	strahovańje	n.
-1169	strahovati	v.tr. ipf.
-1894	strajk	m.
-24554	strajkovati	v.intr. ipf.
-30804	stråna světa	f.
-1412	stråna	f.
-21865	stråna	f.
-21866	stråna	f.
-1098	strånica	f.
-21871	stråniti sę od	v.refl. ipf.
-6305	strånnik	m.anim.
-21593	strånny	adj.
-21895	strasť	f.
-35454	strastny	adj.
-12655	strašeny	adj.
-36855	strašilo za ptice	n.
-36854	strašilo	n.
-1818	strašiti	v.tr. ipf.
-12659	strašno	adv.
-35989	strašno	adv.
-250	strašny	adj.
-1186	strategičny	adj.
-16370	strategija	f.
-20756	straus	m.anim.
-18910	stråž	m.anim.
-5792	straža	f.
-938	strčiti	v.intr. ipf.
-36398	strěćati sę	v.refl. ipf.
-1954	strěćati	v.tr. ipf.
-21901	strěgti sę	v.refl. ipf.
-21899	strěgti	v.tr. ipf.
-36013	strěha	f.
-20757	strekoza	f.
-1096	strěla	f.
-4248	strěľba	f.
-30809	Strělec	m.anim.
-34942	strělec	m.anim.
-18912	strělišče	n.
-1442	strěliti	v.intr. ipf.
-743	strěljati	v.intr. ipf.
-35769	strěľka	f.
-12672	strěľnik	m.anim.
-34897	strělȯčnik	m.anim.
-35891	stremę	n.
-34961	stres	m.
-13034	stręseńje mozga	n.
-13056	stręseńje	n.
-34962	stresovy	adj.
-36399	strěsti sę	v.refl. pf.
-1345	strěsti	v.tr. pf.
-36014	strěšna krytina	f.
-12664	strěteńje	n.
-5021	strigti	v.tr. ipf.
-15042	strimati	v.tr. pf.
-15044	strimyvati	v.tr. ipf.
-12675	strižik	m.anim.
-20189	strogo	adv.
-33305	strogosť	f.
-12676	strogy	adj.
-21910	stroj	m.
-21907	strojiti	v.tr. ipf.
-21909	strojiti	v.tr. ipf.
-5203	strop	m.
-34283	strugati	v.tr. ipf.
-4989	struja	f.
-16363	struktura	f.
-36307	strukturny	adj.
-1097	struna	f.
-5680	strunny instrument	m.
-5681	strunny kvartet	m.
-34288	stružka	f.
-1192	stryjec	m.anim.
-15040	stryjenka	f.
-1061	student	m.anim.
-30811	studeny	adj.
-4714	studija	f.
-34943	studio	n.
-20190	studiovati	v.tr. ipf.
-33551	studiti	v.tr. ipf.
-2047	studnja	f.
-18916	stukati do/na/v dveri	v.ipf.
-18913	stukati	v.intr. ipf.
-18917	stuknųti	v.intr. pf.
-3494	stul	m.
-21926	stųpati	v.intr. ipf.
-3890	stųpenišče	n.
-3252	stųpenj	m.
-21927	stųpenj	m.
-21925	stųpiti	v.intr. pf.
-36151	stųpnica	f.
-17046	stųpnjevańje	n.sg.
-12688	stvår	m.
-6306	stvarjati	v.tr. ipf.
-3293	stvårno	adv.
-20191	stvårnosť	f.
-3382	stvor	m.
-6307	stvoriti	v.tr. pf.
-3381	stvorjeńje	n.
-18738	stvŕditi	v.tr. pf.
-12612	styčenj	m.sg.
-1404	styd	m.sg.
-22121	styk	m.
-36707	sųbesědnik	m.anim.
-36617	subjekt	m.
-30812	subjektivizm	m.sg.
-32933	subjektivnosť	f.
-32932	subjektivny	adj.
-30813	sublimacija	f.
-1062	sųbota	f.
-5336	substancija	f.
-34844	subtiľnosť	f.
-34843	subtiľny	adj.
-33717	subtitry	m.pl.
-17048	sųći	adj.
-36616	sųćnosť	f.
-20192	sųćstveno	adv.
-20193	sųćstveny	adj.
-35116	sųčasnik	m.anim.
-20758	sųčasnosť	f.
-17047	sųčasny	adj.
-1487	sųd	m.
-3636	sųďba	f.
-2097	sųditi	v.tr. ipf.
-22003	sųditi	v.tr. ipf.
-21595	sųďja	m.anim.
-6183	sųdny denj	m.
-6195	sųdny pozȯv	m.
-30814	sųdny	adj.
-12700	sųđeńje	n.
-1475	sufiks	m.
-3524	suhaŕ	m.
-14307	sųharmonizovati	v.intr. pf.
-3571	suhoplod	m.
-1775	suhy	adj.
-22324	sujevěŕje	n.
-33733	suka	f.
-36237	suknja	f.
-35922	sultan	m.anim.
-35923	sultanat	m.
-1427	suma	f.
-35378	sųměstimosť	f.
-35377	sųměstimy	adj.
-3323	sųmněńje	n.
-15047	sųmněńje	n.
-3322	sųmněvati sę	v.refl. ipf.
-18921	sųmniteljny	adj.
-12709	sųmnlivo	adv.
-12710	sųmnlivy	adj.
-5042	sųmråk	m.
-1304	sųmŕkati sę	v.refl. ipf.
-565	sųmŕknųti sę	v.refl. pf.
-21174	sunųti	v.tr. pf.
-20199	sųp	m.anim.
-32086	supa	f.
-15048	super-	prefix
-35211	superdŕžava	f.
-35239	superheroj	m.anim.
-1445	supermarket	m.
-35050	sųperničstvo	n.sg.
-1431	sųpernik	m.anim.
-36869	supersila	f.
-35459	sųpostaviti	v.tr. pf.
-35458	sųpostavjati	v.tr. ipf.
-4922	sųprotiv	prep.
-5134	sųprovađati	v.tr. ipf.
-5135	sųprovoditi	v.tr. pf.
-5136	sųprovođeńje	n.sg.
-12724	sųprųg	m.anim.
-12725	sųprųga	f.
-21176	sųprųgi	m.pl.
-18922	sųprųžstvo	n.
-21167	sųpųtnik	m.anim.
-35140	sųråbota	f.
-5443	sųråbotati	v.intr. ipf.
-5137	sųråbotničstvo	n.sg.
-5335	sųråbotnik	m.anim.
-20759	sųråzměrnosť	f.
-20760	sųråzměrny	adj.
-12727	surfist	m.anim.
-12726	surfovańje	n.sg.
-15050	surfovati	v.intr. ipf.
-22446	Surinam	m.sg.
-22447	surinamsky	adj.
-16807	surovy	adj.
-1446	surpriz	m.
-35457	surrealizm	m.sg.
-1873	sųsěd	m.anim.
-12734	sųsědno do	prep.
-5731	sųsědny	adj.
-5732	sųsědsky	adj.
-5625	sųsědstvo	n.
-34944	sųsrědotočati sę	v.refl. ipf.
-16774	sųsrědotočati	v.tr. ipf.
-36706	sųsrědotočeny	adj.
-34945	sųsrědotočiti sę	v.refl. pf.
-16775	sųsrědotočiti	v.tr. pf.
-21796	sųstav	m.
-21898	sųstradańje	n.
-5168	sųstrěća	f.
-20761	sųstrěćati	v.tr. ipf.
-20762	sųstrěsti	v.tr. pf.
-36636	suša	f.
-18925	sušiti	v.tr. ipf.
-23008	sųt	v.aux. ipf.
-18926	sutener	m.anim.
-35497	suteren	m.
-566	sųtruditi	v.intr. ipf.
-4536	sųtrudničsky	adj.
-12513	sųtrudničstvo	n.sg.
-36822	sųtstvo	n.
-36821	sųtstvovati	v.intr. ipf.
-21178	suvati	v.tr. ipf.
-148	suvenir	m.
-5765	suverenitet	m.sg.
-1433	suverenny	adj.
-22432	sųvisly	adj.
-4462	sųvlađeńje	n.
-32991	suzafon	m.
-22884	sųznačny	adj.
-22942	sųzvězďje	n.
-18927	sųžalosť	f.
-23165	svabiti	v.tr. pf.
-35954	svahili	m.indecl.
-12754	svariti	v.tr. pf.
-22563	svariti	v.tr. pf.
-22564	svarjati	v.tr. ipf.
-18928	svat	m.anim.
-3734	svaťba	f.
-12750	svaťbena obrųčka	f.
-12752	svaťbena zabava	f.
-12753	svaťbeni sųprųgi	m.pl.
-12749	svaťbeny konvoj	m.
-15051	svaťbeny kostjum	m.
-12751	svaťbeny oděv	m.
-4287	svaťbeny	adj.
-15581	svaťbeny	adj.
-15723	svatiti sę	v.refl. ipf.
-16791	Svazilend	m.sg.
-1744	svěća	f.
-2089	svęćennik	m.anim.
-18929	svęćeny	adj.
-35579	svědčiti	v.intr. ipf.
-22237	svědȯčstvo	n.
-21168	svědȯk	m.anim.
-12757	svědomje	n.sg.
-6219	svědomo	#adv.
-6217	svědomosť	f.
-6218	svědomy	adj.
-24005	svekr	m.anim.
-24006	svekrȯv	f.
-23721	svěriti sę	v.refl. pf.
-23720	svěrjati sę	v.refl. ipf.
-586	svěsť	f.
-35606	svěstny	adj.
-3137	svět	m.
-15054	Svět	m.
-35709	svętilišče	n.
-5237	světilka	f.
-4892	světiľnik	m.
-1440	svętiti	v.tr. ipf.
-23586	světľny god	m.
-23587	světľny rok	m.
-12770	světlo luny	n.sg.
-12771	světlo měsęca	n.sg.
-3284	světlo	n.
-35044	světlofor	m.
-35653	světluška	f.
-30825	světly	adj.
-22012	světoběžnik	m.anim.
-30822	svętȯčny	adj.
-20200	světoględ	m.
-20201	svętogrđeńje	n.
-12788	svętȯk	m.
-23659	Světova trgova organizacija	f.sg.
-36527	světova vojna	f.
-23658	Světova zdråvstvena organizacija	f.sg.
-36526	světovy	adj.
-36030	svetr	m.
-12772	světsky	adj.
-36122	Svęty Graal	m.
-3891	svęty hrånitelj	m.anim.
-2090	svęty	adj.
-15058	svęź	m./f.
-18741	svęź	m./f.
-3512	svęzany	adj.
-18749	svęzati šnurom	v.tr. pf.
-3538	svęzati	v.tr. pf.
-36359	svęznik	m.
-2320	svęzȯk	m.
-18752	svęzȯk	m.
-22205	svęzȯk	m.
-22206	svęzȯk	m.
-18758	svęzyvati šnurom	v.ipf.
-3514	svęzyvati	v.tr. ipf.
-5225	svěži	adj.
-15056	svila	f.
-22634	svinec	m.sg.
-1438	svinja	f.
-1439	svinovod	m.anim.
-18934	svinsky	adj.
-32216	svirěposť	f.
-32217	svirěposť	f.
-32212	svirěpy	adj.
-32219	svirěpy	adj.
-5689	svist	m.
-5686	svistati	v.intr. ipf.
-5687	svistnųti	v.intr. pf.
-5688	svistȯk	m.
-12787	svitańje	n.
-33575	sviti	v.tr. pf.
-33576	sviti	v.tr. pf.
-33577	sviti	v.tr. pf.
-33578	sviti	v.tr. pf.
-33579	sviti	v.tr. pf.
-30829	svitȯk	m.
-1258	svoboda	f.
-23556	svobodna volja	f.
-13741	svobodno vrěmę	n.sg.
-20202	svobodno	adv.
-6041	svobodnomyslitelj	m.anim.
-12792	svobodnomysljny	adj.
-1977	svobodny	adj.
-22265	svod	m.
-22267	svod	m.
-22268	svodnik	m.anim.
-1099	svoj	pron.poss.
-22017	svojak	m.anim.
-22020	svojevlastny	adj.
-22304	svojevoljny	adj.
-34877	svojevrěmenno	adv.
-18387	svojevrěmennosť	f.
-34876	svojevrěmenny	adj.
-15059	svojnosť	f.
-18936	svojsko	adv.
-18935	svojsky	adj.
-18937	svojstvo	n.
-22019	svojstvo	n.
-22557	svorenj	m.
-18759	svråtno	adv.
-18760	svråtny	adj.
-26271	svråtny	adj.
-35023	svŕbęći	adj.
-35022	svŕběti	v.tr. ipf.
-35089	svŕček	m.anim.
-30833	svŕdlo	n.
-22590	svŕgati	v.tr. ipf.
-22592	svŕgnųti	v.tr. pf.
-12762	svŕh-	prefix
-12763	svŕhny	adj.
-30834	svŕhu	adv.
-783	syn	m.anim.
-21996	sypati	v.tr. ipf.
-1822	syr	m.
-36273	syrovatka	f.
-17572	syrovina	f.
-14999	syrovy	adj.
-33424	sytiti	v.tr. ipf.
-35605	syty	adj.
-1474	šablon	m.
-34385	szadu	adv.
-35102	šafa	f.
-33732	šafran	m.sg.
-18763	šah i mat	m.
-18764	šahovnica	f.
-36776	šahta	f.
-1054	šahy	m.pl.
-23838	šal, šalik	m.
-30839	šal	m.
-18765	šalěti	v.intr. ipf.
-22814	šalěti	v.intr. ipf.
-23160	šampansko	n.
-16910	šampion	m.anim.
-16911	šampionat	m.
-23159	šampon	m.
-632	šans	m.
-4354	šantaž	m.sg.
-12799	šantažovati	v.tr. ipf.
-1053	šapka	f.
-22833	šarlatan	m.anim.
-22834	šarlatanstvo	n.sg.
-16843	šarm	m.sg.
-30841	šator	m.
-34895	ščęditi	v.tr. ipf.
-18778	ščedro	adv.
-18781	ščedrosť	f.
-18784	ščedry	adj.
-36035	ščekotati	v.tr. ipf.
-32117	ščenę	n.
-34186	ščeniti sę	v.refl. ipf.
-1463	ščęsťje	n.
-3653	ščęstlivo	adv.
-1545	ščęstlivy	adj.
-12812	ščęstno	adv.
-12814	Ščęstnogo dnja rođeńja!	intj.
-12815	Ščęstnogo Novogo Goda!	intj.
-12810	Ščęstnogo Velikdnja!	intj.
-15060	ščęstnosť	f.
-12803	ščęstny	adj.
-12811	Ščęstnyh svętkov!	intj.
-30844	ščetina	f.
-4780	ščetka	f.
-34644	ščigȯl	m.anim.
-18787	ščipati	v.tr. ipf.
-18788	ščipnųti	v.tr. pf.
-12816	ščit	m.
-12817	ščititi	v.tr. ipf.
-23661	ščitna žlěza	f.
-16378	ščrba	f.
-18789	ščur	m.anim.
-12821	šef policije	m.anim.
-1468	šef	m.anim.
-33271	šepot	m.
-33270	šeptati	v.tr. pf.
-18807	šeršenj	m.anim.
-1739	šesť	num.card.
-3111	šesťdesęt	num.card.
-23688	šesťdesęty	num.ord.
-16456	šesteraky	num.diff.
-15592	šesterčęta	n.pl.
-34563	šesterka	num.subst.
-16445	šesterny	num.mult.
-16433	šestero	num.coll.
-12832	šestikųtnik	m.
-16402	šestina	num.fract.
-18808	šestinožka	f.
-12831	šestivųgȯľnik	m.
-16460	šestka	num.subst.
-1583	šestnadsęť	num.card.
-23684	šestnadsęty	num.ord.
-1582	šesťsȯt, šesťsto	num.card.
-1581	šesty	num.ord.
-23260	šev	m.
-12835	šifrovańje	n.sg.
-12840	šifrovany	adj.
-12838	šifrovati	v.tr. ipf.
-12839	šifrovati	v.tr. ipf.
-12841	šija	f.
-34978	šikarny	adj.
-34428	šimpanz	m.anim.
-30851	šina	f.
-36076	šipka	f.
-4280	širina	f.
-35766	širiti	v.tr. ipf.
-4279	široko	adv.
-4281	širokosť	f.
-196	široky	adj.
-20175	širši	adj.
-36470	šiška	f.
-23254	šiti	v.tr. ipf.
-6149	šizofreničny	adj.
-6148	šizofrenija	f.
-35101	škaf	m.
-34840	škala, skala	f.
-23264	škarpetka	f.
-3546	škoda	f.
-4472	škoditi	v.intr. ipf.
-6225	škodlivy	adj.
-36097	škodnik	m.anim.
-1584	škola	f.
-4844	školiti	v.tr. ipf.
-35583	škoľna tabla	f.
-15593	škoľnik	m.anim.
-3884	škoľny	adj.
-35055	Škot	m.anim.
-35056	Škotka	f.
-35053	Škotska	f.sg.
-35054	škotsky	adj.
-5111	šlěm	m.
-3885	šlepati	v.tr. ipf.
-4713	šlepnųti	v.tr. pf.
-34951	šlifovati	v.tr. ipf.
-18830	šljahetnosť	f.
-18831	šljahetny	adj.
-18833	šljahta	f.
-18837	šljahtić	m.anim.
-18836	šljahtička	f.
-36377	šljuz	m.
-4303	šlupa	f.
-34786	šminka	f.
-18854	šnur	m.
-12859	šnurka	f.
-287	šofer	m.anim.
-32668	šofersko dozvoljeńje	n.
-1585	šok	m.
-5727	šokovany	adj.
-5726	šokovati	v.tr. ipf.
-5728	šokujųći	adj.
-263	šolk	m.sg.
-36913	šou	m.indecl.
-33663	šovinist	m.anim.
-33664	šovinističny	adj.
-33662	šovinizm	m.sg.
-35886	špala	f.
-408	Španija	f.sg.
-1980	špansky	adj.
-34845	špinat	m.
-3269	špion	m.anim.
-30857	špionaž	m.sg.
-32867	šruba	f.
-30858	štanga	f.
-1586	štat	m.
-728	štopati	v.tr. ipf.
-1476	štučny	adj.
-18920	šuba	f.
-2079	šum	m.
-36820	šuměti	v.intr. ipf.
-2346	šumny	adj.
-3672	šunka	f.
-1391	Švecija	f.sg.
-1420	švedsky	adj.
-2220	Švejcarija	f.sg.
-32452	švejcarsky	adj.
-1501	tabak	m.sg.
-12884	tabela	f.
-33409	tabletka	f.
-13716	tablo s izslědkami	n.indecl.
-36801	tablo	n.indecl.
-30863	tabor	m.
-20203	tabu	m.indecl.
-23646	tadžičsky, tadžiksky	adj.
-5996	Tadžikistan	m.sg.
-34023	tajati	v.tr. ipf.
-30864	tajemny	adj.
-4460	tajeńje	n.sg.
-23302	tajenstveny	adj.
-23303	tajenstvo	n.
-32345	tajfun	m.
-12886	tajiti	v.tr. ipf.
-22767	Tajland	m.sg.
-12893	tajna služba	f.
-6339	tajna vojna	f.
-3892	tajna	f.
-18940	tajnica	f.
-12889	tajnik	m.anim.
-4288	tajnišče	n.
-21180	tajnopis	m.
-21181	tajnopisec	m.anim.
-4289	tajnosť	f.
-12891	tajny batalion	m.
-2957	tajny	adj.
-4908	tajsky	adj.
-6110	Tajvan	m.sg.
-3320	tak, tako	adv.
-12905	tako ... onako	conj.
-12909	tako kako	conj.
-18941	tako kazati	phrase
-625	tako mnogo	adv.
-18942	tako rěčeny	adj.
-12904	tako skoro kako	conj.
-12915	tako zvany	adj.
-12906	tako že	conj.
-6311	takovy	adj.
-1716	takože	adv.
-23313	taksi	m.indecl.
-23314	taksometr	m.
-33583	taksonomičny	adj.
-33582	taksonomija	f.
-20205	taktika	f.
-12914	takto	adv.
-3099	taky	adj.
-20206	talent	m.
-32160	talija	f.
-4667	taliŕka	f.
-20207	talisman	m.
-1883	tam	adv.
-32993	tamburin	m.
-19560	tamo	adv.
-2263	tamtoj	pron.dem.
-20208	tancevati	v.intr. ipf.
-36553	tancor	m.anim.
-36554	tancorka	f.
-23531	tanec	m.
-845	tank	m.
-22807	Tanzanija	f.sg.
-20763	tarantula	f.
-1944	taśma	f.
-18956	tata	m.anim.
-36568	tatarsky	adj.
-36567	Tatarstan	m.sg.
-35689	tatuaž	m.
-35688	tatuovati	v.tr. ipf./pf.
-1816	tę	pron.pers.
-5702	te	pron.dem.
-3123	teatr	m.
-32987	teatraľny	adj.
-4805	tebe	pron.pers.
-6069	tečeńje	n.
-12935	tečeńje	n.
-12936	tečno	adv.
-12937	tečnosť	f.
-12938	tečny	adj.
-3793	tęgati	v.tr. ipf.
-22027	tęglivy	adj.
-49	tęgnųti	v.tr. ipf.
-3124	tehničny	adj.
-16348	tehnik	m.anim.
-16349	tehnika	f.
-16350	tehnologičny	adj.
-1204	tehnologija	f.
-32503	tekila	f.
-30874	Teksas	m.sg.
-2963	tekst	m.
-1484	tekstilj	m.
-5417	tekti	v.intr. ipf.
-6078	tekųći	adj.
-22062	tekųći	adj.
-5242	tekųtina	f.
-15074	telę	n.
-4640	telefon	m.
-16351	telefonovati	v.intr. ipf.
-5795	telegrama	f.
-23637	telekomunikacija	f.
-21596	teleskop	m.
-5646	tělesny	adj.
-3100	telętko	n.
-16353	televiděńje	n.sg.
-4399	televizija	f.
-4400	televizijny program	m.
-36770	televizijny	adj.
-36571	televizor	m.
-34672	teliti sę	v.refl. ipf.
-36088	tělo samoleta	n.
-1485	tělo	n.
-459	tělohrånitelj	m.anim.
-3330	tema	f.
-17049	tematičny	adj.
-35137	tematika	f.
-34670	temněti	v.intr. ipf.
-30879	temnica	f.
-18958	temnolavandovy	adj.
-5116	temnosť	f.
-15075	temnota	f.
-30880	temnota	f.
-1749	temny	adj.
-1486	temperatura	f.
-36824	tempo	n.
-16119	tendencija	f.
-1483	tenis	m.sg.
-2110	teniska	f.
-18959	těnj	m./f.
-1577	tenky	adj.
-32997	tenor	m.anim.
-18960	teolog	m.anim.
-18961	teologija	f.sg.
-16822	teoretično	adv.
-16821	teoretičny	adj.
-4739	teorija	f.
-32350	teplica	f.
-12960	teplo	n.sg.
-20764	teploměr	m.
-15076	teplota	f.
-35034	teplovaty	adj.
-344	teply	adj.
-32497	terapevt	m.anim.
-18962	terapija materskoj klětki	f.
-4740	terapija	f.
-36837	tercija	f.
-35451	terier	m.anim.
-16121	teritoriaľno	adv.
-529	teritoriaľny	adj.
-3101	teritorija	f.
-36149	termin dostojenstva	m.
-2091	termin	m.
-36593	termin	m.
-20765	termit	m.anim.
-23638	termodinamika	f.
-5107	teror	m.
-34948	terorist	m.anim.
-262	terorističny	adj.
-16354	terorizm	m.sg.
-36161	tesati	v.tr. ipf.
-22093	těsnina	f.
-3894	těsno	adv.
-416	těsny	adj.
-2388	test	m.
-24003	tesť	m.anim.
-4759	testament	m.
-18963	těsto	n.
-1443	testovati	v.tr. ipf.
-24004	tešća	f.
-23785	těšiti sę iz	v.refl. ipf.
-15078	tetenka	f.
-18965	tętiva	f.
-2376	tetka	f.
-15734	tęznitelj	m.anim.
-6190	tęžba	f.
-12971	tęžina	f.
-20209	tęžko	adv.
-22032	tęžko	adv.
-22034	tęžko	adv.
-22038	tęžko	adv.
-18966	tęžkosť	f.
-22039	tęžkosť	f.
-5	tęžky	adj.
-1970	tęžky	adj.
-3654	tęžky	adj.
-3895	tęžky	adj.
-22036	tęžky	adj.
-15737	tęžnica	f.
-15736	tęžnik	m.anim.
-21597	thoŕ	m.anim.
-4809	ti	pron.pers.
-1969	tigr	m.anim.
-1411	tiho	adv.
-23499	Tihy okean	m.sg.
-1844	tihy	adj.
-32992	timpany	m.pl.
-18967	tinejdžer	m.anim.
-30888	tinktura	f.
-3224	tip	m.
-12989	tipično	adv.
-12990	tipičnosť	f.
-12991	tipičny	adj.
-12992	tipka	f.
-15080	tipkati	v.tr. ipf.
-18970	tipkovnica	f.
-1567	tipografija	f.
-35973	tipologičny	adj.
-35972	tipologija	f.
-4665	tir	m.
-32477	tiran	m.anim.
-30889	tiranija	f.
-36631	tiranozavr	m.
-23615	tiskaŕ	m.anim.
-23614	tiskaŕstvo	n.sg.
-22091	tiskati	v.tr. ipf.
-22090	tisknųti	v.tr. pf.
-3360	tišina	f.
-1492	titan	m.sg.
-35453	tjulenj	m.anim.
-19008	tjuŕma	f.
-30920	tjutjun	m.sg.
-18971	tkanina	f.
-35429	tkanj	f.
-34856	tkati	v.tr. ipf.
-22108	tknųti sę	v.refl. pf.
-22099	tknųti	v.tr. pf.
-22101	tknųti	v.tr. pf.
-30892	tlěńje	n.sg.
-30893	tlěti	v.intr. ipf.
-16888	tlo	n.
-34949	tlo	n.
-1126	ťma	f.
-30894	toalet	m.
-34754	toaletny papir	m.sg.
-1507	tobě	pron.pers.
-6312	točiti sę	v.refl. ipf.
-36477	točiti sę	v.refl. ipf.
-22055	točiti	v.tr. ipf.
-22057	točiti	v.tr. ipf.
-22058	točiti	v.tr. ipf.
-22059	točiti	v.tr. ipf.
-23447	točka s komojų	f.
-23446	točka s zapętojų	f.
-20211	točka zrěńja	f.
-5271	točka	f.
-13009	točno	adv.
-18975	točnosť	f.
-3593	točny	adj.
-35442	tofi	n.indecl.
-2120	tȯgda, tȯgdy	adv.
-2893	toj	pron.dem.
-20212	tojže	pron.dem.
-3533	tok	m.
-22060	tok	m.
-22061	tok	m.
-22063	tokaŕ	m.anim.
-35317	tokråtno	adv.
-18977	tolerancija	f.
-34952	tolerantny	adj.
-12901	toliko kako	conj.
-2144	toliko	adv.
-15082	toliko	adv.
-19597	tolikråt	adv.
-19589	toliky	adj.
-33459	tȯlkti	v.intr. ipf.
-18979	tȯlmač	m.anim.
-873	tȯlmačeńje	n.
-3896	tȯlmačiti	v.tr. ipf.
-22	tȯlpa	f.
-32229	tȯlsto piśmo	n.
-13017	tȯlstosť	f.
-2313	tȯlsty	adj.
-30897	tomat	m.
-4036	tomu že	conj.
-4031	tomu	adv.
-13020	tomu	adv.
-3383	ton	m.
-368	tona	f.
-30898	tȯnky	adj.
-5337	tonųti	v.intr. ipf.
-21598	tonųti	v.intr. ipf.
-30899	topinambur	m.
-18982	topišče	n.
-1719	topiti	v.tr. ipf.
-36490	topografičny	adj.
-36489	topografija	f.sg.
-34561	topolja	f.
-36771	toponim	m.
-34035	tȯptati	v.intr. ipf.
-15560	torba do spańja	f.
-32241	torba	f.
-35480	torf	m.
-35108	tornado	n.
-32489	tors	m.
-33720	tort	m.
-36541	tost	m.
-36542	toster	m.
-32742	totalitarizm	m.sg.
-32743	totalitarny	adj.
-32744	totaľny	adj.
-15594	totožny	adj.
-2192	tovar	m.
-4211	tovariš	m.anim.
-34764	tovariška	f.
-15073	tovarna	f.
-13032	tȯž	adv.
-2314	tradicija	f.
-1458	tradicijny	adj.
-16728	tradicionalist	m.anim.
-2424	tragedija	f.
-4401	tragičny	adj.
-18984	trajati	v.intr. ipf.
-32481	trajny	adj.
-35712	Trakija	f.sg.
-35713	trakijsky	adj.
-35141	traktat	m.
-35465	traktor	m.
-3103	tramvaj	m.
-36650	trankvilizator	m.
-36329	transkribovati	v.tr. ipf./pf.
-16823	transkripcija	f.
-3947	transliteracija	f.
-3946	transliterovati	v.tr. ipf.
-6314	transparent	m.
-35430	transplantacija	f.
-18986	transport	m.
-36408	transportovati	v.tr. ipf./pf.
-36022	tranzitna viza	f.
-35590	trasa	f.
-3602	trata	f.
-3276	tratiti	v.tr. ipf.
-18987	tratiti	v.tr. ipf.
-34953	tratiti	v.tr. ipf.
-12	trava	f.
-13039	travenj	m.sg.
-21182	travimy	adj.
-21183	travjeńje	n.sg.
-31869	travma	f.
-31870	travmatizovati	v.tr. ipf./pf.
-18988	travnik	m.
-18989	travojed	m.anim.
-22949	travojedny	adj.
-13040	tŕbuh	m.
-13041	tŕbušny	adj.
-13048	trěba by bylo	adv.
-13049	trěba priznati	phrase
-13042	trěba	adv.
-18990	trěbovańje	n.
-1942	trěbovati	v.aux. ipf.
-32222	trefy	f.pl.
-36659	trejler	m.
-14736	trend	m.
-13052	trener	m.anim.
-3898	trening	m.
-3899	treningovy	adj.
-3897	trenovati	v.tr. ipf.
-16909	trepetati	v.intr. ipf.
-13058	tręseńje	n.
-3523	trěsk	m.
-13064	tręsti sę	v.refl. ipf.
-3902	tręsti	v.tr. ipf.
-3826	treti	v.tr. ipf.
-13087	tretina	num.fract.
-20213	treťje	adv.
-439	treťji	num.ord.
-2961	trevoga	f.
-3900	trevožiti sę	v.refl. ipf.
-34829	trevožiti	v.tr. ipf.
-32486	trevožny	adj.
-34673	trězvěti	v.intr. ipf.
-18991	trězvy	adj.
-2348	trg	m.
-22130	trgati	v.tr. ipf.
-22134	trgati	v.tr. ipf.
-22136	trgnųti	v.tr. pf.
-22137	trgnųti	v.tr. pf.
-36875	trgova komora	f.
-20216	trgovańje	n.
-3326	trgovati	v.intr. ipf.
-1413	trgovec	m.anim.
-20221	trgovišče	n.
-2300	trgovja	f.
-4260	trgovy	adj.
-1466	tri	num.card.
-36594	tribuna	f.
-36633	triceratops	m.
-1774	tridesęť, tridesęti	num.card.
-23686	tridesęty	num.ord.
-16756	trik	m.
-2014	trikråtno	adv.
-4411	trikųtnik	m.
-4412	trikųtny	adj.
-36292	triler	m.
-20222	trilětny	adj.
-18992	trimati sę nečego	v.refl. ipf.
-15083	trimati	v.tr. ipf.
-986	trinadsęť	num.card.
-23681	trinadsęty	num.ord.
-274	trista, tristo	num.card.
-36032	triumfaľny lųk	m.
-20223	triumfaľny	adj.
-35284	triviaľny	adj.
-15605	trivųgȯľnik	m.
-31871	trivyměrny	adj.
-34643	trizųbec	m.
-23724	tŕn	m.
-23402	trofej	m.
-33555	troha	f.
-35111	trohy, trohų	adv.
-34541	Troja	f.sg.
-16453	trojaky	num.diff.
-34542	trojansky konj	m.anim.
-18994	trojce toliko	adv.
-15601	trojčęta	n.pl.
-16430	troje	num.coll.
-16457	trojka	num.subst.
-16439	trojny	num.mult.
-18996	trojskok	m.
-32440	trolejbus	m.
-32442	trolj	m.anim.
-23435	trombon	m.
-988	tron	m.
-974	tropičny ciklon	m.
-34963	tropičny	adj.
-5997	trotuar	m.
-18999	tŕpělivosť	f.
-23990	tŕpělivy	adj.
-36708	tŕpěńje	n.sg.
-742	tŕpěti	v.intr. ipf.
-3448	tŕpěti	v.tr. ipf.
-18997	tŕpimosť	f.
-18998	tŕpimy	adj.
-5269	trųba	f.
-23424	trųba	f.
-976	trųbiti	v.tr. ipf.
-13095	trųbka poživjeńja	f.
-32851	trųbkozųb	m.anim.
-5270	trųboprovod	m.
-215	trud	m.
-1525	truditi	v.intr. ipf.
-13099	trudnosť	f.
-3093	trudny	adj.
-19001	trudoljubivo	adv.
-19002	trudoljubivosť	f.
-19004	trudoljubivy	adj.
-19000	trudoljubje	n.sg.
-5338	trup	m.
-23171	trutenj	m.anim.
-30913	trvaly	adj.
-35939	trvańje	n.
-1055	trvati	v.intr. ipf.
-33342	tu i tam	adv.
-1758	tu	adv.
-23436	tuba	f.
-410	tuberkuloza	f.
-4717	tųdy	adv.
-36929	tųga	f.
-22041	tųgy	adj.
-20769	tuk	m.
-1601	tulipan	m.
-30916	tulov	m.
-20770	tunec	m.anim.
-34927	tunel	m.
-5995	Tunizija	f.sg.
-34680	tųpěti	v.intr. ipf.
-4775	tųpy	adj.
-3095	Turcija	f.sg.
-1691	turečsky	adj.
-1598	turist	m.anim.
-34965	turističny	adj.
-34964	turizm	m.sg.
-23641	Turkmenistan	m.sg.
-23642	turkmensky	adj.
-30890	turkysovy	adj.
-13110	turnir	m.
-3694	tuš	m.
-15606	tut	adv.
-15607	tutčas	adv.
-15609	tutčasno	adv.
-15610	tutčasnosť	adv.
-15611	tutčasny	adj.
-15612	tutčasny	adj.
-15613	tutdenj	adv.
-15614	tutdenny	adj.
-1534	tutoj	pron.dem.
-36086	tutovo drěvo	n.
-22749	tuzemec	m.anim.
-22043	tųžiti sę	v.refl. ipf.
-22042	tųžiti	v.intr. ipf.
-36093	tvarog	m.
-35976	tvid	m.
-2231	tvoj	pron.poss.
-20224	tvor	m.
-19010	tvoŕba	f.
-19011	tvorčestvo	n.sg.
-1548	tvorčji	adj.
-35771	tvorec	m.anim.
-4841	tvoritelj	m.anim.
-5976	tvoriteljnik, tvoriteljny padež	m.
-3030	tvoriti	v.tr. ipf.
-22144	tvorivo	n.
-17051	tvorjeńje	n.sg.
-34703	tvŕděti	v.intr. ipf.
-6111	tvŕditi	v.tr. ipf.
-13118	tvŕdnųti	v.intr. ipf.
-30923	tvŕdo	adv.
-19015	tvŕdoglåvy	adj.
-13119	tvŕdosť	f.
-1532	tvŕdy	adj.
-16802	tvŕđa	f.
-1087	tvŕđeńje	n.
-675	ty	pron.pers.
-19016	tyčkoskok	m.
-13003	tydenj	m.
-16128	tydnjeva gazeta	f.
-12980	tydnjevo	adv.
-13006	tydnjevy žurnal	m.
-12981	tydnjevy	adj.
-22111	tykalo	n.
-22107	tykati sę	v.refl. ipf.
-22098	tykati	v.tr. ipf.
-22100	tykati	v.tr. ipf.
-36405	tykati	v.tr. ipf.
-30927	tykva	f.
-19018	tyl	m.
-16835	tym ne menje	adv.
-31792	tymijan	m.
-2389	tysęć	num.card.
-4694	tysęćlěťje	n.
-20226	tysęćlětny	adj.
-12999	tysęćročje	n.
-4395	tysęčny	num.ord.
-4923	u	prep.
-13142	ubědimy	adj.
-36667	uběditi sę	v.refl. pf.
-4450	uběditi	v.tr. pf.
-13145	ubědlivy	adj.
-20227	uběđajųći	adj.
-36669	uběđati sę	v.refl. ipf.
-4449	uběđati	v.tr. ipf.
-13140	uběđeńje	n.
-13141	uběđenosť	f.
-23753	uběđeny	adj.
-5448	uběgati	v.intr. ipf.
-5449	uběgti	v.intr. pf.
-23986	uběžišče	n.
-277	ubijca	m.anim.
-279	ubijstvo	n.
-2129	ubiti	v.tr. pf.
-2130	ubivati	v.tr. ipf.
-13159	ubo	conj.
-19019	ubogy	adj.
-30934	ubrus	m.
-32790	ubrus	m.
-32792	ubrus	m.
-16873	učarovany	adj.
-16871	učarovati	v.tr. pf.
-16872	učarovyvati	v.tr. ipf.
-19022	učebnik	m.
-13160	učebny	adj.
-2128	učenica	f.
-13167	učeničsky	adj.
-13161	učenik	m.anim.
-17057	učeńje	n.sg.
-22159	učeńje	n.sg.
-13168	učeny	m.anim.
-3767	učęsťje	n.sg.
-13171	učęstnica	f.
-774	učęstničstvo	n.sg.
-5609	učęstnik	m.anim.
-2948	učęstvovati	v.intr. ipf.
-3327	učet	m.
-16377	učilišče	n.
-4448	učinitelj	m.anim.
-2966	učiniti	v.tr. pf.
-19025	učinȯk	m.
-916	učitelj	m.anim.
-36678	učiteljka	f.
-1531	učiti sę	v.refl. ipf.
-1526	učiti	v.tr. ipf.
-19026	učtivy	adj.
-15097	udača	f.
-15100	udačlivy	adj.
-34973	udačnik	m.anim.
-15099	udačno	adv.
-34972	udačny	adj.
-17095	udaliti	v.tr. pf.
-17096	udaliti	v.tr. pf.
-17052	udaljati	v.tr. ipf.
-17094	udaljati	v.tr. ipf.
-19028	udaljeńje	n.sg.
-3394	udaljenosť	f.
-3754	udar	m.
-3710	udariti	v.tr. pf.
-3709	udarjati	v.tr. ipf.
-13955	udarjeńje	n.
-34971	udati sę	v.refl. pf.
-21184	udav	m.anim.
-34970	udavati sę	v.refl. ipf.
-31819	udaviti	v.tr. pf.
-20228	uděl	m.
-19031	uděliti	v.tr. pf.
-19030	uděljati	v.tr. ipf.
-20230	udiviteljno	adv.
-35204	udiviteljny	adj.
-3909	udiviti	v.tr. pf.
-13199	udivjajųći	adj.
-3349	udivjati sę	v.refl. ipf.
-3910	udivjati	v.tr. ipf.
-4219	udivjeńje	n.sg.
-5966	udivjeny	adj.
-15102	udobno	adv.
-19034	udobnosť	f.
-19035	udobny	adj.
-35884	udobstvo	n.
-4209	udoskonaliti	v.tr. pf.
-19039	udŕžati sę od	v.refl. pf.
-19037	udŕžati	v.tr. pf.
-19043	udŕživati sę od	v.refl. ipf.
-19041	udŕživati	v.tr. ipf.
-15222	udušeny	adj.
-5562	udušiti	v.tr. pf.
-13203	udvojeny	adj.
-13202	udvojiti	v.tr. pf.
-23937	ugadati	v.tr. pf.
-23939	ugadyvańje	n.sg.
-23938	ugadyvati	v.tr. ipf.
-2291	ugasnųti	v.intr. pf.
-1542	ugašati	v.intr. ipf.
-5820	uględati	v.tr. ipf.
-5821	uględěti	v.tr. pf.
-19045	ugodny	adj.
-13210	ugovor	m.
-5595	ugryzti	v.tr. pf.
-33407	uhađati za	v.intr. ipf.
-36054	uho, uško [@]	n.
-830	uho	n.
-5482	uhoditi	v.intr. ipf.
-32521	uhovŕtka	f.
-13898	uj, ujec	m.anim.
-5483	ujdti	v.intr. pf.
-13223	ujediniti	v.tr. pf.
-13224	ujedinjati	v.tr. ipf.
-5495	ujehati	v.intr. pf.
-15166	ujenka	f.
-19048	ujęti	v.tr. pf.
-5496	uježđati	v.intr. ipf.
-5930	Ujgur	m.anim.
-5931	ujgursky	adj.
-19050	ujmati	v.tr. ipf.
-13227	ukaz	m.
-20238	ukazańje	n.
-20239	ukazatelj	m.
-17053	ukazateljny zaimennik	m.
-20241	ukazati	v.tr. pf.
-20242	ukazyvati	v.tr. ipf.
-32011	uklåti	v.tr. pf.
-17054	ukončeny	adj.
-19052	ukrađeńje	n.
-3049	Ukrajina	f.sg.
-596	Ukrajinec	m.anim.
-831	ukrajinsky	adj.
-23168	ukrasiti	v.tr. pf.
-941	ukrasti	v.tr. pf.
-23167	ukrašati	v.tr. ipf.
-23169	ukrašeńje	n.
-32100	ukrěpiti	v.tr. pf.
-32101	ukrěpjati	v.tr. ipf.
-31993	ukrotiti	v.tr. pf.
-4176	ukryti	v.tr. pf.
-36507	ukryťje	n.
-13236	ukryty	adj.
-4177	ukryvańje	n.sg.
-13238	ukryvatelj	m.anim.
-4175	ukryvati	v.tr. ipf.
-17719	ukųsiti	v.tr. pf.
-23841	ulagađati	v.tr. ipf.
-23839	ulagoditi	v.tr. pf.
-35072	ulegšati	v.tr. ipf.
-35071	ulegšiti	v.tr. pf.
-4849	ulěpšati	v.tr. ipf.
-6055	ulěpšeńje	n.
-4850	ulěpšiti	v.tr. pf.
-5450	ulětati	v.intr. ipf.
-5451	uletěti	v.intr. pf.
-2098	ulica	f.
-24015	ulična lampa	f.
-20243	ulja	f.
-5743	ulomȯk	m.
-5744	ulomȯk	m.
-36550	ulov	m.
-23647	ultrafioletovo světlo	n.sg.
-35757	ultrafioletovy	adj.
-20771	ulučati	v.tr. ipf.
-20772	ulučiti	v.tr. pf.
-35312	ulučšati	v.tr. ipf.
-35313	ulučšeńje	n.
-35311	ulučšiti	v.tr. pf.
-13252	um	m.
-21599	umarjajųći	adj.
-20774	umarjati	v.tr. ipf.
-13531	uměńje	n.
-4101	umenšati	v.tr. ipf.
-4099	umenšiti	v.tr. pf.
-23047	uměriti	v.tr. pf.
-34979	uměrjati	v.tr. ipf.
-20775	uměrjeny	adj.
-3963	uměstiti	v.tr. pf.
-30950	uměstno	adv.
-32794	uměstny	adj.
-3965	uměšćati	v.tr. ipf.
-19055	uměšćeńje	n.
-389	uměti	v.aux. ipf.
-23046	umětna inteligencija	f.
-19056	umětnica	f.
-19057	umětničsko	adv.
-13267	umětničsky	adj.
-13268	umětnik	m.anim.
-2290	umětnosť	f.
-4842	umětny	adj.
-872	umirati	v.intr. ipf.
-13271	umnik	m.anim.
-13272	umno	adv.
-13273	umnosť	f.
-13274	umny	adj.
-22167	umny	adj.
-22168	umny	adj.
-15111	umoliti	v.tr. pf.
-15112	umoljati	v.tr. ipf.
-2980	umoriti sę	v.refl. pf.
-20778	umoriti	v.tr. pf.
-21601	umorjeńje	n.sg.
-13277	umorjenosť	f.
-594	umorjeny	adj.
-4543	umožniti	v.tr. pf.
-4542	umožnjati	v.tr. ipf.
-35384	umrěly	adj.
-977	umreti	v.intr. pf.
-20779	umŕtviti	v.tr. pf.
-20781	umŕtvjati	v.tr. ipf.
-20783	umysl	m.
-20245	umysľno	adv.
-20246	umysľny	adj.
-5290	umyti	v.tr. pf.
-5285	umyvaľnik	m.
-16380	umyvati	v.tr. ipf.
-13286	unarodniti	v.tr. pf.
-13289	unarodnjati	v.tr. ipf.
-13284	unarodnjeńje	n.
-13292	unemožniti	v.tr. pf.
-13293	unemožnjati	v.tr. ipf.
-2100	uneviniti	v.tr. pf.
-1131	unevinjati	v.tr. ipf.
-35913	uniforma	f.
-13296	unija	f.
-35322	unikaľnosť	f.
-35026	unikaľny	adj.
-1708	Unikod	m.sg.
-33260	uniščeńje	n.
-978	uniščiti	v.tr. pf.
-3072	universaľny	adj.
-1547	universitet	m.
-4508	uniziti	v.tr. pf.
-4223	unižajųći	adj.
-4507	unižati	v.tr. ipf.
-4509	unižeńje	n.
-19059	unižnosť	f.
-36186	uosobjeńje	n.
-4662	upad	m.
-21185	upadȯk	m.
-19060	upakovati	v.tr. pf.
-19061	upakovyvati	v.tr. ipf.
-1060	upasti	v.intr. pf.
-5537	upekti	v.tr. pf.
-13312	uperiti	v.tr. pf.
-5579	upiti sę	v.refl. pf.
-438	upity	adj.
-5578	upivati sę	v.refl. ipf.
-19064	upodabnjati sę	v.refl. ipf.
-19062	upodabnjati	v.tr. ipf.
-19068	upodobniti sę	v.refl. pf.
-19066	upodobniti	v.tr. pf.
-5897	upokarnjati	v.tr. ipf.
-5896	upokorniti	v.tr. pf.
-3778	upȯlnomoćeny	adj.
-1419	upȯlnomoćevati	v.tr. ipf.
-1779	upȯlnomoćiti	v.tr. pf.
-19070	uporny	adj.
-35654	upotrěba	f.
-4539	upotrěbimy	adj.
-4374	upotrěbitelj	m.anim.
-3092	upotrěbiti	v.tr. pf.
-1388	upotrěbjati	v.tr. ipf.
-1505	upotrěbjeńje	n.
-13330	uprava	f.
-5077	upravitelj	m.anim.
-21194	upraviti	v.tr. pf.
-13332	upravjati	v.tr. ipf.
-21198	upravjati	v.tr. ipf.
-20247	upravjeńje	n.
-32775	upręž	f.
-30955	upyŕ	m.anim.
-35097	uragan	m.
-35064	Ural	m.sg.
-35063	uraľsky	adj.
-1569	uran	m.sg.
-23648	Uran	m.sg.
-3749	uråvenj	m./f.
-20252	uråvniti	v.tr. pf.
-20248	uråvnjati	v.tr. ipf.
-1028	uraza	f.
-1030	uraziti	v.tr. pf.
-33390	urazlivy	adj.
-622	uražati	v.tr. ipf.
-33392	uraženy	adj.
-3762	uręd	m.
-22369	uręditi	v.tr. pf.
-21203	urędnik	m.anim.
-22366	uręđati	v.tr. ipf.
-21603	urěkati	v.tr. ipf.
-21605	urěkti	v.tr. pf.
-6330	urězati	v.tr. pf.
-6332	urězyvati	v.tr. ipf.
-32789	urna	f.
-34981	urod	m.
-1896	uroditi sę	v.refl. pf.
-1556	uroditi	v.tr. pf.
-21608	uroditi	v.tr. pf.
-1660	urodlivy	adj.
-21607	urođaj	m.
-15116	urođeńje	n.
-21609	urok	m.
-22448	Urugvaj	m.sg.
-22449	urugvajsky	adj.
-23943	urvati	v.tr. pf.
-23940	uryvati	v.tr. ipf.
-19076	usęsti	v.intr. pf.
-1100	usiliti	v.tr. pf.
-1432	usiljati	v.tr. ipf.
-1614	usiľje	n.
-6317	usiljeńje	n.
-4246	usilovati	v.intr. ipf.
-35318	uskoriti	v.tr. pf.
-35319	uskorjati	v.tr. ipf.
-36313	uskorjeńje	n.
-3094	uslovje	n.
-1618	uslovny	adj.
-15117	usložniti	v.tr. pf.
-15118	usložnjati	v.tr. ipf.
-5128	usluga	f.
-1552	uslyšati	v.tr. pf.
-1624	usměh	m.
-1634	usměhati sę	v.refl. ipf.
-1615	usměhnųti sę	v.refl. pf.
-20789	usmŕćati	v.tr. ipf.
-20790	usmŕtiti	v.tr. pf.
-21615	usnųti	v.intr. pf.
-5453	usȯhnųti	v.intr. pf.
-1616	uspěh	m.
-13362	uspěhlivy	adj.
-15631	uspěšnica	f.
-15632	uspěšnik	m.anim.
-3912	uspěšno	adv.
-3911	uspěšny	adj.
-4042	uspěti	v.intr. pf.
-5565	uspěvati	v.intr. ipf.
-1590	uspokajati	v.tr. ipf.
-5877	uspokojeńje	n.sg.
-13373	uspokojeny	adj.
-1589	uspokojiti	v.tr. pf.
-3830	usposabjati	v.tr. ipf.
-3831	usposobiti	v.tr. pf.
-20256	uspravědliviti	v.tr. pf.
-36409	uspravědlivjati	v.tr. ipf.
-20257	uspravědlivjeńje	n.
-21618	usŕdny	adj.
-1530	usta	n.pl.
-21808	ustaliti	v.tr. pf.
-21801	ustaljati	v.tr. ipf.
-23293	ustaljeny	adj.
-13386	ustalosť	f.
-13387	ustaly	adj.
-5132	ustanavjati	v.tr. ipf.
-34983	ustanovitelj	m.anim.
-5133	ustanoviti	v.tr. pf.
-13384	ustanovjeny	adj.
-16470	ustati	v.intr. pf.
-21799	ustati	v.intr. pf.
-21809	ustav	m.
-21810	ustav	m.
-13388	ustavati	v.intr. ipf.
-21798	ustavati	v.intr. ipf.
-3952	ustaviti	v.tr. pf.
-3951	ustavjati	v.tr. ipf.
-3953	ustavjeńje	n.
-35232	ustavny	adj.
-33597	usťje	n.
-5169	ustny	adj.
-21923	ustrajati	v.tr. ipf.
-31998	ustrica	f.
-3913	ustroj	m.
-19090	ustrojitelj	m.anim.
-21924	ustrojiti	v.tr. pf.
-19095	ustrojstvo	n.sg.
-732	ustųpati	v.tr. ipf.
-21973	ustųpati	v.intr. ipf.
-1648	ustųpiti	v.tr. pf.
-21977	ustųpiti	v.intr. pf.
-15120	ustųpjeńje	n.
-1650	ustųpka	f.
-6047	ustųpny	adj.
-5452	usyhati	v.intr. ipf.
-4877	uši	f.pl.
-5421	utěkati	v.intr. ipf.
-6067	utěkati	v.intr. ipf.
-5420	utekti	v.intr. pf.
-6068	utekti	v.intr. pf.
-19097	utekųćiniti	v.tr. pf.
-19096	utekųćinjati	v.tr. ipf.
-36193	utělesniti	v.tr. pf.
-36192	utělesnjati	v.tr. ipf.
-13409	utes	m.
-23664	utěšati	v.tr. ipf.
-23668	utěšeńje	n.
-23665	utěšiti	v.tr. pf.
-13410	utęžati	v.tr. ipf.
-13411	utęžiti	v.tr. pf.
-36461	utilitarny	adj.
-13412	utirak	m.
-13414	utirati	v.tr. ipf.
-34180	utišati	v.tr. ipf.
-34183	utišiti	v.tr. pf.
-35669	utočniti	v.tr. pf.
-35670	utočnjati	v.tr. ipf.
-35671	utočnjeńje	n.
-3834	utomljeny	adj.
-21620	utonųti	v.intr. pf.
-32389	utopičny	adj.
-32388	utopija	f.
-32390	utopist	m.anim.
-35924	utopizm	m.sg.
-12635	utraćati čas	v.ipf.
-21621	utraćati sę	v.refl. ipf.
-12636	utraćati udobnomožnosť	v.ipf.
-12637	utraćati vrěmę	v.ipf.
-12638	utraćati vse	v.ipf.
-2939	utraćati	v.tr. ipf.
-5068	utraćeny	adj.
-3730	utrata	f.
-21623	utratiti sę	v.refl. pf.
-12663	utratiti	v.tr. pf.
-34029	utreti	v.tr. pf.
-8365	utrišnji, utrišny	adj.
-392	utro	n.
-23793	utrom	adv.
-3818	utŕpěti	v.tr. pf.
-13417	utrudniti	v.tr. pf.
-13418	utrudnjati	v.tr. ipf.
-1651	utvŕditi	v.tr. pf.
-36404	utvŕditi	v.tr. pf.
-393	utvŕđati	v.tr. ipf.
-36403	utvŕđati	v.tr. ipf.
-13421	utvŕđeńje	n.
-13422	uvadnjati	v.tr. ipf.
-5188	uvaga	f.
-19100	uvaljnjati sę od	v.refl. ipf.
-19099	uvaljnjati sę	v.refl. ipf.
-3555	uvaljnjati	v.tr. ipf.
-3562	uvaljnjati	v.tr. ipf.
-13423	uvažańje	n.sg.
-4483	uvažati	v.tr. ipf.
-22178	uvažati	v.tr. ipf.
-19102	uvažiti	v.tr. pf.
-19104	uvažny	adj.
-1620	uvědamjati	v.tr. ipf.
-23949	uvędati	v.intr. ipf.
-23951	uvędnųti	v.intr. pf.
-1619	uvědomiti	v.tr. pf.
-5853	uvědomjeńje	n.
-1611	uvědomjeny	adj.
-30958	uvěkověčiti	v.tr. pf.
-22289	uveličati	v.tr. ipf.
-35060	uveličeńje	n.
-22290	uveličiti	v.tr. pf.
-36668	uvěriti sę	v.refl. pf.
-199	uvěriti	v.tr. pf.
-200	uvěriti	v.tr. pf.
-36670	uvěrjati sę	v.refl. ipf.
-1649	uvěrjati	v.tr. ipf.
-3200	uvěrjeno	adv.
-13434	uvěrjenosť	f.
-1599	uvěrjeny	adj.
-23438	uvertura	f.
-36555	uvęznųti	v.intr. pf.
-5555	uviděti	v.tr. pf.
-13444	uvodniti	v.tr. pf.
-19108	uvoljniti sę od	v.refl. pf.
-19107	uvoljniti sę	v.refl. pf.
-3558	uvoljniti	v.tr. pf.
-3560	uvoljniti	v.tr. pf.
-30961	uvularny	adj.
-23643	uzbečsky, uzbeksky	adj.
-5932	Uzbek	m.anim.
-5933	Uzbekistan	m.sg.
-32759	uzda	f.
-13455	uzdråvitelj	m.anim.
-15123	uzdråviti	v.tr. pf.
-15124	uzdravjati	v.tr. ipf.
-35065	uznańje	n.sg.
-3805	uznati	v.tr. pf.
-3804	uznavati	v.tr. ipf.
-4044	uzrěti	v.tr. pf.
-36459	uzurpator	m.anim.
-36458	uzurpovati	v.tr. ipf./pf.
-16917	už ne	adv.
-114	už, uže	adv.
-13461	užas	m.
-5105	užasati	v.tr. ipf.
-5865	užasneny	adj.
-20258	užasno	adv.
-5106	užasnųti	v.tr. pf.
-13465	užasny	adj.
-22932	užiti	v.tr. pf.
-30964	uživańje	n.
-22931	uživati	v.tr. ipf.
-1606	v času	prep.
-19109	v domu	adv.
-4945	v imenu	prep.
-3615	v koncu	adv.
-13474	v mig oka	adv.
-13472	v mig	adv.
-13476	v obličju prava	adv.
-13478	v obličju trudnostij	adv.
-19113	v odnošeńju k	prep.
-13480	v odråzlikě od	prep.
-35517	v porędku	adv.
-5954	v prošlȯm godu	adv.
-17089	v protivnosti k	prep.
-5156	v ramkah	prep.
-3245	v råzličji od	prep.
-36234	v směru strělky časovnika	adv.
-30967	v sumě	adv.
-4948	v svęzi s	prep.
-19117	v tečeńju	prep.
-13485	v tom samom vrěmenu	adv.
-5829	v vrěmenu	prep.
-13486	v vśakom slučaju	adv.
-15193	v zaměn za	prep.
-13990	v zaměn	adv.
-1607	v, vo	prep.
-3982	v, vo	prep.
-23166	vabik	m.
-23164	vabiti	v.tr. ipf.
-30970	vaflja	f.
-5645	vaga	f.
-22173	vaga	f.
-21638	vagati sę	v.refl. ipf.
-35086	vagina	f.
-1608	vagon	m.
-30973	vagonetka	f.
-30974	Vagy	f.pl.
-36927	vajatelj	m.anim.
-36914	vajati	v.tr. ipf.
-30978	vakacije	f.pl.
-30979	vakancija	f.
-30980	vakantny	adj.
-30981	vakcina	f.
-30983	vakuum	m.
-22184	val	m.
-30984	val	m.
-13489	vala	f.
-20283	valec	m.
-30987	valenky	m.pl.
-30988	valentnosť	f.
-30989	valeriana	f.
-30990	valerianka	f.
-31853	valet	m.anim.
-34976	valisty papugajek	m.anim.
-3472	valiti	v.tr. ipf.
-30996	valjati sę	v.refl. ipf.
-22181	valjati	v.tr. ipf.
-30997	valjcevati	v.intr. ipf./pf.
-30998	valkirija	f.
-30999	vals	m.
-31000	valsovati	v.intr. ipf.
-23462	valtorna	f.
-31005	valtornist	m.anim.
-1698	valuta	f.
-1553	vam	pron.pers.
-31007	vampir	m.anim.
-22619	vanadij	m.sg.
-31009	vandal	m.anim.
-31010	vandalizm	m.sg.
-31012	vanilin	m.sg.
-31011	vanilja	f.
-3450	vanna	f.
-31014	vanta	f.
-31015	vapno	n.
-17058	variacija	f.
-17059	variant	m.
-31021	variete	n.indecl.
-31022	variovati	v.intr. ipf./pf.
-5210	variti	v.tr. ipf.
-31024	Varjag	m.anim.
-21211	varjeńje	n.sg.
-21212	varlivy	adj.
-23518	Varšava	f.sg.
-19513	Varšavsky Dogovor	m.sg.
-31025	varvar	m.anim.
-31026	varvarizm	m.sg.
-31027	varvarsky	adj.
-2413	vas	pron.pers.
-31028	vasal	m.anim.
-32779	vasaľna dŕžava	f.
-1631	vaš	pron.poss.
-31032	vat	m.
-31033	vata	f.
-31035	vaterlinija	f.
-31038	Vatikan	m.sg.
-31039	vavilonsky	adj.
-31040	vaza	f.
-19160	vazektomija	f.
-31041	vazelin	m.
-13495	važeńje	n.
-6005	važiti	v.tr. ipf.
-20808	važka	f.
-13502	važno	adv.
-19161	važnosť	f.
-1632	važny	adj.
-34878	včasno	adv.
-34879	včasnosť	f.
-34880	včasny	adj.
-1067	včera	adv.
-35266	včerašnji, včerašny	adj.
-19119	včleniti	v.tr. pf.
-19118	včlenjati	v.tr. ipf.
-13505	vdęčno	adv.
-4902	vdęčnosť	f.
-4900	vdęčny	adj.
-31046	vděti niť v iglų	v.tr. pf.
-32941	vděvati niť v iglų	v.tr. ipf.
-23788	vdȯhnųti	v.tr. pf.
-3075	vdol	adv.
-464	vdova	f.
-4284	vdovec	m.anim.
-23787	vdyhati	v.tr. ipf.
-3916	vebmaster	m.anim.
-3074	veb-sajt, vebsajt	m.
-35238	veb-strånica	f.
-1635	věć	f.
-34902	vęće ili menje	adv.
-4546	vęće	adv.
-22402	věće	n.
-2264	vęćinstvo	n.
-412	vęćši	adj.
-1653	večer	m.
-2416	večerja	f.
-13519	večerjati	v.intr. ipf.
-23796	večerny	adj.
-1637	večerȯm	adv.
-13524	věčno	adv.
-15634	věčnosť	f.
-1657	věčny	adj.
-15126	věda	f.
-15127	věděńje	n.sg.
-15128	věděti	v.tr. ipf.
-31102	vędly	adj.
-4829	věďma	f.
-13647	věďmak	m.anim.
-13644	vędneńje	n.sg.
-13642	vędneny	adj.
-15130	vědnosť	f.
-13643	vędnųti	v.intr. ipf.
-36420	vědomo	adv.
-22209	vědomosť	f.
-20284	vědomy	adj.
-1306	vědro	n.
-31063	vegetacija	f.
-31064	vegetarianec	m.anim.
-32754	vegetarianka	f.
-31065	vegetariansky	adj.
-31066	vegetativny	adj.
-36311	vějalo	n.
-36312	vějaŕ	m.
-31068	vějati	v.intr. ipf.
-4110	věk	m.
-4616	věk	m.
-31073	věko	n.
-31074	věko	n.
-31075	veksel	m.
-31076	vektor	m.
-31092	velarny	adj.
-3047	velblųd	m.anim.
-19165	velebny	adj.
-22283	velebny	adj.
-31078	velen	m.
-36868	velesila	f.
-31079	velěti	v.tr. ipf.
-13545	veličejši	adj.
-5286	veličina	f.
-31083	veličje	n.sg.
-22284	veličstveny	adj.
-22285	veličstvo	n.
-31084	Velika Britanija	f.sg.
-16374	Velika Noć	f.
-13539	velikan	m.anim.
-16373	Velikdenj	m.
-19169	velikodušno	adv.
-19170	velikodušnosť	f.
-19172	velikodušny	adj.
-22286	velikolěpny	adj.
-35595	velikosť	f.
-31091	velikosvetsky	adj.
-689	veliky gråd	m.
-130	veliky palec	m.
-10461	Veliky Pętȯk	m.
-19168	veliky šlem	m.
-6	veliky	adj.
-21639	velje	adv.
-21641	velje	adv.
-13547	veľmi rano	adv.
-13549	Veľmi Važna Osoba	f.
-13546	veľmi	adv.
-20809	veľmoža	m.anim.
-4476	velosiped	m.
-31101	velosipedist	m.anim.
-20811	veľryb	m.anim.
-35057	Vels	m.sg.
-35058	velssky	adj.
-31097	velur	m.
-13558	vely	adj.
-4239	velžnosť	f.
-4238	velžny	adj.
-31103	vena	f.
-31105	vendeta	f.
-704	věnec	m.
-19177	Venera	f.
-31107	veneričny	adj.
-16792	Venezuela	f.sg.
-22451	venezueľsky	adj.
-31116	venozny	adj.
-31118	ventilacija	f.
-5830	ventilator	m.
-31117	ventilj	m.
-31120	ventilovati	v.tr. ipf./pf.
-31123	vepŕ	m.anim.
-2429	věra	f.
-31125	veranda	f.
-31126	verbaľny	adj.
-31127	verbena	f.
-31128	verbovati	v.tr. ipf./pf.
-31129	verdikt	m.
-35333	věręći	m.anim.
-1897	verf	m.
-32836	verifikacija	f.
-20285	verifikovajemy	adj.
-20286	verifikovati	v.tr. ipf.
-19179	veriga	f.
-22554	verigy	f.pl.
-22322	věritelj	m.anim.
-3106	věriti	v.tr. ipf.
-31133	vermišelj	f.
-31134	vermut	m.
-35334	věrnik	m.anim.
-31135	vernisaž	m.
-3308	věrny	adj.
-3917	věrny	adj.
-19181	věrodostojnosť	f.
-19184	věrodostojny	adj.
-19187	věrogodnosť	f.
-19190	věrogodny	adj.
-1102	věrojętno	adv.
-13576	věrojętnosť	f.
-3405	věrojętny	adj.
-36225	věrolomnik	m.anim.
-20812	věrolomnosť	f.
-20814	věrolomny	adj.
-13564	věrozakon	m.
-13578	věrozakonny	adj.
-959	versija, verzija	f.
-31143	versta	f.
-31144	verš	m.
-20287	vertikaľny	adj.
-1676	veś	pron.indef.
-31150	veś	f.
-22342	vesde	adv.
-3583	veseliti sę	v.refl. ipf.
-13581	veseliti	v.tr. ipf.
-980	veseljańje	n.sg.
-6039	veseľje	n.sg.
-19196	Veselogo Rođeńja!	intj.
-13588	veselosť	f.
-16383	vesely	adj.
-19200	Veselyh Svętkov!	intj.
-4046	věsiti	v.tr. ipf.
-31151	veslo	n.
-328	vesna	f.
-3073	věsť	f.
-13592	věsti	f.pl.
-13593	vesti	v.tr. ipf.
-31155	vestibulj	m.
-19201	věstnik	m.anim.
-22211	věstnik	m.
-22212	věstnik	m.anim.
-19193	věšalka	f.
-4045	věšati	v.tr. ipf.
-3270	veteran	m.anim.
-13962	veteranka	f.
-31163	veterinaŕ	m.anim.
-32431	veterinaŕny	adj.
-31165	vethy	adj.
-2153	větka	f.
-1677	veto	n.
-1678	větr	m.
-13599	větrak	m.
-33033	větrec	m.
-33032	větrik	m.
-19202	větrilo	n.
-19203	větriti	v.tr. ipf.
-15137	větrnica	f.
-19205	větrno plåtno	n.
-19206	větrnoplåtnica	f.
-13596	větrny mlyn	m.
-13595	větrny	adj.
-5000	větva	f.
-1681	veverica	f.
-31170	vęz	m.
-19210	vęzalo	n.
-19215	vęzati šnurom	v.ipf.
-2509	vęzati	v.tr. ipf.
-1702	vęzenj	m.anim.
-2161	vęzeńje	n.
-31172	vezir	m.anim.
-19216	vęzka	f.
-22189	vęznųti	v.intr. ipf.
-36270	vezti sę	v.refl. pf.
-1683	vezti	v.tr. ipf.
-2032	věža	f.
-19208	věža	f.
-34984	vględati sę	v.refl. ipf.
-13607	vględěti sę	v.refl. pf.
-31176	vgorų	adv.
-5294	vhod	m.
-65	vhoditi	v.intr. ipf.
-19123	vhodna karta	f.
-19120	vhođeńje	n.sg.
-31177	viadukt	m.
-31178	vibracija	f.
-32988	vibrafon	m.
-31179	vibrator	m.
-31181	vibrovati	v.intr. ipf./pf.
-1689	vid	m.
-22419	vid	m.
-23074	vid	m.
-31183	vid	m.
-31186	viděńje	n.
-13616	viděny	adj.
-2151	video	n.
-36778	videokarta	f.
-2185	viděti	v.tr. ipf.
-20288	vidimo	adv.
-19219	vidimy	adj.
-22423	vidnokrųg	m.
-13619	vidny	adj.
-19220	Viena	f.sg.
-4750	Vietnam	m.sg.
-4751	vietnamsky	adj.
-31190	vigvam	m.
-31191	vihȯr	m.
-33586	vihȯr	m.
-33587	vihȯr	m.
-31193	vika	f.
-31194	vikarij	m.anim.
-3096	vikend	m.
-16139	vikendovy	adj.
-35076	viki	f.indecl.
-31195	viking	m.anim.
-35277	Vikipedija	f.
-31196	vikont	m.anim.
-31197	vikontesa	f.
-31189	vikunja	f.
-31199	vila	f.
-4666	vilica	f.
-31201	vily	f.pl.
-2604	vina	f.
-31204	vinegret	m.
-1159	viniteljnik, viniteljny padež	m.
-2605	viniti za	v.tr. ipf.
-31205	vinjetka	f.
-36157	vinna loza	f.
-15140	vinnik	m.anim.
-15141	vinnosť	f.
-1009	vinny	adj.
-1400	vino	n.
-13626	vinobrańje	n.
-13627	vinogråd, vinogrådnik	m.
-13628	vinogrådny	adj.
-13629	vinogrådstvo	n.sg.
-23733	vinovaty	adj.
-721	vinovnik	m.anim.
-31209	vint	m.
-4148	vintovka	f.
-23442	viola	f.
-16140	violina	f.
-16141	violinist	m.anim.
-31212	violončelist	m.anim.
-23440	violončelo	n.
-31214	viraž	m.
-31215	Virdžinija	f.sg.
-31867	virolog	m.anim.
-31868	virologija	f.sg.
-5173	virtuaľny	adj.
-31216	virtuoz	m.anim.
-23654	virus	m.
-32780	visęći zamȯk	m.
-22431	visělica	f.
-1163	visěti	v.intr. ipf.
-23161	viski	m./f.
-31221	viskoza	f.
-23663	Visla	f.sg.
-21225	visokosny god	m.
-31224	vist	m.
-19221	višnja	f.
-31225	višnjevy	adj.
-15146	Vitaj!	intj.
-15147	Vitajte!	intj.
-31227	vitalist	m.anim.
-31228	vitalističny	adj.
-31229	vitalizm	m.sg.
-16303	vitamin	m.
-15148	vitańje	n.
-2981	vitati	v.tr. ipf.
-19222	vitęź	m.anim.
-695	vitęzstvo	n.
-33580	viti gnězdo	phrase
-5627	viti sę	v.refl. ipf.
-31233	viti	v.tr. ipf.
-33571	viti	v.tr. ipf.
-33572	viti	v.tr. ipf.
-33573	viti	v.tr. ipf.
-33574	viti	v.tr. ipf.
-36104	Vitlejem	m.
-31234	vitraž	m.
-31235	vitrina	f.
-20289	vivisekcija	f.
-666	viza	f.
-31239	vizavi	prep.
-33002	vizažist	m.anim.
-33003	vizažistka	f.
-23075	vizija	f.
-3035	vizita	f.
-31242	vizuaľny	adj.
-5493	vjehati	v.intr. pf.
-5492	vježđati	v.intr. ipf.
-3956	vklad	m.
-3954	vkladati	v.tr. ipf.
-20263	vključajųći	prep.
-1699	vključati	v.tr. ipf.
-3923	vključati	v.tr. ipf.
-20264	vključeńje	n.sg.
-35221	vključiteljny	adj.
-2162	vključiti	v.tr. pf.
-3926	vključiti	v.tr. pf.
-35330	vključno	adv.
-31244	vkupě	adv.
-2160	vkųs	m.
-2542	vkųsiti	v.tr. pf.
-31248	vkųsny	adj.
-1814	vkųšati	v.tr. ipf.
-22517	vlåčiti	v.tr. ipf.
-22518	vlåčiti	v.tr. ipf.
-2528	vlada	f.
-22468	vlada	f.
-13668	vladaŕ	m.anim.
-13669	vladaŕka	f.
-569	vladati, vlåděti	v.intr. ipf.
-13670	vladati, vlåděti	v.intr. ipf.
-22476	vladati, vlåděti	v.intr. ipf.
-22477	vladati, vlåděti	v.intr. ipf.
-22478	vladati, vlåděti	v.intr. ipf.
-22479	vladati, vlåděti	v.intr. ipf.
-33612	vladati, vlåděti	v.intr. ipf.
-33615	vladati, vlåděti	v.intr. ipf.
-22471	vladec	m.anim.
-35392	vladny	adj.
-22473	vladyka	m.anim.
-19224	vlåga	f.
-13242	vlagańje	n.
-13243	vlagatelj	m.anim.
-15103	vlagati	v.tr. ipf.
-6196	vlåk	m.
-2530	vlåkno	n.
-23398	vlamyvatelj	m.anim.
-5590	vlamyvati sę	v.refl. ipf.
-2529	vlås	m.
-19225	vlåsaty	adj.
-6320	vlasť	f.
-13677	vlasť	f.
-15741	vlastnica	f.
-22481	vlastničstvo	n.
-24014	vlastničstvo	n.
-3363	vlastnik	m.anim.
-13678	vlastnik	m.anim.
-13681	vlastniti	v.tr. ipf.
-13685	vlastno imę	n.
-13683	vlastnosť	f.
-1913	vlastny	adj.
-22480	vlastny	adj.
-34713	vlåžiti	v.tr. pf.
-19228	vlåžnosť	f.
-19231	vlåžny	adj.
-3570	vlěkti	v.tr. ipf.
-5280	vlěvo	adv.
-579	vlězti	v.intr. pf.
-20791	vliv	m.
-20792	vlivati	v.intr. ipf.
-23397	vlivny	adj.
-4612	vlomiti sę	v.refl. pf.
-4613	vlomjeńje	n.
-3955	vložiti	v.tr. pf.
-35545	vměsati	v.tr. pf.
-31258	vměstiti	v.tr. pf.
-2531	vměsto	prep.
-15151	vměstu	adv.
-20270	vměšańje	n.
-2532	vměšati sę	v.refl. pf.
-32434	vměšćati	v.tr. ipf.
-2533	vměšivati sę	v.refl. ipf.
-35546	vměšivati	v.tr. ipf.
-16902	vně	adv.
-16904	vně	prep.
-5455	vnesti	v.tr. pf.
-16903	vněšnji, vněšny	adj.
-35762	vnězemny	adj.
-20795	vnikati	v.intr. ipf.
-20798	vniknųti	v.intr. pf.
-19234	vnimańje	n.sg.
-36795	vnimateljny	adj.
-23378	vniz	adv.
-5454	vnositi	v.tr. ipf.
-35619	vnučę	n.
-15644	vnučka	f.
-1430	vnuk	m.anim.
-2540	vnųtri	prep.
-21642	vnųtri	adv.
-22378	vnųtrišnji, vnųtrišny	adj.
-19235	vnųtrna valuta	f.
-2950	vnųtrnosť	f.
-22376	vnųtrnosti	f.pl.
-19237	vnųtrny produkt	m.
-19238	vnųtrny spor	m.
-2534	vnųtrny	adj.
-16484	vȯ vśakom slučaju	adv.
-2537	voda	f.
-31270	vodevilj	m.
-22208	vodič	m.
-15152	voditelj	m.anim.
-13717	voditeljstvo	n.sg.
-13719	voditi k	v.ipf.
-2536	voditi	v.tr. ipf.
-4644	vodka	f.
-31273	vȯdle	prep.
-2538	vodno polo	n.sg.
-33823	vodny znak	m.
-36769	vodny	adj.
-22547	vodobojaznj	f.
-31274	vododěl	m.
-19240	vodojem	m.
-20816	Vodolěj	m.anim.
-33822	vodoodporny	adj.
-4991	vodopad	m.
-31278	vodopoj	m.
-3425	vodoråsť	f.
-22548	vodoråvny	adj.
-22545	vodorod	m.sg.
-36907	vodosborny basen	m.
-4992	vodoskok	m.
-4990	vodotok	m.
-22243	vodovod	m.
-22549	vodozemny	adj.
-13723	vodstvo	n.sg.
-2541	vođ	m.anim.
-31282	vođa	f.
-20290	vođeńje	n.sg.
-3108	vȯjdti	v.intr. pf.
-35493	vojenna aviacija	f.
-13731	vojenne igry	f.pl.
-5056	vojenno-moŕske sily	f.pl.
-35492	vojenno-vȯzdušne sily	f.pl.
-36229	vojenny stan	m.
-2124	vojenny	adj.
-13732	vojenny	adj.
-5340	vojevati	v.intr. ipf.
-15153	vojevničji	adj.
-19241	vojevnik	m.anim.
-22247	vojevoda	m.anim.
-36775	vojevodstvo	n.
-5752	vojin	m.anim.
-31286	vojinsky	adj.
-13727	vojna ljudij	f.
-2535	vojna	f.
-13734	vojsko	n.
-31293	vokabula	f.
-31295	vokalist	m.anim.
-31296	vokaliza	f.
-4790	vokaľny	adj.
-17061	vokativ	m.
-20271	vokrųg	adv.
-2539	vol	m.anim.
-31303	volan	m.
-31304	volapuk	m.sg.
-31306	vȯlčje lyko	n.
-31307	volejbol	m.sg.
-23367	volěti	v.tr. ipf.
-31312	volfram	m.sg.
-23655	Volga	f.sg.
-31308	vȯlga	f.
-19245	vȯlgkosť	f.
-19242	vȯlgky	adj.
-31309	vȯlgnųti	v.intr. ipf.
-31311	voliera	f.
-1518	volja	f.
-3928	voljny čas	m.
-4127	voljny	adj.
-456	vȯlk	m.anim.
-31322	vȯlkodav	m.anim.
-415	vȯlkolak	m.anim.
-2138	vȯlna	f.
-4999	vȯlna	f.
-34977	vȯlnisty papugajek	m.anim.
-2516	volt	m.
-31318	voltmetr	m.
-31319	voluntarist	m.anim.
-31320	voluntarizm	m.anim.
-2517	von	adv.
-31327	vonj	f.
-33173	vonj	f.
-33169	vonjati	v.intr. ipf.
-33170	vonjati	v.intr. ipf.
-20817	vȯobće	adv.
-23983	vȯobražati sobě	v.tr. ipf.
-21643	vȯobražeńje	n.
-563	vȯorųženy	adj.
-33024	vȯorųžiti	v.tr. pf.
-32913	vȯphati	v.tr. pf.
-36187	vȯplȯćati	v.tr. ipf.
-36188	vȯplȯtiti	v.tr. pf.
-554	vȯpros	m.
-15646	vȯprosnik	m.
-557	vosk	m.
-1926	vȯš	f.
-32609	voščiti	v.tr. ipf.
-20291	vot	intj.
-3929	voz	m.
-19250	voz	m.
-34988	vȯzbita smetana	f.
-19127	vȯzbito těsto	n.sg.
-20278	vȯzbogaćati	v.tr. ipf.
-20279	vȯzbogatiti	v.tr. pf.
-19130	vȯzbråniti	v.tr. pf.
-19128	vȯzbranjati	v.tr. ipf.
-19129	vȯzbrånjeny	adj.
-13450	vȯzbudimy	adj.
-5466	vȯzbuditi	v.tr. pf.
-13765	vȯzbudlivo	adv.
-5652	vȯzbudlivy	adj.
-13766	vȯzbudlivy	adj.
-5464	vȯzbuđati	v.tr. ipf.
-13760	vȯzbuđeńje	n.sg.
-13761	vȯzbuđeny	adj.
-5061	vȯzdati česť	v.pf.
-5062	vȯzdavati česť	v.ipf.
-19132	vȯzdȯhnųti	v.intr. pf.
-3321	vȯzdȯlž	prep.
-556	vȯzdŕžati sę	v.refl. pf.
-2891	vȯzdŕživati sę	v.refl. ipf.
-1914	vȯzduh	m.
-19133	vȯzduholoď	f.
-13778	vȯzduhonosima bolěznj	f.
-13776	vȯzduhonosima hvoroba	f.
-13781	vȯzduhonosima infekcija	f.
-13777	vȯzduhonosimo zabolěvańje	n.
-4622	vȯzduhonosimy	adj.
-19135	vȯzduhoplavstvo	n.sg.
-13779	vȯzdušna divizija	f.
-5753	vȯzdušny prostor	m.
-4621	vȯzdušny	adj.
-19136	vȯzdvigati	v.tr. ipf.
-19139	vȯzdvignųti	v.tr. pf.
-4256	vȯzdyh	m.
-19140	vȯzdyhati	v.intr. ipf.
-26176	vȯzglåvje	n.
-19141	vȯzględ	m.
-31463	vȯzhod sȯlnca	m.
-555	vȯzhod	m.sg.
-5462	vȯzhoditi	v.intr. ipf.
-23537	Vȯzhodna Evropa	f.sg.
-4185	vȯzhodno	adv.
-35133	vȯzhodnoevropejsky	adj.
-4424	vȯzhodnoslovjansky	adj.
-4184	vȯzhodny	adj.
-36204	vozilo na vȯzdušnoj poduškě	n.
-22412	vozilo	n.
-23955	vȯzimati	v.tr. ipf.
-36269	voziti sę	v.refl. ipf.
-516	voziti	v.tr. ipf.
-23957	vȯzjęti	v.tr. pf.
-32557	vȯzklicaľnik	m.
-32558	vȯzklicaľny znak	m.
-32583	vȯzklicaľny	adj.
-32589	vȯzklicańje	n.
-32584	vȯzklicati	v.tr. ipf.
-32586	vȯzklik	m.
-32585	vȯzkliknųti	v.tr. pf.
-32435	vȯzkresati	v.intr. ipf.
-32439	vȯzkresiti	v.tr. pf.
-31339	vȯzkresnųti	v.intr. pf.
-32438	vȯzkrešati	v.tr. ipf.
-36560	vȯzkrešeńje	n.
-20280	vȯzkypyvati	v.intr. ipf.
-5460	vȯzlětati	v.intr. ipf.
-5461	vȯzletěti	v.intr. pf.
-20799	Vȯzneseńje	n.sg.
-20800	vȯznesti	v.tr. pf.
-15156	vȯznikati	v.intr. ipf.
-20801	vȯznikati	v.intr. ipf.
-33155	vȯznikneńje	n.
-20803	vȯzniknųti	v.intr. pf.
-20804	vȯzniknųti	v.intr. pf.
-20805	vȯznositi	v.tr. ipf.
-19251	vozny	adj.
-5463	vȯzȯjdti	v.intr. pf.
-3492	vozȯk	m.
-19145	vȯzpamętati	v.tr. ipf.
-19146	vȯzpitańje	n.sg.
-19149	vȯzpitati	v.tr. pf.
-5949	vȯzpominati	v.tr. ipf.
-19153	vȯzpomněńje	n.
-5950	vȯzpomněti	v.tr. pf.
-16776	vȯzprijęťje	n.
-802	vȯzråst	m.
-21636	vȯzråst	m.
-13810	vȯzrastati	v.intr. ipf.
-16419	vȯzråsti	v.intr. pf.
-19155	vȯzråstka	f.
-23051	vȯzråstla	f.
-626	vȯzråstlosť	f.
-180	vȯzråstly	adj.
-22991	vȯzråstly	m.anim.
-19156	vȯzråstȯk	m.anim.
-19158	vȯzroditi	v.tr. pf.
-17065	vȯzrođeńje	n.sg.
-17098	vȯzrođeńje	n.sg.
-19157	vȯzrođeńje	n.sg.
-34725	vȯzsiliti	v.tr. pf.
-34723	vȯzsilovač	m.
-34724	vȯzsilovati	v.tr. ipf.
-23919	vȯzskakati	v.intr. ipf.
-23918	vȯzskočiti	v.intr. pf.
-21826	vȯzstańje	n.
-13881	vȯzstati	v.intr. pf.
-21822	vȯzstavati	v.intr. ipf.
-34959	vȯztręsati	v.tr. ipf.
-34960	vȯztręsti	v.tr. pf.
-22294	vȯzveličati	v.tr. pf.
-22293	vȯzveličivati	v.tr. ipf.
-19159	vȯzvesti	v.tr. pf.
-31267	vȯzvod	m.
-31955	vȯzvoditi	v.tr. ipf.
-22646	vȯzvraćati	v.tr. ipf.
-18360	vȯzvråćeńje	n.
-22647	vȯzvråtiti	v.tr. pf.
-22718	vȯzvråtny	adj.
-13400	vȯzvŕšati	v.tr. ipf.
-13401	vȯzvŕšeńje	n.
-13402	vȯzvŕšiti	v.tr. pf.
-22737	vȯzvysiti	v.tr. pf.
-22742	vȯzvysiti	v.tr. pf.
-22736	vȯzvyšati	v.tr. ipf.
-22739	vȯzvyšati	v.tr. ipf.
-31342	vȯzvyšeńje	n.
-20281	vȯzvyšenosť	f.
-31343	vȯzvyšeny	adj.
-36559	vȯzvyšeny	adj.
-22925	vȯzzvańje	n.
-21205	vpad	m.
-21207	vpadati	v.intr. ipf.
-29828	vpaly	adj.
-21209	vpasti	v.intr. pf.
-23845	vpečętlivy	adj.
-19252	vpečętljeńje	n.
-32911	vpihati	v.tr. ipf.
-6201	vpis	m.
-6200	vpisati	v.tr. pf.
-6199	vpisyvati	v.tr. ipf.
-23376	vpiti	v.tr. pf.
-23377	vpivańje	n.sg.
-23375	vpivati	v.tr. ipf.
-20272	vplesti	v.tr. pf.
-34327	vpletati	v.tr. ipf.
-2871	vplyv	m.
-1833	vplyvati	v.intr. ipf.
-23396	vplyvny	adj.
-1836	vplyvti	v.intr. pf.
-4566	vpȯlně, vpȯlno	adv.
-5279	vpravo	adv.
-3369	vprěd	adv.
-21199	vpręgati	v.tr. ipf.
-21200	vpręgti	v.tr. pf.
-17062	vpŕvo	adv.
-1837	vråbec	m.anim.
-22658	vraćati sę	v.refl. ipf.
-5917	vraćati v otčinų	v.ipf.
-1839	vraćati	v.tr. ipf.
-13825	vråg	m.anim.
-31350	vrån	m.anim.
-1838	vråna	f.
-1911	vråta	n.pl.
-3109	vråta	n.pl.
-23252	vråtaŕ	m.anim.
-32443	vråtaŕ	m.anim.
-31355	vråtič	m.
-22654	vråtiti sę	v.refl. pf.
-5918	vråtiti v otčinų	v.tr. pf.
-1773	vråtiti	v.tr. pf.
-13844	vråtiti	v.tr. pf.
-15162	vråtnik	m.anim.
-19124	vražeńje	n.
-31357	vråžiti	v.intr. ipf.
-19253	vråžka	f.
-13565	vŕba	f.
-31359	vrčati	v.intr. ipf.
-36257	vrěća	f.
-31360	vrěd	m.
-23953	vrědny	adj.
-13829	vrěmę goda	n.
-13830	vrěmę roka	n.
-2330	vrěmę	n.
-13827	vrěmę	n.
-13828	vrěmę	n.
-22573	vrěmenny	adj.
-31361	vrěs	m.
-13832	vresenj	m.sg.
-31362	vrěsk	m.
-31363	vrěščati	v.intr. ipf.
-22644	vrěteno	n.
-22561	vrěti	v.intr. ipf.
-22576	vŕgati	v.tr. ipf.
-22577	vŕgnųti	v.tr. pf.
-3076	vŕh	m.
-13568	vŕhnik	m.anim.
-13838	vŕhny načeľnik	m.anim.
-13569	vŕhny voditelj	m.anim.
-13570	vŕhny vođ	m.anim.
-1666	vŕhny	adj.
-31366	vŕhovje	n.
-22565	vŕhovny	adj.
-22653	vŕnųti sę	v.refl. pf.
-22645	vŕnųti	v.tr. pf.
-21628	vrođeny	adj.
-31370	vŕša	f.
-31145	vrštat	m.
-22640	vŕtěti	v.tr. ipf.
-22641	vŕtěti	v.tr. ipf.
-22643	vŕtěti	v.intr. ipf.
-19254	vŕtka	f.
-6083	vŕtolet	m.
-19125	vrųbati	v.tr. pf.
-19126	vrųbyvati	v.tr. ipf.
-21629	vrųčati	v.tr. ipf.
-21631	vrųčiti	v.tr. pf.
-5679	vŕvka	f.
-13847	vsaditi	v.tr. pf.
-13848	vsadȯk	m.
-13849	vsađati	v.tr. ipf.
-243	vśako	adv.
-20295	vśakodenno, vśakodnevno	adv.
-93	vśakodenny, vśakodnevny	adj.
-13853	vśakogodišnje	adv.
-13854	vśakogodišnji, vśakogodišny	adj.
-13855	vśakoročno	adv.
-13856	vśakoročny	adj.
-4326	vśaky	adj.
-13864	vśaky	adj.
-19571	vśamo	adv.
-32764	vse bolje	adv.
-19255	vse jedno	adv.
-32765	vse lěpje	adv.
-19256	vse råvno	adv.
-3098	vse	pron.indef.
-31379	vse	adv.
-1675	vsečto	pron.indef.
-780	vsegda, vsegdy	adv.
-23789	vsěgo	adv.
-22951	vsejed	m.anim.
-22950	vsejedny	adj.
-35154	vsekako	adv.
-35153	vsekaky	adj.
-2672	vsekde	adv.
-23853	vsekråtno	adv.
-1823	vsekto	pron.indef.
-19586	vseliko	adv.
-19593	vseliky	adj.
-20819	vsemir	m.
-20820	vsemogųći	adj.
-35620	vseprisųtny	adj.
-17056	vseslovjansky	adj.
-34916	vsestrånny	adj.
-19257	vsesvět	m.
-20294	vsesvětny	adj.
-13879	Vsesvětova pavųčina [VSP]	f.
-19258	vsesvětovy	adj.
-36119	vsevědųći	adj.
-36118	vseznajųći	adj.
-22952	vsežerec	m.anim.
-22347	vsežerny	adj.
-23790	vsi	pron.indef.
-21633	vskočiti	v.intr. pf.
-1039	vslěd	prep.
-13352	vslědno	adv.
-13353	vslědny	adj.
-20273	vsosati	v.tr. pf.
-13377	vsrěd	prep.
-21634	vsrěd	adv.
-6322	vstati	v.intr. pf.
-6321	vstavati	v.intr. ipf.
-13882	vstaviti	v.tr. pf.
-16385	vstavjati	v.tr. ipf.
-31388	vstavka	f.
-3702	vstųpati	v.intr. ipf.
-3347	vstųpiti	v.intr. pf.
-3587	vstųpjeńje	n.sg.
-775	vśųdy	adv.
-35547	vtęgati	v.tr. ipf.
-35548	vtęgnųti	v.tr. pf.
-36189	vtěljeńje	n.
-35649	vtičnica	f.
-20274	vtiskati	v.tr. ipf.
-20276	vtisknųti	v.tr. pf.
-13889	vtȯgda, vtȯgdy	adv.
-19259	vtora světova vojna	f.
-16249	vtornik	m.
-17064	vtorny	adj.
-20296	vtoro	adv.
-1266	vtorȯk	m.
-16401	vtory	num.ord.
-2414	vtrgati	v.intr. ipf.
-3097	vtrgnųti	v.intr. pf.
-31394	vualj	f.
-35701	vųglaty	adj.
-1737	vųglerod	m.sg.
-22546	vųglovodan	m.
-13208	vųgȯl	m.
-1453	vųgȯlj	m.sg.
-32763	vųgȯljny	adj.
-2152	vųgoŕ	m.anim.
-3115	Vųgrec	m.anim.
-2430	Vųgrija	f.sg.
-78	vųgrsky	adj.
-31395	vulgarizacija	f.
-31397	vulgarizm	m.
-32762	vulgarnosť	f.
-31399	vulgarny	adj.
-23722	vulkan	m.
-23723	vulkaničny	adj.
-31402	vulkanizacija	f.
-31404	vulkanizovati	v.tr. ipf./pf.
-3743	vųsy	m.pl.
-15168	vųtråba	f.
-1671	vųtråby	f.pl.
-1057	vųzel	m.
-22191	vųzel	m.
-22193	vųzel	m.
-36000	vųzkokolejka	f.
-36001	vųzkokolejna dråga	f.
-66	vųzky	adj.
-1523	vųž	m.anim.
-3685	vvedeńje	n.
-3678	vvesti	v.tr. pf.
-5504	vvezti	v.tr. pf.
-22417	vvezti	v.tr. pf.
-22271	vvod	m.
-3677	vvoditi	v.tr. ipf.
-22269	vvodny	adj.
-22415	vvoz	m.
-5505	vvoziti	v.tr. ipf.
-22416	vvoziti	v.tr. ipf.
-22594	vvŕgati	v.tr. ipf.
-22596	vvŕgati	v.tr. ipf.
-22595	vvŕgnųti	v.tr. pf.
-22597	vvŕgnųti	v.tr. pf.
-35439	vvŕh	adv.
-1629	vy	pron.pers.
-15172	vy-	prefix
-31407	vyboj	m.
-5011	vydra	f.
-4375	vygoda	f.
-15139	vygoda	f.
-13925	vygodno	adv.
-4376	vygodny	adj.
-16541	vyjdti	v.intr. pf.
-16530	vyjmati	v.tr. ipf.
-36406	vykati	v.tr. ipf.
-19308	vymę	n.
-31426	vypad	m.
-21215	vypis	m.
-21649	vyrok	m.
-34159	vyryti	v.tr. pf.
-33658	vysmrkati sę	v.refl. pf.
-22723	Vysočstvo	n.
-34765	vysoko	adv.
-13633	vysokogorsky	adj.
-22724	vysokoparny	adj.
-19333	vysokoskok	m.
-409	vysoky	adj.
-31439	vysota	f.
-20830	vysotoměr	m.
-33216	vyspati sę	v.refl. pf.
-20302	vysši	adj.
-2610	vyše pozdno	adv.
-705	vyše veliky	adj.
-2508	vyše	adv.
-2680	vyše	adv.
-13638	vyšina	f.
-20300	vyšnosť	f.
-20301	vyšny	adj.
-31446	vyti	v.intr. ipf.
-16716	vytŕpěti	v.tr. pf.
-31448	vyvěska	f.
-22885	vyznavati	v.tr. ipf.
-13981	vzad	adv.
-13983	vzadny sklon	m.
-15655	vzadny	adj.
-3459	vzadu	adv.
-13986	vzajemno	adv.
-23052	vzajemnosť	f.
-1804	vzajemny	adj.
-15656	vzajemodějańje	n.
-13989	vzajemodějati	v.intr. ipf.
-562	vzajemodějstvo	n.
-9090	vzajemodějstvovati	v.intr. ipf.
-467	vzęti	v.tr. pf.
-16386	vzor	m.
-15195	vzorny	adj.
-34985	vžiti sę	v.refl. pf.
-3673	vživati sę	v.refl. ipf.
-34995	ykańje	n.sg.
-14002	za drěva lěs ne viděti	phrase
-19341	za vśakų cěnų	adv.
-31598	za živo	adv.
-33329	za živo	adv.
-833	za	prep.
-1033	za	prep.
-1171	za	prep.
-4936	za	prep.
-4937	za	prep.
-4938	za	prep.
-34989	za	prep.
-36471	zabarikadovati	v.tr. pf.
-3432	zabava	f.
-3768	zabava	f.
-14014	zabavitelj	m.anim.
-3444	zabaviti	v.tr. pf.
-3414	zabavjati	v.tr. ipf.
-4498	zabavjeńje	n.sg.
-15199	zabavnik	m.anim.
-21650	zabavny	adj.
-3633	zabezpamęćati	v.tr. ipf.
-3634	zabezpamętiti	v.tr. pf.
-36613	zabezpečati	v.tr. ipf.
-36615	zabezpečeńje	n.
-36614	zabezpečiti	v.tr. pf.
-31476	zabijaka	m.anim.
-35980	zabiraj sę!	intj.
-23959	zabirati	v.tr. ipf.
-940	zablokovati	v.tr. pf.
-14022	zablųda	f.
-21655	zablųditi	v.intr. pf.
-36657	zablųditi	v.intr. pf.
-14025	zablųdny	adj.
-21652	zablųđati	v.intr. ipf.
-36656	zablųđati	v.intr. ipf.
-19343	zabobonnosť	f.
-19344	zabobonny	adj.
-14027	zabolěti	v.intr. pf.
-36692	zabolěti	v.intr. pf.
-36695	zabolěvajemosť	f.sg.
-15200	zabolěvańje	n.
-36693	zabolěvati	v.intr. ipf.
-14029	zabolěvši	adj.
-14030	zabråna	f.
-2286	zabråniti	v.tr. pf.
-1834	zabranjati	v.tr. ipf.
-23960	zabrati	v.tr. pf.
-2170	zabyti	v.tr. pf.
-2169	zabyvati	v.tr. ipf.
-14037	začarovany	adj.
-14038	začarovati	v.tr. pf.
-14039	začasny	adj.
-14040	začęti	v.tr. pf.
-35843	začęťje	n.
-32365	začętȯk	m.
-14041	začinati	v.tr. ipf.
-5724	začrveniti sę	v.refl. pf.
-5725	začrvenjati sę	v.refl. ipf.
-3987	začto	adv.
-19619	začtokoli	adv.
-15197	začto-libo	adv.
-2328	začto-nebųď	adv.
-36630	začuditi sę	v.refl. pf.
-36635	začuditi	v.tr. pf.
-15201	zad	m.
-3958	zadańje	n.
-25120	zadarmo	adv.
-5524	zadati	v.tr. pf.
-5523	zadavati	v.tr. ipf.
-14052	zadnica	f.
-14053	zadnik	m.anim.
-15202	zadnja stråna	f.
-33561	zadnjepodnebny	adj.
-15203	zadnjeprohodny	adj.
-2317	zadnji dvor	m.
-15204	zadnji prohod	m.
-5192	zadnji, zadny	adj.
-36516	zadovaljati sę	v.refl. ipf.
-444	zadovaljati	v.tr. ipf.
-36517	zadovoliti sę	v.refl. pf.
-3356	zadovoliti	v.tr. pf.
-526	zadovoljeny	adj.
-3318	zadovoljstvo	n.sg.
-19351	zadrěmati	v.intr. pf.
-16488	zadŕžati dyh	v.pf.
-19352	zadŕžati sę	v.refl. pf.
-297	zadŕžati	v.tr. pf.
-19353	zadŕžati	v.tr. pf.
-19356	zadŕžati	v.tr. pf.
-34659	zadržati	v.intr. pf.
-35630	zadŕžati	v.tr. pf.
-36514	zadŕžati	v.tr. pf.
-16487	zadŕživati dyh	v.ipf.
-19355	zadŕživati sę	v.refl. ipf.
-2221	zadŕživati	v.tr. ipf.
-19359	zadŕživati	v.tr. ipf.
-19360	zadŕživati	v.tr. ipf.
-35629	zadŕživati	v.tr. ipf.
-36515	zadŕživati	v.tr. ipf.
-19361	zadŕžnik	m.
-31855	zaduha	f.
-33698	zadušna mša	f.
-5969	zagadka	f.
-15205	zagadka	f.
-14068	zagadȯčny	adj.
-33625	zagladiti	v.tr. pf.
-33626	zaglađati	v.tr. ipf.
-6051	zaglåvje	n.
-31492	zagorěti	v.intr. pf.
-35915	zagospodariti	v.tr. pf.
-31493	zagovor	m.
-36048	zagovornik	m.anim.
-36047	zagrabnik	m.anim.
-31494	zagranica	f.
-14072	zagraničnik	m.anim.
-14071	zagraničny	adj.
-32249	Zagreb	m.sg.
-33631	zagrobno žiťje	n.sg.
-33630	zagrobny	adj.
-2190	zagroziti	v.tr. pf.
-31497	zahod sȯlnca	m.
-5475	zahoditi	v.intr. ipf.
-23961	zahvaćajųći	adj.
-2292	zahvaćati	v.tr. ipf.
-19363	zahvat	m.
-34990	zahvat	m.
-34991	zahvat	m.
-571	zahvatiti	v.tr. pf.
-6659	zahvorěly	adj.
-36694	zahvorěti	v.intr. pf.
-36696	zahvorěvajemosť	f.sg.
-26048	zahvorěvańje	n.
-14077	zahvorěvati	v.intr. ipf.
-2270	zaimę, zaimennik	m.
-5175	zainteresovany	adj.
-16147	zainteresovati sę	v.refl. pf.
-34993	zainteresovati	v.tr. pf.
-3294	zaisto	adv.
-35516	zajavjeńje	n.
-5476	zajdti	v.intr. pf.
-35509	zajebancija	f.
-1803	zajęc	m.anim.
-14080	zajęc	m.anim.
-14081	zajęčlivo	adv.
-14083	zajęčlivosť	f.
-14082	zajęčlivy	adj.
-914	zajedlivosť	f.
-36827	zajedlivy	adj.
-1741	zajedno	adv.
-19366	zajem	m.
-19367	zajęti sę	v.refl. pf.
-5002	zajęti	v.tr. pf.
-5008	zajęťje	n.
-19373	zajęty	adj.
-19370	zajezd	m.
-31503	zajikati sę	v.refl. ipf.
-19378	zajmati sę	v.refl. ipf.
-5001	zajmati	v.tr. ipf.
-14129	zajmlivy	adj.
-23390	zajmodatelj	m.anim.
-23391	zajmoprijmatelj	m.anim.
-23715	zakašljati	v.intr. pf.
-14088	zakaz	m.
-14089	zakazati	v.tr. pf.
-19379	zakaznik	m.anim.
-16388	zakazyvati	v.tr. ipf.
-3449	zaklad	m.
-35623	zaklad	m.
-939	zakladati	v.tr. ipf.
-32698	zakladati	v.tr. ipf.
-32007	zaklåti	v.tr. pf.
-33647	zaklęti	v.tr. pf.
-33653	zaklęty vråg	m.anim.
-31507	zaklęty	adj.
-31506	zaklinańje	n.
-31508	zaklinati	v.tr. ipf.
-31509	zakliniti	v.tr. pf.
-33665	zaklinovati	v.tr. ipf.
-5162	zaključati	v.intr. ipf.
-20305	zaključati	v.tr. ipf.
-34997	zaključati	v.tr. ipf.
-20306	zaključeńje	n.
-36497	zaključeńje	n.
-19382	zaključiljnja	f.
-19384	zaključiľnik	m.anim.
-5163	zaključiti	v.intr. pf.
-20307	zaključiti	v.tr. pf.
-34998	zaključiti	v.tr. pf.
-1901	zakon	m.
-14095	zakončeńje	n.
-2551	zakončiti	v.tr. pf.
-1747	zakonny	adj.
-1921	zakonodatelj	m.anim.
-3717	zakonodateljny	adj.
-2082	zakonodateljstvo	n.
-31513	zakonoměrny	adj.
-4030	zakopati	v.tr. pf.
-4029	zakopyvati	v.tr. ipf.
-17067	zakoreněly	adj.
-35117	zakoreniti sę	v.refl. pf.
-36796	zakričati	v.tr. pf.
-14105	zakrvavjeny	adj.
-20309	zakryti	v.tr. pf.
-20310	zakryti	v.tr. pf.
-20312	zakryvati	v.tr. ipf.
-20313	zakryvati	v.tr. ipf.
-14106	zakulisne mahinacije	f.pl.
-15659	zakulisne ombany	m.pl.
-14107	zakulisny	adj.
-32115	zakupka	f.
-31515	zakųska	f.
-20314	zakųtȯk	m.
-36797	zalajati	v.intr. pf.
-36590	zaležno	adv.
-36589	zaležnosť	f.sg.
-36588	zaležny	adj.
-2552	zaliv	m.
-35403	zaljubiti sę	v.refl. pf.
-35404	zaljubjeny	adj.
-20316	zalog	m.
-19391	založeńje	n.
-14111	založiljnja	f.
-1740	založiti	v.tr. pf.
-14112	založiti	v.tr. pf.
-31520	založnik	m.anim.
-14113	založny	adj.
-31521	zalp	m.
-36510	Zambija	f.
-24011	zamedliti	v.tr. pf.
-24012	zamedljati	v.tr. ipf.
-9026	zamedljeńje	n.
-1627	zaměna	f.
-36101	zaměna	f.
-3811	zaměniti	v.tr. pf.
-3810	zaměnjati	v.tr. ipf.
-19395	zaměnlivy	adj.
-22183	zaměsiti	v.tr. pf.
-1808	zamesti	v.tr. pf.
-14117	zaměsto	prep.
-5965	zaměšańje	n.
-35449	zaměšańje	n.
-16900	zaměšati	v.tr. pf.
-16901	zaměšivajųći	adj.
-16899	zaměšivati	v.tr. ipf.
-32598	zamětati	v.tr. ipf.
-14120	zamglati	v.tr. pf.
-33669	zamirati	v.intr. ipf.
-23970	zamknųti	v.tr. pf.
-31523	zamknųty	adj.
-36518	zamknųty	adj.
-14121	zamnogo	adv.
-213	zamȯk	m.
-19396	zamȯk	m.
-20832	zamȯk	m.
-34479	zamȯlknųti	v.intr. pf.
-36785	zamȯlviti	v.tr. pf.
-36786	zamȯlvjati	v.tr. ipf.
-36789	zamȯlvjeńje	f.
-31526	zamoŕsky	adj.
-19398	zamotany	adj.
-2168	zamråziti	v.tr. pf.
-2342	zamražati	v.tr. ipf.
-31527	zamreti	v.intr. pf.
-33675	zamrzati	v.intr. ipf.
-31528	zamrznųti	v.intr. pf.
-31529	zamša	f.
-32716	zamševy	adj.
-23967	zamykati	v.tr. ipf.
-14125	zamysl	m.
-19400	zamysliti	v.tr. pf.
-19399	zamysljati	v.tr. ipf.
-14126	zamysljeny	adj.
-14128	zanečišćeńje vȯzduha	n.
-4297	zanečišćeńje	n.
-1371	zaněčto	adv.
-14754	zanedbańje	n.
-14755	zanedbati sę	v.refl. pf.
-16256	zanedbati	v.tr. pf.
-14758	zanedbyvati sę	v.refl. ipf.
-16257	zanedbyvati	v.tr. ipf.
-35853	zanepokojeny	adj.
-35852	zanepokojiti	v.tr. pf.
-796	zaničto	adv.
-16389	zanuriti	v.tr. pf.
-14130	zanurjati	v.tr. ipf.
-34513	zaostalosť	f.
-34512	zaostaly	adj.
-1776	zapad	m.sg.
-23973	zapadati	v.intr. ipf.
-23539	Zapadna Evropa	f.sg.
-31534	zapadnik	m.anim.
-4187	zapadno	adv.
-35134	zapadnoevropejsky	adj.
-4423	zapadnoslovjansky	adj.
-842	zapadny	adj.
-14136	zapah	m.
-5473	zapakovati	v.tr. pf.
-5474	zapakovyvati	v.tr. ipf.
-23795	zapaliti	v.tr. pf.
-23794	zapaljati	v.tr. ipf.
-14138	zapaljeńje apendeka	n.
-16476	zapaljeńje	n.
-36432	zapaljeńje	n.
-5254	zapalka	f.
-35118	zapaľnička	f.
-23054	zapaľnik	m.
-17068	zapamętati	v.tr. pf.
-17099	zapamętyvati	v.tr. ipf.
-3817	zapas	m.
-23976	zapasti	v.intr. pf.
-31537	zapęsťje	n.
-23429	zapęta	f.
-32910	zaphati v něčto	v.tr. pf.
-32909	zapihati v něčto	v.tr. ipf.
-3806	zapis	m.
-36116	zapis	m.
-14144	zapisańje	n.
-14147	zapisati sę	v.refl. pf.
-5527	zapisati	v.tr. pf.
-6250	zapisati	v.tr. pf.
-6251	zapiska	f.
-6252	zapisnik	m.
-14150	zapisyvati sę	v.refl. ipf.
-5528	zapisyvati	v.tr. ipf.
-6249	zapisyvati	v.tr. ipf.
-5477	zaplakati	v.intr. pf.
-36874	zaplanovati	v.tr. pf.
-31538	zaplata	f.
-2983	zaplatiti	v.tr. pf.
-14153	zaplěniti	v.tr. pf.
-14154	zaplěnjati	v.tr. ipf.
-32371	započęti	v.tr. pf.
-19401	započinati	v.tr. ipf.
-31539	zapoj	m.
-725	zapȯlniti	v.tr. pf.
-24	zapȯlnjati	v.tr. ipf.
-21226	zapona	f.
-21229	zaponka	f.
-21230	zapor	m.
-21231	zapor	m.
-22241	zapověď	f.
-34510	zapozdněly	adj.
-21659	zapoznati	v.tr. pf.
-21660	zapoznavati	v.tr. ipf.
-14159	zapråšiti	v.tr. pf.
-14160	zapravdų	adv.
-21232	zapraviti	v.tr. pf.
-21234	zapravjati	v.tr. ipf.
-34888	zaprěčiti	v.tr. pf.
-21236	zapręgati	v.tr. ipf.
-21237	zapręgti	v.tr. pf.
-20833	zaprojektovati	v.tr. pf.
-21238	zapropastiti sę	v.refl. pf.
-21243	zapustiti	v.tr. pf.
-21239	zapušćati	v.tr. ipf.
-21240	zapušćeny	adj.
-4766	zapytańje	n.
-3438	zapytati	v.tr. pf.
-5535	zapytyvati	v.tr. ipf.
-21661	zaråbotati	v.tr. pf.
-21662	zaråbotyvati	v.tr. ipf.
-21663	zaradi	prep.
-33069	zarastati	v.intr. ipf.
-14162	zaråsti	v.intr. pf.
-31546	zaraza	f.
-21246	zaraziti	v.tr. pf.
-14163	zarazny	adj.
-21244	zaražati	v.tr. ipf.
-5841	zaražeńje	n.
-31548	zarđavěly	adj.
-25	zaregistrovati	v.tr. pf.
-21665	zarěkati sę	v.refl. ipf.
-21667	zarěkti sę	v.refl. pf.
-36504	zarevti	v.intr. pf.
-35859	zarezervovati	v.tr. pf.
-14165	zaroditelj	m.anim.
-14166	zaroditi sę	v.refl. pf.
-21669	zarodȯk	m.
-21670	zarodȯk	m.anim.
-21672	zarodȯk	m.anim.
-31550	zarok	m.
-21674	zarųčati sę	v.refl. ipf.
-21673	zarųčati	v.tr. ipf.
-33332	zarųčeńje	n.
-21676	zarųčiti sę	v.refl. pf.
-21675	zarųčiti	v.tr. pf.
-19407	zarydati	v.intr. pf.
-21677	zasada	f.
-36410	zasada	f.
-14167	zasaditi	v.tr. pf.
-16390	zasađati	v.tr. ipf.
-21678	zasědańje	n.
-33240	zasějati	v.tr. pf.
-33686	zaslanjati	v.tr. ipf.
-31554	zaslon	m.
-31555	zasloniti	v.tr. pf.
-31557	zasluga	f.
-2903	zasluženy	adj.
-20319	zaslužiti	v.tr. pf.
-20320	zasluživati	v.tr. ipf.
-19408	zasmějati sę	v.refl. pf.
-19411	zasměška	f.
-19412	zasnųti	v.intr. pf.
-19413	zaspanec	m.anim.
-19414	zaspanica	f.
-19415	zaspany	adj.
-33220	zaspati sę	v.refl. pf.
-19416	zaspati	v.intr. pf.
-23843	zasråmiti	v.tr. pf.
-23842	zasramjati	v.tr. ipf.
-23844	zasråmjeny	adj.
-1932	zasrati	v.intr. pf.
-5826	zastarěly	adj.
-4112	zastariti	v.intr. pf.
-4111	zastarjati	v.intr. ipf.
-21830	zastati	v.tr. pf.
-21831	zastati	v.tr. pf.
-21842	zastav	m.
-15210	zastava	f.
-21828	zastavati	v.tr. ipf.
-21829	zastavati	v.tr. ipf.
-21837	zastaviti	v.tr. pf.
-21841	zastaviti	v.tr. pf.
-21834	zastavjati	v.tr. ipf.
-21840	zastavjati	v.tr. ipf.
-21832	zastoj	m.
-35003	zastoj	m.
-19417	zastrašańje	n.
-19418	zastrašati	v.tr. ipf.
-19419	zastrašiti	v.tr. pf.
-3268	zastrěliti	v.tr. pf.
-5113	zastrěljati	v.tr. ipf.
-19420	zastųpati	v.tr. ipf.
-21994	zastųpati	v.tr. ipf.
-19421	zastųpiti	v.tr. pf.
-21995	zastųpiti	v.tr. pf.
-1807	zastųpnik	m.anim.
-23716	zasuvka	f.
-21680	zasvěćati	v.intr. ipf.
-21682	zasvětiti	v.intr. pf.
-36419	zaščićati	v.tr. ipf.
-14176	zaščita	f.
-14177	zaščititi	v.tr. pf.
-31565	zaščitnik	m.anim.
-36050	zašijka	f.
-23255	zašiti	v.tr. pf.
-5616	zaštopati	v.tr. pf.
-1170	zatemniti	v.tr. pf.
-3090	zatemnjati	v.tr. ipf.
-31881	zatišje	n.
-33093	zatknųti sę	v.refl. pf.
-31567	zatknųti	v.tr. pf.
-33692	zatměvati	v.tr. ipf.
-31569	zatmiti	v.tr. pf.
-31568	zatmjeńje	n.
-4035	zato že, zatože	conj.
-3056	zato	adv.
-3832	zatom	adv.
-14183	zatopiti	v.tr. pf.
-15211	zatopjeńje	n.
-35002	zator	m.
-22128	zatraćenec	m.anim.
-13062	zatręsti	v.tr. pf.
-14186	zatrimati	v.tr. pf.
-14185	zatrimyvati	v.tr. ipf.
-31571	zatųhly	adj.
-5204	zatvarjati	v.tr. ipf.
-19422	zatvor	m.
-22556	zatvor	m.
-5205	zatvoriti	v.tr. pf.
-2894	zatvorjeny	adj.
-35498	zatvorka	f.
-22124	zatyčka	f.
-33092	zatykati sę	v.refl. ipf.
-33089	zatykati	v.tr. ipf.
-31573	zatylȯk	m.
-35005	zaustaviti sę	v.refl. pf.
-5656	zaustaviti	v.tr. pf.
-5655	zaustavjati sę	v.refl. ipf.
-35004	zaustavjati	v.tr. ipf.
-1933	zautra	adv.
-14192	zautraka	f.
-14193	zautrakati	v.intr. ipf.
-14195	zautrišnji, zautrišny	adj.
-23977	zauvažati	v.tr. ipf.
-23978	zauvažiti	v.tr. pf.
-3469	zavaliti	v.tr. pf.
-31576	zavčera	adv.
-22408	zavěćańje	n.
-31583	zavěćati	v.tr. ipf./pf.
-22239	zavědyvati	v.tr. ipf.
-2901	zavěsa	f.
-22410	zavět	m.
-19423	zavětrny	adj.
-19424	zavęzati	v.tr. pf.
-19426	zavęzyvati	v.tr. ipf.
-36089	zaviděti	v.intr. ipf.
-31587	zavidny	adj.
-20321	zavisěti od	v.intr. ipf.
-31589	zavisnosť	f.
-36324	zavisnosť	f.
-17069	zavisny	adj.
-36325	zavisny	adj.
-22429	zavisť	f.
-22430	zavistny	adj.
-31592	zavitȯk	m.
-22514	zavladnųti	v.tr. pf.
-22513	zavladyvati	v.tr. ipf.
-4653	zavod	m.
-2355	zavojevati	v.tr. pf.
-2294	zavojevyvati	v.tr. ipf.
-19428	zavraćati	v.intr. ipf.
-19429	zavråćeńje	n.
-19430	zavråtiti	v.intr. pf.
-22720	zavråtny	adj.
-19431	zavŕšati	v.tr. ipf.
-19435	zavŕšiti	v.tr. pf.
-31596	zavŕtěti	v.intr. pf.
-33351	zavyti	v.intr. pf.
-31597	zavzęty	adj.
-22906	zazor	m.
-22907	zazor	m.
-19439	zažartovati	v.intr. pf.
-32639	zažegti	v.tr. pf.
-32642	zažegti	v.tr. pf.
-32644	zažegti	v.tr. pf.
-32633	zažigati	v.tr. ipf.
-32636	zažigati	v.tr. ipf.
-32638	zažigati	v.tr. ipf.
-14201	zdar!	intj.
-4881	zdråv!	intj.
-34731	zdråvěti	v.intr. ipf.
-32965	zdråvica	f.
-576	zdråvje	n.
-3024	zdråvoohrånjeńje	n.sg.
-14210	zdråvotničstvo	n.sg.
-2167	zdråvy	adj.
-23475	zęba	f.
-20834	zebra	f.
-31602	zębti	v.intr. ipf.
-31604	zebu	m.anim.
-31605	zefir	m.
-31623	zějati	v.intr. ipf.
-32185	zelena salata	f.
-19442	zelenina	f.
-21248	zeleninaŕ	m.anim.
-31606	zelenj	f.
-752	zeleny	adj.
-14217	zemisty	adj.
-2255	zemja	f.
-14218	Zemja	f.
-22746	zemjak	m.anim.
-31609	zemjanka	f.
-14222	zemjany	adj.
-4691	zemjedělec	m.anim.
-19444	zemjedělišče	n.
-16777	zemjeděľstvo	n.sg.
-20835	zemjeměr	m.anim.
-21249	zemjepis	m.
-21250	zemjepisec	m.anim.
-3577	zemjetręseńje	n.
-31614	zemnovodny	adj.
-5983	zemny orěh	m.
-3765	zemny	adj.
-35806	zemsky	adj.
-31617	zěnica	f.
-31618	zenit	m.
-1925	zęť	m.anim.
-23717	zěvati	v.intr. ipf.
-23718	zěvnųti	v.intr. pf.
-31622	zigzag	m.
-1513	zima	f.
-14232	zima	f.
-36511	Zimbabve	n.
-14234	zimnějši	adj.
-14236	zimnosť	f.
-4467	zimny	adj.
-31625	zimorodȯk	m.anim.
-19455	zimovy sȯlncevråt	m.
-14238	zimovy	adj.
-36150	zip u nogavic	m.
-35401	zip	m.
-22900	zirkati	v.intr. ipf.
-22901	zirknųti	v.intr. pf.
-35121	zlåta rybka	f.
-31626	zlåtaŕ	m.anim.
-31627	zlåtisty	adj.
-32974	zlåtiti	v.tr. ipf.
-3046	zlåto	n.sg.
-31630	zlåtousty	adj.
-877	zlåty	adj.
-4557	zlo	n.
-14244	zlo	adv.
-14250	zloba	f.
-36861	zloba	f.
-36858	zlobiti sę	v.refl. ipf.
-34744	zlobiti	v.tr. ipf.
-14247	zlobnica	f.
-14248	zlobnik	m.anim.
-4285	zlobny	adj.
-2226	zločin	m.
-124	zločinec	m.anim.
-3526	zločinnik	m.anim.
-17218	zločinstvo	n.
-3935	zlodějatelj	m.anim.
-36860	zlonaměrnosť	f.sg.
-31636	zlonaměrny	adj.
-22755	zloradno	adv.
-35009	zloradny	adj.
-35007	zloradosť	f.
-35008	zloradovati sę	v.refl. ipf.
-22758	zlosť	f.
-36862	zlosť	f.sg.
-19462	zlostlivy	adj.
-16738	zloty	m.
-15673	zloumysľnosť	f.
-15674	zloumysľny	adj.
-1495	zloupotrěbiti	v.tr. pf.
-1892	zloupotrěbjati	v.tr. ipf.
-14262	zlověsť	f.
-14263	zlověstno	adv.
-15219	zlověstny priznak	m.
-15218	zlověstny znak	m.
-14264	zlověstny	adj.
-31640	zlověšći	adj.
-3089	zly	adj.
-22751	zly	adj.
-36863	zly	adj.
-3045	zmija	f.
-7508	zmiji	adj.
-22840	značek	m.
-22841	značek	m.
-3736	značeńje	n.
-35272	značimosť	f.
-35273	značimy	adj.
-1886	značiti	v.tr. ipf.
-14280	značka	f.
-19464	značno	adv.
-4316	značnosť	f.
-1520	značny	adj.
-22835	znahaŕ	m.anim.
-22830	znajema	f.
-17070	znajemy	adj.
-22829	znajemy	m.anim.
-36124	znak citovańja	f.
-4086	znak	m.
-15220	znak	m.
-22839	znak	m.
-22836	znalec	m.anim.
-14290	znalosť	f.
-15675	znamę	n.
-22844	znamę	n.
-35380	znamenitosť	f.
-36519	znamenitosť	f.
-2125	znamenity	adj.
-22845	znameńje	n.
-22846	znameńje	n.
-22850	znamenovati	v.tr. ipf.
-22851	znamenovati	v.tr. ipf.
-2126	znanec	m.anim.
-3712	znańje	n.sg.
-477	znany	adj.
-372	znati	v.tr. ipf.
-22832	znatny	adj.
-31656	zodiak	m.sg.
-31657	zodiakaľny	adj.
-24007	zȯlva	f.
-36297	zombi	m.anim.
-17100	zona	f.
-17071	zonaľny	adj.
-31661	zoolog	m.anim.
-251	zoologičny park	m.
-31662	zoologičny	adj.
-19467	zorja	f.
-31664	zȯv	m.
-31665	zrazy	m.pl.
-1777	zŕcalo	n.
-36912	zrělišče	n.
-31667	zrělosť	f.
-31668	zrěly	adj.
-20328	zrěńje	n.sg.
-4043	zrěti	v.intr. ipf.
-19468	zrěti	v.intr. ipf.
-34886	zritelj	m.anim.
-36246	zŕneno-žitne kuľtury	f.pl.
-1363	zŕno	n.
-31673	zuav	m.anim.
-1848	zųb	m.
-31675	zųbec	m.
-23157	zųbna pasta	f.
-23156	zųbna ščetka	f.
-23158	zųbny lěkaŕ	m.anim.
-31676	zubr	m.anim.
-36431	zubrova trava	f.
-31677	zubrovka	f.
-22912	zvańje	n.
-16494	zvateljnik, zvateljny padež	m.
-1994	zvati	v.tr. ipf.
-22909	zvati	v.tr. ipf.
-932	zvěŕ	m.anim.
-15223	zvěŕ	m.anim.
-34748	zvěrěti	v.intr. ipf.
-14311	zvěŕsky	adj.
-1924	zvěŕstvo	n.
-1889	zvězda	f.
-23006	zvězdaŕ	m.anim.
-23007	zvězdaŕstvo	n.sg.
-31684	zvězdny	adj.
-22888	zvězdoznavec	m.anim.
-22887	zvězdoznavstvo	n.sg.
-3824	zvon	m.
-36430	zvon	m.
-31687	zvonica	f.
-3822	zvoniti	v.intr. ipf.
-31689	zvonȯk	m.
-14320	zvony	m.pl.
-1890	zvųčati	v.intr. ipf.
-5851	zvųčnik	m.
-5039	zvųčny	adj.
-31692	zvųčny	adj.
-843	zvųk	m.
-36152	zvukoręd	m.
-23415	zvųkozapis	m.
-2626	žaba	f.
-35651	žabra	f.
-14327	žaden	pron.indef.
-14334	žaliti sę	v.refl. ipf.
-3772	žaliti	v.tr. ipf.
-3931	žalj	adv.
-19386	žalj	m.
-19387	žaljeńje	n.
-14336	žaloba	f.
-3773	žalosť	f.
-3389	žalostny	adj.
-1923	žalovati sę	v.refl. ipf.
-2562	žar	m.
-17075	žargon	m.
-19402	žariti	v.tr. ipf.
-19403	žarky	adj.
-19404	žarovka	f.
-31700	Žar-ptica	f.
-19405	žart	m.
-19406	žartovati	v.intr. ipf.
-12871	že by	conj.
-4037	že	conj.
-22795	žebrak	m.anim.
-19448	žędajųći	adj.
-665	žędati	v.tr. ipf.
-4637	žędati	v.tr. ipf.
-4632	žędnosť	f.
-14349	žędny	adj.
-34884	žędny	adj.
-3930	žęđa	f.
-36429	žęđa	f.
-32631	žegti	v.tr. ipf.
-3238	želańje	n.
-1047	želati	v.tr. ipf.
-23280	želatin	m.sg.
-23279	žele	n.indecl.
-394	želěznica	f.
-14369	želězničaŕ	m.anim.
-5668	želěznična stancija	f.
-34898	želězničny prěvod	m.
-14366	želězničny	adj.
-3940	želězny	adj.
-395	želězo	n.sg.
-31702	želězobeton	m.sg.
-702	žęlo	n.
-2208	želųď	m.
-16	želųdȯk	m.
-2910	žena	f.
-3231	žena	f.
-3399	ženiti sę	v.refl. ipf.
-669	žensky rod	m.
-5220	žensky	adj.
-1201	žerav	m.anim.
-36160	žestoky	adj.
-36520	žestoky	adj.
-1809	žęti	v.tr. ipf.
-32982	žętva	f.
-23561	žezlo	n.
-31486	žgaga	f.
-14383	Žid	m.anim.
-14384	židovsky	adj.
-1997	žila	f.
-35223	žilet	m.
-20322	žilišče	n.
-32837	žiľny	adj.
-20836	žirafa	f.
-15228	žitelj	m.anim.
-28	žiti	v.intr. ipf.
-7191	žiti	v.intr. ipf.
-14387	žiťje	n.
-15684	žiťjeopasny	adj.
-36492	žiťjesposobnosť	f.sg.
-35596	žiťjesposobny	adj.
-22929	žito	n.
-22930	žito	n.
-22639	živo srěbro	n.sg.
-14392	živo	adv.
-19460	živobyťje	n.
-21251	živopis	m.
-21253	živopisec	m.anim.
-20327	živosť	f.
-1996	život	m.
-1464	životina	f.
-35507	životinovod	m.anim.
-36766	životinsky	adj.
-21254	životopis	m.
-14398	živy TV-pokaz	m.
-970	živy	adj.
-1843	žlěb	m.
-427	žlěza	f.
-31713	žmuriti oči	v.tr. ipf.
-31714	žmurky	f.pl.
-1670	žȯlč	f.
-34739	žȯltěti	v.intr. ipf.
-1499	žȯlty	adj.
-20837	žȯlv	f.
-14403	žopa	f.
-32986	žoviaľnosť	f.
-32985	žoviaľny	adj.
-22962	žravy	adj.
-16346	žrěbę	n.
-35265	žrěbec	m.anim.
-1867	žrěbętko	n.
-34178	žrěbiti sę	v.refl. ipf.
-35703	žrec	m.anim.
-15686	žrěńje	n.sg.
-91	žrěti	v.tr. ipf.
-35704	žrica	f.
-2940	žrlo	n.
-22963	žrlo	n.
-5064	žrtva	f.
-21255	žrtva	f.
-14407	žrtvena koza	f.
-14409	žrtveny byk	m.anim.
-32022	žrtveny kozel	m.anim.
-14408	žrtveny	adj.
-1490	žrtvovati	v.tr. ipf.
-15744	žučji	adj.
-15743	žuk	m.anim.
-32020	žuravina	f.
-22433	žuri	m.indecl.
-4856	žurnal	m.
-1974	žurnalist	m.anim.
-23581	žurnalistika	f.
-34067	žuvačka	f.
-34068	žuvaľna gumka	f.
-2627	žuvati	v.intr. ipf.
-19473	žužati	v.intr. ipf.
-9475	žuželka	f.
+id\tisv\tgenesis\tpartOfSpeech
+5101\ta takože\t\tconj.
+1855\ta\t\tconj.
+24020\tabak\tI\tm.
+6114\tabažur\tF\tm.
+35658\tabdikacija\tI\tf.
+11\tabdikovati\tI\tv.intr. ipf.
+35691\tabeceda\t\tf.
+24026\tAbhaz\t\tm.anim.
+6165\tAbhazija\t\tf.sg.
+36565\tabhazsky\t\tadj.
+24029\tablativ\tI\tm.
+6375\tabo\t\tconj.
+24031\tabolicionist\tI\tm.anim.
+24032\tabolicionizm\tI\tm.sg.
+34768\tabonement\tF\tm.
+6117\tabonent\tF\tm.
+6119\tabonovati\tF\tv.tr. ipf.
+24038\tabort\tI\tm.
+24039\tabrakadabra\tI\tf.sg.
+24042\tabrikos\tI\tm.
+24044\tabsces\tI\tm.
+24045\tabscisa\tI\tf.
+15\tabsencija\tI\tf.sg.
+24047\tabsint\tF\tm.sg.
+24050\tabsolutizm\tI\tm.sg.
+6123\tabsolutno\tI\tadv.
+6120\tabsolutny\tI\tadj.
+24054\tabsorbcija\tI\tf.sg.
+19625\tabsorbovati\tI\tv.tr. ipf.
+24056\tabstrahovati\tI\tv.tr. ipf./pf.
+19626\tabstrakcija\tI\tf.
+35132\tabstrakt\tI\tm.
+19627\tabstraktny\tI\tadj.
+6124\tabsurd\tI\tm.
+35784\tabsurdnosť\tI\tf.
+6125\tabsurdny\tI\tadj.
+1986\taby\tS\tconj.
+17101\tače\t\tconj.
+35331\tačekoli\t\tconj.
+24065\tadadžo\tI\tn.
+24067\tadamovo jablȯko\t\tn.
+24068\tadaptacija\tI\tf.
+24069\tadapter\tI\tm.
+24070\tadaptovati\tI\tv.tr. ipf./pf.
+24071\tadekvatny\tI\tadj.
+6126\tadept\tI\tm.anim.
+24076\tadjutant\tI\tm.anim.
+2848\tadministracija\tI\tf.
+17108\tadministrativny\tI\tadj.
+96\tadministrator\tI\tm.anim.
+24081\tadministrovati\tI\tv.tr. ipf.
+24082\tadmiral\tI\tm.anim.
+24084\tadmiraľstvo\tI\tn.
+35592\tadopcija\tI\tf.
+19628\tadoptovati\tI\tv.tr. ipf.
+24086\tadrenalin\tI\tm.sg.
+17109\tadres\tI\tm.
+248\tadresa\tI\tf.
+24089\tadresat\tI\tm.anim.
+4540\tadresovati\tI\tv.tr. ipf.
+36739\tAdriatičsko morje\tI\tn.
+24093\tadventist\tI\tm.anim.
+97\tadvokat\tI\tm.anim.
+24096\tadvokatura\tI\tf.sg.
+36566\tAdžarija\t\tf.sg.
+36348\taerodinamičny\tI\tadj.
+36349\taerodinamika\tI\tf.sg.
+33084\taerodrom\tI\tm.
+3423\taeronavtičny\tI\tadj.
+3424\taeronavtika\tI\tf.sg.
+6129\taeroplan\tI\tm.
+99\taeroport\tI\tm.
+19629\tafazija\tI\tf.sg.
+19630\tafektivny\tI\tadj.
+35513\tafera\tF\tf.
+5754\tAfganistan\t\tm.sg.
+5755\tafgansky\t\tadj.
+36756\taforizm\tI\tm.
+4743\tAfrika\t\tf.sg.
+36719\tAfrikanėc\t\tm.anim.
+36720\tAfrikanka\t\tf.
+32850\tafrikansky mråvojed\t\tm.anim.
+106\tafrikansky\t\tadj.
+24102\tAfroamerikanec\t\tm.anim.
+36283\tafrodiziak\tI\tm.
+24105\tagava\tI\tf.
+113\tagencija\tI\tf.
+24107\tagent\tI\tm.anim.
+24110\t#agentura\tI\tf.
+24111\tagitacija\tI\tf.sg.
+24112\tagitator\tI\tm.anim.
+24113\tagitka\tI\tf.
+24114\tagitovati\tI\tv.intr. ipf.
+35785\taglomeracija\tI\tf.
+19631\taglutinacija\tI\tf.sg.
+24116\taglutinativny\tI\tadj.
+24118\tagnosticizm\tI\tm.sg.
+24119\tagnostik\tI\tm.anim.
+24120\tagonija\tI\tf.sg.
+24121\tagonizovati\tI\tv.intr. ipf.
+24124\tagrarny\tI\tadj.
+24125\tagregat\tI\tm.
+24127\tagresija\tI\tf.sg.
+24128\tagresivny\tI\tadj.
+24129\tagresor\tI\tm.anim.
+24130\tagrikultura\tI\tf.sg.
+24131\tagronom\tI\tm.anim.
+24132\tagronomičny\tI\tadj.
+24133\tagronomija\tI\tf.sg.
+24134\tah\t\tintj.
+24135\taha\t\tintj.
+4886\tahoj\t\tintj.
+24136\taj\t\tintj.
+24137\tajsberg\tD\tm.
+24138\takacija\tI\tf.
+16262\takademičsky\tI\tadj.
+4639\takademija\tI\tf.
+24141\takademik\tI\tm.anim.
+34994\takańje\t\tn.sg.
+6130\takcent\tI\tm.
+24148\takcentovati\tI\tv.tr. ipf.
+24149\takcentuacija\tI\tf.sg.
+4951\takceptacija\tI\tf.sg.
+111\takceptovati\tI\tv.tr. ipf.
+115\takcija\tI\tf.
+2849\takcija\tI\tf.
+24152\takcioner\tI\tm.anim.
+24153\takcionerny kapital\tI\tm.sg.
+24154\takciz\tI\tm.
+24155\taklimatizacija\tI\tf.sg.
+24156\taklimatizovati\tI\tv.intr. ipf.
+6387\takne\tI\tn.sg.
+17112\tako by\t\tconj.
+17113\tako by\t\tconj.
+17114\tako by\t\tconj.
+6133\tako li\tS\tconj.
+23672\tako ne\t\tconj.
+17076\tako\t\tconj.
+17110\tako\t\tadv.
+32593\takolada\tI\tf.
+36472\takolada\tI\tf.
+24161\takomodacija\tI\tf.
+24163\takompanement\tI\tm.sg.
+24164\takompaniator\tI\tm.anim.
+24165\takompanovati\tI\tv.tr. ipf.
+24167\takord\tI\tm.
+24168\takordeon\tI\tm.
+24169\takr\tI\tm.
+24173\takrobat\tI\tm.anim.
+34769\takrobatika\tI\tf.sg.
+24174\takrobatka\tI\tf.
+24175\takrobatsky\tI\tadj.
+33563\taksamit\tI\tm.sg.
+33564\taksamitny\t\tadj.
+32543\taksiaľny\tI\tadj.
+24180\taksioma\tI\tf.
+119\takt\tI\tm.
+2307\taktivist\tI\tm.anim.
+24189\taktivistka\tI\tf.
+35786\taktivitet\tI\tm.
+16921\taktivno\tI\tadv.
+5142\taktivnosť\tI\tf.
+43\taktivny\tI\tadj.
+24190\taktivovati\tI\tv.tr. ipf.
+6134\taktor\tI\tm.anim.
+24194\taktorka\tI\tf.
+36683\taktorsky\t\tadj.
+24197\taktrisa\tI\tf.
+34899\taktualizacija\tI\tf.
+34900\taktualizovati\tI\tv.tr. ipf./pf.
+17117\taktuaľnosť\t\tf.
+5125\taktuaľny\tI\tadj.
+20330\takula\t\tf.
+24201\takumulacija\tI\tf.
+24202\takumulator\tI\tm.
+24203\takumulovati\tI\tv.tr. ipf.
+24204\takurat\tI\tadv.
+24205\takuratnosť\tI\tf.
+24206\takuratny\tI\tadj.
+24207\takustičny\tI\tadj.
+24208\takustika\tI\tf.
+24210\takušerka\tI\tf.
+24211\takušersky\tI\tadj.
+24212\takušerstvo\tI\tn.sg.
+24213\takut\t\tm.
+16922\takuzativ\tI\tm.
+24216\takvamarin\tI\tm.
+24217\takvarelist\tI\tm.anim.
+24218\takvarelj\tI\tm.
+24219\takvarium\tI\tm.
+24220\takvedukt\tI\tm.
+24223\talabastr\tI\tm.
+24224\talarm\t\tm.
+133\tAlbanec\t\tm.anim.
+4732\tAlbanija\t\tf.sg.
+6388\tAlbanka\t\tf.
+142\talbansky\t\tadj.
+23563\talbatros\tI\tm.anim.
+24248\talbum\tI\tm.
+134\tale\t\tconj.
+24229\talegoričny\tI\tadj.
+5856\talegorija\tI\tf.
+24231\taleja\tI\tf.
+36743\talergičny\tI\tadj.
+36742\talergija\tI\tf.
+45\talfabet\tI\tm.
+3968\talfabetičny\tI\tadj.
+32939\talga\tI\tf.
+23490\talgebra\tI\tf.sg.
+23492\talgoritm\tI\tm.
+24238\talhimija\tI\tf.sg.
+24239\talhimik\tI\tm.anim.
+107\talians\tI\tm.
+24240\talibi\tI\tn.indecl.
+24241\taligator\tI\tm.anim.
+24244\talimenty\tI\tm.pl.
+24245\taliteracija\tI\tf.
+24267\taljur\tF\tm.sg.
+4647\talkohol\tI\tm.
+4648\talkoholičny\tI\tadj.
+23277\talkoholik\tI\tm.anim.
+24274\talkoholizm\tI\tm.sg.
+24253\talkov\tI\tm.
+24279\tallegro\tI\tn.
+24254\talmanah\tI\tm.
+24281\talmaz\t\tm.
+24282\talo\tI\tintj.
+24283\taloe\tI\tn.sg.
+15759\talpijsky\tI\tadj.
+5757\talpinist\tI\tm.anim.
+24256\talpinizm\tI\tm.sg.
+59\tAlpy\t\tf.pl.
+23443\talt\tI\tm.
+32998\talt\tI\tm.
+35767\taltana, altanka\t\tf.
+24259\talternativa\tI\tf.
+17119\talternativny\tI\tadj.
+24261\taltruist\tI\tm.anim.
+24262\taltruističny\tI\tadj.
+24263\taltruizm\tI\tm.sg.
+22608\taluminij\tI\tm.sg.
+24265\taluminijevy\tI\tadj.
+35536\taluzija\t\tf.
+24269\talveolarny\tI\tadj.
+5919\tAlžirija\t\tf.sg.
+35594\tamater\tF\tm.anim.
+36059\tambar\tT\tm.
+127\tambasada\tI\tf.
+24290\tambicija\tI\tf.
+32530\tambiciozny\tI\tadj.
+36759\tambivalentnosť\tI\tf.
+36758\tambivalentny\tI\tadj.
+24291\tambrazura\tI\tf.
+24294\tameba\tI\tf.
+131\tAmerika\t\tf.sg.
+136\tAmerikanec\t\tm.anim.
+6400\tAmerikanka\t\tf.
+6404\tAmerikanska Samoa\t\tf.sg.
+12580\tAmerikanske Děvičje Ostrovy\t\tm.pl.
+52\tamerikansky\t\tadj.
+24296\tametist\tI\tm.
+23198\tamfetamin\tI\tm.sg.
+23197\tamfiteatr\tI\tm.
+19632\tamin\tI\tintj.
+24298\tamnestija\tI\tf.sg.
+24299\tamnestovati\tI\tv.tr. ipf./pf.
+36331\tamnezija\tI\tf.
+24301\tamonij\tI\tm.sg.
+24302\tamonijak\tI\tm.sg.
+24304\tamoraľny\tI\tadj.
+24305\tamortizacija\tI\tf.sg.
+3835\tamortizator\tI\tm.
+24307\tamortizovati\tI\tv.tr. ipf./pf.
+34096\tamputacija\tI\tf.
+34095\tamputovati\tI\tv.tr. ipf./pf.
+36760\tamulet\tI\tm.
+32325\tamunicija\tI\tf.sg.
+35336\tanahroničny\tI\tadj.
+35337\tanahronizm\tI\tm.
+24309\tanalfabet\tI\tm.anim.
+24310\tanalfabetizm\tI\tm.sg.
+14440\tanalitično\tI\tadv.
+4172\tanalitičny\tI\tadj.
+904\tanalitik\tI\tm.anim.
+4171\tanaliza\tI\tf.
+3969\tanalizovati\tI\tv.tr. ipf.
+16411\tanaľny\tI\tadj.
+23209\tanalogičny\tI\tadj.
+23208\tanalogija\tI\tf.
+32110\tanamneza\tI\tf.
+24311\tananas\tI\tm.
+5057\tanarhija\tI\tf.sg.
+5058\tanarhist\tI\tm.anim.
+23491\tanarhizm\tI\tm.sg.
+23494\tanatomičny\tI\tadj.
+23493\tanatomija\tI\tf.sg.
+24312\tAndora\t\tf.sg.
+5718\tanekdota\tI\tf.
+36190\taneksija\tI\tf.
+36191\taneksovati\tI\tv.tr. ipf./pf.
+20331\tanemičny\tI\tadj.
+20332\tanemija\tI\tf.sg.
+19633\tanestezija\tI\tf.sg.
+36752\tanestezija\tI\tf.
+229\tangel\tI\tm.anim.
+24314\tanglicizm\tI\tm.
+20333\tAngličan, Angličanin\t\tm.anim.
+35052\tAnglija\t\tf.sg.
+19634\tanglijskojęzyčny\t\tadj.
+23464\tanglijsky rožek\t\tm.
+2850\tanglijsky\t\tadj.
+19635\tanglosaksonsky\t\tadj.
+256\tAngola\t\tf.sg.
+36537\tanimacija\tI\tf.
+36700\tanimovany film\tI\tm.
+36798\tanis\tI\tm.sg.
+3797\tanketa\tF\tf.
+32722\tanketa\tF\tf.
+35755\tanomalija\tI\tf.
+3949\tanonimny\tI\tadj.
+34753\tantagonist\tI\tm.anim.
+35738\tantagonizm\tI\tm.
+4898\tAntarktida\t\tf.sg.
+32494\tantena\tI\tf.
+16368\tanti-\tI\tprefix
+36753\tantibiotik\tI\tm.
+16367\tantičnosť\tI\tf.
+16369\tantičny\tI\tadj.
+17120\tantihrist\tI\tm.anim.
+35717\tantikvariat\tI\tm.
+32493\tantilopa\tI\tf.
+22629\tantimon\tI\tm.sg.
+35432\tantipatija\tI\tf.
+22808\tantisemitizm\tI\tm.sg.
+36754\tantitělo\t\tn.
+35825\tantologija\tI\tf.
+23495\tantropologija\tI\tf.sg.
+4952\tanulacija\tI\tf.
+37\tanulovati\tI\tv.tr. ipf./pf.
+16250\tanus\tI\tm.
+19636\taorist\tI\tm.
+6263\taparat\tI\tm.
+39\tapelacija\tI\tf.
+15689\tapelacijny sųd\tI\tm.
+15690\tapelacijny\tI\tadj.
+15692\tapelant\tI\tm.anim.
+60\tapelovati\tI\tv.intr. ipf.
+6422\tapendektomija\tI\tf.sg.
+15764\tapendiks\tI\tm.
+150\tapetit\tF\tm.sg.
+36574\taplikacija\tI\tf.
+15240\taplodovańje\tE\tn.sg.
+5624\taplodovati\tE\tv.tr. ipf.
+36316\tapokalipsa\tI\tf.
+36315\tapokaliptičny\tI\tadj.
+32728\taposteriorny\tI\tadj.
+6167\tapostol\tI\tm.anim.
+32556\tapostrof\tI\tm.
+4026\taprilj\tI\tm.sg.
+32727\tapriorny\tI\tadj.
+35575\tArab\t\tm.anim.
+35576\tArabka\t\tf.
+2166\tarabsky\t\tadj.
+36413\taranževati\tF\tv.tr. ipf./pf.
+36414\taranžman\tF\tm.
+19637\tarbiter\tI\tm.anim.
+36761\tarbitraž\tI\tm.
+38\tarcivojevoda\t\tm.anim.
+5789\tarešt\tI\tm.sg.
+122\tareštovati\tI\tv.tr. ipf.
+22388\tArgentina\t\tf.sg.
+22389\targentinsky\t\tadj.
+22614\targon\tI\tm.sg.
+19638\targument\tI\tm.
+19639\targumentacija\tI\tf.
+19640\targumentovati\tI\tv.intr. ipf.
+4382\tarhaičny\tI\tadj.
+4383\tarhaizm\tI\tm.
+4419\tarheolog\tI\tm.anim.
+4420\tarheologičny\tI\tadj.
+4418\tarheologija\tI\tf.sg.
+6166\tarhiepiskop\tI\tm.anim.
+36677\tarhipelag\tI\tm.
+4893\tarhitekt\tI\tm.anim.
+4894\tarhitektura\tI\tf.sg.
+35659\tarhitekturny\tI\tadj.
+35235\tarhiv\tI\tm.
+35281\tarhivny\tI\tadj.
+35236\tarhivovati\tI\tv.tr. ipf./pf.
+5721\taristokracija\tI\tf.sg.
+5720\taristokrat\tI\tm.anim.
+5722\taristokratičny\tI\tadj.
+17124\taristokratka\tI\tf.
+21256\taritmetika\tI\tf.sg.
+17126\tarka\tI\tf.
+23500\tArktičny okean\t\tm.sg.
+5920\tarktičny\t\tadj.
+6206\tArktika\t\tf.sg.
+5059\tArmenija\t\tf.sg.
+5060\tarměnsky\t\tadj.
+123\tarmija\tI\tf.
+1851\tarogancija\tI\tf.sg.
+35635\tarogantny\tI\tadj.
+24324\taromat\tI\tm.
+22625\tarsen\tI\tm.sg.
+34\tarsenal\tI\tm.
+35705\tartefakt\tI\tm.
+15244\tarterija\tI\tf.
+24325\tartikulacija\tI\tf.
+24326\tartilerija\tI\tf.sg.
+33\tartist\tI\tm.anim.
+15768\tartističny\tI\tadj.
+31843\tas\tI\tm.
+24327\tasfalt\tI\tm.sg.
+24328\tasfaltobeton\tI\tm.sg.
+36762\tasimetričny\tI\tadj.
+16263\tasimilacija\tI\tf.sg.
+6246\tasimilovati\tI\tv.tr. ipf.
+35787\tasociacija\tI\tf.
+19641\taspekt\tI\tm.
+21257\tasteroid\tI\tm.
+31854\tastma\tI\tf.sg.
+22973\tastrolog\tI\tm.anim.
+16264\tastrologičny\tI\tadj.
+4895\tastrologija\tI\tf.sg.
+24330\tastronavt\tI\tm.anim.
+21258\tastronom\tI\tm.anim.
+16265\tastronomičny\tI\tadj.
+18\tastronomija\tI\tf.sg.
+32\tataka\tI\tf.
+3970\tatakovati\tI\tv.tr. ipf.
+23503\tateist\tI\tm.anim.
+23502\tateizm\tI\tm.sg.
+16923\tatematičny\tI\tadj.
+23526\tAtiny\t\tf.pl.
+23497\tAtlantičny okean\t\tm.sg.
+35020\tatlantičny\tI\tadj.
+35093\tatlet\tI\tm.anim.
+35095\tatletičny\tI\tadj.
+35094\tatletika\tI\tf.sg.
+35084\tatmosfera\tI\tf.
+4661\tatom\tI\tm.
+23321\tatomna bomba\t\tf.
+23184\tatrakcija\tI\tf.
+35788\tatraktivny\tI\tadj.
+36065\tatut\tI\tm.
+36825\tau!\t\tintj.
+36757\taura\tI\tf.
+36767\taureola\tI\tf.
+36748\tautist\tI\tm.anim.
+36749\tautističny\tI\tadj.
+36747\tautizm\tI\tm.
+24332\tavangarda\tF\tf.
+24334\tavanpost\tF\tm.
+24335\tavans\tF\tm.
+24337\tavansovati\tI\tv.intr. ipf./pf.
+24339\tavansovy\tI\tadj.
+24346\tAvar\t\tm.anim.
+5766\tavarija\tI\tf.
+24348\tavarijny\tI\tadj.
+3053\tavgust\tI\tm.sg.
+62\taviacija\tI\tf.sg.
+17133\taviakarta\tI\tf.
+64\tavialinija\tI\tf.
+24356\taviator\tI\tm.anim.
+233\tavizo\tI\tn.
+36074\tavokado\tI\tn.
+70\tAvstralija\t\tf.sg.
+5756\tavstralijsky\t\tadj.
+75\tAvstrija\t\tf.sg.
+35339\tAvstrijec\t\tm.anim.
+35338\tavstrijsky\t\tadj.
+22810\tavtentičny\tI\tadj.
+2888\tavto\tI\tn.
+24363\tavtobiografičny\tI\tadj.
+24365\tavtobiografija\tI\tf.
+14449\tavtobomba\tI\tf.
+82\tavtobus\tI\tm.
+35255\tavtobusna linija\t\tf.
+35254\tavtobusna postojka\t\tf.
+24370\tavtograf\tI\tm.
+24371\tavtohton\tI\tm.anim.
+24374\tavtokracija\tI\tf.
+24375\tavtokrat\tI\tm.anim.
+83\tavtomagistralj\tI\tm.
+4358\tavtomat\tI\tm.
+24377\tavtomat\t\tm.
+4360\tavtomatično\tI\tadv.
+4359\tavtomatičny\tI\tadj.
+24383\tavtomatika\tI\tf.sg.
+24384\tavtomatizacija\tI\tf.sg.
+24385\tavtomatizm\tI\tm.
+24386\tavtomatizovati\tI\tv.tr. ipf.
+23496\tavtomobil\tI\tm.
+14451\tavtomobiľny\tI\tadj.
+17129\tavtonomija\tI\tf.sg.
+17130\tavtonomny\tI\tadj.
+6449\tavtopromysl\tM\tm.sg.
+87\tavtor\tI\tm.anim.
+24393\tavtoritarny\tI\tadj.
+10869\tavtoritativno\tI\tadv.
+10871\tavtoritativny\tI\tadj.
+15772\tavtoritet\tI\tm.
+15774\tavtoritetno\tI\tadv.
+15775\tavtoritetnosť\tI\tf.sg.
+15776\tavtoritetny\tI\tadj.
+15773\tavtoritety\tI\tm.pl.
+5034\tavtorizacija\tI\tf.
+5033\tavtorizovati\tI\tv.tr. ipf.
+35314\tavtorka\tI\tf.
+35237\tavtorsko pravo\t\tn.
+24398\tavtorsky\tI\tadj.
+17131\tavtorstvo\tI\tn.sg.
+35868\tavtostop\tI\tm.
+35870\tavtostopnik\tI\tm.anim.
+35869\tavtostopovati\tI\tv.intr. ipf./pf.
+24399\tavtostrada\tI\tf.
+6451\tavtostrahovka\tI\tf.
+6452\tavtozavod\tI\tm.
+24400\tavtožir\tI\tm.
+24401\tazalija\tI\tf.
+36744\tazbest\tI\tm.
+16924\tazbuka\t\tf.
+76\tAzerbajdžan\t\tm.sg.
+92\tAzija\t\tf.sg.
+542\tazijatsky\t\tadj.
+24407\tazimut\tI\tm.
+22600\tazot\tI\tm.sg.
+24409\tazotisty\tI\tadj.
+24410\tazotny\tI\tadj.
+17135\tAzovsko morje\t\tn.sg.
+36440\taztečsky\t\tadj.
+36439\tAztek\t\tm.anim.
+24411\tazurny\tI\tadj.
+3591\taž\t\tadv.
+2435\tbaba\t\tf.
+6460\tbabica\t\tf.
+24425\tbabin\t\tadj.
+24429\tbabka\t\tf.
+24430\tbabsky\t\tadj.
+6459\tbabuška\t\tf.
+35187\tbacil\tI\tm.
+32766\tbadminton\tE\tm.sg.
+5070\tbagatela\tF\tf.
+1579\tbagatelizovati\tF\tv.tr. ipf.
+2438\tbagaž\tF\tm.
+384\tbagno\tS\tn.
+22453\tbahamsky\t\tadj.
+22452\tBahamy\t\tf.pl.
+24437\tbajati\t\tv.intr. ipf.
+34833\tbajati\t\tv.intr. ipf.
+6465\tbajka\t\tf.
+36392\tbajonet\tF\tm.
+6466\tbajt\tE\tm.
+24443\tbak\tI\tm.
+24444\tbak\tI\tm.
+24445\tbakalavr\tI\tm.
+24448\tbaken\tI\tm.
+35440\tbakenbardy\tD\tf.pl.
+24453\tbaklažan\t\tm.
+23505\tbakterija\tI\tf.
+24458\tbakteriologija\tI\tf.sg.
+24459\tbal\tI\tm.
+31963\tbala\t\tf.
+24461\tbalada\tI\tf.
+24464\tbalalajka\t\tf.
+2440\tbalans\tI\tm.
+24467\tbalansir\tI\tm.
+24468\tbalansovati\tI\tv.intr. ipf.
+24469\tbalast\tI\tm.sg.
+24470\tbaldahin\tI\tm.
+24471\tbalerina\tI\tf.
+6102\tbalet\tI\tm.
+24474\tbalističny\tI\tadj.
+24476\tbalistika\tI\tf.sg.
+35340\tbalkansky\t\tadj.
+16824\tBalkany\t\tm.pl.
+153\tbalkon\tI\tm.
+24482\tbalon\tI\tm.
+24483\tbalotovati\tI\tv.tr. ipf./pf.
+23506\tBaltičsko morje\t\tn.sg.
+4737\tbaltičsky\t\tadj.
+24484\tbalustrada\tF\tf.
+31785\tbalvan\t\tm.
+31786\tbalvan\t\tm.
+24487\tbalzam\tI\tm.
+24489\tbalzamovati\tI\tv.tr. ipf./pf.
+24490\tbambus\tI\tm.
+31717\tbanaľny\tI\tadj.
+24492\tbanan\tI\tm.
+2439\tbanda\tI\tf.
+24494\tbandaž\tF\tm.
+493\tbandit\tI\tm.anim.
+24499\tbanditizm\tI\tm.sg.
+24500\tbandura\t\tf.
+24502\tbandžo\tI\tn.
+21847\tbaner\tE\tm.
+24503\tbanja\t\tf.
+4668\tbank\tI\tm.
+24506\tbanka\t\tf.
+33326\tbanka\t\tf.
+24507\tbanket\tI\tm.
+24508\tbankir\tI\tm.anim.
+16925\tbanknota\tI\tf.
+36391\tbankrot\tI\tm.anim.
+24510\tbankrotstvo\tI\tn.
+23757\tbaobab\tI\tm.
+24513\tbaptist\tI\tm.anim.
+24514\tbaptizm\tI\tm.
+24515\tbar\tI\tm.
+24516\tbaraban\t\tm.
+14453\tbarak\tI\tm.
+32414\tbarak\tI\tm.
+2436\tbaran\t\tm.anim.
+24520\tbaranina\t\tf.sg.
+24522\tbarbaris\tI\tm.
+24524\tbard\tI\tm.anim.
+6471\tbarel\tE\tm.
+159\tbariera\tF\tf.
+24529\tbarikada\tI\tf.
+24530\tbarikadovati\tI\tv.tr. ipf.
+24533\tbarkarola\tI\tf.
+24534\tbarkas\tI\tm.
+31977\tbarmen\tE\tm.anim.
+154\tbarok\tI\tm.sg.
+24535\tbaroko\tI\tn.
+24536\tbarometr\tI\tm.
+24538\tbaron\tI\tm.anim.
+24539\tbaronesa\tI\tf.
+20334\tbarsuk\t\tm.anim.
+1868\tbarva\t\tf.
+24541\tbarvinȯk\t\tm.
+5873\tbarviti\t\tv.tr. ipf.
+5872\tbarvivo\t\tn.
+21259\tbarvna olovka\t\tf.
+24542\tbaryj\tI\tm.sg.
+24544\tbaryton\tI\tm.
+24545\tbarža\tI\tf.
+24546\tbas\t\tm.
+2437\tbasen\tF\tm.
+36210\tBask\t\tm.anim.
+24549\tbasketbol\tE\tm.sg.
+36209\tbaskijsky\t\tadj.
+1846\tbasnj\t\tf.
+6483\tbasnjesloveny\t\tadj.
+19642\tbasnjevy\t\tadj.
+24552\tbasta\tI\tintj.
+35240\tbastard\tI\tm.
+24553\tbastion\tI\tm.
+36569\tbaškirsky\t\tadj.
+24559\tbatalion\tF\tm.
+24560\tbaterija\tI\tf.
+35632\tBavarija\t\tf.sg.
+35724\tbavarsky\t\tadj.
+2418\tbaviti\t\tv.tr. ipf.
+157\tbavȯlna\t\tf.sg.
+6487\tbaza danyh\t\tf.
+156\tbaza\t\tf.
+24565\tbazalt\tI\tm.sg.
+16730\tbazar\t\tm.
+24567\tbazilik\tI\tm.
+31749\tbazilika\tI\tf.
+20335\tbazilisk\tI\tm.anim.
+19643\tbazovati na\tI\tv.tr. ipf.
+24570\tbazovati sę na\tI\tv.refl. ipf.
+20336\tbděńje\t\tn.sg.
+20338\tbděti\t\tv.intr. ipf.
+20339\tbditeljnosť\t\tf.sg.
+20340\tbditeljny\t\tadj.
+2442\tběda\t\tf.sg.
+3836\tběda\t\tf.sg.
+2443\tbědny\t\tadj.
+2444\tbedrenec\t\tm.anim.
+24576\tbedreny\t\tadj.
+2445\tbedro\t\tn.
+20341\tběg\t\tm.
+20342\tběg\t\tm.
+20343\tběg\t\tm.
+35981\tběgaj!\t\tintj.
+2441\tběgati\t\tv.intr. ipf.
+20344\tběglosť\t\tf.sg.
+20345\tběgly\t\tadj.
+36637\tběgly\t\tadj.
+32533\tběgstvo\t\tn.
+1219\tběgti\t\tv.intr. ipf.
+20346\tběgun\t\tm.anim.
+35523\tbejsbol\tE\tm.sg.
+24583\tbělavy\t\tadj.
+24584\tbělěti\t\tv.intr. ipf.
+2865\tBelgija\t\tf.sg.
+4426\tbelgijsky\t\tadj.
+23521\tBělgråd\t\tm.sg.
+24586\tbělilo\t\tn.
+31731\tběliti\t\tv.tr. ipf.
+22454\tBeliz\t\tm.sg.
+2446\tbělmo\t\tn.
+24591\tbělobrådy\t\tadj.
+24595\tbělȯk\t\tm.
+24600\tbělopery\t\tadj.
+2447\tBělorus\t\tm.anim.
+2448\tBěloruś\t\tf.sg.
+2864\tbělorussky\t\tadj.
+24604\tbělosť\t\tf.sg.
+24605\tbělovlåsy\t\tadj.
+24606\tbělozųby\t\tadj.
+2679\tběly\t\tadj.
+23409\tbenzin\tI\tm.
+19493\tBerlin\t\tm.sg.
+36647\tberserk\tG\tm.anim.
+22601\tberylij\tI\tm.sg.
+24609\tběs\t\tm.anim.
+1811\tbesěda\t\tf.
+2880\tbesědovati\t\tv.intr. ipf.
+24612\tběsiti sę\t\tv.refl. ipf.
+31757\tběsnosť\t\tf.sg.
+24613\tběsny\t\tadj.
+1721\tbeton\t\tm.sg.
+3972\tbetonny\t\tadj.
+3044\tbetonomešalka\t\tf.
+3415\tbez malogo\t\tadv.
+4946\tbez obzira na\t\tprep.
+1434\tbez\t\tprep.
+3971\tbezbarvny\t\tadj.
+19644\tbezbolěsno\t\tadv.
+19645\tbezbolěsny\t\tadj.
+33128\tbezbožje\t\tn.sg.
+33131\tbezbožnik\t\tm.anim.
+33123\tbezbožny\t\tadj.
+33127\tbezbožny\t\tadj.
+24618\tbezbrådy\t\tadj.
+35125\tbezbrånny\t\tadj.
+17137\tbezčesťje\t\tn.sg.
+24620\tbezčestny\t\tadj.
+31742\tbezčestny\t\tadj.
+4837\tbezdětny\t\tadj.
+2335\tbezdna\t\tf.
+24626\tbezdomny\t\tadj.
+24627\tbezdȯnny\t\tadj.
+24628\tbezdȯžďje\t\tn.sg.
+14455\tbezdrěvny\t\tadj.
+24630\tbezdušny\t\tadj.
+19646\tbezdyšny\t\tadj.
+24633\tbezglåvy\t\tadj.
+24635\tbezhvosty\t\tadj.
+14458\tbezhybny\t\tadj.
+6515\tbezimenno\t\tadv.
+6516\tbezimenny\t\tadj.
+36638\tbezizhodnosť\t\tf.sg.
+17138\tbezizhodny\t\tadj.
+35411\tbezkarnosť\t\tf.sg.
+35410\tbezkarny\t\tadj.
+14457\tbezkolorny\t\tadj.
+6517\tbezkonečje\t\tn.sg.
+4296\tbezkonečno\t\tadv.
+6519\tbezkonečnosť\t\tf.sg.
+6520\tbezkonečny\t\tadj.
+6522\tbezkoristny\t\tadj.
+24637\tbezkostny\t\tadj.
+31733\tbezkrily\t\tadj.
+24638\tbezkrȯvny\t\tadj.
+6524\tbezlěsny\t\tadj.
+6525\tbezlistny\t\tadj.
+24644\tbezljudny\t\tadj.
+20348\tbezměrnosť\t\tf.sg.
+33138\tbezměrny\t\tadj.
+20351\tbezmȯlvny\t\tadj.
+24646\tbezmozgy\t\tadj.
+36175\tbezmytny\t\tadj.
+36721\tbeznadějnosť\t\tf.
+4345\tbeznadějny\t\tadj.
+24647\tbeznogy\t\tadj.
+17141\tbezolovny\t\tadj.
+20842\tbezopasnosť\t\tf.sg.
+20844\tbezopasny\t\tadj.
+24650\tbezpamętny\t\tadj.
+19494\tbezpartijny\tI\tadj.
+20846\tbezpečnosť\t\tf.sg.
+20847\tbezpečny\t\tadj.
+24652\tbezpery\t\tadj.
+20848\tbezplatny\t\tadj.
+24653\tbezplodny\t\tadj.
+33019\tbezplodny\t\tadj.
+19649\tbezpokojęći\t\tadj.
+22974\tbezpokojeńje\t\tn.
+36698\tbezpokojiti sę\t\tv.refl. ipf.
+19654\tbezpokojiti\t\tv.tr. ipf.
+19659\tbezpokojny\t\tadj.
+19661\tbezpokojstvo\t\tn.sg.
+5837\tbezpomoćno\t\tadv.
+5836\tbezpomoćnosť\t\tf.sg.
+5835\tbezpomoćny\t\tadj.
+5090\tbezposrědnje\t\tadv.
+1792\tbezposrědnji, bezposrědny\t\tadj.
+178\tbezprecedentny\tI\tadj.
+3517\tbezprěryvno\t\tadv.
+6536\tbezprěryvny\t\tadj.
+3493\tbezpričinny\t\tadj.
+33236\tbezprikladny\t\tadj.
+33232\tbezpriměrny\t\tadj.
+17142\tbezråbotica\t\tf.sg.
+28504\tbezradostny\t\tadj.
+36639\tbezrodny\t\tadj.
+24655\tbezrogy\t\tadj.
+24656\tbezrųky\t\tadj.
+24657\tbezsiľny\t\tadj.
+20352\tbezsmyslica\t\tf.sg.
+21261\tbezsmysľny\t\tadj.
+24658\tbezsněžny\t\tadj.
+24659\tbezsȯnnica\t\tf.sg.
+24660\tbezsȯnny\t\tadj.
+24661\tbezstrašny\t\tadj.
+16267\tbezstydnosť\t\tf.sg.
+16266\tbezstydny\t\tadj.
+3974\tbezšumnosť\t\tf.sg.
+177\tbezšumny\t\tadj.
+6544\tbeztęžno\t\tadv.
+6545\tbeztęžnosť\t\tf.sg.
+6546\tbeztęžny\t\tadj.
+24008\tbezumje\t\tn.sg.
+15247\tbezumnik\t\tm.anim.
+15248\tbezumny\t\tadj.
+4214\tbezusiľje\t\tn.sg.
+4213\tbezusiľno\t\tadv.
+4215\tbezusiľnosť\t\tf.sg.
+4212\tbezusiľny\t\tadj.
+21263\tbezuslovny\t\tadj.
+33156\tbezuspěšny\t\tadj.
+33157\tbezutěšny\t\tadj.
+33436\tbezvěŕje\t\tn.sg.
+5051\tbezvěstny\t\tadj.
+24664\tbezvětŕje\t\tn.
+24665\tbezvinny\t\tadj.
+34434\tbezvkųsny\t\tadj.
+22486\tbezvladnosť\t\tf.sg.
+22487\tbezvladnosť\t\tf.sg.
+22485\tbezvladny\t\tadj.
+22484\tbezvlasťje\t\tn.sg.
+24666\tbezvlåsy\t\tadj.
+24668\tbezvodny\t\tadj.
+17143\tbezvyhodny\t\tadj.
+35126\tbezzaščitny\t\tadj.
+179\tběženec\t\tm.anim.
+6552\tběženica\t\tf.
+23754\tběžeńje\t\tn.
+24671\tbeževy\tF\tadj.
+24672\tbezzųby\t\tadj.
+5040\tbezzvųčny\t\tadj.
+4760\tBiblija\tI\tf.
+5844\tbiblijsky\tI\tadj.
+35088\tbibliografičny\tI\tadj.
+35087\tbibliografija\tI\tf.
+4364\tbiblioteka\tI\tf.
+4365\tbibliotekaŕ\tI\tm.anim.
+24673\tbič\t\tm.
+34987\tbičevati\t\tv.tr. ipf.
+35994\tbifštek\tE\tm.
+35872\tbilbord\tE\tm.
+1760\tbilet\tI\tm.
+35293\tbinarny\tI\tadj.
+35227\tbinoklj\tF\tm.
+20849\tbiografija\tI\tf.
+3975\tbiolog\tI\tm.anim.
+3976\tbiologičny\tI\tadj.
+1780\tbiologija\tI\tf.sg.
+17145\tbiskup\tI\tm.anim.
+35992\tbiskvit\tF\tm.
+22635\tbismut\tI\tm.sg.
+4049\tbiti\t\tv.tr. ipf.
+24678\tbiťje\t\tn.
+24679\tbitka\t\tf.
+20353\tbitva\t\tf.
+35833\tBizantija\tI\tf.sg.
+35834\tBizantijska imperija\tI\tf.sg.
+35341\tbizantijsky\t\tadj.
+637\tbiznes\tE\tm.
+15785\tbiznesmen\tE\tm.anim.
+14464\tbiznesny\tE\tadj.
+32788\tbizon\tI\tm.anim.
+24681\tbižuterija\tF\tf.
+35181\tbjuleten\tF\tm.
+3978\tbjurokracija\tI\tf.
+2452\tbjurokrat\tI\tm.anim.
+3979\tbjurokratičny\tI\tadj.
+3176\tbjust\tF\tm.
+17146\tblågo\t\tn.
+4927\tblågodarę\t\tprep.
+4885\tblågodarim, blågodarjų\t\tintj.
+4889\tblågodariti\t\tv.tr. ipf.
+6575\tblågodarjeńje\t\tn.
+6576\tblågodarno\t\tadv.
+4905\tblågodarnosť\t\tf.sg.
+4903\tblågodarny\t\tadj.
+23755\tblågomilosť\t\tf.
+15251\tblågomily\t\tadj.
+23756\tblågoprijętny\t\tadj.
+21264\tblågorodny\t\tadj.
+22975\tblågosklonnosť\t\tf.sg.
+14466\tblågosklonny\t\tadj.
+19662\tblågosklonny\t\tadj.
+5574\tblågoslavjati\t\tv.tr. ipf.
+5573\tblågosloviti\t\tv.tr. pf.
+5901\tblågoslovjeńje\t\tn.
+6587\tblågoslovjeńje\t\tn.
+6588\tblågoslovny\t\tadj.
+21713\tblågostańje\t\tn.sg.
+22146\tblågotvorny\t\tadj.
+22214\tBlågověšćeńje\t\tn.sg.
+22297\tblågovolěti\t\tv.intr. ipf.
+22299\tblågovoljny\t\tadj.
+35598\tblågozvųčnosť\t\tf.sg.
+35599\tblågozvučny\t\tadj.
+36893\tblågoželańje\t\tn.
+6050\tblågoželati\t\tv.intr. ipf.
+620\tblågy\t\tadj.
+24683\tblåna\t\tf.
+36376\tblåtna kųpělj\t\tf.
+14225\tblåtna lavina\t\tf.
+24684\tblåtny\t\tadj.
+3463\tblåto\t\tn.
+312\tblazn\t\tm.anim.
+24688\tblazniti sę\t\tv.refl. ipf.
+24689\tblaznovati\t\tv.intr. ipf.
+24690\tblědněti\t\tv.intr. ipf.
+24692\tblědosť\t\tf.sg.
+2453\tblědy\t\tadj.
+24693\tblejati\t\tv.intr. ipf.
+33405\tblekdžek\tI\tm.sg.
+24694\tblen\t\tm.
+5073\tblěsk\t\tm.
+2456\tblěskati\t\tv.intr. ipf.
+5066\tblěskavica\t\tf.
+24717\tblěskavy\t\tadj.
+5869\tblěsklivy\t\tadj.
+2035\tblěsknųti\t\tv.intr. pf.
+24697\tblěstěti\t\tv.intr. ipf.
+24698\tblin\t\tm.
+3426\tbliz\t\tadv.
+3746\tblizko\t\tadv.
+4916\tblizko\t\tprep.
+3980\tblizkosť\t\tf.sg.
+6603\tBlizky Iztok\t\tm.sg.
+2455\tBlizky Vȯzhod\t\tm.sg.
+3287\tblizky\t\tadj.
+192\tbliznec\t\tm.anim.
+7406\tblizneci\t\tm.pl.
+24701\tBlizneci\t\tm.pl.
+7404\tbliznečky\t\tf.pl.
+7407\tbliznečsky\t\tadj.
+6610\tblizši\t\tadj.
+6609\tbliže\t\tadv.
+24702\tbližiti sę\t\tv.refl. ipf.
+24703\tbližnji, bližny\t\tadj.
+35437\tbljudce\t\tn.
+24704\tbljudo\t\tn.
+36473\tbljudo\t\tn.
+24705\tbljunųti\t\tv.intr. pf.
+2458\tbljušč\t\tm.
+24707\tbljuvati\t\tv.intr. ipf.
+36781\tbljuvotina\t\tf.
+16778\tblog\tI\tm.
+2460\tblȯha\t\tf.
+2459\tblok\t\tm.
+4953\tblokada\tI\tf.
+33085\tblokflejta\tI\tf.
+193\tblokovati\tI\tv.tr. ipf.
+17150\tblondin\tI\tm.anim.
+2457\tblondinka\tI\tf.
+6189\tblųd\t\tm.
+2461\tblųditi\t\tv.intr. ipf.
+24713\tblųdny\t\tadj.
+24714\tblųkati\t\tv.intr. ipf.
+20850\tboa\tI\tf.
+701\tbob\t\tm.
+24721\tbobovy\t\tadj.
+2434\tbobr\t\tm.anim.
+6620\tbobŕja damba\t\tf.
+15253\tbobŕji\t\tadj.
+36502\tbobslej\tE\tm.
+323\tboćan\t\tm.anim.
+14454\tbȯčka\t\tf.
+36179\tbočny poględ\t\tm.
+3981\tbočny\t\tadj.
+14452\tbȯčva\tS\tf.
+31753\tbodati sę\t\tv.refl. ipf.
+24726\tbodati\t\tv.tr. ipf.
+24727\tbodec\t\tm.
+24728\tbodlivy\t\tadj.
+24730\tbȯdnaŕ\t\tm.anim.
+36422\tbodnųti sę\t\tv.refl. pf.
+36421\tbodnųti\t\tv.tr. pf.
+20354\tbodrosť\t\tf.sg.
+20355\tbodry\t\tadj.
+2855\tbog\t\tm.anim.
+14471\tbogač\t\tm.anim.
+24736\tbogatěti\t\tv.intr. ipf.
+6624\tbogatosť\t\tf.sg.
+6628\tbogatstvo\t\tn.
+6629\tbogatši\t\tadj.
+212\tbogaty\t\tadj.
+14473\tbogatyr\t\tm.anim.
+17152\tbogatyrsko\t\tadv.
+17151\tbogatyrsky\t\tadj.
+4510\tbogohuliti\t\tv.intr. ipf.
+4512\tbogohuljeńje\t\tn.sg.
+4511\tbogohuľnik\t\tm.anim.
+6636\tbogohuľno\t\tadv.
+4513\tbogohuľny\t\tadj.
+17153\tbogohuľstvo\t\tn.
+17154\tBogojavjeńje\t\tn.sg.
+20357\tbogomolka\t\tf.
+17156\tBogorodica\t\tf.sg.
+17157\tbogoslovec\t\tm.anim.
+17158\tbogoslovje\t\tn.sg.
+17159\tbogoslužba\t\tf.
+17160\tbogoslužeńje\t\tn.
+16926\tbogyni\t\tf.
+32037\tbohanka\t\tf.
+35231\tBohemija\t\tf.sg.
+2464\tboj\t\tm.
+20358\tboj\t\tm.
+2465\tbojati sę\t\tv.refl. ipf.
+6641\tbojazlivo\t\tadv.
+6642\tbojazlivy\t\tadj.
+4769\tbojaznj\t\tf.
+6644\tbojazno\t\tadv.
+6645\tbojazny\t\tadj.
+24746\tbojec\t\tm.anim.
+2466\tbojevati\t\tv.intr. ipf.
+6169\tbojevnik\t\tm.anim.
+6651\tbojevy\t\tadj.
+2324\tbojka\t\tf.
+4954\tbojkot\tI\tm.
+2919\tbojkotovati\tI\tv.tr. ipf.
+35420\tbojna glåvica\t\tf.
+24748\tbojny\t\tadj.
+765\tbok\t\tm.
+6657\tbolěsno\t\tadv.
+6658\tbolěsny\t\tadj.
+2011\tbolěti\t\tv.intr. ipf.
+36690\tbolěti\t\tv.intr. ipf.
+6661\tbolězlivo\t\tadv.
+31784\tbolězlivy\t\tadj.
+14475\tbolěznj\t\tf.
+14028\tbolěznjetvorny\t\tadj.
+23478\tboliglåv\t\tm.
+2467\tbolinka\t\tf.
+22434\tBolivija\t\tf.sg.
+22435\tbolivijsky\t\tadj.
+1132\tbolj\t\tm.
+34901\tbolje ili menje\t\tadv.
+16915\tbolje\t\tadv.
+201\tboljnica\t\tf.
+202\tboljny\t\tadj.
+1824\tboljšesť\t\tf.
+35660\tboljši\t\tadj.
+208\tbomba\tI\tf.
+2469\tbombardovati\tI\tv.tr. ipf.
+24758\tbonbon\tI\tm.
+22602\tbor\tI\tm.sg.
+24759\tbor\tI\tm.
+207\tboŕba\t\tf.sg.
+23988\tbordelj\tI\tm.
+24763\tBordo\t\tm.sg.
+24764\tbordovy\tI\tadj.
+17165\tborec\t\tm.anim.
+17168\tboriti sę\t\tv.refl. ipf.
+24766\tborovik\t\tm.
+1852\tbȯršč\t\tm.sg.
+24769\tbȯrščevnik\t\tm.
+1379\tBosnija i Hercegovina\t\tf.sg.
+35871\tBosnija\tI\tf.sg.
+606\tbosnijsky\t\tadj.
+20359\tbosnjačsky\t\tadj.
+6170\tBosnjak\t\tm.anim.
+24772\tbosonogy\t\tadj.
+31754\tbosti sę\t\tv.refl. ipf.
+24733\tbosti\t\tv.tr. ipf.
+2463\tbosy\t\tadj.
+23325\tbotaničny sad\tM\tm.
+23324\tbotaničny\tI\tadj.
+23323\tbotanik\tI\tm.anim.
+23322\tbotanika\tI\tf.sg.
+36488\tBotsvana\t\tf.sg.
+1455\tbȯz\t\tm.
+36282\tbȯzina\t\tf.
+26843\tbožja kråvka\t\tf.
+6262\tbožji\t\tadj.
+5295\tbožsky\t\tadj.
+17169\tbožstvo\t\tn.
+2479\tbråda\t\tf.
+24782\tbrådač\t\tm.anim.
+24783\tbrådaty\t\tadj.
+5886\tbrådavica\t\tf.
+473\tbrådavička\t\tf.
+36028\tbrådobrivec\tF\tm.anim.
+24786\tbrahtati sę\t\tv.refl. ipf.
+36111\tBrajlovo pismo\tI\tn.
+24787\tbrak\t\tm.
+34778\tbrakonier\t\tm.anim.
+34777\tbrakonierstvo\t\tn.sg.
+2478\tbråna\t\tf.
+24792\tbråniti\t\tv.tr. ipf.
+23984\tbraslet\tF\tm.
+7405\tbrat bliznec\t\tm.anim.
+1588\tbrat ili sestra\t\tm.anim.
+219\tbrat\t\tm.anim.
+24795\tbratati sę\t\tv.refl. ipf.
+1877\tbrati\t\tv.tr. ipf.
+23522\tBratislava\t\tf.sg.
+24799\tbratja\t\tm.pl.
+6098\tbratobijstvo\t\tn.
+24801\tbratov\t\tadj.
+6681\tbratska ljubȯv\t\tf.sg.
+6021\tbratsky\t\tadj.
+1461\tbratstvo\t\tn.
+35655\tbravo\tI\tintj.
+221\tbråzda\t\tf.
+24805\tbråzditi\t\tv.intr. ipf.
+2473\tBrazilija\t\tf.sg.
+4753\tbraziľsky\t\tadj.
+6081\tBrěg Slonovoj Kosti\t\tm.sg.
+2474\tbrěg\t\tm.
+24808\tbrěgovy\t\tadj.
+24810\tbrěk\t\tm.
+24811\tbreknųti\t\tv.intr. ipf.
+16338\tbrěmę\t\tn.
+17170\tbrěmennosť\t\tf.
+17171\tbrěmenny\t\tadj.
+24815\tbrenčati\t\tv.intr. ipf.
+214\tbrend\tE\tm.
+24818\tbrenknųti\t\tv.intr. ipf.
+17173\tbrěst\t\tm.
+24836\tbrešljan\t\tm.
+218\tbrěza\t\tf.
+6697\tbrězenj\tS\tm.sg.
+24824\tbrěžny\t\tadj.
+6699\tbridko\t\tadv.
+2475\tbridky\t\tadj.
+6698\tbridky\t\tadj.
+21265\tbridž\tI\tm.sg.
+24826\tbriket\tF\tm.
+6702\tBritanske Děvičje Ostrovy\t\tm.pl.
+2470\tbritansky\t\tadj.
+34140\tbriti sę\t\tv.refl. ipf.
+5283\tbriti\t\tv.tr. ipf.
+2480\tbritva\t\tf.
+24828\tbrjuhaty\t\tadj.
+2477\tbrjuho\t\tn.
+36592\tbrjušny\t\tadj.
+1337\tbŕlog\t\tm.
+24831\tBrno\t\tn.sg.
+4772\tbrod\t\tm.
+24833\tbroditi\t\tv.intr. ipf.
+31789\tbroditi\t\tv.intr. ipf.
+17175\tbroj\t\tm.
+22626\tbrom\tI\tm.sg.
+16797\tbrȯnja\t\tf.
+6706\tbronza\tI\tf.
+36153\tbronzova doba\t\tf.
+6707\tbronzovy\tI\tadj.
+35183\tbrošura\tF\tf.
+2308\tbrȯv\t\tf.
+24837\tbrť\t\tf.
+24838\tbrtnik\t\tm.anim.
+17176\tbrukva\t\tf.
+24842\tbrus\t\tm.
+36810\tBruselj\tI\tm.
+24843\tbrusiti\t\tv.tr. ipf.
+6711\tbrusnica\t\tf.
+162\tbrutaľnosť\tI\tf.
+2483\tbrutaľny\tI\tadj.
+24845\tbruto\tI\tadv.
+24847\tbŕvno\t\tn.
+24849\tbryzgati\t\tv.tr. ipf.
+24850\tbryzgnųti\t\tv.tr. pf.
+36783\tbrza pomoć\t\tf.sg.
+23651\tbrzina\t\tf.
+5584\tbrzo\t\tadv.
+5583\tbrzy\t\tadj.
+17177\tbuba\t\tf.
+1802\tbųben\t\tm.
+33328\tbųblina\t\tf.
+2484\tbučati\t\tv.intr. ipf.
+223\tbuda\t\tf.
+19665\tBudapest\t\tm.sg.
+22979\tbųde/bųdųt\t\tv.aux. ipf.
+20360\tbudiľnik\t\tm.
+23511\tbudist\tI\tm.anim.
+22980\tbuditelj\t\tm.anim.
+34791\tbuditi sę\t\tv.tr. ipf.
+2485\tbuditi\t\tv.tr. ipf.
+23510\tbudizm\tI\tm.sg.
+14481\tbudka\t\tf.
+918\tbudovati\t\tv.tr. ipf.
+1847\tbųdųći\t\tadj.
+224\tbųdųćnosť\t\tf.sg.
+1968\tbudynȯk\t\tm.
+22972\tbudžet\tE\tm.
+36675\tbufer obměna\tE\tm.
+36674\tbufer\tE\tm.
+36676\tbuferna pamęť\t\tf.
+35103\tbufet\tF\tm.
+24860\tbuhati\t\tv.intr. ipf.
+24863\tbuhnųti\t\tv.intr. pf.
+24864\tbuhta\t\tf.
+6722\tbujno\t\tadv.
+6723\tbujnosť\t\tf.sg.
+24867\tbujny\t\tadj.
+2309\tbuk\t\tm.
+1325\tbuket\tF\tm.
+2486\tbukva\t\tf.
+16755\tbukvaľno\t\tadv.
+16754\tbukvaľny\t\tadj.
+24871\tbukvica\t\tf.
+4725\tBulgar, Bulgarin\t\tm.anim.
+1541\tBulgarija\t\tf.sg.
+17179\tbulgarizacija\t\tf.sg.
+6729\tBulgarka\t\tf.
+2482\tbulgarsky\t\tadj.
+36095\tbulj-bulj\t\tintj.
+24873\tbulka\t\tf.
+35245\tbulvar\tF\tm.
+31762\tbumerang\tI\tm.
+32996\tbunker\tI\tm.
+35033\tbunt\tD\tm.
+6732\tbuntovati sę\tD\tv.refl. ipf.
+226\tbuntovnik\tD\tm.anim.
+1801\tburiti\t\tv.tr. ipf.
+6736\tburja větra\t\tf.
+2451\tburja\t\tf.
+24876\tburjan\t\tm.
+6737\tbuŕlivy\t\tadj.
+24878\tbuŕny\t\tadj.
+16745\tbutylka\t\tf.
+1821\tby\t\tparticle
+24886\tbyček\t\tm.anim.
+24885\tbyčji\t\tadj.
+1791\tbyk\t\tm.anim.
+24887\tByk\t\tm.anim.
+17180\tbylina\t\tf.
+24889\tbylina\t\tf.
+6743\tbyly\t\tadj.
+1498\tbystro\t\tadv.
+3977\tbystrosť\t\tf.sg.
+1762\tbystry\t\tadj.
+24894\tbyt\t\tm.sg.
+35085\tbyti dȯlžen\t\tv.aux. ipf.
+6750\tByti ili ne byti? To jest pytańje\t\tphrase
+10343\tbyti ostråžny\t\tv.ipf.
+17182\tbyti podobny\t\tv.ipf.
+23728\tbyti prěhlåđeny\t\tv.ipf.
+2449\tbyti prinuđeny\t\tv.ipf.
+4190\tbyti sȯglåsny\t\tv.ipf.
+593\tbyti\t\tv.intr. ipf.
+24896\tbyti\t\tv.intr. ipf.
+160\tbyťje\t\tn.sg.
+6753\tbytosť\t\tf.
+14462\tbytosť\t\tf.
+17183\tbyvati\t\tv.intr. ipf.
+24900\tbyvol\t\tm.anim.
+2993\tbyvši\t\tadj.
+33361\tbzděti\t\tv.intr. ipf.
+33362\tbzdnųti\t\tv.intr. pf.
+5758\tcaŕ\t\tm.anim.
+17187\tcarica\t\tf.
+17188\tcarica\t\tf.
+35835\tCarigrad\t\tm.sg.
+35940\tcaŕsky\t\tadj.
+24903\tcaŕstvo\t\tn.
+24904\tcědilo\t\tn.
+2374\tcěditi\t\tv.tr. ipf.
+883\tcegla\t\tf.
+19666\tceglina\t\tf.
+2204\tcěliti\t\tv.intr. ipf.
+421\tcělj\t\tm.
+34996\tćelja\tI\tf.
+36353\tcěljeva grupa\t\tf.
+36358\tcěljevy język\t\tm.
+4391\tcělkom\t\tadv.
+3009\tcělkovito\t\tadv.
+4143\tcělkovity\t\tadj.
+36585\tcělo čislo\t\tn.
+32747\tcělo\t\tadv.
+34925\tcělodenny\t\tadj.
+34924\tcělodnevny\t\tadj.
+19667\tcělosť\t\tf.sg.
+6767\tcělovańje\t\tn.sg.
+6769\tcělovatelj\t\tm.anim.
+3010\tcělovati\t\tv.tr. ipf.
+1027\tcěly\t\tadj.
+3008\tcement\tI\tm.
+1568\tcěna\t\tf.
+24918\tcěniti\t\tv.tr. ipf.
+2281\tcěnnosť\t\tf.
+1409\tcěnny\t\tadj.
+23017\tcentigram\tI\tm.
+23021\tcentilitr\tI\tm.
+4422\tcentimetr\tI\tm.
+1263\tcentr\tI\tm.
+1706\tcentrala\tI\tf.
+23223\tcentraľna nervna sistema\tI\tf.sg.
+31748\tCentraľny Komitet\tI\tm.
+1727\tcentraľny\tI\tadj.
+2194\tcentrizm\tI\tm.sg.
+5296\tcenzura\tI\tf.sg.
+5297\tcenzurovati\tI\tv.tr. ipf.
+2193\tcěp\t\tm.
+4649\tcepelin\tI\tm.
+35692\tcěsaŕ\t\tm.anim.
+35693\tcěsaŕstvo\t\tn.
+32252\tCetińje\t\tn.sg.
+24921\tcěvka\t\tf.
+34775\tcibulica\t\tf.
+1543\tcibulja\t\tf.
+6784\tcibuljevity\t\tadj.
+14486\tcibuljevy\t\tadj.
+116\tcicka\t\tf.
+6786\tcicky\t\tf.pl.
+17210\tcifra\tI\tf.
+35119\tcigara\t\tf.
+460\tcigareta\tI\tf.
+32070\tcikl\tI\tm.
+32071\tcikličny\tI\tadj.
+22628\tcin\tI\tm.sg.
+22624\tcink\tI\tm.sg.
+6265\tcirk\tI\tm.
+24924\tcirkulacija\tI\tf.sg.
+24925\tcirkulj\t\tm.
+36390\tcirkumfleks\tI\tm.
+4955\tcitat\tI\tm.
+2999\tcitovati\tI\tv.tr. ipf.
+36832\tcitra\tI\tf.
+2998\tcivil\tI\tm.anim.
+23527\tcivilizacija\tI\tf.
+35749\tcivilizovany\tI\tadj.
+1879\tciviľny\tI\tadj.
+32266\tcmokati\t\tv.intr. ipf.
+35435\tcolj\t\tm.
+16928\tcrkȯv\t\tf.
+4386\tcrkȯvnoslovjansky\t\tadj.
+35168\tcrkȯvny\t\tadj.
+1707\tcrkva\t\tf.
+22748\tćuđezemec\t\tm.anim.
+25079\tćuđezemny\t\tadj.
+610\tćuđi\t\tadj.
+36629\tćuđi\t\tadj.
+3416\tćuđina\t\tf.sg.
+1182\tćuđinec\t\tm.anim.
+6928\tćuđinka\t\tf.
+31965\tcukina\t\tf.
+2243\tcukr\t\tm.sg.
+3838\tcukrka\t\tf.
+6103\tcunami\tI\tn.indecl.
+6794\tcvekla\t\tf.
+24929\tcvěliti\t\tv.intr. ipf.
+24937\tcvěsti\t\tv.intr. ipf.
+1720\tcvět\t\tm.
+14487\tcvět\t\tm.
+8792\tcvětati\t\tv.intr. ipf.
+8791\tcvětenj\tS\tm.sg.
+24933\tcvěteńje\t\tn.sg.
+35014\tcvětna kapusta\t\tf.
+8794\tcvětnųti\t\tv.intr. ipf.
+22985\tcvětny pyl\t\tm.
+24935\tcvětny\t\tadj.
+8793\tcvětųći\t\tadj.
+20852\tcviliti\t\tv.intr. ipf.
+35090\tcvŕček\t\tm.anim.
+33590\tcvŕkati\t\tv.intr. ipf.
+33591\tcvŕkot\t\tm.
+24939\tčad\t\tm.
+24941\tčaditi\t\tv.intr. ipf.
+1714\tčaj\t\tm.
+6796\tčajiljnja\t\tf.
+23472\tčajka\t\tf.
+23473\tčajka\t\tf.
+35626\tčajna lȯžička\t\tf.
+36256\tčajna vrěčka\t\tf.
+4792\tčajnik\t\tm.
+36255\tčajny paketik\t\tm.
+4883\tčao!\t\tintj.
+2372\tčaplja\t\tf.
+2212\tčar\t\tm.
+4831\tčaroděj\t\tm.anim.
+4830\tčarodějnica\t\tf.
+16870\tčarovati\t\tv.intr. ipf.
+6802\tčarovnica\t\tf.
+6805\tčarovnik\t\tm.anim.
+24953\tčarovny\t\tadj.
+24954\tčary\t\tm.pl.
+4270\tčas\t\tm.
+1278\tčasina\t\tf.
+33334\tčasom\t\tadv.
+17190\tčasoměr\t\tm.
+17191\tčasopis\t\tm.
+21266\tčasoslov\t\tm.
+23639\tčasova zona\t\tf.
+17073\tčasovańje\t\tn.sg.
+2165\tčasovnik\t\tm.
+23640\tčasovy pas\t\tm.
+29\tčasovy\t\tadj.
+1732\tčaša\t\tf.
+24961\tčaška\t\tf.
+35294\tčat\tE\tm.
+5921\tčečensky\t\tadj.
+24964\tčečetka\t\tf.
+2312\tČečnja\t\tf.sg.
+24942\tčędo\t\tn.
+4730\tČeh\t\tm.anim.
+2991\tČehija\t\tf.sg.
+17193\tčehoslovačsky\t\tadj.
+17194\tČehoslovakija\t\tf.sg.
+17195\tčehoslovakizm\t\tm.sg.
+3497\tček\t\tm.
+23319\tčekaljnja\t\tf.
+17196\tčekańje\t\tn.sg.
+3003\tčekati\t\tv.intr. ipf.
+23460\tčelesta\tI\tf.
+17197\tčeličny\t\tadj.
+17198\tčelik\t\tm.sg.
+24967\tčeljaď\t\tf.sg.
+6820\tčeljusť\t\tf.
+36026\tčelka\t\tf.
+24969\tčeľny\t\tadj.
+6821\tčelo\t\tn.
+24971\tčelo\t\tn.
+14491\tčem\t\tconj.
+23459\tčembalo\tI\tn.
+24973\tčemerica\t\tf.
+1705\tčempion\tE\tm.anim.
+2492\tčempionat\tE\tm.
+1194\tčemu\t\tadv.
+4034\tčemu-nebųď\t\tadv.
+1753\tčep\t\tm.
+24975\tčepec\t\tm.
+6825\tčerep\t\tm.
+2356\tčerešnja\t\tf.
+24985\tčesalo\t\tn.
+2227\tčesati\t\tv.tr. ipf.
+510\tčesnȯk\t\tm.sg.
+1730\tčęsť mȯlvy\t\tf.
+24993\tčęsť světa\t\tf.
+1731\tčęsť\t\tf.
+3033\tčesť\t\tf.
+19669\tčęstěje\t\tadv.
+6810\tčęsti mȯlvy\t\tf.pl.
+6839\tčęstica\t\tf.
+6840\tčęstično\t\tadv.
+17202\tčestigodny\t\tadj.
+32531\tčestiljubivy\t\tadj.
+6842\t#čestitati\t\tv.tr. ipf./pf.
+5944\tčestiti\t\tv.tr. ipf.
+4664\tčęstka\t\tf.
+22981\tčestnosť\t\tf.
+1551\tčestny\t\tadj.
+137\tčęsto\t\tadv.
+17208\tčęstota\t\tf.
+2273\tčęsty\t\tadj.
+36642\tČeška\t\tf.
+2417\tčešsky\t\tadj.
+16454\tčetveraky\t\tnum.diff.
+16427\tčetverčęta\t\tn.pl.
+16458\tčetverka\t\tnum.subst.
+16441\tčetverny\t\tnum.mult.
+16431\tčetvero\t\tnum.coll.
+5275\tčetvŕt\t\tm.
+6853\tčetvŕtina\t\tnum.fract.
+638\tčetvŕtȯk\t\tm.
+636\tčetvŕty\t\tnum.ord.
+2856\tčetyri\t\tnum.card.
+2857\tčetyridesęť, četyridesęti\t\tnum.card.
+19668\tčetyridesęty\t\tnum.ord.
+16448\tčetyrikråtno\t\tadv.
+1180\tčetyrinadsęť\t\tnum.card.
+23682\tčetyrinadsęty\t\tnum.ord.
+1022\tčetyrista, četyristo\t\tnum.card.
+15269\tčetyrivųgȯľnik\t\tm.
+15268\tčetyrokųtnik\t\tm.
+6254\tči\t\tconj.
+14495\tči\t\tparticle
+1179\tčij\t\tpron.poss.
+19601\tčijkoli\t\tpron.poss.
+14496\tčij-libo\t\tpron.poss.
+190\tčij-nebųď\t\tpron.poss.
+5759\tČile\t\tn.sg.
+6867\tČilijec\t\tm.anim.
+6868\tČilijka\t\tf.
+5760\tčilijsky\t\tadj.
+25011\tčim ... tym ...\t\tadv.
+17211\tčim raněje\t\tadv.
+17212\tčim skorěje\t\tadv.
+14497\tčimno\t\tadv.
+1594\tčin\t\tm.
+6872\tčinitelj\t\tm.
+906\tčiniti\t\tv.tr. ipf.
+6876\tčinovnica\t\tf.
+584\tčinovnik\t\tm.anim.
+6880\tčip\tE\tm.
+6879\tčips\tE\tm.
+25014\tčir\t\tm.
+33589\tčir\t\tm.
+17214\tčisliti\t\tv.tr. ipf.
+25015\tčisľny\t\tadj.
+590\tčislo\t\tn.
+17215\tčislo\t\tn.
+17074\tčislovnik\t\tm.
+25018\tčistina\t\tf.
+4465\tčistiti\t\tv.tr. ipf.
+25020\tčistosť\t\tf.sg.
+25021\tčistota\t\tf.sg.
+582\tčisty\t\tadj.
+4366\tčitaljnja\t\tf.
+4363\tčitatelj\t\tm.anim.
+35827\tčitateljnik\t\tm.
+6885\tčitati\t\tv.tr. ipf.
+17216\tčitkody\tE\tm.pl.
+25026\tčiž\t\tm.anim.
+14499\tčlanȯk\t\tm.
+640\tčlen\t\tm.anim.
+25028\tčlen\t\tm.
+25029\tčlen\t\tm.
+32620\tčlenistonogy\t\tm.anim.
+598\tčlenȯk\t\tm.
+599\tčlenstvo\t\tn.
+6261\tčlověčji\t\tadj.
+14500\tčlověčnosť\t\tn.sg.
+25031\tčlověčny\t\tadj.
+25032\tčlověčsky\t\tadj.
+600\tčlověčstvo\t\tn.sg.
+592\tčlověk\t\tm.anim.
+6894\tčlověkoljubec\t\tm.anim.
+36604\tčlověkoljubivy\t\tadj.
+6893\tčlověkoljubje\t\tn.sg.
+6892\tčlověk-pavųk\t\tm.anim.
+601\tčmelj\t\tm.anim.
+3499\tčokolada\tI\tf.
+25037\tčȯln\t\tm.
+2959\tčrěda\t\tf.
+25040\tčrěmha\t\tf.
+5299\tčrěp\t\tm.
+25045\tčrěvo\t\tn.
+4473\tčrěz\t\tprep.
+23336\tčrězměrno\t\tadv.
+22983\tčrězměrnosť\t\tf.sg.
+22984\tčrězměrny\t\tadj.
+4716\tčrka\t\tf.
+23508\tčrna dira\t\tf.
+1343\tČrna Gora\t\tf.sg.
+32943\tčrna vdova\t\tf.
+25048\tčrněti\t\tv.intr. ipf.
+17219\tčrnica\t\tf.
+25049\tčrnica\t\tf.
+6906\tčrnik\t\tm.anim.
+3695\tčrnilo\t\tn.
+25051\tčrniti\t\tv.tr. ipf.
+6908\tČrno morje\t\tn.sg.
+25052\tčrnobylj\t\tm.
+14504\tčrnoględnica\t\tf.
+14505\tčrnoględnik\t\tm.anim.
+6027\tčrnoględnosť\t\tf.sg.
+6026\tčrnoględny\t\tadj.
+349\tČrnogorjan, Črnogorjanin\t\tm.anim.
+348\tčrnogorsky\t\tadj.
+25053\tčrnota\t\tf.
+25054\tčrnuška\t\tf.
+520\tčrny\t\tadj.
+24978\tčrpak\t\tm.
+619\tčrpati\t\tv.tr. ipf.
+24981\tčrstvěti\t\tv.intr. ipf.
+24982\tčrstvy\t\tadj.
+24983\tčrt\t\tm.anim.
+696\tčrta\t\tf.
+3569\tčrtati\t\tv.tr. ipf.
+25058\tčrtež\t\tm.
+24984\tčrtov\t\tadj.
+345\tčrv\t\tm.anim.
+25060\tčrvec\t\tm.anim.
+19514\tČrvena Armija\t\tf.
+33403\tČrvena Kapučka\t\tf.
+6914\tčrvene fasolje\t\tf.pl.
+6915\tčrvenec\t\tm.anim.
+25061\tčrveněti\t\tv.intr. ipf.
+6916\tčrvenica\t\tf.
+6830\tčrvenj\tS\tm.sg.
+23662\tčrvenogrlka\t\tf.
+6919\tčrveny krvinȯk\t\tm.
+101\tčrveny\t\tadj.
+36530\tčrvilo\t\tn.
+25066\tčrvivy\t\tadj.
+2266\tčrvjak\t\tm.anim.
+25068\tčrvotočina\t\tf.
+17220\tčtiti\t\tv.tr. ipf.
+34620\tčto bolje\t\tadv.
+21268\tčto sę tyče\t\tprep.
+16762\tčto vyše\t\tadv.
+19670\tčto\t\tpron.int.
+19602\tčtokoli\t\tpron.indef.
+14502\tčto-libo\t\tpron.indef.
+1786\tčto-nebųď\t\tpron.indef.
+25070\tčub\t\tm.
+25071\tčubaty\t\tadj.
+25072\tčučati\t\tv.intr. ipf.
+4251\tčudak\tI\tm.anim.
+23677\tčudesny\t\tadj.
+5044\tčuditi sę\t\tv.refl. ipf.
+25073\tčuditi\t\tv.tr. ipf.
+17231\tčudno\t\tadv.
+17232\tčudny\t\tadj.
+25074\tčudny\t\tadj.
+1184\tčudo\t\tn.
+25077\tčudom\t\tadv.
+25078\tčudotvorec\t\tm.anim.
+19671\tčudovistny\t\tadj.
+608\tčudovišče\t\tn.
+36098\tčuma\t\tf.
+611\tčuti\t\tv.tr. ipf.
+6931\tčuťje\t\tn.
+6933\tčuťje\t\tn.
+6934\tčutlivo\t\tadv.
+4165\tčutlivosť\t\tf.sg.
+4164\tčutlivy\t\tadj.
+25083\tčutny\t\tadj.
+17223\tčuvańje\t\tn.sg.
+17224\tčuvańje\t\tn.sg.
+36570\tČuvašija\t\tf.sg.
+4909\tčuvašsky\t\tadj.
+17228\tčuvati sę\t\tv.refl. ipf.
+17226\tčuvati\t\tv.intr. ipf.
+17227\tčuvati\t\tv.intr. ipf.
+6938\tčuvstveno\t\tadv.
+6939\tčuvstveny\t\tadj.
+2896\tčuvstvo\t\tn.
+12869\tda by\t\tconj.
+2371\tda\t\tintj.
+17233\tda\t\tconj.
+17234\tda\t\tparticle
+25087\tdača\t\tf.
+25088\tdadaizm\tI\tm.sg.
+25090\tdagerotipija\tI\tf.
+3031\tDagestan\t\tm.sg.
+6945\tdakle\t\tadv.
+25092\tdaktylologija\tI\tf.sg.
+25093\tdaktyloskopija\tI\tf.sg.
+5219\tdaleko\t\tadv.
+35228\tdalekoględ\tS\tm.
+17236\tdalekoskok\t\tm.
+6950\tDaleky Iztok\t\tm.sg.
+4758\tDaleky Vȯzhod\t\tm.sg.
+612\tdaleky\t\tadj.
+25098\tdaleměr\t\tm.
+3566\tdalj\t\tm.
+1177\tdalje\t\tadv.
+25102\tdaljnji, daljny\t\tadj.
+3032\tdaljši\t\tadj.
+35907\tDalmatija\t\tf.sg.
+35908\tdalmatinsky\t\tadj.
+25103\tdaltonist\tI\tm.anim.
+25104\tdaltonizm\tI\tm.sg.
+17237\tdama\tI\tf.
+25105\tdama\tI\tf.
+25106\tdama\tI\tf.
+34966\tdamast\tI\tm.
+3548\tdane\t\tm.pl.
+1178\tDanija\t\tf.sg.
+5063\tdanina\t\tf.
+25111\tdanj\t\tf.
+25112\tdannik\t\tm.anim.
+14509\tdanȯk\t\tm.
+25113\tdansing\tE\tm.
+4427\tdansky\t\tadj.
+5697\tdany\t\tadj.
+36467\tdaoizm\tI\tm.
+4520\tdar krve\t\tm.
+6960\tdar\t\tm.
+17240\tdar\t\tm.
+4521\tdaritelj krve\t\tm.anim.
+4325\tdaritelj\t\tm.anim.
+4324\tdariti\t\tv.tr. ipf.
+17241\tdariti\t\t#v.tr.ipf
+25122\tdarmojed\t\tm.anim.
+36842\tdarmovo\t\tadv.
+25123\tdarmovy\t\tadj.
+6966\tdarovańje krve\t\tn.
+6965\tdarovańje\t\tn.
+6970\tdarovati\t\tv.tr. ipf.
+17242\tdarovati\t\tv.tr. ipf.
+17243\tdarovity\t\tadj.
+25127\tdarvinist\tI\tm.anim.
+25128\tdarvinizm\tI\tm.sg.
+1967\tdata\tI\tf.
+1966\tdateljnik, dateljny padež\t\tm.
+6973\tdati råbotų\t\tv.pf.
+22987\tdati zajem\t\tv.pf.
+664\tdati\t\tv.tr. pf.
+16930\tdativ\tI\tm.
+25133\tdatovati\tI\tv.tr. ipf./pf.
+36072\tdatulja\t\tf.
+15276\tdaunlodovańje\tE\tn.sg.
+15278\tdaunlodovati\tE\tv.tr. ipf.
+25134\tdavač\t\tm.anim.
+6979\tdavati råbotų\t\tv.ipf.
+22986\tdavati zajem\t\tv.ipf.
+2898\tdavati\t\tv.tr. ipf.
+25136\tdavec\t\tm.anim.
+25137\tdaviti\t\tv.tr. ipf.
+25139\tdavno\t\tadv.
+2861\tdavny\t\tadj.
+1982\tdaže\t\tadv.
+2623\tdbati\t\tv.intr. ipf.
+1236\tdebata\tI\tf.
+25144\tdebatovati\tI\tv.intr. ipf.
+25146\tdebelěti\t\tv.intr. ipf.
+25147\tdebely\t\tadj.
+25148\tdebet\tI\tm.
+25150\tdebjut\tF\tm.
+25151\tdebjutant\tF\tm.anim.
+25152\tdebjutovati\tF\tv.intr. ipf./pf.
+25153\tdeblokovati\tI\tv.intr. ipf./pf.
+25155\tdecembr\t\tm.sg.
+25158\tDěd Mråz\t\tm.anim.
+1436\tděd\t\tm.anim.
+7068\tdědȯk\t\tm.anim.
+25161\tdědov\t\tadj.
+25162\tdedukcija\tI\tf.
+25163\tdeduktivny\tI\tadj.
+25164\tdefekt\tI\tm.
+2907\tdefenestracija\tI\tf.sg.
+25165\tdeficit\tI\tm.
+2624\tdefinicija\tI\tf.
+4956\tdefiniovati\tI\tv.tr. ipf.
+23693\tdefinitivno\tI\tadv.
+23692\tdefinitivny\tI\tadj.
+288\tdefis\tI\tm.
+15281\tdefisovańje\tI\tn.sg.
+15282\tdefisovany\tI\tadj.
+15280\tdefisovati\tI\tv.tr. ipf.
+289\tdeformovati\tI\tv.tr. ipf.
+25167\tdegenerat\tI\tm.anim.
+25168\tdegenerativny\tI\tadj.
+25169\tdegenerovati\tI\tv.intr. ipf./pf.
+25170\tdegeť\t\tm.
+25171\tdegradacija\tI\tf.
+25172\tdegradovati\tI\tv.tr. ipf./pf.
+25173\tdegustacija\tI\tf.
+25175\tdegustovati\tI\tv.tr. ipf./pf.
+25089\tdęgylj\t\tm.
+6986\tdějajųći premier-ministr\tI\tm.anim.
+36057\tdějańja apostolov\t\tn.pl.
+6987\tdějańja\t\tn.pl.
+6988\tdějańje\t\tn.
+6990\tdějateljnosť\t\tf.sg.
+6992\tdějati sę\t\tv.refl. ipf.
+6991\tdějati\t\tv.tr. ipf.
+33034\tdekadent\tI\tm.anim.
+33035\tdekadentsky\tI\tadj.
+33036\tdekadentstvo\tI\tn.sg.
+751\tdekembr\tI\tm.sg.
+35941\tdeklamovati\tI\tv.tr. ipf./pf.
+216\tdeklaracija\tI\tf.
+35906\tdekolonizacija\tI\tf.sg.
+36123\tdekolt\tF\tm.
+23170\tdekoracija\tI\tf.
+296\tdękovati\t\tv.intr. ipf.
+3175\tdekret\tI\tm.
+4884\tdękujų\t\tintj.
+4899\tdękujųći\t\tprep.
+2612\tděl\t\tm.
+2613\tděl\t\tm.
+3771\tděl\t\tm.
+211\tdělati\t\tv.tr. ipf.
+25182\tdělba\t\tf.
+35170\tdelegacija\tI\tf.
+35171\tdelegat\tI\tm.anim.
+20361\tdelfin\tI\tm.anim.
+25184\tdelfińji\t\tadj.
+25185\tdelikatno\tI\tadv.
+25186\tdelikatnosť\tI\tf.sg.
+19672\tdelikatny\tI\tadj.
+15694\tdelikt\tI\tm.
+19673\tdeliričny\tI\tadj.
+36012\tděliti sę\t\tv.refl. ipf.
+1754\tděliti\t\tv.tr. ipf.
+3545\tděljeńje\t\tn.
+2616\tdělo\t\tn.
+17246\tdělo\t\tn.
+35514\tdělo\t\tn.
+699\tdeminutiv\tI\tm.
+760\tdemisija\tI\tf.
+35279\tdemografičny\tI\tadj.
+35280\tdemografija\tI\tf.sg.
+2878\tdemokracija\tI\tf.
+2621\tdemokrat\tI\tm.anim.
+2622\tdemokratičny\tI\tadj.
+772\tdemonstracija\tI\tf.
+623\tdemonstrativny\tI\tadj.
+6266\tdemonstrovati\tI\tv.tr. ipf.
+7016\tdenj oplakyvańja\t\tm.
+4053\tdenj poslě dnja\t\tadv.
+5199\tdenj rođeńja\t\tm.
+1845\tdenj\t\tm.
+25194\tdenny\t\tadj.
+17264\tdenonočje\t\tn.
+25195\tdentist\tI\tm.anim.
+36772\tdepartament\tF\tm.
+36773\tdepartament\tF\tm.
+2487\tdeportacija\tI\tf.
+398\tdeportovati\tI\tv.tr. ipf./pf.
+17248\tdepresija\tI\tf.
+36183\tdepresivny\tI\tadj.
+36184\tdeprimovany\tI\tadj.
+36182\tdeprimovati\tI\tv.tr. ipf./pf.
+36441\tdeprimujųći\tI\tadj.
+35469\tdesert\tI\tm.
+1517\tdesęť\t\tnum.card.
+16437\tdesętero\t\tnum.coll.
+2851\tdesętilěťje\t\tn.
+7024\tdesętina\t\tnum.fract.
+16464\tdesętka\t\tnum.subst.
+1515\tdesęty\t\tnum.ord.
+276\tdęsna\t\tf.
+25202\tdesnica\t\tf.
+32169\tdesnorųky\t\tadj.
+25203\tdesny\t\tadj.
+32478\tdespot\tI\tm.anim.
+1516\tdespotičny\tI\tadj.
+35734\tdestabilizacija\tI\tf.sg.
+35733\tdestabilizovati\tI\tv.tr. ipf./pf.
+17250\tdestalinizacija\tI\tf.sg.
+79\tdeševy\t\tadj.
+2619\tdetalj\tI\tm.
+19674\tdetaljevany\tI\tadj.
+298\tdětę\t\tn.
+35472\tdetektiv\tI\tm.anim.
+1308\tdętel\t\tm.anim.
+17251\tdętelina\t\tf.
+7033\tdětętko\t\tn.
+16731\tděti sę\t\tv.refl. ipf.
+1191\tděti\t\tv.tr. ipf.
+4832\tděti\t\tf.pl.
+7035\tdětinsko\t\tadv.
+4836\tdětinskosť\t\tf.sg.
+4834\tdětinsky\t\tadj.
+4833\tdětinstvo\t\tn.sg.
+35828\tdetonator\tI\tm.
+4835\tdětsky\t\tadj.
+25212\tdětstvo\t\tn.sg.
+16414\tděva\t\tf.
+25213\tDěva\t\tf.
+25215\tdevalvacija\tI\tf.
+16413\tděvčę\t\tn.
+300\tděvčina\t\tf.
+5959\tděvėc\t\tm.anim.
+299\tděveŕ\t\tm.anim.
+2620\tdevęť\t\tnum.card.
+2181\tdevęťdesęt\t\tnum.card.
+23689\tdevęťdesęty\t\tnum.ord.
+16436\tdevętero\t\tnum.coll.
+16404\tdevętina\t\tnum.fract.
+16463\tdevętka\t\tnum.subst.
+886\tdevętnadsęť\t\tnum.card.
+23685\tdevętnadsęty\t\tnum.ord.
+1298\tdevęťsȯt, devęťsto\t\tnum.card.
+1922\tdevęty\t\tnum.ord.
+7069\tDěvica Marija\t\tf.sg.
+5956\tděvica\t\tf.
+5960\tDěvičje Ostrovy\t\tm.pl.
+7053\tděvičji\t\tadj.
+5958\tděvičstvo\t\tn.sg.
+25230\tdeviz\tI\tm.
+25231\tděvka\t\tf.
+25233\tdevon\tI\tm.
+25234\tděvstvo\t\tn.sg.
+25238\tdezerter\tI\tm.anim.
+25239\tdezertovati\tI\tv.intr. ipf./pf.
+25240\tdezinfekcija\tI\tf.sg.
+25241\tdezinfikovati\tI\tv.tr. ipf./pf.
+19675\tdezinformacija\tI\tf.
+25243\tdezinsekcija\tI\tf.sg.
+25244\tděža\t\tf.
+25246\tdežurny\tF\tadj.
+31822\tdežurstvo\tF\tn.
+32111\tdiagnostičny\tI\tadj.
+35672\tdiagnostika\tI\tf.sg.
+32109\tdiagnoza\tI\tf.
+35795\tdiagram\tI\tm.
+35943\tdiahroničny\tI\tadj.
+305\tdiakon\tI\tm.anim.
+17252\tdiakritičny znak\tI\tm.
+15807\tdialekt\tI\tm.
+35942\tdialektičny\t\tadj.
+56\tdialog\tI\tm.
+17253\tdiamant\tI\tm.
+25248\tdiamantovy\tI\tadj.
+1591\tdiametr\tI\tm.
+34934\tdiapozitiv\tI\tm.
+31836\tdiareja\tI\tf.sg.
+35243\tdiaspora\tI\tf.
+36831\tdiatoničny\tI\tadj.
+2975\tdiavȯl\t\tm.anim.
+35991\tdiavȯľsko\t\tadv.
+35577\tdieta\tI\tf.
+16931\tdigitaľny\tI\tadj.
+35258\tdigraf\tI\tm.
+36132\tdihotomija\tI\tf.
+14521\tdiko\t\tadv.
+21270\tdikobraz\t\tm.anim.
+14522\tdikosť\t\tf.sg.
+3182\tdiktator\tI\tm.anim.
+23533\tdiktatura\tI\tf.
+33140\tdiktovati\tI\tv.tr. ipf./pf.
+15296\tdiky labęď\t\tm.anim.
+15297\tdiky mak\t\tm.
+14520\tdiky\t\tadj.
+34846\tdilema\tI\tf.
+35622\tdiler\tI\tm.anim.
+22995\tdinamičny\tI\tadj.
+22996\tdinamika\tI\tf.sg.
+34762\tdinamit\tI\tm.sg.
+34591\tdinamo\tI\tn.
+35873\tdinar\tI\tm.
+1735\tdinastija\tI\tf.
+32476\tdinozavr\tI\tm.anim.
+23534\tdioda\tI\tf.
+36634\tdiplodok\tI\tm.
+35628\tdiplom\tI\tm.
+23535\tdiplomacija, diplomatija\tI\tf.
+275\tdiplomat\tI\tm.anim.
+382\tdiplomatičny\tI\tadj.
+23507\tdira\t\tf.
+25467\tdiravy\t\tadj.
+739\tdirektiva\tI\tf.
+272\tdirektor\tI\tm.anim.
+23509\tdirigent\tI\tm.anim.
+36034\tdirkovač\t\tm.
+6104\tdisciplina\tI\tf.
+35739\tdisertacija\tI\tf.
+35510\tdiskreditovati\tI\tv.tr. ipf./pf.
+36170\tdiskretny\tI\tadj.
+32602\tdiskriminacija\tI\tf.sg.
+32603\tdiskriminovati\tI\tv.intr. ipf./pf.
+2488\tdiskusija\tI\tf.
+15818\tdiskusijny\tI\tadj.
+301\tdiskutovati\tI\tv.intr. ipf.
+35296\tdiskvalifikacija\tI\tf.
+35295\tdiskvalifikovati\tI\tv.tr. ipf./pf.
+1101\tdisplej\tE\tm.
+35944\tdistancevati sę\tI\tv.refl. ipf./pf.
+304\tdistribucija\tI\tf.
+25252\tdivan\tI\tm.
+25253\tdivina\t\tf.sg.
+25254\tdiviti\t\tv.tr. ipf.
+7063\tdivnějši\t\tadj.
+3531\tdivny\t\tadj.
+3351\tdivo\t\tn.
+14523\tdivo\t\tadv.
+14528\tdivosť\t\tf.sg.
+14525\tdivy\t\tadj.
+36173\tdizajn\tE\tm.
+32466\tdizelj\tI\tm.sg.
+32467\tdizeľny motor\tI\tm.
+2489\tdlånj\t\tf.
+25259\tdlåto\t\tn.
+7071\tdlja uspěha!\t\tintj.
+1557\tdlja\t\tprep.
+21271\tdnem\t\tadv.
+36885\tDněpr\t\tm.sg.
+5288\tdneś\t\tadv.
+36886\tDněstr\t\tm.sg.
+17256\tdnešnje\t\tadv.
+17254\tdnešnji, dnešny\t\tadj.
+7077\tdnevnica\t\tf.
+17257\tdnevnik\t\tm.
+25265\tdnevny\t\tadj.
+17259\tdniti sę\t\tv.refl. ipf.
+2490\tdno\t\tn.
+7082\tdo časa\t\tadv.
+7083\tdo dneś\t\tadv.
+7085\tdo dolu\t\tadv.
+17260\tdo doma\t\tadv.
+17261\tdo gory\t\tadv.
+4879\tdo viděńja!\t\tintj.
+2134\tdo\t\tprep.
+17263\tdoba\t\tf.
+21272\tdobaviti\t\tv.tr. pf.
+21273\tdobavjati\t\tv.tr. ipf.
+25269\tdoběgati do\t\tv.intr. ipf.
+7105\tDobra noć!\t\tintj.
+7091\tdobra volja\t\tf.
+25273\tdobrěti\t\tv.intr. ipf.
+14291\tdobro informovany\tI\tadj.
+7095\tDobro jutro!\t\tintj.
+7096\tdobro nastrojeńje\t\tn.
+7097\tdobro obdarjeny\t\tadj.
+7098\tdobro orųdovany\t\tadj.
+15131\tdobro osvědomjeny\t\tadj.
+16276\tDobro utro!\t\tintj.
+2491\tdobro\t\tadv.
+17268\tdobro\t\tn.
+19481\tdobrobyt\t\tm.sg.
+17273\tdobročinnosť\t\tf.sg.
+17275\tdobročinstvo\t\tn.
+25274\tdobroděj\t\tm.anim.
+4878\tDobrodošli!\t\tintj.
+7101\tdobrodušny\t\tadj.
+32465\tdobronaměrny\t\tadj.
+5870\tdobropoględny\t\tadj.
+4410\tdobrosť\t\tf.sg.
+25275\tdobrota\t\tf.sg.
+25276\tdobrovoljec\t\tm.anim.
+17277\tdobrovoljny\t\tadj.
+16277\tDobry denj!\t\tintj.
+7106\tDobry večer!\t\tintj.
+1144\tdobry\t\tadj.
+35371\tdobyti ponovno\t\tv.tr. pf.
+3192\tdobyti\t\tv.tr. pf.
+7110\tdobyti\t\tv.tr. pf.
+1145\tdobytȯk\t\tm.
+22988\tdobyvatelj\t\tm.anim.
+35370\tdobyvati ponovno\t\tv.tr. ipf.
+3191\tdobyvati\t\tv.tr. ipf.
+7113\tdobyvati\t\tv.tr. ipf.
+1084\tdȯćera\t\tf.
+7117\tdȯćerka\t\tf.
+7119\tdȯćerska ljubȯv\t\tf.
+6023\tdȯćersky\t\tadj.
+35250\tdȯći\t\tf.
+7114\tdočasny\t\tadj.
+311\tdodati\t\tv.tr. pf.
+7124\tdodati\t\tv.tr. pf.
+36195\tdodatno\t\tadv.
+36196\tdodatny\t\tadj.
+35191\tdodatȯčno\t\tadv.
+7126\tdodatȯčny\t\tadj.
+4088\tdodatȯk\t\tm.
+4089\tdodatȯk\t\tm.
+7129\tdodava\t\tf.
+1704\tdodavati\t\tv.tr. ipf.
+7133\tdodavati\t\tv.tr. ipf.
+35706\tdodneś\t\tadv.
+35222\tdodo\tI\tm.anim.
+25287\tdoganjati\t\tv.tr. ipf.
+25285\tdogarjati\t\tv.tr. ipf.
+7135\t#doględati\t\tv.tr. ipf.
+7138\tdoględěti\t\tv.tr. pf.
+25286\tdognati\t\tv.tr. pf.
+14534\tdogoditi sę\t\tv.refl. pf.
+31826\tdogorěti\t\tv.tr. pf.
+5534\tdogovarjati sę\t\tv.refl. ipf.
+2899\tdogovarjati\t\tv.tr. ipf.
+125\tdogovor\t\tm.
+583\tdogovor\t\tm.
+4192\tdogovoriti sę\t\tv.refl. pf.
+655\tdogovoriti\t\tv.tr. pf.
+35158\tdogovorny\t\tadj.
+17283\tdȯhnųti\t\tv.intr. pf.
+17284\tdohod\t\tm.
+5344\tdohoditi\t\tv.intr. ipf.
+5345\tdojdti\t\tv.intr. pf.
+5347\tdojehati\t\tv.intr. pf.
+17285\tdojem\t\tm.
+5349\tdojezd\t\tm.
+5348\tdoježđati\t\tv.intr. ipf.
+1181\tdojiti\t\tv.tr. ipf.
+31810\tdok\tI\tm.
+2041\tdokaz\t\tm.
+7161\tdokazati\t\tv.tr. pf.
+25294\tdokazati\t\tv.tr. pf.
+7162\tdokazyvati\t\tv.tr. ipf.
+19676\tdokladati\t\tv.tr. ipf.
+19536\tdokolě\t\tadv.
+19539\tdokolě\t\tconj.
+17286\tdokonati\t\tv.tr. pf.
+7163\tdokonce\t\tadv.
+7164\tdokončeńje\t\tn.
+15207\tdokončeny\t\tadj.
+7165\tdokončiti\t\tv.tr. pf.
+17288\tdokonyvati\t\tv.tr. ipf.
+2042\tdoktor\tI\tm.anim.
+36424\tdoktor\tI\tm.anim.
+35807\tdoktorat\tI\tm.
+2040\tdoktrina\tI\tf.
+7166\tdokųd\t\tadv.
+2029\tdokument\tI\tm.
+35270\tdokumentacija\tI\tf.sg.
+35176\tdokumentaľny film\tI\tm.
+35297\tdokumentovati\tI\tv.tr. ipf./pf.
+16480\tdol\t\tm.
+2933\tdolar\tI\tm.
+1593\tdȯlbti\t\tv.tr. ipf.
+2030\tdȯlg\t\tm.
+20363\tdȯlgo\t\tadv.
+19486\tdȯlgočasiti sę\t\tv.refl. ipf.
+19485\tdȯlgočasiti\t\tv.tr. ipf.
+19482\tdȯlgočaśje\t\tn.sg.
+19487\tdȯlgočasnica\t\tf.
+19488\tdȯlgočasnik\t\tm.anim.
+19490\tdȯlgočasny\t\tadj.
+19489\tdȯlgočašeny\t\tadj.
+17299\tdȯlgodenstvo\t\tn.
+33038\tdȯlgohvosty papugaj\t\tm.anim.
+33037\tdȯlgohvosty\t\tadj.
+7172\tdȯlgosť žiťja\t\tf.
+3406\tdȯlgosť\t\tf.
+25308\tdȯlgota\t\tf.
+35308\tdȯlgotrajny\t\tadj.
+7174\tdȯlgověčnosť\t\tf.sg.
+7175\tdȯlgověčny\t\tadj.
+17301\tdȯlgoživeny\t\tadj.
+17302\tdȯlgoživosť\t\tf.sg.
+17303\tdȯlgoživostno råziskyvańje\t\tn.
+17304\tdȯlgoživostny\t\tadj.
+3051\tdȯlgy\t\tadj.
+2883\tdolina\t\tf.
+35488\tdoľno oblěčeńje\t\tn.sg.
+185\tdoľnolužičsky\t\tadj.
+19677\tdoľnosŕbsky\t\tadj.
+19678\tdoľny\t\tadj.
+20364\tdoložiti\t\tv.tr. pf.
+7179\tdȯlžen\t\tadj.
+31743\tdȯlžina valy\t\tf.
+23656\tdȯlžina vȯlny\t\tf.
+23657\tdȯlžina\t\tf.
+25312\tdȯlžiti\t\tv.tr. ipf.
+25313\tdȯlžnik\t\tm.anim.
+3699\tdȯlžnosť\t\tf.
+3573\tdȯlžny\t\tadj.
+6161\tdȯlžny\t\tadj.
+3162\tdom\t\tm.
+16825\tdoma\t\tadv.
+36433\tdomašnja gospodynja\t\tf.
+23194\tdomašnje životno\t\tn.
+17311\tdomašnji spor\t\tm.
+23195\tdomašnji zvěŕ\t\tm.anim.
+17305\tdomašnji, domašny\t\tadj.
+7186\tdomče\t\tn.
+36356\tdomen\tI\tm.
+36357\tdomenno imę\tI\tn.
+20365\tdoměška\t\tf.
+35172\tdominacija\tI\tf.sg.
+36109\tdominanta\tI\tf.
+22455\tDominikanska Republika\t\tf.sg.
+694\tdominovati\tI\tv.tr. ipf.
+17308\tdomněvati\t\tv.tr. ipf.
+17310\tdomorodny\t\tadj.
+21274\tdomorodny\t\tadj.
+25318\tdomosěd\t\tm.anim.
+16826\tdomov\t\tadv.
+17312\tdomovina\t\tf.
+17313\tdomovy arešt\tI\tm.sg.
+25319\tdomovy\t\tadj.
+20366\tdomysl\t\tm.
+20369\tdomysliti sę\t\tv.refl. pf.
+20368\tdomysljati sę\t\tv.refl. ipf.
+20370\tdomysľny\t\tadj.
+3813\tdonesti\t\tv.tr. pf.
+4275\tdonositelj\t\tm.anim.
+20372\tdonositelj\t\tm.anim.
+3691\tdonositi\t\tv.tr. ipf.
+7198\tdopis\t\tm.
+6065\tdopisnik\t\tm.anim.
+6062\tdopisyvańje\t\tn.
+6064\tdopisyvatelj\t\tm.anim.
+6061\tdopisyvati\t\tv.tr. ipf.
+6208\tdopoka ne\t\tconj.
+6207\tdopoka\t\tconj.
+36242\tdopȯlniteljny\t\tadj.
+7204\tdopȯlniti\t\tv.tr. pf.
+7206\tdopȯlnjati\t\tv.tr. ipf.
+7205\tdopȯlnjeńje\t\tn.
+34890\tdopȯlnjeńje\t\tn.
+17317\tdopȯlnjeny\t\tadj.
+34868\tdopȯlzati\t\tv.intr. ipf.
+34869\tdopȯlzti\t\tv.intr. pf.
+17320\tdopŕva\t\tadv.
+36755\tdopustimy\t\tadj.
+7207\tdopustiti\t\tv.tr. pf.
+20862\tdopustiti\t\tv.tr. pf.
+7208\tdopušćati\t\tv.tr. ipf.
+20859\tdopušćati\t\tv.tr. ipf.
+7211\tdorastati\t\tv.intr. ipf.
+16416\tdoråsti\t\tv.intr. pf.
+23050\tdoråstla\t\tf.
+7212\tdoråstlosť\t\tf.sg.
+15304\tdoråstly\t\tadj.
+22992\tdoråstly\t\tm.anim.
+7213\tdoråzuměti sę\t\tv.refl. pf.
+7214\tdoråzuměvańje\t\tn.sg.
+7215\tdoråzuměvati sę\t\tv.refl. ipf.
+7216\tdorųčati\t\tv.tr. ipf.
+7218\tdorųčiti\t\tv.tr. pf.
+17322\tdosada\t\tf.
+17326\tdosaditi sę\t\tv.refl. pf.
+17325\tdosaditi\t\tv.tr. pf.
+21276\tdosaditi\t\tv.tr. pf.
+17327\tdosadny\t\tadj.
+17328\tdosadny\t\tadj.
+21277\tdosadny\t\tadj.
+17324\tdosađati sę\t\tv.refl. ipf.
+17323\tdosađati\t\tv.tr. ipf.
+21275\tdosađati\t\tv.tr. ipf.
+7221\tdosęgajemy\t\tadj.
+1686\tdosęgati\t\tv.tr. ipf.
+5104\tdosęgneńje\t\tn.
+1059\tdosęgnųti\t\tv.tr. pf.
+7228\tdosęžeńje\t\tn.
+7222\tdosęženy\t\tadj.
+2039\tdȯska\t\tf.
+4208\tdoskonaliti\t\tv.tr. ipf.
+4210\tdoskonalosť\t\tf.sg.
+4207\tdoskonaly\t\tadj.
+17330\tdoslědno\t\tadv.
+35162\tdoslědnosť\t\tf.sg.
+17331\tdoslědny\t\tadj.
+16753\tdoslovno\t\tadv.
+16752\tdoslovny\t\tadj.
+423\tdosť\t\tadv.
+1900\tdostati\t\tv.tr. pf.
+7241\tdostati\t\tv.tr. pf.
+7242\tdostatȯčno\t\tadv.
+7244\tdostatȯčnosť\t\tf.sg.
+2510\tdostatȯčny\t\tadj.
+3791\tdostatȯk\t\tm.
+21716\tdostatȯk\t\tm.
+7248\tdostava\t\tf.
+2511\tdostavati\t\tv.tr. ipf.
+7266\tdostavati\t\tv.tr. ipf.
+21715\tdostavati\t\tv.tr. ipf.
+7253\tdostavitelj internetnej služby\t\tm.anim.
+7251\tdostavitelj\t\tm.anim.
+3105\tdostaviti\t\tv.tr. pf.
+21727\tdostaviti\t\tv.tr. pf.
+20\tdostavjati\t\tv.tr. ipf.
+21726\tdostavjati\t\tv.tr. ipf.
+23420\tdostavka i popytka\t\tphrase
+5577\tdostavka\t\tf.
+21853\tdostigati\t\tv.tr. ipf.
+21855\tdostigati\t\tv.tr. ipf.
+21854\tdostignųti\t\tv.tr. pf.
+21856\tdostignųti\t\tv.tr. pf.
+21721\tdostojenstvo\t\tn.
+21722\tdostojenstvo\t\tn.
+21725\tdostojnik\t\tm.anim.
+484\tdostojnosť\t\tf.sg.
+3057\tdostojny\t\tadj.
+3842\tdostojny\t\tadj.
+21719\tdostojny\t\tadj.
+21720\tdostojny\t\tadj.
+17334\tdostųp\t\tm.
+6045\tdostųpnosť\t\tf.sg.
+3054\tdostųpny\t\tadj.
+7258\tdostųpny\t\tadj.
+25345\tdosyta\t\tadv.
+25344\tdȯščeny\t\tadj.
+22119\tdotknųti sę\t\tv.refl. pf.
+481\tdotknųti\t\tv.tr. pf.
+19622\tdotolě\t\tadv.
+465\tdotųd\t\tadv.
+22120\tdotykati sę\t\tv.refl. ipf.
+1146\tdotykati\t\tv.tr. ipf.
+21280\tdovědati sę\t\tv.refl. ipf.
+21283\tdověděti sę\t\tv.refl. pf.
+36845\tdověriti sę\t\tv.refl. pf.
+3844\tdověriti\t\tv.tr. pf.
+36844\tdověrjati sę\t\tv.refl. ipf.
+3843\tdověrjati\t\tv.tr. ipf.
+36843\tdověrjati\t\tv.intr. ipf.
+23982\tdověŕje\t\tn.sg.
+7271\tdověrjeńje\t\tn.sg.
+22325\tdověrny\t\tadj.
+35918\tdovesti do/k\t\tv.tr. pf.
+7274\tdovezti\t\tv.tr. pf.
+22372\tdovnųtra\t\tprep.
+22373\tdovnųtra\t\tadv.
+3310\tdovod\t\tm.
+22249\tdovod\t\tm.
+35917\tdovoditi do/k\t\tv.tr. ipf.
+7276\tdovoljno\t\tadv.
+25348\tdovoljny\t\tadj.
+7277\tdovoz\t\tm.
+22414\tdovoz\t\tm.
+7278\tdovoziti\t\tv.tr. ipf.
+7279\tdovoznik\t\tm.anim.
+22566\tdovŕšati\t\tv.tr. ipf.
+35298\tdovŕšenosť\t\tf.sg.
+35289\tdovŕšeny\t\tadj.
+22567\tdovŕšiti\t\tv.tr. pf.
+14539\tdozad\t\tadv.
+22891\tdozor\t\tm.
+4115\tdozrěly\t\tadj.
+14301\tdozrěno vino\t\tn.
+14302\tdozrěny\t\tadj.
+4113\tdozrěti\t\tv.intr. pf.
+4114\tdozrěvati\t\tv.intr. ipf.
+17338\tdozvaljaje sę\t\tphrase
+435\tdozvaljati\t\tv.tr. ipf.
+7283\tdozvolimy\t\tadj.
+414\tdozvoliti\t\tv.tr. pf.
+32670\tdozvoljeńje\t\tn.
+7287\tdozvoljeny\t\tadj.
+1902\tdȯžď\t\tm.
+35032\tdȯžďevy črvjak\t\tm.anim.
+25352\tdȯžďevy\t\tadj.
+7291\tdȯžditi\t\tv.intr. ipf.
+25355\tdȯždlivy\t\tadj.
+7292\tdȯždnik\t\tm.
+4486\tdožiti\t\tv.tr. pf.
+3719\tdožitny\t\tadj.
+17335\tdoživeti\t\tv.tr. ipf.
+17339\tdrabina\t\tf.
+419\tdråga\t\tf.
+35839\tdrågocěnnosť\t\tf.sg.
+23995\tdrågocěnny\t\tadj.
+35042\tdrågoukazatelj\t\tm.
+432\tdrågy\t\tadj.
+36362\tdrågy\t\tadj.
+20373\tdrakon\tI\tm.anim.
+23694\tdrama\tI\tf.
+36340\tdramatično\tI\tadv.
+1903\tdramatičny\tI\tadj.
+35790\tdramaturgija\tI\tf.
+436\tdrapati\t\tv.tr. ipf.
+442\tdrapnųti\t\tv.tr. pf.
+440\tdrastičny\tI\tadj.
+23220\tdražlivy\t\tadj.
+25360\tdražniti\t\tv.tr. ipf.
+35036\tdråžny znak\t\tm.
+35037\tdråžny\t\tadj.
+2513\tdrěmati\t\tv.intr. ipf.
+31832\tdrěmlivosť\t\tf.sg.
+31831\tdrěmlivy\t\tadj.
+449\tdrěmnųti\t\tv.intr. pf.
+25362\tdrěmota\t\tf.
+25363\tdrěn\t\tm.
+36112\tdresura\tI\tf.
+33986\tdreti grlo\t\tphrase
+1529\tdreti\t\tv.tr. ipf.
+7307\tdrěvěny dom\t\tm.
+23455\tdrěvěny dyhovy instrument\t\tm.
+2512\tdrěvěny\t\tadj.
+35197\tdrěvny vųgȯlj\t\tm.
+7308\tdrěvny\t\tadj.
+25368\tdrěvny\t\tadj.
+2137\tdrěvo\t\tn.
+5292\tdrěvo\t\tn.
+7312\tdrěvorěžeńje\t\tn.sg.
+17340\tdrěvorųb\t\tm.anim.
+7314\tdrgańje\t\tn.sg.
+14540\tdrgati\t\tv.intr. ipf.
+34661\tdrgnųti\t\tv.intr. pf.
+7318\tdŕkańje\t\tn.sg.
+4693\tdŕkati\t\tv.intr. ipf.
+7319\tdŕkatnik\t\tm.anim.
+25371\tdrn\t\tm.
+36415\tdrob\t\tm.
+25374\tdrobiti\t\tv.tr. ipf.
+36062\tdrobjenec\t\tm.
+7320\tdrobne\t\tm.pl.
+25375\tdrobny\t\tadj.
+25376\tdropja\t\tf.
+16423\tdrozd\t\tm.anim.
+1603\tdrožđe\t\tf.pl.
+14542\tdrug\t\tm.anim.
+7328\tdrugar\t\tm.anim.
+17342\tdrugorędny\t\tadj.
+784\tdrugy\t\tnum.ord.
+5076\tdrugy\t\tadj.
+7331\tdružba\t\tf.
+25384\tdružba\t\tm.anim.
+25385\tdružica\t\tf.
+5882\tdružina\t\tf.
+7333\tdružiti sę\t\tv.refl. ipf.
+25388\tdružka\t\tf.
+7336\tdružny\t\tadj.
+25389\tdružny\t\tadj.
+7337\tdružstvo\t\tn.
+25392\tdrva\t\tn.pl.
+17341\tdrvosěk\t\tm.anim.
+35027\tdŕzati\t\tv.intr. ipf.
+25395\tdŕzky\t\tadj.
+25396\tdŕznųti\t\tv.intr. pf.
+25397\tdŕzosť\t\tf.sg.
+5231\tdŕžak\t\tm.
+25398\tdržalo\t\tn.
+6185\tdŕžati glådovkų\t\tv.ipf.
+17344\tdŕžati sę něčego\t\tv.refl. ipf.
+2617\tdŕžati\t\tv.tr. ipf.
+25399\tdržati\t\tv.intr. ipf.
+1756\tdŕžava\t\tf.
+17346\tdŕžavnik\t\tm.anim.
+35173\tdŕžavnosť\t\tf.sg.
+6268\tdŕžavny\t\tadj.
+7343\tdŕžka\t\tf.
+451\tdųb\t\tm.
+25404\tdųbiti\t\tv.tr. ipf.
+7345\tdubliti\tF\tv.tr. ipf.
+14544\tdubljeńje\tF\tn.
+25405\tdųbovy\t\tadj.
+25407\tduda\t\tf.
+25408\tdudaŕ\t\tm.anim.
+17347\tdudy\t\tf.pl.
+36091\tduel\tI\tm.
+292\tdųga\t\tf.
+434\tduh\t\tm.anim.
+17348\tduh\t\tm.
+6198\tduhovenstvo\t\tn.sg.
+6197\tduhovnik\t\tm.anim.
+284\tduhovny\t\tadj.
+2520\tdumati\t\tv.tr. ipf.
+23532\tDunaj\t\tm.sg.
+25416\tdųnųti\t\tv.intr. pf.
+1655\tdupa\t\tf.
+36513\tdupja\t\tf.
+35291\tduplikat\tI\tm.
+36512\tduplo\t\tn.
+25424\tdurenj\t\tm.anim.
+34192\tdurěti\t\tv.intr. ipf.
+14546\tdurno\t\tadv.
+14547\tdurnosť\t\tf.
+2521\tdurny\t\tadj.
+34087\tduš\tF\tm.
+703\tduša\t\tf.
+7357\tdušeńje\t\tn.sg.
+17349\tduševny\t\tadj.
+2543\tdušiti\t\tv.tr. ipf.
+7358\tdušlivy\t\tadj.
+7359\tdušny\t\tadj.
+683\tdųti\t\tv.tr. ipf.
+5233\tduty\t\tadj.
+7364\tduzina\t\tf.
+14548\tduže\t\tadv.
+4459\tduži\t\tadj.
+457\tdva\t\tnum.card.
+458\tdvadesęť, dvadesęti\t\tnum.card.
+19681\tdvadesęty\t\tnum.ord.
+2515\tdvanadsęť\t\tnum.card.
+23680\tdvanadsęty\t\tnum.ord.
+2964\tdvasto\t\tnum.card.
+7369\tdvě tretiny\t\tnum.fract.
+2929\tdveri\t\tf.pl.
+7393\tdveŕnik\t\tm.anim.
+23678\tdvěstě\t\tnum.card.
+469\tdvigati sę\t\tv.refl. ipf.
+468\tdvigati\t\tv.tr. ipf.
+471\tdvignųti\t\tv.tr. pf.
+3180\tdvižeńje\t\tn.
+36092\tdvoboj\t\tm.
+16452\tdvojaky\t\tnum.diff.
+17355\tdvojce toliko\t\tadv.
+16426\tdvojčany\t\tadj.
+15306\tdvojčę\t\tn.
+7402\tdvojčęta\t\tn.pl.
+472\tdvoje\t\tnum.coll.
+19682\tdvojina\t\tf.
+25443\tdvojiti\t\tv.tr. ipf.
+7414\tdvojka\t\tnum.subst.
+25445\tdvojka\t\tf.
+7415\t#dvojna komnata\t\tf.
+17357\tdvojnik\t\tm.anim.
+7417\tdvojno\t\tadv.
+7412\tdvojny agent\t\tm.anim.
+14552\tdvojny standard\t\tm.
+476\tdvojny\t\tadj.
+15310\tdvojostry meč\t\tm.
+15309\tdvojostry\t\tadj.
+16492\tdvojstveno čislo\t\tn.
+22118\tdvojtočka\t\tf.
+5212\tdvor\t\tm.
+25452\tdvor\t\tm.
+16810\tdvorjan, dvorjanin\t\tm.anim.
+16811\tdvorjansky\t\tadj.
+7421\tdvorjanstvo\t\tn.sg.
+16763\tdvucifreny\t\tadj.
+14549\tdvuetapovy\tI\tadj.
+14550\tdvuetažny avtobus\tI\tm.
+7376\tdvuetažny\tF\tadj.
+17358\tdvuglåska\t\tf.
+25440\tdvuglåvy\t\tadj.
+22994\tdvujęzyčnosť\t\tf.sg.
+22993\tdvujęzyčny\t\tadj.
+7370\tdvukolesny\t\tadj.
+1800\tdvukråtno\t\tadv.
+7410\tdvukråtny\t\tadj.
+7380\tdvulicevy\t\tadj.
+17359\tdvuličny\t\tadj.
+7381\tdvumotorovy\t\tadj.
+17361\tdvupěv\t\tm.
+17362\tdvusmysľnosť\t\tf.
+17363\tdvusmysľny\t\tadj.
+2882\tdvustrånny\t\tadj.
+7371\tdvustųpny\t\tadj.
+7389\tdvutonovy\tI\tadj.
+25456\tdvuvlasťje\t\tn.sg.
+31872\tdvuvyměrny\t\tadj.
+17365\tdvuznačnosť\t\tf.
+17367\tdvuznačny\t\tadj.
+22852\tdvuznačny\t\tadj.
+25457\tdvuženec\t\tm.anim.
+17364\tdvuženstvo\t\tn.sg.
+7057\tdyh\t\tm.
+3468\tdyhańje\t\tn.sg.
+25459\tdyhati\t\tv.intr. ipf.
+25460\tdyhavica\t\tf.sg.
+23454\tdyhovy instrument\t\tm.
+25461\tdyhtěti\t\tv.intr. ipf.
+2027\tdym\t\tm.
+5582\tdymiti cigaretojų\t\tv.ipf.
+1257\tdymiti\t\tv.intr. ipf.
+25463\tdymnik\t\tm.
+2310\t#dynja\t\tf.
+17368\tdyšati\t\tv.intr. ipf.
+35481\tdyšnik\t\tm.
+35482\tdyšno grlo\t\tn.
+5049\tdžaz\tE\tm.sg.
+475\tđban\t\tm.
+7426\tđbanȯk\t\tm.
+17369\tdžem\tE\tm.
+3291\tdžentelmen\tE\tm.anim.
+35893\tdžin\tI\tm.
+19683\tdžinsy\tE\tm.pl.
+31851\tdžoker\tE\tm.anim.
+507\tDžordžija\t\tf.sg.
+23583\tdžudo\tI\tn.sg.
+21286\tdžungla\tI\tf.
+36326\tebenovo drěvo\tI\tn.
+22074\tedem\tI\tm.
+16932\tedukacija\tI\tf.sg.
+16933\tedukacijny\tI\tadj.
+3580\tefekt\tI\tm.
+19684\tefektivnosť\tI\tf.sg.
+480\tefektivny\tI\tadj.
+19685\tegalitarny\tI\tadj.
+36741\tEgejsko morje\tI\tn.
+35865\tEgipćan, Egipćanin\t\tm.anim.
+4756\tEgipt\t\tm.sg.
+4757\tegiptsky\t\tadj.
+22393\tegoist\tI\tm.anim.
+22394\tegoističny\tI\tadj.
+22392\tegoizm\tI\tm.sg.
+17370\tegotizm\tI\tm.sg.
+3600\tegzistencija\tI\tf.sg.
+15832\tegzistovańje\tI\tn.sg.
+4087\tegzistovati\tI\tv.intr. ipf.
+35789\tegzotičny\tI\tadj.
+23998\teho\tI\tn.
+14558\tejakulacija\tI\tf.
+17558\tejakulat\tI\tm.
+14559\tejakulovati\tI\tv.intr. ipf.
+5883\tekipa\tF\tn.
+2519\tekolog\tI\tm.anim.
+35267\tekologičny\t\tadj.
+23540\tekologija\tI\tf.sg.
+16795\tekonom\tI\tm.anim.
+1778\tekonomičny\tI\tadj.
+17371\tekonomija\tI\tf.
+15834\tekonomika\tI\tf.sg.
+7438\tekran\tF\tm.
+15836\tekskavator\tI\tm.
+26665\tekskavator\t\tm.
+2077\tekskluzivny\tI\tadj.
+3597\tekskursija\tI\tf.
+3582\tekspansija, ekspanzija\tI\tf.sg.
+35716\tekspedicija\tI\tf.
+4851\teksperiment\tI\tm.
+20374\teksperimentaľny\t\tadj.
+4852\teksperimentovati\tI\tv.intr. ipf.
+1049\tekspert\tI\tm.anim.
+5639\teksploatacija\tI\tf.sg.
+5638\teksploatovati\tI\tv.tr. ipf.
+4802\teksplodovati\tI\tv.intr. ipf.
+4797\teksplozija\tI\tf.
+4799\teksplozivny\tI\tadj.
+35974\teksponencialny\tI\tadj.
+4960\teksport\tI\tm.sg.
+371\teksportovati\tI\tv.tr. ipf.
+25473\teksterier\tF\tm.
+25474\tekstragovati\tI\tv.tr. ipf./pf.
+35131\tekstrakt\tI\tm.
+35128\tekstrapolacija\tI\tf.
+16905\tekstremist\tI\tm.anim.
+1685\tekstremističny\tI\tadj.
+16906\tekstremizm\tI\tm.sg.
+35683\tekumeničny\tI\tadj.
+22436\tEkvador\t\tm.sg.
+22437\tekvadorsky\t\tadj.
+34928\tekvator\tI\tm.
+35285\tekvivalent\tI\tm.
+36133\tekvivalentny\tI\tadj.
+23228\telastičnosť\tI\tf.sg.
+19686\telastičny\tI\tadj.
+21287\telegantny\tI\tadj.
+53\telektričnosť\tI\tf.sg.
+4444\telektričny\tI\tadj.
+23675\telektrifikacija\tI\tf.sg.
+36373\telektrik\tI\tm.anim.
+23674\telektrokucija\tI\tf.
+4660\telektron\tI\tm.
+23542\telektronična pošta\tI\tf.sg.
+4445\telektroničny\tI\tadj.
+2302\telektronika\tI\tf.sg.
+35\telektrostancija\tI\tf.
+2922\telektrošokovo orųžje\tI\tn.
+36374\telektrotehnik\tI\tm.anim.
+23541\telektrotehnika\tI\tf.sg.
+17372\telement\tI\tm.
+35208\telementarny\tI\tadj.
+35169\teliminovati\tI\tv.tr. ipf./pf.
+17373\telisa\t\tf.
+19687\telita\tI\tf.
+1314\telizija\tI\tf.sg.
+35750\temancipacija\tI\tf.sg.
+6082\tembargo\tI\tn.
+4957\temigracija\tI\tf.
+4963\temigrant\tI\tm.anim.
+2213\temigrovati\tI\tv.intr. ipf.
+35971\teminencija\tI\tf.
+2522\temisija\tI\tf.
+5300\temocija\tI\tf.
+561\temocionaľny\tI\tadj.
+19688\tenciklopedičny\tI\tadj.
+19689\tenciklopedija\tI\tf.
+33567\tendemičny\tI\tadj.
+35673\tenergetičny\tI\tadj.
+2936\tenergetika\tI\tf.sg.
+35674\tenergičny\tI\tadj.
+1909\tenergija\tI\tf.sg.
+485\tentitet\tI\tm.
+3586\tentuziast\tI\tm.anim.
+7448\tentuziastično\tI\tadv.
+7449\tentuziastičny\tI\tadj.
+7452\tentuziazm\tI\tm.sg.
+7451\tentuziazmovati\tI\tv.tr. ipf.
+23543\tenzim\tI\tm.
+6172\teparhija\tI\tf.
+7453\tepicentr zemjetręseńja\tI\tm.
+35019\tepicentr\tI\tm.
+35919\tepičsky\tI\tadj.
+33566\tepidemija\tI\tf.
+25475\tepigraf\tI\tm.
+6171\tepiskop\tI\tm.anim.
+35894\tepiskopaľny\t\tadj.
+35603\tepitet\tI\tm.
+35581\tepizod\tI\tm.
+4698\tepoha\tI\tf.
+4497\tera\tI\tf.
+6105\terotičny\tI\tadj.
+23695\terupcija\tI\tf.
+25478\tesej\tF\tm.
+15858\teskadron\tI\tm.
+35367\teskalacija\tI\tf.
+35366\teskalovati\tI\tv.intr. ipf./pf.
+486\teskortovati\tI\tv.tr. ipf.
+31775\tesperantist\tI\tm.anim.
+7456\tesperanto\tI\tn.
+7455\tesperantsky\tI\tadj.
+35110\testetičny\tI\tadj.
+35109\testetika\tI\tf.sg.
+488\tEstonija\tI\tf.sg.
+4435\testonsky\tI\tadj.
+23240\testrada\tI\tf.
+33598\testuarij\tI\tm.
+23244\tetap\tI\tm.
+2524\tetaž\tI\tm.
+23545\tetičny\tI\tadj.
+23544\tetika\tI\tf.sg.
+23696\tetiketa\tI\tf.
+4369\tetimologičny\tI\tadj.
+4368\tetimologija\tI\tf.sg.
+22776\tEtiopija\t\tf.sg.
+22777\tetiopsky\t\tadj.
+6173\tetnična čistka\tI\tf.
+35224\tetničnosť\tI\tf.
+1734\tetničny\tI\tadj.
+20863\tetnograf\tI\tm.anim.
+20864\tetnografija\tI\tf.sg.
+5052\tevakuacija\tI\tf.
+5053\tevakuovati\tI\tv.tr. ipf.
+17376\tevangeľje\tI\tn.
+19690\teventuaľno\tI\tadv.
+2033\teventuaľny\tI\tadj.
+25481\tEvfrat\tI\tm.sg.
+23546\tevolucija\tI\tf.sg.
+25482\tEvrazija\tI\tf.sg.
+946\tevro\t\tn.
+1555\tEvropa\t\tf.sg.
+3038\tEvropejec\t\tm.anim.
+35822\tEvropejka\t\tf.
+7467\tEvropejska Unija\t\tf.sg.
+1906\tEvropejsky Sȯjųz\t\tm.sg.
+1905\tevropejsky, evropsky\t\tadj.
+490\tfabrika\tI\tf.
+35570\tfabrikant\t\tm.anim.
+25487\tfabrikovati\tI\tv.tr. ipf.
+23437\tfagot\tI\tm.
+34759\tfajka\t\tf.
+14562\tfajl\tE\tm.
+36201\tfaklja\tG\tf.
+5180\tfaks\tI\tm.
+2525\tfakt\tI\tm.
+35391\tfaktičny\tI\tadj.
+16781\tfaktor\tI\tm.
+35537\tfaktura\tI\tf.
+35167\tfakultativny\tI\tadj.
+35530\tfakultet\tI\tm.
+35487\tfalsifikacija\tI\tf.
+35486\tfalsifikovati\tI\tv.tr. ipf./pf.
+5301\tfalšivy\tD\tadj.
+768\tfanat\tI\tm.
+19691\tfanatično\tI\tadv.
+687\tfanatičny\tI\tadj.
+23457\tfanfara\tI\tf.
+3959\tfantastičny\tI\tadj.
+35909\tfantastika\tI\tf.sg.
+19692\tfantazija\tI\tf.
+25491\tfantom\tI\tm.anim.
+32516\tfaraon\tI\tm.anim.
+5095\tfarba\tD\tf.
+5096\tfarbovati\tD\tv.tr. ipf.
+36484\tFarerske ostrovy\t\tm.pl.
+36485\tfarersky\t\tadj.
+6269\tfarsa\tF\tf.
+34923\tfartuh\tD\tm.
+31794\tfasada\tF\tf.
+23273\tfasolja\t\tf.
+5303\tfašist\tI\tm.anim.
+35751\tfašističny\tI\tadj.
+5302\tfašizm\tI\tm.sg.
+31793\tfataľny\tI\tadj.
+25493\tfatamorgana\tI\tf.
+140\tfaulj\tE\tm.
+19693\tfaza\tI\tf.
+23470\tfazan\tI\tm.anim.
+23246\tfazovańje\tI\tn.sg.
+3063\tfederacija\tI\tf.
+3013\tfederaľny\tI\tadj.
+1320\tfederativny\tI\tadj.
+35959\tfehtovańje\tD\tn.sg.
+33198\tfejerverk\tD\tm.
+23555\tfeminizm\tI\tm.sg.
+32719\tfeniks\tI\tm.anim.
+19694\tfenomen\tI\tm.
+413\tfermer\tI\tm.anim.
+2139\tfestival\tI\tm.
+34782\tfeudalizm\tI\tm.sg.
+34783\tfeudaľny\tI\tadj.
+2303\tfevruaŕ\tI\tm.sg.
+17377\tfialka\t\tf.
+25497\tfiga\tI\tf.
+1673\tfigura\tI\tf.
+17378\tfikcija\tI\tf.sg.
+17379\tfiktivny\tI\tadj.
+36605\tfilantrop\tI\tm.anim.
+36606\tfilantropičny\tI\tadj.
+36607\tfilantropija\tI\tn.sg.
+7482\tfilial\tI\tm.
+7483\tfiliaľny\tI\tadj.
+36487\tfilipinsky\t\tadj.
+36486\tFilipiny\t\tf.pl.
+36288\tfilm črtany\t\tm.
+36287\tfilm rysovany\t\tm.
+418\tfilm\tI\tm.
+35177\tfilmografija\tI\tf.
+495\tfilmovati\tI\tv.tr. ipf./pf.
+35344\tfilolog\tI\tm.
+35343\tfilologija\tI\tf.sg.
+2526\tfilozof\tI\tm.anim.
+496\tfilozofija\tI\tf.
+36442\tfilozofsky\tI\tadj.
+4949\tfiltr\tI\tm.
+4950\tfiltrovati\tI\tv.tr. ipf.
+17380\tfinancije\tI\tf.pl.
+15874\tfinančnik\tI\tm.anim.
+2527\tfinansist\tI\tm.anim.
+5150\tfinansovati\tI\tv.tr. ipf.
+1931\tfinansovy\tI\tadj.
+36073\tfinik\t\tm.
+35937\tfinitny\tI\tadj.
+3028\tFinlandija\t\tf.sg.
+4434\tfinsky\t\tadj.
+5274\tfioletovy\tI\tadj.
+16780\tfirma\tI\tf.
+36528\tfiskaľny\tI\tadj.
+35490\tfitilj\tT\tm.
+3027\tfizičny\tI\tadj.
+2498\tfizika\tI\tf.sg.
+32498\tfizioterapija\tI\tf.sg.
+32499\tfizioterapist\tI\tm.anim.
+36087\tfjuzelaž\tF\tm.
+20375\tflamingo\tI\tm.anim.
+19695\tflavorizacija\tI\tf.
+32277\tflegma\tI\tf.sg.
+32278\tflegmatičny\tI\tadj.
+23434\tflejta\tI\tf.
+23465\tflejta-pikolo\tI\tf.
+35542\tfleka\tD\tf.
+19696\tfleksibiľny\tI\tadj.
+25504\tfleksija\tI\tf.
+16746\tfleška\tE\tf.
+32902\tflirtovati\tI\tv.intr. ipf.
+16744\tfljaška\t\tf.
+36009\tflomaster\tE\tm.
+32384\tflota\tI\tf.
+32385\tflotilja\tI\tf.
+22604\tfluor\tI\tm.sg.
+25506\tfokus\tI\tm.
+25507\tfokus\tI\tm.
+36784\tfolija\tI\tf.
+17382\tfolklor\tE\tm.
+35792\tfolklorny\tE\tadj.
+34950\tfon\tF\tm.
+1016\tfond\tI\tm.
+25508\tfonema\tI\tf.
+2678\tfonetičny\tI\tadj.
+35945\tfonetika\tI\tf.sg.
+36416\tfonologičny\tI\tadj.
+2499\tfonologija\tI\tf.sg.
+36417\tfont\tE\tm.
+2001\tforma\tI\tf.
+19697\tformalizacija\tI\tf.sg.
+19698\tformalizovati\tI\tv.tr. ipf.
+35600\tformaľnosť\tI\tf.
+20376\tformaľny\tI\tadj.
+35048\tformat\tI\tm.
+25511\tformovańje\tI\tn.
+25512\tformovati\tI\tv.tr. ipf./pf.
+5181\tformula\tI\tf.
+5182\tformulaŕ\tI\tm.
+19699\tformulovati\tI\tv.tr. ipf.
+23430\tfortepiano\tI\tn.
+2306\tfortifikacija\tI\tf.sg.
+3026\tforum\tI\tm.
+22611\tfosfor\tI\tm.sg.
+34932\tfotka\tI\tf.
+4398\tfotografičny\tI\tadj.
+807\tfotografija\tI\tf.
+4396\tfotografovati\tI\tv.tr. ipf.
+19700\tfragment\tI\tm.
+19701\tfragmentacija\tI\tf.sg.
+36463\tfragmentarny\tI\tadj.
+21288\tfrak\t\tm.
+1342\tfrakcija\tI\tf.
+1188\tFrancija\t\tf.sg.
+20377\tFrancuz\t\tm.anim.
+19702\tfrancuzskojęzyčny\t\tadj.
+1020\tfrancuzsky\t\tadj.
+21290\tfrank\tI\tm.
+35780\tfranksky\t\tadj.
+14563\tfraze\tI\tn.indecl.
+17383\tfraznik\tI\tm.
+35648\tfreska\tI\tf.
+19703\tfreudovsky\t\tadj.
+36027\tfrizer\tF\tm.anim.
+19704\tfront\tI\tm.
+34678\tfrustracija\tI\tf.
+34677\tfrustrovany\tI\tadj.
+34676\tfrustrovati\tI\tv.tr. ipf./pf.
+17384\tfundacija\tI\tf.
+19705\tfundament\tI\tm.
+23559\tfundamentalističny\tI\tadj.
+23558\tfundamentalizm\tI\tm.sg.
+2583\tfunikulor\tI\tm.
+1289\tfunkcija\tI\tf.
+35303\tfunkcionaľny\tI\tadj.
+227\tfunkcionovati\tI\tv.intr. ipf.
+5723\tfunt\tI\tm.
+7499\tfunt\tI\tm.
+25518\tfurgon\tF\tm.
+2585\tfutbol\tE\tm.sg.
+17386\tfutro\t\tn.
+35830\tfuzija\tI\tf.
+25520\tgabardin\tI\tm.sg.
+36178\tgaće\t\tf.pl.
+7505\tgad\t\tm.anim.
+16477\tgad\t\tm.anim.
+25529\tgadati\t\tv.intr. ipf.
+7506\tgaďji\t\tadj.
+25533\tgaďji\t\tadj.
+25530\tgadny\t\tadj.
+35157\tgadžet\tE\tm.
+2586\tgaj\t\tm.
+22438\tGajana\t\tf.sg.
+22439\tgajansky\t\tadj.
+17387\tgajdy\t\tf.pl.
+23564\tgalaktika\t\tf.
+25537\tgalanterija\tI\tf.
+25539\tgalantny\tF\tadj.
+25540\tgalera\tI\tf.
+995\tgalerija\tI\tf.
+25542\tgaleta\tF\tf.
+6174\tGalicija\t\tf.sg.
+25543\tgalicizm\tI\tm.
+25544\tgalij\tI\tm.sg.
+6175\tGalisija\t\tf.sg.
+25551\tgalon\tI\tm.
+25552\tgalop\tI\tm.
+25553\tgalopovati\tI\tv.intr. ipf./pf.
+1725\tgalųź\t\tf.
+17388\tgalųzka\t\tf.
+25557\tgalvanizacija\tI\tf.
+25558\tgalvanizm\tI\tm.sg.
+25559\tgalvanizovati\tI\tv.intr. ipf./pf.
+25547\tgalvanometr\tI\tm.
+25560\tgama\tI\tf.
+25561\tgamaša\tF\tf.
+25562\tgambit\tI\tm.
+2587\tGana\t\tf.sg.
+25564\tgangrena\tI\tf.
+25566\tgangster\tE\tm.anim.
+2588\tgansky\t\tadj.
+3648\tgarancija\tI\tf.
+14565\tgarant\tI\tm.anim.
+14567\tgarantovany\tI\tadj.
+14568\tgarantovati\tI\tv.tr. ipf.
+2589\tgaraž\tF\tm.
+25574\tgardenija\tI\tf.
+25575\tgarderoba\tF\tf.
+33584\tgargulja\t\tf.
+25578\tgarnirovati\tF\tv.tr. ipf.
+25579\tgarnitura\tF\tf.
+2203\tgarnizon\tI\tm.
+25583\tgasilo\t\tn.
+4232\tgasitelj\t\tm.anim.
+25584\tgasiti\t\tv.tr. ipf.
+514\tgaslo\t\tn.
+2670\tgasnųti\t\tv.intr. ipf.
+25586\tgastrit\tI\tm.sg.
+25587\tgastronom\tI\tm.anim.
+25589\tgaubica\tI\tf.
+818\tgavrån\t\tm.anim.
+1990\tgaz\t\tm.
+25593\tgaza\t\tf.
+25594\tgazela\tI\tf.
+4064\tgazeta\tI\tf.
+36876\tgazna komora\t\tf.
+25599\tgazovana voda\t\tf.
+25600\tgazovati\tI\tv.tr. ipf./pf.
+25601\tgazovati\tI\tv.intr. ipf.
+1991\tgazovod\t\tm.
+35567\tgej\tE\tm.anim.
+36407\tgekon\tI\tm.anim.
+34722\tgel\tI\tm.
+17390\tgen\tI\tm.
+25603\tgeneracija\tI\tf.
+1605\tgeneral\tI\tm.anim.
+35427\tgeneralizacija\tI\tf.
+35424\tgeneralizovati\tI\tv.tr. ipf./pf.
+19706\tgeneraľno\tI\tadv.
+32061\tgeneraľny sekretaŕ\tI\tm.anim.
+1276\tgeneraľny\tI\tadj.
+35910\tgenerator\tI\tm.
+23993\tgeneričny\tI\tadj.
+31890\tgenerovati\tI\tv.tr. ipf./pf.
+35554\tgenetičny\tI\tadj.
+35808\tgenetika\tI\tf.
+19707\tgeneza\tI\tf.
+17391\tgeniaľnosť\tI\tf.
+17392\tgeniaľny\tI\tadj.
+17394\tgenij\tI\tm.anim.
+17091\tgenitiv\tI\tm.
+5065\tgenocid\tI\tm.
+17395\tgenoterapija\tI\tf.
+17396\tgenovo ozdravjeńje\tI\tn.sg.
+23996\tgeograf\tI\tm.anim.
+23997\tgeografičny\tI\tadj.
+2382\tgeografija\tI\tf.
+23569\tgeolog\tI\tm.anim.
+23570\tgeologičny\tI\tadj.
+23568\tgeologija\tI\tf.sg.
+23571\tgeometrija\tI\tf.
+35129\tgeopolitičny\tI\tadj.
+32471\tgepard\tI\tm.anim.
+21291\tgeranj\tI\tm.
+829\tgerb\t\tm.
+35813\tgeriatričny\tI\tadj.
+35812\tgeriatrija\tI\tf.
+25608\tgermanizacija\tI\tf.
+4736\tgermansky\t\tadj.
+589\tgest\tF\tm.
+32127\tgestikulovati\tI\tv.intr. ipf.
+2667\tgeto\tI\tn.
+33540\tgigabajt\tI\tm.
+836\tgigant\tI\tm.anim.
+33535\tgigantsky\tI\tadj.
+36536\tgimnastika\tI\tf.
+23444\tgitara\tI\tf.
+1766\tglåd\t\tm.
+25616\tgladiti\t\tv.tr. ipf.
+25617\tgladiti\t\tv.tr. ipf.
+25618\tgladkosť\t\tf.
+837\tgladky\t\tadj.
+5235\tglådny\t\tadj.
+25621\tglådovati\t\tv.intr. ipf.
+6186\tglådovka\t\tf.
+827\tglågol\t\tm.
+35155\tglagolica\t\tf.
+35678\tglagoličny, glagoľsky\t\tadj.
+5824\tglågoľny vid\t\tm.
+2365\tglås\t\tm.
+17398\tglås\t\tm.
+17400\tglåsiti\t\tv.tr. ipf.
+17401\tglåska\t\tf.
+35652\tglåsne struny\t\tf.pl.
+4545\tglåsnik\t\tm.
+7538\tglåsno\t\tadv.
+5246\tglåsny\t\tadj.
+1336\tglåsovańje\t\tn.
+3780\tglåsovatelj\t\tm.anim.
+58\tglåsovati\t\tv.intr. ipf.
+40\tglåva\t\tf.
+3306\tglåva\t\tf.
+17403\tglåva\t\tf.
+25629\tglåvaŕ\t\tm.anim.
+25630\tglåvaty\t\tadj.
+25631\tglåvica\t\tf.
+7546\tglåvna strånica\t\tf.
+4408\tglåvnik\t\tm.anim.
+36202\tglåvnja\t\tf.
+5852\tglåvno\t\tadv.
+3508\tglåvnokomandovač\t\tm.anim.
+2012\tglåvny gråd\t\tm.
+2671\tglåvny\t\tadj.
+14572\tglåvolomka\t\tf.
+35578\tględač\t\tm.anim.
+7561\tględęći na\t\tprep.
+2003\tględěti\t\tv.intr. ipf.
+17407\tględišče\t\tn.
+25637\tględnųti\t\tv.intr. pf.
+25639\tglezenj\t\tm.
+7562\tglina\t\tf.
+7566\tgliněny\t\tadj.
+1765\tglist\t\tm.anim.
+35077\tglobalizacija\tI\tf.
+35794\tglobalizovati\tI\tv.tr. ipf./pf.
+2002\tglobaľno potepljeńje\t\tn.sg.
+34758\tglobaľny\tI\tadj.
+35899\tglobus\tI\tm.
+25645\tglodati\t\tv.tr. ipf.
+25646\tglog\t\tm.
+36685\tglosarij\tI\tm.
+51\tglųb\t\tm.
+7571\tglųbina\t\tf.
+14573\tglųbinny\t\tadj.
+36361\tglųbinny\t\tadj.
+19708\tglųboko\t\tadv.
+1757\tglųboky\t\tadj.
+5867\tglųbši\t\tadj.
+36094\tglug-glug\t\tintj.
+25656\tgluhnųti\t\tv.intr. ipf.
+33005\tgluhoněmy\t\tadj.
+25657\tgluhota\t\tf.
+33007\tgluhuněmota\t\tf.
+1128\tgluhy\t\tadj.
+991\tglupec\t\tm.anim.
+25661\tglupěti\t\tv.intr. ipf.
+7579\tglupo\t\tadv.
+7580\tgluposť\t\tf.
+1751\tglupy\t\tadj.
+25666\tglušiti\t\tv.tr. ipf.
+1815\tgnati\t\tv.tr. ipf.
+35483\tgněde vųglje\t\tm.pl.
+1812\tgnědy\t\tadj.
+1305\tgnesti\t\tv.tr. ipf.
+110\tgnet\t\tm.sg.
+1127\tgněv\t\tm.sg.
+7593\tgněvati sę\t\tv.refl. ipf.
+2250\tgněvati\t\tv.tr. ipf.
+25677\tgněvlivy\t\tadj.
+3433\tgněvny\t\tadj.
+25680\tgnězditi sę\t\tv.refl. ipf.
+35650\tgnězdko\t\tn.
+2666\tgnězdo\t\tn.
+727\tgnida\t\tf.
+25683\tgnilosť\t\tf.
+5307\tgnily\t\tadj.
+5306\tgniti\t\tv.intr. ipf.
+25684\tgniťje\t\tn.sg.
+2183\tgnoj\t\tm.
+25687\tgnoj\t\tm.
+25689\tgnojišče\t\tn.
+25692\tgnojiti sę\t\tv.refl. ipf.
+25691\tgnojiti\t\tv.tr. ipf.
+31893\tgnojivo\t\tn.
+36126\tgnom\tI\tm.anim.
+25695\tgnusny\t\tadj.
+31897\tgnusny\t\tadj.
+17411\tgnųti\t\t#v.intr. ipf.
+14576\tgo\t\tpron.pers.
+3083\tgod\t\tm.
+17412\tgodišnica\t\tf.
+14578\tgodišnje\t\tadv.
+14579\tgodišnji, godišny\t\tadj.
+17413\tgoditi sę\t\tv.refl. ipf.
+7598\tgodnosť\t\tf.
+2584\tgodny\t\tadj.
+17415\tgodovati\t\tv.intr. ipf.
+14581\tgodovno\t\tadv.
+14582\tgodovy\t\tadj.
+14583\tgody\t\tm.pl.
+25701\tgogolj\t\tm.anim.
+25702\tgojiti\t\tv.tr. ipf.
+25704\tgolěnj\t\tf.
+21292\tgolf\tI\tm.sg.
+34141\tgoliti sę\t\tv.refl. ipf.
+25707\tgoliti\t\tv.tr. ipf.
+25708\tgoliti\t\tv.tr. ipf.
+25709\tgȯlk\t\tm.
+25710\tgolobrådy\t\tadj.
+25712\tgololed\t\tm.sg.
+21293\tgoloslovny\t\tadj.
+25715\tgolota\t\tf.
+7600\tgȯltańje\t\tn.sg.
+17418\tgȯltati sȯlzy\t\tv.ipf.
+5304\tgȯltati\t\tv.tr. ipf.
+25649\tgȯltka\t\tf.
+25650\tgȯltnųti\t\tv.tr. pf.
+7599\tgȯltȯk\t\tm.
+1656\tgolųb\t\tm.anim.
+25719\tgolųbica\t\tf.
+25718\tgolųbji\t\tadj.
+25722\tgoly\t\tadj.
+25724\tgon\t\tm.
+17419\tgonec\t\tm.anim.
+32990\tgong\tI\tm.
+17420\tgonišče\t\tn.
+17421\t#goniti\t\tv.tr. ipf.
+25728\tgonitva\t\tf.
+17422\tgonka\t\tf.
+17424\tgonščik avtomobiljev\t\tm.anim.
+17423\tgonščik\t\tm.anim.
+1429\tgora\t\tf.
+17425\tgorčica\t\tf.
+25732\tgorčiti\t\tv.intr. ipf.
+5666\tgȯrdosť\t\tf.
+2673\tgȯrdy\t\tadj.
+3665\tgoręće\t\tadv.
+3666\tgoręći\t\tadj.
+3659\tgoręćnja\t\tf.
+17427\tgoręčka\t\tf.
+17426\tgorělka\t\tf.
+401\tgorěti\t\tv.intr. ipf.
+25735\tgoricvět\t\tm.
+34427\tgorila\tI\tf.
+5232\tgoristy\t\tadj.
+25730\tgorjan, gorjanin\t\tm.anim.
+7607\tgorka\t\tf.
+25738\tgoŕknųti\t\tv.intr. ipf.
+25739\tgoŕkosť\t\tf.
+2381\tgoŕky\t\tadj.
+17428\tgorlivy\t\tadj.
+32528\tgorlivy\t\tadj.
+1376\tgornik\t\tm.anim.
+68\tgornolužičsky\t\tadj.
+19709\tgornosŕbsky\t\tadj.
+36024\tgorsko pasmo\t\tn.
+36023\tgorsky lanec\t\tm.
+25743\tgorsky\t\tadj.
+7619\tgorše\t\tadv.
+1985\tgorši\t\tadj.
+17430\tgoršiti\t\tv.tr. ipf.
+25745\tgospoď\t\tm.anim.
+25746\tgospodaŕ\t\tm.anim.
+31902\tgospodaŕ\t\tm.anim.
+16793\tgospodaŕstvo\t\tn.
+16794\tgospodaŕstvo\t\tn.
+36197\tgospodica\t\tf.
+3290\tgospodin\t\tm.anim.
+5258\tgospodynja\t\tf.
+25749\tgospođa\t\tf.
+1854\tgosť\t\tm.anim.
+35029\tgosteprijemny\t\tadj.
+35028\tgosteprijemstvo\t\tn.sg.
+7627\tgostiljnja\t\tf.
+25752\tgostinec\t\tm.
+5234\tgostinica\t\tf.
+35031\tgostinnosť\t\tf.
+35030\tgostinny\t\tadj.
+1693\tgostiti\t\tv.tr. ipf.
+35927\tgotičsky\t\tadj.
+25761\tgotovina\t\tf.
+257\tgotoviti\t\tv.tr. ipf.
+7631\tgotovo\t\tadv.
+2289\tgotovy\t\tadj.
+35926\tgotsky\t\tadj.
+7634\tgovędina\t\tf.
+25765\tgovęďji\t\tadj.
+25763\tgovędo\t\tn.
+25766\tgovněny\t\tadj.
+316\tgovno\t\tn.
+2674\tgovor\t\tm.
+4544\tgovoritelj\t\tm.anim.
+754\tgovoriti\t\tv.tr. ipf.
+2676\tgrab\t\tm.
+23406\tgraběž\t\tf.
+952\tgrabiti\t\tv.tr. ipf.
+23399\tgrabiti\t\tv.intr. ipf.
+25771\tgrabiti\t\tv.tr. ipf.
+25774\tgrabje\t\tf.pl.
+671\tgråd\t\tm.
+2665\tgrad\t\tm.
+25782\tgrådišče\t\tn.
+17433\tgrådonačeľnik\t\tm.anim.
+17435\tgrådsky\t\tadj.
+2905\tgråđan, gråđanin\t\tm.anim.
+15698\tgråđan, gråđanin\t\tm.anim.
+7660\tgråđanka\t\tf.
+7663\tgråđansky\t\tadj.
+7653\tgråđanstvo\t\tn.sg.
+7654\tgråđanstvo\t\tn.sg.
+36779\tgrafična karta\tI\tf.
+35684\tgrafičny\tI\tadj.
+17436\tgrafitka\tI\tf.
+2545\tgråh\t\tm.
+25789\tgråhovy\t\tadj.
+23015\tgram\tI\tm.
+6328\tgramatičny\tI\tadj.
+1831\tgramatika\tI\tf.
+33087\tgramofon\tI\tm.
+33210\tgramota\t\tf.
+33207\tgramotnosť\t\tf.
+33208\tgramotnosť\t\tf.
+33205\tgramotny\t\tadj.
+33206\tgramotny\t\tadj.
+36279\tgranat\tI\tm.
+36281\tgranata\tI\tf.
+36280\tgranatno jablȯko\t\tn.
+1265\tgranatomet\t\tm.
+1264\tgranica\t\tf.
+25793\tgraničiti\t\tv.intr. ipf.
+23999\tgranit\tI\tm.sg.
+35793\tgrant\tE\tm.
+2668\tgravirovati\tI\tv.tr. ipf.
+23572\tgravitacija\tI\tf.
+2347\tgrb\t\tm.
+23891\tgrbač\t\tm.anim.
+16407\tgrbaty\t\tadj.
+25798\tgrbiti sę\t\tv.refl. ipf.
+5665\tgrditi\t\tv.tr. ipf.
+1920\tgrebenj\t\tm.
+738\tgrebti\t\tv.tr. ipf.
+25802\tgrebti\t\tv.tr. ipf.
+33926\tgrebti\t\tv.tr. ipf.
+2675\tGrecija\t\tf.sg.
+3474\tgreča\t\tf.
+3183\tgrečsky\t\tadj.
+1750\tgrěh\t\tm.
+36068\tgrejpfrut\tE\tm.
+20378\tGrek\t\tm.anim.
+782\tgreměti\t\tv.intr. ipf.
+3181\tgremųća zmija\t\tf.
+36482\tGrenlandija\t\tf.sg.
+36483\tgrenlandsky\t\tadj.
+2010\tgrěšiti\t\tv.intr. ipf.
+17438\tgrěšiti\t\tv.intr. ipf.
+17441\tgrěška\t\tf.
+7680\tgrěšnica\t\tf.
+2625\tgrěšnik\t\tm.anim.
+25813\tgrěšny\t\tadj.
+1882\tgrěti\t\tv.tr. ipf.
+25815\tgręź\t\tf.
+2544\tgręznųti\t\tv.intr. ipf.
+673\tgrib\t\tm.
+20379\tgrifon\tI\tm.anim.
+23422\tgril\tF\tm.
+4271\tgrip\tI\tm.sg.
+4272\tgripovy\tI\tadj.
+674\tgriva\t\tf.
+722\tgrivna\t\tf.
+25821\tgrivna\t\tf.
+25822\tgrlica\t\tf.
+492\tgrlo\t\tn.
+5272\tgrn\t\tm.
+25826\tgrnčaŕ\t\tm.anim.
+35192\tgrnčaŕstvo\t\tn.sg.
+2282\tgrnec\t\tm.
+69\tgrnųti\t\tv.tr. ipf.
+688\tgrob\t\tm.
+3506\tgrob\t\tm.
+4138\tgrobaŕ\t\tm.anim.
+17442\tgrobišče\t\tn.
+7693\tgrobokopatelj\t\tm.anim.
+25837\tgrohtati\t\tv.intr. ipf.
+2990\tgrom\t\tm.
+6327\tgromada\t\tf.
+25839\tgromada\t\tf.
+17443\tgromaditi\t\tv.tr. ipf.
+676\tgronostaj\t\tm.anim.
+17444\tgroš\t\tm.
+2567\tgroši\tD\tm.pl.
+19710\tgroteskovy\tI\tadj.
+690\tgroza\t\tf.
+1885\tgroźba\t\tf.
+25849\tgrozď\t\tm.
+36079\tgrozdinka\t\tf.
+25846\tgrozďje\t\tn.
+2568\tgroziti\t\tv.intr. ipf.
+691\tgrozny\t\tadj.
+7701\tgrozny\t\tadj.
+1930\tgrsť\t\tf.
+1927\tgrtanj\t\tf.
+25855\tgrubosť\t\tf.
+680\tGruby Nacionaľny Produkt [GNP]\t\tm.sg.
+36063\tgruby pěsȯk\t\tm.
+1736\tgruby\t\tadj.
+17445\tgrųď\t\tf.
+2611\tgruda\t\tf.
+25860\tgrųdny\t\tadj.
+1787\tgrupa\tI\tf.
+3950\tgrupovati\tI\tv.tr. ipf.
+16935\tgrupovy\tI\tadj.
+2569\tgrupy\tI\tf.pl.
+2570\tgruša\tI\tf.
+25863\tgruševy\t\tadj.
+698\tGruzija\t\tf.sg.
+1040\tgruzinsky\t\tadj.
+7688\tgryzati\t\tv.tr. ipf.
+668\tgryzti\t\tv.tr. ipf.
+2171\tgųba\t\tf.
+7712\tgųba\t\tf.
+32332\tgubernator\tI\tm.anim.
+13416\tgubi sę!\t\tintj.
+36652\tgubiti sę\t\tv.refl. ipf.
+36253\tgubiti tęžinų\t\tv.intr. ipf.
+17447\tgubiti\t\tv.tr. ipf.
+25871\tgubiti\t\tv.tr. ipf.
+17446\tgųbka\t\tf.
+5281\tguma\t\tf.
+1752\tgumno\t\tn.
+2571\tgųś\t\tm.anim.
+36100\tgųsak\t\tm.anim.
+25882\tgųsę\t\tn.
+429\tgųsenica\t\tf.
+25883\tgųśji\t\tadj.
+14591\tgųslaŕ\t\tm.anim.
+7715\tgųsli\t\tm.pl.
+16469\tgųsljaŕ\t\tm.anim.
+16468\tgųslje\t\tf.pl.
+25888\tgųstěti\t\tv.intr. ipf.
+25890\tgųstiti\t\tv.tr. ipf.
+25899\tgųsťje\t\tn.
+25892\tgųsto\t\tadv.
+25893\tgųstosť\t\tf.
+25894\tgųstota\t\tf.
+5308\tgųsty\t\tadj.
+25896\tgųšća\t\tf.
+22384\tGvatemala\t\tf.sg.
+22385\tgvatemaľsky\t\tadj.
+16782\tGvineja\t\tf.sg.
+2574\tgvozď\t\tm.
+2912\tgybati\t\tv.intr. ipf.
+35205\tgybkosť\t\tf.
+17397\tgybky\t\tadj.
+2917\tgybnųti\t\tv.intr. pf.
+25904\tha!\t\tintj.
+25525\thaček\t\tm.
+22456\tHaiti\t\tm.indecl.
+22457\thaitiansky\t\tadj.
+31874\thak\t\tm.
+25910\thalucinacija\tI\tf.
+25911\thalucinovati\tI\tv.intr. ipf.
+25912\thalupa\t\tf.
+3651\thalva\tI\tf.
+25913\thamak\tI\tm.
+35190\thamburger\tD\tm.
+35823\thameleon\tI\tm.anim.
+25914\thandbol\tE\tm.sg.
+25915\thantelj\tI\tf.
+33502\thaos\tI\tm.
+33504\thaotično\tI\tadv.
+33503\thaotičny\tI\tadj.
+3184\tharakter\tI\tm.
+16936\tharakterističny\tI\tadj.
+1763\tharakteristika\tI\tf.
+16937\tharakterizovati\tI\tv.tr. ipf.
+25921\tharem\tI\tm.
+23445\tharfa\tI\tf.
+25922\tharmoničny\tI\tadj.
+3656\tharmonija\tI\tf.
+25924\tharmonika\tI\tf.
+7724\tharmonizovati\tI\tv.intr. ipf.
+25928\tharpun\tI\tm.
+3012\tharta\tI\tf.
+23199\thašiš\tI\tm.sg.
+7727\thata\t\tf.
+25930\thazard\tF\tm.
+25931\thazardna igra\t\tf.
+19711\thebrejsky\t\tadj.
+16938\thegemonija\tI\tf.
+35359\thej\t\tintj.
+23408\theker\tE\tm.anim.
+25905\thektar [ha]\tI\tm.
+23020\thektolitr\tI\tm.
+23023\thektometr\tI\tm.
+22598\thelij\tI\tm.sg.
+25933\thelikopter\tI\tm.
+14592\thelma\tD\tf.
+4663\themičny\tI\tadj.
+2573\themija\tI\tf.
+2572\themikalija\tI\tf.
+7743\thepa\tI\tf.
+7744\thepatit\tI\tm.sg.
+7745\thepovy\tI\tadj.
+2575\theroin\tI\tm.sg.
+7747\theroina\tI\tf.
+3185\theroj\tI\tm.anim.
+32180\therpes\tI\tm.sg.
+19712\theterogennosť\tI\tf.
+20380\theterogenny\tI\tadj.
+32804\thiacint\tI\tm.
+4864\thidravličny\tI\tadj.
+20381\thiena\t\tf.
+25936\thierarh\tI\tm.anim.
+25937\thierarhičny\tI\tadj.
+19714\thierarhija\tI\tf.
+25940\thieroglif\tI\tm.
+25941\thieroglifny\tI\tadj.
+35188\thigiena\tI\tf.
+35189\thigieničny\tI\tadj.
+33365\thihot\t\tm.sg.
+33364\thihotati sę\t\tv.refl. ipf.
+7748\thimera\tI\tf.
+7750\thimersky\tI\tadj.
+4865\thimn\tI\tm.
+23574\thinduizm\tI\tm.sg.
+4548\thiperlink\tI\tm.
+17448\thipersvęź\t\tf.
+19715\thipnotizovati\tI\tv.tr. ipf.
+19716\thipnoza\tI\tf.
+20382\thipopotam\tI\tm.anim.
+34999\thipoteka\tI\tf.
+19518\thipotetičny\tI\tadj.
+19517\thipoteza\tI\tf.
+17449\thirugičny\tI\tadj.
+17450\thirugija\tI\tf.
+17451\thirurg\tI\tm.anim.
+36829\thisteričny\tI\tadj.
+36828\thisterija\tI\tf.sg.
+16466\thistoričny\tI\tadj.
+2496\thistorija\tI\tf.
+34889\thistorik\tI\tm.anim.
+2576\thlåd\t\tm.
+25951\thlåděti\t\tv.intr. ipf.
+5276\thlådiľnik\t\tm.
+17456\thlåditi sę\t\tv.refl. ipf.
+17454\thlåditi\t\tv.tr. ipf.
+7759\thlådnějši\t\tadj.
+4466\thlådno\t\tadv.
+4617\thlådnosť\t\tf.
+2579\thlådny\t\tadj.
+17453\thlåđeńje\t\tn.sg.
+1109\thlåpčik\t\tm.anim.
+3335\thlåpec\t\tm.anim.
+4338\thlåpstvo\t\tn.sg.
+89\thlěb\t\tm.
+90\thlěv\t\tm.
+17457\thlipati\t\tv.intr. ipf.
+17458\thlipnųti\t\tv.intr. pf.
+22613\thlor\tI\tm.sg.
+33719\thloroform\tI\tm.sg.
+2578\thmelj\t\tm.sg.
+25975\thmeljny\t\tadj.
+32815\thmuriti sę\t\tv.refl. ipf.
+32816\thmuriti sę\t\tv.refl. ipf.
+32814\thmuriti\t\tv.tr. ipf.
+23575\thobi\tE\tm.indecl.
+35271\thobist\t\tm.anim.
+25979\thobot\t\tm.
+3742\thod\t\tm.sg.
+3845\thoďba\t\tf.
+25982\thodec\t\tm.anim.
+7784\thoditelj\t\tm.anim.
+17461\thoditeljka\t\tf.
+2590\thoditi\t\tv.intr. ipf.
+7782\thodnik\t\tm.
+25984\thodulja\t\tf.
+7780\thođeńje\t\tn.sg.
+5802\thokej na ledu\tE\tm.sg.
+5801\thokej\tE\tm.sg.
+35740\tHolandija\t\tf.sg.
+35741\tholandsky\t\tadj.
+35099\tholera\tI\tf.
+17462\tholesterol\tI\tm.sg.
+544\thȯlm\t\tm.
+20384\thomjak\t\tm.anim.
+23412\thomogenizovati\tI\tv.tr. ipf.
+19717\thomogennosť\tI\tf.
+19718\thomogenny\tI\tadj.
+17463\thomonim\tI\tm.
+35566\thomoseksualist\tI\tm.anim.
+1511\thomoseksuaľny\tI\tadj.
+2582\thomųt\t\tm.
+22386\tHonduras\t\tm.sg.
+22387\thondurassky\t\tadj.
+23449\thor\tI\tm.
+32504\thoreografija\tI\tf.
+19719\thorizont\tI\tm.
+19720\thorizontaľny\tI\tadj.
+23011\thoroskop\tI\tm.
+706\thorųgva\t\tf.
+25997\thoť by\t\tadv.
+2581\thoť, hoti\t\tconj.
+35268\thotel\tI\tm.
+2971\thotěti\t\tv.aux. ipf.
+1828\thovati\t\tv.tr. ipf.
+25999\thråbrec\t\tm.anim.
+4611\thråbrosť\t\tf.
+2607\thråbry\t\tadj.
+4890\thram\t\tm.
+26006\thrånitelj\t\tm.anim.
+36791\thråniti sę\t\tv.refl. ipf.
+19721\thråniti\t\tv.tr. ipf.
+17464\thrånjenec\t\tm.anim.
+17466\thrapati\t\tv.intr. ipf.
+1639\thråpavy\t\tadj.
+17467\thrapnųti\t\tv.intr. pf.
+26013\thrčati\t\tv.intr. ipf.
+20385\thrček\t\tm.anim.
+841\threbet\t\tm.
+1928\threbet\t\tm.
+67\threbetny mozȯk\t\tm.
+26012\threbetny\t\tadj.
+3114\thrěn\t\tm.
+26015\thrěnovy\t\tadj.
+35996\thrěnviršla\t\tf.
+35826\threstomatija\tI\tf.
+26010\thręšč\t\tm.
+35456\thriply\t\tadj.
+302\thristijan, hristijanin\tI\tm.anim.
+17468\thristijanizacija\tI\tf.
+17470\thristijanka\tI\tf.
+2606\thristijansky\tI\tadj.
+1640\thristijanstvo\tI\tn.sg.
+17471\tHristos\tI\tm.anim.
+22620\throm\tI\tm.sg.
+26018\thromati\t\tv.intr. ipf.
+36830\thromatičny\tI\tadj.
+34408\throměti\t\tv.intr. ipf.
+26019\thromosť\t\tf.
+26021\thromy\t\tadj.
+35718\thronika\tI\tf.
+35774\thronikaŕ\tI\tm.anim.
+35398\thronologičny\tI\tadj.
+35397\thronologija\tI\tf.
+2577\thrt\t\tm.anim.
+26024\thrupati\t\tv.intr. ipf.
+31916\thrupkavy\t\tadj.
+1245\thrust\t\tm.
+26026\thrustati\t\tv.intr. ipf.
+26028\thrųšč\t\tm.anim.
+4727\tHrvat\t\tm.anim.
+2580\tHrvatija\t\tf.sg.
+4728\thrvatsky\t\tadj.
+7739\thtěti\t\tv.aux. ipf.
+26030\thtivy\t\tadj.
+36251\thudnųti\t\tv.intr. ipf.
+17472\thųdožnica\t\tf.
+14594\thųdožnik\t\tm.anim.
+17473\thųdožno\t\tadv.
+14595\thųdožny\t\tadj.
+17474\thųdožstvo\t\tn.
+26033\thudy\t\tadj.
+2064\thuj\t\tm.
+14596\thujesȯs\t\tm.anim.
+6226\thuligan\tE\tm.anim.
+35744\thumanističny\tI\tadj.
+2592\thumanitarny\tI\tadj.
+35743\thumanizm\tI\tm.sg.
+3668\thumor\tI\tm.
+19722\thumorističny\tI\tadj.
+19495\thunta\tI\tf.
+35656\thura\t\tintj.
+35837\thusit\t\tm.anim.
+14598\tHvala!\t\tintj.
+2593\thvala\t\tf.
+7828\thvala\t\tprep.
+26041\thvalebny\t\tadj.
+2890\thvaliti\t\tv.tr. ipf.
+17477\thvastati sę\t\tv.refl. ipf.
+35476\thvat\t\tm.
+2591\thvatati\t\tv.tr. ipf.
+34776\thvějati sę\t\tv.refl. ipf.
+708\thvějati\t\tv.tr. ipf.
+20865\thvějati\t\tv.tr. ipf.
+7835\thvilja nazad\t\tadv.
+7836\thvilja tomu\t\tadv.
+3846\thvilja\t\tf.
+17482\thvoja\t\tf.
+26045\thvoja\t\tf.
+36260\thvojny lěs\t\tm.
+26047\thvorěti\t\tv.intr. ipf.
+17483\thvoroba sŕdca\t\tf.
+3543\thvoroba\t\tf.
+7840\thvoroblivo\t\tadv.
+36691\thvoroblivy\t\tadj.
+3541\thvory\t\tadj.
+17484\thvost\t\tm.
+26051\thvošč\t\tm.
+26052\thyba\t\tf.
+26053\thybiti\t\tv.intr. ipf.
+10362\thybny\t\tadj.
+7751\thytrec\t\tm.anim.
+15329\thytrica\t\tf.
+7752\thytro\t\tadv.
+7753\thytrosť\t\tf.
+17452\thytry\t\tadj.
+36224\ti ... i ...\t\tconj.
+36223\tI slěpa veverica poněkȯgda najde orěh\t\tphrase
+36343\ti t.d.\t\tadv.
+36341\ti tako dalje\t\tadv.
+718\ti\t\tconj.
+26056\tibis\tI\tm.anim.
+3457\tibo\t\tconj.
+206\tideal\tI\tm.
+26058\tidealist\t\tm.anim.
+26059\tidealističny\t\tadj.
+26060\tidealizacija\t\tf.
+26061\tidealizm\t\tm.sg.
+26062\tidealizovati\tI\tv.tr. ipf./pf.
+2595\tideaľny\tI\tadj.
+3372\tideja\tI\tf.
+12913\tidentični blizneci\t\tm.pl.
+35748\tidentičnosť\tI\tf.
+2597\tidentičny\tI\tadj.
+16421\tidentifikacija\tI\tf.
+35274\tidentifikator\tI\tm.
+15906\tidentifikovati\tI\tv.tr. ipf.
+19723\tidentitet\tI\tm.sg.
+26069\tideografija\tI\tf.
+2103\tideolog\tI\tm.anim.
+23576\tideologičny\tI\tadj.
+715\tideologija\tI\tf.
+26073\tidila\tI\tf.
+26074\tidiličny\tI\tadj.
+26075\tidiom\tI\tm.
+36363\tidiomatičny\tI\tadj.
+23229\tidiot\tI\tm.anim.
+26077\tidiotizm\tI\tm.
+23230\tidiotsky\tI\tadj.
+26078\tidol\tI\tm.anim.
+26079\tidolopoklonnik\t\tm.anim.
+13823\tidti vprěd\t\tv.ipf.
+15654\tidti vzad\t\tv.ipf.
+2104\tidti\t\tv.intr. ipf.
+2105\tigla\t\tf.
+36259\tiglasty lěs\t\tm.
+36258\tiglasty\t\tadj.
+26082\tiglica\t\tf.
+26083\tiglu\tI\tn.indecl.
+26084\tignorovańje\tI\tn.sg.
+2596\tignorovati\tI\tv.tr. ipf.
+26086\tigo\t\tn.
+2598\tigra\t\tf.
+19724\tigrač\t\tm.anim.
+19725\tigračka\t\tf.
+22390\tigračka\t\tf.
+16940\tigrašna karta\t\tf.
+2599\tigrati\t\tv.tr. ipf.
+26094\tigrek\tF\tm.
+2600\tigrišče\t\tn.
+26096\tigrivy\t\tadj.
+26097\tiguana\tI\tf.
+26098\tigumen\t\tm.anim.
+26099\tigumenja\t\tf.
+26100\tikati\t\tv.intr. ipf.
+26101\tikava\t\tf.
+303\tikra\t\tf.
+3504\til\t\tm.sg.
+766\tili ... ili ...\t\tconj.
+724\tili\t\tconj.
+36561\tIlinojs\t\tm.sg.
+1504\tIlir\t\tm.anim.
+26106\tiljm\t\tm.
+26107\tilovy\t\tadj.
+35300\tilustracija\tI\tf.
+19726\tilustrovati\tI\tv.tr. ipf.
+35602\tiluzija\tI\tf.
+34849\tiluzionist\tI\tm.anim.
+26108\tiluzorny\tI\tadj.
+36882\timajmo nadějų\t\tadv.
+16340\timę\t\tn.
+16342\timę\t\tn.
+5975\timeniteljnik, imeniteljny padež\t\tm.
+874\timěńje\t\tn.
+786\timennik\t\tm.
+3745\timennik\t\tm.anim.
+17486\timenno\t\tadv.
+3486\timenovati\t\tv.tr. ipf.
+3325\timěti dělo s\t\tv.ipf.
+36890\timěti na myslji\t\tv.tr. ipf.
+36928\timěti na umu\t\tv.tr. ipf.
+17485\timěti nadějų\t\tv.ipf.
+33179\timěti njuh za něčto\t\tphrase
+876\timěti pravdų\t\tv.ipf.
+36402\timěti smysl\t\tv. ipf.
+23339\timěti važnosť\t\tv.intr. ipf.
+23340\timěti značeńje\t\tv.intr. ipf.
+3847\timěti žalj\t\tv.ipf.
+417\timěti, imati\t\tv.aux. ipf.
+875\timěti, imati\t\tv.tr. ipf.
+4958\timigracija\tI\tf.
+98\timigrant\tI\tm.anim.
+4959\timigrovati\tI\tv.intr. ipf.
+36437\timitacija\tI\tf.
+36438\timitovati\tI\tv.tr. ipf./pf.
+896\timperator\tI\tm.anim.
+2630\timperatorica\tI\tf.
+16942\timperfekt\tI\tm.sg.
+23852\timperializm\tI\tm.sg.
+35710\timperija\tI\tf.
+35953\timplantovati\tI\tv.tr. ipf./pf.
+23846\timponovati\tI\tv.tr. ipf.
+23847\timponujųći\tI\tadj.
+4961\timport\tI\tm.sg.
+4962\timportovati\tI\tv.tr. ipf.
+36856\timpotencija\t\tf.
+36857\timpotentny\t\tadj.
+23848\timprovizacija\tI\tf.
+16943\timprovizovati\tI\tv.intr. ipf.
+1206\timpuls\tI\tm.
+23850\timpulsivny\tI\tadj.
+17487\timųći\t\tadj.
+35814\timunitet\tI\tm.sg.
+35815\timunny\tI\tadj.
+17488\timųtȯk\t\tm.
+3764\tinače\t\tadv.
+7904\tinako\t\tadv.
+7905\tinaky\t\tadj.
+19572\tinamo\t\tadv.
+19727\tinavguraľny\tI\tadj.
+35035\tincest\tI\tm.sg.
+4914\tincident\tI\tm.
+2631\tinde\t\tadv.
+16783\tindeks\tI\tm.
+26122\tindigo\tI\tn.
+1068\tIndija\t\tf.sg.
+6405\tIndijan, Indijanin\t\tm.anim.
+6406\tIndijanka\t\tf.
+6408\tindijansky\t\tadj.
+36364\tIndijec\t\tm.anim.
+36365\tIndijka\t\tf.
+23498\tIndijsky okean\t\tm.sg.
+4749\tindijsky\t\tadj.
+15915\tindivid\tI\tm.anim.
+26123\tindividuaľnosť\tI\tf.
+5138\tindividuaľny\tI\tadj.
+2634\tindoarijsky\t\tadj.
+897\tindoevropejsky\t\tadj.
+1667\tindoiransky\t\tadj.
+6106\tIndonezija\t\tf.sg.
+19728\tindonezsky\t\tadj.
+35180\tindustriaľny\tI\tadj.
+23474\tindyk\t\tm.anim.
+36823\tinercija\tI\tf.
+2006\tinfekcija\tI\tf.
+521\tinfinitiv\tI\tm.
+16784\tinflacija\tI\tf.
+769\tinformacija\tI\tf.
+7895\tinformant\tI\tm.anim.
+36448\tinformatik\tI\tm.anim.
+36447\tinformatika\tI\tf.sg.
+19729\tinformativny\tI\tadj.
+862\tinformovany\tI\tadj.
+863\tinformovati\tI\tv.tr. ipf.
+23579\tinfračrveno světlo\tI\tn.
+35756\tinfračrveny\t\tadj.
+16364\tinfrastruktura\tI\tf.
+35558\tingredient\tI\tm.
+209\tInguš\t\tm.anim.
+1783\tIngušetija\t\tf.sg.
+1300\tingušsky\t\tadj.
+32377\tinicializacija\tI\tf.
+32376\tinicializovati\tI\tv.tr. ipf./pf.
+5309\tiniciativa\tI\tf.
+26125\tinje\t\tn.
+26128\tinjekcija\tI\tf.
+33250\tinkubator\tI\tm.
+1319\tinočij\t\tpron.poss.
+307\tinočto\t\tpron.indef.
+2633\tinȯgda, inȯgdy\t\tadv.
+26129\tinohod\t\tm.sg.
+155\tinokto\t\tpron.indef.
+19594\tinoliky\t\tadj.
+35275\tinoplanetjan, inoplanetjanin\t\tm.anim.
+5855\tinoskazańje\t\tn.
+21873\tinostrånec\t\tm.anim.
+35685\tinovacija\tI\tf.
+35753\tinovativny\tI\tadj.
+7912\tinovrěmenno\t\tadv.
+7913\tinozemec\t\tm.anim.
+7914\tinozemny\t\tadj.
+17490\tinsekt\tI\tm.anim.
+35897\tinspiracija\tI\tf.
+35896\tinspirovati\tI\tv.tr. ipf./pf.
+2495\tinstalacija\tI\tf.
+4968\tinstalovati\tI\tv.tr. ipf.
+32805\tinstinkt\tI\tm.
+19730\tinstitucija\tI\tf.
+26131\tinstitut\tI\tm.
+11062\tinstruktor\t\tm.anim.
+15478\tinstruktorka\t\tf.
+2858\tinstrument\tI\tm.
+16944\tinstrumental\tI\tm.
+4789\tinstrumentaľny\tI\tadj.
+34947\tintegracija\tI\tf.
+36084\tintegritet\tI\tm.
+34946\tintegrovati\tI\tv.tr. ipf./pf.
+3174\tintelektual\tI\tm.anim.
+19731\tintelektuaľny\tI\tadj.
+36332\tintensivnosť\tI\tf.
+2859\tintensivny\tI\tadj.
+34853\tinterakcija\tI\tf.
+34852\tinteraktivny\tI\tadj.
+1330\tinteres\tI\tm.
+19732\tinteresno\tI\tadv.
+2500\tinteresny\tI\tadj.
+15928\tinteresovati sę\tI\tv.refl. ipf.
+34992\tinteresovati\tI\tv.tr. ipf.
+7916\tinterfejs\tI\tm.
+36231\tinterier\tF\tm.
+36232\tinterierny dizajn\tI\tm.
+31778\tinterlingvist\tI\tm.anim.
+31777\tinterlingvističny\tI\tadj.
+31776\tinterlingvistika\tI\tf.
+31779\tinternacionalizm\tI\tm.sg.
+3177\tinternacionalizovati\tI\tv.tr. ipf.
+17491\tinternet\tI\tm.sg.
+35278\tinternetny\tI\tadj.
+4988\tinterpretacija\tI\tf.
+4987\tinterpretovati\tI\tv.tr. ipf.
+23620\tinterpunkcija\tI\tf.
+16945\tinterrogativny zaimennik\tI\tm.
+35867\tinterval\tI\tm.
+35304\tintervencija\tI\tf.
+1819\tintervju\tI\tn.indecl.
+35512\tintriga\tF\tf.
+35809\tintrigovati\tI\tv.tr. ipf.
+35810\tintrigujųći\tI\tadj.
+12090\tintrospekcija\tI\tf.
+6159\tintuicija\tI\tf.
+35161\tintuitivny\tI\tadj.
+2493\tinųdy\t\tadv.
+34576\tinvalid\tI\tm.anim.
+34575\tinvalidsky vozȯk\t\tm.
+19496\tinvazija\tI\tf.
+23851\tinventarizacija\tI\tf.
+4986\tinvesticija\tI\tf.
+15933\tinvestor\tI\tm.anim.
+1480\tinvestovati\tI\tv.tr. ipf.
+864\tiny\t\tadj.
+4846\tinženjer\tF\tm.anim.
+290\tinženjerstvo\tF\tn.sg.
+4658\tion\tI\tm.
+1613\tiračsky\t\tadj.
+2505\tIrak\t\tm.sg.
+1782\tIran\t\tm.sg.
+2497\tiransky\t\tadj.
+32474\tirbis\tI\tm.anim.
+22631\tiridij\tI\tm.sg.
+34967\tiris\tI\tm.
+34968\tiris\tI\tm.
+188\tIrlandija\t\tf.sg.
+4432\tirlandsky\t\tadj.
+19733\tironičny\tI\tadj.
+19734\tironija\tI\tf.
+7924\tiskaľnik\t\tm.
+36573\tiskańje\t\tn.
+7925\tiskatelj\t\tm.anim.
+1012\tiskati\t\tv.tr. ipf.
+1011\tiskra\t\tf.
+3848\tiskrenosť\t\tf.
+2024\tiskreny\t\tadj.
+26141\tiskriti\t\tv.intr. ipf.
+23580\tislam\tI\tm.sg.
+35559\tislamsky\tI\tadj.
+4430\tIslandija\t\tf.sg.
+4431\tislandsky\t\tadj.
+7935\tistina\t\tf.
+7936\tistinlivo\t\tadv.
+7937\tistinlivy\t\tadj.
+7938\tistinno\t\tadv.
+5108\tistinnosť\t\tf.
+3309\tistinny\t\tadj.
+14604\tistnovati\t\tv.intr. ipf.
+3333\tisto\t\tadv.
+5310\tisty\t\tadj.
+26147\tIsus Hristos\t\tm.anim.
+17492\tIsus\tI\tm.anim.
+7947\titak\t\tadv.
+2503\tItalija\t\tf.sg.
+20386\tItalijan, Italijanin\t\tm.anim.
+643\titalijansky\t\tadj.
+35301\titeracija\tI\tf.
+26150\tiva\t\tf.
+1646\tiver\t\tm.
+26152\tivovy\t\tadj.
+12065\tiz drugoj stråny\t\tadv.
+12067\tiz jednoj stråny\t\tadv.
+644\tiz\t\tprep.
+7953\tiz-\t\tprefix
+641\tizba\t\tf.
+26155\tizbava\t\tf.
+26156\tizbavitelj\t\tm.anim.
+5887\tizbaviti sę\t\tv.refl. pf.
+17493\tizbaviti\t\tv.tr. pf.
+17495\tizbaviti\t\tv.tr. pf.
+5888\tizbavjati sę\t\tv.refl. ipf.
+17497\tizbavjati\t\tv.tr. ipf.
+17499\tizbavjati\t\tv.tr. ipf.
+26160\tizbavjeńje\t\tn.sg.
+1647\tizběgati\t\tv.intr. ipf.
+1953\tizběgati\t\tv.intr. ipf.
+36474\tizběgati\t\tv.intr. ipf.
+7962\tizběgomy\t\tadj.
+642\tizběgti\t\tv.intr. pf.
+1875\tizběgti\t\tv.intr. pf.
+36475\tizběgti\t\tv.intr. pf.
+26161\tizbica\t\tf.
+7964\tizbirajemosť\t\tf.
+7965\tizbiramy\t\tadj.
+7966\tizbirańje\t\tn.sg.
+7968\tizbiratelj\t\tm.anim.
+7974\tizbirateljstvo\t\tn.
+4334\tizbirati\t\tv.tr. ipf.
+23862\tizbiti\t\tv.tr. pf.
+23864\tizbivati\t\tv.tr. ipf.
+26163\tizbljuvati\t\tv.intr. pf.
+1641\tizbombardovati\tI\tv.tr. pf.
+7977\tizbor ljudij\t\tm.
+4333\tizbor\t\tm.
+7970\tizborny koledž\t\tm.
+7971\tizborny komitet\t\tm.
+7969\tizborny podvod\t\tm.
+1642\tizbory\t\tm.pl.
+17509\tizbrany\t\tadj.
+4335\tizbrati\t\tv.tr. pf.
+1630\tizbudovati\t\tv.tr. pf.
+4796\tizbuh\t\tm.
+4800\tizbuhati\t\tv.intr. ipf.
+4798\tizbuhlivy\t\tadj.
+4801\tizbuhnųti\t\tv.intr. pf.
+26167\tizbytȯk\t\tm.
+26169\tizcěliti sę\t\tv.refl. pf.
+36660\tizcěliti\t\tv.tr. pf.
+31720\tizcěljati sę\t\tv.refl. ipf.
+36661\tizcěljati\t\tv.tr. ipf.
+35983\tizčezaj!\t\tintj.
+3550\tizčezati\t\tv.intr. ipf.
+7988\tizčezneńje\t\tn.
+3557\tizčeznųti\t\tv.intr. pf.
+5879\tizčisliti\t\tv.tr. pf.
+5878\tizčisljati\t\tv.tr. ipf.
+3417\tizčisljeńje\t\tn.
+16726\tizčistiti\t\tv.tr. pf.
+17511\tizčrkańje\t\tn.
+3253\tizčrkati\t\tv.tr. ipf.
+3271\tizčrknųti\t\tv.tr. pf.
+2143\tizčrpati\t\tv.tr. pf.
+1643\tizčrpyvati\t\tv.tr. ipf.
+36226\tizdajnik\t\tm.anim.
+21295\tizdaleka\t\tadv.
+16733\tizdańje\t\tn.
+19873\tizdatelj\t\tm.anim.
+4855\tizdateljstvo\t\tn.
+29069\tizdati zamųž\t\tv.tr. pf.
+4854\tizdati\t\tv.tr. pf.
+17514\tizdati\t\tv.tr. pf.
+4779\tizdavati sę\t\tv.refl. ipf.
+34252\tizdavati zamųž\t\tv.tr. ipf.
+4853\tizdavati\t\tv.tr. ipf.
+17517\tizdavati\t\tv.tr. ipf.
+3732\t#izdělati\t\tv.tr. pf.
+2384\tizdojiti\t\tv.tr. pf.
+19272\tizdȯlbti\t\tv.tr. pf.
+1798\tizdŕžlivy\t\tadj.
+7996\tizdumati\t\tv.tr. pf.
+17523\tizganjańje\t\tn.sg.
+1692\tizganjati\t\tv.tr. ipf.
+26175\tizgladiti\t\tv.tr. pf.
+1696\tizglåsiti\t\tv.tr. pf.
+749\tizglašati\t\tv.tr. ipf.
+5812\tizględ\t\tm.
+5811\tizględati\t\tv.intr. ipf.
+33354\tizględati\t\tv.intr. ipf.
+13923\tizględka\t\tf.
+33355\tizględnųti\t\tv.intr. pf.
+17527\tizgnanec\t\tm.
+17528\tizgnańje\t\tn.sg.
+19279\tizgnanstvo\t\tn.sg.
+1695\tizgnati\t\tv.tr. pf.
+5593\tizgniti\t\tv.intr. pf.
+16827\tizgoda\t\tf.
+17531\tizgodny\t\tadj.
+26179\tizgojiti\t\tv.tr. pf.
+1795\tizgorěti\t\tv.intr. pf.
+5553\tizgovarjati\t\tv.tr. ipf.
+1797\tizgovor\t\tm.
+4370\tizgovoriti\t\tv.tr. pf.
+33706\tizgovorka\t\tf.
+26181\tizguba\t\tf.
+36653\tizgubiti sę\t\tv.refl. pf.
+36254\tizgubiti tęžinų\t\tv.intr. pf.
+26182\tizgubiti\t\tv.tr. pf.
+26183\tizgubiti\t\tv.tr. pf.
+26174\tizgynųti\t\tv.intr. pf.
+17532\tizhod luny\t\tm.
+5356\tizhod\t\tm.
+32745\tizhod\t\tm.
+5355\tizhoditi\t\tv.intr. ipf.
+35259\tizhodny kod\t\tm.
+14606\tizigrańje\t\tn.sg.
+3936\tizigratelj\t\tm.anim.
+1674\tizigrati\t\tv.tr. pf.
+1703\tizigryvati\t\tv.tr. ipf.
+5515\tizimati\t\tv.tr. ipf.
+35372\tiziskati ponovno\t\tv.tr. pf.
+17540\tiziskati\t\tv.tr. pf.
+35373\tiziskyvati ponovno\t\tv.tr. ipf.
+17543\tiziskyvati\t\tv.tr. ipf.
+4145\tizjasniti\t\tv.tr. pf.
+4144\tizjasnjati\t\tv.tr. ipf.
+4146\tizjasnjeńje\t\tn.
+3413\tizjaviti sę\t\tv.refl. pf.
+17547\tizjaviti\t\tv.tr. pf.
+3412\tizjavjati sę\t\tv.refl. ipf.
+17548\tizjavjati\t\tv.tr. ipf.
+35474\tizjavjeńje\t\tn.sg.
+5484\tizjehati\t\tv.intr. pf.
+5514\tizjęti\t\tv.tr. pf.
+5497\tizjezd\t\tm.
+5485\tizježđati\t\tv.intr. ipf.
+1610\tizkalkulovati\tI\tv.tr. pf.
+16946\tizkazańje\t\tn.
+19735\tizkladati\t\tv.tr. ipf.
+20387\tizključajųći\t\tprep.
+2504\tizključati\t\tv.tr. ipf.
+3918\tizključati\t\tv.tr. ipf.
+8018\tizključeńje\t\tn.
+8024\tizključeńje\t\tn.
+8025\tizključiteljno\t\tadv.
+8026\tizključiteljny\t\tadj.
+482\tizključiti\t\tv.tr. pf.
+3920\tizključiti\t\tv.tr. pf.
+17552\tizključno\t\tadv.
+8023\t#izkljuvati\t\tv.tr. ipf.
+5777\tizkonavči\t\tadj.
+2523\tizkopati\t\tv.tr. pf.
+17555\tizkopyvati\t\tv.tr. ipf.
+26191\tizkoreniti\t\tv.tr. pf.
+32044\tizkorenjati\t\tv.tr. ipf.
+5155\tizkoristati\t\tv.tr. pf.
+35261\tizkoristiti\t\tv.tr. pf.
+5570\tizkoristyvati\t\tv.tr. ipf.
+17557\tizkositi\t\tv.tr. pf.
+36922\tizkovati\t\tv.tr. pf.
+36921\tizkovyvati\t\tv.tr. ipf.
+8033\tizkrikati\t\tv.tr. ipf.
+8035\tizkriknųti\t\tv.tr. pf.
+8031\tizkrviti do smŕti\t\tv.tr. pf.
+4515\tizkrviti\t\tv.tr. pf.
+31422\tizkup\t\tm.
+3445\tizkųpati\t\tv.tr. pf.
+26193\tizkupiti\t\tv.tr. pf.
+19736\tizkus\t\tm.
+3603\tizkusiti\t\tv.tr. pf.
+19743\tizkusny\t\tadj.
+4781\tizkušati\t\tv.tr. ipf.
+19740\tizkušeńje\t\tn.
+3606\tizkušenosť\t\tf.
+3607\tizkušeny\t\tadj.
+35776\tizkydati\t\tv.tr. ipf.
+35777\tizkydnųti\t\tv.tr. pf.
+19744\tizlagati\t\tv.tr. ipf.
+36663\tizlěčiti sę\t\tv.refl. pf.
+4131\tizlěčiti\t\tv.tr. pf.
+36549\tizlęgti sę\t\tv.refl. pf.
+36547\tizlęgti\t\tv.tr. pf.
+17561\tizlet\t\tm.
+26196\tizlišek\t\tm.
+27228\tizlišnji, izlišny\t\tadj.
+26197\tizliti\t\tv.tr. pf.
+36396\tizlivati\t\tv.tr. ipf.
+26198\tizlomiti\t\tv.tr. pf.
+26199\tizloviti\t\tv.tr. pf.
+19745\tizložiti\t\tv.tr. pf.
+33357\tizmagateljstvo\t\tn.sg.
+31423\tizmagati\t\tv.tr. ipf.
+5737\tizmama\t\tf.
+15699\tizmamitelj\t\tm.anim.
+5736\tizmamiti\t\tv.tr. pf.
+5735\tizmamjati\t\tv.tr. ipf.
+15701\tizmamnica\t\tf.
+5738\tizmamnik\t\tm.anim.
+4915\tiz-među\t\tprep.
+3944\tizměna\t\tf.
+1081\tizměniti\t\tv.tr. pf.
+711\tizměnjati\t\tv.tr. ipf.
+3496\tizměnjeńje\t\tn.
+5596\tizměriti\t\tv.tr. pf.
+26204\tizmesti\t\tv.tr. pf.
+19748\tizměstiti\t\tv.tr. pf.
+19746\tizměšćati\t\tv.tr. ipf.
+19747\tizměšćeńje\t\tn.sg.
+35982\tizmětaj sę!\t\tintj.
+32600\tizmětati\t\tv.tr. ipf.
+17568\tizmirati\t\tv.intr. ipf.
+1597\tizmočiti\t\tv.intr. pf.
+36917\tizmodelovati\tI\tv.tr. pf.
+36924\tizmodelovati\tI\tv.tr. pf.
+33356\tizmogti\t\tv.tr. pf.
+26205\tizmoriti\t\tv.tr. pf.
+17569\tizmrěti\t\tv.intr. pf.
+3599\tizmųčeny\t\tadj.
+1595\tizmysl\t\tm.
+8060\tizmyslitelj\t\tm.anim.
+8061\tizmysliti\t\tv.tr. pf.
+8063\tizmysljati\t\tv.tr. ipf.
+17570\tizmysljeńje\t\tn.
+3610\tizmysljeny\t\tadj.
+17571\tizmysljeny\t\tadj.
+1796\tiz-nad\t\tprep.
+36802\tiznahoditi\t\tv.tr. ipf.
+8068\tiznahodlivo\t\tadv.
+8069\tiznahodlivosť\t\tf.
+8070\tiznahodlivy\t\tadj.
+603\tiznahodnik\t\tm.anim.
+36804\tiznahodȯk\t\tm.
+36803\tiznajdti\t\tv.tr. pf.
+23316\tiznajęti\t\tv.tr. pf.
+23315\tiznajmati\t\tv.tr. ipf.
+26207\tiznemogti\t\tv.intr. pf.
+23729\tiznenada\t\tadv.
+26208\tiznenadsko\t\tadv.
+5459\tiznesti\t\tv.tr. pf.
+26209\tizniknųti\t\tv.intr. pf.
+35758\tizniščeńje\t\tn.
+35759\tizniščiti\t\tv.tr. pf.
+5458\tiznositi\t\tv.tr. ipf.
+4680\tiznova\t\tadv.
+33358\tiznuda\t\tf.
+33360\tiznuditi\t\tv.tr. pf.
+33359\tiznuđati\t\tv.tr. ipf.
+16391\tiznuriti\t\tv.intr. pf.
+8082\tiznurjati\t\tv.intr. ipf.
+26211\tizobara\tI\tf.
+20395\t#izobličati\t\tv.tr. ipf.
+20396\tizobličiti\t\tv.tr. pf.
+771\tizobraziti\t\tv.tr. pf.
+1865\tizobražati\t\tv.tr. ipf.
+19750\tizobražeńje\t\tn.
+26213\tizoglosa\tI\tf.
+5354\tizȯjdti\t\tv.intr. pf.
+4965\tizolacija\tI\tf.
+26214\tizolator\tI\tm.
+21298\tizolovany\tI\tadj.
+2015\tizolovati\tI\tv.tr. ipf.
+31929\tizopačati\t\tv.tr. ipf.
+26216\tizopačiti\t\tv.tr. pf.
+26217\tizorati\t\tv.tr. pf.
+26218\tizpadati\t\tv.intr. ipf.
+36716\tizpasti\t\tv.intr. pf.
+26219\tizpekti\t\tv.tr. pf.
+26220\tizpepeliti\t\tv.tr. pf.
+36799\tizphańje\t\tn.
+32917\tizphati\t\tv.tr. pf.
+32918\tizphati\t\tv.tr. pf.
+32915\tizpihati\t\tv.tr. ipf.
+32916\tizpihati\t\tv.tr. ipf.
+2608\tizpiti\t\tv.tr. pf.
+8087\tizplaćati\t\tv.tr. ipf.
+26222\tizplåšiti\t\tv.tr. pf.
+4277\tizplata\t\tf.
+8089\tizplatiti\t\tv.tr. pf.
+13945\tizplatny spisȯk\t\tm.
+26223\tizplěti\t\tv.tr. pf.
+35124\tizpljunųti\t\tv.tr. pf.
+35123\tizpljuvati\t\tv.tr. ipf.
+34907\tizpluti\t\tv.intr. pf.
+34311\tizplyvati\t\tv.intr. ipf.
+34313\tizplyvati\t\tv.intr. ipf.
+36726\tizplyvati\t\tv.intr. ipf.
+34314\tizplyvti\t\tv.intr. pf.
+34315\tizplyvti\t\tv.intr. pf.
+2926\tiz-pod\t\tprep.
+597\tizpȯlniti\t\tv.tr. pf.
+2501\tizpȯlnjati\t\tv.tr. ipf.
+36609\tizpȯlnjeńje\t\tn.sg.
+17573\tizpȯlzati\t\tv.intr. ipf.
+17574\tizpȯlzti\t\tv.intr. pf.
+19752\tizpověď\t\tf.
+22218\tizpovědati\t\tv.tr. ipf.
+22219\tizpověděti\t\tv.tr. pf.
+22798\tizprašati\t\tv.tr. ipf.
+32299\tizprati mozg\t\tv.tr. pf.
+32305\tizprati\t\tv.tr. pf.
+2502\tizpraviti\t\tv.tr. pf.
+2507\tizpravjati\t\tv.tr. ipf.
+26231\tizpråzdniti\t\tv.tr. pf.
+31723\tizpråzdnjati\t\tv.tr. ipf.
+3043\tiz-prěd\t\tprep.
+32773\tizpręgati\t\tv.tr. ipf.
+32774\tizpręgti\t\tv.tr. pf.
+17575\tizprobovańje\t\tn.sg.
+17576\tizprobovati\t\tv.tr. pf.
+17577\tizprobovyvati\t\tv.tr. ipf.
+16735\tizprodany\t\tadj.
+22797\tizprositi\t\tv.tr. pf.
+26232\tizpŕva\t\tadv.
+26233\tizpųditi\t\tv.tr. pf.
+13952\tizpųkly\t\tadj.
+5240\tizpustiti\t\tv.tr. pf.
+5241\tizpušćati\t\tv.tr. ipf.
+16396\tizpytati\t\tv.tr. pf.
+20868\tizpytati\t\tv.tr. pf.
+16395\tizpytyvati\t\tv.tr. ipf.
+20869\tizpytyvati\t\tv.tr. ipf.
+681\tizråbiti\t\tv.tr. pf.
+8103\tizråbotati\t\tv.tr. pf.
+8106\tizråbotyvati\t\tv.tr. ipf.
+6084\tizrađati sę\t\tv.refl. ipf.
+26239\tIzraelec\t\tm.anim.
+4741\tIzraelj\t\tm.sg.
+4742\tizraeľsky\t\tadj.
+1688\tizråsti\t\tv.intr. pf.
+3725\tizråvniti sę\t\tv.refl. pf.
+19754\tizråvniti\t\tv.tr. pf.
+3723\tizravnjati sę\t\tv.refl. ipf.
+19753\tizravnjati\t\tv.tr. ipf.
+8115\tizraz\t\tm.
+36718\tizraziti sę\t\tv.refl. pf.
+2609\tizraziti\t\tv.tr. pf.
+17584\tizraznosť\t\tf.
+17586\tizrazny\t\tadj.
+36717\tizražati sę\t\tv.refl. ipf.
+682\tizražati\t\tv.tr. ipf.
+719\tizražeńje\t\tn.
+21301\tizrěčeńje\t\tn.
+21303\tizrěkati\t\tv.tr. ipf.
+21305\tizrěkti\t\tv.tr. pf.
+8120\tizrězati\t\tv.tr. pf.
+36918\tizrězyvati\t\tv.tr. ipf.
+6085\tizroditi sę\t\tv.refl. pf.
+31433\tizrodȯk\t\tm.anim.
+21307\tizrođeńje\t\tn.sg.
+6086\tizrođeny\t\tadj.
+17587\tizrųbati\t\tv.tr. pf.
+17588\tizrųbyvati\t\tv.tr. ipf.
+23867\tizrvati\t\tv.tr. pf.
+23866\tizryvati\t\tv.tr. ipf.
+36425\tizsěkati\t\tv.tr. ipf.
+19755\tizsěkti\t\tv.tr. pf.
+36426\tizseliti sę\t\tv.refl. pf.
+5710\tizseliti\t\tv.tr. pf.
+36427\tizseljati sę\t\tv.refl. ipf.
+5711\tizseljati\t\tv.tr. ipf.
+17589\tizseljenec\t\tm.anim.
+17590\tizseljenica\t\tf.
+5712\tizseljeńje\t\tn.sg.
+8123\tizslati\t\tv.tr. pf.
+20398\tizslavjati sę\t\tv.refl. ipf.
+20397\tizslavjati\t\tv.tr. ipf.
+32751\tizslědȯk\t\tm.
+35390\tizslědovańje\t\tn.sg.
+1937\tizslědovatelj\t\tm.anim.
+21308\tizslědovati\t\tv.tr. ipf.
+20400\tizsloviti sę\t\tv.refl. pf.
+20399\tizsloviti\t\tv.tr. pf.
+12348\tizslušańje\t\tn.
+36533\tizslušati\t\tv.tr. pf.
+36532\tizslušivati\t\tv.tr. ipf.
+13967\tizsmějati\t\tv.tr. pf.
+13965\tizsmějivańje\t\tn.sg.
+4133\tizsmějivati\t\tv.tr. ipf.
+13968\tizsměška\t\tf.
+4134\tizsměšnik\t\tm.anim.
+17591\tizsměvka\t\tf.
+34583\tizsȯhnųti\t\tv.intr. pf.
+4151\tizsȯsati\t\tv.tr. pf.
+20401\tiz-srěd\t\tprep.
+8126\t#izstava, izstavka\t\tf.
+16614\tizstava\t\tf.
+2602\tizstaviti\t\tv.tr. pf.
+931\tizstavjati\t\tv.tr. ipf.
+35563\tizstavjeńje\t\tn.sg.
+33599\tizstrěl\t\tm.
+35676\tizstrěliti\t\tv.tr. pf.
+3505\tizstųpati\t\tv.intr. ipf.
+21985\tizstųpati\t\tv.intr. ipf.
+3535\tizstųpiti\t\tv.intr. pf.
+21993\t#izstųpiti\t\tv.intr. pf.
+13947\tizsunųti\t\tv.tr. pf.
+13951\tizsunųťje\t\tn.sg.
+13953\tizsunųty\t\tadj.
+33097\tizsušati\t\tv.tr. ipf.
+33098\tizsušiti\t\tv.tr. pf.
+13949\tizsuvati\t\tv.tr. ipf.
+34582\tizsyhati\t\tv.intr. ipf.
+17592\tizsylańje\t\tn.sg.
+8131\tizsylati\t\tv.tr. ipf.
+26245\tizsypati\t\tv.tr. pf.
+5567\tizsysati\t\t#v.tr. ipf.
+34002\tizšiti\t\tv.tr. pf.
+34001\tizšivati\t\tv.tr. ipf.
+4845\tizškoliti\t\tv.tr. pf.
+22052\tiztęg\t\tm.
+3850\tiztęgati\t\tv.tr. ipf.
+3849\tiztęgnųti\t\tv.tr. pf.
+6070\tiztěkati\t\tv.intr. ipf.
+22066\tiztěkati\t\tv.intr. ipf.
+6072\tiztekti\t\tv.intr. pf.
+22067\tiztekti\t\tv.intr. pf.
+2393\tiztirati\t\tv.tr. ipf.
+26247\tiztkati\t\tv.tr. pf.
+26249\t#iztočiti\t\tv.tr. pf.
+23538\tIztočna Evropa\t\tf.sg.
+22070\tiztočnik\t\tm.
+17594\tiztočnoslovjansky\t\tadj.
+13636\tiztočny\t\tadj.
+15642\tiztok\t\tm.sg.
+26250\tiztok\t\tm.
+26251\tiztȯlkti\t\tv.tr. pf.
+3277\tiztratiti\t\tv.tr. pf.
+34955\tiztręsati\t\tv.tr. ipf.
+34954\tiztręsti\t\tv.tr. pf.
+5545\tiztreti\t\tv.tr. pf.
+22139\tiztrgati\t\tv.tr. ipf.
+22140\tiztrgnųti\t\tv.tr. pf.
+3820\tiztŕpěti\t\tv.tr. pf.
+16400\tiztvarjati\t\tv.tr. ipf.
+16397\tiztvor\t\tm.
+16398\tiztvoriti\t\tv.tr. pf.
+16399\tiztvorjeńje\t\tn.sg.
+31724\tizučati\t\tv.tr. ipf.
+26256\tizučiti\t\tv.tr. pf.
+13934\tizumirańje\t\tn.sg.
+5774\tizumirati\t\tv.intr. ipf.
+20402\tizumrěly\t\tadj.
+5769\tizumreti\t\tv.intr. pf.
+36915\tizvajati\t\tv.tr. pf.
+763\tizvaljnjati\t\tv.tr. ipf.
+22217\tizvědy\t\tm.pl.
+558\tizvesti\t\tv.tr. pf.
+36764\tizvesti\t\tv.tr. pf.
+17596\tizvěstitelj\t\tm.anim.
+3688\tizvěstiti\t\tv.tr. pf.
+17595\tizvěsťje\t\tn.
+14314\tizvěstnik\t\tm.anim.
+26264\tizvěstny\t\tadj.
+14315\tizvěstoglåsitelj\t\tm.anim.
+14316\tizvěstoglåšeńje\t\tn.
+22215\tIzvěstovańje\t\tn.sg.
+3692\tizvěšćati\t\tv.tr. ipf.
+5511\tizvezti\t\tv.tr. pf.
+8146\tizvezti\t\tv.tr. pf.
+26265\tizvihnųti\t\tv.tr. pf.
+3390\tizvini, izvinite\t\tintj.
+32398\tizviniti sę\t\tv.refl. pf.
+634\tizviniti\t\tv.tr. pf.
+32400\tizvinjajųći\t\tadj.
+32397\tizvinjati sę\t\tv.refl. ipf.
+633\tizvinjati\t\tv.tr. ipf.
+32399\tizvinjeńje\t\tn.
+22512\tizvlastniti\t\tv.tr. pf.
+22511\tizvlastnjati\t\tv.tr. ipf.
+36722\tizvlěkati\t\tv.tr. ipf.
+26267\tizvlěkti\t\tv.tr. pf.
+26269\tizvně\t\tadv.
+22395\tizvnųtra\t\tadv.
+22276\tizvod\t\tm.
+22280\tizvod\t\tm.
+5540\tizvoditi\t\tv.tr. ipf.
+36763\tizvoditi\t\tv.tr. ipf.
+8156\tizvodlivosť\t\tf.
+8157\tizvodlivy\t\tadj.
+17598\tizvođeńje\t\tn.
+8158\tizvolimosť\t\tf.
+8159\tizvolimy\t\tadj.
+14611\tizvoliti\t\tv.tr. pf.
+14612\tizvoljeńje\t\tn.
+8168\tizvoljeny\t\tadj.
+2956\tizvoljniti\t\tv.tr. pf.
+14610\tizvoljny\t\tadj.
+26270\tizvor\t\tm.
+5907\tizvoz\t\tm.
+5510\tizvoziti\t\tv.tr. ipf.
+16181\tizvoziti\t\tv.tr. ipf.
+22662\tizvraćati\t\tv.tr. ipf.
+5629\tizvråćeny\t\tadj.
+22661\tizvråtiti\t\tv.tr. pf.
+2506\tiz-za\t\tprep.
+8172\tiže\t\tpron.rel.
+26272\tižica\t\tf.
+5858\tizznačati\t\tv.tr. ipf.
+5859\tizznačeńje\t\tn.
+5857\tizznačiti\t\tv.tr. pf.
+8177\tizzȯv\t\tm.
+6244\tizzvati\t\tv.tr. pf.
+6243\tizzyvati\t\tv.tr. ipf.
+2932\tizžęti\t\tv.tr. pf.
+1602\tja\t\tpron.pers.
+17601\tjablånj\t\tf.
+26275\tjablȯčny\t\tadj.
+282\tjablȯko\t\tn.
+2109\tjad\t\tm.
+26282\tjadovity\t\tadj.
+36740\tJadransko morje\tI\tn.
+1576\tjagnę\t\tn.
+26285\tjagnętina\t\tf.
+26284\tjagnęťji\t\tadj.
+26286\tjagniti sę\t\tv.refl. ipf.
+1580\tjagoda\t\tf.
+26287\tjagoda\t\tf.
+26289\tjagodny\t\tadj.
+32472\tjaguar\tI\tm.anim.
+4708\tjajca\t\tn.pl.
+1478\tjajce\t\tn.
+8209\tjajcebělȯk\t\tm.
+8214\tjaječko\t\tn.
+36552\tjajėčna skorlupa\t\tf.
+35431\tjaječny krem\t\tm.
+26291\tjaječny\t\tadj.
+36848\tjak\tI\tm.
+17602\tjalovec\t\tm.
+26293\tjalověti\t\tv.intr. ipf.
+26294\tjalovica\t\tf.
+26296\tjalovy\t\tadj.
+36640\tjalovy\t\tadj.
+36641\tjalovy\t\tadj.
+4995\tjama\t\tf.
+16785\tJamajka\t\tf.sg.
+22458\tjamajsky\t\tadj.
+2106\tjanuaŕ\tI\tm.sg.
+19756\tJaponec\t\tm.anim.
+3052\tJaponija\t\tf.sg.
+1528\tjaponsky\t\tadj.
+118\tjar\t\tm.
+26299\tjar\t\tm.
+35544\tjard\tE\tm.
+26303\tjarka\t\tf.
+26304\tjarky\t\tadj.
+3042\tjaŕmo\t\tn.
+26306\tjarosť\t\tf.
+26307\tjarovy\t\tadj.
+26308\tjasenėc\t\tm.
+17603\tjasenj\t\tm.
+17605\tjasla-sadȯk\t\tm.
+26311\tjasli\t\tm.pl.
+26312\tjasněti\t\tv.intr. ipf.
+17607\tjasno\t\tadv.
+4147\tjasnosť\t\tf.
+26317\tjasnota\t\tf.
+13615\tjasnovidec\t\tm.anim.
+13614\tjasnovidka\t\tf.
+17608\tjasnovidnosť\t\tf.
+734\tjasny\t\tadj.
+33082\tjasny\t\tadj.
+527\tjastręb\t\tm.anim.
+878\tjaščer\t\tm.anim.
+26324\tjatrȯv\t\tf.
+17609\tjava\t\tf.
+17611\tjava\t\tf.
+36480\tJava\t\tf.sg.
+36481\tjavansky\t\tadj.
+534\tjaviti sę\t\tv.refl. pf.
+36730\tjaviti sę\t\tv.refl. pf.
+3612\tjavjati sę\t\tv.refl. ipf.
+36731\tjavjati sę\t\tv.refl. ipf.
+8240\tjavjeńje\t\tn.
+17612\tjavjeńje\t\tn.
+26327\tjavno\t\tadv.
+8241\tjavny\t\tadj.
+26329\tjavor\t\tm.
+26330\tjavorovy\t\tadj.
+26331\tjaź\t\tm.anim.
+26332\tjaz\t\tm.
+20403\tjazvec\t\tm.anim.
+8245\tje, jest\t\tv.ipf.
+4461\tjebańje\t\tn.sg.
+8248\tjebany\t\tadj.
+8249\tjebatelj\t\tm.anim.
+528\tjebati\t\tv.tr. ipf.
+35993\tjebeno\t\tadv.
+2862\tjęčati\t\tv.intr. ipf.
+1574\tjęčmenj\t\tm.
+36479\tjęčmenj\t\tm.
+16798\tjęčmenny\t\tadj.
+2944\tjeda\t\tf.
+26340\tjedak\t\tm.anim.
+8259\tjedańje\t\tn.sg.
+15347\tjedatelj\t\tm.anim.
+1592\tjedati\t\tv.intr. ipf.
+16799\tjedeńje\t\tn.sg.
+532\tjedin drugogo\t\tpron.rec.
+8268\tjedin protiv drugomu\t\tadv.
+531\tjedin\t\tnum.card.
+19757\tjedinačka\t\tf.
+19758\tjedinak\t\tm.anim.
+26345\tjedinec\t\tm.anim.
+5174\tjedinica\t\tf.
+36735\tjedinka\t\tnum.subst.
+533\tjedinnadsęť\t\tnum.card.
+23679\tjedinnadsęty\t\tnum.ord.
+8278\tjedino pytańje vrěmene\t\tphrase
+5098\tjedino\t\tadv.
+17615\tjedinovy\t\tadj.
+915\tjedinstveno čislo\t\tn.
+8282\tjedinstveny\t\tadj.
+19759\tjedinstveny\t\tadj.
+8283\tjedinstvo\t\tn.sg.
+999\tjediny\t\tadj.
+26349\tjedivo\t\tn.
+8255\tjedlivy\t\tadj.
+8296\tjednako\t\tadv.
+24009\tjednakovy\t\tadj.
+21309\tjednakože, jednakže\t\tadv.
+2702\tjednaky\t\tadj.
+35251\tjednina\t\tf.
+17617\tjednobožstvo\t\tn.sg.
+3852\tjednočasno\t\tadv.
+3851\tjednočasny\t\tadj.
+17618\tjednoglåsno\t\tadv.
+17619\tjednoglåsny\t\tadj.
+19761\tjednojęzyčny\t\tadj.
+741\tjednokråtno\t\tadv.
+33398\tjednokråtny\t\tadj.
+8276\tjednonočka\t\tf.
+8275\tjednonočny seks\t\tm.sg.
+8274\tjednonočny\t\tadj.
+26352\tjednonogy\t\tadj.
+21310\tjednoobrazny\t\tadj.
+26353\tjednooky\t\tadj.
+32326\tjednopoly\t\tadj.
+21311\tjednorodnosť\t\tf.
+21312\tjednorodny\t\tadj.
+19762\tjednorog\t\tm.anim.
+26355\tjednorųky\t\tadj.
+16947\tjednosložny\t\tadj.
+8301\tjednosměrny\t\tadj.
+740\tjednosť\t\tf.
+5673\tjednostajnosť\t\tf.
+5674\tjednostajny\t\tadj.
+8306\tjednostrånno\t\tadv.
+1781\tjednostrånny\t\tadj.
+16948\tjednovrěmenno\t\tadv.
+22574\tjednovrěmenny\t\tadj.
+17620\tjednoznačno\t\tadv.
+17625\tjednoznačny\t\tadj.
+19764\tjednoznačny\t\tadj.
+19763\tjednoženstvo\t\tn.sg.
+22943\tjedomy\t\tadj.
+8200\tjędrna energija\t\tf.
+8201\tjędrna sposobnosť\t\tf.
+8202\tjędrno odstrašeńje\t\tn.sg.
+8205\tjędrny reaktor\t\tm.
+2108\tjędrny\t\tadj.
+3748\tjędrny\t\tadj.
+2107\tjędro\t\tn.
+2354\tjedva\t\tadv.
+14627\tjedvab\t\tm.sg.
+512\tjego\t\tpron.poss.
+716\tjego\t\tpron.pers.
+6256\tjegov\t\tpron.poss.
+8320\tjehati želěznicejų\t\tv.ipf.
+2175\tjehati\t\tv.intr. ipf.
+2195\tjej\t\tpron.poss.
+3015\tjej\t\tpron.pers.
+6257\tjejin\t\tpron.poss.
+26364\tjela\t\tf.
+26365\tjelec\t\tm.anim.
+26366\tjelenę\t\tn.
+26368\tjelenina\t\tf.
+2202\tjelenj\t\tm.anim.
+26367\tjeleńji\t\tadj.
+3058\tjelito\t\tn.
+17616\tjelo\t\tn.
+3017\tjemela\t\tf.
+5922\tJemen\t\tm.sg.
+2771\tjemu\t\tpron.pers.
+26374\tjen\tI\tm.
+8328\tjer\t\tconj.
+15354\tjerbo za\t\tprep.
+8329\tjerbo\t\tconj.
+26375\tjerębina\t\tf.
+25939\tjerej\tI\tm.anim.
+26376\tjeremiada\tI\tf.
+443\tjesenj\t\tf.
+26378\tjesennji, jesenny\t\tadj.
+26379\tjesetr\t\tm.anim.
+26380\tjesetrina\t\tf.
+19765\tjestestvo\t\tn.sg.
+19767\tjestestvo\t\tn.sg.
+19491\tjesti\t\tv.tr. ipf.
+23673\tjestli ne\t\tconj.
+8335\tjestli trěba\t\tadv.
+2353\tjestli\t\tconj.
+14605\tjestvovati\t\tv.intr. ipf.
+8341\tješče dva\t\tnum.
+1076\tješče\t\tadv.
+16800\tjęti\t\tv.tr. ipf.
+14628\tjętra\t\tn.pl.
+2322\tJevrej\t\tm.anim.
+2546\tjevrejskoslovjansky\t\tadj.
+255\tjevrejsky\t\tadj.
+3572\tjezda\t\tf.
+17629\tjezdec\t\tm.anim.
+26388\tjezdec\t\tm.anim.
+19175\tjezditi na velosipedu\t\tv.ipf.
+540\tjezditi\t\tv.intr. ipf.
+8349\tjezerny\t\tadj.
+2547\tjezero\t\tn.
+26392\tjezuit\tI\tm.anim.
+17630\tJezus\tI\tm.anim.
+31978\tjęzyček\t\tm.
+31979\tjęzyčkovy\t\tadj.
+17631\tjęzyčny\t\tadj.
+541\tjęzyk\t\tm.
+545\tjęzyk\t\tm.
+36102\tjęzykolomka\t\tf.
+17632\tjęzykoslovec\t\tm.anim.
+19768\tjęzykotvoritelj, językotvorec\t\tm.anim.
+19770\tjęzykotvorjeńje, językotvorstvo\t\tn.sg.
+551\tjęzykověd\t\tm.anim.
+4443\tjęzykovědstvo\t\tn.sg.
+17633\tjęzykoznańje\t\tn.sg.
+8354\tjęzykoznavec\t\tm.anim.
+19772\tjęzykoznavstvo\t\tn.sg.
+846\tjež\t\tm.anim.
+3825\tježdna čęsť\t\tf.
+26394\tježina\t\tf.
+34830\tježiti sę\t\tv.refl. ipf.
+26395\tježiti\t\tv.tr. ipf.
+35952\tjidiš\tI\tm.sg.
+2601\tjih\t\tpron.poss.
+2603\tjih\t\tpron.pers.
+6258\tjihny\t\tpron.poss.
+1871\tjim\t\tpron.pers.
+22630\tjod\tI\tm.sg.
+23660\tjoga\tI\tf.
+4638\tjogurt\t\tm.
+5923\tJordanija\t\tf.sg.
+4436\tjordansky\t\tadj.
+4815\tjų\t\tpron.pers.
+5924\tjubilej\t\tm.
+23582\tjudaizm\tI\tm.sg.
+1527\tjug\t\tm.sg.
+36380\tjugoiztočny\t\tadj.
+36381\tjugoiztok\t\tm.sg.
+129\tJugoslavija\t\tf.sg.
+35350\tjugoslavizm\t\tm.sg.
+4867\tjugoslavsky\t\tadj.
+36382\tjugovȯzhod\t\tm.sg.
+36383\tjugovȯzhodny\t\tadj.
+36384\tjugozapad\t\tm.sg.
+36385\tjugozapadny\t\tadj.
+3125\tjulij\tI\tm.sg.
+26403\tjunak\t\tm.anim.
+26404\tjunak\t\tm.anim.
+26405\tjunec\t\tm.anim.
+2550\tjunij\tI\tm.sg.
+5803\tjunior\tI\tm.anim.
+26407\tjunoš, junoša\t\tm.anim.
+26408\tjuny\t\tadj.
+21313\tJupiter\tI\tm.sg.
+2549\tjurisdikcija\tI\tf.
+26410\tjurȯk\t\tm.anim.
+26412\tjutrenja\t\tf.
+8364\tjutrišnji, jutrišny\t\tadj.
+8366\tjutro\t\tn.
+4746\tJužna Amerika\t\tf.sg.
+22772\tJužna Koreja\t\tf.sg.
+8367\tjužna polsfera\t\tf.sg.
+10849\tjužno sijańje\t\tn.sg.
+4186\tjužno\t\tadv.
+553\tJužnoafrikanska Republika\t\tf.sg.
+35018\tjužnoafrikansky\t\tadj.
+4747\tjužnoamerikansky\t\tadj.
+35136\tjužnoevropejsky\t\tadj.
+22774\tjužnokorejsky\t\tadj.
+4425\tjužnoslovjansky\t\tadj.
+23501\tJužny okean\t\tm.sg.
+23634\tJužny polus\t\tm.sg.
+2548\tjužny\t\tadj.
+518\tk, ko\t\tprep.
+26417\tkabaček\t\tm.
+26420\tkabala\tI\tf.
+26421\tkabalističny\tI\tadj.
+26423\tkabare, kabaret\tF\tm.
+26424\tkabarga\t\tf.
+4409\tkabelj\tI\tm.
+36002\tkabina\tI\tf.
+36715\tkabinet\tF\tm.
+17635\tkačer\t\tm.anim.
+519\tkaď\t\tf.
+26429\tkadiľnica\t\tf.
+26430\tkadilo\t\tn.
+26432\tkaditi\t\tv.intr. ipf.
+22627\tkadmij\tI\tm.sg.
+658\tkadȯlb\t\tm.
+11144\tkadry\tI\tm.pl.
+35874\tkafe\tF\tn.indecl.
+24439\tkajak\t\tf.
+26437\tkajati sę\t\tv.refl. ipf.
+1193\tkak, kako\t\tadv.
+2043\tkak, kako\t\tprep.
+3437\tkak, kako\t\tadv.
+34784\tkakao\tI\tn.indecl.
+26439\tkakati\t\tv.intr. ipf.
+1421\tkako ... tako i ...\t\tconj.
+5035\tkako by\t\tconj.
+17637\tkako možno ranějše\t\tadv.
+17638\tkako možno skorěje\t\tadv.
+36619\tkako prědtym\t\tadv.
+36618\tkako prěđe\t\tadv.
+36620\tkako raněje\t\tadv.
+17639\tkako sę govori\t\tphrase
+6107\tkako sę tvŕdi\t\tphrase
+16828\tkako toliko\t\tadv.
+23868\tkakoby\t\tadv.
+19606\tkakokoli\t\tadv.
+14630\tkako-libo\t\tadv.
+2712\tkako-nebųď\t\tadv.
+3796\tkakosť\t\tf.
+497\tkakostny\t\tadj.
+34756\tkaktus\tI\tm.
+1454\tkaky\t\tpron.indef.
+19605\tkakykoli\t\tpron.indef.
+14631\tkaky-libo\t\tpron.indef.
+2711\tkaky-nebųď\t\tpron.indef.
+341\tkal\t\tm.sg.
+26442\tkal\t\tm.sg.
+22616\tkalcij\tI\tm.sg.
+20870\tkalendaŕ\tI\tm.
+35817\tKalifornija\t\tf.sg.
+20871\tkaligraf\tI\tm.anim.
+35687\tkaligrafičny\tI\tadj.
+20872\tkaligrafija\tI\tf.
+22615\tkalij\tI\tm.sg.
+26444\tkalina\t\tf.
+26447\tkaliti\t\tv.tr. ipf.
+6164\tkalka\tI\tf.
+4966\tkalkulacija\tI\tf.
+2553\tkalkulovati\tI\tv.tr. ipf.
+26449\tkaľny\t\tadj.
+448\tkaluža\t\tf.
+26453\tkameněti\t\tv.intr. ipf.
+26455\tkamenisty\t\tadj.
+1313\tkamenj\t\tm.
+36154\tkamenna doba\t\tf.
+26459\tkamenny\t\tadj.
+20404\tkamenolom\t\tm.
+26461\tkamenovati\t\tv.tr. ipf.
+851\tkamera\tI\tf.
+4227\tkameraman\tI\tm.anim.
+26462\tkamion\tF\tm.
+19553\tkamo\t\tadv.
+19607\tkamokoli\t\tadv.
+19569\tkamo-libo\t\tadv.
+19568\tkamo-nebųď\t\tadv.
+2556\tkampanija\tI\tf.
+35824\tkamuflaž\tF\tm.sg.
+2321\tKanada\t\tf.sg.
+2561\tkanadsky\t\tadj.
+23266\tkanal\tI\tm.
+23269\tkanalizacija\tI\tf.
+23268\tkanalizovati\tI\tv.tr. ipf.
+23489\tkanarka\t\tf.
+16723\tkancelarija\t\tf.
+36330\tkancler\tG\tm.anim.
+2007\tkandidat\tI\tm.anim.
+33406\tkandidatura\tI\tf.
+6270\tkandidovati\tI\tv.tr. ipf.
+22959\tkanibal\tI\tm.anim.
+22960\tkanibalizm\tI\tm.sg.
+22961\tkanibaľsky\tI\tadj.
+927\tkanja\t\tf.
+26465\tkanja\t\tf.
+5202\tkanoe\tI\tn.indecl.
+17640\tkanon\tI\tm.
+35914\tkanoničny\tI\tadj.
+5761\tkanonizovati\tI\tv.tr. ipf.
+2557\tkapati\t\tv.intr. ipf.
+36103\tkapela\tI\tf.
+32457\tkaper\tI\tm.anim.
+32458\tkaperstvo\tI\tn.sg.
+32707\tkapital\tI\tm.
+23513\tkapitalist\tI\tm.anim.
+23514\tkapitalističny\tI\tadj.
+23512\tkapitalizm\tI\tm.sg.
+3489\tkapitan\tI\tm.anim.
+2558\tkapitulacija\tI\tf.
+4969\tkapitulovati\tI\tv.tr. ipf.
+1813\tkapja\t\tf.
+33402\tkapjušon\tF\tm.
+26470\tkapnųti\t\tv.intr. pf.
+604\tkapriz\tI\tm.
+4252\tkaprizny\tI\tadj.
+4253\tkaprizovati\tI\tv.intr. ipf.
+2559\tkapsula\tI\tf.
+33401\tkapuca\tD\tf.
+36423\tkapusta\t\tf.
+631\tkara\t\tf.
+16815\tkarabin\tI\tm.
+19773\tkaraibsky\t\tadj.
+35441\tkaramel\t\tm.
+2683\tkarantina\tI\tf.
+2564\tkaraś\t\tm.anim.
+23584\tkarate\tI\tn.indecl.
+2565\tkarati\t\tv.tr. ipf.
+35408\tkarati\t\tv.tr. ipf.
+35694\tkardinal\tI\tm.anim.
+23699\tkareta\t\tf.
+35015\tkarfiol\tD\tm.
+36577\tkari\tE\tn.
+21314\tkariera\tI\tf.
+2566\tkarierist\tI\tm.anim.
+26750\tkaries\tI\tm.sg.
+36286\tkarikatura\tI\tf.
+2426\tkarlik\t\tm.anim.
+35970\tkarnaval\tI\tm.
+19774\tkarny\t\tadj.
+32225\tkaro\tF\tn.
+870\tkarp\t\tm.anim.
+2868\tkarta\tI\tf.
+23239\tkarta\tI\tf.
+20873\tkartina\t\tf.
+2989\tkartofelj\tI\tm.
+22803\tkarton\tI\tm.
+36538\tkaruselj\tF\tf.
+36369\tkaseta\tI\tf.
+34586\tkastracija\tI\tf.
+26478\tkastrovati\tI\tv.tr. ipf./pf.
+2563\tkaša\t\tf.
+1830\tkašelj\t\tm.
+3520\tkašljati\t\tv.intr. ipf.
+5979\tkaštan\tI\tm.
+17641\tkaštanovy\t\tadj.
+4729\tKašub\t\tm.anim.
+176\tkašubsky\t\tadj.
+26485\tkat\t\tm.anim.
+36586\tkat\tA\tm.
+19775\tkatalansky\t\tadj.
+33415\tkatalog\tI\tm.
+35059\tKatalonija\t\tf.sg.
+32447\tKatar\t\tm.sg.
+32453\tkatarsky\t\tadj.
+4911\tkatastrofa\tI\tf.
+4913\tkatastrofičny\tI\tadj.
+17643\tkatę\t\tn.
+165\tkatedrala\tI\tf.
+36705\tkategorično\tI\tadv.
+35597\tkategoričny\tI\tadj.
+47\tkategorija\tI\tf.
+19776\tkategorizacija\tI\tf.
+36113\tkategorizovati\tI\tv.tr. ipf./pf.
+2233\tkatka\t\tf.
+17644\tkatȯčka\t\tf.
+23516\tkatolicizm\tI\tm.sg.
+2985\tkatoličsky\tI\tadj.
+3000\tkatolik\tI\tm.anim.
+2560\tkava\t\tf.
+32075\tkavalerija\tI\tf.
+3484\tkavarnja\t\tf.
+26487\tkavka\t\tf.
+35062\tKavkaz\t\tm.sg.
+26488\tkavovy\t\tadj.
+23645\tkazahsky, kazašsky\t\tadj.
+1410\tKazahstan\t\tm.sg.
+32415\tkazarna\tI\tf.
+3116\tkazati sę\t\tv.refl. ipf.
+1971\tkazati\t\tv.tr. ipf.
+26491\tkazati\t\tv.tr. ipf.
+32512\tkazino\t\tn.
+26492\tkaziti\t\tv.tr. ipf.
+26493\tkazniti\t\tv.tr. ipf.
+26494\tkaznj\t\tf.
+8428\tkaždodenny\t\tadj.
+8429\tkaždogodišnje\t\tadv.
+8430\tkaždogodišnji, každogodišny\t\tadj.
+8431\tkaždoročno\t\tadv.
+8432\tkaždoročny\t\tadj.
+937\tkaždy\t\tadj.
+942\tkde\t\tadv.
+19603\tkdekoli\t\tadv.
+14569\tkde-libo\t\tadv.
+1794\tkde-nebųď\t\tadv.
+35857\tkelner\tD\tm.anim.
+36644\tkelnerka\tI\tf.
+35726\tKelt\t\tm.anim.
+4738\tkeltsky\t\tadj.
+32138\tkemping\tE\tm.
+20406\tkenguru\tI\tm.anim.
+35194\tkeramičny\tI\tadj.
+35193\tkeramika\tI\tf.
+16764\tkěšenj\t\tf.
+26497\tkhaki\tI\tn.indecl.
+34921\tkilim\tT\tm.
+33538\tkilobajt\tI\tm.
+2275\tkilogram\tI\tm.
+4421\tkilometr\tI\tm.
+35046\tkinematografija\tI\tf.
+4795\tkino\tI\tn.
+36261\tkinooperator\tI\tm.anim.
+34848\tkiosk\tI\tm.
+452\tKipr\t\tm.sg.
+1417\tkirilica\t\tf.
+34781\tkiriličsky, kirilsky\t\tadj.
+36529\tkisla smetana\t\tf.
+26513\tkita\t\tf.
+4752\tKitaj\t\tm.sg.
+8448\tKitajec\t\tm.anim.
+8449\tKitajka\t\tf.
+552\tkitajsky\t\tadj.
+36070\tkivi\tI\tn.indecl.
+2340\tklåda\t\tf.
+26520\tklådec, klådeź\t\tm.
+26522\tkladivo\t\tn.
+19777\tklanjati sę\t\tv.refl. ipf.
+23433\tklarnet\tI\tm.
+2265\tklås\t\tm.
+3503\tklas\t\tm.
+35257\tklasa\tI\tf.
+8458\tklasična muzika\tI\tf.
+36156\tklasičny kostjum\tF\tm.
+8459\tklasičny\tI\tadj.
+4967\tklasifikacija\tI\tf.
+2892\tklasifikovati\tI\tv.tr. ipf.
+26526\tklåsiti sę\t\tv.refl. ipf.
+35532\tklasna komnata\t\tf.
+901\tklasti\t\tv.tr. ipf.
+26528\tklåti\t\tv.tr. ipf.
+32009\tklåti\t\tv.tr. ipf.
+36765\tklåti\t\tv.tr. ipf.
+36546\tklåtiti sę\t\tv.refl. ipf.
+574\tklåtiti\t\tv.tr. ipf.
+23458\tklavesin\tI\tm.
+8462\tklaviatura\tI\tf.
+23431\tklavir\tD\tm.
+8461\tklaviša\tI\tf.
+2555\tklęčati\t\tv.intr. ipf.
+1540\tklej\t\tm.
+26532\tklejiti\t\tv.tr. ipf.
+23297\tklejky\t\tadj.
+26534\tklęknųti\t\tv.intr. pf.
+26536\tklen\t\tm.
+1274\tklěnj\t\tm.anim.
+26537\tklenovy\t\tadj.
+4091\tklěskańje\t\tn.sg.
+4090\tklěskati\t\tv.tr. ipf.
+20408\tklěšč\t\tm.anim.
+26545\tklěšča\t\tf.
+1662\tklěšče\t\tf.pl.
+17655\tklęti\t\tv.intr. ipf.
+4518\tklětka krve\t\tf.
+787\tklětka\t\tf.
+4517\tklětka\t\tf.
+14645\tklětȯčna terapija\tM\tf.
+8472\tklětȯčno ozdravjeńje\t\tn.sg.
+8473\tklětȯčny\t\tadj.
+17657\tklętva\t\tf.
+17658\tklętva\t\tf.
+3001\tkleveta\t\tf.
+26555\tklevetati\t\tv.intr. ipf.
+26556\tklevetnik\t\tm.anim.
+5121\tklicati\tI\tv.tr. ipf.
+32575\tklicati\t\tv.tr. ipf.
+32573\tklička\t\tf.
+5139\tklient\tI\tm.anim.
+14646\tklienti\tI\tm.pl.
+14647\tklientsky\tI\tadj.
+8476\tklientstvo\tI\tn.sg.
+8477\tklik\tI\tm.
+32567\tklik\t\tm.
+32561\tklika\tF\tf.
+5120\tkliknųti\tI\tv.tr. pf.
+32579\tkliknųti\t\tv.tr. pf.
+17659\tklima\tI\tf.
+2986\tklimaks\tI\tm.
+2214\tklimat\tI\tm.
+35878\tklimatizacija\tI\tf.
+35877\tklimatizator\tI\tm.
+8482\tklimatsko potepljeńje\tI\tn.sg.
+8481\tklimatsky\tI\tadj.
+1368\tklin\t\tm.
+19779\tkliničny\tI\tadj.
+35555\tklinika\tI\tf.
+8484\tkliše\tF\tn.indecl.
+2240\tključ\t\tm.
+26560\tključaŕ\t\tm.anim.
+32016\tključna kosť\t\tf.
+26562\tključnica\t\tf.
+19784\tključnik\t\tm.anim.
+35216\tključno slovo\t\tn.
+19786\tključny\t\tadj.
+26564\tkljukva\t\tf.
+19787\tkljun\t\tm.
+26566\tkljunųti\t\tv.tr. pf.
+1958\tkljusati\t\tv.intr. ipf.
+788\tkljuvati\t\tv.tr. ipf.
+26570\tklobuk\t\tm.
+2191\tklȯk\t\tm.
+26571\tklokot\t\tm.sg.
+26572\tklokotati\t\tv.intr. ipf.
+19780\tklon\tI\tm.
+19782\tkloniti sę\t\tv.refl. ipf.
+789\tkloniti\t\tv.tr. ipf.
+32136\tkloun\tE\tm.anim.
+26576\tklozet\tI\tm.
+31886\tklub\tE\tm.
+26578\tklųbȯk\t\tm.
+36805\tkmin\tI\tm.
+17660\tkmotr\t\tm.anim.
+17661\tkmotra\t\tf.
+8501\tknęgynja\t\tf.
+8502\tknęź\t\tm.anim.
+17662\tknęžić\t\tm.anim.
+26585\tknęžna\t\tf.
+16801\tknęžny\t\tadj.
+35911\tknęžstvo\tI\tn.
+1981\tkniga\t\tf.
+32056\tknigarnja\t\tf.
+6204\tkniževnosť\t\tf.
+6205\tkniževny\t\tadj.
+4405\tknižka\t\tf.
+17663\tknopka\t\tf.
+35489\tknot\t\tm.
+20409\tkoala\tI\tf.
+550\tkoalicija\tI\tf.
+22622\tkobalt\tI\tm.sg.
+26588\tkobčik\t\tm.anim.
+20410\tkobra\tI\tf.
+20411\tkobyla\t\tf.
+26592\tkočerga\t\tf.
+16951\tkod\tI\tm.
+16950\tkodifikacija\tI\tf.
+35695\tkodifikovati\tI\tv.tr. ipf./pf.
+8505\tkodovati\tI\tv.tr. ipf.
+31966\tkofein\tI\tm.sg.
+2230\tkȯgda, kȯgdy\t\tadv.
+26594\tkȯgda, kȯgdy\t\tconj.
+19610\tkȯgdakoli, kȯgdykoli\t\tadv.
+14649\tkȯgda-libo, kȯgdy-libo\t\tadv.
+120\tkȯgda-nebųď, kȯgdy-nebųď\t\tadv.
+143\tkogo\t\tpron.int.
+35931\tkohezija\tI\tf.
+5693\tkoj\t\tpron.int.
+5694\tkoj\t\tpron.rel.
+21315\tkojkoli\t\tpron.indef.
+5695\tkoj-nebųď\t\tpron.indef.
+23196\tkokain\tI\tm.sg.
+23701\tkoketka\tF\tf.
+32900\tkoketny\tF\tadj.
+32901\tkoketovati\tF\tv.intr. ipf.
+25534\tkokodakati\t\tv.intr. ipf.
+36274\tkokos\tI\tm.
+36276\tkokosova palma\t\tf.
+36275\tkokosovy orěh\t\tm.
+26596\tkokoška\t\tf.
+2253\tkokot\t\tm.anim.
+33643\tkoktejl\tE\tm.
+1949\tkol\t\tm.
+26599\tkȯl\t\tm.
+1957\tkolač\t\tm.
+81\tkolaps\tI\tm.
+2370\tkȯlbasa\t\tf.
+8504\tkȯlbasa\t\tf.
+36539\tkolěbanka\t\tf.
+21316\tkolěbati sę\t\tv.refl. ipf.
+26605\tkolěbati\t\tv.tr. ipf.
+26607\tkolěbka\t\tf.
+26608\tkolęda\tI\tf.
+8519\tkoledž\tE\tm.
+5762\tkolega\tI\tm.anim.
+19788\tkolěja\t\tf.
+36603\tkolekcija\tI\tf.
+32739\tkolektiv\tI\tm.
+32740\tkolektivny\tI\tadj.
+2201\tkolěno\t\tn.
+35875\tkolhoz\t\tm.
+4174\tkolibri\tI\tm.anim.
+26619\tkoliček\t\tm.
+17665\tkoliko ja věm\t\tadv.
+5780\tkoliko ja znajų\t\tadv.
+1275\tkoliko\t\tadv.
+1948\tkoliko\t\tconj.
+19613\tkolikokoli\t\tadv.
+14655\tkoliko-libo\t\tadv.
+23100\tkoliko-nebųď\t\tadv.
+16952\tkolikoraky\t\tadj.
+4869\tkolikosť\t\tf.
+19595\tkolikråt\t\tadv.
+19587\tkoliky\t\tadj.
+8518\tkoljce\t\tn.
+1332\tkolo\t\tn.
+4917\tkolo\t\tprep.
+17666\tkolokrěslo\t\tn.
+16953\tkolona\tI\tf.
+32072\tkolona\tI\tf.
+20412\tkoloniaľny\tI\tadj.
+34179\tkolonija\tI\tf.
+36494\tkolonist\tI\tm.anim.
+4970\tkolonizacija\tI\tf.
+36493\tkolonizator\tI\tm.anim.
+283\tkolonizovati\tI\tv.tr. ipf./pf.
+1955\tkolor\tI\tm.
+35890\tkolorovati\tI\tv.tr. ipf.
+19790\tkolovati\t\tv.intr. ipf.
+17668\tkolovråt\t\tm.
+23700\tkolpak\t\tm.
+22440\tKolumbija\t\tf.sg.
+22441\tkolumbijsky\t\tadj.
+26615\tkȯlzati sę\t\tv.refl. ipf.
+26616\tkȯlzky\t\tadj.
+2242\tkoma\tI\tf.
+23428\tkoma\tI\tf.
+3855\tkomanda\tI\tf.
+2876\tkomar\t\tm.anim.
+16954\tkombinacija\tI\tf.
+26625\tkombinatorny\tI\tadj.
+16955\tkombinovati\tI\tv.tr. ipf.
+36645\tkomedija\tI\tf.
+2877\tkomentaŕ\tI\tm.
+36317\tkomentator\tI\tm.anim.
+568\tkomentovati\tI\tv.tr. ipf.
+5148\tkomerciaľny\tI\tadj.
+23427\tkometa\tI\tf.
+3507\tkomfort\tI\tm.
+26627\tkomfortno\tI\tadv.
+36478\tkomfortny\tI\tadj.
+4403\tkomičny\tI\tadj.
+8537\tkomik\tI\tm.anim.
+36289\tkomiks\tE\tm.
+8538\tkomin\t\tm.
+8539\tkominjaŕ\t\tm.anim.
+854\tkomisaŕ\tI\tm.anim.
+1964\tkomisija\tI\tf.
+1110\tkomitet\tI\tm.
+815\tkomnata\t\tf.
+1842\tkomora\t\tf.
+36880\tkomorna muzika\tI\tf.sg.
+36878\tkomorny concert\tI\tm.
+36879\tkomorny orkestr\tI\tm.
+33088\tkompakt-disk\tI\tm.
+793\tkompanija\tI\tf.
+32931\tkompas\tI\tm.
+35376\tkompatibiľnosť\tI\tf.
+35375\tkompatibiľny\tI\tadj.
+4972\tkompensacija\tI\tf.
+524\tkompensovati\tI\tv.tr. ipf./pf.
+35965\tkompetentnosť\tI\tf.
+35964\tkompetentny\tI\tadj.
+820\tkompeticija\tI\tf.
+17670\tkompetitivny\tI\tadj.
+15957\tkompjuter\tI\tm.
+15958\tkompjuterizovany\tI\tadj.
+15959\tkompjuterizovati\tI\tv.tr. ipf.
+32313\tkompjuterna myš\t\tf.
+15960\tkompjuterny\tI\tadj.
+34675\tkompleks\tI\tm.
+36587\tkompletno\tI\tadv.
+4378\tkompletnosť\tI\tf.
+4377\tkompletny\tI\tadj.
+4971\tkomplikacija\tI\tf.
+15952\tkomplikovany\tI\tadj.
+821\tkomplikovati\tI\tv.tr. ipf.
+20148\tkomponent\tI\tm.
+8544\tkomponovati\tI\tv.tr. ipf.
+35582\tkompozicija\tI\tf.
+816\tkompozitor\tI\tm.anim.
+16956\tkompromis\tI\tm.
+16957\tkompromisny\tI\tadj.
+736\tkomunikacija\tI\tf.
+1277\tkomunikovati\tI\tv.intr. ipf.
+2074\tkomunist\tI\tm.anim.
+1065\tkomunističny\tI\tadj.
+4402\tkomunizm\tI\tm.sg.
+35120\tkoncentracija\tI\tf.
+16958\tkoncentrovati\tI\tv.tr. ipf.
+15963\tkoncepcija\tI\tf.
+20413\tkonceptuaľny\tI\tadj.
+4782\tkoncert\tI\tm.
+4785\tkoncert\tI\tm.
+23363\tkončati sę\t\tv.refl. ipf.
+535\tkončati\t\tv.tr. ipf.
+16960\tkončina\t\tf.
+21697\tkondicija\t\tn.
+16959\tkondicional\tI\tm.
+35876\tkondicioner\tE\tm.
+15683\tkonduktor\tI\tm.anim.
+15365\tkonec tydnja\t\tm.
+536\tkonec\t\tm.
+14659\tkonečnik\t\tm.
+17674\tkonečno\t\tadv.
+17676\tkonečnosť\t\tf.
+8557\tkonečny\t\tadj.
+35912\tkonfederacija\tI\tf.
+799\tkonferencija\tI\tf.
+844\tkonfiskovati\tI\tv.tr. ipf.
+822\tkonflikt\tI\tm.
+824\tkonfrontacija\tI\tf.
+32454\tKongo\t\tn.sg.
+32455\tkongolezsky\t\tadj.
+823\tkongres\tI\tm.
+26640\tkoničina\t\tf.
+26642\tkonina\t\tf.
+1038\tkonj\t\tm.anim.
+17673\tkonj\t\tm.anim.
+4645\tkonjak\tF\tm.
+26645\tkonjaŕ\t\tm.anim.
+32074\tkonjaŕ\t\tm.anim.
+809\tkonjugacija\tI\tf.
+808\tkonjunkcija\tI\tf.
+20414\tkonkluzija\tI\tf.
+23108\tkonkretno\tI\tadv.
+810\tkonkretny\tI\tadj.
+4973\tkonkurencija\tI\tf.
+17679\tkonkurencijny\tI\tadj.
+35262\tkonkurent\tI\tm.anim.
+811\tkonkurovati\tI\tv.intr. ipf.
+812\tkonkurs\tI\tm.
+26650\tkonnica\t\tf.
+19792\tkonnik\t\tm.anim.
+26652\tkonny\t\tadj.
+8572\tkonopja\t\tf.
+26657\tkonopjany\t\tadj.
+35013\tkonotacija\tI\tf.
+33321\tkonserva\tI\tf.
+17680\tkonservativec\tI\tm.anim.
+8574\tkonservativnosť\tI\tf.
+2889\tkonservativny\tI\tadj.
+8583\tkonservatizm\tI\tm.sg.
+8584\tkonservovany\tI\tadj.
+1120\tkonservovati\tI\tv.tr. ipf.
+2119\tkonsilium\tI\tm.
+19793\tkonsistencija\tI\tf.
+26658\tkonsky\t\tadj.
+26659\tkonsonant\tI\tm.
+17681\tkonspiracija\tI\tf.
+36049\tkonspirator\tI\tm.anim.
+35836\tKonstantinopol\t\tm.sg.
+1984\tkonstitucija\tI\tf.
+35233\tkonstitucijny\tI\tadj.
+4873\tkonstrukcija\tI\tf.
+4872\tkonstruovati\tI\tv.tr. ipf.
+5926\tkonsul\tI\tm.anim.
+5927\tkonsulat\tI\tm.
+5127\tkonsultacija\tI\tf.
+35568\tkonsultant\tI\tm.anim.
+1856\tkonsumerizm\tE\tm.sg.
+2054\tkontakt\tI\tm.
+36206\tkontaktna sočevica\t\tf.
+36395\tkontejner\tE\tm.
+19794\tkontekst\tI\tm.
+2112\tkontinent\tI\tm.
+6210\tkontinentaľny šelf\tI\tm.
+15973\tkontingent\tI\tm.
+35332\tkontinuum\tI\tm.
+3328\tkonto\tI\tn.
+4156\tkontrabanda\tI\tf.
+8576\tkontrabanda\tI\tf.
+4158\tkontrabandnik\tI\tm.anim.
+4159\tkontrabandny\tI\tadj.
+15367\tkontrabandovańje\tI\tn.sg.
+4157\tkontrabandovati\tI\tv.tr. ipf.
+23441\tkontrabas\tI\tm.
+35844\tkontracepcija\tI\tf.
+19795\tkontrakcija\tI\tf.
+2146\tkontrarevolucija\tI\tf.
+19796\tkontrast\tI\tm.
+33001\tkontratenor\tI\tm.anim.
+3483\tkontrola, kontrolj\tI\tf.
+832\tkontrolovati\tI\tv.tr. ipf.
+3482\tkontrolovati\tI\tv.tr. ipf.
+19797\tkonvencija\tI\tf.
+35047\tkonvencionaľny\tI\tadj.
+19798\tkonvent\tI\tm.
+36684\tkonversija\tI\tf.
+16372\tkonvoj\tI\tm.
+1669\tkooperacija\tI\tf.
+839\tkooperovati\tI\tv.intr. ipf.
+36213\tkoordinacija\tI\tf.
+35225\tkoordinata\tI\tf.
+835\tkoordinator\tI\tm.anim.
+35226\tkoordinovati\tI\tv.tr. ipf./pf.
+26664\tkopa\t\tf.
+3739\tkopaljnja\t\tf.
+26666\tkopańje\t\tn.sg.
+834\tkopati\t\tv.tr. ipf.
+32080\tkopějka\t\tf.
+36813\tKopenhagen\tI\tm.
+2113\tkopija\tI\tf.
+3519\tkopijovati, kopirovati\tI\tv.tr. ipf.
+26674\tkopje\t\tn.
+26679\tkopȯť\t\tf.
+828\tkopr\t\tm.
+538\tkopriva\t\tf.
+26678\tkoprivny\t\tadj.
+8596\tkoprova supa\t\tf.
+8597\tkoprove ogurky\t\tm.pl.
+14662\tkoprovy\t\tadj.
+35838\tkoptsky\t\tadj.
+26680\tkopytnik\t\tm.
+2116\tkopyto\t\tn.
+764\tkora\t\tf.
+26685\tkora\t\tf.
+358\tkorab\t\tm.
+17682\tkorabnica\t\tf.
+17683\tkorabnik\t\tm.anim.
+21317\tkorabokrušenec\t\tm.anim.
+21318\tkorabokrušeńje\t\tn.
+26688\tkoral\tI\tm.anim.
+26689\tKoran\tI\tm.
+848\tkordon\tI\tm.
+6176\tKoreja\t\tf.sg.
+22768\tkorejsky\t\tadj.
+26694\tkorekcija\tI\tf.
+26696\tkorektny\tI\tadj.
+26697\tkorektor\tI\tm.anim.
+17684\tkorelativ\tI\tm.
+26699\tkorenisty\t\tadj.
+26700\tkoreniti sę\t\tv.refl. ipf.
+2913\tkorenj\t\tm.
+26702\tkorenj\t\tm.
+6063\tkorespondencija\tI\tf.
+6056\tkorespondent\tI\tm.anim.
+26707\tkoriandr\tI\tm.sg.
+26708\tkorica\t\tf.
+1435\tkoričnevy\t\tadj.
+26709\tkoridor\tI\tm.
+19799\tkorigovati\tI\tv.tr. ipf.
+1509\tkorisť\t\tf.
+5189\tkoristati\t\tv.tr. ipf.
+35260\tkoristiti\t\tv.tr. ipf.
+16961\tkoristnik\t\tm.anim.
+6271\tkoristny\t\tadj.
+8610\tkoriti\t\tv.tr. ipf.
+4302\tkorka\t\tf.
+36833\tkornet\tI\tm.
+35663\tkornijsky\t\tadj.
+23189\tkorȯk\t\tm.
+857\tkorona\tI\tf.
+35682\tkoronacija\tI\tf.
+36462\tkoronavirus\tI\tm.
+1623\tkoronovati\tI\tv.tr. ipf.
+35383\tkorporacija\tI\tf.
+35527\tkorporativny\tI\tadj.
+4618\tkorpus\tI\tm.
+867\tkorupcija\tI\tf.
+26718\tkorveta\tF\tf.
+26719\tkoryfej\tI\tm.anim.
+649\tkoryto\t\tn.
+26725\tkoryto\t\tn.
+1622\tkos\t\tm.anim.
+2965\tkosa\t\tf.
+26729\tkosa\t\tf.
+26731\tkosaŕ\t\tm.
+26732\tkośba\t\tf.
+17689\tkositi\t\tv.tr. ipf.
+26738\tkosm\t\tm.
+26739\tkosmaty\t\tadj.
+36682\tkosmetička\tI\tf.
+36680\tkosmetičny\tI\tadj.
+36681\tkosmetik\tI\tm.anim.
+36679\tkosmetika\tI\tf.sg.
+17690\tkosmična stancija\tI\tf.
+17692\tkosmičny korab\tI\tm.
+17691\tkosmičny\tI\tadj.
+26741\tkosmonavt\tI\tm.anim.
+17694\tkosmos\tI\tm.
+26743\tkosooky\t\tadj.
+1508\tKosovo\t\tn.sg.
+868\tkosovsky\t\tadj.
+871\tkosť\t\tf.
+22459\tKostarika\t\tf.sg.
+22460\tkostarikansky\t\tadj.
+8623\tkostel\t\tm.
+33588\tkostěnka\t\tf.
+26744\tkostěny\t\tadj.
+26751\tkostjum\tI\tm.
+26746\tkostka\t\tf.
+26748\tkostlivy\t\tadj.
+23330\tkostno jędro\t\tn.
+733\tkostny mozȯk\t\tm.
+26749\tkostny\t\tadj.
+2635\tkosy\t\tadj.
+5658\tkoš odpadov\t\tm.
+5194\tkoš\t\tm.
+5195\tkošaŕka\t\tf.
+26754\tkošeńje\t\tn.sg.
+32090\tkošerny\tI\tadj.
+1465\tkoštovati\tI\tv.tr. ipf.
+4794\tkošulja\t\tf.
+1093\tkot\t\tm.anim.
+26759\tkotę\t\tn.
+23185\tkotel\t\tm.
+34416\tkotiti sę\t\tv.refl. ipf.
+26763\tkotka\t\tf.
+26764\tkotlaŕ\t\tm.anim.
+35880\tkotlet\tI\tm.
+26765\tkotlina\t\tf.
+26766\tkotlovina\t\tf.
+26772\tkotva\t\tf.
+2419\tkovač\t\tm.anim.
+26774\tkovaljnja\t\tf.
+26775\tkovańje\t\tn.sg.
+530\tkovati\t\tv.tr. ipf.
+33929\tkovčeg\t\tm.
+34922\tkoverec\t\tm.
+34168\tkoverta\tI\tf.
+8635\tkovina\t\tf.
+26780\tkovny\t\tadj.
+26781\tkovylj\t\tm.sg.
+74\tkoza\t\tf.
+8637\tkozačsky\t\tadj.
+8638\tkozak\t\tm.anim.
+32021\tkozel odpušćeńja\t\tm.anim.
+26784\tkozel\t\tm.anim.
+26785\tkozina\t\tf.
+26786\tkoźja bråda\t\tf.
+32096\tkoźja bråda\t\tf.
+26787\tkoźji\t\tadj.
+26791\tKozorog\t\tm.anim.
+36064\tkozyŕ\t\tm.
+1473\tkoža\t\tf.
+23212\tkoženy\t\tadj.
+17695\tkožuh\t\tm.
+26798\tkožuhaŕ\t\tm.anim.
+17696\tkrab\t\tm.anim.
+791\tkråbka\t\tf.
+26802\tkradež\t\tf.
+36171\tkradom\t\tadv.
+855\tkrađa\t\tf.
+4124\tkrah\tD\tm.
+860\tkraj\t\tm.
+3579\tkraj\t\tm.
+36164\tkrajec\t\tm.
+4998\tkrajevid\t\tm.
+36211\tKrajina Baskov\t\tf.
+4559\tkrajina\t\tf.
+19801\tkrajina\t\tf.
+8647\tkrajnec\t\tm.anim.
+8650\tkrajno opasny\t\tadj.
+30\tkrajno\t\tadv.
+8651\tkrajnosť\t\tf.
+36207\tkrajny termin\t\tm.
+757\tkrajny\t\tadj.
+25790\tkrakati\t\tv.intr. ipf.
+26816\tkrålica\t\tf.
+20415\tkrålik\t\tm.anim.
+1380\tkrålj\t\tm.anim.
+17697\tkrålj\t\tm.anim.
+31852\tkrålj\t\tm.anim.
+26812\tkråljev\t\tadj.
+1658\tkråljeva\t\tf.
+20874\tkråljevska boa\tI\tf.
+20875\tkråljevsky udav\tS\tm.anim.
+1832\tkråljevsky\t\tadj.
+559\tkråljevstvo\t\tn.
+1094\tkrasa\t\tf.
+16725\tkrasavec\t\tm.anim.
+16724\tkrasavica\t\tf.
+26823\tkrasiti\t\tv.tr. ipf.
+20416\tkrasivosť\t\tf.
+8660\tkrasivši\t\tadj.
+2698\tkrasivy\t\tadj.
+8662\tkrasnějši\t\tadj.
+8663\tkrasnica\t\tf.
+21319\tkrasnorěčivosť\t\tf.
+21320\tkrasnorěčivy\t\tadj.
+8664\tkrasnosť\t\tf.
+3790\tkrasny\t\tadj.
+20876\tkrasopis\tS\tm.
+20877\tkrasopisec\tS\tm.anim.
+2695\tkrasota\t\tf.
+2642\tkråsta\t\tf.
+26829\tkråstavy\t\tadj.
+26804\tkrasti sę\t\tv.refl. ipf.
+627\tkrasti\t\tv.tr. ipf.
+19803\tkråtko\t\tadv.
+26833\tkråtkonogy\t\tadj.
+26836\tkråtkosť\t\tf.
+35282\tkråtkotrajny\t\tadj.
+8669\tkråtkovidnik\t\tm.anim.
+8671\tkråtkovidnosť\t\tf.
+8673\tkråtkovidny\t\tadj.
+2641\tkråtky\t\tadj.
+8668\t-kråtno\t\tsuffix
+1600\tkråva\t\tf.
+17698\tkravata\tF\tf.
+26840\tkråvji\t\tadj.
+849\tkrč\t\tm.
+850\tkrčiti\t\tv.tr. ipf.
+847\tkrčma\t\tf.
+26848\tkreativnosť\tI\tf.
+32029\tkreativny\tI\tadj.
+3495\tkreda\t\tf.
+35104\tkredenc\tD\tm.
+3525\tkredit\tI\tm.
+26869\tkrěhky\t\tadj.
+32032\tkrem\tF\tm.
+26853\tkremenisty\t\tadj.
+3039\tkremenj\t\tm.
+26856\tkremenny\t\tadj.
+36198\tKremlj\t\tm.
+22609\tkremnij\t\tm.sg.
+26858\tkremovy\tF\tadj.
+35905\tkreol\tI\tm.
+19804\tkreoľsky\t\tadj.
+26859\tkrěpěti\t\tv.intr. ipf.
+26860\tkrěpiti\t\tv.tr. ipf.
+26862\tkrěpkosť\t\tf.
+4047\tkrěpky\t\tadj.
+3022\tkrěposť\t\tf.
+26864\tkresalo\t\tn.
+26865\tkresati\t\tv.tr. ipf.
+2700\tkrěslo\t\tn.
+2428\tkrest\t\tm.
+35720\tkrestitelj\t\tm.anim.
+2699\tkrestiti\t\tv.tr. ipf.
+17704\tkrestna mati\t\tf.
+17705\tkrestny otec\t\tm.anim.
+6177\tkrestovy pohod\t\tm.
+6182\tkrešćeńje\t\tn.
+23231\tkreten\tF\tm.anim.
+23233\tkretensky\tF\tadj.
+33641\tkrevetka\t\tf.
+1091\tkričati\t\tv.tr. ipf.
+895\tkrijumčariti\t\tv.tr. ipf.
+3215\tkrik\t\tm.
+35091\tkriket\tE\tm.
+747\tkriknųti\t\tv.tr. pf.
+26943\tkrilaty\t\tadj.
+2637\tkrilo\t\tn.
+35707\tkripta\tI\tf.
+23162\tkristal\tI\tm.
+35365\tkristalizovati\tI\tv.tr. ipf./pf.
+23163\tkristaľny\tI\tadj.
+19807\tkriterij\tI\tm.
+2639\tkritičny\tI\tadj.
+80\tkritik\tI\tm.anim.
+35039\tkritika\tI\tf.
+2164\tkritikovati\tI\tv.tr. ipf.
+26879\tkriva\t\tf.
+19808\tkrivda\t\tf.
+19809\tkrivda\t\tf.
+3752\tkrivditi\t\tv.intr. ipf.
+3534\tkrivina\t\tf.
+19811\tkriviti\t\tv.tr. ipf.
+26882\tkrivoboky\t\tadj.
+26883\tkrivonogy\t\tadj.
+19814\tkrivoprisęžničstvo\t\tn.sg.
+26888\tkrivošija\t\tf.
+26890\tkrivota\t\tf.
+4762\tkrivověrnik\t\tm.anim.
+4763\tkrivověrstvo\t\tn.sg.
+748\tkrivy\t\tadj.
+3366\tkrivy\t\tadj.
+4765\tkrivy\t\tadj.
+26893\tkrivy\t\tadj.
+138\tkriza\tI\tf.
+6181\tkriž\t\tm./f.
+35934\tkriženosec\t\tm.anim.
+33748\tkriževka\t\tf.
+17708\tkrižišče\t\tn.
+26850\tkrjakati\t\tv.intr. ipf.
+758\tkrma\t\tf.
+859\tkrmiti\t\tv.tr. ipf.
+3735\tkrmjeńje\t\tn.
+8717\tkrmna trųbka\t\tf.
+14666\tkrmny\t\tadj.
+8722\tkroček\t\tm.
+26868\tkrȯha\t\tf.
+19816\tkroj\t\tm.
+19817\tkroj\t\tm.
+19818\tkrojač\t\tm.anim.
+19819\tkrojiti\t\tv.tr. ipf.
+852\tkrok\t\tm.
+35447\tkroket\tE\tm.
+35448\tkroket\tF\tm.
+5298\tkrokodil\tI\tm.anim.
+3461\tkromě togo\t\tadv.
+318\tkromě\t\tprep.
+35719\tkronika\tI\tf.
+35775\tkronikaŕ\tI\tm.anim.
+26906\tkropilo\t\tn.
+26907\tkropiti\t\tv.intr. ipf.
+32052\tkrȯšiti sę\t\tv.refl. ipf.
+26916\tkrȯšiti\t\tv.tr. ipf.
+508\tkrȯt\t\tm.anim.
+26910\tkrotiti\t\tv.tr. ipf.
+26911\tkrotky\t\tadj.
+26912\tkrotosť\t\tf.
+1899\tkrȯv\t\tf.
+14667\tkrȯvna infekcija\tI\tf.
+4519\tkrȯvno těljče\t\tn.
+4523\tkrȯvny pritisk\t\tm.
+17709\tkrȯvny\t\tadj.
+26920\tkrtovina\t\tf.
+880\tkrųg\t\tm.
+15371\tkrųgla\t\tf.
+19497\tkrųgly stol\t\tm.
+2341\tkrųgly\t\tadj.
+26925\tkrųgovy\t\tadj.
+26926\tkrupa\t\tf.
+26929\tkrušina\t\tf.
+19823\tkrųtiti sę\t\tv.refl. ipf.
+19820\tkrųtiti\t\tv.tr. ipf.
+26931\tkruty\t\tadj.
+26932\tkrųžeńje\t\tn.
+32054\tkrųžiti sę\t\tv.refl. ipf.
+26933\tkrųžiti\t\tv.tr. ipf.
+36543\tkrųžno križišče\t\tn.
+4514\tkrvaviti\t\tv.intr. ipf.
+36436\tkrvavjeńje\t\tn.
+8738\tkrvavši\t\tadj.
+4524\tkrvavy\t\tadj.
+4516\tkrvinȯk\t\tm.
+6434\tkrvonosny sųd\t\tm.
+26941\tkrvopijec\t\tm.anim.
+26940\tkrvoproliťje\t\tn.sg.
+22065\tkrvotok\t\tm.
+17710\tKrym\t\tm.sg.
+35234\tkrymsky\t\tadj.
+17711\tkrysa\t\tf.
+17712\tkryti sę\t\tv.refl. ipf.
+2638\tkryti\t\tv.tr. ipf.
+17713\tkrzno\t\tn.
+32027\tksenofob\tI\tm.anim.
+32026\tksenofobija\tI\tf.
+4786\tksilofon\tI\tm.
+3019\tkto\t\tpron.int.
+21322\tktokoli\t\tpron.indef.
+322\tkto-nebųď\t\tpron.indef.
+2643\tktory\t\tpron.rel.
+4189\tktory\t\tpron.int.
+19614\tktorykoli\t\tpron.indef.
+14670\tktory-libo\t\tpron.indef.
+2954\tktory-nebųď\t\tpron.indef.
+240\tkub\tI\tm.
+16278\tKuba\t\tf.sg.
+2646\tKubanec\t\tm.anim.
+16279\tkubansky\t\tadj.
+35956\tkubičny\tI\tadj.
+5779\tkubȯk\t\tm.
+26955\tkųdělj\t\tf.
+498\tkųdeŕ\t\tm.
+26958\tkųdlaty\t\tadj.
+26960\tkųdravy\t\tadj.
+244\tkųdy\t\tadv.
+19615\tkųdykoli\t\tadv.
+19551\tkųdy-libo\t\tadv.
+2688\tkųdy-nebųď\t\tadv.
+34761\tkufer\t\tm.
+3518\tkuhaŕ\t\tm.anim.
+8755\tkuhaŕka\t\tf.
+35196\tkuhaŕsky\t\tadj.
+23567\tkuhaŕstvo\t\tn.sg.
+8756\tkuhati\t\tv.tr. ipf.
+8758\tkuhenny\t\tadj.
+1790\tkuhnja\t\tf.
+26963\tkukati\t\tv.intr. ipf.
+22397\tkukla\t\tf.
+254\tkųkolj\t\tm.
+17714\tkukučka\t\tf.
+8760\tkukuruza\t\tf.
+26966\tkulik\t\tm.anim.
+35195\tkulinarny\tI\tadj.
+3475\tkulja\t\tf.
+1295\tkuljemet\t\tm.
+26967\tkuljgati\t\tv.intr. ipf.
+26968\tkuljgavy\t\tadj.
+8764\tkulminacija\tI\tf.
+8765\tkulminovati\tI\tv.intr. ipf.
+36308\tkult\tI\tm.
+35723\tkultivar\t\tm.
+1301\tkultura\tI\tf.
+2647\tkulturny\tI\tadj.
+17715\tkum\t\tm.anim.
+17716\tkuma\t\tf.
+4771\tkuna\t\tf.
+26974\tkup\t\tm.
+1294\tkupa\t\tf.
+3452\tkųpaljnja\t\tf.
+3454\tkųpańje\t\tn.sg.
+26977\tkųpati sę\t\tv.refl. ipf.
+3453\tkųpati\t\tv.tr. ipf.
+26979\tkupec\t\tm.anim.
+26980\tkupec\t\tm.anim.
+3451\tkųpělj\t\tf.
+26982\tkųpina\t\tf.
+258\tkupiti\t\tv.tr. pf.
+26984\tkupja\t\tf.
+26987\tkupola\tI\tf.
+35016\tkupon\tI\tm.
+17717\tkupoprodaž\t\tf.
+2648\tkupovatelj\t\tm.anim.
+2884\tkupovati\t\tv.tr. ipf.
+26989\tkur\t\tm.anim.
+1231\tkura\t\tf.
+8776\tkurec\t\tm.
+26992\tkurętina\t\tf.
+26993\tkurgan\t\tm.
+33722\tkuriozny\tI\tadj.
+26996\tkuriti\t\tv.tr. ipf.
+26997\tkurivo\t\tn.
+26994\tkuŕji\t\tadj.
+26999\tkurnik\t\tm.
+27000\tkuropatva\t\tf.
+265\tkurort\tD\tm.
+3229\tkurs\tI\tm.
+245\tkursiv\tI\tm.sg.
+32231\tkursivny\tI\tadj.
+36243\tkursor\tI\tm.
+246\tkurva\t\tf.
+27002\tkųs\t\tm.
+32123\tkus\t\tm.
+17718\tkųsati\t\tv.tr. ipf.
+27005\tkųsnųti\t\tv.tr. pf.
+247\tkųsȯk\t\tm.
+23800\tkust\t\tm.
+17720\tkustomizovańje\tI\tn.
+17721\tkustomizovati\tI\tv.tr. ipf./pf.
+27007\tkusy\t\tadj.
+27009\tkusy\t\tadj.
+249\tkųt\t\tm.
+27011\tkųtny\t\tadj.
+23151\tkuvalda\t\tf.
+2645\tKuvejt\t\tm.sg.
+35571\tkuzen\tF\tm.anim.
+35572\tkuzina\tF\tf.
+27013\tkuznja\t\tf.
+4415\tkvadrat\tI\tm.
+4416\tkvadratny\tI\tadj.
+27016\tkvakati\t\tv.intr. ipf.
+36460\tkvalifikacija\tI\tf.
+20417\tkvalifikovati\tI\tv.tr. ipf.
+35736\tkvalitet\tI\tm.
+35323\tkvantitativny\tI\tadj.
+23621\tkvantova mehanika\tI\tf.
+32030\tkvarc\t\tm.sg.
+36838\tkvarta\tI\tf.
+1538\tkvartal\tI\tm.
+27017\tkvartira\tI\tf.
+8787\tkvas\t\tm.
+27018\tkvas\t\tm.sg.
+2644\tkvasiti\t\tv.intr. ipf.
+6272\tkvestija\tI\tf.
+20878\tkvičati\t\tv.intr. ipf.
+36839\tkvinta\tI\tf.
+27024\tkvintesencija\tI\tf.
+35477\tkvitancija\tI\tf.
+34847\tkviz\tE\tm.
+27026\tkvokati\t\tv.intr. ipf.
+2728\tkvorum\tI\tm.
+406\tkydati\t\tv.tr. ipf.
+2352\tkydnųti\t\tv.tr. pf.
+17645\tkyhati\t\tv.intr. ipf.
+17646\tkyhnųti\t\tv.intr. pf.
+360\tkyj\t\tm.
+17647\tKyjev\t\tm.sg.
+35662\tkyjevsky\t\tadj.
+26501\tkyla\t\tf.
+17649\tkymati\t\tv.intr. ipf.
+17650\tkymnųti\t\tv.intr. pf.
+26503\tkypěńje\t\tn.sg.
+2366\tkypěti\t\tv.intr. ipf.
+23644\tkyrgyzsky\t\tadj.
+152\tKyrgyzstan\t\tm.sg.
+14644\tkysle ogurky\t\tm.pl.
+23038\tkyslina\t\tf.
+22603\tkyslorod\t\tm.sg.
+1418\tkysly\t\tadj.
+26510\tkysnųti\t\tv.intr. ipf.
+20407\tkyt\t\tm.anim.
+17652\tkyvati\t\tv.intr. ipf.
+17653\tkyvnųti\t\tv.intr. pf.
+36888\tLaba\t\tf.sg.
+1303\tlabęď\t\tm.anim.
+27028\tlabęďji\t\tadj.
+35560\tlaboratorija\tI\tf.
+27030\tlageŕ\tD\tm.
+21323\tlagodno\t\tadv.
+21327\tlagodnosť\t\tf.
+21331\tlagodny\t\tadj.
+27032\tlaj\t\tm.
+27033\tlajańje\t\tn.sg.
+253\tlajati\t\tv.intr. ipf.
+27036\tlajno\t\tn.sg.
+36849\tlak\tI\tm.
+27037\tlakomec\t\tm.anim.
+27039\tlakomstvo\t\tn.
+27040\tlakomy\t\tadj.
+32146\tlakoničny\tI\tadj.
+385\tlåkȯť\t\tm.
+36850\tlakovati\tI\tv.tr. ipf.
+33581\tlama\tI\tf.
+27041\tlamańje\t\tn.
+266\tlamati\t\tv.tr. ipf.
+20879\tlampa\tI\tf.
+17723\tlancuh\t\tm.
+17724\tlanec\t\tm.
+27044\tlanjėc\t\tm.
+5951\tlanji\t\tadv.
+32142\tlanjka\t\tf.
+5953\tlansky\t\tadj.
+502\tlapa\t\tf.
+4701\tlapati\t\tv.tr. ipf.
+35499\tlapka\t\tf.
+27049\tLaplandija\t\tf.
+23585\tlaser\tE\tm.
+268\tlasica\t\tf.
+27052\tlaska\t\tf.
+32147\tlaska\t\tf.
+32148\tlaska\t\tf.
+32150\tlaska\t\tf.
+267\tlaskati\t\tv.tr. ipf.
+27053\tlaskati\t\tv.tr. ipf.
+3226\tlaskavy\t\tadj.
+32152\tlaskavy\t\tadj.
+32153\tlaskavy\t\tadj.
+32154\tlaskavy\t\tadj.
+5675\tlaso\tI\tn.
+2650\tlastovica\t\tf.
+27059\tlatati\t\tv.tr. ipf.
+32263\tlateks\tI\tm.anim.
+16962\tlatinica\t\tf.
+2649\tlatinsky\t\tadj.
+879\tLatvija\t\tf.sg.
+4724\tLatyš\t\tm.anim.
+4723\tlatyšsky\t\tadj.
+32157\tlava\tI\tf.
+32601\tlavanda\tI\tf.
+8807\tlavina\t\tf.
+27062\tlavka\t\tf.
+33569\tlavr\tI\tm.
+32220\tlavreat\tI\tm.anim.
+19825\tlaziti\t\tv.intr. ipf.
+19826\tlaziti\t\tv.intr. ipf.
+27066\tlaznja\t\tf.
+27067\tle\t\tadv.
+32158\tle\t\tadv.
+27068\tlěčebny\t\tadj.
+8809\tlěčeńje\t\tn.
+4269\tlěčiljnja\t\tf.
+14673\tlěčitelj\t\tm.anim.
+36662\tlěčiti sę\t\tv.refl. ipf.
+4130\tlěčiti\t\tv.tr. ipf.
+2729\tled\t\tm.sg.
+17725\tleděna gora\t\tf.
+36230\tleděna svěća\t\tf.
+27072\tleděněti\t\tv.intr. ipf.
+27073\tleděniti\t\tv.tr. ipf.
+27074\tleděny\t\tadj.
+27076\tlednik\t\tm.
+5908\tledolomač\t\tm.
+32159\tledovec\t\tm.
+19827\tledovity\t\tadj.
+14674\tledva\t\tadv.
+8816\tlędvica\t\tf.
+8818\tlędvičny kamenj\t\tm.
+8817\tlędvičny\t\tadj.
+19498\tlegalizovati\tI\tv.tr. ipf.
+19499\tlegaľny\tI\tadj.
+20420\tlęgati\t\tv.tr. ipf.
+1307\tlegenda\tI\tf.
+35920\tlegendarny\tI\tadj.
+35353\tlegija\tI\tf.
+35352\tlegion\tI\tm.
+35504\tlegitimny\tI\tadj.
+8826\tlegke pěnęzy\t\tm.pl.
+2652\tlegko\t\tadv.
+19829\tlegkomysljny\t\tadj.
+3286\tlegkosť\t\tf.
+16482\tlegkověrny\t\tadj.
+884\tlegky\t\tadj.
+27273\tlegovišče\t\tn.
+19830\tlegše\t\tadv.
+17726\tlegši\t\tadj.
+36548\tlęgti sę\t\tv.refl. ipf.
+20418\tlegti\t\tv.intr. pf.
+20421\tlęgti\t\tv.tr. ipf.
+894\tlehitsky\t\tadj.
+23758\tlejka\t\tf.
+27098\tlejtenant\t\tm.anim.
+407\tlěk\t\tm.
+2873\tlěkaŕ\t\tm.anim.
+27103\tlěkaŕka\t\tf.
+8831\tlěkaŕsky\t\tadj.
+27105\tlěkaŕstvo\t\tn.
+2694\tlekcija\tI\tf.
+35946\tleksika\tI\tf.
+16963\tleksikaľny\tI\tadj.
+295\tleksikon\tI\tm.
+35210\tlektor\t\tm.anim.
+27110\tlelek\t\tm.anim.
+2653\tlemeš\t\tm.
+306\tlen\t\tm.sg.
+27114\tlenišče\t\tn.
+27115\tlěniti sę\t\tv.refl. ipf.
+15374\tlěnivec\t\tm.anim.
+8836\tlěnivo\t\tadv.
+27118\tlěnivosť\t\tf.
+8837\tlěnivy\t\tadj.
+27122\tlěnjesť\t\tf.
+1482\tlěnji\t\tadj.
+32469\tleopard\tI\tm.anim.
+27126\tlepetańje\t\tn.sg.
+27127\tlepetati\t\tv.intr. ipf.
+23296\tlěpilo\t\tn.
+32869\tlěpiti sę\t\tv.refl. ipf.
+2298\tlěpiti\t\tv.tr. ipf.
+8839\tlěpje\t\tadv.
+27207\tlěpkosť\t\tf.
+23294\tlěpky\t\tadj.
+23872\tlěpo\t\tadv.
+27131\tlěpota\t\tf.
+32468\tlepra\tI\tf.
+2299\tlěpši\t\tadj.
+3315\tlěpy\t\tadj.
+2651\tlěs\t\tm.
+36334\tlesbijka\tI\tf.
+36335\tlesbijsky\tI\tadj.
+17731\tlěsisty\t\tadj.
+2654\tlěska\t\tf.
+2655\tleskati\t\tv.intr. ipf.
+2697\tlesknųti\t\tv.intr. pf.
+27141\tlěsnik\t\tm.anim.
+27140\tlěsny orěh\t\tm.
+8848\tlěsny požar\t\tm.
+23461\tlěsny rog\t\tm.
+3632\tlěsny\t\tadj.
+5850\tlěsȯk\t\tm.
+27145\t#lesť\t\tf.
+17732\tlěstvica\t\tf.
+27147\tlešč\t\tm.anim.
+27148\tleščina\t\tf.
+3626\tlet\t\tm.
+14676\tlěta\t\tn.pl.
+19831\tletač\t\tm.anim.
+16879\tlětajųća myš\t\tf.
+8852\tlětalo\t\tn.
+8855\tlětańje\t\tn.sg.
+1202\tlětati\t\tv.intr. ipf.
+19832\tletěti\t\tv.intr. ipf.
+16275\tletišče\tS\tn.
+309\t-lěťje\t\tn.
+17733\tlětnji sȯlncevråt\t\tm.
+27156\tlětnji, lětny\t\tadj.
+2661\tlěto\t\tn.
+35962\tletȯk\t\tm.
+20880\tlětopis\t\tm.
+20882\tlětopisec\t\tm.anim.
+17734\tletova kabina\t\tf.
+27161\tlětovati\t\tv.intr. ipf.
+27162\tlětovišče\t\tn.
+2656\tlev\t\tm.anim.
+27163\tLev\t\tm.anim.
+27165\tlěvak\t\tm.anim.
+2696\tlěvica\t\tf.
+27167\tlěvica\t\tf.
+8859\tlevji\t\tadj.
+32167\tlěvorųky\t\tadj.
+308\tlěvy\t\tadj.
+2660\tlězti\t\tv.intr. ipf.
+19833\tlězti\t\tv.intr. ipf.
+2659\tležati\t\tv.intr. ipf.
+35987\tležęći velosiped\t\tm.
+35988\tležiped\t\tm.
+2427\tležišče\t\tn.
+14678\tležkovina\t\tf.
+17735\tlgańje\t\tn.sg.
+17736\tlgaŕ\t\tm.anim.
+17737\tlgaŕka\t\tf.
+2658\tlgati\t\tv.intr. ipf.
+2657\tli\t\tconj.
+17738\tli\t\tparticle
+32448\tLiban\t\tm.sg.
+32449\tlibansky\t\tadj.
+19502\tliberalizacija\tI\tf.
+19501\tliberalizm\tI\tm.sg.
+19503\tliberalizovati\tI\tv.tr. ipf.
+205\tliberaľny\tI\tadj.
+317\tLibija\t\tf.sg.
+2710\tlibijsky\t\tadj.
+22300\tlibovoljny\t\tadj.
+889\tlice\t\tn.
+8872\tlice\t\tn.
+8876\tliceměr\t\tm.anim.
+27186\tliceměriti\t\tv.intr. ipf.
+3011\tliceměŕje\t\tn.sg.
+8875\tliceměrka\t\tf.
+8877\tliceměrno\t\tadv.
+8878\tliceměrny\t\tadj.
+35778\tlicencija\tI\tf.
+36277\tliči\tI\tn.indecl.
+20422\tličinka\t\tf.
+19834\tlično\t\tadv.
+3261\tličnosť\t\tf.
+770\tličny\t\tadj.
+321\tlider\tE\tm.anim.
+2663\tlift\tE\tm.
+17740\tliga\t\tf.
+16964\tligatura\tI\tf.
+35484\tlignit\tI\tm.sg.
+2687\tLihtenštejn\t\tm.sg.
+27192\tlihva\t\tf.
+32170\tlihva\t\tf.
+32172\tlihvaŕ\t\tm.anim.
+32176\tlihvaŕsky\t\tadj.
+32177\tlihvaŕstvo\t\tn.sg.
+5313\tlihy\t\tadj.
+5315\tlihy\t\tadj.
+27193\tlihy\t\tadj.
+36366\tlihy\t\tadj.
+32873\tliker\tF\tm.
+32883\tlikvidacija\tI\tf.
+32887\tlikvidator\tI\tm.anim.
+32877\tlikvidovati\tI\tv.tr. ipf./pf.
+27196\tlilovy\t\tadj.
+33323\tlimfa\tI\tf.
+33324\tlimfatičny vųzel\t\tm.
+319\tlimitovati\tI\tv.tr. ipf.
+5239\tlimon\tI\tm.
+35585\tlimonada\tI\tf.
+34755\tlimuzina\tF\tf.
+27198\tlin\t\tm.anim.
+36846\tlinčevati\tE\tv.tr. ipf./pf.
+35711\tlinearny\tI\tadj.
+19835\tlingvističny\tI\tadj.
+2664\tlinija\tI\tf.
+8885\tlinijka\tI\tf.
+2885\tlinjati\t\tv.intr. ipf.
+6329\tlink\tI\tm.
+32726\tlinza\t\tf.
+342\tlipa\t\tf.
+27200\tlipan\t\tm.anim.
+8890\tlipenj\tS\tm.sg.
+36811\tLisabon\tI\tm.
+27212\tlisę\t\tn.
+327\tlisica\t\tf.
+27215\tlisička\t\tf.
+27214\tliśji\t\tadj.
+1397\tlist\t\tm.
+2863\tlist\t\tm.
+27221\tlisťje\t\tn.sg.
+27219\tlistny\t\tadj.
+23859\tlistȯk\t\tm.
+8895\tlistopad\tS\tm.sg.
+27223\tlistopad\t\tm.sg.
+35963\tlistovka\t\tf.
+335\tlišaj\t\tm.
+27225\tlišaj\t\tm.
+36435\tlišati\t\tv.tr. ipf.
+20423\tlišiti\t\tv.tr. pf.
+27229\tlitera\t\tf.
+6203\tliterarny\tI\tadj.
+340\tliteratura\tI\tf.
+27231\tliteraturny język\t\tm.
+35017\tliteraturny\tI\tadj.
+338\tliti\t\tv.tr. ipf.
+20424\tliti\t\tv.tr. ipf.
+22599\tlitij\tI\tm.sg.
+343\tlitȯvsky\t\tadj.
+23019\tlitr\tI\tm.
+332\tliturgičny\tI\tadj.
+16965\tliturgija\tI\tf.
+331\tLitva\t\tf.sg.
+4720\tLitvanec\t\tm.anim.
+8903\tLitvanka\t\tf.
+333\tliva\t\tf.
+14683\tlivada\t\tf.
+27236\tlivny\t\tadj.
+27237\tlizańje\t\tn.sg.
+334\tlizati\t\tv.tr. ipf.
+8907\tliznųti\t\tv.tr. pf.
+22398\tljaljka\t\tf.
+27242\tljněny\t\tadj.
+27144\tljstiti\t\tv.tr. ipf.
+32205\tljstivy\t\tadj.
+14684\tljuba\t\tf.
+8908\tljubezno\t\tadv.
+3225\tljubezny\t\tadj.
+20431\tljubimec\t\tm.anim.
+27245\tljubimy\t\tadj.
+20432\tljubitelj\t\tm.anim.
+35593\tljubitelj\t\tm.anim.
+356\tljubiti\t\tv.tr. ipf.
+32248\tLjubljana\t\tf.sg.
+20433\tljubopytnosť\t\tf.
+20434\tljubopytny\t\tadj.
+32202\tljubosť\t\tf.
+5247\tljubȯv\t\tf.
+8916\tljubȯvnica\t\tf.
+5248\tljubȯvnik\t\tm.anim.
+8918\tljubȯvno\t\tadv.
+5892\tljubȯvny\t\tadj.
+8919\tljubȯvny\t\tadj.
+27256\tljuby\t\tm.anim.
+27257\tljud\t\tm.
+1941\tljudi\t\tf.pl.
+27259\tljudny\t\tadj.
+14686\tljudobijstvo\t\tn.sg.
+17749\tljudojed\t\tm.anim.
+22953\tljudojedsky\t\tadj.
+17750\tljudojedstvo\t\tn.sg.
+8921\tljudova sila\t\tf.
+22956\tljudožerec\t\tm.anim.
+22958\tljudožersky\t\tadj.
+22957\tljudožerstvo\t\tn.sg.
+8924\tljudskomašinovy interfejs\tM\tm.
+5316\tljudskosť\t\tf.
+4306\tljudsky\t\tadj.
+8925\tljudstvo\t\tn.sg.
+14688\tljudstvo\t\tn.sg.
+23759\tljuljati\t\tv.tr. ipf.
+34760\tljuljka\t\tf.
+35768\tljutnja\t\tf.
+27266\tljutosť\t\tf.
+8928\tljuty\tS\tm.sg.
+27267\tljuty\t\tadj.
+27166\tljvę\t\tn.
+27168\tljvica\t\tf.
+2494\tlȯb\t\tm.
+8929\tlobanja\t\tf.
+34851\tlobi\tE\tm.indecl.
+17741\tlobist\tI\tm.anim.
+27269\tloboda\t\tf.
+5788\tlobovati\tI\tv.intr. ipf.
+537\tloď\t\tf.
+2886\tlodka\t\tf.
+32130\tlogaritm\tI\tm.
+19836\tlogično\tI\tadv.
+363\tlogičny\tI\tadj.
+8933\tlogika\tI\tf.
+32186\tlogopedija\tI\tf.
+17742\tlogovati sę\tI\tv.refl. ipf.
+20426\tloj\t\tm.sg.
+32757\tlojalist\tI\tm.anim.
+32756\tlojaľnosť\tI\tf.
+1249\tlojaľny\tI\tadj.
+27276\tlojiti\t\tv.tr. ipf.
+35702\tlokalitet\tI\tm.
+27280\tlokati\t\tv.tr. ipf.
+16966\tlokativ\tI\tm.
+27282\tloknųti\t\tv.tr. pf.
+5669\tlokomotiva\tI\tf.
+27286\tlom\t\tm.
+32192\tlom\t\tm.
+27287\tlomiti\t\tv.tr. ipf.
+27288\tlomjeńje\t\tn.sg.
+19837\tlomlivy\t\tadj.
+23523\tLondon\t\tm.sg.
+366\tlono\t\tn.
+17744\tlono\t\tn.
+367\tlopata\t\tf.
+27298\tlopatka\t\tf.
+27302\tlopuh\t\tm.
+35455\tlori\tI\tm.anim.
+386\tloś\t\tm.anim.
+32264\tlosion\tF\tm.
+36036\tloskotati\t\tv.tr. ipf.
+27309\tlosoś\t\tm.anim.
+27308\tlososina\t\tf.
+8941\tloše\t\tadv.
+3446\tloši\t\tadj.
+35229\tloterija\tI\tf.
+352\tlov\t\tm.
+17745\tlovec\t\tm.anim.
+32197\tlovec\t\tm.anim.
+27314\tlovečsky\t\tadj.
+8944\t#lovhata\t\tf.
+27315\tlovišče\t\tn.
+8945\tlovitelj\t\tm.anim.
+12057\tloviti rybų\t\tv.ipf.
+1564\tloviti\t\tv.tr. ipf.
+27318\tloviti\t\tv.tr. ipf.
+27319\tlovitva\t\tf.
+8947\tlovjeńje\t\tn.sg.
+27321\tlovny\t\tadj.
+36158\tloza\t\tf.
+16268\tlȯž\tS\tf.
+20429\tlože\t\tn.
+1893\tlȯžica\t\tf.
+20430\tložišče\t\tn.
+353\tlȯžka\t\tf.
+27329\tlȯžnosť\t\tf.
+32196\tlȯžnosť\t\tf.
+17746\tlȯžny\t\tadj.
+339\tluč\t\tm./f.
+375\tlučiti\t\tv.tr. ipf.
+20436\tlučše\t\tadv.
+14533\tlučši\t\tadj.
+27338\tludy\t\tadj.
+374\tlųk\t\tm.
+17751\tluk\t\tm.
+27340\tlųk\t\tm.
+376\tlųka\t\tf.
+27344\tlukavstvo\t\tn.sg.
+27345\tlukavy\t\tadj.
+36646\tlųkostrělėc\t\tm.anim.
+31866\tlukovica\t\tf.
+17752\tlukovy\t\tadj.
+2701\tLuksemburg\t\tm.sg.
+4910\tluksemburžsky\t\tadj.
+23588\tluminescencija\tI\tf.
+2690\tluna\tI\tf.
+27348\tlunatik\tI\tm.anim.
+4119\tlunno světlo\tM\tn.sg.
+15988\tlunny\tI\tadj.
+27351\tlupina\t\tf.
+27352\tlupiti\t\tv.tr. ipf.
+27353\tluska\t\tf.
+27355\tluskati\t\tv.tr. ipf.
+27358\tluščina\t\tf.
+27359\tluščiti\t\tv.tr. ipf.
+35796\tluteransky\tI\tadj.
+2691\tlužičsky\t\tadj.
+2662\tlyko\t\tn.
+27365\tlysěti\t\tv.intr. ipf.
+27366\t#lysina\t\tf.
+27368\tlyska\t\tf.
+329\tlysy\t\tadj.
+6108\tlyža\t\tf.
+27374\tlžec\t\tm.anim.
+27375\tlživosť\t\tf.
+17753\tlživy\t\tadj.
+379\tmaćeha\t\tf.
+16786\tMadagaskar\t\tm.sg.
+359\tMadjar\t\tm.anim.
+8964\tMadjarija\t\tf.sg.
+27381\tmadjarizacija\tI\tf.
+8966\tMadjarka\t\tf.
+2681\tmadjarsky\t\tadj.
+36812\tMadrid\tI\tm.
+19838\tmagazin\tI\tm.
+23989\tmagazin\tI\tm.
+19839\tmagičny\tI\tadj.
+3230\tmagistr\tI\tm.anim.
+36066\tmagnat\tI\tm.anim.
+23589\tmagnet\tI\tm.
+23590\tmagnetičny\tI\tadj.
+12198\tmagnetny polus\t\tm.
+33086\tmagnetofon\tI\tm.
+22607\tmagnezij\tI\tm.sg.
+20438\tmah\t\tm.
+5729\tmahati glåvojų\t\tv.ipf.
+34490\tmahati hvostom\t\tphrase
+960\tmahati\t\tv.intr. ipf.
+23132\tmahinacija\tI\tf.
+5730\tmahnųti glåvojų\t\tv.pf.
+203\tmahnųti\t\tv.intr. pf.
+264\tmaj\tI\tm.sg.
+27391\tmajak\t\tm.
+19840\tmajonez\tF\tm.
+35079\tmajor\tI\tm.anim.
+23697\tmajsky hrųšč\t\tm.anim.
+20884\tmajstr\tD\tm.anim.
+20885\tmajstrovsko dělo\tD\tn.
+34779\tmajstrovsky\t\tadj.
+1451\tmak\t\tm.
+3256\tMakedonec\t\tm.anim.
+4726\tMakedonija\t\tf.sg.
+2866\tmakedonsky\t\tadj.
+34785\tmakijaž\tF\tm.sg.
+27397\tmakovka\t\tf.
+27399\tmaksimaľno\tI\tadv.
+16422\tmaksimaľny\tI\tadj.
+2689\tmaksimum\tI\tm.
+22770\tmalajsky\t\tadj.
+22769\tMalajzija\t\tf.sg.
+35107\tmalarija\tI\tf.
+20446\tmalenjkosť\t\tf.
+8982\tmalenjky\t\tadj.
+27401\tmalěti\t\tv.intr. ipf.
+1621\tmalina\t\tf.
+27405\tmalinovy\t\tadj.
+20886\tmaljaŕ\t\tm.anim.
+36551\tmaljaŕ\t\tm.anim.
+5097\tmaljevati\tD\tv.tr. ipf.
+1535\tmalo\t\tadv.
+17755\tmalodušny\t\tadj.
+20447\tmalokrvje\t\tn.sg.
+20448\tmalolětny\t\tadj.
+27412\tmaloljudny\t\tadj.
+32226\tmaloměrny\t\tadj.
+20450\tmalomȯlvny\t\tadj.
+27415\tmalosť\t\tf.
+31981\tmalosť\t\tf.
+20451\tmalovažny\t\tadj.
+22323\tmalověrny\t\tadj.
+27416\tmalovodny\t\tadj.
+383\tmalpa, malpica\t\tf.
+220\tMalta\t\tf.sg.
+36817\tmaltejsky\tI\tadj.
+35010\tmaltretovati\tI\tv.tr. ipf.
+2682\tmaly\t\tadj.
+2707\tmama\t\tf.
+27423\tmamin\t\tadj.
+17757\tmamiti\t\tv.tr. ipf.
+27429\tmamlivy\t\tadj.
+33537\tmamut\tI\tm.anim.
+2708\tmandat\tI\tm.
+32507\tmandolina\tI\tf.
+3236\tmanera\tI\tf.
+16747\tmaněrka\t\tf.
+32333\tmanevr\tF\tm.
+35921\tmanevrovati\tF\tv.tr. ipf./pf.
+32334\tmanevry\tF\tm.pl.
+22621\tmangan\tI\tm.sg.
+36071\tmango\tI\tn.
+35348\tmanifest\tI\tm.
+4984\tmanipulacija\tI\tf.
+4983\tmanipulovati\tI\tv.tr. ipf.
+32445\tmanžeta\tF\tf.
+35754\tmapa\tI\tf.
+32995\tmarakasy\tI\tm.pl.
+36075\tmarakuja\tI\tf.
+34443\tmarcipan\tI\tm.sg.
+8997\tmarec\tI\tm.sg.
+27434\tmarena\t\tf.
+35747\tmarginalizacija\tI\tf.
+35746\tmarginalizovati\tI\tv.tr. ipf./pf.
+34419\tmarginaľny\tI\tadj.
+22806\tmarihuana\tI\tf.
+32989\tmarimba\tI\tf.
+22400\tmarionetka\tI\tf.
+22848\tmarka\t\tf.
+36008\tmarker\tE\tm.
+17762\tmarlivo\t\tadv.
+17763\tmarlivosť\t\tf.
+17764\tmarlivy\t\tadj.
+35436\tmarmelada\tF\tf.
+5928\tMaroko\t\tn.sg.
+23592\tMars\t\tm.sg.
+23593\tMarsian, Marsianin\t\tm.anim.
+19504\tmarš\tI\tm.
+35369\tmaršal\tI\tm.
+2869\tmarširovati\tD\tv.intr. ipf.
+35589\tmaršrut\tD\tm.
+27436\tmaršrutka\tD\tf.
+36891\tmarulja\t\tf.
+34420\tmarža\tF\tf.
+23594\tmasa\tI\tf.
+36337\tmasakra\tI\tf.
+19841\tmasakrovati\tI\tv.tr. ipf.
+33370\tmasaž\tF\tm.
+33371\tmasirovati\tF\tv.tr. ipf.
+33372\tmasivny\tI\tadj.
+27438\tmaska\tI\tf.
+32129\tmaskovati\tI\tv.tr. ipf./pf.
+2703\tmaslina\t\tf.
+9002\tmaslinovy olej\t\tm.
+9001\tmaslinovy\t\tadj.
+27440\tmasljak\t\tm.
+2704\tmaslo\t\tn.
+5804\tmasovy\tI\tadj.
+2686\tmasť\t\tf.
+27441\tmastiti\t\tv.tr. ipf.
+4974\tmasturbacija\tI\tf.
+15995\tmasturbovańje\tI\tn.sg.
+2685\tmasturbovati\tI\tv.intr. ipf.
+2684\tmašina\tI\tf.
+27446\tmašinaľno\tI\tadv.
+17765\tmašinist\tI\tm.anim.
+17766\tmašinopisec\tI\tm.anim.
+17767\tmašinostrojeńje\t\tn.sg.
+27447\tmat\tI\tm.
+36664\tmatč\tE\tm.
+4322\tmatčina\t\tf.
+36602\tmatematičny\tI\tadj.
+2709\tmatematik\tI\tm.anim.
+892\tmatematika\tI\tf.
+204\tmaterial\tI\tm.
+27449\tmateriaľny\tI\tadj.
+3289\tmaterija\tI\tf.
+27450\tmaterin\t\tadj.
+20452\tmaterinsky\t\tadj.
+27452\tmaterinstvo\t\tn.sg.
+23650\tmaternica\t\tf.
+17769\tmaterska klětka\t\tf.
+9008\tmaterska ljubȯv\tI\tf.
+6022\tmatersky\t\tadj.
+17770\tmati\t\tf.
+35975\tmatrica\tI\tf.
+27459\tmatuška\t\tf.
+4891\tmavzolej\tI\tm.
+2705\tmaź\t\tf.
+1934\tmazati\t\tv.tr. ipf.
+36262\tmazati\t\tv.tr. ipf.
+20453\tmazilo\t\tn.
+20455\tmazivo\t\tn.
+1935\tmę\t\tpron.pers.
+163\tmebelj\tI\tm.
+32971\tmeblovati\tI\tv.tr. ipf./pf.
+32999\tmecosopran\tI\tm.
+164\tmeč\t\tm.
+909\tmęč\t\tm.
+911\tmęčkati\t\tv.tr. ipf.
+35443\tmečta\t\tf.
+35445\tmečtatelj\t\tm.anim.
+35446\tmečtateljny\t\tadj.
+35444\tmečtati\t\tv.intr. ipf.
+639\tmed\t\tm.sg.
+2715\tměď\t\tm./f.
+27471\tmedalist\tI\tm.anim.
+27472\tmedalistka\tI\tf.
+5805\tmedalj\tI\tf.
+16004\tmedbrat\t\tm.anim.
+4897\tmedicina\tI\tf.
+6275\tmedija\tI\tn.pl.
+5045\tmeditacija\tI\tf.
+5043\tmeditovati\tI\tv.intr. ipf.
+36451\tmedium\tI\tm.anim.
+4525\tmedliti\t\tv.intr. ipf.
+14691\tmedlo\t\tadv.
+2421\tmedly\t\tadj.
+14692\tmedly\t\tadj.
+23456\tmědny dyhovy instrument\t\tm.
+27474\tmědny, měděny\t\tadj.
+27478\tmedonosny\t\tadj.
+27479\tmedovar\t\tm.anim.
+27480\tmedovina\t\tf.
+27481\tmedovy\t\tadj.
+396\tmedsestra\t\tf.
+27482\tmedunka\t\tf.
+20458\tmeduza\tI\tf.
+2394\tmedvěď\t\tm.anim.
+20459\tmedvěď-grizli\t\tm.anim.
+27484\tmedvědica\t\tf.
+32508\tmedvědik\t\tm.
+9034\tmedvěďje objęťje\t\tn.
+27488\tmedvěďji\t\tadj.
+9035\tmedvědny\t\tadj.
+27486\tmedvěđę\t\tn.
+27487\tmedvěđina\t\tf.
+2280\tmeđa\t\tf.
+27490\tmeđny\t\tadj.
+16863\tmeđu drugymi\t\tadv.
+16829\tmeđu inymi\t\tadv.
+2713\tmeđu\t\tprep.
+4929\tmeđu\t\tprep.
+32246\tmeđudŕžavny\t\tadj.
+27492\tmeđugoŕje\t\tn.
+35879\tmeđugrådny\t\tadj.
+31841\tmeđugrådsky\tI\tadj.
+31839\tmeđukontinentaľny\tI\tadj.
+35745\tmeđukulturny\t\tadj.
+19843\tmeđuljudsky\t\tadj.
+19842\tmeđumeťje\t\tn.
+2714\tmeđunarodny\t\tadj.
+32413\tmeđuplanetarny\tI\tadj.
+27494\tmeđurěčje\t\tn.
+31842\tmeđuregionaľny\tI\tadj.
+4442\tmeđuslovjansky\t\tadj.
+17772\tmeđusobny\t\tadj.
+1789\tmeđutym\t\tadv.
+22483\tmeđuvlasťje\t\tn.
+22575\tmeđuvrěmę\t\tn.
+17773\tmeđuvrěmenno\t\tadv.
+31840\tmeđuzvězdny\tI\tadj.
+33539\tmegabajt\tI\tm.
+403\tměh\t\tm.
+4862\tmehaničny\tI\tadj.
+35773\tmehanik\tI\tm.anim.
+4863\tmehanika\tI\tf.
+4861\tmehanizm\tI\tm.
+4353\tměhuŕ\t\tm.
+9046\tměhurny\t\tadj.
+33327\tměhurȯk\t\tm.
+35368\tmejnstrim\tE\tm.sg.
+27501\tmekati\t\tv.intr. ipf.
+27502\tmękčeti\t\tv.intr. ipf.
+17784\tmękčiti\t\tv.tr. ipf.
+27507\tmękko\t\tadv.
+4245\tmękkosť\t\tf.
+36336\tmękkotěly\t\tm.anim.
+515\tmękky\t\tadj.
+2870\tmeksikansky\t\tadj.
+22461\tMeksiko\t\tn.sg.
+9047\tmękše\t\tadv.
+27511\tmělina\t\tf.
+27513\tmělj\t\tf.
+1459\tmělky\t\tadj.
+27515\tměľnik\t\tm.anim.
+35947\tmelodičny\tI\tadj.
+4767\tmelodija\tI\tf.
+32239\tmemorandum\tI\tm.
+27517\tmemorial\tI\tm.
+1489\tměna\t\tf.
+4803\tmene\t\tpron.pers.
+33809\tmenedžer\tE\tm.anim.
+27525\tmenj\t\tm.anim.
+32926\tměnjati sę\t\tv.refl. ipf.
+20461\tměnjati\t\tv.tr. ipf.
+2854\tmenje\t\tadv.
+23042\tmenju\tF\tm.indecl.
+27527\tměnlivy\t\tadj.
+17774\tmenstruacija\tI\tf.
+391\tmenši\t\tadj.
+1537\tmenšinstvo\t\tn.
+19844\tmentaľnosť\tI\tf.
+19845\tmentaľny\tI\tadj.
+34933\tmentor\tI\tm.anim.
+2076\tměra\t\tf.
+27533\tmeridian\tI\tm.
+20466\tměrilo\t\tn.
+1995\tměriti\t\tv.tr. ipf.
+27536\tměriti\t\tv.intr. ipf.
+885\tměrjeńje\t\tn.
+20467\tměrka\t\tf.
+23649\tMerkurij\t\tm.sg.
+27539\tměrny\t\tadj.
+27541\tměrny\t\tadj.
+20468\tměrodajny\t\tadj.
+23041\tměrodajny\t\tadj.
+20887\tmęsaŕ\t\tm.anim.
+20888\tmęsarnja\t\tf.
+1456\tměsęc\t\tm.
+4697\tměsęc\t\tm.
+27546\tměsęčina\t\tf.
+9066\tměsęčna gazeta\t\tf.
+17776\tměsęčnica\t\tf.
+27547\tměsęčnik\t\tm.
+9063\tměsęčno světlo\t\tn.
+14696\tměsęčno\t\tadv.
+9065\tměsęčny žurnal\t\tm.
+4116\tměsęčny\t\tadj.
+14695\tměsęčny\t\tadj.
+27552\tmęsisty\t\tadj.
+20480\tměsiti\t\tv.tr. ipf.
+27553\tmęsnik\t\tm.anim.
+27554\tmęsny\t\tadj.
+513\tmęso\t\tn.
+17785\tmęsojed\t\tm.anim.
+22944\tmęsojedny\t\tadj.
+27557\tMesopotamija\t\tf.sg.
+22945\tmęsožerec\t\tm.anim.
+22946\tmęsožerny\t\tadj.
+3464\tměstečko\t\tn.
+19847\tmesti\t\tv.tr. ipf.
+36142\tměstne izbory\t\tm.pl.
+16493\tměstnik, městny padež\t\tm.
+3436\tměstnosť\t\tf.
+3728\tměstny\t\tadj.
+5200\tměsto rođeńja\t\tn.
+2721\tměsto\t\tn.
+9076\tměstoimę\t\tn.
+17778\tměstopoložeńje\t\tn.
+27564\tmešalka\t\tf.
+20470\tměšanec\t\tm.anim.
+20471\tměšanec\t\tm.anim.
+20475\tměšanina\t\tf.
+4155\tměšatelj\t\tm.
+2839\tměšati\t\tv.tr. ipf.
+20478\tměšćan, měšćanin\t\tm.anim.
+20479\tměšćanstvo\t\tn.sg.
+27569\tměšek\t\tm.
+19848\tmet\t\tm.
+27630\tmęta\t\tf.
+34863\tmeta\t\tf.
+35816\tmetabolizm\tI\tm.sg.
+19849\tmetafor\tI\tm.
+5255\tmetal\tI\tm.
+36247\tmetaličny\t\tadj.
+35098\tmetalurgija\tI\tf.sg.
+17780\tmetati monetų\t\tv.ipf.
+17781\tmetati těnj na\t\tv.ipf.
+2716\tmetati\t\tv.tr. ipf.
+2720\tmětati\t\tv.tr. ipf.
+27573\tmeteńje\t\tn.
+36003\tmeteorit\tI\tm.
+1424\tmeteorolog\tI\tm.anim.
+5974\tmętež\t\tm.
+27575\tmętežny\t\tadj.
+27576\tmęti\t\tv.tr. ipf.
+19850\tmetla\t\tf.
+17783\tmetnųti těnj na\t\tv.pf.
+397\tmetnųti\t\tv.tr. pf.
+2867\tmetoda\tI\tf.
+2719\tmetr\tI\tm.
+35948\tmetrika\tI\tf.
+2979\tmetro\tI\tn.
+32882\tmetropolija\tI\tf.
+27582\tmezalians\tF\tm.
+1369\tmězga\t\tf.
+951\tmgla\t\tf.
+9093\tmglati\t\tv.intr. ipf.
+4135\tmglisty\t\tadj.
+4804\tmi\t\tpron.pers.
+36338\tmidija\t\tf.
+9095\tmig\t\tm.
+9097\tmigańje\t\tn.sg.
+2180\tmigati\t\tv.intr. ipf.
+5980\tmigdalj\t\tm.
+858\tmignųti\t\tv.intr. pf.
+35246\tmigracija\tI\tf.
+27597\tmikrobus\tI\tm.
+23018\tmikrogram\tI\tm.
+23012\tmikroskop\tI\tm.
+23013\tmikroskopičny\tI\tadj.
+31744\tmikrovaľna peć\t\tf.
+31745\tmikrovȯlnova peć\t\tf.
+2724\tmiliard\tI\tnum.card.
+2218\tmilicija\tI\tf.
+23016\tmiligram\tI\tm.
+23022\tmililitr\tI\tm.
+23014\tmilimetr\tI\tm.
+235\tmilion\tI\tnum.card.
+5317\tmilitantny\tI\tadj.
+32741\tmilitarizm\tI\tm.sg.
+21341\tmilja\tI\tf.
+2726\tmiljny kamenj\t\tm.
+16485\tmilosŕďje\t\tn.sg.
+16486\tmilosŕdny\t\tadj.
+23333\tmilosť\t\tf.
+27599\tmilostivy\t\tadj.
+34780\tmilostynja\t\tf.
+9110\tmilovany\t\tadj.
+9111\tmilovati\t\tv.tr. ipf.
+27606\tmilovati\t\tv.tr. ipf.
+36249\tmilovati\t\tv.tr. ipf.
+1898\t#mily\t\tadj.
+34881\tmim\tI\tm.anim.
+32128\tmimičny\tI\tadj.
+34882\tmimika\tI\tf.
+746\tmimo\t\tprep.
+19851\tmimohodęći\t\tadv.
+17786\tmimohodny\t\tadj.
+5992\tmimohodȯm\t\tadv.
+22303\tmimovoljno\t\tadv.
+22302\tmimovoljny\t\tadj.
+405\tminaret\tI\tm.
+16301\tmineral\tI\tm.
+16302\tmineraľna voda\tI\tf.
+9117\tminet\tI\tm.
+35302\tminiatura\tI\tf.
+27613\tminibus\tI\tm.
+36355\tminimalističny\tI\tadj.
+36354\tminimalizm\tI\tm.sg.
+18718\tminimalizovati\tI\tv.tr. ipf./pf.
+2916\tminimaľny\tI\tadj.
+2732\tminimum\tI\tm.
+23466\tMinisterstvo Finansov\tI\tn.
+23477\tMinisterstvo Obråny\t\tn.
+35642\tMinisterstvo Pravosųďja\t\tn.
+23326\tMinisterstvo Vněšnjih Děl\t\tn.
+23327\tMinisterstvo Vnųtrišnjih Děl\t\tn.
+2730\tministerstvo\tI\tn.
+2733\tministr\tI\tm.anim.
+20482\tminovati\t\tv.tr. ipf.
+23520\tMinsk\t\tm.sg.
+17788\tminųlosť\t\tf.sg.
+2734\tminųly\t\tadj.
+16969\tminus\tI\tm.
+2727\tminuta\tI\tf.
+888\tminųti\t\tv.tr. pf.
+2401\tmir\t\tm.sg.
+20488\tmir\t\tm.sg.
+27623\tmiraž\tI\tm.
+20489\tmiriti\t\tv.tr. ipf.
+404\tmirny\t\tadj.
+893\tmisija\tI\tf.
+35360\tmisionaŕ\tI\tm.
+5201\tmiska\t\tf.
+23300\tmističny\tI\tadj.
+35601\tmistifikacija\tI\tf.
+23299\tmistik\tI\tm.anim.
+23281\tmit\tI\tm.
+23282\tmitičny\tI\tadj.
+23284\tmitologičny\tI\tadj.
+23283\tmitologija\tI\tf.
+33009\tmizantrop\tI\tm.anim.
+33010\tmizantropija\tI\tf.
+36099\tmjau\t\tintj.
+36596\tmjaukati\t\tv.intr. ipf.
+36597\tmjauknųti\t\tv.intr. pf.
+32735\tmjuzikl\tE\tm.
+27631\tmlåćeńje\t\tn.sg.
+17789\tmlådčica\t\tf.
+17790\tmlådčik\t\tm.anim.
+27633\tmlådę\t\tn.
+167\tmlådec\t\tm.anim.
+9146\tmlådečstvo\t\tn.sg.
+27636\tmlådenec\t\tm.anim.
+27637\tmlådensky\t\tadj.
+27638\tmlåděti\t\tv.intr. ipf.
+27639\tmlådež\t\tf.
+35305\tmlådežny\t\tadj.
+9131\tmlådica\t\tf.
+9133\tmlådosť\t\tf.
+9134\tmlådostno\t\tadv.
+15387\tmlådostnosť\tM\tf.
+9135\tmlådostny\t\tadj.
+9136\tmlådoženih\t\tm.anim.
+27632\tmlådoženka\t\tf.
+9137\tmlådši\t\tadj.
+499\tmlådy\t\tadj.
+23152\tmlåt\t\tm.
+27650\tmlåťba\t\tf.
+27649\tmlåtiti\t\tv.tr. ipf.
+310\tmlåtȯk\t\tm.
+34439\tmlavy\t\tadj.
+27654\tmlěčaj\t\tm.
+23566\tMlěčna dråga\t\tf.
+23565\tMlěčny pųť\t\tm.sg.
+9142\tmlěčny\t\tadj.
+27657\tmlěkaŕ\t\tm.anim.
+2735\tmlěko\t\tn.
+925\tmlěti\t\tv.tr. ipf.
+27661\tmlězivo\t\tn.sg.
+27662\tmljaskati\t\tv.intr. ipf.
+34441\tmlo\t\tadv.
+34440\tmlosť\t\tf.
+34438\tmly\t\tadj.
+23140\tmlyn\t\tm.
+23150\tmlynaŕ\t\tm.anim.
+1183\tmně\t\tpron.pers.
+917\tmněńje\t\tn.
+2923\tmněti\t\tv.tr. ipf.
+17796\tmněvati\t\tv.tr. ipf.
+34865\tmnih\t\tm.anim.
+19852\tmniška\t\tf.
+2736\tmnogo\t\tadv.
+2738\tmnogo\t\tadv.
+19853\tmnogobarvny\t\tadj.
+17797\tmnogobožstvo\t\tn.sg.
+20490\tmnogocentričny\tI\tadj.
+27674\tmnogočisľny\t\tadj.
+19854\tmnogojęzyčny\t\tadj.
+16450\tmnogokråtno\t\tadv.
+32565\tmnogokråtny\t\tadj.
+19855\tmnogokulturny\t\tadj.
+16333\tmnogokųtnik\t\tm.
+5131\tmnogolětny\t\tadj.
+19856\tmnogoljudny\t\tadj.
+32617\tmnogonožky\t\tf.pl.
+20491\tmnogoraky\t\tadj.
+21343\tmnogorěčivy\t\tadj.
+21344\tmnogoslovny\t\tadj.
+16971\tmnogosložny\t\tadj.
+34917\tmnogostrånny\t\tadj.
+16334\tmnogovųgȯľnik\t\tm.
+17077\tmnogy\t\tadj.
+35252\tmnožina\t\tf.
+3698\tmnožinstvo\t\tn.
+16972\tmnožiteljny čislovnik\t\tm.
+19858\tmnožiti\t\tv.tr. ipf.
+2740\tmnožstveno čislo\t\tn.
+3084\tmnožstvo\t\tn.
+36434\tmnožstvo\t\tn.
+4975\tmobilizacija\tI\tf.
+2741\tmobilizovati\tI\tv.tr. ipf.
+35742\tmobiľnosť\tI\tf.
+32256\tmobiľny telefon\tI\tm.
+32257\tmobiľny\tI\tadj.
+635\tmoć\t\tf.
+27687\tmoćněti\t\tv.intr. ipf.
+9165\tmoćno\t\tadv.
+9166\tmoćnosť\t\tf.
+9167\tmoćnosť\t\tf.
+2743\tmoćny\t\tadj.
+27677\tmoč\t\tf.
+624\tmočar\t\tm.
+27681\tmočarny\t\tadj.
+27683\tmočevina\t\tf.
+1829\tmočiti sę\t\tv.refl. ipf.
+4161\tmočiti\t\tv.tr. ipf.
+15389\tmoda\tI\tf.
+19859\tmodel\tI\tm.
+36916\tmodelovati\tI\tv.tr. ipf.
+36923\tmodelovati\tI\tv.tr. ipf.
+5905\tmodernizacija\tI\tf.
+5904\tmodernizovati\tI\tv.tr. ipf.
+900\tmoderny\tI\tadj.
+35647\tmodifikacija\tI\tf.
+35646\tmodifikovati\tI\tv.tr. ipf./pf.
+27691\tmodistka\tF\tf.
+9169\tmodny\tI\tadj.
+27692\tmodrěti\t\tv.intr. ipf.
+27693\tmodrina\t\tf.
+27694\tmodriti\t\tv.tr. ipf.
+27695\tmodrooky\t\tadj.
+2742\tmodry\t\tadj.
+910\tmogti\t\tv.aux. ipf.
+20495\tmogųći\t\tadj.
+27700\tmogųtny\t\tadj.
+2008\tmogyla\t\tf.
+2754\tmȯh\t\tm.sg.
+920\tmoj\t\tpron.poss.
+27710\tmoknųti\t\tv.intr. ipf.
+27711\tmokrěti\t\tv.intr. ipf.
+27712\tmokrica\t\tf.
+17801\tmokrišče\t\tn.
+14705\tmokriti\t\tv.tr. ipf.
+27715\tmokrosť\t\tf.
+27716\tmokrota\t\tf.
+2147\tmokry\t\tadj.
+27718\tmȯlčalivy\t\tadj.
+3361\tmȯlčańje\t\tn.sg.
+1862\tmȯlčati\t\tv.intr. ipf.
+9187\tmȯlčno\t\tadv.
+9188\tmȯlčny\t\tadj.
+3258\tMoldavija, Moldova\t\tf.sg.
+27722\tmoldavsky\t\tadj.
+23596\tmolekula\tI\tf.
+16011\tmolekularny\tI\tadj.
+35011\tmolestovati\tI\tv.tr. ipf.
+27727\tmolitevnik\t\tm.
+494\tmoliti sę\t\tv.refl. ipf.
+2178\tmolitva\t\tf.
+1861\tmolj\t\tm.anim.
+27730\tmȯlknųti\t\tv.intr. ipf.
+5050\tmȯlnja\t\tf.
+9192\tmȯlva\t\tf.
+2179\tmȯlviti\t\tv.tr. ipf.
+1859\tmoment\tI\tm.
+5119\tmomentaľno\tI\tadv.
+34864\tmonah\t\tm.anim.
+34866\tmonahynja\t\tf.
+27734\tMonako\t\tn.sg.
+1860\tmonarh\tI\tm.anim.
+1863\tmonarhija\tI\tf.
+34073\tmonastyr\t\tm.
+4464\tmoneta\tI\tf.
+22764\tMongolija\t\tf.sg.
+22765\tmongoľsky\t\tadj.
+27736\tmonisto\t\tn.
+32838\tmonogram\tI\tm.
+32254\tmonolit\tI\tm.
+32255\tmonolitny\tI\tadj.
+32253\tmonolog\tI\tm.
+19520\tmonopol\tI\tm.
+23597\tmonoteizm\tI\tm.sg.
+4205\tmontaža\tI\tf.
+15390\tmontovańje\tI\tn.sg.
+5682\tmontovati\tI\tv.tr. ipf.
+1858\tmonument\tI\tm.
+4118\tmonumentaľny\tI\tadj.
+35045\tmoped\tI\tm.
+20496\tmor\t\tm.
+2761\tmora\t\tf.
+27740\tmoral\tI\tm.
+23698\tmoralizovati\tI\tv.intr. ipf.
+24000\tmoraľnosť\tI\tf.
+32285\tmoraľny\tI\tadj.
+14711\tmorati\t\tv.aux. ipf.
+2753\tMoravija\t\tf.sg.
+35840\tmoravsky\t\tadj.
+23704\tmorda\t\tf.
+19860\tmorfem\tI\tm.
+23202\tmorfin\tI\tm.sg.
+35217\tmorfologija\tI\tf.
+34832\tmoriti sę\t\tv.refl. ipf.
+20497\tmoriti\t\tv.tr. ipf.
+20498\tmoriti\t\tv.tr. ipf.
+5935\tmorjak\t\tm.anim.
+2745\tmorje\t\tn.
+5934\tmorjeplavatelj\t\tm.anim.
+20890\tmorjeplavstvo\t\tn.sg.
+19861\tmorny\t\tadj.
+9217\tmoŕska stěna\t\tf.
+32938\tmoŕska trava\t\tf.
+32937\tmoŕska vodoråsť\t\tf.
+20499\tmoŕska zvězda\t\tf.
+929\tmoŕsko dno\t\tn.
+36625\tmoŕsky jež\tI\tm.
+20500\tmoŕsky konik\t\tm.anim.
+27754\tmoŕsky\t\tadj.
+36085\tmorva\t\tf.
+35452\tmorž\t\tm.anim.
+4722\tmoskȯvsky\t\tadj.
+4721\tMoskva\t\tf.sg.
+2747\tmost\t\tm.
+27761\tmošna\t\tf.
+27763\tmošna\t\tf.
+3211\tmotati\t\tv.tr. ipf.
+32628\tmotiv\tI\tm.
+646\tmotivacija\tI\tf.
+2749\tmotivovati\tI\tv.tr. ipf.
+36290\tmotocikl\tI\tm.
+27767\tmotȯk\t\tm.
+21345\tmotor\tI\tm.
+27769\tmotovilo\t\tn.
+27770\tmotto\tI\tn.
+5676\tmotvųz\t\tm.
+645\tmotyka\t\tf.
+2748\tmotylik\t\tm.anim.
+21346\tmotylj\t\tm.anim.
+2750\tMozambik\t\tm.sg.
+935\tmozg\t\tm.
+9230\tmozgova proteza\t\tf.
+17805\tmozgovy udar\t\tm.
+9229\tmozgovy\t\tadj.
+2395\tmozȯčna kosť\t\tf.
+27777\tmozolj\t\tf.
+934\tmože byti\t\tphrase
+9232\tmože\t\tadv.
+9246\tmožlivo\t\tadv.
+2752\tmožlivosť\t\tf.
+280\tmožlivy\t\tadj.
+19144\tmožno najskorěje\t\tadv.
+926\tmožno\t\tadv.
+3395\tmožnosť\t\tf.
+3336\tmožny\t\tadj.
+27788\tmråčiti sę\t\tv.refl. ipf.
+27789\tmråčnosť\t\tf.
+6033\tmråčny\t\tadj.
+6031\tmråk\t\tm.
+35051\tmramor\tI\tm.sg.
+17810\tmråvišče\t\tn.
+19862\tmråvja kopa\t\tf.
+27795\tmråvji\t\tadj.
+785\tmråvka\t\tf.
+32505\tmråvojed\t\tm.anim.
+27797\tmråz\t\tm.
+4496\tmråzilka\t\tf.
+9269\tmråzina\t\tf.
+4140\tmråziti\t\tv.tr. ipf.
+27800\tmråzny\t\tadj.
+17812\tmråzosušati\t\tv.tr. ipf.
+9264\tmråzosušeńje\t\tn.sg.
+9270\tmråzosušeny\t\tadj.
+9263\tmråzosušiti\t\tv.tr. pf.
+17811\tmråženy\t\tadj.
+27802\tmrčati\t\tv.tr. ipf.
+34493\tmrdati\t\tv.intr. ipf.
+34497\tmrdnųti\t\tv.intr. pf.
+286\tmrěža\t\tf.
+27806\tmŕknųti\t\tv.intr. ipf.
+928\tmrkva\t\tf.
+23899\tmrmjati\t\tv.tr. ipf.
+22954\tmŕša\t\tf.
+27807\tmŕščina\t\tf.
+31912\tmrščiti brvi\t\tv.intr. ipf.
+27809\tmrščiti sę\t\tv.refl. ipf.
+27808\tmrščiti\t\tv.tr. ipf.
+22955\tmŕšejed\t\tm.anim.
+27810\tmŕtvec\t\tm.anim.
+27811\tmŕtvečina\t\tf.
+27813\tmŕtvěti\t\tv.intr. ipf.
+32295\tmŕtvěti\t\tv.intr. ipf.
+22908\tmŕtvozornik\t\tm.anim.
+1793\tmŕtvy\t\tadj.
+3339\tmŕtvy\t\tadj.
+34463\tmŕzavec\t\tm.anim.
+34466\tmŕzko\t\tadv.
+34459\tmŕzkosť\t\tf.
+3561\tmŕzky\t\tadj.
+2746\tmrznųti\t\tv.intr. ipf.
+5599\tmsta\t\tf.
+27820\tmstitelj\t\tm.anim.
+5597\tmstiti\t\tv.tr. ipf.
+5600\tmstivy\t\tadj.
+23595\tmša\tI\tf.
+14717\tmu\t\tpron.pers.
+32309\tmučańje\t\tn.sg.
+32310\tmučati\t\tv.intr. ipf.
+27824\tmųčenica\t\tf.
+32296\tmųčeničstvo\t\tn.sg.
+27825\tmųčenik\t\tm.anim.
+3856\tmųčeńje\t\tn.
+9274\tmųčiljnja\t\tf.
+9275\tmųčitelj\t\tm.anim.
+27828\tmųčiteljny\t\tadj.
+9273\tmųčiti do smŕti\t\tv.ipf.
+1173\tmųčiti\t\tv.tr. ipf.
+9279\tmudak\t\tm.anim.
+27833\tmųdo\t\tn.
+23760\tmųdrec\t\tm.anim.
+27835\tmųdrěti\t\tv.intr. ipf.
+9280\tmųdrosť\t\tf.
+2751\tmųdry\t\tadj.
+2760\tmuha\t\tf.
+27843\tmuholovka\t\tf.
+27844\tmuholovka\t\tf.
+27845\tmuhomor\t\tm.
+905\tmųka\t\tf.
+17816\tmųka\t\tf.
+27849\tmukańje\t\tn.sg.
+27850\tmukati\t\tv.intr. ipf.
+27851\tmulj\t\tm.sg.
+35797\tmultikulturny\tI\tadj.
+32364\tmumija\tI\tf.
+14719\tmusěti\t\tv.aux. ipf.
+3995\tmuskul\tI\tm.
+32513\tmuskus\t\tm.sg.
+32514\tmuskusna krysa\t\tf.
+922\tmusliman, muslimanin\tI\tm.anim.
+35798\tmuslimanka\tI\tf.
+35799\tmuslimansky\tI\tadj.
+27858\tmuška\t\tf.
+20501\tmųť\t\tf.
+19863\tmutant\tI\tm.anim.
+20503\tmųtiti\t\tv.tr. ipf.
+20504\tmųtiti\t\tv.tr. ipf.
+27861\tmųtněti\t\tv.intr. ipf.
+27862\tmųtnosť\t\tf.
+20506\tmųtny\t\tadj.
+936\tmuzej\tI\tm.
+198\tmuzika\tI\tf.
+32737\tmuzikaľna grupa\t\tf.
+4791\tmuzikaľny\tI\tadj.
+1452\tmuzikant\tI\tm.anim.
+1521\tmųž\t\tm.anim.
+3313\tmųž\t\tm.anim.
+27871\tmųžev\t\tadj.
+3402\tmųžiti sę\t\tv.refl. ipf.
+9292\tmųžskosť\t\tf.
+2755\tmųžsky rod\t\tm.
+5251\tmųžsky\t\tadj.
+4406\tmųžstvo\t\tn.
+2722\tmy\t\tpron.pers.
+27882\tmyliti sę\t\tv.refl. ipf.
+27880\tmyliti\t\tv.tr. ipf.
+27881\tmyliti\t\tv.tr. ipf.
+36144\tmyľnica\t\tf.
+1878\tmylo\t\tn.
+27885\tmys\t\tm.
+27887\tmyslim, mysljų\t\tphrase
+9310\tmyslimo\t\tadv.
+32318\tmyslimy\t\tadj.
+27888\tmyslitelj\t\tm.anim.
+14724\tmysliti o\t\tv.tr. ipf.
+2744\tmysliti\t\tv.tr. ipf.
+2731\tmyslj\t\tf.
+27905\tmysljeńje\t\tn.sg.
+27886\tmysljenny\t\tadj.
+1573\tmyš\t\tf.
+27898\tmyšasty\t\tadj.
+9129\tmyšca\t\tf.
+23045\tmyšelovka\t\tf.
+27904\tmyškovati\t\tv.intr. ipf.
+1788\tmyti\t\tv.tr. ipf.
+36176\tmytnica\t\tf.
+27911\tmyto\t\tn.
+2757\tna dol\t\tadv.
+27957\tna dȯlgo\t\tadv.
+9317\tna dolu\t\tadv.
+33735\tna glås\t\tadv.
+16765\tna glåvų naseljeńja\t\tadv.
+17821\tna javu\t\tadv.
+28005\tna javu\t\tadv.
+17822\tna počętku\t\tadv.
+36212\tna polovině drågy\t\tadv.
+19864\tna prěkor\t\tprep.
+9318\tna ščęsťje\t\tadv.
+17823\tna vŕhu\t\tadv.
+17825\tna vśakų okoľnosť\t\tadv.
+17824\tna vśaky slučaj\t\tadv.
+2758\tna žalosť\t\tadv.
+33330\tna živo\t\tadv.
+33331\tna živo\t\tadv.
+2756\tna\t\tprep.
+4939\tna\t\tprep.
+27916\tnabajati\t\tv.intr. pf.
+34834\tnabajati\t\tv.intr. pf.
+20508\tnaběg\t\tm.
+27920\tnaběgati sę\t\tv.refl. pf.
+17826\tnabirati\t\tv.tr. ipf.
+20513\tnabiti\t\tv.tr. pf.
+20511\tnabivati\t\tv.tr. ipf.
+20516\tnaboj\t\tm.
+17829\tnabožny\t\tadj.
+17831\tnabrati\t\tv.tr. pf.
+27930\tnabreknųti\t\tv.intr. pf.
+27931\tnabrěžna\t\tf.
+32382\tnabuhati\t\tv.intr. ipf.
+27932\tnabuhnųti\t\tv.intr. pf.
+27933\tnabyti\t\tv.tr. pf.
+32383\tnabyvati\t\tv.tr. ipf.
+33363\tnabzděti\t\tv.intr. pf.
+22823\tnacionalist\t\tm.anim.
+17834\tnacionalističny\t\tadj.
+2759\tnacionalizacija\t\tf.
+5318\tnacionalizm\t\tm.sg.
+4964\tnacionalizovati\t\tv.tr. ipf.
+1522\tnacist\t\tm.anim.
+2739\tnacističny\t\tadj.
+22824\tnacizm\t\tm.sg.
+34203\tnačaditi\t\tv.intr. pf.
+9323\tnačeľnik policije\t\tm.anim.
+9324\tnačeľnik štaba\t\tm.anim.
+948\tnačeľnik\t\tm.anim.
+9325\tnačęlo\t\tn.
+1502\tnačęti sę\t\tv.refl. pf.
+22780\tnačęti\t\tv.tr. pf.
+14727\tnačęťje\t\tn.
+27937\tnačętȯk\t\tm.
+5516\tnačinati sę\t\tv.refl. ipf.
+22779\tnačinati\t\tv.tr. ipf.
+27940\tnačitati sę\t\tv.refl. pf.
+27938\tnačrpati\t\tv.tr. pf.
+21347\tnačrtati\t\tv.tr. pf.
+27941\tnačto\t\tadv.
+2765\tnad\t\tprep.
+4932\tnad\t\tprep.
+9330\tnad-\t\tprefix
+17835\tnadalje\t\tadv.
+25121\tnadarmo\t\tadv.
+17083\tnadati\t\tv.tr. pf.
+16974\tnadavati\t\tv.tr. ipf.
+3132\tnaděja\t\tf.
+17836\tnadějati sę\t\tv.refl. ipf.
+36881\tnadějny\t\tadj.
+32618\tnadělati\t\tv.tr. pf.
+17837\tnaděti\t\tv.tr. pf.
+17838\tnaděti\t\tv.tr. pf.
+17840\tnaděvati\t\tv.tr. ipf.
+17841\tnaděvati\t\tv.tr. ipf.
+27952\tnadežny\t\tadj.
+17843\tnadglåvišče\t\tn.
+5814\tnadględati\t\tv.ipf.
+5817\tnadględěti\t\tv.pf.
+5357\tnadigrati\t\tv.tr. pf.
+5358\tnadigryvati\t\tv.tr. ipf.
+36556\tnadir\t\tm.
+19865\tnadljudsky\t\tadj.
+23335\tnadměrno\t\tadv.
+23334\tnadměrnosť\t\tf.
+20517\tnadměrny\t\tadj.
+36457\tnadmnožstvo\t\tn.
+35396\tnadnacionaľny\t\tadj.
+22162\tnadobyčajny\t\tadj.
+6278\tnadȯhneńje\t\tn.sg.
+6277\tnadȯhnųti\t\tv.tr. pf.
+19866\tnadoprošćeny\t\tadj.
+20892\tnadpis\t\tm.
+27958\tnadpis\t\tm.
+36310\tnadprirodny\t\tadj.
+5621\tnadųti\t\tv.tr. pf.
+33039\tnadųty\t\tadj.
+33040\tnadųty\t\tadj.
+19867\tnadųvati\t\tv.tr. ipf.
+22936\tnadužiti\t\tv.tr. pf.
+22935\tnaduživati\t\tv.tr. ipf.
+6276\tnadyhati\t\tv.tr. ipf.
+2924\tnadzirati\t\tv.tr. ipf.
+2766\tnadzor\t\tm.
+35186\tnadzornik\t\tm.anim.
+2763\tnafta\t\tf.
+2762\tnaftoprovod\t\tm.
+32806\tnaganjati strah někomu\t\tphrase
+32811\tnaganjati\t\tv.tr. ipf.
+36236\tnaglåvna nametka\t\tf.
+36672\tnaględny\t\tadj.
+4247\tnaglo\t\tadv.
+9350\tnagly kolaps\t\tm.
+2764\tnagly\t\tadj.
+15398\tnagly\t\tadj.
+32808\tnagnati strah někomu\t\tphrase
+27975\tnagnati\t\tv.tr. pf.
+27976\tnagnojiti\t\tv.tr. pf.
+17846\tnagnųti\t\tv.tr. pf.
+9353\tnagorno\t\tadv.
+27981\tnagorny\t\tadj.
+27982\tnagosť\t\tf.
+27983\tnagota\t\tf.
+28644\tnagȯtky\t\tm.pl.
+27984\tnagovoriti\t\tv.tr. ipf.
+943\tnagråda\t\tf.
+4121\tnagråditi\t\tv.tr. pf.
+4122\tnagrađati\t\tv.tr. ipf.
+27991\tnagrěti\t\tv.tr. pf.
+32416\tnagrěvati\t\tv.tr. ipf.
+17850\tnagromaditi\t\tv.tr. pf.
+17848\tnagromađati\t\tv.tr. ipf.
+17849\tnagromađeńje\t\tn.
+5319\tnagy\t\tadj.
+17845\tnagybati\t\tv.tr. ipf.
+27998\tnahmuriti\t\tv.tr. pf.
+32818\tnahmurjeny\t\tadj.
+14285\tnahoditi sę\t\tv.refl. ipf.
+2055\tnahoditi\t\tv.tr. ipf.
+15399\tnahodka\t\tf.
+17851\tnahodnosť\t\tf.
+28002\tnahvatati\t\tv.tr. pf.
+17854\tnaigrati\t\tv.tr. pf.
+17856\tnaigryvati\t\tv.tr. ipf.
+9357\tnaivnik\t\tm.anim.
+16722\tnaivnosť\t\tf.
+16721\tnaivny\t\tadj.
+28004\tnaj-\t\tprefix
+9359\tnajblizši\t\tadj.
+9358\tnajbliže\t\tadv.
+9360\tnajbogatši\t\tadj.
+16916\tnajbolje\t\tadv.
+35661\tnajboljši\t\tadj.
+20519\tnajčęstěje\t\tadv.
+23044\tnajdalje\t\tadv.
+23043\tnajdaljši\t\tadj.
+9361\tnajdivnějši\t\tadj.
+781\tnajdti\t\tv.tr. pf.
+32423\tnajedati sę\t\tv.refl. ipf.
+9365\tnajem\t\tm.sg.
+28010\tnajemnica\t\tf.
+32854\tnajemnik\t\tm.anim.
+9409\tnajemny råbotnik\t\tm.anim.
+32860\tnajemny ubijca\t\tm.anim.
+28012\tnajemny\t\tadj.
+28006\tnajesti sę\t\tv.refl. pf.
+9410\tnajęti\t\tv.tr. pf.
+17861\tnajęti\t\tv.tr. pf.
+17860\tnajezd\t\tm.
+36046\tnajezdnik\t\tm.anim.
+34831\tnaježiti sę\t\tv.refl. pf.
+31962\tnaježiti\t\tv.tr. pf.
+5868\tnajglųbši\t\tadj.
+9369\tnajgorše\t\tadv.
+779\tnajgorši\t\tadj.
+9371\tnajhlådnějši\t\tadj.
+9372\tnajkrasivši\t\tadj.
+9373\tnajkrasnějši\t\tadj.
+9374\tnajkrvavši\t\tadj.
+17862\tnajlegši\t\tadj.
+17863\tnajlěpje\t\tadv.
+2770\tnajlěpši\t\tadj.
+3280\tnajlučši\t\tadj.
+9377\tnajmalo\t\tadv.
+32859\tnajmatelj\t\tm.anim.
+5512\tnajmati\t\tv.tr. ipf.
+9408\tnajmati\t\tv.tr. ipf.
+35889\tnajmě\t\tadv.
+9379\tnajmękši\t\tadj.
+4718\tnajmenje\t\tadv.
+9381\tnajmenši\t\tadj.
+2769\tnajmnogo\t\tadv.
+9382\tnajnizši\t\tadj.
+3841\tnajnovějši\t\tadj.
+16282\tnajpozdněje\t\tadv.
+9383\tnajpozdnějši\t\tadj.
+17866\tnajprostějši\t\tadj.
+19868\tnajpŕvo\t\tadv.
+16283\tnajraněje\t\tadv.
+9384\tnajranši\t\tadj.
+9386\tnajstarějši, najstarši\t\tadj.
+20520\tnajvęće\t\tadv.
+9364\tnajvęćši\t\tadj.
+14734\tnajveliky\t\tadj.
+1488\tnajvyše\t\tadv.
+9390\tnajzimnějši\t\tadj.
+3281\tnajzly\t\tadj.
+32013\tnakalati\t\tv.tr. ipf.
+28022\tnakapati\t\tv.intr. pf.
+5790\tnakaz na arešt\t\tm.
+9393\tnakaz\t\tm.
+3061\tnakazati\t\tv.tr. pf.
+3112\tnakazyvati\t\tv.tr. ipf.
+19869\tnaklad\t\tm.
+19871\tnaklad\t\tm.
+28027\tnaklad\t\tm.
+6087\tnakladati\t\tv.tr. ipf.
+28028\tnakladati\t\tv.tr. ipf.
+21348\tnaklanjati\t\tv.tr. ipf.
+28032\tnaklåti na\t\tv.tr. pf.
+19875\tnaklon\t\tm.
+21349\tnakloniti\t\tv.tr. pf.
+35936\tnaklonjeńje\t\tn.
+28040\t#naklonjeny\t\tadj.
+19876\tnaklonnosť\t\tf.
+28041\tnakolěnnik\t\tm.
+17869\tnakonec\t\tadv.
+28042\tnakopati\t\tv.tr. pf.
+32865\tnakopyvati\t\tv.tr. ipf.
+23040\tnakovaljnja\t\tf.
+5594\tnakrmiti\t\tv.tr. pf.
+23703\tnakryti\t\tv.tr. pf.
+23702\tnakryvati\t\tv.tr. ipf.
+28025\tnakydati\t\tv.tr. pf.
+32677\tnakydyvati\t\tv.tr. ipf.
+28051\tnalagati\t\tv.tr. ipf.
+32679\tnalagati\t\tv.tr. ipf.
+20521\tnalegati\t\tv.intr. ipf.
+20522\tnalegti\t\tv.intr. pf.
+19878\tnalet\t\tm.
+9398\tnalěvo\t\tadv.
+1010\tnaležati\t\tv.intr. ipf.
+20523\tnaležity\t\tadj.
+28058\tnaliti\t\tv.tr. ipf.
+28059\tnalivati\t\tv.tr. pf.
+28060\tnalivka\t\tf.
+21350\tnalivno pero\t\tn.
+6088\tnaložiti\t\tv.tr. pf.
+28030\tnaložiti\t\tv.tr. pf.
+20525\tnaložnica\t\tf.
+2925\tnam\t\tpron.pers.
+28065\tnamastiti\t\tv.tr. pf.
+32875\tnamašćati\t\tv.tr. ipf.
+32233\tnamazati\t\tv.tr. pf.
+32234\tnamazyvati\t\tv.tr. ipf.
+9402\tnaměr\t\tm.
+5153\tnaměriti\t\tv.tr. pf.
+5151\tnaměrjati\t\tv.tr. ipf.
+20527\tnaměstnik\t\tm.anim.
+4162\tnamočiti\t\tv.tr. pf.
+9405\tnamokriti\t\tv.tr. pf.
+9406\tnamontovati\t\tv.tr. pf.
+23705\tnamordnik\t\tm.
+28074\tnamotati\t\tv.tr. pf.
+32866\tnamotyvati\t\tv.tr. ipf.
+32320\tnamyliti\t\tv.tr. pf.
+32321\tnamyljati\t\tv.tr. ipf.
+28077\tnanesti\t\tv.tr. pf.
+33511\tnanizati\t\tv.tr. pf.
+3858\tnanos\t\tm.
+28080\tnanositi\t\tv.tr. ipf.
+5964\tnanovo\t\tadv.
+35419\tnaočila\t\tn.pl.
+28081\tnaopak\t\tadv.
+28082\tnaostriti\t\tv.tr. pf.
+3441\tnapad\t\tm.
+20894\tnapad\t\tm.
+955\tnapadati\t\tv.tr. ipf.
+2031\tnapadati\t\tv.tr. ipf.
+28084\tnapadnik\t\tm.anim.
+20898\tnapadny\t\tadj.
+28089\tnapajati\t\tv.tr. ipf.
+32705\tnapajati\t\tv.tr. ipf.
+36250\tnapajati\t\tv.tr. ipf.
+36807\tnapaljeny\t\tadj.
+16750\tnapamęť\t\tadv.
+36724\tnaparfumovati sę\t\tv.refl. pf.
+23878\tnaparfumovati\t\tv.tr. pf.
+32948\tnapasti sę\t\tv.refl. pf.
+957\tnapasti\t\tv.intr. pf.
+28091\tnapasti\t\tv.tr. pf.
+9417\tnapastnik\t\tm.anim.
+28095\tnapęti\t\tv.tr. pf.
+20900\tnapętosť\t\tf.
+20901\tnapęty\t\tadj.
+28096\tnapěv\t\tm.
+32923\tnaphati\t\tv.tr. pf.
+28097\tnapihati\t\tv.tr. ipf.
+28098\tnapinati\t\tv.tr. ipf.
+28099\tnapirati\t\tv.intr. ipf.
+6280\tnapis\t\tm.
+958\tnapisati\t\tv.tr. pf.
+28102\tnapiti sę\t\tv.refl. pf.
+32955\tnapiti sę\t\tv.refl. pf.
+2927\tnapitȯk\t\tm.
+32956\tnapivati sę\t\tv.refl. ipf.
+32957\tnapivati sę\t\tv.refl. ipf.
+28106\tnapljuvati\t\tv.intr. pf.
+20903\tnaplyv\t\tm.
+4094\tnapoj\t\tm.
+28109\tnapojiti\t\tv.tr. pf.
+32706\tnapojiti\t\tv.tr. pf.
+35531\tnapojnica\t\tf.
+17876\tnapȯlniti perami\t\tv.tr. pf.
+1089\tnapȯlniti\t\tv.tr. pf.
+2928\tnapominati\t\tv.tr. ipf.
+23875\tnapomněńje\t\tn.
+2768\tnapomněti\t\tv.tr. pf.
+20904\tnapor\t\tm.
+20905\tnapor\t\tm.
+17877\tnaposlěd\t\tadv.
+17880\tnaposlědȯk\t\tadv.
+16975\tnapr.\t\tadv.
+3292\tnapravdų\t\tadv.
+5548\tnapraviti sę\t\tv.refl. pf.
+5550\tnapraviti\t\tv.tr. pf.
+28120\tnapraviti\t\tv.tr. pf.
+33047\tnapraviti\t\tv.tr. pf.
+3658\tnapravjati sę\t\tv.refl. ipf.
+5549\tnapravjati\t\tv.tr. ipf.
+33051\tnapravjati\t\tv.tr. ipf.
+33053\tnapravjati\t\tv.tr. ipf.
+28121\tnapravo\t\tadv.
+28122\tnapråzdno\t\tadv.
+28123\tnapråzdny\t\tadj.
+2791\tnaprěd\t\tadv.
+20907\tnaprěd\t\tadv.
+28129\tnaprěti\t\tv.intr. pf.
+20909\tnapręžeńje\t\tn.
+28130\tnapriklad\t\tadv.
+28131\tnapriměr\t\tadv.
+15403\tnaprostrina\t\tf.
+4067\tnaprotiv\t\tprep.
+28135\tnapŕstȯk\t\tm.
+2767\tnaprųžeńje\t\tn.
+20910\tnaprųžiti\t\tv.tr. pf.
+20913\tnapustiti\t\tv.tr. pf.
+20912\tnapušćati\t\tv.tr. ipf.
+33056\tnarastati\t\tv.intr. ipf.
+28139\tnaråsti\t\tv.intr. pf.
+36238\tnarcis\t\tm.
+36240\tnarcističny\t\tadj.
+36239\tnarcizm\t\tm.
+21351\tnarěčena\t\tf.
+21352\tnarěčeny\t\tm.anim.
+9440\tnarěčje\t\tn.
+9441\tnarěčje\t\tn.
+21353\tnarěkańje\t\tn.
+21354\tnarěkati\t\tv.intr. ipf.
+33141\tnarěkati\t\tv.tr. ipf.
+28145\tnarěkti\t\tv.tr. pf.
+28148\tnarězati\t\tv.tr. ipf.
+950\tnarkoman\t\tm.anim.
+36284\tnarkomanija\t\tf.
+33077\tnarkotik\t\tm.
+36285\tnarkoza\t\tf.
+28149\tnaročito\t\tadv.
+21356\tnaročity\t\tadj.
+1013\tnarod\t\tm.
+28153\tnaroditi\t\tv.tr. pf.
+9444\tnarodna vojna\t\tf.
+16976\tnarodnosť\t\tf.
+4307\tnarodny\t\tadj.
+6096\tnarodobijstvo\t\tn.sg.
+20914\tnarodopis\t\tm.
+17884\tnarodopisec\t\tm.anim.
+28156\tnarođeńje\t\tn.
+28157\tnarožny\t\tadj.
+36788\tnarųčati\t\tv.tr. ipf.
+36787\tnarųčiti\t\tv.tr. pf.
+28158\tnarųčje\t\tn.sg.
+23985\tnarųčka\t\tf.
+36790\tnarųčka\t\tf.
+28159\tnarųčny časovnik\t\tm.
+2788\tnarušati\t\tv.tr. ipf.
+9445\tnarušeńje\t\tn.
+1645\tnarušiti\t\tv.tr. pf.
+28163\tnarvati\t\tv.tr. pf.
+5542\tnarysovati\t\tv.tr. pf.
+33188\tnaryvati\t\tv.tr. ipf.
+982\tnas\t\tpron.pers.
+33191\tnasad\t\tm.
+28169\tnasaditi\t\tv.tr. pf.
+33190\tnasađati\t\tv.tr. ipf.
+34136\tnascati\t\tv.intr. pf.
+28172\tnasěděti sę\t\tv.refl. pf.
+21360\tnasědka\t\tf.
+28174\tnasěkati\t\tv.tr. ipf.
+17885\tnasěkomo\t\tn.
+28175\tnasěkti\t\tv.tr. pf.
+3776\tnaseliti\t\tv.tr. pf.
+3781\tnaseljati\t\tv.tr. ipf.
+2787\tnaseljeńje\t\tn.
+3782\tnaseljeny\t\tadj.
+578\tnasiľje\t\tn.sg.
+21361\tnasiľnik\t\tm.anim.
+9453\tnasiľno\t\tadv.
+9454\tnasiľnosť\t\tf.
+9455\tnasiľny\t\tadj.
+36043\tnasilovańje\t\tn.
+36865\tnaskakati\t\tv.intr. ipf.
+36866\tnaskakati\t\tv.intr. ipf.
+36867\tnaskakati\t\tv.intr. ipf.
+28183\tnaskočiti\t\tv.intr. pf.
+28184\tnaskočiti\t\tv.intr. pf.
+36864\tnaskočiti\t\tv.intr. pf.
+9456\tnaskoro\t\tadv.
+14737\tnaskroz\t\tadv.
+28186\tnaslåda\t\tf.
+28189\tnaslåditi sę\t\tv.refl. pf.
+28187\tnaslåditi\t\tv.tr. pf.
+33275\tnaslađati sę\t\tv.refl. ipf.
+33278\tnaslađati\t\tv.tr. ipf.
+1195\tnaslěditi\t\tv.tr. pf.
+9459\tnaslědnica\t\tf.
+969\tnaslědnik\t\tm.anim.
+9462\tnaslědnik\t\tm.anim.
+9464\tnaslědnosť\t\tf.
+15404\tnaslědny\t\tadj.
+161\tnaslědȯk\t\tm.
+28196\tnaslědovańje\t\tn.
+36688\tnaslědovańje\t\tn.sg.
+9466\tnaslědovati\t\tv.tr. ipf.
+21363\tnaslědovati\t\tv.tr. ipf.
+761\tnaslědstvo\t\tn.
+28200\tnaslušati sę\t\tv.refl. pf.
+28204\tnasmeška\t\tf.
+28206\tnasmoliti\t\tv.tr. pf.
+35866\tnasos\t\tm.
+28209\tnaspati sę\t\tv.refl. pf.
+21730\tnastati\t\tv.intr. pf.
+21728\tnastavati\t\tv.intr. ipf.
+9468\tnastaviti\t\tv.tr. pf.
+9469\tnastaviti\t\tv.tr. pf.
+28215\tnastaviti\t\tv.tr. pf.
+33149\tnastaviti\t\tv.tr. pf.
+33150\tnastavjati\t\tv.tr. ipf.
+33151\tnastavjati\t\tv.tr. ipf.
+33152\tnastavjati\t\tv.tr. ipf.
+33153\tnastavjati\t\tv.tr. ipf.
+17888\tnastavjeńja\t\tn.pl.
+17889\tnastavjeńje\t\tn.
+21733\tnastavȯk\t\tm.
+28219\tnastěnny\t\tadj.
+28220\tnastěž\t\tadv.
+28221\tnastignųti\t\tv.tr. pf.
+21732\tnastojati\t\tv.intr. pf.
+28225\tnastojčivy\t\tadj.
+2779\tnastojęći\t\tadj.
+36847\tnastojivati\t\tv.intr. ipf.
+20915\tnastoľna lampa\t\tf.
+20916\tnastoľna světilka\t\tf.
+28227\tnastradati sę\t\tv.refl. pf.
+33420\tnastrajati\t\tv.tr. ipf.
+33421\tnastrajati\t\tv.tr. ipf.
+36673\tnastrašiti sę\t\tv.refl. pf.
+28228\tnastrašiti\t\tv.tr. pf.
+21906\tnastråžiti sę\t\tv.refl. pf.
+2777\tnastrojeńje\t\tn.
+9472\tnastrojevy\t\tadj.
+28232\tnastrojiti\t\tv.tr. pf.
+28233\tnastrojiti\t\tv.tr. pf.
+17891\tnastrojky\t\tf.pl.
+3040\tnastųpajųći\t\tadj.
+21928\tnastųpati\t\tv.intr. ipf.
+33299\tnastųpati\t\tv.intr. ipf.
+21929\tnastųpiti\t\tv.intr. pf.
+28236\tnastųpiti\t\tv.intr. pf.
+28238\tnastųpnica\t\tf.
+28239\tnastųpnik\t\tm.anim.
+9474\tnastųpny\t\tadj.
+19879\tnasųćny\t\tadj.
+33096\tnasųćny\t\tadj.
+28260\tnasyćati\t\tv.tr. pf.
+28261\tnasyćeńje\t\tn.sg.
+21998\tnasyp\t\tm.
+28259\tnasypati\t\tv.tr. pf.
+28262\tnasytiti\t\tv.tr. pf.
+1993\tnaš\t\tpron.poss.
+2776\tnaša era\t\tf.
+28251\tnašeptati\t\tv.tr. pf.
+17886\tnašijnik\t\tm.
+28253\tnašiti\t\tv.tr. pf.
+28255\tnašivati\t\tv.tr. ipf.
+28265\tnatęgati\t\tv.tr. ipf.
+28267\tnatęgnųti\t\tv.tr. ipf.
+28146\tnatěšiti sę\t\tv.refl. pf.
+14741\tnatipkati\t\tv.tr. pf.
+28271\tnatirati\t\tv.tr. ipf.
+2775\tnatisk\t\tm.
+4826\tnatiskati\t\tv.tr. ipf.
+3755\tnatisknųti\t\tv.tr. pf.
+28278\tnatočiti\t\tv.tr. pf.
+33428\tnatočiti\t\tv.tr. pf.
+28280\tnatoliko\t\tadv.
+5601\tnatȯlkati sę\t\tv.refl. ipf.
+2790\tnatȯlkti sę\t\tv.refl. pf.
+28285\tnatreti\t\tv.tr. pf.
+22606\tnatrij\t\tm.sg.
+28288\tnatŕpěti sę\t\tv.refl. pf.
+28290\tnatruditi sę\t\tv.refl. pf.
+22044\tnatųga\t\tf.
+3411\tnaturalističny\t\tadj.
+3410\tnaturalizm\t\tm.sg.
+3409\tnaturaľny\t\tadj.
+28292\tnatvoriti\t\tv.tr. pf.
+9483\tnatvrđeńje\t\tn.sg.
+985\tnaučiti sę\t\tv.refl. pf.
+3540\tnaučiti\t\tv.tr. pf.
+2782\tnaučnik\t\tm.anim.
+3997\tnaučny\t\tadj.
+2005\tnauka\t\tf.
+28306\tnaušnica\t\tf.
+28307\tnaušnik\t\tm.
+16748\tnaušniky\t\tm.pl.
+28309\tnavaga\t\tf.
+22186\tnaval\t\tm.
+22221\tnavěditi\t\tv.tr. pf.
+22220\tnavěđati\t\tv.tr. ipf.
+28319\tnavěky\t\tadv.
+28322\tnavěsiti\t\tv.tr. pf.
+28316\tnavesti\t\tv.tr. pf.
+31938\tnavesti\t\tv.tr. pf.
+28324\tnavěšati\t\tv.tr. ipf.
+9490\tnavet\t\tadv.
+17892\tnavětrny\t\tadj.
+20529\tnavęzati\t\tv.intr. pf.
+28326\tnavęzati\t\tv.tr. pf.
+20530\tnavęzyvati\t\tv.intr. ipf.
+33213\tnavęzyvati\t\tv.tr. ipf.
+20531\tnavigacija\t\tf.
+35898\tnavigator\t\tm.anim.
+28334\tnaviti\t\tv.tr. pf.
+28335\tnavivati\t\tv.tr. ipf.
+28336\tnavlåčka\t\tf.
+22519\tnavlåka\t\tf.
+29781\tnavlåžiti\t\tv.tr. pf.
+33464\tnavlěkati\t\tv.tr. ipf.
+28338\tnavlěkti\t\tv.tr. pf.
+28342\tnavoditi\t\tv.tr. ipf.
+31933\tnavoditi\t\tv.tr. ipf.
+35500\tnavodnica\t\tf.
+22551\tnavodniti\t\tv.tr. pf.
+28343\tnavodnjańje\t\tn.
+22550\tnavodnjati\t\tv.tr. ipf.
+28346\tnavoščiti\t\tv.tr. pf.
+28351\tnavråžiti\t\tv.intr. pf.
+22161\tnavyk\t\tm.
+17893\tnavyše\t\tadv.
+28355\tnavznak\t\tadv.
+2781\tnazad\t\tadv.
+9494\tnazadno\t\tadv.
+9495\tnazadnosť\t\tf.
+9496\tnazadny\t\tadj.
+32964\tnazdråviti\t\tv.intr. pf.
+32962\tnazdravjati\t\tv.intr. ipf.
+28357\tnazemny\t\tadj.
+3622\tnaznačati\t\tv.tr. ipf.
+22855\tnaznačati\t\tv.tr. ipf.
+22858\tnaznačati\t\tv.tr. ipf.
+23292\tnaznačeny\t\tadj.
+3623\tnaznačiti\t\tv.tr. pf.
+22856\tnaznačiti\t\tv.tr. pf.
+22859\tnaznačiti\t\tv.tr. pf.
+5183\tnazva\t\tf.
+971\tnazvany\t\tadj.
+2786\tnazvati\t\tv.tr. pf.
+16284\tnazyvati sę\t\tv.refl. ipf.
+2783\tnazyvati\t\tv.tr. ipf.
+5987\tne bųde\t\tadv.
+5986\tne bylo\t\tadv.
+9553\tne dozvaljaje sę\t\tphrase
+3563\tne ględęći na\t\tprep.
+17895\tne imaje značeńja\t\tphrase
+35354\tne ljubiti\t\tv.tr. ipf.
+21368\tne poslušati\t\tv.tr. pf.
+14751\tne pozvaljaje sę\t\tphrase
+21367\tne slušati\t\tv.tr. ipf.
+35248\tne sȯglasiti sę, ne sųglasiti sę\t\tv.refl. pf.
+35247\tne sȯglašati sę, ne sųglašati sę\t\tv.refl. ipf.
+9525\tNe trati vrěmene!\t\tphrase
+9526\tne trěba\t\tphrase
+16285\tNe trěba\t\tphrase
+2784\tne\t\tadv.
+3989\tne\t\tintj.
+2020\tneadekvatnosť\t\tf.
+19880\tneadekvatny\t\tadj.
+34429\tneandertalec\t\tm.anim.
+972\tnebesky\t\tadj.
+5683\tnebesno tělo\t\tn.
+9530\tnebesny\t\tadj.
+3547\tnebezpečnosť\t\tf.
+3549\tnebezpečny\t\tadj.
+4904\tneblågodarny\t\tadj.
+2792\tnebo\t\tn.
+33199\tnebodrap\t\tm.
+17896\tnebogy\t\tadj.
+9537\tnebojazlivosť\t\tf.
+9540\tnebojazlivy\t\tadj.
+9541\tnebojaznik\t\tm.anim.
+35387\tnebožčik\t\tm.
+14757\tnebrěžnosť\t\tf.
+14756\tnebrěžny\t\tadj.
+19881\tnebsky\t\tadj.
+14745\tnebystry\t\tadj.
+28375\tnebyťje\t\tn.sg.
+17898\tnebyvaly\t\tadj.
+4033\tněčemu\t\tadv.
+28376\tnečestivy\t\tadj.
+28378\tnečestny\t\tadj.
+2772\tněčij\t\tpron.poss.
+2481\tnečistota\t\tf.
+3556\tnečisty\t\tadj.
+19882\tněčto\t\tpron.indef.
+14746\tnedaleky\t\tadj.
+9545\tnedavno\t\tadv.
+963\tnedavny\t\tadj.
+16253\tnedbalosť\t\tf.
+16255\tnedbaly\t\tadj.
+35389\tnedějųći\t\tadj.
+9547\tnedělja\t\tf.
+36671\tnedobro\t\tadv.
+28389\tnedobry\t\tadj.
+33135\tnedobry\t\tadj.
+20532\tnedomȯlvka\t\tf.
+20533\tnedonosȯk\t\tm.anim.
+36114\tnedopustimy\t\tadj.
+20534\tnedoråzuměńje\t\tn.
+20535\tnedoråzuměti\t\tv.tr. pf.
+20536\tnedoråzuměvati\t\tv.tr. ipf.
+32227\tnedoråzvity\t\tadj.
+35664\tnedoslědno\t\tadv.
+35665\tnedoslědnosť\t\tf.
+35666\tnedoslědny\t\tadj.
+19883\tnedostatȯčno\t\tadv.
+17899\tnedostatȯčnosť sŕdca\t\tf.
+1018\tnedostatȯk\t\tm.
+21737\tnedostatȯk\t\tm.
+36148\tnedostavati\t\tv.intr. ipf.
+19885\tnedostojny\t\tadj.
+17900\tnedostųpny\t\tadj.
+36083\tnedotykajemosť\t\tf.
+36082\tnedotykajemy\t\tadj.
+22172\tnedouměńje\t\tn.sg.
+33435\tnedověra\t\tf.
+35299\tnedovŕšenosť\t\tf.
+35290\tnedovŕšeny\t\tadj.
+36686\tnedozvoljeny\t\tadj.
+35955\tnedŕžavny\t\tadj.
+28396\tnedųg\t\tm.
+34772\tnedvižimosť\t\tf.
+35916\tneefektivny\t\tadj.
+20537\tneformaľny\t\tadj.
+2173\tnegativny\t\tadj.
+28398\tnegodny\t\tadj.
+33183\tnegodny\t\tadj.
+33186\tnegodny\t\tadj.
+17907\tnegodovańje\t\tn.sg.
+9555\tnegotovy\t\tadj.
+28400\tnegramotnosť\t\tf.
+33200\tnegramotnosť\t\tf.
+33202\tnegramotny\t\tadj.
+33204\tnegramotny\t\tadj.
+34915\tnegybky\t\tadj.
+9556\tNehaj sila bųde s tobojų!\t\tphrase
+9558\tnehaj\t\tparticle
+2900\tnehati\t\tv.tr. pf.
+33112\tneizběžno\t\tadv.
+33115\tneizběžnosť\t\tf.
+33111\tneizběžny\t\tadj.
+35074\tneizgoda\t\tf.
+35075\tneizgodny\t\tadj.
+35511\tneizgovorlivy\t\tadj.
+36418\tneizměnjeny\t\tadj.
+19886\tneizměnny\t\tadj.
+33136\tneizměrimy\t\tadj.
+16861\tneizvěstny\t\tadj.
+35264\tnejasny\t\tadj.
+35388\tnejestvujųći\t\tadj.
+23262\tnejlon\t\tm.
+23263\tnejlonovy\t\tadj.
+2297\tněkako\t\tadv.
+983\tněkaky\t\tadj.
+19567\tněkamo\t\tadv.
+35412\tnekaznivosť\t\tf.
+35413\tnekaznivy\t\tadj.
+2172\tněkde\t\tadv.
+2794\tněkȯgda, někȯgdy\t\tadv.
+5696\tněkoj\t\tpron.indef.
+9575\tněkoliko dnjev nazad\t\tadv.
+17911\tněkoliko dnjev tomu\t\tadv.
+9576\tněkoliko razov\t\tadv.
+2396\tněkoliko\t\tadv.
+16451\tněkolikokråtno\t\tadv.
+19888\tnekompetencija\t\tf.
+19889\tnekompletny\t\tadj.
+19890\tnekonsistencija\t\tf.
+17912\tnekrasna katȯčka\t\tf.
+17913\tnekrasny\t\tadj.
+4082\tněkto\t\tpron.indef.
+5692\tněktory\t\tadj.
+1001\tněkųdy\t\tadv.
+1767\tnelegaľny\t\tadj.
+28414\tneljudsky\t\tadj.
+19891\tnelogičny\t\tadj.
+5985\tnemaje, ne imaje\t\tadv.
+2793\tnemalo\t\tadv.
+28417\tnemaly\t\tadj.
+2774\tNěmcija\t\tf.sg.
+2780\tNěmec\t\tm.anim.
+984\tněmečsky\t\tadj.
+28421\tněměti\t\tv.intr. ipf.
+23764\tnemilosŕdno\t\tadv.
+23763\tnemilosŕdny\t\tadj.
+28424\tnemilosť\t\tf.
+28423\tnemilostivy\t\tadj.
+28425\tnemily\t\tadj.
+33120\tneminujemosť\t\tf.
+33118\tneminujemy\t\tadj.
+28427\tnemirny\t\tadj.
+28428\tNěmka\t\tf.
+967\tnemnogo\t\tadv.
+28431\tnemnogy\t\tadj.
+21364\tnemnožko\t\tadv.
+20539\tnemoć\t\tf.
+20540\tnemoćny\t\tadj.
+32286\tnemoraľny\t\tadj.
+28435\tněmosť\t\tf.
+28436\tněmota\t\tf.
+16286\tnemožlivosť\t\tf.
+4561\tnemožlivy\t\tadj.
+20541\tnemožno\t\tadv.
+9587\tnemožnosť\t\tf.
+9588\tnemožny\t\tadj.
+28438\tnemųdry\t\tadj.
+949\tněmy\t\tadj.
+32387\tnenadežny\t\tadj.
+32623\t#nenaměrjeny\t\tadj.
+19893\tnenarušimy\t\tadj.
+33816\tnenasytnik\t\tm.anim.
+33013\tnenasytnosť\t\tf.
+28441\tnenasytny\t\tadj.
+16977\tnenaučny\t\tadj.
+968\tnenaviděti\t\tv.tr. ipf.
+5293\tnenavisť\t\tf.sg.
+28446\tnenavistny\t\tadj.
+33261\tneniščimy\t\tadj.
+4105\tnenormaľno\t\tadv.
+4104\tnenormaľnosť\t\tf.
+4103\tnenormaľny\t\tadj.
+33109\tneobhodimosť\t\tf.
+33105\tneobhodimy\t\tadj.
+19894\tneobjasnimy\t\tadj.
+28447\tneobjętny\t\tadj.
+17914\tneobrazovany\t\tadj.
+23706\tneobyčno\t\tadv.
+6281\tneobyčny\t\tadj.
+22893\tneobzrimy\t\tadj.
+3860\tneočekyvano\t\tadv.
+9598\tneočekyvanosť\t\tf.
+9599\tneočekyvany\t\tadj.
+33229\tneodčuđajemy, neodčuđimy\t\tadj.
+35690\tneoddělimy\t\tadj.
+9601\tneodgovorno\t\tadv.
+9602\tneodgovornosť\t\tf.
+9603\tneodgovorny\t\tadj.
+23881\tneodložny\t\tadj.
+36651\tneodobrjeńje\t\tn.sg.
+4063\tneodpovědaľnosť\t\tf.
+4062\tneodpovědaľny\t\tadj.
+28450\tneodstųpny\t\tadj.
+33116\tneodvråtimy\t\tadj.
+35165\tneoficiaľno\t\tadv.
+35164\tneoficiaľny\t\tadj.
+19895\tneograničeny\t\tadj.
+28451\tneohota\t\tf.
+14750\tneohotno\t\tadv.
+9607\tneohotny\t\tadj.
+35714\tneolit\t\tm.sg.
+35715\tneolitičny\t\tadj.
+35949\tneologizm\t\tm.
+22605\tneon\t\tm.sg.
+19896\tneopisujemy\t\tadj.
+9608\tneoprěděljeno\t\tadv.
+9609\tneoprěděljeny\t\tadj.
+9638\tneoriginaľny\t\tadj.
+33467\tneoskvŕnjeny\t\tadj.
+9610\tneosnovany\t\tadj.
+35324\tneosporimy\t\tadj.
+35864\tneostråžno\t\t#adv.
+35863\tneostråžny\t\tadj.
+16978\tneoznačeny\t\tadj.
+16979\tneoznačiteljny zaimennik\t\tm.
+32450\tNepal\t\tm.sg.
+32451\tnepaľsky\t\tadj.
+20542\tnepamętny\t\tadj.
+33230\tneparno čislo\t\tn.
+28455\tneparny\t\tadj.
+19897\tnepisany\t\tadj.
+28457\tneplodny\t\tadj.
+2017\tnepodatlivy\t\tadj.
+28459\tnepodobny\t\tadj.
+17917\tnepogoda\t\tf.
+3378\tnepokoj\t\tm.sg.
+36699\tnepokojiti sę\t\tv.refl. ipf.
+3862\tnepokojiti\t\tv.tr. ipf.
+28464\tnepokorny\t\tadj.
+17918\tnepȯlnomožnica\t\tf.
+17920\tnepȯlnomožnik\t\tm.anim.
+17922\tnepȯlnomožnosť\t\tf.
+17924\tnepȯlnomožny\t\tadj.
+17926\tnepȯlnosposobnica\t\tf.
+17928\tnepȯlnosposobnik\t\tm.anim.
+17930\tnepȯlnosposobnosť\t\tf.
+17932\tnepȯlnosposobny\t\tadj.
+28465\tnepȯlny\t\tadj.
+19898\tnepomoćny\t\tadj.
+33634\tnepopravimy\t\tadj.
+36339\tnepopravimy\t\tadj.
+9614\tnepopravny\t\tadj.
+28466\tneporędny\t\tadj.
+994\tneporędȯk\t\tm.sg.
+28468\tneporočny\t\tadj.
+36081\tneporušimosť\t\tf.
+36080\tneporušimy\t\tadj.
+28469\tneposěda\t\tm.anim.
+36397\tneposědlivosť\t\tf.
+21365\tneposědlivy\t\tadj.
+23707\tneposlušnosť\t\tf.
+23708\tneposlušny\t\tadj.
+992\tneposrědnje\t\tadv.
+5798\tneposrědnji, neposrědny\t\tadj.
+9618\tneposrědnosť\t\tf.
+28471\tnepostojanny\t\tadj.
+5786\tnepotrěbny\t\tadj.
+6004\tnepovaga\t\tf.
+35641\tnepoznajemy\t\tadj.
+36687\tnepozvoljeny\t\tadj.
+35160\tnepraktičnosť\t\tf.
+35156\tnepraktičny\t\tadj.
+19899\tnepravda\t\tf.
+28476\tnepravdivy\t\tadj.
+35202\tnepravdopodobny\t\tadj.
+3364\tnepraviľny\t\tadj.
+28480\tnepravy\t\tadj.
+28481\tnepravy\t\tadj.
+34838\tneprědvidimy\t\tadj.
+34839\tneprědvidlivy\t\tadj.
+17937\tneprěhodny\t\tadj.
+19901\tneprěstanno\t\tadv.
+28482\tneprěstanny\t\tadj.
+28483\tneprigodnosť\t\tf.
+28484\tneprigodny\t\tadj.
+1160\tneprijatelj\t\tm.anim.
+28487\tneprijateljsky\t\tadj.
+28488\tneprijateljstvo\t\tn.sg.
+33016\tneprijemlivy\t\tadj.
+28493\tneprijemny\t\tadj.
+23810\tneprijętnosť\t\tf.
+28490\tneprijętny\t\tadj.
+28494\tneprimětny\t\tadj.
+9637\tneprirodny\t\tadj.
+22809\tneprirodny\t\tadj.
+28495\tnepristojnosť\t\tf.
+28496\tnepristojny\t\tadj.
+28497\tnepristųpnosť\t\tf.
+28498\tnepristųpny\t\tadj.
+28499\tnepritomny\t\tadj.
+33495\tnepritomny\t\tadj.
+35881\tneprivykly\t\tadj.
+17938\tneprodyšny\t\tadj.
+28501\tneprohodny\t\tadj.
+33821\tnepromokajemy\t\tadj.
+14752\tneprosty\t\tadj.
+9628\tneprozråčimosť\t\tf.
+9629\tneprozråčno\t\tadv.
+9630\tneprozråčnosť\t\tf.
+9631\tneprozråčny\t\tadj.
+23598\tNeptun\t\tm.sg.
+28502\tneråbotny\t\tadj.
+19902\tneracionaľny\t\tadj.
+28503\tnerado\t\tadv.
+28511\tneråvnosť\t\tf.
+9639\tneråvny\t\tadj.
+36689\tneråvny\t\tadj.
+28505\tneråzlųčny\t\tadj.
+19903\tneråzuměńje\t\tn.sg.
+16980\tneråzumlivy\t\tadj.
+28507\tneråzumny\t\tadj.
+34515\tneråzvity\t\tadj.
+28508\tneręd\t\tm.sg.
+36443\tnerědko\t\tadv.
+33505\tnerędnosť\t\tf.
+16982\tnerędny\t\tadj.
+28509\tnerędny\t\tadj.
+23776\tneregularno\t\tadv.
+33506\tneregularnosť\t\tf.
+16981\tneregularny\t\tadj.
+23213\tnerv\t\tm.
+23224\tnervny\t\tadj.
+23226\tnervoznosť\t\tf.
+23222\tnervozny\t\tadj.
+19905\tnesamovoljny\t\tadj.
+35618\tnesčisljeny\t\tadj.
+17959\tnesgoda\t\tf.
+28516\tneskromny\t\tadj.
+28517\tneslavny\t\tadj.
+28518\tneslyhany\t\tadj.
+17939\tnesmělo\t\tadv.
+17940\tnesmělosť\t\tf.
+9640\tnesměly\t\tadj.
+9641\tnesmysľny\t\tadj.
+20544\tnesnosny\t\tadj.
+33509\tnesȯglåśje, nesųglåśje\t\tn.
+996\tnesȯvŕšeny vid\t\tm.
+35256\tnesȯvŕšeny\t\tadj.
+9642\tnespokojny\t\tadj.
+5909\tnespokojstvo\t\tn.sg.
+35636\tnesposobny\t\tadj.
+19908\tnespravědlivy\t\tadj.
+23879\tnesrųčny\t\tadj.
+35929\tnestabiľnosť\t\tf.
+35276\tnestabiľny\t\tadj.
+9644\tnestaly\t\tadj.
+35574\tnestera\t\tf.
+20547\tnesti jajca\t\tv.tr. ipf.
+1161\tnesti\t\tv.tr. ipf.
+3203\tnesųmněno\t\tadv.
+6540\tnesųmněny\t\tadj.
+9648\tnesvědomo\t\tadv.
+6222\tnesvědomosť\t\tf.
+6223\tnesvědomy\t\tadj.
+19904\tnesvęzany\t\tadj.
+14753\tneščęsťje\t\tn.
+19906\tneščęsťje\t\tn.
+9652\tneščęstlivo\t\tadv.
+9653\tneščęstlivy\t\tadj.
+16908\tneščęstny slučaj\t\tm.
+3386\tneščęstny\t\tadj.
+31991\tneškodlivy\t\tadj.
+35573\t#netij\t\tm.anim.
+3682\tnetočny\t\tadj.
+35067\tnetolerantnosť\t\tf.
+35069\tnetolerantny\t\tadj.
+16862\tnetopyŕ\t\tm.anim.
+28532\tnetrězvy\t\tadj.
+36709\tnetŕpělivosť\t\tf.sg.
+28533\tnetŕpělivy\t\tadj.
+28534\tnetŕpěńje\t\tn.sg.
+35068\tnetŕpimosť\t\tf.
+19909\tnetŕpimy\t\tadj.
+35070\tnetŕpimy\t\tadj.
+9660\tneubojazno\t\tadv.
+9661\tneubojazny\t\tadj.
+28535\tneučeny\t\tadj.
+28536\tneučtivy\t\tadj.
+34975\tneudačnik\t\tm.anim.
+34974\tneudačny\t\tadj.
+17941\tneudobno\t\tadv.
+17942\tneudobny\t\tadj.
+35073\tneudobstvo\t\tn.
+28538\tneugasimy\t\tadj.
+22163\tneuk\t\tm.anim.
+22164\tneuk\t\tm.anim.
+28540\tneuměńje\t\tn.sg.
+28541\tneuměrny\t\tadj.
+35638\tneuměstny\t\tadj.
+28542\tneumny\t\tadj.
+34980\tneumolimy\t\tadj.
+9662\tneumorjeno\t\tadv.
+9663\tneumorjenosť\t\tf.
+9664\tneumorjeny\t\tadj.
+32625\tneumysľno\t\tadv.
+28543\tneumysľny\t\tadj.
+24654\tneurodny\t\tadj.
+21370\tneurođaj\t\tm.
+6550\tneuspěh\t\tm.
+28546\tneuspěšny\t\tadj.
+9665\tneustalo\t\tadv.
+9666\tneustalosť\t\tf.
+9667\tneustaly\t\tadj.
+9668\tneustrašno\t\tadv.
+9669\tneustrašnosť\t\tf.
+9672\tneustrašny\t\tadj.
+36649\tneustųplivosť, neustųpnosť\t\tadj.
+17943\tneustųplivy, neustųpny\t\tadj.
+28548\tneutěšimy\t\tadj.
+17944\tnevažno\t\tintj.
+23341\tnevažny\t\tadj.
+4901\tnevdęčny\t\tadj.
+19912\tnevědomy\t\tadj.
+28551\tneveliky\t\tadj.
+28554\tnevěŕje\t\tn.sg.
+22326\tnevěrnik\t\tm.anim.
+28555\tnevěrnosť\t\tf.
+28556\tnevěrny\t\tadj.
+28557\tnevěrny\t\tadj.
+4562\tnevěrojętny\t\tadj.
+997\tnevěsta\t\tf.
+9677\tnevěstinsky\t\tadj.
+22222\tnevěža\t\tf.
+23710\tnevidimo\t\tadv.
+23709\tnevidimy\t\tadj.
+5957\tnevinnosť\t\tf.
+1157\tnevinny\t\tadj.
+28568\tnevinovaty\t\tadj.
+9679\tnevojnovy\t\tadj.
+22308\tnevolja\t\tf.
+22310\tnevolja\t\tf.
+28575\tnevoljnica\t\tf.
+22311\tnevoljnik\t\tm.anim.
+28577\tnevoljny\t\tadj.
+28578\tnevoljny\t\tadj.
+4533\tnevrolog\t\tm.anim.
+4535\tnevrologičny\t\tadj.
+4534\tnevrologija\t\tf.sg.
+9680\tnevromorfny\t\tadj.
+35832\tnevtralizacija\t\tf.
+35831\tnevtralizovati\t\tv.tr. ipf./pf.
+5037\tnevtraľnosť\t\tf.
+5036\tnevtraľny\t\tadj.
+4659\tnevtron\t\tm.
+17947\tnezabųďka\t\tf.
+31774\tnezabytny\t\tadj.
+17948\tnezadovaljati\t\tv.tr. ipf.
+17953\tnezadovoliti\t\tv.tr. pf.
+17950\tnezadovoljeny\t\tadj.
+3679\tnezakonny\t\tadj.
+17955\tnezaležno\t\tadv.
+1019\tnezaležnosť\t\tf.sg.
+1425\tnezaležny\t\tadj.
+9684\tnezasluženy\t\tadj.
+17956\tnezavisno\t\tadv.
+17957\tnezavisnosť\t\tf.
+17958\tnezavisny\t\tadj.
+28582\tnezdråvy\t\tadj.
+3059\tnezgrabny\t\tadj.
+28587\tnezly\t\tadj.
+9686\tneznačny\t\tadj.
+17960\tneznajemy\t\tadj.
+28589\tneznańje\t\tn.sg.
+28590\tneznany\t\tadj.
+217\tnež\t\tconj.
+6260\tneželi\t\tconj.
+36162\tneženjenec\t\tm.anim.
+16983\tneživy\t\tadj.
+36612\tneživy\t\tadj.
+23711\tněžnosť\t\tf.
+23712\tněžny\t\tadj.
+1628\tni ... ni ...\t\tconj.
+4032\tničemu\t\tadv.
+993\tničij\t\tpron.poss.
+19913\tničto\t\tpron.indef.
+1021\tniderlandsky\t\tadj.
+2795\tNiderlandy\t\tm.pl.
+4754\tNigerija\t\tf.sg.
+4755\tnigerijsky\t\tadj.
+3344\tnijedin\t\tpron.indef.
+1835\tnikako\t\tadv.
+3345\tnikaky\t\tadj.
+19570\tnikamo\t\tadv.
+16787\tNikaragua\t\tf.sg.
+22463\tnikaraguansky\t\tadj.
+2186\tnikde\t\tadv.
+22623\tnikelj\t\tm.sg.
+2908\tnikȯgda, nikȯgdy\t\tadv.
+19585\tnikoliko\t\tadv.
+32835\tnikotin\t\tm.sg.
+4\tnikto\t\tpron.indef.
+1106\tnikųdy\t\tadv.
+23599\tNil\t\tm.sg.
+20548\tniľsky konj\t\tm.anim.
+36713\tnimfa\t\tf.
+36714\tnimfa\t\tf.
+9709\tniša\t\tf.
+36725\tniša\t\tf.
+33262\tniščęći\t\tadj.
+3554\tniščeńje\t\tn.
+8073\tniščimy\t\tadj.
+5749\tniščitelj\t\tm.
+5767\tniščitelj\t\tm.anim.
+19749\tniščiteljsky\t\tadj.
+2799\tniščiti\t\tv.tr. ipf.
+8076\tniščivo kritikovańje\t\tn.sg.
+8075\tniščivo\t\tadv.
+8078\tniščivosť\t\tf.
+8077\tniščivy\t\tadj.
+14762\tniševy\t\tadj.
+1738\tniť\t\tf.
+17966\tnitka\t\tf.
+956\tniva\t\tf.
+9712\tnizańje\t\tn.sg.
+28617\tnizati\t\tv.tr. ipf.
+1205\tnizina\t\tf.
+28619\tnizinny\t\tadj.
+9716\tnizko\t\tadv.
+28622\tnizkosť\t\tf.
+33267\tnizkosť\t\tf.
+402\tnizky\t\tadj.
+28620\tnizky\t\tadj.
+9719\tnizši\t\tadj.
+1002\tniže\t\tadv.
+19914\tnižnosť\t\tf.
+19915\tnižny\t\tadj.
+28627\tnjuans\t\tm.
+28628\tnjuh\t\tm.
+1003\tnjuhati\t\tv.intr. ipf.
+28631\tnjuhnųti\t\tv.intr. pf.
+14764\tno\t\tconj.
+23600\tNobelova nagråda\t\tf.
+195\tnoć\t\tf.
+21371\tnoćejų\t\tadv.
+3863\tnoćevati\t\tv.intr. ipf.
+17967\tnoćiś\t\tadv.
+28637\tnoćleg\t\tm.
+31887\tnoćny klub\t\tm.
+4343\tnoćny\t\tadj.
+28638\tnočnik\t\tm.anim.
+17969\tNoeva arka\t\tf.
+1230\tnoga\t\tf.
+23124\tnogavica\t\tf.
+23120\tnogavice\t\tf.pl.
+23125\tnogavka\t\tf.
+23121\tnogavky\t\tf.pl.
+1229\tnogȯť\t\tm.
+2060\tnomer\t\tm.
+2812\tnominacija\t\tf.
+16984\tnominativ\t\tm.
+4976\tnominovati\t\tv.tr. ipf.
+34926\tnon-stop\t\tadv.
+36643\tnonšalantny\t\tadj.
+28648\tnora\t\tf.
+21372\tnorka\t\tf.
+36131\tnorma\t\tf.
+16985\tnormaľno\t\tadv.
+23354\tnormaľnosť\t\tf.
+5260\tnormaľny\t\tadj.
+28651\tnorovisty\t\tadj.
+4428\tNorvegija\t\tf.sg.
+4429\tnorvežsky\t\tadj.
+961\tnos\t\tm.
+28655\tnosač\t\tm.anim.
+20550\tnosilka\t\tn.pl.
+20553\tnosilka\t\tn.pl.
+28658\tnositelj\t\tm.anim.
+1034\tnositi\t\tv.tr. ipf.
+1037\tnositi\t\tv.tr. ipf.
+28660\tnosny\t\tadj.
+28661\tnosȯk\t\tm.
+28662\tnosȯk\t\tm.
+20555\tnosorog\t\tm.anim.
+23981\tnosovka\t\tf.
+36266\tnosovy ubrusok\t\tm.
+28663\tnosovy\t\tadj.
+4620\tnostalgičny\t\tadj.
+4619\tnostalgija\t\tf.
+28665\tnošeńje\t\tn.sg.
+23451\tnota\t\tf.
+36115\tnotacija\t\tf.
+15707\tnotaŕ\t\tm.anim.
+16986\tnotorično\t\tadv.
+36319\tnotoričnosť\t\tf.
+16987\tnotoričny\t\tadj.
+22759\tnoty\t\tf.pl.
+22775\tNova Zelandija\t\tf.sg.
+28666\tnovak\t\tm.anim.
+9737\tnovembr\t\tm.sg.
+28668\tnovina\t\tf.
+28669\tnovina\t\tf.
+28672\tnovinka\t\tf.
+9738\tnoviny\t\tf.pl.
+34904\tnovogodišnja jelka\t\tf.
+34903\tnovogodišnje drěvo\t\tn.
+36449\tnovogrėčsky\t\tadj.
+20556\tnovohebrejsky\t\tadj.
+19916\tnovonarođeny\t\tadj.
+35616\tnovoprišelec\t\tm.anim.
+35485\tnovorođenec\t\tm.anim.
+9739\tnovoslověnsky\t\tadj.
+1237\tnovosť\t\tf.
+33264\tnovosť\t\tf.
+1510\tnovosti\t\tf.pl.
+22147\tnovotvor\t\tm.
+22148\tnovotvor\t\tm.
+4907\tnovozelandsky\t\tadj.
+2804\tnovy\t\tadj.
+2397\tnozdra\t\tf.
+1014\tnož\t\tm.
+5282\tnožice\t\tf.pl.
+28687\tnožnica\t\tf.
+28691\tnråv\t\tm.
+28692\tnråv\t\tm.
+28693\tnrěst\t\tm.
+33248\tnrěstilišče\t\tn.
+33249\tnrěstilišče\t\tn.
+28694\tnrěstiti sę\t\tv.refl. ipf.
+19917\tnu\t\tintj.
+17971\tnuda\t\tf.
+17974\tnuditi sę\t\tv.refl. ipf.
+17973\tnuditi\t\tv.tr. ipf.
+17975\tnudny\t\tadj.
+1426\tnųđa\t\tf.
+2807\tnųđa\t\tf.
+33251\tnųđa\t\tf.
+35677\tnuklearna fuzija\t\tf.
+35675\tnuklearny\t\tadj.
+1015\tnula\t\tnum.card.
+2809\tnulovy\t\tnum.ord.
+35841\tnumeričny\t\tadj.
+36608\tnutrija\t\tf.
+28707\tnužny\t\tadj.
+5698\tnyně\t\tadv.
+19918\tnyněšnji, nyněšny\t\tadj.
+28700\tnyrec\t\tm.anim.
+9750\tnyrjańje\t\tn.sg.
+9751\tnyrjatelj\t\tm.anim.
+9752\tnyrjati\t\tv.intr. ipf.
+3113\tnyrka\t\tf.
+9756\tnyrkovy kamenj\t\tm.
+9755\tnyrkovy\t\tadj.
+28712\tnyrnųti\t\tv.intr. pf.
+9757\to, ob\t\tprep.
+28713\to\t\tintj.
+34376\toaza\t\tf.
+998\toba\t\tnum.card.
+19535\tobače\t\tadv.
+28716\tobadva\t\tnum.card.
+16842\tobagriti\t\tv.tr. pf.
+16988\tobćeslovjansky\t\tadj.
+35783\tobćežiťje\t\tn.
+1000\tobći\t\tadj.
+20917\tobčina\t\tf.
+20919\tobčiti s\t\tv.ipf.
+20918\tobčiti\t\tv.intr. ipf.
+23085\tobčudovańje\t\tn.
+23713\tobčudovatelj\t\tm.anim.
+23084\tobčudovati\t\tv.tr. ipf.
+1493\tobdariti\t\tv.tr. pf.
+5544\tobdarjati\t\tv.tr. ipf.
+4550\tobdarjeny\t\tadj.
+28724\tobdirati\t\tv.tr. ipf.
+23083\tobdiv\t\tm.sg.
+23078\tobdivjati\t\tv.tr. ipf.
+9770\tobdobje\t\tn.
+34086\tobdreti\t\tv.tr. pf.
+9771\tobdumati\t\tv.tr. pf.
+9772\toběćańje\t\tn.
+990\toběćati\t\tv.tr. pf.
+22401\toběćivati\t\tv.tr. ipf.
+2038\toběd\t\tm.
+9775\tobědati\t\tv.intr. ipf./pf.
+28729\tobědny\t\tadj.
+28731\toběgati\t\tv.tr. pf.
+28732\tobělěti\t\tv.intr. pf.
+28733\toběliti\t\tv.tr. pf.
+16848\tobezčestiti\t\tv.tr. pf.
+16850\tobezčestiti\t\tv.tr. pf.
+16849\tobezčešćeńje\t\tn.
+773\tobezglåviti\t\tv.tr. pf.
+1587\tobezglåvjati\t\tv.tr. ipf.
+5376\tobezhråbriti\t\tv.tr. pf.
+5375\tobezhrabrjati\t\tv.tr. ipf.
+19655\tobezpokojiti\t\tv.tr. pf.
+5374\tobezsiliti\t\tv.tr. pf.
+5373\tobezsiljati\t\tv.tr. ipf.
+16854\tobezuměti\t\tv.intr. pf.
+17980\tobezuměvati\t\tv.intr. ipf.
+3727\tobględati\t\tv.tr. ipf.
+3729\tobględěti\t\tv.tr. pf.
+28738\tobglodati\t\tv.tr. pf.
+9783\tobgovarjati\t\tv.tr. ipf.
+9782\tobgovoriti\t\tv.tr. pf.
+28740\tobgryzati\t\tv.tr. ipf.
+28741\tobgryzti\t\tv.tr. pf.
+28743\tobhod\t\tm.
+33195\tobhod\t\tm.
+23103\tobhoditi sę bez\t\tv.refl. ipf.
+17988\tobhoditi sę s\t\tv.refl. ipf.
+28745\tobhoditi sę\t\tv.refl. ipf.
+5369\tobhoditi\t\tv.tr. ipf.
+28746\tobhodna dråga\t\tf.
+17990\tobhvaćati\t\tv.tr. ipf.
+17992\tobhvatiti\t\tv.tr. pf.
+2806\tobida\t\tf.
+28749\tobiděti\t\tv.tr. pf.
+34071\tobiđati\t\tv.tr. ipf.
+28750\tobiľje\t\tn.
+35207\tobiľno\t\tadv.
+35206\tobiľny\t\tadj.
+3476\tobimati\t\tv.tr. ipf.
+1005\tobjasniti\t\tv.tr. pf.
+2023\tobjasnjati\t\tv.tr. ipf.
+3608\tobjasnjeńje\t\tn.
+28758\tobjava\t\tf.
+1006\tobjaviti sę\t\tv.refl. pf.
+9801\tobjaviti sę\t\tv.refl. pf.
+9798\tobjaviti\t\tv.tr. pf.
+17995\tobjaviti\t\tv.tr. pf.
+17996\tobjaviti\t\tv.tr. pf.
+17997\tobjavjańje\t\tn.
+9803\tobjavjati sę\t\tv.refl. ipf.
+9804\t#objavjati sę\t\tv.refl. ipf.
+9802\tobjavjati\t\tv.tr. ipf.
+17998\tobjavjati\t\tv.tr. ipf.
+17999\tobjavjati\t\tv.tr. ipf.
+28762\tobjedati sę\t\tv.refl. ipf.
+9806\tobjediniti\t\tv.tr. pf.
+9807\tobjedinjati\t\tv.tr. ipf.
+13222\tobjedinjeńje\t\tn.sg.
+2811\tObjedinjeno Kråljevstvo\t\tn.sg.
+2810\tobjedinjeno\t\tadv.
+9810\tobjedinjeny\t\tadj.
+28766\tobjehati\t\tv.tr. pf.
+3759\tobjekt\t\tm.
+19920\tobjektiv\t\tm.
+32934\tobjektivnosť\t\tf.
+19921\tobjektivny\t\tadj.
+18000\tobjem\t\tm.sg.
+28765\tobjesti sę\t\tv.refl. pf.
+3477\tobjęti\t\tv.tr. pf.
+5010\tobjęťje\t\tn.
+23882\t#objezd\t\tm.
+28774\tobjezditi\t\tv.tr. pf.
+28776\tobježđati\t\tv.tr. ipf.
+19922\tobkaljati\t\tv.tr. ipf.
+19923\tobkoliti\t\tv.tr. pf.
+28779\tobkradati\t\tv.tr. ipf.
+33740\tobkrasti\t\tv.tr. pf.
+22532\toblačati\t\tv.tr. ipf.
+28784\toblaček\t\tm.
+28782\toblåčeńje\t\tn.
+22528\toblåčiti\t\tv.tr. pf.
+28783\toblåčny\t\tadj.
+20557\toblagati\t\tv.tr. ipf.
+20559\toblagati\t\tv.tr. ipf.
+28786\toblajati\t\tv.tr. pf.
+34077\toblajivati\t\tv.tr. ipf.
+1125\toblåk\t\tm.
+28788\toblamyvati\t\tv.tr. ipf.
+1570\toblasť\t\tf.
+9820\toblasť\t\tf.
+9822\toblastny\t\tadj.
+23530\toblěčeńje\t\tn.
+23740\toblěčeny\t\tadj.
+28794\tobleděněti\t\tv.intr. pf.
+19926\toblegčati\t\tv.tr. ipf.
+28795\toblegčeńje\t\tn.
+19929\toblegčiti\t\tv.tr. pf.
+22524\t#oblěkati\t\tv.tr. ipf.
+22526\toblěkati\t\tv.tr. ipf.
+22520\toblěkti\t\tv.tr. pf.
+22523\toblěkti\t\tv.tr. pf.
+28801\toblet\t\tm.
+28802\toblětati\t\tv.tr. ipf.
+28803\tobletěti\t\tv.tr. pf.
+1880\tobličje\t\tn.
+20560\tobličje\t\tn.
+28809\toblik\t\tm.
+28810\toblinjati\t\tv.tr. pf.
+3786\tobliti\t\tv.tr. pf.
+3785\toblivati\t\tv.tr. ipf.
+18004\toblizati\t\tv.tr. pf.
+18005\toblizyvati\t\tv.tr. ipf.
+10172\tobljubjeny\t\tadj.
+28817\toblomiti\t\tv.tr. pf.
+20561\tobložiti\t\tv.tr. pf.
+20563\tobložiti\t\tv.tr. pf.
+36222\tobložka\t\tf.
+28822\toblupiti\t\tv.tr. pf.
+28823\tobluščiti\t\tv.tr. pf.
+1881\tobly\t\tadj.
+28826\toblysěti\t\tv.intr. pf.
+2800\tobman\t\tm.
+4218\tobman\t\tm.
+9833\tobmannik\t\tm.anim.
+5740\tobmanųti\t\tv.tr. pf.
+18009\tobmanųti\t\tv.tr. pf.
+9831\tobmanyvatelj\t\tm.anim.
+4216\tobmanyvati\t\tv.tr. ipf.
+18014\tobmanyvati\t\tv.tr. ipf.
+28830\tobmazati\t\tv.tr. pf.
+36263\tobmazati\t\tv.tr. pf.
+34091\tobmazyvati\t\tv.tr. ipf.
+2977\tobmeđati\t\tv.tr. ipf.
+18016\tobmeđeńje\t\tn.
+3724\tobmeđeny\t\tadj.
+2801\tobmeđiti\t\tv.tr. pf.
+3585\tobměn\t\tm.
+28835\tobměniti\t\tv.tr. pf.
+34081\tobměnjati\t\tv.tr. ipf.
+5371\tobmotati\t\tv.tr. pf.
+28840\tobmotka\t\tf.
+5372\tobmotyvati\t\tv.tr. ipf.
+20564\tobmŕlosť\t\tf.
+20565\tobmŕly\t\tadj.
+18020\tobmysliti\t\tv.tr. pf.
+18018\tobmysljati\t\tv.tr. ipf.
+23737\tobmysljeńje\t\tn.
+21373\tobnarodovati\t\tv.tr. ipf./pf.
+151\tobnavjati\t\tv.tr. ipf.
+34417\tobnavjati\t\tv.tr. ipf.
+5321\tobnažati sę\t\tv.refl. ipf.
+33746\tobnažati\t\tv.tr. ipf.
+28845\tobnažiti sę\t\tv.refl. pf.
+5320\tobnažiti\t\tv.tr. pf.
+28846\tobnesti\t\tv.tr. pf.
+34078\tobnesti\t\tv.tr. pf.
+19932\tobniziti\t\tv.tr. pf.
+19930\tobnižati\t\tv.tr. ipf.
+19931\tobnižeńje\t\tn.
+29473\tobnjuhati\t\tv.tr. pf.
+34442\tobnjuhyvati\t\tv.tr. ipf.
+28849\tobnositi\t\tv.tr. ipf.
+28850\tobnositi\t\tv.tr. ipf.
+28851\tobnova\t\tf.
+241\tobnoviti\t\tv.tr. pf.
+29477\tobnoviti\t\tv.tr. pf.
+9847\tobnovjeńje\t\tn.
+35425\tobobćati\t\tv.tr. ipf.
+35428\tobobćeńje\t\tn.
+35426\tobobćiti\t\tv.tr. pf.
+28853\tobod\t\tm.
+242\tobogaćati\t\tv.tr. ipf.
+28855\tobogatěti\t\tv.intr. pf.
+2217\tobogatiti\t\tv.tr. pf.
+14768\t#obognjeodparnjati\t\tv.tr. ipf.
+14767\tobognjeodporniti\t\tv.tr. pf.
+23432\toboj\t\tm.
+28857\tobojaky\t\tnum.diff.
+18025\tobȯjdti sę bez\t\tv.refl. pf.
+18023\tobȯjdti sę\t\tv.refl. pf.
+5370\tobȯjdti\t\tv.tr. pf.
+16438\toboje\t\tnum.coll.
+28859\tobora\t\tf.
+9852\toboråvnosť\t\tf.
+9853\toboråvny\t\tadj.
+21375\tobȯrvanec\t\tm.anim.
+9855\tobosobjeńje\t\tn.
+9854\tobosobjenosť\t\tf.
+28866\tobȯzrěti sę\t\tv.refl. pf.
+18026\tobožańje\t\tn.
+2817\tobožati\t\tv.tr. ipf.
+21685\tobråbotati\t\tv.tr. pf.
+21377\tobråbotyvati\t\tv.tr. ipf.
+28867\tobraćańje\t\tn.
+22682\tobraćati sę k\t\tv.refl. ipf.
+22674\tobraćati sę\t\tv.refl. ipf.
+22676\tobraćati sę\t\tv.refl. ipf.
+22678\tobraćati sę\t\tv.refl. ipf.
+3206\tobraćati\t\tv.tr. ipf.
+22665\tobraćati\t\tv.tr. ipf.
+22667\tobraćati\t\tv.tr. ipf.
+22670\tobraćati\t\tv.tr. ipf.
+34146\tobraćati\t\tv.tr. ipf.
+34850\tobraćati\t\tv.tr. ipf.
+18027\tobråćeńje\t\tn.
+28873\tobradovati sę\t\tv.refl. pf.
+28872\tobradovati\t\tv.tr. pf.
+3551\tobråna\t\tf.
+1672\tobråniti\t\tv.tr. pf.
+973\tobranjati\t\tv.tr. ipf.
+19933\tobrånny mehanizm\t\tm.
+35115\tobrånny\t\tadj.
+33067\tobrastati něčim\t\tv.intr. ipf.
+28879\tobråsti něčim\t\tv.intr. pf.
+2852\tobråt\t\tm.
+22684\tobråt\t\tm.
+28882\tobråt\t\tm.
+34112\tobråt\t\tm.
+14770\t#obråtitelj\t\tm.anim.
+22681\tobråtiti sę k\t\tv.refl. pf.
+22675\tobråtiti sę\t\tv.refl. pf.
+22677\tobråtiti sę\t\tv.refl. pf.
+22679\tobråtiti sę\t\tv.refl. pf.
+3209\tobråtiti\t\tv.tr. pf.
+22666\tobråtiti\t\tv.tr. pf.
+22668\tobråtiti\t\tv.tr. pf.
+22671\tobråtiti\t\tv.tr. pf.
+22673\tobråtiti\t\tv.tr. pf.
+34147\tobråtiti\t\tv.tr. pf.
+6187\tobråtno\t\tadv.
+18030\tobråtny\t\tadj.
+22685\tobråtny\t\tadj.
+22686\tobråtny\t\tadj.
+962\tobraz\t\tm.
+18031\tobrazec\t\tm.
+21378\tobrazec\t\tm.
+21380\tobrazny\t\tadj.
+21384\tobrazȯk\t\tm.
+1031\tobrazovańje\t\tn.
+21385\tobrazovańje\t\tn.
+9872\tobrazovany\t\tadj.
+35930\tobrazovateljny\t\tadj.
+19934\tobrazovity\t\tadj.
+1032\tobręd\t\tm.
+2798\tobrędny\t\tadj.
+16844\tobrěmeniti\t\tv.tr. pf.
+16845\tobrěmenjati\t\tv.tr. ipf.
+9878\tobrězańje\t\tn.
+9879\tobrězati\t\tv.tr. pf.
+34142\tobriti sę\t\tv.refl. pf.
+28907\tobriti\t\tv.tr. pf.
+28909\tobŕnųti sę\t\tv.refl. pf.
+34151\tobŕnųti sę\t\tv.refl. pf.
+28908\tobŕnųti\t\tv.tr. pf.
+34153\tobŕnųti\t\tv.tr. pf.
+34154\tobŕnųti\t\tv.tr. pf.
+21387\tobrok\t\tm.
+21388\tobrųb\t\tm.
+21390\tobrųb\t\tm.
+2796\tobrųč\t\tm.
+9885\tobrųčka\t\tf.
+21392\tobrušati sę\t\tv.refl. ipf.
+21393\tobrušiti sę\t\tv.refl. pf.
+28919\tobrvati\t\tv.tr. pf.
+5263\tobrys\t\tm.
+9887\tobrysovati\t\tv.tr. ipf.
+28923\tobryvati\t\tv.tr. ipf.
+28925\tobryvȯk\t\tm.
+28926\tobryzgati\t\tv.tr. ipf.
+29585\tobsada\t\tf.
+29587\tobsaditi\t\tv.tr. pf.
+34553\tobsađati\t\tv.tr. ipf.
+28928\tobscati\t\tv.tr. pf.
+33477\tobscennosť\t\tf.
+33476\tobscenny\t\tadj.
+28929\tobsęg\t\tm.sg.
+28930\tobsęgati\t\tv.tr. ipf.
+28931\tobsęgnųti\t\tv.tr. pf.
+29597\tobsějati\t\tv.tr. pf.
+28935\tobsějivati\t\tv.tr. ipf.
+33383\tobsěkati\t\tv.tr. ipf.
+28933\tobsěkti\t\tv.tr. pf.
+23247\tobservacija\t\tf.
+35763\tobservatorija\t\tf.
+19935\tobservovati\t\tv.tr. ipf.
+36309\tobsesija\t\tf.
+35142\tobsęžny\t\tadj.
+18032\tobsidian\t\tm.
+4225\tobslědovańje\t\tn.
+9891\tobslědovatelj\t\tm.anim.
+4224\tobslědovati\t\tv.tr. ipf.
+5706\tobsluga\t\tf.
+5167\tobslugovati\t\tv.tr. ipf.
+5704\tobslužiti\t\tv.tr. pf.
+28939\tobsȯhnųti\t\tv.intr. pf.
+34123\tobsȯhnųti\t\tv.intr. pf.
+34124\tobsȯhnųti\t\tv.intr. pf.
+28940\tobsrati\t\tv.tr. pf.
+18034\tobsrědina\t\tf.
+9895\tobstajati\t\tv.intr. ipf.
+9897\tobstajati\t\tv.intr. ipf.
+1090\tobstanavjati sę\t\tv.refl. ipf.
+34789\tobstanavjati\t\tv.tr. ipf.
+2797\tobstanoviti sę\t\tv.refl. pf.
+34790\t#obstanoviti\t\tv.tr. pf.
+21930\tobstųpati\t\tv.tr. ipf.
+21931\tobstųpiti\t\tv.tr. pf.
+3067\tobsvětliti\t\tv.tr. pf.
+1713\tobsvětljati\t\tv.tr. ipf.
+28950\tobsyhati\t\tv.intr. ipf.
+34125\tobsyhati\t\tv.intr. ipf.
+34127\tobsyhati\t\tv.intr. ipf.
+9888\tobsypati\t\tv.tr. pf.
+16287\tobsypyvati\t\tv.tr. ipf.
+32822\tobširno\t\tadv.
+32821\tobširnosť\t\tf.
+28946\tobširny\t\tadj.
+36219\tobšiťje\t\tf.
+36218\tobšivka\t\tf.
+3133\tobtestovati\t\tv.tr. pf.
+16846\tobtęžati\t\tv.tr. ipf.
+16847\tobtęžiti\t\tv.tr. pf.
+34174\tobtirati sę\t\tv.refl. ipf.
+28960\tobtirati\t\tv.tr. ipf.
+34173\tobtreti sę\t\tv.refl. pf.
+28962\tobtreti\t\tv.tr. pf.
+28965\tobučati\t\tv.tr. ipf.
+28966\tobučeńje\t\tn.
+28967\tobučiti\t\tv.tr. pf.
+28969\tobuh\t\tm.
+19936\tobustrånny\t\tadj.
+28970\tobuti sę\t\tv.refl. pf.
+22760\tobuv\t\tf.
+28972\tobuvati sę\t\tv.refl. ipf.
+22761\tobuvka\t\tf.
+32087\tobuvnik\t\tm.anim.
+28974\tobuzdati\t\tv.tr. pf.
+33815\tobuzdyvati\t\tv.tr. ipf.
+4488\tobvadnjati\t\tv.tr. ipf.
+16288\tobvažati\t\tv.tr. ipf.
+14771\tobvažiti\t\tv.tr. pf.
+28980\tobvesti\t\tv.tr. pf.
+22225\tobvěstiti\t\tv.tr. pf.
+22224\tobvěšćati\t\tv.tr. ipf.
+3760\tobvęzati\t\tv.tr. pf.
+28989\tobvęzati\t\tv.tr. ipf.
+36610\tobvęzno\t\tadv.
+35885\tobvęzny\t\tadj.
+95\tobvęzȯk\t\tm.
+3757\tobvęzyvati\t\tv.tr. ipf.
+34191\tobvęzyvati\t\tv.tr. ipf.
+762\tobviniti za\t\tv.tr. pf.
+16291\tobvinjati za\t\tv.tr. ipf.
+4504\tobvinjeńje\t\tn.
+28998\tobviti\t\tv.tr. pf.
+28999\tobvivati\t\tv.tr. ipf.
+22250\tobvod\t\tm.
+29000\tobvoditi\t\tv.tr. ipf.
+4489\tobvodniti\t\tv.tr. pf.
+2930\tobyčaj\t\tm.
+18036\tobyčajno\t\tadv.
+18040\tobyčajny\t\tadj.
+22165\tobyčajny\t\tadj.
+3341\tobyčno\t\tadv.
+2019\tobyčny\t\tadj.
+3199\tobydva\t\tnum.card.
+4069\tobyvatelj\t\tm.anim.
+9794\tobyvatelj\t\tm.anim.
+18043\tobyvati\t\tv.tr. ipf.
+29007\tobzirati sę\t\tv.refl. ipf.
+22894\tobzor\t\tm.
+29008\tobzor\t\tm.
+29009\tobžegti\t\tv.tr. pf.
+22965\tobžerstvo\t\tn.sg.
+29011\tobžigati\t\tv.tr. ipf.
+29015\tobžirati sę\t\tv.refl. ipf.
+32650\tobžrati sę\t\tv.refl. pf.
+18049\tocelj\t\tf.sg.
+18050\toceljevy\t\tadj.
+14\tocěniti\t\tv.tr. pf.
+144\tocěnjati\t\tv.tr. ipf.
+5147\tocěnjeńje\t\tn.
+29019\tocěnka\t\tf.
+1035\tocet\t\tm.
+9920\točariti\t\tv.pf.
+9921\točarovany\t\tadj.
+21395\točarovateljny\t\tadj.
+9923\točarovati\t\tv.tr. pf.
+18045\točarovati\t\tv.pf.
+16893\točarovyvati\t\tv.tr. ipf.
+18047\točarovyvati\t\tv.ipf.
+35230\točekyvańje\t\tn.
+36884\točekyvany\t\tadj.
+1233\točekyvati\t\tv.tr. ipf.
+20920\točevidec\t\tm.anim.
+3960\točevidno\t\tadv.
+3961\točevidny\t\tadj.
+4876\toči\t\tf.pl.
+29028\točistitelj\t\tm.anim.
+29029\točistiti\t\tv.tr. pf.
+29030\točišćati\t\tv.tr. ipf.
+29031\točišćeńje\t\tn.
+29033\točny\t\tadj.
+20566\točrkati\t\tv.tr. ipf.
+20567\točrknųti\t\tv.tr. pf.
+29035\točrniti\t\tv.tr. pf.
+32657\točrnjati\t\tv.tr. ipf.
+23690\tod davna\t\tadv.
+18054\tod nyně\t\tadv.
+3638\tod počętka\t\tadv.
+18058\tod sejčas\t\tadv.
+3060\tod stråny\t\tprep.
+613\tod\t\tprep.
+1234\tod\t\tprep.
+34139\toda\t\tf.
+5649\todbačati vlěvo\t\tv.intr. ipf.
+36711\todbačati vpravo/vdesno\t\tv.intr. ipf.
+29040\todběgati\t\tv.intr. ipf.
+29042\todběgti\t\tv.intr. pf.
+19937\todbirati\t\tv.tr. ipf.
+29045\todbirati\t\tv.tr. ipf.
+29050\todbiti sę\t\tv.refl. pf.
+34100\todbiti sę\t\tv.refl. pf.
+20572\todbiti\t\tv.tr. pf.
+20573\todbiti\t\tv.tr. pf.
+34101\todbiti\t\tv.tr. pf.
+34103\todbivati sę\t\tv.refl. ipf.
+34104\todbivati sę\t\tv.refl. ipf.
+20568\todbivati\t\tv.tr. ipf.
+20570\todbivati\t\tv.tr. ipf.
+34102\todbivati\t\tv.tr. ipf.
+29052\todblěsk\t\tm.
+5650\todbočiti vlěvo\t\tv.intr. pf.
+36712\todbočiti vpravo/vdesno\t\tv.intr. pf.
+29055\todbor\t\tm.
+19938\todbrati\t\tv.tr. pf.
+32534\todbrati\t\tv.tr. pf.
+16741\todbyti sę\t\tv.refl. pf.
+16740\todbyvati sę\t\tv.refl. ipf.
+34209\todčajano\t\tadv.
+29057\todčajany\t\tadj.
+29058\todčajati sę\t\tv.refl. pf.
+34215\todčajati\t\tv.tr. pf.
+34224\todčajivati sę\t\tv.refl. ipf.
+34210\todčajivati\t\tv.tr. ipf.
+9938\todčiniti\t\tv.tr. pf.
+18060\todčinjati\t\tv.tr. ipf.
+6284\todčitati\t\tv.tr. pf.
+6283\todčityvati\t\tv.tr. ipf.
+6211\todčuđati\t\tv.tr. ipf.
+6212\todčuđiti\t\tv.tr. pf.
+19939\todčuvati\t\tv.tr. ipf.
+34237\toddaliti sę\t\tv.refl. pf.
+29065\toddaliti\t\tv.tr. pf.
+34236\toddaljati sę\t\tv.refl. ipf.
+29066\toddaljati\t\tv.tr. ipf.
+29063\toddaljeńje\t\tn.
+16989\toddaljeny\t\tadj.
+29067\toddańje\t\tn.
+35533\toddanosť\t\tf.
+18062\toddany\t\tadj.
+5379\toddati\t\tv.tr. pf.
+5378\toddavati\t\tv.tr. ipf.
+5187\todděl\t\tm.
+14820\todděl\t\tm.
+2951\todděliti\t\tv.tr. pf.
+3016\todděljati\t\tv.tr. ipf.
+29072\todděljeńje\t\tn.
+907\todděljeny\t\tadj.
+3991\todděľno\t\tadv.
+3990\todděľny\t\tadj.
+34253\toddirati\t\tv.tr. ipf.
+5604\toddȯhnųti\t\tv.intr. pf.
+29074\toddreti\t\tv.tr. pf.
+14775\toddyh\t\tm.
+4072\toddyhati\t\tv.intr. ipf.
+16837\toděđa\t\tf.
+16840\toděti\t\tv.tr. pf.
+23742\toděty\t\tadj.
+16838\toděvati\t\tv.tr. ipf.
+18065\toděž\t\tf.
+5971\todgadati\t\tv.tr. pf.
+5970\todgadyvati\t\tv.tr. ipf.
+16831\todglås\t\tm.
+29114\todgnųti\t\tv.tr. pf.
+35938\todgovarjajųći\t\tadj.
+5382\todgovarjati\t\tv.tr. ipf.
+34094\todgovarjati\t\tv.tr. ipf.
+3240\todgovor\t\tm.
+3242\todgovoriti\t\tv.tr. pf.
+29087\todgovoriti\t\tv.tr. pf.
+9953\todgovorno\t\tadv.
+9954\todgovornosť\t\tf.
+9955\todgovorny\t\tadj.
+29089\todgrebati\t\tv.tr. ipf.
+29090\todgrebti\t\tv.tr. pf.
+5648\todgryzati\t\tv.tr. ipf.
+5647\todgryzti\t\tv.tr. pf.
+34261\todgybati\t\tv.tr. ipf.
+23743\todhod\t\tm.
+2968\todhoditi\t\tv.intr. ipf.
+14777\todhođeńje\t\tn.
+15415\todidti od\t\tv.tr. pf.
+19941\todigrati sę\t\tv.refl. pf.
+19943\t#odigryvati roljų\t\tv.ipf.
+19944\todigryvati sę\t\tv.refl. ipf.
+33739\todimańje\t\tn.
+18066\todimati\t\tv.tr. ipf.
+18067\todimati\t\tv.tr. ipf.
+33737\todimati\t\tv.tr. ipf.
+8\todinųd\t\tadv.
+18068\todjaviti sę\t\tv.refl. pf.
+18070\todjavjati sę\t\tv.refl. ipf.
+35979\todjebi sę!\t\tintj.
+5486\todjehati\t\tv.intr. pf.
+18072\todjęti\t\tv.tr. pf.
+18073\todjęti\t\tv.tr. pf.
+33738\todjęti\t\tv.tr. pf.
+5498\todjezd\t\tm.
+5487\todježđati\t\tv.intr. ipf.
+9964\todkazańje\t\tn.
+4626\todkazati sę\t\tv.refl. pf.
+19946\todkazati\t\tv.tr. pf.
+4629\todkazyvati sę\t\tv.refl. ipf.
+19948\todkazyvati\t\tv.tr. ipf.
+2225\todkladati\t\tv.tr. ipf.
+5568\todkladati\t\tv.tr. ipf.
+19954\todklanjati\t\tv.tr. ipf.
+36870\todklanjati\t\tv.tr. ipf.
+34255\todklejati sę\t\tv.refl. ipf.
+34254\todklejati\t\tv.tr. ipf.
+34256\todklejiti sę\t\tv.refl. pf.
+29108\todklejiti\t\tv.tr. pf.
+23128\todključati sę\t\tv.refl. ipf.
+23130\todključati\t\tv.tr. ipf.
+23129\todključiti sę\t\tv.refl. pf.
+23131\todključiti\t\tv.tr. pf.
+19958\todkloniti\t\tv.tr. pf.
+36871\todkloniti\t\tv.tr. pf.
+18075\todklonjeńje\t\tn.
+36872\todklonjeńje\t\tn.
+14781\todkȯgda, odkȯgdy\t\tadv.
+19529\todkȯgda, odkȯgdy\t\tconj.
+1017\todkryti\t\tv.tr. pf.
+3559\todkryťje\t\tn.
+19963\todkrytka\t\tf.
+35473\todkryvańje\t\tn.
+9979\todkryvatelj\t\tm.anim.
+2028\todkryvati\t\tv.tr. ipf.
+750\todkųd\t\tadv.
+1166\todkųd-nebųď\t\tadv.
+19617\todkųdykoli\t\tadv.
+14782\todkųdy-libo\t\tadv.
+4703\todkųsiti\t\tv.tr. pf.
+4702\todkųšati\t\tv.tr. ipf.
+1004\todkydati\t\tv.tr. ipf.
+132\todkydnųti\t\tv.tr. pf.
+5587\todlamyvati\t\tv.tr. ipf.
+34258\todlěpiti sę\t\tv.refl. pf.
+29110\todlěpiti\t\tv.tr. pf.
+34259\todlěpjati sę\t\tv.refl. ipf.
+34257\todlěpjati\t\tv.tr. ipf.
+2978\todlětati\t\tv.intr. ipf.
+2025\todletěti\t\tv.intr. pf.
+19965\todličati\t\tv.tr. ipf.
+19966\todličiti\t\tv.tr. pf.
+10377\todlično\t\tadv.
+10378\todličny\t\tadj.
+36920\todliti\t\tv.tr. pf.
+20574\todliv\t\tm.
+36919\todlivati\t\tv.tr. ipf.
+18076\todlogovati sę\t\tv.refl. ipf./pf.
+2026\todlomiti\t\tv.tr. pf.
+5741\todlomȯk\t\tm.
+2984\todložiti\t\tv.tr. pf.
+5569\todložiti\t\tv.tr. pf.
+18080\todmesti\t\tv.tr. pf.
+18081\todmětati\t\tv.tr. ipf.
+19973\todmetati\t\tv.tr. ipf.
+19974\todmetati\t\tv.tr. ipf.
+19971\todmeteńje\t\tn.
+19977\todmetnųti\t\tv.tr. pf.
+19978\todmetnųti\t\tv.tr. pf.
+1255\todmstiti\t\tv.tr. pf.
+1728\todněkųd\t\tadv.
+23343\todnesti sę k\t\tv.refl. pf.
+4672\todnesti\t\tv.tr. pf.
+10000\todnesti\t\tv.tr. pf.
+1222\todnikųd\t\tadv.
+1746\todnositeljno\t\tadv.
+16990\todnositeljny zaimennik\t\tm.
+35263\todnositeljny\t\tadj.
+20577\todnositi sę k\t\tv.refl. ipf.
+4671\todnositi\t\tv.tr. ipf.
+10004\todnositi\t\tv.tr. ipf.
+4107\todnosno\t\tprep.
+10007\todnosno\t\tadv.
+1992\todnošeńje\t\tn.
+10012\todobriti\t\tv.tr. pf.
+10013\todobrjati\t\tv.tr. ipf.
+10011\todobrjeńje\t\tn.sg.
+181\todȯjdti\t\tv.intr. pf.
+29115\todolěti\t\tv.tr. pf.
+34272\todolěvati\t\tv.tr. ipf.
+35850\todomašniti\t\tv.tr. pf.
+35849\todomašnjati\t\tv.tr. ipf.
+23536\todomašnjeńje\t\tn.
+18083\todomašnjeny\t\tadj.
+19545\todonųd\t\tadv.
+21397\todosobniti\t\tv.tr. pf.
+21396\todosobnjati\t\tv.tr. ipf.
+19544\todovųd\t\tadv.
+5662\todpadati\t\tv.intr. ipf.
+20921\todpadky\t\tm.pl.
+20924\todpadnik\t\tm.anim.
+5657\todpady\t\tm.pl.
+5663\todpasti\t\tv.intr. pf.
+23610\todpečętati\t\tv.tr. pf.
+23613\todpečętȯk\t\tm.
+32536\todpečętyvati\t\tv.tr. pf.
+29124\todpęti\t\tv.tr. pf.
+32921\todphati\t\tv.tr. pf.
+32919\todpihati\t\tv.tr. ipf.
+29128\todpiliti\t\tv.tr. pf.
+34280\todpiljati\t\tv.tr. ipf.
+29129\todpinati\t\tv.tr. ipf.
+10016\todpirati sę\t\tv.refl. ipf.
+34298\todpis\t\tm.
+29136\todpisati\t\tv.tr. pf.
+29137\todpisati\t\tv.tr. pf.
+34295\todpisyvati\t\tv.tr. ipf.
+34296\todpisyvati\t\tv.tr. ipf.
+10020\todpiši vsim\t\tphrase
+4480\todplaćati\t\tv.tr. ipf.
+4481\todplaćati\t\tv.tr. ipf.
+34305\todplaćati\t\tv.tr. ipf.
+500\todplata\t\tf.
+29143\todplata\t\tf.
+29144\todplata\t\tf.
+4479\todplatiti\t\tv.tr. pf.
+4482\todplatiti\t\tv.tr. pf.
+29146\todplatiti\t\tv.tr. pf.
+29148\todplesti\t\tv.tr. pf.
+29147\todpletati\t\tv.tr. ipf.
+34909\todpluti\t\tv.intr. pf.
+19980\todplyvati\t\tv.intr. ipf.
+36727\todplyvati\t\tv.intr. ipf.
+19981\todplyvti\t\tv.intr. pf.
+5605\todpočęti\t\tv.intr. pf.
+3296\todpočinȯk\t\tm.sg.
+3295\todpočivati\t\tv.intr. ipf.
+19982\todpor\t\tm.
+10032\todpornosť\t\tf.
+4235\todporny\t\tadj.
+2390\todpověď\t\tf.
+10035\todpovědaľno\t\tadv.
+10042\todpovědaľnosť\t\tf.
+320\todpovědaľny\t\tadj.
+2189\todpovědati\t\tv.tr. ipf.
+3161\todpovědati\t\tv.tr. ipf.
+2972\todpověděti\t\tv.tr. pf.
+6282\todpovědnik\t\tm.
+34106\todprašati sę\t\tv.refl. ipf.
+34107\t#odprašati sę\t\tv.refl. ipf.
+16293\todprašati\t\tv.tr. ipf.
+10045\todpråšiti\t\tv.tr. pf.
+20926\todprava\t\tf.
+29167\todpraviti sę\t\tv.refl. pf.
+20929\todpraviti\t\tv.tr. pf.
+20931\todpraviti\t\tv.tr. pf.
+34348\todpravjati sę\t\tv.refl. ipf.
+20933\todpravjati\t\tv.tr. ipf.
+20934\todpravjati\t\tv.tr. ipf.
+29169\todpravjeńje\t\tn.
+29170\todpravny punkt\t\tm.
+10017\todprěti sę\t\tv.refl. pf.
+29181\todprositi sę\t\tv.refl. pf.
+34105\todprositi sę\t\tv.refl. pf.
+20935\todpųditi\t\tv.tr. pf.
+5054\todpusk\t\tm.
+34299\todpust\t\tm.
+18089\todpustiti\t\tv.tr. pf.
+29187\todpustiti\t\tv.tr. pf.
+18087\todpušćati\t\tv.tr. ipf.
+29191\todpušćati\t\tv.tr. ipf.
+20937\todpušćeńje\t\tn.
+36889\tOdra\t\tf.sg.
+21398\todračati\t\tv.tr. ipf.
+29196\todraditi\t\tv.tr. pf.
+34349\todrađati\t\tv.tr. ipf.
+29198\todraz\t\tm.
+29200\todraziti sę\t\tv.refl. pf.
+5558\todraziti\t\tv.tr. pf.
+21401\todraziti\t\tv.tr. pf.
+13479\todråzlika\t\tf.
+29202\todražati sę\t\tv.refl. ipf.
+5557\todražati\t\tv.tr. ipf.
+21400\todražati\t\tv.tr. ipf.
+29203\todrěčeńje\t\tn.
+35644\todrěčeńje\t\tn.
+21402\todrěčny\t\tadj.
+22356\todręd\t\tm.
+21404\todrěkati sę\t\tv.refl. ipf.
+21406\todrěkati\t\tv.tr. ipf.
+21410\todrěkti sę\t\tv.refl. pf.
+21408\todrěkti\t\tv.tr. pf.
+29213\todrěz, odrězȯk\t\tm.
+4439\todrězati\t\tv.tr. pf.
+5556\todrězyvati\t\tv.tr. ipf.
+21415\todročiti\t\tv.tr. pf.
+18091\todroda\t\tf.
+18093\todrųbati\t\tv.tr. pf.
+18094\todrųbyvati\t\tv.tr. ipf.
+29223\todrvati\t\tv.tr. pf.
+29226\todryti\t\tv.tr. pf.
+29227\todryvati\t\tv.tr. ipf.
+34361\todryvati\t\tv.tr. ipf.
+29233\todsěděti\t\tv.tr. pf.
+34369\todsěđati\t\tv.tr. ipf.
+29239\todsěkati\t\tv.tr. ipf.
+29240\todsěkti\t\tv.tr. pf.
+5547\todskakati\t\tv.intr. ipf.
+3708\todskočiti\t\tv.intr. pf.
+29248\todslanjati\t\tv.tr. ipf.
+29116\todslati\t\tv.tr. pf.
+34374\todsloniti\t\tv.tr. pf.
+29249\todslužiti\t\tv.tr. pf.
+29250\todsȯhnųti\t\tv.intr. pf.
+3714\todstati\t\tv.intr. pf.
+10054\todstava\t\tf.
+3713\todstavati\t\tv.intr. ipf.
+19983\todstaviti\t\tv.tr. pf.
+19985\todstavjati\t\tv.tr. ipf.
+10058\todstråniti\t\tv.tr. pf.
+21878\todstråniti\t\tv.tr. pf.
+21880\todstråniti\t\tv.tr. pf.
+21882\todstråniti\t\tv.tr. pf.
+21874\todstranjati\t\tv.tr. ipf.
+21876\todstranjati\t\tv.tr. ipf.
+21877\todstranjati\t\tv.tr. ipf.
+21881\todstranjati\t\tv.tr. ipf.
+4371\todstrašati\t\tv.tr. ipf.
+4372\todstrašiti\t\tv.tr. pf.
+5110\todstrěliti\t\tv.tr. pf.
+29253\todstrigati\t\tv.tr. ipf.
+29255\todstrigti\t\tv.tr. pf.
+21948\todstųp\t\tm.
+21949\todstųp\t\tm.
+21950\todstųp\t\tm.
+14787\todstųpańje\t\tn.
+29257\todstųpańje\t\tn.
+4627\todstųpati\t\tv.intr. ipf.
+5074\todstųpati\t\tv.intr. ipf.
+10063\todstųpati\t\tv.intr. ipf.
+21934\todstųpati\t\tv.intr. ipf.
+21937\todstųpati\t\tv.tr. ipf.
+15417\todstųpiti od\t\tv.tr. pf.
+4628\todstųpiti\t\tv.intr. pf.
+5075\todstųpiti\t\tv.intr. pf.
+21941\todstųpiti\t\tv.intr. pf.
+21942\todstųpiti\t\tv.intr. pf.
+21945\todstųpiti\t\tv.tr. pf.
+10065\todstųpjeńje\t\tn.
+21951\todstųpnik\t\tm.anim.
+36228\todstųpnik\t\tm.anim.
+19541\todśųd\t\tadv.
+20938\todsunųti\t\tv.tr. pf.
+36665\todsųtnosť\t\tf.sg.
+33492\todsųtny\t\tadj.
+10066\todsųtstvo\t\tn.sg.
+36666\todsųtstvovati\t\tv.intr. ipf.
+20940\todsuvati\t\tv.tr. ipf.
+34375\todsyhati\t\tv.intr. ipf.
+29271\todsylati\t\tv.tr. pf.
+29264\todščepiti\t\tv.tr. pf.
+29265\todščepjati\t\tv.tr. ipf.
+29266\todščepȯk\t\tm.
+4304\todšlupati\t\tv.tr. pf.
+5552\todšlupyvati\t\tv.tr. ipf.
+29274\todtajati\t\tv.tr. pf.
+29275\todtęgati\t\tv.tr. ipf.
+29277\todtęgnųti\t\tv.tr. pf.
+29278\todtěkati\t\tv.intr. ipf.
+34382\todtěkati\t\tv.intr. ipf.
+29279\todtekti\t\tv.intr. pf.
+34383\todtekti\t\tv.intr. pf.
+29280\todtěnȯk\t\tm.
+34384\todtirati\t\tv.tr. ipf.
+3756\todtisk pŕsta\t\tm.
+22095\todtisk\t\tm.
+22096\todtisk\t\tm.
+22097\todtisk\t\tm.
+23611\todtiskati\t\tv.tr. ipf.
+23612\todtisknųti\t\tv.tr. pf.
+29282\todtreti\t\tv.tr. pf.
+54\todtųd\t\tadv.
+16295\todučati\t\tv.tr. ipf.
+10071\todučeny\t\tadj.
+10072\todučiti\t\tv.tr. pf.
+29284\todurěti\t\tv.intr. pf.
+10074\todvadnjati\t\tv.tr. ipf.
+1423\todvaga\t\tf.
+3420\todvažny\t\tadj.
+4674\todvesti\t\tv.tr. pf.
+10085\todvět\t\tm.
+36387\todvęzati\t\tv.tr. pf.
+5509\todvezti\t\tv.tr. pf.
+14788\todvezti\t\tv.tr. pf.
+36386\todvęzyvati\t\tv.tr. ipf.
+5380\todvinųti\t\tv.tr. pf.
+5381\todvivati\t\tv.tr. ipf.
+22538\todvlåčivati\t\tv.tr. ipf.
+23884\todvlåčivati\t\tv.tr. ipf.
+23886\todvlěčeńje\t\tn.
+23885\todvlěčeny\t\tadj.
+22536\todvlěkati\t\tv.tr. ipf.
+36873\todvlěkati\t\tv.tr. ipf.
+22537\todvlěkti\t\tv.tr. pf.
+23883\todvlěkti\t\tv.tr. pf.
+4673\todvoditi\t\tv.tr. ipf.
+10093\todvodniti\t\tv.tr. pf.
+5508\todvoziti\t\tv.tr. ipf.
+14789\todvoziti\t\tv.tr. ipf.
+10098\todvožeńje\t\tn.
+1042\todvraćati\t\tv.tr. ipf.
+4688\todvraćati\t\tv.tr. ipf.
+22691\todvraćati\t\tv.tr. ipf.
+4689\todvråćeńje\t\tn.
+1121\todvråtiti\t\tv.tr. pf.
+4687\todvråtiti\t\tv.tr. pf.
+22692\todvråtiti\t\tv.tr. pf.
+10107\todvråtlivy\t\tadj.
+4679\todvråtno\t\tadv.
+10110\todvråtny\t\tadj.
+19987\todvŕgańje\t\tn.
+1175\todvŕgati\t\tv.tr. ipf.
+797\todvŕgnųti\t\tv.tr. pf.
+32868\todvŕtka\t\tf.
+1122\todvśųd\t\tadv.
+36321\todvykati sę\t\tv.refl. ipf.
+36320\todvykati\t\tv.tr. ipf.
+36323\todvyknųti sę\t\tv.refl. pf.
+36322\todvyknųti\t\tv.tr. pf.
+14790\todzavisiti\t\tv.tr. pf.
+15420\todzavisny\t\tadj.
+22865\todznaka\t\tf.
+29809\todzvati sę\t\tv.refl. pf.
+32459\todzvati\t\tv.tr. pf.
+22915\todzyv\t\tm.
+29822\todzyvati sę\t\tv.refl. ipf.
+32460\todzyvati\t\tv.tr. ipf.
+19505\toficer\t\tm.anim.
+16991\toficiaľno\t\tadv.
+291\toficiaľny\t\tadj.
+3761\tofis\t\tm.
+29291\togarȯk\t\tm.
+29292\togladiti\t\tv.tr. pf.
+173\toglåsiti\t\tv.tr. pf.
+1481\toglašati\t\tv.tr. ipf.
+5078\toglåšeńje\t\tn.
+29296\toglåvnik\t\tm.
+18099\toględ\t\tm.
+3379\toględati\t\tv.tr. ipf.
+5551\toględěti\t\tv.tr. pf.
+29304\togluhnųti, oglušeti\t\tv.intr. pf.
+29305\toglupěti\t\tv.intr. pf.
+29307\toglušiti\t\tv.tr. pf.
+18101\tognišče\t\tn.
+29308\tognjeny\t\tadj.
+4236\tognjeodporny\t\tadj.
+29314\tognojiti\t\tv.tr. pf.
+34143\togoliti sę\t\tv.refl. pf.
+29316\togoliti\t\tv.tr. pf.
+29317\togoliti\t\tv.tr. pf.
+18103\togon\t\tm.
+826\togȯnj\t\tm.
+18104\togorčati\t\tv.tr. ipf.
+18106\togorčiti\t\tv.tr. pf.
+34395\togovarjańje\t\tn.
+34393\togovarjati\t\tv.tr. ipf.
+34394\togovarjati\t\tv.tr. ipf.
+18108\togovor\t\tm.
+29318\togovoriti\t\tv.tr. pf.
+34396\togovoriti\t\tv.tr. pf.
+23401\tograbiti\t\tv.tr. pf.
+23400\tograbjati\t\tv.tr. ipf.
+3613\togråda\t\tf.
+18112\togråditi\t\tv.tr. pf.
+18109\tograđati\t\tv.tr. ipf.
+29328\togråđeńje\t\tn.
+16297\tograničati\t\tv.tr. ipf.
+10129\tograničeńje\t\tn.
+19988\tograničeny\t\tadj.
+10131\tograničiti\t\tv.tr. pf.
+4329\togražati\t\tv.tr. ipf.
+29331\togrěti\t\tv.tr. pf.
+29332\togrěvati\t\tv.tr. ipf.
+18113\togrlica\t\tf.
+1048\togromny\t\tadj.
+14794\togromny\t\tadj.
+4328\togroziti\t\tv.tr. pf.
+10138\togrožeńje\t\tn.
+10139\t#ogroženy\t\tadj.
+29340\togurȯk\t\tm.
+29341\tohati\t\tv.intr. ipf.
+29344\tohlåděti\t\tv.intr. pf.
+29342\tohlåditi\t\tv.tr. pf.
+29345\tohlađati\t\tv.tr. ipf.
+29346\tohlåđeńje\t\tn.sg.
+3552\tohota\t\tf.
+18114\tohotnik\t\tm.anim.
+3865\tohotno\t\tadv.
+10142\tohotnosť\t\tf.
+3864\tohotny\t\tadj.
+2118\tohråna\t\tf.
+1326\tohråniti\t\tv.tr. pf.
+1563\tohranjati\t\tv.tr. ipf.
+29353\tohrånny\t\tadj.
+29354\tohroměti\t\tv.intr. pf.
+29356\toj!\t\tintj.
+29357\toje\t\tn.
+29361\tokameněti\t\tv.intr. pf.
+29362\tokameněti\t\tv.intr. pf.
+5362\tokameniti\t\tv.tr. pf.
+5364\tokameniti\t\tv.tr. pf.
+5361\tokamenjati\t\tv.tr. ipf.
+5363\tokamenjati\t\tv.tr. ipf.
+32994\tokarina\t\tf.
+10149\tokazalo sę\t\tphrase
+1457\tokazati sę\t\tv.refl. pf.
+19990\tokazati\t\tv.tr. pf.
+3396\tokazija\t\tf.
+29365\tokazyvaje sę\t\tphrase
+1612\tokazyvati sę\t\tv.refl. ipf.
+19991\tokazyvati\t\tv.tr. ipf.
+5261\tokean\t\tm.
+4896\tOkeanija\t\tf.sg.
+29368\toklevetati\t\tv.tr. pf.
+1989\tokno\t\tn.
+1\toko\t\tn.
+19994\tokolice\t\tf.pl.
+29373\tokoličny\t\tadj.
+32327\tokolina\t\tf.
+18117\tokoľna priroda\t\tf.
+3502\tokoľnosť\t\tf.
+5797\tokoľny\t\tadj.
+2117\tokolo\t\tprep.
+19995\tokolo\t\tprep.
+36654\tokolorovati\t\tv.tr. pf.
+36328\tokȯnnica\t\tf.
+29380\tokȯnny\t\tadj.
+10159\tokop\t\tm.
+29385\tokotiti sę\t\tv.refl. pf.
+29386\tokovany\t\tadj.
+29387\tokovati\t\tv.tr. pf.
+18119\tokovy\t\tm.pl.
+29391\tokrajina\t\tf.
+34421\tokrajina\t\tf.
+29392\tokrajny\t\tadj.
+29398\tokrěpnųti\t\tv.intr. pf.
+5538\tokrestiti\t\tv.tr. pf.
+29403\tokropiti\t\tv.tr. pf.
+29404\tokropjati\t\tv.tr. ipf.
+19997\tokrųg\t\tm.
+5366\tokrųgliti\t\tv.tr. pf.
+5365\tokrųgljati\t\tv.tr. ipf.
+29410\tokrųglosť\t\tf.
+29411\tokrųgly\t\tadj.
+16806\tokrutnosť\t\tf.
+16805\tokrutny\t\tadj.
+234\tokrųžati\t\tv.tr. ipf.
+2803\tokrųžiti\t\tv.tr. pf.
+29416\tokrųžna dråga\t\tf.
+146\toksid\t\tm.
+36834\toktava\t\tf.
+1988\toktobr\t\tm.sg.
+35423\tokuljary\t\tm.pl.
+29422\tokunj\t\tm.anim.
+10168\tokupacija\t\tf.
+10169\tokupant\t\tm.anim.
+2111\tokupovati\t\tv.tr. ipf.
+1497\tolej\t\tm.
+36077\tolejna rěpka\t\tf.
+16788\toligarh\t\tm.anim.
+16789\toligarhija\t\tf.
+18121\tolimpijske igry\t\tf.pl.
+35021\tolimpijsky\t\tadj.
+35006\tolivka\t\tf.
+684\toljha\t\tf.
+29432\tolověny\t\tadj.
+21417\tolovka\t\tf.
+10173\tolovny\t\tadj.
+10\tolovo\t\tn.sg.
+29434\toltaŕ\t\tm.
+4625\tomal\t\tadv.
+18123\t#omam\t\tm.
+18125\tomamiti\t\tv.tr. pf.
+18130\tomamnik\t\tm.anim.
+29435\toman\t\tm.
+31814\tomar\t\tm.anim.
+29436\tomastiti\t\tv.tr. pf.
+29440\tomesti\t\tv.tr. pf.
+29439\tomětati\t\tv.tr. ipf.
+5893\tomiljeny\t\tadj.
+29441\tomlåděti\t\tv.intr. pf.
+29442\tomlåditi\t\tv.tr. pf.
+27642\tomlađati\t\tv.tr. ipf.
+34436\tomlet\t\tm.
+29446\tomlěti\t\tv.intr. pf.
+34437\tomlěvati\t\tv.intr. ipf.
+29452\tomŕtvěti\t\tv.intr. pf.
+4686\tomŕziti\t\tv.tr. pf.
+10178\tomŕzlivy\t\tadj.
+10179\tomŕzno\t\tadv.
+10180\tomŕzny\t\tadj.
+19998\tomŕžajųći\t\tadj.
+5608\tomŕžati\t\tv.tr. ipf.
+4685\tomŕžeńje\t\tn.
+3404\tomųženy\t\tadj.
+3403\tomųžiti sę\t\tv.refl. pf.
+29456\tomųžiti\t\tv.tr. pf.
+2150\ton\t\tpron.pers.
+792\tona\t\tpron.pers.
+10202\tonako\t\tadv.
+19580\tonaky\t\tadj.
+19565\tonamo\t\tadv.
+32515\tondatra\t\tf.
+19533\tonde\t\tadv.
+35621\tone\t\tpron.pers.
+32831\toněměti\t\tv.intr. pf.
+21419\tonesměliti\t\tv.tr. pf.
+21418\tonesměljati\t\tv.tr. ipf.
+73\toni\t\tpron.pers.
+35615\tonlajn, on-lajn\t\tadv.
+2821\tono\t\tpron.pers.
+16883\tonȯgda, onȯgdy\t\tadv.
+16885\tonȯgda, onȯgdy\t\tadv.
+34941\tonȯgdašnji, onȯgdašny\t\tadj.
+19600\tonoj\t\tpron.dem.
+19583\tonoliko\t\tadv.
+19591\tonoliky\t\tadj.
+36291\tonomatopeja\t\tf.
+29478\tonuća\t\tf.
+19548\tonųdy\t\tadv.
+3062\topačny\t\tadj.
+29481\topadati\t\tv.intr. ipf.
+36006\topakovańje\t\tn.
+36004\topakovati\t\tv.tr. pf.
+36007\topakovka\t\tf.
+36005\topakovyvati\t\tv.tr. ipf.
+29484\topaliti\t\tv.tr. pf.
+29485\topaljati\t\tv.tr. ipf.
+4136\topalȯk\t\tm.
+29486\topariti\t\tv.tr. pf.
+34177\toparjati\t\tv.tr. ipf.
+14800\topasna burja\t\tf.
+10218\topasno prědprijęťje\t\tn.
+10217\topasno\t\tadv.
+4682\topasnosť\t\tf.
+4681\topasny\t\tadj.
+29482\topasti\t\tv.intr. pf.
+34076\topat\t\tm.anim.
+35012\topatka\t\tf.
+34075\topatstvo\t\tn.
+18132\topcija\t\tf.
+35166\topcionaľny\t\tadj.
+3302\topeka\t\tf.
+3301\topekati\t\tv.tr. ipf.
+36267\topeklina\t\tf.
+10223\topekun\t\tm.anim.
+18133\topekun\t\tm.anim.
+20942\topekun\t\tm.anim.
+18134\topekunstvo\t\tn.sg.
+20943\topekunstvo\t\tn.sg.
+29495\topenjka\t\tf.
+3\topera\t\tf.
+18135\toperacija\t\tf.
+32736\topereta\t\tf.
+29498\toperiti sę\t\tv.refl. pf.
+34508\toperjati sę\t\tv.refl. ipf.
+29497\toperjeńje\t\tn.
+685\topęť\t\tadv.
+36055\topica\t\tf.
+23200\topij\t\tm.sg.
+20944\topirati sę\t\tv.refl. ipf.
+32540\topirati sę\t\tv.refl. ipf.
+20000\topis\t\tm.
+35306\topisateljny\t\tadj.
+2\topisati\t\tv.tr. pf.
+686\topisyvati\t\tv.tr. ipf.
+29511\topiti sę\t\tv.refl. pf.
+29510\topiti\t\tv.tr. pf.
+32713\topivati sę\t\tv.refl. ipf.
+32712\topivati\t\tv.tr. ipf.
+3766\toplačeny\t\tadj.
+10229\toplakati\t\tv.tr. pf.
+10230\toplakyvańje\t\tn.sg.
+10231\toplakyvati\t\tv.tr. ipf.
+29519\toplěti\t\tv.tr. pf.
+35122\topljunųti\t\tv.tr. pf.
+29521\topljuvati\t\tv.tr. ipf.
+18146\toploditi\t\tv.tr. pf.
+18139\toplođati\t\tv.tr. ipf.
+18141\toplođeńje\t\tn.
+18143\toplođeny\t\tadj.
+29525\t#opluti\t\tv.tr. pf.
+34310\toplyvati\t\tv.tr. ipf.
+20947\topora\t\tf.
+20001\toporędčati\t\tv.tr. ipf.
+20002\toporędčeny\t\tadj.
+20003\toporędčiti\t\tv.tr. pf.
+29531\toporny\t\tadj.
+29532\topozdniti sę\t\tv.refl. pf.
+34518\topozdniti\t\tv.tr. pf.
+34517\topozdnjati sę\t\tv.refl. ipf.
+34519\topozdnjati\t\tv.tr. ipf.
+2820\topozdnjeńje\t\tn.
+355\topozicija\t\tf.
+10233\topoznati\t\tv.tr. pf.
+10234\topoznavati\t\tv.tr. ipf.
+1559\toprašćati\t\tv.tr. ipf.
+29536\toprava\t\tf.
+29537\topravdańje\t\tn.
+32538\topravdańje\t\tn.
+10235\topravdati\t\tv.tr. pf.
+29538\topravdati\t\tv.tr. pf.
+10236\topravdyvati\t\tv.tr. ipf.
+32537\topravdyvati\t\tv.tr. ipf.
+20948\topraviti\t\tv.tr. pf.
+20951\topraviti\t\tv.tr. pf.
+20953\topravjati\t\tv.tr. ipf.
+20957\topravjati\t\tv.tr. ipf.
+35415\topravniti\t\tv.tr. pf.
+35416\topravnjati\t\tv.tr. ipf.
+35414\topravnjeny\t\tadj.
+34532\topråzdniti\t\tv.tr. pf.
+34536\topråzdnjati\t\tv.tr. ipf.
+29544\toprěděliti\t\tv.tr. pf.
+32606\toprěděljati\t\tv.tr. ipf.
+10237\toprěděljeno\t\tadv.
+10238\toprěděljeny\t\tadj.
+20958\toprěti sę\t\tv.refl. pf.
+29547\toprěti sę\t\tv.refl. pf.
+10239\toprętno\t\tadv.
+10240\toprętnosť\t\tf.
+10241\toprętny\t\tadj.
+2132\toprostiti\t\tv.tr. pf.
+20004\toprošćeńje\t\tn.
+13334\toprošćeny\t\tadj.
+22578\toprovŕgati\t\tv.tr. ipf.
+22579\toprovŕgnųti\t\tv.tr. pf.
+20582\toptika\t\tf.
+35640\toptimaľny\t\tadj.
+36352\toptimizovati\t\tv.tr. ipf./pf.
+794\topublikovati\t\tv.tr. pf.
+10244\topuhati\t\tv.intr. ipf.
+10243\topuhly\t\tadj.
+10245\topuhneny\t\tadj.
+16299\topuhnųti\t\tv.intr. pf.
+2909\topustašati\t\tv.tr. ipf.
+29554\topustěti\t\tv.intr. pf.
+10246\topustiti\t\tv.tr. pf.
+20966\topustiti\t\tv.tr. pf.
+20967\topustiti\t\tv.tr. pf.
+14807\topustošeńje\t\tn.
+1546\topustošiti\t\tv.tr. pf.
+10250\topušćati\t\tv.tr. ipf.
+20960\topušćati\t\tv.tr. ipf.
+20962\topušćati\t\tv.tr. ipf.
+9758\topušćeńje\t\tn.
+10249\topušćeny\t\tadj.
+23154\topyliti\t\tv.tr. pf.
+23153\topyljati\t\tv.tr. ipf.
+23155\topyljeńje\t\tn.
+20969\topyt\t\tm.
+23308\topyt\t\tm.
+29559\torač\t\tm.anim.
+35895\torakul\t\tm.anim.
+34426\torangutan\t\tm.anim.
+29561\toranica\t\tf.
+29562\torańje\t\tn.
+32348\toranžerija\t\tf.
+539\toranževy\t\tadj.
+34547\torašati\t\tv.tr. ipf.
+34548\torašati\t\tv.tr. ipf.
+34549\torašati\t\tv.tr. ipf.
+34550\torašati\t\tv.tr. ipf.
+34551\torašati\t\tv.tr. ipf.
+22890\torati\t\tv.ipf.
+36774\torbita\t\tf.
+35969\torden\t\tm.
+36015\torden\t\tm.
+1086\torěh\t\tm.
+29566\torěhovka\t\tf.
+5982\torěhovo maslo\t\tn.
+29567\torěhovy\t\tadj.
+2398\torel\t\tm.anim.
+36768\toreol\t\tm.
+34788\torěšarka\t\tf.
+20005\torgan\t\tm.
+36165\torgan\t\tm.
+36166\torgan\t\tm.
+20583\torganičny\t\tadj.
+6343\tOrganizacija Sěveroatlantičskogo Dogovora\t\tf.sg.
+1123\tOrganizacija Sjedinjenyh Narodov\t\tf.sg.
+1064\torganizacija\t\tf.
+330\torganizator\t\tm.anim.
+23602\torganizm\t\tm.
+4977\torganizovati\t\tv.tr. ipf./pf.
+32595\torgija\t\tf.
+1124\torientacija\t\tf.
+3801\torientovati sę\t\tv.refl. ipf.
+31759\torigami\t\tn.indecl.
+16036\toriginaľno\t\tadv.
+16037\toriginaľnosť\t\tf.
+1956\toriginaľny\t\tadj.
+33797\toriti\t\tv.tr. ipf.
+23448\torkestr\t\tm.
+29571\torlę\t\tn.
+29572\torľji\t\tadj.
+35475\tornament\t\tm.
+20006\tornitologičny\t\tadj.
+20007\tornitologija\t\tf.sg.
+29576\torny\t\tadj.
+29577\torositi\t\tv.tr. pf.
+34543\t#orositi\t\tv.tr. pf.
+34544\torositi\t\tv.tr. pf.
+34545\torositi\t\tv.tr. pf.
+34546\torositi\t\tv.tr. pf.
+4394\tortografičny\t\tadj.
+4393\tortografija\t\tf.
+2278\torųďje\t\tn.
+29579\torųďje\t\tn.
+3434\torųdovańje\t\tn.
+3588\torųdovańje\t\tn.
+10263\torųdovany\t\tadj.
+10264\torųdovati\t\tv.tr. ipf.
+10265\torųdovati\t\tv.tr. ipf.
+10268\torųžeńje\t\tn.
+29580\torųžiti\t\tv.tr. ipf.
+2816\torųžje\t\tn.sg.
+10269\torųžjenosec\t\tm.anim.
+29582\torųžny\t\tadj.
+2815\toś\t\tf.
+2369\tosa\t\tf.
+2967\tosaditi sę\t\tv.refl. pf.
+29588\tosaditi\t\tv.tr. pf.
+21420\tosadȯk\t\tm.
+34554\tosađati\t\tv.tr. ipf.
+29590\tosamotiti sę\t\tv.refl. pf.
+14812\tosamotiti\t\tv.tr. pf.
+29591\tosědati\t\tv.intr. ipf.
+29592\tosedlati\t\tv.tr. pf.
+29594\tosědly\t\tadj.
+1112\tosel\t\tm.anim.
+29599\tosel\t\tm.anim.
+29603\toseliti sę\t\tv.refl. pf.
+36495\toseljenėc\t\tm.anim.
+29601\toseljeńje\t\tn.
+29595\tosęsti\t\tv.intr. pf.
+6178\tOsetija\t\tf.sg.
+36562\tosetinsky\t\tadj.
+29666\tośevy\t\tadj.
+29614\tosika\t\tf.
+21424\tosiliti\t\tv.tr. pf.
+21422\tosiljati\t\tv.tr. ipf.
+22801\tosiroćeny\t\tadj.
+29616\tosirotěti\t\tv.intr. pf.
+22800\tosirotiti\t\tv.tr. pf.
+29618\tosivěti\t\tv.intr. pf.
+29621\toskopiti\t\tv.tr. pf.
+29623\toskubati\t\tv.tr. pf.
+34592\toskubyvati\t\tv.tr. ipf.
+34608\toskųdno\t\tadv.
+34611\toskųdnosť\t\tf.
+34602\toskųdny\t\tadj.
+29627\toskvŕnitelj\t\tm.anim.
+33472\toskvŕniti\t\tv.tr. pf.
+33470\toskvŕnjati\t\tv.tr. ipf.
+29626\toskvŕnjeńje\t\tn.
+29629\toslaběti\t\tv.intr. pf.
+4670\toslabiti\t\tv.tr. pf.
+14815\toslabiti\t\tv.tr. pf.
+4669\toslabjati\t\tv.tr. ipf.
+14816\toslabjati\t\tv.tr. ipf.
+10290\toslabjeńje\t\tn.
+1052\toslabjeny\t\tadj.
+10292\toslåditi\t\tv.tr. pf.
+29635\toslę\t\tn.
+29636\toslěpiti\t\tv.tr. pf.
+29637\toslěpjati\t\tv.tr. ipf.
+29638\toslěpjeńje\t\tn.
+29639\toslěpnųti\t\tv.intr. pf.
+29640\toslica\t\tf.
+14817\tosloženiti\t\tv.tr. pf.
+14818\tosloženjati\t\tv.tr. ipf.
+18153\tosložnjeńje\t\tn.
+314\tosm\t\tnum.card.
+35345\tosmansky\t\tadj.
+29646\tosmažiti\t\tv.tr. pf.
+2970\tosmdesęt\t\tnum.card.
+10283\tosmdesęty\t\tnum.ord.
+29649\tosměliti sę\t\tv.refl. pf.
+10991\tosměliti\t\tv.tr. pf.
+34569\tosměljati sę\t\tv.refl. ipf.
+16317\tosměljati\t\tv.tr. ipf.
+29650\tosmerka\t\tnum.subst.
+16435\tosmero\t\tnum.coll.
+10296\tosmina\t\tnum.fract.
+16462\tosmka\t\tnum.subst.
+108\tosmnadsęť\t\tnum.card.
+15424\tosmnadsętina\t\tnum.fract.
+16465\tosmnadsęty\t\tnum.ord.
+29653\tosmoliti\t\tv.tr. pf.
+36136\tośmonog\t\tm.anim.
+2838\tosmsȯt, osmsto\t\tnum.card.
+2824\tosmy\t\tnum.ord.
+10299\tosmysljeno\t\tadv.
+10300\tosmysljenosť\t\tf.
+10301\tosmysljeny\t\tadj.
+29656\tosněžiti\t\tv.tr. pf.
+2049\tosnova\t\tf.
+29658\tosnova\t\tf.
+29659\tosnova\t\tf.
+29660\tosnovańje\t\tn.
+18156\tosnovany na\t\tadj.
+10304\tosnovatelj\t\tm.anim.
+2938\tosnovateljny\t\tadj.
+2115\tosnovati\t\tv.tr. pf.
+29663\tosnovati\t\tv.tr. pf.
+18158\tosnovno\t\tadv.
+2831\tosnovny\t\tadj.
+13\tosnovyvati\t\tv.tr. ipf.
+2210\tosoba\t\tf.
+5080\tosoblivo\t\tadv.
+20008\tosoblivosť\t\tf.
+5747\tosoblivy\t\tadj.
+10320\tosobna pomsta\t\tf.
+10312\tosobna potrěba\t\tf.
+10314\tosobna vojna\t\tf.
+10315\t#osobnik\t\tm.anim.
+4293\tosobno\t\tadv.
+10317\tosobnosť\t\tf.
+29668\tosobny avtomobil\t\tm.
+10319\tosobny kompjuter\t\tm.
+16992\tosobny zaimennik\t\tm.
+4292\tosobny\t\tadj.
+29670\tosoliti\t\tv.tr. pf.
+29612\tosȯt\t\tm.
+18163\tosȯvrěmenniti\t\tv.tr. pf.
+18159\tosȯvrěmennjati\t\tv.tr. ipf.
+18161\tosȯvrěmennjeńje\t\tn.
+21999\tospa\t\tf.
+5910\tosparjati\t\tv.tr. ipf.
+5939\tosporiti\t\tv.tr. pf.
+32547\tosråmiti\t\tv.tr. pf.
+32548\tosråmiti\t\tv.tr. pf.
+29675\tosrědȯk\t\tm.
+29686\tosť\t\tf.
+16993\tostaly\t\tadj.
+29676\tostanky\t\tm.pl.
+29677\tostarěti\t\tv.intr. pf.
+466\tostati\t\tv.intr. pf.
+3297\tostatny\t\tadj.
+1918\tostatȯk\t\tm.
+2834\tostavati\t\tv.intr. ipf.
+825\tostaviti\t\tv.tr. pf.
+21739\tostaviti\t\tv.tr. pf.
+505\tostavjati\t\tv.tr. ipf.
+21738\tostavjati\t\tv.tr. ipf.
+10330\tostavjeńje\t\tn.
+3201\tostavjeny\t\tadj.
+29683\tostavka\t\tf.
+10342\tOstråžno!\t\tintj.
+3480\tostråžno\t\tadv.
+29688\tostråžnosť\t\tf.
+3478\tostråžny\t\tadj.
+29691\tostrěgati sę\t\tv.refl. ipf.
+18167\tostrěgati\t\tv.tr. ipf.
+18166\tostrěgti\t\tv.tr. pf.
+23090\tostrěžeńje\t\tn.
+31999\tostriga\t\tf.
+29693\tostrigati\t\tv.tr. ipf.
+5024\tostrigti\t\tv.tr. pf.
+32892\tostriti\t\tv.tr. ipf.
+29697\tostrižeńje\t\tn.
+4499\tostŕje\t\tn.
+10339\tostro\t\tadv.
+29698\tostroga\t\tf.
+18168\tostroumje\t\tn.
+10341\tOstrov Man\t\tm.sg.
+2044\tostrov\t\tm.
+29700\tostrovjan, ostrovjanin\t\tm.anim.
+29702\tostrugati\t\tv.tr. pf.
+947\tostry\t\tadj.
+29713\tostuditi\t\tv.tr. pf.
+29715\tosųd\t\tm.sg.
+2036\tosųditi\t\tv.tr. pf.
+7\tosųđati\t\tv.tr. ipf.
+32550\tosųđeńje\t\tn.
+29718\tosušati\t\tv.tr. ipf.
+29719\tosušiti\t\tv.tr. pf.
+34655\tosvajati\t\tv.tr. ipf.
+34657\tosvajati\t\tv.tr. ipf.
+15709\tosvatiti sę\t\tv.refl. pf.
+29721\tosvěćati\t\tv.tr. ipf.
+32355\tosvęćati\t\tv.tr. ipf.
+29722\tosvěćeńje\t\tn.
+23888\tosvědamjati sę\t\tv.refl. ipf.
+23887\tosvědomiti sę\t\tv.refl. pf.
+29723\tosvętiti\t\tv.tr. pf.
+29724\tosvětiti\t\tv.tr. pf.
+10354\tosvětliti\t\tv.tr. pf.
+10357\tosvětljati\t\tv.tr. ipf.
+34650\tosvětljeńje\t\tn.
+18169\tosvěžati\t\tv.tr. ipf.
+18171\tosvěžiti\t\tv.tr. pf.
+18175\tosvobađati sę\t\tv.refl. ipf.
+450\tosvobađati\t\tv.tr. ipf.
+18179\tosvoboditi sę od\t\tv.refl. pf.
+18178\tosvoboditi sę\t\tv.refl. pf.
+881\tosvoboditi\t\tv.tr. pf.
+29729\tosvobođeńje\t\tn.
+29730\tosvojiti\t\tv.tr. ipf.
+34654\tosvojiti\t\tv.tr. ipf.
+22000\tosypky\t\tm.pl.
+16856\tošalěti\t\tv.intr. pf.
+29732\toščeniti sę\t\tv.refl. pf.
+10364\totcevska ljubȯv\t\tf.
+6024\totcevsky\t\tadj.
+29737\totčim\t\tm.anim.
+4268\totčina\t\tf.
+2048\totec\t\tm.anim.
+2046\totečstvo\t\tn.
+6137\totęgčati\t\tv.tr. ipf.
+6138\totęgčati\t\tv.tr. ipf.
+6140\totęgčiti\t\tv.tr. pf.
+6141\totęgčiti\t\tv.tr. pf.
+29743\toteliti sę\t\tv.refl. pf.
+18181\totěniti\t\tv.tr. pf.
+18180\totěnjati\t\tv.tr. ipf.
+5967\totęžeńje\t\tn.
+5968\totęženy\t\tadj.
+6285\totišati\t\tv.tr. ipf.
+6286\totišiti\t\tv.tr. pf.
+22073\totok\t\tm.
+2823\totrava\t\tf.
+29752\totravitelj\t\tm.anim.
+3779\totraviti\t\tv.tr. pf.
+3777\totravjati\t\tv.tr. ipf.
+29751\totravjeńje\t\tn.
+29754\totravny\t\tadj.
+34957\totręsati\t\tv.tr. ipf.
+34958\totręsti\t\tv.tr. pf.
+29758\totrězvěti\t\tv.intr. pf.
+29759\totrězviti\t\tv.tr. pf.
+34674\totrězvjati\t\tv.tr. ipf.
+1066\totrųby\t\tf.pl.
+6144\totrudniti\t\tv.tr. pf.
+6143\totrudnjati\t\tv.tr. ipf.
+10381\totrudnjeńje\t\tn.
+34693\totųpělosť\t\tf.
+34687\totųpěly\t\tadj.
+29767\totųpěti\t\tv.intr. pf.
+29768\totųpiti\t\tv.tr. pf.
+34698\totųpjati\t\tv.tr. ipf.
+2399\totvarjati\t\tv.tr. ipf.
+3662\totvor\t\tm.
+2037\totvoriti\t\tv.tr. pf.
+10095\totvorjeny parašut\t\tm.
+10094\totvorjeny tenisny čempionat\t\tm.
+1056\totvorjeny\t\tadj.
+29770\totvŕděti\t\tv.intr. pf.
+10387\tov\t\tpron.dem.
+10388\tovako\t\tadv.
+19579\tovaky\t\tadj.
+34986\tovaľny\t\tadj.
+19563\tovamo\t\tadv.
+628\tovca\t\tf.
+32023\tovčaŕ\t\tm.anim.
+20009\tovčarnja\t\tf.
+32024\tovčaŕsky pes\t\tm.anim.
+14821\tovde\t\tadv.
+32942\tovdověly\t\tadj.
+29773\tovdověti\t\tv.intr. pf.
+29774\tovějati\t\tv.tr. pf.
+28986\tovějivati\t\tv.tr. ipf.
+29775\tOven\t\tm.anim.
+29776\toven\t\tm.anim.
+18183\tověnčati\t\tv.tr. ipf.
+18184\tověnčiti\t\tv.tr. pf.
+10391\tověriti\t\tv.tr. pf.
+10392\tověrjati\t\tv.tr. ipf.
+10390\tověrjeny\t\tadj.
+912\toves\t\tm.sg.
+20012\tovinųti\t\tv.tr. pf.
+20010\tovivati\t\tv.tr. ipf.
+22493\tovladnųti\t\tv.tr. pf.
+22494\tovladnųti\t\tv.tr. pf.
+22489\tovladyvati\t\tv.tr. ipf.
+22491\tovladyvati\t\tv.tr. ipf.
+2827\tovoć\t\tm.
+19525\tovȯgda, ovȯgdy\t\tadv.
+29783\tovȯlgnųti\t\tv.intr. pf.
+19582\tovoliko\t\tadv.
+19590\tovoliky\t\tadj.
+29784\tovoščiti\t\tv.tr. pf.
+890\tovplyvniti\t\tv.tr. pf.
+2828\tovplyvnjati\t\tv.tr. ipf.
+36051\tovråtnik\t\tf.
+19547\tovųdy\t\tadv.
+34715\tozdabjati\t\tv.tr. ipf.
+29788\tozdoba\t\tf.
+29789\tozdobiti\t\tv.tr. pf.
+36544\tozdobny\t\tadj.
+29790\tozdråvěti\t\tv.intr. pf.
+10400\tozdråviti\t\tv.tr. pf.
+10401\tozdravjati\t\tv.tr. ipf.
+10402\t#ozdravjeńje\t\tn.
+36819\tozdråvnica\t\tf.
+29792\tozębti\t\tv.intr. pf.
+29793\tozeleniti\t\tv.intr. pf.
+29794\tozelenjati\t\tv.intr. ipf.
+10405\tozemisko\t\tadv.
+10404\tozemisky\t\tadj.
+10403\tozemja\t\tf.
+29795\tozimina\t\tf.
+29796\tozimy\t\tadj.
+36859\tozlobiti sę\t\tv.refl. pf.
+29799\tozlobiti\t\tv.tr. pf.
+29800\tozlobjeńje\t\tn.
+1069\toznačati\t\tv.tr. ipf.
+10414\toznačati\t\tv.tr. ipf.
+22862\toznačati\t\tv.tr. ipf.
+10413\toznačeńje\t\tn.
+18192\toznačeny\t\tadj.
+1070\toznačiti\t\tv.tr. pf.
+18194\toznačiti\t\tv.tr. pf.
+22863\toznačiti\t\tv.tr. pf.
+22864\toznaka\t\tf.
+29807\toznamenovati\t\tv.tr. pf.
+34735\toznamenovati\t\tv.tr. pf.
+34736\toznamenovyvati\t\tv.tr. ipf.
+34737\toznamenovyvati\t\tv.tr. ipf.
+22861\t#oznaniti\t\tv.tr. pf.
+22860\toznanjati\t\tv.tr. ipf.
+32847\tozon\t\tm.sg.
+32849\tozonovy sloj\t\tm.sg.
+29810\tozvěrěti\t\tv.intr. pf.
+3400\toženiti sę\t\tv.refl. pf.
+29812\toženiti\t\tv.tr. pf.
+3401\toženjeny\t\tadj.
+29815\tožiti\t\tv.intr. pf.
+29816\toživati\t\tv.intr. ipf.
+29818\toživiti\t\tv.tr. pf.
+36452\toživjati\t\tv.tr. ipf.
+14822\toživjeno\t\tadv.
+14823\toživjeny\t\tadj.
+29820\tožȯltěti\t\tv.intr. pf.
+29821\tožrěbiti sę\t\tv.refl. pf.
+10418\tpa\t\tconj.
+18195\tpacient\t\tm.anim.
+29824\t#pad\t\tm.
+20970\tpadalina\t\tf.
+1771\tpadati\t\tv.intr. ipf.
+261\tpadež\t\tm.
+20971\tpadųčnica\t\tf.
+32134\tpajac\t\tm.anim.
+3447\tpaket\t\tm.
+1063\tPakistan\t\tm.sg.
+22766\tpakistansky\t\tadj.
+5471\tpakovati\t\tv.tr. ipf.
+1058\tpala\t\tf.
+2830\tpalac\t\tm.
+31750\tpalačinka\t\tf.
+1841\tpalatalizacija\t\tf.
+23305\tpalatka\t\tf.
+35434\tpalec\t\tm.
+2825\tpalestinsky\t\tadj.
+2829\tpaliti\t\tv.tr. ipf.
+14826\tpaliti\t\tv.tr. ipf.
+2826\tpalivo\t\tn.
+944\tpaljto\t\tn.
+29827\tpalka\t\tf.
+16040\tpalma\t\tf.
+36159\tpalmeta\t\tf.
+1961\tpamęť\t\tf.
+1960\tpamętati\t\tv.tr. ipf.
+4117\tpamętnik\t\tm.
+10438\tpamętny\t\tadj.
+35182\tpamflet\t\tm.
+350\tpan\t\tm.anim.
+35932\tpanaceja\t\tf.
+22464\tPanama\t\tf.sg.
+22465\tpanamsky\t\tadj.
+29832\tpancyŕ\t\tm.
+4501\tpancyrovoz\t\tm.
+23261\tpančoha\t\tf.
+36272\tpanda\t\tf.
+10444\tpanel orųdij\t\tm.
+2359\tpani\t\tf.
+20014\tpanika\t\tf.
+18197\tpaniker\t\tm.anim.
+35049\tpanorama\t\tf.
+16996\tpanslavist\t\tm.anim.
+16997\tpanslavističny\t\tadj.
+16998\tpanslavizm\t\tm.sg.
+23143\tpantofle\t\tm.pl.
+1356\tpapa\t\tm.anim.
+36067\tpapaja\t\tf.
+506\tpapir\t\tm.
+35315\tpapirny\t\tadj.
+32614\tpapirus\t\tm.
+29838\tpapka\t\tf.
+1075\tpapråť\t\tf.
+35460\tpaprika\t\tf.
+6109\tPapua Nova Gvineja\t\tf.sg.
+23144\tpapuče\t\tf.pl.
+4570\tpapugaj\t\tm.anim.
+18200\tpara prikladov\t\tf.
+2257\tpara\t\tf.
+4993\tpara\t\tf.
+29842\tparada\t\tf.
+16999\tparadigm\t\tm.
+29843\tparadny kostjum\t\tm.
+543\tparadoks\t\tm.
+2377\tparadoksaľny\t\tadj.
+35421\tparafija\t\tf.
+15522\tparagraf\t\tm.
+22442\tParagvaj\t\tm.sg.
+22443\tparagvajsky\t\tadj.
+23206\tparalela\t\tf.
+23207\tparaleľny\t\tadj.
+29848\tparaliza\t\tf.
+16790\tparalizovati\t\tv.tr. ipf.
+35933\tparametr\t\tm.
+29849\tparapet\t\tm.
+4066\tparašut\t\tm.
+29851\tparašutist\t\tm.anim.
+23773\tparavan\t\tm.
+1820\tparazit\t\tm.anim.
+29855\tparazitizm\t\tm.sg.
+29856\tparazitny\t\tadj.
+29857\tparazitovati\t\tv.intr. ipf.
+23876\tparfum\t\tm.
+36723\tparfumovati sę\t\tv.refl. ipf.
+23877\tparfumovati\t\tv.tr. ipf.
+29859\tpariti\t\tv.intr. ipf.
+18201\tPariž\t\tm.sg.
+4906\tparižsky\t\tadj.
+32408\tpark\t\tm.
+32410\tparkovati sę\t\tv.refl. ipf./pf.
+32409\tparkovati\t\tv.tr. ipf./pf.
+32411\tparkovišče\t\tn.
+1185\tparlament\t\tm.
+35061\tparlamentarny\t\tadj.
+23635\tparna mašina\t\tf.
+33231\tparno čislo\t\tn.
+36702\tparny valec\t\tm.
+29861\tparny\t\tadj.
+29863\tparny\t\tadj.
+35218\tparodija\t\tf.
+35422\tparohija\t\tf.
+10456\tparola\t\tf.
+22413\tparovoz\t\tm.
+32036\tparšivy\t\tadj.
+17000\tparticip\t\tm.
+2994\tpartija\t\tf.
+23452\tpartitura\t\tf.
+2911\tpartner\t\tm.anim.
+36090\tpartnerka\t\tf.
+5161\tpartnerstvo\t\tn.
+18202\tpas\t\tm.
+36621\tpasaž\t\tm.
+36622\tpasaž\t\tm.
+3005\tpasažer\t\tm.anim.
+2906\tpasažersky\t\tadj.
+36710\tpasians\t\tm.sg.
+2400\tpasivny\t\tadj.
+5264\tpasport\t\tm.
+20972\tpasť\t\tf.
+32945\tpasti sę\t\tv.refl. ipf.
+5015\tpasti\t\tv.intr. pf.
+5017\tpasti\t\tv.tr. ipf.
+20975\tpastuh\t\tm.anim.
+20978\t#pastva\t\tf.
+20979\tpastvišče\t\tn.
+20980\tpastyŕ\t\tm.anim.
+20981\tpastyŕ\t\tm.anim.
+36302\tpat\t\tm.
+23769\tpatent\t\tm.
+35680\tpatriarh\t\tm.anim.
+35681\tpatriarhat\t\tm.
+35461\tpatriot\t\tm.anim.
+35462\tpatriotičny\t\tadj.
+35463\tpatriotizm\t\tm.sg.
+20015\tpatronizovati\t\tv.tr. ipf.
+10465\tpauza\t\tf.
+10466\tpauzovati\t\tv.intr. ipf.
+33651\tpav\t\tm.anim.
+23097\tpavian\t\tm.anim.
+10467\tpavųčina\t\tf.
+10469\tpavųčja niť\t\tf.
+431\tpavųk\t\tm.anim.
+35316\tpazigrafija\t\tf.
+1697\tpazuha\t\tf.
+2842\tpčela\t\tf.
+29868\tpčelaŕ\t\tm.anim.
+36029\tpčelaŕstvo\t\tn.sg.
+29869\tpčeliny\t\tadj.
+29871\tpčeľji\t\tadj.
+29870\tpčeľnik\t\tm.
+20983\tpeć\t\tm.
+14829\tpečenj\t\tf.
+278\tpečęť\t\tf.
+23616\tpečętaŕ\t\tm.anim.
+23609\tpečętaŕstvo\t\tn.sg.
+2358\tpečętati\t\tv.tr. ipf.
+18203\tpečivo\t\tn.
+23604\tpedagog\t\tm.anim.
+23605\tpedagogičny\t\tadj.
+23603\tpedagogika\t\tf.
+753\tpedofil\t\tm.anim.
+1539\tpěga\t\tf.
+2375\tpěgavy\t\tadj.
+29872\tpěhota\t\tf.
+20985\tpekaŕ\t\tm.anim.
+20986\tpekarnja\t\tf.
+29873\tpekľny\t\tadj.
+29874\tpeklo\t\tn.
+20989\tpekti sę\t\tv.refl. ipf.
+2840\tpekti\t\tv.tr. ipf.
+2277\tpelena\t\tf.
+36235\tpelerina\t\tf.
+16796\tpelikan\t\tm.anim.
+2256\tpelun\t\tm.
+32470\tpemza\t\tf.
+869\tpěna\t\tf.
+2187\tpendžabsky\t\tadj.
+14589\tpěnęz\t\tm.
+4417\tpěnęzy\t\tm.pl.
+10488\tpěnęžny\t\tadj.
+16046\tpenis\t\tm.
+16047\tpenisovy\t\tadj.
+1717\tpenj\t\tm.
+36375\tpěnna kųpělj\t\tf.
+4847\tpensija\t\tf.
+16050\tpensijny fond\t\tm.
+16049\tpensijny\t\tadj.
+2833\tpensioner\t\tm.anim.
+9340\tpenthaus\t\tm.
+15397\tpenthausny\t\tadj.
+2832\tpepel\t\tm.sg.
+10490\tpepelavy\t\tadj.
+34855\tpepelisty\t\tadj.
+36745\tpepeľnik\t\tm.
+3136\tpeprec\t\tm.
+29879\tpercepcija\t\tf.
+17001\tperfekt\t\tm.
+36033\tperforator\t\tm.
+32613\tpergament\t\tm.
+32097\tperiferija\t\tf.
+32098\tperiferijny\t\tadj.
+16052\tperiod\t\tm.
+35811\tperiodičny\t\tadj.
+4787\tperkusija\t\tf.
+23289\tperla\t\tf.
+36177\tperlovo proso\t\tn.
+2336\tpero\t\tn.
+3994\tpero\t\tn.
+10496\tperovy\t\tadj.
+35900\tPersija\t\tf.sg.
+35902\tpersijec\t\tm.anim.
+35901\tpersijsky\t\tadj.
+2343\tpersonal\t\tm.
+17002\tpersonaľny zaimennik\t\tm.
+29883\tpersonaľny\t\tadj.
+23079\tpersonaž\t\tm.
+36185\tpersonifikacija\t\tf.
+4294\tperspektiva\t\tf.
+10498\tPeru\t\tm.indecl.
+10499\tPeruanec\t\tm.anim.
+14830\tPeruansky\t\tadj.
+10500\tPerun\t\tm.anim.
+14831\tperun\t\tm.
+4318\tperverzija\t\tf.
+4320\tperverznik\t\tm.anim.
+10503\tperverzno\t\tadv.
+4319\tperverznosť\t\tf.
+4317\tperverzny\t\tadj.
+2345\tpes\t\tm.anim.
+5750\tpěsennik\t\tm.anim.
+6030\tpesimist\t\tm.anim.
+6028\tpesimističny\t\tadj.
+6029\tpesimizm\t\tm.sg.
+2344\tpěsnja\t\tf.
+18207\tpěsȯčna burja\t\tf.
+29886\tpěsȯčny\t\tadj.
+426\tpěsȯk\t\tm.
+1962\tpęsť\t\tf.
+36248\tpesticid\t\tm.
+615\tpestry\t\tadj.
+18208\tpěšak\t\tm.anim.
+659\tpěše\t\tadv.
+236\tpěšehod, pěšehodec\t\tm.anim.
+1079\tpěši\t\tadj.
+908\tpęť\t\tnum.card.
+44\tpęta\t\tf.
+2176\tpęťdesęt\t\tnum.card.
+32329\tpęťdesętničsky\t\tadj.
+23687\tpęťdesęty\t\tnum.ord.
+16455\tpęteraky\t\tnum.diff.
+16428\tpęterčęta\t\tn.pl.
+34564\tpęterka\t\tnum.subst.
+16443\tpęterny\t\tnum.mult.
+16432\tpętero\t\tnum.coll.
+35848\tpeticija\t\tf.
+10535\tpętikųtnik\t\tm.
+10533\tpętina\t\tnum.fract.
+10534\tpętivųgȯľnik\t\tm.
+16459\tpętka\t\tnum.subst.
+2368\tpętnadsęť\t\tnum.card.
+23683\tpętnadsęty\t\tnum.ord.
+35541\tpętno\t\tn.
+474\tpętȯk\t\tm.
+2279\tpęťsȯt, pęťsto\t\tnum.card.
+1876\tpęty\t\tnum.ord.
+10537\tpěvańje\t\tn.sg.
+1469\tpěvatelj\t\tm.anim.
+237\tpěvati\t\tv.tr. ipf.
+32924\tphati sę do/za\t\tv.refl. ipf.
+32905\tphati\t\tv.tr. ipf.
+32907\tphnųti\t\tv.tr. pf.
+32491\tpianist\t\tm.anim.
+32492\tpianistka\t\tf.
+5825\tpica\t\tf.
+20016\tpidžin\t\tm.
+36367\tpiedestal\t\tm.
+34969\tpigment\t\tm.
+23278\tpijanica\t\tm./f.
+35728\tpijanstvo\t\tn.sg.
+14834\tpijany\t\tadj.
+388\tpijavica\t\tf.
+10591\tpijemy\t\tadj.
+35588\tpikantny\t\tadj.
+15437\tpikirovańje\t\tn.
+10547\tpikirovati\t\tv.intr. ipf.
+15436\tpikirovka\t\tf.
+15439\tpikirovnica\t\tf.
+10549\tpikirovnik\t\tm.anim.
+23423\tpiknik\t\tm.
+32223\tpiky\t\tf.pl.
+2222\tpila\t\tf.
+34282\tpilina\t\tf.
+34281\tpiliti\t\tv.tr. ipf.
+16305\tpilot\t\tm.anim.
+33408\tpilulka\t\tf.
+20990\tpinati\t\tv.tr. ipf.
+32769\tping-pong\t\tm.sg.
+20586\tpingvin\t\tm.anim.
+6287\tpion\t\tm.
+3262\tpioner\t\tm.anim.
+10554\tpir\t\tm.
+10555\tpiramida\t\tf.
+10556\tpiramidovy\t\tadj.
+1959\tpirat\t\tm.anim.
+32456\tpiratstvo\t\tn.sg.
+10558\tpiroman\t\tm.anim.
+10560\tpiromaničny\t\tadj.
+10559\tpiromanija\t\tf.
+10563\tpirotehničny sklad\t\tm.
+10562\tpirotehničny\t\tadj.
+10564\tpirotehnik\t\tm.anim.
+10561\tpirotehnika\t\tf.
+10565\tpirovati\t\tv.intr. ipf.
+20992\tpisaľny stol\t\tm.
+10568\tpisańje\t\tn.
+3939\tpisatelj\t\tm.anim.
+15680\tpisati nanovo\t\tv.ipf.
+141\tpisati\t\tv.tr. ipf.
+5984\tpisemny\t\tadj.
+1147\tpiskati\t\tv.intr. ipf.
+20993\tpiśmę\t\tn.
+2988\tpiśmennosť\t\tf.
+23119\tpiśmennosť\t\tf.
+3002\tpiśmo\t\tn.
+20995\tpiśmo\t\tn.
+5981\tpistacija\t\tf.
+2087\tpistolet\t\tm.
+10580\tpistoľnik\t\tm.anim.
+14838\tpišati\t\tv.intr. ipf.
+5684\tpiščeti\t\tv.intr. ipf.
+18209\tpišęća mašina\t\tf.
+18210\tpišęći stroj\t\tm.
+1973\tpiti\t\tv.tr. ipf.
+10590\tpitna voda\t\tf.
+4181\tpitny\t\tadj.
+35494\tpivnica\t\tf.
+35495\tpivnica\t\tf.
+2067\tpivo\t\tn.
+35730\tpivovar\t\tm.anim.
+35729\tpivovarnja\t\tf.
+35731\tpivovarsky\t\tadj.
+29902\tpizda\t\tf.
+10598\tpižama\t\tf.
+3210\tplač\t\tm.sg.
+10601\tplačlivy\t\tadj.
+35219\tplagiat\t\tm.
+2261\tplakat\t\tm.
+2177\tplakati\t\tv.intr. ipf.
+380\tplåmenj\t\tm.
+2872\tplan\t\tm.
+581\tplaneta\t\tf.
+36624\tplankton\t\tm.
+650\tplanovati\t\tv.tr. ipf.
+29904\tplanšet\t\tm.
+2373\tplast\t\tm.
+36925\tplastelin\t\tm.
+18211\tplastičny\t\tadj.
+18212\tplastik\t\tm.sg.
+18213\tplastikovy\t\tadj.
+2378\tplašč\t\tm.
+4276\tplata\t\tf.
+10615\tplaťba\t\tf.
+10617\tplaťbovy\t\tadj.
+10616\tplaťby\t\tf.pl.
+3800\tplatform\t\tm.
+22632\tplatina\t\tf.sg.
+10619\tplatitelj\t\tm.anim.
+2114\tplatiti\t\tv.tr. ipf.
+94\tplåtno\t\tn.
+10625\tplavańje\t\tn.
+20997\tplavati\t\tv.intr. ipf.
+20999\tplavny\t\tadj.
+21001\tplåvy\t\tadj.
+5196\tplaž\t\tf.
+36910\tplebiscit\t\tm.
+16344\tplemę\t\tn.
+14841\tplemenec\t\tm.anim.
+14842\tplemenica\t\tf.
+23403\tplen\t\tm.
+23405\tpleniti\t\tv.tr. ipf.
+18223\tpleskańje\t\tn.sg.
+18224\tpleskati\t\tv.tr. ipf.
+18225\tplesknųti\t\tv.tr. pf.
+2068\tplěsnj\t\tf.
+5019\tplesti\t\tv.tr. ipf.
+32092\tpletenka\t\tf.
+31722\tplěti\t\tv.tr. ipf.
+36060\tplěva\t\tf.
+36061\tplěvnja\t\tf.
+35543\tpljama\t\tf.
+1348\tpljuća\t\tf.
+3275\tpljunųti\t\tv.intr. pf.
+36852\tpljuskati\t\tv.intr. ipf.
+36853\tpljusknųti\t\tv.intr. pf.
+32509\tpljuš\t\tm.sg.
+32510\tpljuševy\t\tadj.
+1105\tpljuvati\t\tv.intr. ipf.
+1346\tplod\t\tm.
+1377\tplod\t\tm.
+23024\tploditi\t\tv.tr. ipf.
+23025\tploditi\t\tv.tr. ipf.
+36121\tplodnosť\t\tf.
+2402\tplodny\t\tadj.
+5224\tplosky\t\tadj.
+1372\tplošča\t\tf.
+1963\tplȯť\t\tf.
+5223\tplot\t\tm.
+34867\tplȯť\t\tf.
+1972\tplug\t\tm.
+16970\tplus\t\tm.
+17003\tpluskvamperfekt\t\tm.
+34913\tpluti\t\tv.intr. ipf.
+22638\tplutonij\t\tm.sg.
+10626\tplyvti\t\tv.intr. ipf.
+18226\tpnevmonija\t\tf.
+21009\tpnųti\t\tv.tr. pf.
+36703\tpo mojemu mněńju\t\tadv.
+10648\tpo mojemu skromnomu mněńju\t\tadv.
+18227\tpo odnošeńju k\t\tprep.
+35696\tpo pričině\t\tprep.
+36147\tpo slučaju\t\tprep.
+36233\tpo strělkě časovnika\t\tadv.
+36271\tpo svaťbě povęzany\t\tadj.
+2215\tpo\t\tprep.
+4941\tpo\t\tprep.
+4942\tpo\t\tprep.
+4943\tpo\t\tprep.
+10642\tpo\t\tprep.
+10644\tpo\t\tprep.
+10645\tpo\t\tprep.
+10647\tpo\t\tprep.
+10655\tpoběda\t\tf.
+34982\tpoběditelj\t\tm.anim.
+18232\tpoběditi\t\tv.intr. pf.
+18229\tpoběđati\t\tv.intr. ipf.
+35862\tpoběgti\t\tv.intr. pf.
+4050\tpobiti\t\tv.intr. pf.
+10652\tpobiťje\t\tn.
+10653\tpobity\t\tadj.
+35143\tpoblågodariti\t\tv.tr. pf.
+36892\tpoblågoželati\t\tv.intr. pf.
+20018\tpoblåžlivosť\t\tf.
+20019\tpoblåžlivy\t\tadj.
+10656\tpoblizu\t\tadv.
+103\tpobrěžny\t\tadj.
+2159\tpobuditi\t\tv.tr. pf.
+580\tpobuđati\t\tv.tr. ipf.
+18233\tpobuđeńje\t\tn.
+4549\tpobyťje\t\tn.
+112\tpocělovati\t\tv.intr. pf.
+1129\tpocělunȯk\t\tm.
+10668\tpocěluvka\t\tf.
+1085\tpočekati\t\tv.intr. ipf.
+22788\tpočęti sę\t\tv.tr. pf.
+1078\tpočęti\t\tv.tr. pf.
+10672\tpočęťje\t\tn.
+10669\tpočętkovo\t\tadv.
+10670\tpočętkovy\t\tadj.
+20021\tpočętkujųći\t\tadj.
+35335\tpočętkujųći\t\tm.anim.
+1077\tpočętȯk\t\tm.
+18234\tpočin\t\tm.
+10675\tpočinati sę\t\tv.refl. ipf.
+2835\tpočinati\t\tv.tr. ipf.
+23889\tpočrveněti\t\tv.intr. pf.
+29916\tpočuťje\t\tn.
+3134\tpočva\t\tf.
+10678\tpod nakazom\t\tprep.
+10679\tpod voditeljstvom\t\tprep.
+10681\tpod vodstvom\t\tprep.
+737\tpod\t\tprep.
+4933\tpod\t\tprep.
+35393\tpodańje\t\tn.
+18235\tpodanȯk\t\tm.
+4323\tpodariti\t\tv.tr. pf.
+5580\tpodarȯk\t\tm.
+5160\tpodati\t\tv.tr. pf.
+18238\tpodavatelj\t\tm.anim.
+18243\tpodavati parų prikladov\t\tv.ipf.
+5159\tpodavati\t\tv.tr. ipf.
+35887\tpodbirati\t\tv.tr. ipf.
+1448\tpodbrådȯk\t\tm.
+35888\tpodbrati\t\tv.tr. pf.
+1626\tpodčas\t\tprep.
+2053\tpodčrkati\t\tv.tr. ipf.
+2837\tpodčrknųti\t\tv.tr. pf.
+4085\tpoddańje\t\tn.
+18244\tpoddany\t\tm.anim.
+4084\tpoddati sę\t\tv.refl. pf.
+36428\tpoddati\t\tv.tr. pf.
+10693\tpoddavajemosť\t\tf.
+10694\tpoddavajemy\t\tadj.
+4083\tpoddavati sę\t\tv.refl. ipf.
+10697\tpoddavati\t\tv.tr. ipf.
+856\tpoddŕžati\t\tv.tr. pf.
+10699\tpoddŕživańje\t\tn.
+1951\tpoddŕživati\t\tv.tr. ipf.
+36400\tpoddŕžka\t\tf.
+5575\tpodękovati\t\tv.intr. pf.
+1952\tpoděl\t\tm.
+36011\tpoděliti sę\t\tv.refl. pf.
+2241\tpoděliti\t\tv.tr. pf.
+18249\tpoděti sę\t\tv.refl. pf.
+18251\tpoděvati sę\t\tv.refl. ipf.
+18253\tpodglåvnica\t\tf.
+16306\tpodględ\t\tm.
+5385\tpodględati\t\tv.intr. ipf.
+5387\tpodględěti\t\tv.intr. pf.
+36558\tpodgoŕje\t\tn.
+18254\tpodgovarjati\t\tv.tr. ipf.
+18255\tpodgovoriti\t\tv.tr. pf.
+23892\tpodgrěti\t\tv.tr. pf.
+23893\tpodgrěvati\t\tv.tr. ipf.
+20022\tpodgrupa\t\tf.
+18256\tpodhod\t\tm.
+18259\tpodhoditi (k)\t\tv.intr. ipf.
+18257\tpodhoditi\t\tv.intr. ipf.
+5176\tpodimati\t\tv.tr. ipf.
+23241\tpodium\t\tm.
+5177\tpodjęti\t\tv.tr. pf.
+20595\tpodkategorija\t\tf.
+35535\tpodkazka\t\tf.
+11099\tpodklad\t\tm.
+32682\tpodkladati\t\tv.tr. ipf.
+36904\tpodključati sę\t\tv.refl. ipf.
+36898\tpodključati\t\tv.tr. ipf.
+36901\tpodključiti sę\t\tv.refl. pf.
+36895\tpodključiti\t\tv.tr. pf.
+453\tpodkopati\t\tv.tr. pf.
+2199\tpodkopyvati\t\tv.tr. ipf.
+36826\tpodkova\t\tf.
+32095\tpodkovati\t\tv.tr. pf.
+26778\tpodkovyvati\t\tv.tr. ipf.
+20024\tpodkrěpiti\t\tv.tr. pf.
+20025\tpodkrěpjati\t\tv.tr. ipf.
+36595\tpodkryvje\t\tn.
+5791\tpodkup\t\tm.
+10724\tpodkupiti\t\tv.tr. pf.
+10723\tpodkupovati\t\tv.tr. ipf.
+10725\tpodkupstvo\t\tn.sg.
+32683\tpodlagati\t\tv.tr. ipf.
+18260\tpodle\t\tprep.
+15446\tpodlec\t\tm.anim.
+20596\tpodležati\t\tv.intr. ipf.
+4493\tpodliti\t\tv.tr. pf.
+4492\tpodlivati\t\tv.tr. ipf.
+20598\tpodlivka\t\tf.
+1115\tpodloga\t\tf.
+20600\tpodloga\t\tf.
+32684\tpodložiti\t\tv.tr. pf.
+36245\tpodložka dlja myši\t\tf.
+36244\tpodložka\t\tf.
+18262\tpodly\t\tadj.
+20603\tpodměniti\t\tv.tr. pf.
+20602\tpodměnjati\t\tv.tr. ipf.
+20027\tpodmet\t\tm.
+36456\tpodmnožstvo\t\tn.
+34631\tpodmoŕsky\t\tadj.
+33718\tpodnapisy\t\tm.pl.
+18264\tpodnebje\t\tn.
+33560\tpodnebje\t\tn.
+18265\tpodnebne izměny\t\tf.pl.
+18266\tpodnebny\t\tadj.
+20604\tpodnos\t\tm.
+18267\tpodnožišče\t\tn.
+10729\tpodnurjati\t\tv.tr. ipf.
+14850\tpodoba\t\tf.
+14851\tpodoba\t\tf.
+18268\tpodobati sę\t\tv.refl. ipf.
+2404\tpodobno\t\tadv.
+3866\tpodobnosť\t\tf.
+1718\tpodobny\t\tadj.
+33514\tpododděl\t\tm.
+34766\tpodȯjdti (k)\t\tv.intr. pf.
+36534\tpodȯjdti\t\tv.intr. pf.
+34920\tpodokȯnnik\t\tm.
+10739\tpodȯlg\t\tprep.
+36169\tpodȯšva\t\tf.
+16475\tpodpaliti\t\tv.tr. pf.
+15453\tpodpaljač\t\tm.anim.
+16474\tpodpaljati\t\tv.tr. ipf.
+10743\tpodpaljeńje\t\tn.
+35657\tpodpazuha\t\tf.
+10761\tpodpirany od\t\tadj.
+1114\tpodpirati\t\tv.tr. ipf.
+36303\tpodpis\t\tm.
+3086\tpodpisati\t\tv.tr. pf.
+10750\tpodpiska\t\tf.
+10751\tpodpisnik\t\tm.anim.
+1117\tpodpisyvati\t\tv.tr. ipf.
+2296\tpodpor\t\tm.
+10758\tpodporiti\t\tv.tr. pf.
+21010\tpodporka\t\tf.
+10759\tpodpornik\t\tm.anim.
+10760\tpodporny\t\tadj.
+18271\tpodråstka\t\tf.
+18272\tpodråstȯk\t\tm.anim.
+36445\tpodråzděl\t\tm.
+33516\tpodråzděliti\t\tv.tr. pf.
+33517\tpodråzděljati\t\tv.tr. ipf.
+33518\tpodråzděljeńje\t\tn.
+22358\tpodręditi\t\tv.tr. pf.
+22360\tpodrędny\t\tadj.
+22359\tpodręđati\t\tv.tr. ipf.
+21426\tpodrobnosť\t\tf.
+35083\tpodrobny\t\tadj.
+1116\tpodrųčnik\t\tm.
+10763\tpodrųčny\t\tadj.
+10764\tpodružiti sę\t\tv.refl. pf.
+6288\tpodsekretaŕ\t\tm.anim.
+10769\tpodslušati\t\tv.tr. pf.
+10767\tpodslušivańje\t\tn.
+10768\tpodslušivatelj\t\tm.anim.
+22778\tpodslušivati\t\tv.tr. ipf.
+5389\tpodsměhati sę\t\tv.refl. ipf.
+5390\tpodsměhnųti sę\t\tv.refl. pf.
+21752\tpodstava\t\tf.
+36145\tpodstavka na mylo\t\tf.
+10772\tpodstrěkańje\t\tn.
+10774\tpodstrěkatelj\t\tm.anim.
+5612\tpodstrěkati\t\tv.tr. ipf.
+4494\tpodstrěknųti\t\tv.tr. ipf.
+21959\tpodstųpati k\t\tv.intr. ipf.
+21960\tpodstųpiti k\t\tv.intr. pf.
+18273\tpodsvědomje\t\tn.
+10779\tpodsvědomo\t\tadv.
+6220\tpodsvědomosť\t\tf.
+6221\tpodsvědomy\t\tadj.
+35438\tpodtaliŕka\t\tf.
+34623\tpodtekst\t\tm.
+36446\tpodtip\t\tm.
+10783\tpodtiskańje\t\tn.
+10782\tpodtiskati\t\tv.tr. ipf.
+20029\tpodtisknųti\t\tv.tr. pf.
+34627\t#podton\t\tm.
+14860\tpodtrimati\t\tv.tr. pf.
+14861\tpodtrimyvańje\t\tn.
+14862\tpodtrimyvati\t\tv.tr. ipf.
+5267\tpoduška\t\tf.
+17085\tpodvajati\t\tv.tr. ipf.
+35496\tpodval\t\tm.
+6014\tpodvažati\t\tv.tr. ipf.
+6016\tpodvažiti\t\tv.tr. pf.
+22195\tpodvęzka\t\tf.
+18274\tpodvig\t\tm.
+10788\tpodvisiti\t\tv.tr. pf.
+3142\tpodvodna loď\t\tf.
+10727\tpodvodnica\t\tf.
+34629\tpodvodno těčeńje\t\tn.
+23272\tpodvodny\t\tadj.
+17005\tpodvojiti\t\tv.tr. ipf.
+35564\tpodvŕgańje\t\tn.
+22584\tpodvŕgati\t\tv.tr. ipf.
+22585\tpodvŕgnųti\t\tv.tr. pf.
+16310\tpodzemje\t\tn.
+23573\tpodzemna voda\t\tf.
+36655\tpodzemny svět\t\tm.sg.
+16308\tpodzemny\t\tadj.
+10741\tpodzirati\t\tv.tr. ipf.
+10742\tpodzirlivy\t\tadj.
+10740\t#podzrěny\t\tadj.
+1770\tpodzrěti\t\tv.tr. pf.
+2093\tpodzrěvati\t\tv.tr. ipf.
+921\tpoema\t\tf.
+16311\tpoet\t\tm.anim.
+23714\tpoetičny\t\tadj.
+20030\tpoezija\t\tf.
+36041\tpogaršati\t\tv.tr. ipf.
+34386\tpogladiti\t\tv.tr. pf.
+34387\tpogladiti\t\tv.tr. pf.
+18276\tpoglåvȯk\t\tm.
+2405\tpoględ\t\tm.
+3357\tpoględ\t\tm.
+10796\tpoględańje vitrin\t\tn.
+10798\tpoględatelj vitrin\t\tm.anim.
+10797\tpoględatelj\t\tm.anim.
+5819\tpoględati\t\tv.ipf.
+31879\tpoglųbiti\t\tv.tr. pf.
+25654\tpoglųbjati\t\tv.tr. ipf.
+3868\tpogoda\t\tf.
+18277\tpogȯltnųti sȯlzy\t\tv.pf.
+10800\tpogȯltnųti\t\tv.tr. pf.
+18278\tpogon\t\tm.
+18279\tpogon\t\tm.
+10801\tpogorno\t\tadv.
+36042\tpogoršiti\t\tv.tr. pf.
+36572\tpogovoriti\t\tv.intr. pf.
+36368\tpograničje\t\tn.
+36444\tpograničny\t\tadj.
+5664\tpogrdlivy\t\tadj.
+35565\tpogreb\t\tm.
+36498\tpogrebati\t\tv.tr. ipf.
+36499\tpogrebti\t\tv.tr. pf.
+18282\tpogrěšiti\t\tv.intr. pf.
+491\tpogrěška\t\tf.
+21428\tpogrųziti\t\tv.tr. pf.
+21427\tpogrųžati\t\tv.tr. ipf.
+4308\tpogynati\t\tv.intr. ipf.
+4309\tpogynųti\t\tv.intr. pf.
+18284\tpohmeľje\t\tn.
+3661\tpohod\t\tm.
+18285\tpohod\t\tm.
+23894\tpohodka\t\tf.
+18286\tpohođeńje\t\tn.
+32335\tpohođeńje\t\tn.
+36318\tpohota\t\tf.
+23102\tpohristijaniti\t\tv.tr. pf.
+23101\tpohristijanjati\t\tv.tr. ipf.
+29921\tpohva\t\tf.
+10813\tpohvala\t\tf.
+522\tpohvaliti\t\tv.tr. pf.
+26040\tpohvaľny\t\tadj.
+10814\tpohvaly\t\tf.pl.
+6153\tpohybka\t\tf.
+10806\tpohyćańje\t\tn.
+4351\tpohyćati\t\tv.tr. ipf.
+10808\tpohyćenec\t\tm.anim.
+4350\tpohyćeńje\t\tn.
+10809\tpohyćeny\t\tadj.
+4352\tpohytitelj\t\tm.anim.
+4349\tpohytiti\t\tv.tr. pf.
+18289\tpoiskati\t\tv.tr. pf.
+20031\tpoiskyvati\t\tv.tr. ipf.
+29922\tpojas\t\tm.
+10817\tpojaviti sę\t\tv.refl. pf.
+16312\tpojavjati sę\t\tv.refl. ipf.
+10818\tpojavjeńje\t\tn.
+4027\tpojdti\t\tv.intr. pf.
+20034\tpojedinȯk\t\tm.
+3274\tpojehati\t\tv.intr. pf.
+18291\tpojęti\t\tv.tr. pf.
+5005\tpojęťje\t\tn.
+1917\tpojezd\t\tm.
+32703\tpojiti\t\tv.tr. ipf.
+17006\tpojmańje\t\tn.
+18292\tpojmati\t\tv.tr. ipf.
+10828\tpoka\t\tconj.
+31968\tpokajańje\t\tn.
+31970\tpokajati sę\t\tv.refl. pf.
+1916\tpokarati\t\tv.tr. pf.
+35409\tpokarati\t\tv.tr. pf.
+20035\tpokarjati\t\tv.tr. ipf.
+1915\tpokazati\t\tv.tr. pf.
+20037\tpokazny\t\tadj.
+1108\tpokazyvati\t\tv.tr. ipf.
+32062\tpoker\t\tm.sg.
+10829\tpokladati\t\tv.tr. ipf.
+32591\tpoklicati\t\tv.intr. ipf.
+32592\tpoklik\t\tm.
+36105\tpoklon\t\tm.
+36591\tpokloniti sę\t\tv.refl. pf.
+18294\tpokoj\t\tm.sg.
+35386\tpokojnik\t\tm.
+35385\tpokojny\t\tadj.
+23115\tpokoliko\t\tconj.
+2431\tpokoljeńje\t\tn.
+14847\tpokoriti\t\tv.tr. pf.
+20040\tpokoriti\t\tv.tr. pf.
+14846\tpokorjeny\t\tadj.
+5028\tpokornosť\t\tf.
+5026\tpokorny\t\tadj.
+18296\tpokositi\t\tv.tr. pf.
+23895\tpokrčati ramenami\t\tv.ipf.
+21429\tpokrčiti ramenami\t\tv.pf.
+18297\tpokrestiti\t\tv.tr. pf.
+10838\tpokromě\t\tadv.
+14867\tpokrȯvnik\t\tm.anim.
+6158\tpokrȯvnosť\t\tf.
+6154\tpokrȯvny\t\tadj.
+1769\tpokryti\t\tv.tr. pf.
+18298\tpokryťje\t\tn.
+523\tpokryv\t\tm.
+4506\tpokryva\t\tf.
+29926\tpokryvalo\t\tn.
+158\tpokryvati\t\tv.tr. ipf.
+32114\tpokupka\t\tf.
+18299\tpokus\t\tm.
+23896\tpokusiti\t\tv.tr. pf.
+23897\tpokusiti\t\tv.tr. pf.
+347\tpokušati\t\tv.tr. ipf.
+23898\tpokušati\t\tv.tr. ipf.
+20043\tpokušeńje na něčije žiťje\t\tn.
+1172\tpokušeńje\t\tn.
+23309\tpokušeńje\t\tn.
+3218\tpol-, polu-\t\tprefix
+1351\tpol\t\tm.
+32331\tpol\t\tm.
+21012\tpola\t\tf.
+2843\tpolabsky\t\tadj.
+36851\tpolakovati\t\tv.tr. pf.
+23606\tpolarizacija\t\tf.
+10847\tpolarno sijańje\t\tn.sg.
+1514\tpolarny\t\tadj.
+10850\tpoldenj\t\tm.
+36327\tpolder\t\tm.
+21014\tpoldnik\t\tm.
+36203\tpolěno\t\tn.
+10851\tpolet\t\tm.
+2921\tpoletěti\t\tv.intr. pf.
+1352\tpolěv\t\tprep.
+5284\tpolica\t\tf.
+2836\tpolicija\t\tf.
+2206\tpolicijnik\t\tm.anim.
+10855\tpolicijny\t\tadj.
+10857\tpolirati\t\tv.tr. ipf.
+18300\tpolitbjuro\t\tn.
+23607\tpoliteizm\t\tm.sg.
+23772\tpoliti\t\tv.tr. pf.
+373\tpolitičny\t\tadj.
+853\tpolitik\t\tm.anim.
+1950\tpolitika\t\tf.
+23636\tpolitologija\t\tf.sg.
+23771\tpolivati\t\tv.tr. ipf.
+20605\tpolivka\t\tf.
+1869\tPoljak\t\tm.anim.
+3671\tpoljana\t\tf.
+3670\tpoljanka\t\tf.
+3614\tpolje\t\tn.
+28406\tpoljny klen\t\tm.
+36139\tpoljny konik\t\tm.
+16918\tpoljny\t\tadj.
+2844\tPoljska\t\tf.sg.
+2935\tpoljsky\t\tadj.
+10889\tpoljzovati\t\tv.tr. ipf.
+14872\tpȯlk\t\tm.
+1207\tpȯlkovnik\t\tm.anim.
+1082\tpȯlniti\t\tv.tr. ipf.
+3799\tpȯlno\t\tadv.
+5257\tpolnoć\t\tf.
+10867\tpȯlnolětnosť\t\tf.
+21003\tpȯlnolětny\t\tadj.
+18301\tpȯlnoluńje\t\tn.
+10868\tpȯlnomoćje\t\tn.
+18302\tpȯlnomoćnik\t\tm.anim.
+36883\tpȯlny naděje\t\tadj.
+3141\tpȯlny\t\tadj.
+17007\tpolovica\t\tf.
+35127\tpolovičny\t\tadj.
+3232\tpolovina\t\tf.
+21015\tpolovnik\t\tm.anim.
+3501\tpoložeńje\t\tn.
+10875\tpoloženy\t\tadj.
+1284\tpoložiti\t\tv.tr. pf.
+4699\tpolučati\t\tv.tr. ipf.
+4700\tpolučiti\t\tv.tr. pf.
+5259\tpoludńje\t\tn.
+3260\tpoluostrov\t\tm.
+10888\tpoluostrovny\t\tadj.
+20044\tpolus\t\tm.
+35842\tpolusamoglåska\t\tf.
+35361\tpoluvojenny\t\tadj.
+18304\tpȯlzati\t\tv.intr. ipf.
+36045\tpȯlzavica\t\tf.
+18306\tpȯlzti\t\tv.intr. ipf.
+36044\tpȯlzųća råstlina\t\tf.
+18303\tpȯlž\t\tm.anim.
+2205\tpomagati\t\tv.intr. ipf.
+14873\tpomalo\t\tadv.
+14874\tpomaly\t\tadj.
+4344\tpomaranča\t\tf.
+10893\tpomarančevy\t\tadj.
+32232\tpomazati\t\tv.tr. pf.
+36069\tpomelo\t\tn.
+20611\tpoměstiti\t\tv.tr. pf.
+23249\tpoměšany\t\tadj.
+20609\tpoměšćati\t\tv.tr. ipf.
+36780\tpoměščeńje\t\tn.
+36476\tpomfritky\t\tf.pl.
+1283\tpomidor\t\tm.
+23857\tpomilovańje\t\tn.
+23855\tpomilovati\t\tv.tr. pf.
+1745\tpomimo\t\tprep.
+20655\tpomiriti\t\tv.tr. pf.
+36037\tpomirjeńje\t\tn.sg.
+570\tpomněti\t\tv.tr. ipf.
+29940\tpomnik\t\tm.
+3945\tpomoć\t\tf.
+5831\tpomoćnik\t\tm.anim.
+5834\tpomoćnosť\t\tf.
+100\tpomoćny\t\tadj.
+2229\tpomogti\t\tv.intr. pf.
+585\tpomoŕsky\t\tadj.
+6089\tpompa\t\tf.
+34502\tpomrdati\t\t#v.intr. pf.
+14875\tpomsta\t\tf.
+29461\tpomyliti sę\t\tv.refl. pf.
+29460\tpomyliti\t\tv.tr. pf.
+34475\tpomyljeny\t\tadj.
+29458\tpomylka\t\tf.
+20045\tpomysl\t\tm.
+35854\tpomysliti\t\tv.tr. pf.
+10904\tponad\t\tprep.
+18309\tpončik\t\tm.
+709\tponedělȯk\t\tm.
+33343\tponěkde\t\tadv.
+33335\tponěkȯgda, poněkȯgdy\t\tadv.
+35113\tponěkoj\t\tpron.indef.
+35112\tponěktory\t\tpron.indef.
+10909\tponeže\t\tconj.
+23271\tponi\t\tm.anim.
+34860\tponiziti\t\tv.tr. pf.
+3144\tponiž, poniže\t\tprep.
+34861\tponižajųći\t\tadj.
+34858\tponižati\t\tv.tr. ipf.
+34859\tponižeńje\t\tn.
+14876\tponje\t\tadv.
+5961\tponovno\t\tadv.
+5963\tponovny\t\tadj.
+23265\tponožka\t\tf.
+36268\tpopaljenina\t\tf.
+1133\tpopel\t\tm.sg.
+10912\tpopelavy\t\tadj.
+34854\tpopelisty\t\tadj.
+36746\tpopeľnica\t\tf.
+5560\tpopiti\t\tv.tr. pf.
+4243\tpopivati\t\tv.tr. ipf.
+14877\tpoplava\t\tf.
+10916\tpoplaviti\t\tv.tr. pf.
+16315\tpoplavjati\t\tv.tr. ipf.
+34910\tpopluti\t\tv.intr. pf.
+10917\tpoplyvti\t\tv.intr. pf.
+23627\tpop-muzika\t\tf.
+10918\tpopoldenj\t\tm.
+10919\tpopoldenno spańje\t\tn.
+10920\tpopoldenny\t\tadj.
+10921\tpopȯlno\t\tadv.
+10922\tpopȯlnosť\t\tf.
+10923\tpopȯlny\t\tadj.
+281\tpopoludńje\t\tn.
+18311\tpopȯlzati\t\tv.intr. ipf.
+18313\tpopȯlzti\t\tv.intr. pf.
+1136\tpoprav\t\tprep.
+21430\tpoprava\t\tf.
+4528\tpopraviti\t\tv.tr. pf.
+4527\tpopravjati\t\tv.tr. ipf.
+4529\tpopravjeńje\t\tn.
+10931\tpopravka\t\tf.
+4531\tpopravnosť\t\tf.
+4530\tpopravny\t\tadj.
+21018\tpoprěčnik\t\tm.
+21019\tpoprěčny\t\tadj.
+20046\tpoprědnji, poprědny\t\tadj.
+228\tpoprěk\t\tprep.
+21021\tpoprěk\t\tadv.
+3428\tpoprěměnno\t\tadv.
+23311\tpoprobovati\t\tv.tr. pf.
+23901\tpoprositi\t\tv.tr. pf.
+4123\tpopŕśje\t\tn.
+21023\tpoprųga\t\tf.
+29944\tpopularnosť\t\tf.
+662\tpopularny\t\tadj.
+35342\tpopulizm\t\tm.sg.
+23060\tpopustiti\t\tv.tr. pf.
+23059\tpopušćati\t\tv.tr. ipf.
+23421\tpopytka i dostavka\t\tphrase
+10937\tpora spati\t\tphrase
+23353\tporåbiti\t\tv.tr. pf.
+23352\tporåbovati\t\tv.tr. ipf.
+14878\tporaditi\t\tv.tr. pf.
+23029\tporađati\t\tv.tr. ipf.
+23031\tporađati\t\tv.tr. ipf.
+1135\tporaniti\t\tv.tr. pf.
+18317\tporanjeńje\t\tn.
+23903\tporåsti\t\tv.intr. pf.
+18319\tporåvniti\t\tv.tr. pf.
+3143\tporaziti\t\tv.tr. pf.
+21431\tporaziti\t\tv.tr. pf.
+20612\tporåzuměti sę\t\tv.refl. pf.
+20613\tporåzuměvati sę\t\tv.refl. ipf.
+5539\tporažati\t\tv.tr. ipf.
+21433\tporažka\t\tf.
+3783\tporcija\t\tf.
+5198\tporęd\t\tprep.
+3145\tporędȯk\t\tm.
+2360\tporno\t\tn.sg.
+32060\tpornografičny\t\tadj.
+32059\tpornografija\t\tf.
+10946\tporod\t\tm.
+23028\tporoditi\t\tv.tr. pf.
+36627\tporoditi\t\tv.tr. pf.
+36628\tporoditi\t\tv.tr. pf.
+21434\tporok\t\tm.
+14879\tporota\t\tf.
+15472\tporotnica\t\tf.
+15474\tporotnik\t\tm.anim.
+14880\tporotny\t\tadj.
+21777\tport\t\tm.
+17008\tportal\t\tm.
+23251\tporter\t\tm.
+23253\tportier\t\tm.anim.
+34757\tportmone\t\tn.indecl.
+4793\tportret\t\tm.
+16424\tPortugalec\t\tm.anim.
+979\tPortugalija\t\tf.sg.
+16425\tPortugalka\t\tf.
+1353\tportugaľsky\t\tadj.
+18321\tporųbati\t\tv.tr. pf.
+10961\tporųčati sę\t\tv.refl. ipf.
+10960\tporųčenec\t\tm.anim.
+3440\tporųčeńje\t\tn.
+10955\tporųčeny\t\tadj.
+5849\tporųčitelj\t\tm.anim.
+3649\tporųčiteljstvo\t\tn.
+10959\tporųčiti sę\t\tv.refl. pf.
+21436\tporųčnik\t\tm.anim.
+21437\tporušiti\t\tv.tr. pf.
+21438\tporyv\t\tm.
+21439\tposada\t\tf.
+34189\tposcati sę\t\tv.refl. pf.
+1220\tposěćati\t\tv.tr. ipf.
+18322\tposěćeńje\t\tn.
+10965\tposědańje\t\tn.
+16316\tposědatelj\t\tm.anim.
+1138\tposědati\t\tv.tr. ipf.
+10964\tposědlivy\t\tadj.
+10963\tposědnik\t\tm.anim.
+33241\tposějati\t\tv.tr. pf.
+18323\tposěkati\t\tv.tr. pf.
+18325\tposěkti\t\tv.tr. pf.
+6058\tposeljeńje\t\tn.
+17009\tposesivny zaimennik\t\tm.
+21442\tposęsti\t\tv.tr. pf.
+25756\tposětitelj\t\tm.anim.
+1024\tposětiti\t\tv.tr. pf.
+36794\tposkųpiti sę\t\tv.refl. pf.
+21443\tposlanec\t\tm.anim.
+2133\tposlańje\t\tn.
+2974\tposlannik\t\tm.anim.
+1912\tposlati\t\tv.tr. pf.
+2058\tposlě\t\tprep.
+10975\tposlě\t\tadv.
+18328\tposlědica\t\tf.
+2323\tposlědnji, poslědny\t\tadj.
+4139\tposlědovatelj\t\tm.anim.
+10980\tposlědovateljno\t\tadv.
+2333\tposlědovateljny\t\tadj.
+34870\tposlědovati\t\t#v.tr. pf.
+2327\tposlědstvo\t\tn.
+18330\tposlěporodny\t\tadj.
+10984\tposlětręšeńje\t\tn.
+10968\tposlizgnųti sę\t\tv.refl. pf.
+71\tposlušati\t\tv.tr. pf.
+5032\tposlušnosť\t\tf.
+5031\tposlušny\t\tadj.
+17010\tposluživati sę\t\tv.refl. ipf.
+36509\tposměšišče\t\tn.
+20615\t#posmotriti\t\tv.intr. pf.
+34938\tposmŕtno\t\tadv.
+34937\tposmŕtny\t\tadj.
+3430\tposȯl\t\tm.anim.
+33027\tposoliti\t\tv.tr. pf.
+33029\tposoljeny\t\tadj.
+6019\tposȯvětovati\t\tv.tr. pf.
+33225\tpospati\t\tv.intr. pf.
+5914\tpospěh\t\tm.
+3272\tpospěšiti\t\tv.intr. pf.
+23814\tpospěšno\t\tadv.
+23056\tposrany\t\tadj.
+29674\tposrěbriti\t\tv.tr. pf.
+33384\tposrěbrjati\t\tv.tr. ipf.
+33385\tposrěbrjeny\t\tadj.
+3154\tposrěd\t\tprep.
+3257\tposrědkovati\t\tv.intr. ipf.
+5172\tposrědničstvo\t\tn.sg.
+1150\tposrědnik\t\tm.anim.
+5091\tposrědnje\t\tadv.
+487\tposrědnji, posrědny\t\tadj.
+21449\tposrědnji, posrědny\t\tadj.
+692\tposrědstvom\t\tprep.
+21745\tpostanavjati\t\tv.tr. ipf.
+21747\tpostanoviti\t\tv.tr. pf.
+21749\tpostanovjeńje\t\tn.
+21453\tpostarati sę\t\tv.refl. pf.
+21455\tpostarěti\t\tv.intr. pf.
+35001\tpostaviti pytańje\t\tv.pf.
+11008\tpostaviti\t\tv.tr. pf.
+16323\tpostaviti\t\tv.tr. pf.
+11009\tpostavjati\t\tv.tr. ipf.
+16320\tpostavjati\t\tv.tr. ipf.
+11010\tpostavjeńje\t\tn.
+16321\tpostavjeńje\t\tn.
+11013\tpostelina\t\tf.
+33443\tposteliti\t\tv.tr. pf.
+11012\tpostelj\t\tf.
+15477\tposteljny klop\t\tm.anim.
+21862\tpostigati\t\tv.tr. ipf.
+21864\tpostignųti\t\tv.tr. pf.
+33446\tpostlati\t\tv.tr. pf.
+21741\tpostojanno\t\tadv.
+20047\tpostojanny\t\tadj.
+35253\tpostojka\t\tf.
+5866\tpostrah\t\tm.
+21883\tpostrånny\t\tadj.
+21884\tpostrånny\t\tadj.
+23625\tpȯstrųg\t\tm.anim.
+36464\tpostulat\t\tm.
+36465\tpostulovati\t\tv.tr. ipf./pf.
+21955\tpostųp\t\tm.
+21957\tpostųp\t\tm.
+4231\tpostųpańje\t\tn.
+21953\tpostųpati s\t\tv.ipf.
+1471\tpostųpati\t\tv.intr. ipf.
+21954\tpostųpiti s\t\tv.pf.
+3148\tpostųpiti\t\tv.intr. pf.
+1174\tpostųpka\t\tf.
+1154\tpostųpno\t\tadv.
+20051\tpostųpny\t\tadj.
+3527\tposųda\t\tf.
+35478\tposuvnik\t\tm.
+3070\tposvęćati\t\tv.tr. ipf.
+35534\tposvęćeńje\t\tn.
+18333\tposvęćeny\t\tadj.
+22229\tposvědčati\t\tv.tr. ipf.
+22227\tposvědčiti\t\tv.tr. pf.
+35580\tposvědčiti\t\tv.intr. pf.
+652\tposvętiti\t\tv.tr. pf.
+1025\tposylati\t\tv.tr. ipf.
+5751\tposylka\t\tf.
+34896\tpoščęditi\t\tv.tr. pf.
+3259\tpoškoditi\t\tv.intr. pf.
+16326\tpoškođeńje\t\tn.
+11039\tpoškođeny\t\tadj.
+4642\tpošta\t\tf.
+21024\tpoštaŕ\t\tm.anim.
+35400\tpoštny kod\t\tm.
+21025\tpoštny uręd\t\tm.
+35399\tpoštny\t\tadj.
+3869\tpot\t\tm.sg.
+4240\tpotapjati\t\tv.tr. ipf.
+29744\tpotemněti\t\tv.intr. pf.
+3149\tpotencial\t\tm.
+4373\tpotenciaľny\t\tadj.
+4314\tpotěńje\t\tn.
+4313\tpotěti\t\tv.intr. ipf.
+34871\tpotiti sę\t\tv.refl. ipf.
+22075\tpotok\t\tm.
+22077\tpotok\t\tm.
+3150\tpotom\t\tadv.
+3157\tpotomȯk\t\tm.anim.
+32729\tpotomstvo\t\tn.sg.
+3152\tpotop\t\tm.
+4241\tpotopiti\t\tv.tr. pf.
+18334\tpotrajati\t\tv.intr. pf.
+11056\tpotrěba\t\tf.
+29955\tpotrěbno\t\tadv.
+1296\tpotrěbny\t\tadj.
+1165\tpotrěbovati\t\tv.tr. ipf.
+34956\tpotręsati\t\tv.tr. ipf.
+3901\tpotręsti\t\tv.tr. pf.
+29956\tpotrohų\t\tadv.
+3151\tpotrvati\t\tv.intr. pf.
+121\tpotvŕditi\t\tv.tr. pf.
+1167\tpotvŕđati\t\tv.tr. ipf.
+6224\tpotvŕđeńje\t\tn.
+18346\tpotvŕđeny\t\tadj.
+16327\tpoučati\t\tv.tr. ipf.
+11064\tpoučeńje\t\tn.
+11063\tpoučiti\t\tv.tr. pf.
+18353\tpouka\t\tf.
+6003\tpovaga\t\tf.
+20052\tpovažańje\t\tn.sg.
+616\tpovažati\t\tv.tr. ipf.
+36108\tpovaženy\t\tadj.
+3153\tpovažiti\t\tv.tr. pf.
+36296\tpovědač\t\tm.anim.
+3870\tpovědati\t\tv.tr. ipf.
+3871\tpověděti\t\tv.tr. pf.
+12478\tpovědka prěd spańjem\t\tf.
+3407\tpovědka\t\tf.
+2996\tpoveliteljny\t\tadj.
+22330\tpověriti\t\tv.tr. pf.
+22332\tpověriti\t\tv.tr. pf.
+22329\tpověrjati\t\tv.tr. ipf.
+22331\tpověrjati\t\tv.tr. ipf.
+22328\tpověŕje\t\tn.
+22335\tpověrjennik\t\tm.anim.
+22336\tpověrjennik\t\tm.anim.
+11074\tpoveseliti sę\t\tv.refl. pf.
+34190\tpověsiti\t\tv.tr. pf.
+22226\tpověsť\t\tf.
+20053\tpovęzanosť\t\tf.
+22194\tpovęzka\t\tf.
+5999\tpovinen\t\tadj.
+18357\t#povinno sę\t\tphrase
+29961\tpovinny\t\tadj.
+22539\tpovlåka\t\tf.
+35549\tpovlěkati za sobojų\t\tv.tr. ipf.
+35550\tpovlěkti za sobojų\t\tv.tr. pf.
+11075\tpovod\t\tm.
+36146\tpovodom\t\tprep.
+29962\tpovoljno\t\tadv.
+33708\tpovoljny\t\tadj.
+29963\tpovoz\t\tm.
+3204\tpovraćati\t\tv.ipf.
+3202\tpovråt\t\tm.
+3205\tpovråtiti\t\tv.pf.
+4705\tpovråtiti\t\tv.pf.
+34874\tpovråtna informacija\t\tf.
+11076\tpovråtna klaviša\t\tf.
+11084\tpovråtna svęź\t\tf.
+22694\tpovråtny bilet\t\tm.
+22697\tpovråtny moment\t\tm.
+22695\tpovråtny\t\tadj.
+4706\tpovråtȯk\t\tm.
+18362\tpovråz\t\tm.
+5628\tpovrěmenno\t\tadv.
+614\tpovŕh\t\tprep.
+18365\tpovŕhnja\t\tf.
+18366\tpovŕhnosť\t\tf.
+22568\tpovŕhny\t\tadj.
+22660\tpovŕnųti\t\tv.tr. pf.
+18367\tpovŕšina\t\tf.
+22659\tpovŕtati\t\tv.tr. ipf.
+22344\tpovsednji\t\tadj.
+11087\tpovstanec\t\tm.anim.
+1460\tpovstańje\t\tn.
+11088\tpovstati\t\tv.intr. pf.
+34883\tpovstavati\t\tv.intr. ipf.
+2000\tpovtarjati\t\tv.tr. ipf.
+2305\tpovtoriti\t\tv.tr. pf.
+3809\tpovtorno\t\tadv.
+36626\tpovtorny\t\tadj.
+3687\tpovysiti\t\tv.tr. pf.
+5546\tpovyšati\t\tv.tr. ipf.
+1299\tpovyše\t\tprep.
+11094\tpovyše\t\tadv.
+3686\tpovyšeńje\t\tn.
+11098\tpovyši\t\tadj.
+35417\tpoza\t\tf.
+14064\tpozaďje\t\tn.
+5193\tpozadu\t\tadv.
+23389\tpozajęti\t\tv.tr. pf.
+35631\tpozajęto slovo\t\tm.
+22391\tpozajmati\t\tv.tr. ipf.
+11102\tpozastaviti\t\tv.tr. pf.
+11103\tpozastavjeńje\t\tn.
+35479\tpozautra\t\tadv.
+3359\tpozdněje\t\tadv.
+11106\tpozdnějši\t\tadj.
+717\tpozdno\t\tadv.
+2267\tpozdny\t\tadj.
+18368\tpozdråv\t\tintj.
+1226\tpozdråviti\t\tv.tr. pf.
+1679\tpozdravjati\t\tv.tr. ipf.
+11111\tpozemny\t\tadj.
+1225\tpozicija\t\tf.
+18371\tpozirati (na)\t\tv.intr. ipf.
+36120\tpozitivno čislo\t\tn.
+1415\tpozitivny\t\tadj.
+32973\tpozlaćati\t\tv.tr. ipf.
+32975\tpozlåćeny\t\tadj.
+32976\tpozlåta\t\tf.
+29798\tpozlåtiti\t\tv.tr. pf.
+15480\tpoznanec\t\tm.anim.
+35066\tpoznańje\t\tn.
+6324\tpoznati\t\tv.tr. pf.
+18376\tpoznati\t\tv.tr. pf.
+6323\tpoznavati\t\tv.tr. ipf.
+18377\tpoznavati\t\tv.tr. ipf.
+4381\tpozor\t\tm.
+11115\tpozornosť\t\tf.
+29969\tpozȯv\t\tm.
+34885\tpozovati\t\tv.intr. ipf.
+20055\tpozrěti (na)\t\tv.intr. pf.
+11121\tpozvaljaje sę\t\tphrase
+11124\tpozvaljati sobě\t\tv.ipf.
+3156\tpozvaljati\t\tv.tr. ipf.
+18379\tpozvańje\t\tn.
+36168\tpozvati sę na\t\tv.refl. pf.
+6194\tpozvati v sųd\t\tv.pf.
+3155\tpozvati\t\tv.tr. pf.
+11117\tpozvolimy\t\tadj.
+11120\tpozvoliti sobě\t\tv.pf.
+2946\tpozvoliti\t\tv.tr. pf.
+3823\tpozvoniti\t\tv.pf.
+36167\tpozyvati sę na\t\tv.refl. ipf.
+6193\tpozyvati v sųd\t\tv.tr. ipf.
+20054\tpožaliti\t\tv.tr. pf.
+4173\tpožar\t\tm.
+4237\tpožarna služba\t\tf.
+15485\tpožarnik\t\tm.anim.
+11128\tpožarny\t\tadj.
+11129\tpožarogasnik\t\tm.
+2875\tpožędańje\t\tn.
+411\tpožędati\t\tv.tr. pf.
+11132\tpožędati\t\tv.tr. pf.
+35471\tpoželany\t\tadj.
+35470\tpoželati\t\tv.tr. pf.
+32984\tpožęti\t\tv.intr. pf.
+36056\tpožiraľnik\t\tm.
+14913\tpožirańje\t\tn.
+11134\tpožirati\t\tv.ipf.
+11135\tpoživjeńje\t\tn.
+18378\tpožrěti\t\tv.tr. pf.
+3147\tpožrtvovati\t\tv.tr. pf.
+35501\tpra-\t\tprefix
+11137\tprababica\t\tf.
+11138\tpraca\t\tf.
+18380\tpracodavec\t\tm.anim.
+14917\tpracovati\t\tv.intr. ipf.
+11141\tpracovito\t\tadv.
+11142\tpracovitosť\t\tf.
+11143\tpracovity\t\tadj.
+11140\tpracovnik\t\tm.anim.
+35152\tpradavny\t\tadj.
+11145\tpradědȯk\t\tm.anim.
+2073\tpråg\t\tm.
+23519\tPraga\t\tf.sg.
+3574\tpråh\t\tm.
+35997\tpråhosȯsaľnik\t\tm.
+20616\tpraindoevropejsky\t\tadj.
+20056\tprajęzyk\t\tm.
+11147\tpraksa\t\tf.
+20057\tpraktično\t\tadv.
+35159\tpraktičnosť\t\tf.
+3146\tpraktičny\t\tadj.
+4079\tpraktika\t\tf.
+3957\tpraktikovati\t\tv.tr. ipf.
+21459\tpralěs\t\tm.
+36107\tpralna mašina\t\tf.
+35804\tpraotec\t\tm.anim.
+3158\tpraroditelj\t\tm.anim.
+16345\tpråsę\t\tn.
+1228\tpråsętko\t\tn.
+4387\tpraslovjansky\t\tadj.
+21027\tprašćati sę\t\tv.refl. ipf.
+21026\tprašćati\t\tv.tr. ipf.
+5273\tpråšek\t\tm.
+14919\tpråšiti\t\tv.ipf.
+11146\tpråšna burja\t\tf.
+32298\tprati mozg\t\tv.tr. ipf.
+32303\tprati\t\tv.tr. ipf.
+33937\tpråti\t\tv.tr. ipf.
+3159\tpravda\t\tf.
+11154\tpravdivo\t\tadv.
+11155\tpravdivosť\t\tf.
+3307\tpravdivy\t\tadj.
+11159\tpravdopodobno\t\tadv.
+11161\tpravdopodobnosť\t\tf.
+11162\tpravdopodobny\t\tadj.
+18383\tpravedny\t\tadj.
+1870\tpravica\t\tf.
+5211\tpraviľno\t\tadv.
+20059\tpraviľnosť\t\tf.
+20060\tpraviľny\t\tadj.
+21031\tpraviľny\t\tadj.
+3087\tpravilo\t\tn.
+3077\tpraviti\t\tv.tr. ipf.
+11167\tpravnik\t\tm.anim.
+3711\tpravny\t\tadj.
+1826\tpravo\t\tn.
+3163\tpravopis\t\tm.
+11172\tpravopisańje\t\tn.
+35024\tpravopisec\t\tm.anim.
+35025\tpravopisny\t\tadj.
+32168\tpravorųky\t\tadj.
+21034\t#Pravoslavje\t\tn.sg.
+3088\tpravoslavny\t\tadj.
+35697\tpravosť\t\tf.
+35698\tpravosť\t\tf.
+11175\tpravosųďje\t\tn.
+11176\tpravosųdnosť\t\tf.
+21035\tpravověrny\t\tadj.
+11177\tpravovųgȯľnik\t\tm.
+1164\tpravy\t\tadj.
+21036\tpravy\t\tadj.
+22895\tpravzor\t\tm.
+33552\tpråzdničny\t\tadj.
+18389\tpråzdnik\t\tm.
+35307\tpråzdnina\t\tf.
+3248\tpråzdnovati\t\tv.tr. ipf.
+5653\tpråzdnověŕje\t\tn.
+5654\tpråzdnověrny\t\tadj.
+16335\tpråzdny\t\tadj.
+10492\tpŕdak\t\tm.
+573\tpŕděti\t\tv.intr. ipf.
+3160\tprěadresovati\t\tv.tr. pf.
+29977\tpreambula\t\tf.
+20617\tprěběglik\t\tm.anim.
+5397\tprěbudovati\t\tv.tr. pf.
+5398\tprěbudovyvati\t\tv.tr. ipf.
+18390\tprěbyvańje\t\tn.
+16812\tprěbyvati\t\tv.intr. ipf.
+919\tprecedent\t\tm.
+35883\tprěcěniti\t\tv.tr. pf.
+35882\tprěcěnjati\t\tv.tr. ipf.
+11185\tprěčęsto\t\tadv.
+20619\tprěčiti\t\tv.tr. ipf.
+20620\tprěčnik\t\tm.
+14921\tprěd davnym časom\t\tadv.
+11195\tprěd davnym vrěmenem\t\tadv.
+4097\tprěd hviljejų\t\tadv.
+11200\tprěd nekoliko dnjev\t\tadv.
+4379\tprěd vsem\t\tadv.
+1200\tprěd\t\tprep.
+4935\tprěd\t\tprep.
+11189\tprěd\t\tm.
+21038\tprěd\t\tprep.
+11202\tprědańje\t\tn.
+1189\tprědati\t\tv.tr. pf.
+3247\tprědati\t\tv.tr. pf.
+35613\tprědati\t\tv.tr. pf.
+36545\tpredator\t\tm.anim.
+1825\tprědavati\t\tv.tr. ipf.
+3246\tprědavati\t\tv.tr. ipf.
+35612\tprědavati\t\tv.tr. ipf.
+35609\tprědavnica\t\tf.
+35611\tprědavničsky\t\tadj.
+35608\tprědavnik\t\tm.anim.
+35610\tprědavstvo\t\tn.sg.
+20621\tprědběžny\t\tadj.
+11211\tprědčasny\t\tadj.
+23807\tprědčuťje\t\tn.
+23904\tprědčuvati\t\tv.tr. ipf.
+11214\tprědgråďje\t\tn.
+11216\tprědgrådny\t\tadj.
+23608\tprědhistoričny\t\tadj.
+1199\tprědhistorija\t\tf.
+501\tprědhoditi\t\tv.tr. ipf.
+35639\tprědhodnik\t\tm.anim.
+14924\tprědhodny\t\tadj.
+23439\tprědigra\t\tf.
+36800\tprědigra\t\tf.
+34891\tpredikat\t\tm.
+36370\tpredikat\t\tm.
+15491\tprědimenovany\t\tadj.
+11219\tprědki\t\tm.pl.
+11220\tprědkladati\t\tv.tr. ipf.
+602\tprědlagati\t\tv.tr. ipf.
+5955\tprědlanji\t\tadv.
+1158\tprědlog\t\tm.
+5122\tprědložeńje\t\tn.
+35667\tprědložitelj\t\tm.anim.
+1687\tprědložiti\t\tv.tr. pf.
+11228\tprědložlivy\t\tadj.
+17018\tprědložnik\t\tm.
+3168\tprědměsťje\t\tn.
+11231\tprědměstny\t\tadj.
+3171\tprědmet\t\tm.
+3329\tprědmet\t\tm.
+11232\tprědmet\t\tm.
+11235\tprědmet\t\tm.
+18398\tprědminųly\t\tadj.
+20061\tprědnje\t\tadv.
+3639\tprědnji, prědny\t\tadj.
+16836\tprědnosť\t\tf.
+21041\tprědnosť\t\tf.
+1578\tprědȯjdti\t\tv.tr. pf.
+3129\tprědȯk\t\tm.anim.
+6146\tprědoplatnik\t\tm.anim.
+21043\tprědpis\t\tm.
+35310\tprědpisati\t\tv.tr. pf.
+35309\tprědpisyvati\t\tv.tr. ipf.
+5407\tprědplaćati\t\tv.intr. ipf.
+5408\tprědplatiti\t\tv.intr. pf.
+11241\tprědpočitańje\t\tn.
+3787\tprědpočitati\t\tv.tr. ipf.
+5324\tprědpoklad\t\tm.
+3130\tprědpokladati\t\tv.tr. ipf.
+20062\tprědpolagati\t\tv.tr. ipf.
+11247\tprědpoložeńje\t\tn.
+20065\tprědpoložiteljno\t\tadv.
+18400\tprědpoložiti\t\tv.tr. pf.
+4305\tprědposlědnji, prědposlědny\t\tadj.
+16759\t#prědpostavjati\t\tv.tr. ipf.
+29984\tprědpotopny\t\tadj.
+14926\tprědpověď\t\tf.
+11250\tprědpovědati\t\tv.tr. ipf.
+14927\tprědpověděti\t\tv.tr. pf.
+5164\tprědprijemstvo\t\tn.
+35201\tprědprijęti\t\tv.tr. pf.
+35200\tprědprijmati\t\tv.tr. ipf.
+15492\tprědprimetny\t\tadj.
+17020\tprědråstka\t\tf.
+3131\tprědsědatelj\t\tm.anim.
+6292\tprědsědateljstvo\t\tn.sg.
+11254\tprědsědati\t\tv.intr. ipf.
+14928\tprědsědnik\t\tm.anim.
+11256\tprědskazańje\t\tn.
+2897\tprědskazati\t\tv.tr. pf.
+3127\tprědskazyvati\t\tv.tr. ipf.
+18407\tprědslovje\t\tn.
+21762\tprědstati\t\tv.intr. pf.
+21769\tprědstava\t\tf.
+21761\tprědstavati\t\tv.intr. ipf.
+1203\tprědstavitelj\t\tm.anim.
+5171\tprědstaviteljstvo\t\tn.
+5406\tprědstaviti sobě\t\tv.refl. pf.
+2422\tprědstaviti\t\tv.tr. pf.
+5405\tprědstavjati sobě\t\tv.refl. ipf.
+1524\tprědstavjati\t\tv.tr. ipf.
+21766\tprědstavjati\t\tv.tr. ipf.
+11264\tprědstavjeńje\t\tn.
+21763\tprědstojęći\t\tadj.
+4080\tprědsųďje\t\tn.
+6290\tprědsųdny\t\tadj.
+20066\tprědsųdȯk\t\tm.
+2423\tprědšedši\t\tadj.
+22079\tprědteča\t\tf.
+36623\tprědtym\t\tadv.
+3128\tprěduprěditi\t\tv.tr. pf.
+21047\tprěduprěditi\t\tv.tr. pf.
+21048\tprěduprěditi\t\tv.tr. pf.
+1884\tprěduprěđati\t\tv.tr. ipf.
+21045\tprěduprěđati\t\tv.tr. ipf.
+21046\tprěduprěđati\t\tv.tr. ipf.
+20067\tprěduprěđeńje\t\tn.
+23095\tprěduprěđeńje\t\tn.
+36466\tprěduslovje\t\tn.
+36575\tprědustavjeńje\t\tn.
+35584\tprědvčera\t\tadv.
+29987\tprědvečer\t\tm.
+22231\tprědvěsťje\t\tn.
+5403\tprědviděti\t\tv.tr. pf.
+34836\tprědvidimy\t\tadj.
+34837\tprědvidlivy\t\tadj.
+5404\tprědvidyvati\t\tv.tr. ipf.
+3575\tprědvrěmenny\t\tadj.
+23357\tprědvyšati\t\tv.tr. ipf.
+22871\tprědznak\t\tm.
+32106\tpręđa\t\tf.
+3763\tprěđe\t\tadv.
+16758\tpreferovati\t\tv.tr. ipf.
+805\tprefiks\t\tm.
+11284\tprěględ\t\tm.
+4075\tprěględati\t\tv.tr. ipf.
+4076\tprěględěti\t\tv.tr. pf.
+11295\tprěględka\t\tf.
+18414\tprěgovory\t\tm.pl.
+18415\tprěgråda\t\tf.
+23726\tprěhlåditi sę\t\tv.refl. pf.
+23727\tprěhlađati sę\t\tv.refl. ipf.
+23725\tprěhlåđeńje\t\tn.
+19506\tprěhod\t\tm.
+36524\tprêhoditi ulicų\t\tphrase
+2425\tprěhoditi\t\tv.intr. ipf.
+11298\tprěhodny\t\tadj.
+18419\tprěhodny\t\tadj.
+31908\tprěhytriti\t\tv.tr. pf.
+31909\tprěhytrjati\t\tv.tr. ipf.
+5521\tprěimenovati\t\tv.tr. pf.
+34893\tprěimenovyvati\t\tv.tr. ipf.
+18420\tprěinačati\t\tv.tr. ipf.
+18421\tprěinačeńje\t\tn.
+18422\tprěinačeny\t\tadj.
+18423\tprěinačiti\t\tv.tr. pf.
+36525\tprêjdti ulicų\t\tphrase
+1711\tprějdti\t\tv.intr. pf.
+5004\tprějęti\t\tv.tr. pf.
+5003\tprějmati\t\tv.tr. ipf.
+35800\tprěklad\t\tm.
+35801\tprěkladatelj\t\tm.anim.
+35802\tprěkladati\t\tv.tr. ipf.
+11303\tprěključ\t\tm.
+11301\tprěključati\t\tv.tr. ipf.
+11302\tprěključiti\t\tv.tr. pf.
+21462\tprěkrasny\t\tadj.
+36345\tprěkryvańje\t\tn.
+36344\tprěkryvati sę\t\tv.refl. ipf.
+14930\tprěkydańje\t\tn.
+23908\tprělěpy\t\tadj.
+23907\tprělet\t\tm.
+20068\tprěletny\t\tadj.
+29989\tprěljubstvo\t\tn.sg.
+20625\tprělom\t\tm.
+20626\tprělom\t\tm.
+32190\tprělom\t\tm.
+35803\tprěložiti\t\tv.tr. pf.
+3263\tpreludija\t\tf.
+20627\tprěmagati\t\tv.tr. ipf.
+32972\tprěmeblovati\t\tv.tr. ipf./pf.
+2407\tprěměna\t\tf.
+18429\tprěměniti sę\t\tv.refl. pf.
+18428\tprěměniti\t\tv.tr. pf.
+18427\tprěměnjati sę\t\tv.refl. ipf.
+18426\tprěměnjati\t\tv.tr. ipf.
+35526\tprěměnna\t\tf.
+35525\tprěměnny\t\tadj.
+6233\tprěměstiti sę\t\tv.refl. pf.
+6230\tprěměstiti\t\tv.tr. pf.
+6232\tprěměšćati sę\t\tv.refl. ipf.
+6228\tprěměšćati\t\tv.tr. ipf.
+11308\tprěmešćeńje\t\tn.
+2976\tpremiera\t\tf.
+2846\tpremier-ministr\t\tm.anim.
+2845\tprěmnogo\t\tadv.
+11527\tprěmo\t\tadv.
+20633\tprěmogti\t\tv.tr. pf.
+4413\t#prěmokųtnik\t\tm.
+4414\tprěmokųtny\t\tadj.
+2982\tprěmȯlviti\t\tv.intr. pf.
+2337\tprěmȯlvjati\t\tv.intr. ipf.
+11313\tprěmotańje\t\tn.
+4250\tprěmotati\t\tv.tr. pf.
+5554\tprěmotyvati\t\tv.tr. ipf.
+1209\tprěmy\t\tadj.
+36181\tprěnapęti\t\tv.tr. pf.
+36180\tprěnapinati\t\tv.tr. ipf.
+15408\tprěnebrěgati\t\tv.tr. ipf.
+15410\tprěnebrěgti\t\tv.tr. pf.
+9633\tprěnebrěžeńje\t\tn.sg.
+5394\tprěnesti\t\tv.tr. pf.
+36265\tprěnesti\t\tv.tr. pf.
+4195\tprěnoćevati\t\tv.intr. pf.
+5393\tprěnositi\t\tv.tr. ipf.
+36264\tprěnositi\t\tv.tr. ipf.
+20635\tprěnosny\t\tadj.
+20636\tprěnosny\t\tadj.
+22704\tprěobraćati\t\tv.tr. ipf.
+22706\tprěobraćati\t\tv.tr. ipf.
+22702\tprěobråtiti\t\tv.tr. pf.
+22707\tprěobråtiti\t\tv.tr. pf.
+11320\tprěobraziti\t\tv.tr. pf.
+11322\tprěobražati\t\tv.tr. ipf.
+20069\tprěobražeńje\t\tn.
+36601\tprěocěniti\t\tv.tr. pf.
+36600\tprěocěnjati\t\tv.tr. ipf.
+35288\tprěoděti sę\t\tv.refl. pf.
+35287\tprěoděvati sę\t\tv.refl. ipf.
+35679\tpreparat\t\tm.
+21049\tprěpirati sę\t\tv.refl. ipf.
+11324\tprěpisańje\t\tn.
+11325\tprěpisany\t\tadj.
+5530\tprěpisati\t\tv.tr. pf.
+21050\tprěpiska\t\tf.
+5529\tprěpisyvati\t\tv.tr. ipf.
+34911\tprěpluti\t\tv.tr. pf.
+1850\tprěplyvati\t\tv.tr. ipf.
+36728\tprěplyvati\t\tv.tr. ipf.
+34325\tprěplyvti\t\tv.tr. pf.
+20070\tprěpȯlnjeny\t\tadj.
+11332\tprěpona\t\tf.
+35213\tprěporųčati\t\tv.tr. ipf.
+35214\tprěporųčiti\t\tv.tr. pf.
+35215\tprěporųka\t\tf.
+3529\tprěprava\t\tf.
+3539\tprěpraviti\t\tv.tr. pf.
+3528\tprěpravjati\t\tv.tr. ipf.
+11337\tprěprogramovati\t\tv.tr. pf.
+33068\tprěrastati\t\tv.tr. ipf.
+11338\tprěråsti\t\tv.tr. pf.
+16832\tprěråzkazańje\t\tn.
+16833\tprěråzkazati\t\tv.tr. pf.
+16834\tprěråzkazyvati\t\tv.tr. ipf.
+21464\tprěrěčeńje\t\tn.
+21465\tprěrěkati sę\t\tv.refl. ipf.
+21466\tprěrěkti sę\t\tv.refl. pf.
+11339\tprěrězati\t\tv.tr. pf.
+23359\tprěroditi sę\t\tv.refl. pf.
+23360\tprěrođeńje\t\tn.
+1772\tprěrvati\t\tv.tr. pf.
+21467\tprěryv\t\tm.
+11340\tprěryvańje\t\tn.
+1849\tprěryvati\t\tv.tr. ipf.
+1726\tpresa\t\tf.
+2326\tpresa-konferencija\t\tf.
+1358\tpresa-reliz\t\tm.
+21469\tprěsěčeńje\t\tn.
+36214\tprěsědańje\t\tn.
+36215\tprěsědati\t\tv.intr. ipf.
+5402\tprěsěkati\t\tv.tr. ipf.
+5401\tprěsěkti\t\tv.tr. pf.
+11349\tprěselenec\t\tm.anim.
+11350\tprěselenica\t\tf.
+32969\tprěseliti sę\t\tv.refl. pf.
+11352\tprěseliti\t\tv.tr. pf.
+32968\tprěseljati sę\t\tv.refl. ipf.
+11353\tprěseljati\t\tv.tr. ipf.
+32970\tprěseljeńje\t\tn.
+36216\tprěsęsti\t\tv.intr. pf.
+2244\tpreskva\t\tf.
+4291\tprěslědovańje\t\tn.
+4290\tprěslědovati\t\tv.tr. ipf.
+21470\tprěslědovati\t\tv.tr. ipf.
+18431\tprěslěpiti\t\tv.tr. pf.
+36360\tpręslica\t\tf.
+5991\tprěslušati\t\tv.tr. pf.
+14932\tprěslušivańje\t\tn.
+5990\tprěslušivati\t\tv.tr. ipf.
+36038\tprěsměriti\t\tv.tr. pf.
+36039\tprěsměrjati\t\tv.tr. ipf.
+36040\tprěsměrjeńje\t\tn.
+11359\tprěsměšnik\t\tm.anim.
+11361\tprěspati\t\tv.intr. pf.
+29995\tprěstarati sę\t\tv.refl. pf.
+18436\tprěstati\t\tv.intr. pf.
+18437\tprěstavati\t\tv.intr. ipf.
+21760\tprěstaviti sę\t\tv.refl. pf.
+2009\tprěstaviti\t\tv.tr. pf.
+21757\tprěstavjati sę\t\tv.refl. ipf.
+2931\tprěstavjati\t\tv.tr. ipf.
+18456\tpręsti\t\tv.intr. ipf.
+18457\tpręsti\t\tv.tr. ipf.
+33712\tprěstigati\t\tv.tr. ipf.
+29996\tprěstignųti\t\tv.tr. pf.
+20071\tprestiž\t\tm.sg.
+20072\tprestižny\t\tadj.
+36389\tprěstol\t\tm.
+1709\tprěstrašeny\t\tadj.
+293\tprěstrašiti\t\tv.tr. pf.
+11371\tprěstrělka\t\tf.
+18438\tprěstųpańje\t\tn.
+18439\tprěstųpati\t\tv.tr. ipf.
+36371\tprěstųpati\t\tv.tr. ipf.
+18440\tprěstųpiti\t\tv.tr. pf.
+36372\tprěstųpiti\t\tv.tr. pf.
+21961\tprěstųpnik\t\tm.anim.
+21962\tprěstųpnik\t\tm.anim.
+32336\tprěstųpnosť\t\tf.
+21052\tprěstųpny god\t\tm.
+21963\tprěstųpny\t\tadj.
+18441\tprěstųpȯk\t\tm.
+23747\tprěsunųti\t\tv.tr. pf.
+23744\tprěsuvati\t\tv.tr. ipf.
+11372\tprěsvęzati\t\tv.tr. pf.
+11374\tprěsvęzyvati\t\tv.tr. ipf.
+14935\tprěškoda\t\tf.
+16329\tprětečeńje\t\tn.
+6074\tprětěkati\t\tv.intr. ipf.
+6076\tprětekti\t\tv.intr. pf.
+32532\tpretenciozny\t\tadj.
+35966\tpretendovati na\t\tv.intr. ipf./pf.
+35968\t#pretendovati\t\tv.tr. ipf./pf.
+35967\tpretenzija\t\tf.
+21053\tprěti\t\tv.ipf.
+35985\tprětok rěky\t\tm.
+16878\tprětȯlmačiti\t\tv.tr. pf.
+21055\tprětraviti\t\tv.tr. pf.
+21056\tprětravjati\t\tv.tr. ipf.
+2364\tprětŕpěti\t\tv.tr. pf.
+22149\tprětvarjati\t\tv.tr. ipf.
+22150\tprětvoriti\t\tv.tr. pf.
+22287\tprěuveličati\t\tv.tr. ipf.
+35604\tprěuveličeńje\t\tn.
+22288\tprěuveličiti\t\tv.tr. pf.
+22175\tprěvaga\t\tf.
+21058\tprěvariti\t\tv.tr. pf.
+21057\tprěvarjati\t\tv.tr. ipf.
+35241\tprěvažajųći\t\tadj.
+6006\tprěvažati\t\tv.intr. ipf.
+6007\tprěvažiti\t\tv.intr. pf.
+35242\tprěvažno\t\tadv.
+35819\tprevencija\t\tf.
+35820\tpreventivny\t\tadj.
+3872\tprěvesti\t\tv.tr. pf.
+5396\tprěvezti\t\tv.tr. pf.
+22499\tprěvladnųti\t\tv.pf.
+22497\tprěvladyvati\t\tv.ipf.
+1565\tprěvlađeńje\t\tn.
+20073\tprěvod\t\tm.
+22254\tprěvod\t\tm.
+1571\tprěvoditelj\t\tm.anim.
+3055\tprěvoditi\t\tv.tr. ipf.
+11388\tprěvođeńje\t\tn.
+18448\tprěvoz\t\tm.
+23112\tprěvoz\t\tm.
+18444\tprěvȯzhoditi\t\tv.tr. ipf.
+5395\tprěvoziti\t\tv.tr. ipf.
+18447\tprěvȯzȯjdti\t\tv.tr. pf.
+22698\tprěvråt\t\tm.
+16062\tprěvråtnik\t\tm.anim.
+22700\tprěvråtny\t\tadj.
+22729\tprěvysiti\t\tv.tr. pf.
+22728\tprěvyšati\t\tv.tr. ipf.
+2284\tprěz\t\tprep.
+16063\tprezentacija\t\tf.
+2329\tprezident\t\tm.anim.
+31747\tprezidentsky\t\tadj.
+31746\tprezidium\t\tm.
+11394\tprězimę\t\tn.
+30000\tprězir\t\tm.
+22896\tprězirati\t\tv.tr. ipf.
+1710\tprězměrno\t\tadv.
+18450\t#prěznačati\t\tv.tr. ipf.
+11396\tprěznačeńje\t\tn.
+18452\tprěznačeny za\t\tadj.
+18454\tprěznačiti\t\tv.tr. pf.
+3516\tprězravo\t\tadv.
+3515\tprězravy\t\tadj.
+20074\tprězrěńje\t\tn.
+9634\tprězrěti\t\tv.tr. pf.
+11400\tprězvati\t\tv.tr. pf.
+11401\tprězvišče\t\tn.
+16332\tprězyvati\t\tv.tr. ipf.
+4179\tprěžitelj\t\tm.anim.
+3604\tprěžiti\t\tv.tr. pf.
+4178\tprěžiti\t\tv.tr. pf.
+4331\tprěžiti\t\tv.tr. pf.
+4180\tprěžiťje\t\tn.
+22939\tprěžitȯk\t\tm.
+11409\tprěživańje\t\tn.
+4330\tprěživati\t\tv.tr. ipf.
+11412\tprěživati\t\tv.tr. ipf.
+11402\tprěživimosť\t\tf.
+11403\tprěživimy\t\tadj.
+21059\tpręžka\t\tf.
+34065\tprěžuvati\t\tv.tr. pf.
+621\tpri\t\tprep.
+4607\tpri\t\tprep.
+36138\tpribiti\t\tv.tr. pf.
+36137\tpribivati\t\tv.tr. ipf.
+23813\tpriblizno, približno\t\tadv.
+18458\tpribližati sę\t\tv.refl. ipf.
+17011\tpribliženy\t\tadj.
+23671\tpribližiti sę\t\tv.refl. pf.
+18459\tpribor\t\tm.
+11416\tpribrěžje\t\tn.
+18462\tpribyti\t\tv.intr. pf.
+18463\tpribyvati\t\tv.intr. ipf.
+1467\tpricěliti\t\tv.pf.
+3020\tpričęsťje\t\tn.
+2412\tpričina\t\tf.
+2363\tpričiniti\t\tv.pf.
+1500\tpričinjati\t\tv.ipf.
+36347\tpričisliti k\t\tv.tr. pf.
+36346\tpričisljati k\t\tv.tr. ipf.
+35781\tpridati\t\tv.tr. pf.
+18465\tpridatȯk\t\tm.
+35782\tpridavati\t\tv.tr. ipf.
+17012\tpridavnik\t\tm.
+4229\tpridělańje\t\tn.
+4228\tpridělati\t\tv.tr. pf.
+18467\tpriděliti\t\tv.tr. pf.
+18466\tpriděljati\t\tv.tr. ipf.
+36563\tPridněstrovje\t\tn.sg.
+36564\tpridněstrovsky\t\tadj.
+6180\tpridŕživati sę\t\tv.refl. ipf.
+14937\tpridumati\t\tv.tr. pf.
+35145\tprigađati sę\t\tv.refl. ipf.
+36598\tpriględati sę\t\tv.refl. ipf.
+11426\tpriględati\t\tv.tr. ipf.
+36599\tpriględěti sę\t\tv.refl. pf.
+11427\tpriględěti\t\tv.tr. pf.
+18469\tprignųti\t\tv.tr. pf.
+3126\tprigoda\t\tf.
+35144\tprigoditi sę\t\tv.refl. pf.
+3050\tprigodny\t\tadj.
+18471\tprigodny\t\tadj.
+1140\tprigotoviti\t\tv.tr. pf.
+23770\tprigotovjeńje\t\tn.
+4163\tprigråd\t\tm.
+35779\tprigraničny\t\tadj.
+18468\tprigybati\t\tv.tr. ipf.
+23750\tprihod\t\tm.
+1139\tprihoditi\t\tv.intr. ipf.
+11436\tprijateliti sę\t\tv.refl. ipf.
+1141\tprijatelj\t\tm.anim.
+4342\tprijateljka\t\tf.
+14938\tprijateljska igra\t\tf.
+11439\tprijateljska strěľba\t\tf.
+11438\tprijateljskosť\t\tf.
+4128\tprijateljsky\t\tadj.
+4129\tprijateljstvo\t\tn.
+5563\tprijati\t\tv.tr. ipf.
+5564\tprijati\t\tv.tr. ipf.
+11445\tprijatlivy\t\tadj.
+18472\tprijaviti sę\t\tv.refl. pf.
+18474\tprijavjati sę\t\tv.refl. ipf.
+1151\tprijdti\t\tv.intr. pf.
+5206\tprijehati\t\tv.intr. pf.
+18476\tprijem\t\tm.
+18477\tprijem\t\tm.
+33015\tprijemlivy\t\tadj.
+18478\tprijemnik\t\tm.
+11450\tprijemnosť\t\tf.
+3774\tprijemny\t\tadj.
+11433\tprijemny\t\tadj.
+18479\tprijęti sę\t\tv.refl. pf.
+3374\tprijęti\t\tv.tr. pf.
+35078\tprijęťje\t\tn.
+11454\tprijętno\t\tadv.
+23812\tprijętnosť\t\tf.
+3314\tprijętny\t\tadj.
+5208\tpriježđati\t\tv.intr. ipf.
+32339\tprijmajųća krajina\t\tf.
+18480\tprijmati sę\t\tv.refl. ipf.
+11467\tprijmati\t\tv.tr. ipf.
+30223\tprikaz\t\tm.
+20076\tprikazati\t\tv.tr. pf.
+20078\tprikazyvati\t\tv.tr. ipf.
+3595\tpriklad\t\tm.
+20079\tprikladati\t\tv.tr. ipf.
+3650\tprikop\t\tm.
+1143\tprilagateljno imę\t\tn.
+20639\tprilegly\t\tadj.
+32870\tprilěpiti sę\t\tv.refl. pf.
+5561\tprilěpiti\t\tv.tr. pf.
+21471\tprilětati\t\tv.intr. ipf.
+21472\tpriletěti\t\tv.intr. pf.
+3769\tpriličny\t\tadj.
+20642\tpriliv\t\tm.
+20645\tpriloga\t\tf.
+11465\tpriložeńje\t\tn.
+11466\tpriložiti\t\tv.tr. pf.
+36903\tprilųčati sę\t\tv.refl. ipf.
+36897\tprilųčati\t\tv.tr. ipf.
+36900\tprilųčiti sę\t\tv.refl. pf.
+36894\tprilųčiti\t\tv.tr. pf.
+36835\tprima\t\tf.
+33214\tprimamka\t\tf.
+35320\tprimarny\t\tadj.
+30011\tprimat\t\tm.anim.
+33486\tpriměćati\t\tv.tr. ipf.
+20650\tpriměniti\t\tv.tr. pf.
+20649\tpriměnjati\t\tv.tr. ipf.
+35515\tpriměnjeńje\t\tn.
+3590\tpriměr\t\tm.
+20651\tpriměrny\t\tadj.
+33487\tprimětiti\t\tv.tr. pf.
+34918\tprimětka\t\tf.
+20654\tprimiŕje\t\tn.
+35198\tprimitivny\t\tadj.
+11470\tprimoŕje\t\tn.
+390\tprinajmenje\t\tadv.
+20656\tprinaležati\t\tv.intr. ipf.
+20657\tprinaležnosť\t\tf.
+16065\tprinc\t\tm.anim.
+2247\tprincesa\t\tf.
+5327\tprincip\t\tm.
+30012\tprincipiaľny\t\tadj.
+3221\tprinesti\t\tv.tr. pf.
+20658\tprinos\t\tm.
+3220\tprinositi\t\tv.tr. ipf.
+23617\tprinter\t\tm.
+2136\tprinuditi\t\tv.tr. pf.
+1976\tprinuđati\t\tv.tr. ipf.
+3631\tprinuđeny\t\tadj.
+2135\tprioritet\t\tm.
+21061\tpripadati\t\tv.intr. ipf.
+21063\tpripasti\t\tv.intr. pf.
+21065\tpripęti\t\tv.tr. pf.
+21068\tpripinati\t\tv.tr. ipf.
+18486\tpripisati\t\tv.tr. pf.
+18487\tpripisyvati\t\tv.tr. ipf.
+34912\tpripluti\t\tv.intr. pf.
+34914\tpriplyvati\t\tv.intr. ipf.
+36733\tpriplyvati\t\tv.intr. ipf.
+36732\tpriplyvti\t\tv.intr. pf.
+5942\tpripominati sobě\t\tv.tr. ipf.
+1208\tpripominati\t\tv.tr. ipf.
+5943\tpripomněti sobě\t\tv.tr. pf.
+2004\tpripomněti\t\tv.tr. pf.
+21073\tpripraviti\t\tv.tr. pf.
+21075\tpripraviti\t\tv.tr. pf.
+21076\tpripravjati\t\tv.tr. ipf.
+21078\tpripravjati\t\tv.tr. ipf.
+21082\tpripustiti\t\tv.tr. pf.
+21083\tpripustiti\t\tv.tr. pf.
+21079\tpripušćati\t\tv.tr. ipf.
+21080\tpripušćati\t\tv.tr. ipf.
+20085\tpriråstka\t\tf.
+11480\tpriroda\t\tf.
+36522\tprirodne resursy\t\tm.pl.
+11482\tprirodničny\t\tadj.
+18488\tprirodno\t\tadv.
+11484\tprirodnosť\t\tf.sg.
+1215\tprirodny\t\tadj.
+21473\tprirodopis\t\tm.sg.
+22216\tprirodovědstvo\t\tn.sg.
+22853\tprirodoznavstvo\t\tn.sg.
+21474\tprirųčnik\t\tm.
+11486\tprirųčny\t\tadj.
+678\tprisęga\t\tf.
+35699\tprisęgati\t\tv.tr. ipf.
+35686\tprisęgnųti\t\tv.tr. pf.
+15497\tprisęžna\t\tf.
+1396\tprisęžni\t\tm.pl.
+11490\tprisęžny\t\tm.anim.
+36902\tprisjediniti sę\t\tv.refl. pf.
+36896\tprisjediniti\t\tv.tr. pf.
+36905\tprisjedinjati sę\t\tv.refl. ipf.
+36899\tprisjedinjati\t\tv.tr. ipf.
+35147\tprislati\t\tv.tr. pf.
+18489\tprislovica\t\tf.
+18490\tprislovje\t\tn.
+17013\tprislovnik\t\tm.
+1216\tprislovȯk\t\tm.
+21476\tprispěti\t\tv.intr. pf.
+21477\tprispěvati\t\tv.intr. ipf.
+18491\tprisposobiti\t\tv.tr. pf.
+18493\tprisposobjati\t\tv.tr. ipf.
+35529\tprisposobjeńja\t\tn.pl.
+18495\tprisposobjeńje\t\tn.
+35528\tprisposobjeny objekt\t\tm.
+11493\tpristanišče\t\tn.
+21775\tpristanj\t\tm.
+21770\tpristojati\t\tv.intr. ipf.
+21772\tpristojny\t\tadj.
+21896\tpristrastny\t\tadj.
+34377\tpristrigati\t\tv.tr. ipf.
+34378\tpristrigti\t\tv.tr. pf.
+6188\tpristųp\t\tm.
+21969\tpristųp\t\tm.
+2059\tpristųpati do\t\tv.intr. ipf.
+21964\tpristųpati k\t\tv.intr. ipf.
+2391\tpristųpiti do\t\tv.intr. pf.
+21967\tpristųpiti k\t\tv.intr. pf.
+11494\tpristųpjeńje\t\tn.
+22008\tprisųditi\t\tv.tr. pf.
+22010\tprisųditi\t\tv.tr. pf.
+34892\tprisųdȯk\t\tm.
+22007\tprisųđati\t\tv.tr. ipf.
+22009\tprisųđati\t\tv.tr. ipf.
+14939\tprisųtnosť\t\tf.
+14940\tprisųtny\t\tadj.
+11502\tprisųtstvo\t\tn.sg.
+23860\tprisųtstvovati pri\t\tv.intr. ipf.
+22022\tprisvajati\t\tv.tr. ipf.
+36496\tprisvojeńje\t\tn.sg.
+17014\tprisvojiteljny zaimennik\t\tm.
+22021\tprisvojiti\t\tv.tr. pf.
+1130\tprisvojny\t\tadj.
+35146\tprisylati\t\tv.tr. ipf.
+23256\tprišiti\t\tv.tr. pf.
+23174\tpritęgańje\t\tn.
+23178\tpritęgati\t\tv.tr. ipf.
+23173\tpritęglivosť\t\tf.
+22046\tpritęglivy\t\tadj.
+23179\tpritęgnųti\t\tv.tr. pf.
+4522\tpritisk krvi\t\tm.sg.
+4300\tpritisk\t\tm.sg.
+18498\tpritiskańje\t\tn.
+4298\tpritiskati\t\tv.tr. ipf.
+4299\tpritisknųti\t\tv.tr. pf.
+22080\tpritok\t\tm.
+22081\tpritok\t\tm.
+33496\tpritomny\t\tadj.
+33497\tpritomny\t\tadj.
+18499\tpritvarjati sę\t\tv.refl. ipf.
+18501\tpritvoriti sę\t\tv.refl. pf.
+18500\tpritvorny\t\tadj.
+22151\tpritvorstvo\t\tn.sg.
+5861\tpriučati sę\t\tv.refl. ipf.
+32979\tpriučati\t\tv.tr. ipf.
+5863\tpriučeny\t\tadj.
+5862\tpriučiti sę\t\tv.refl. pf.
+32980\tpriučiti\t\tv.tr. pf.
+23180\tprivabiti\t\tv.tr. pf.
+23182\tprivabjati\t\tv.tr. ipf.
+6294\tprivatnosť\t\tf.
+6293\tprivatny\t\tadj.
+31950\tprivesti\t\tv.tr. pf.
+31952\tprivesti\t\tv.tr. pf.
+22404\tprivět\t\tm.
+22405\tprivětlivy\t\tadj.
+22197\tprivęzannosť\t\tf.
+21482\tprivęzati\t\tv.tr. pf.
+3471\tprivezti\t\tv.tr. pf.
+21483\tprivęzyvati\t\tv.tr. ipf.
+6099\tprividěńje\t\tn.
+22425\tprividěńje\t\tn.
+35292\tprividno\t\tadv.
+35551\tprividny\t\tadj.
+21033\tprivilegija\t\tf.
+15502\tprivitańje\t\tn.
+11515\t#privitany\t\tadj.
+1965\tprivitati\t\tv.tr. pf.
+23175\tprivlåčivati\t\tv.tr. ipf.
+22501\tprivlastniti sobě\t\tv.tr. pf.
+22502\tprivlastnjati sobě\t\tv.tr. ipf.
+23172\tprivlěkateljnosť\t\tf.
+22543\tprivlěkateljny\t\tadj.
+23176\tprivlěkati\t\tv.tr. ipf.
+23177\tprivlěkti\t\tv.tr. pf.
+11517\tprivoditi\t\tv.tr. ipf.
+31946\tprivoditi\t\tv.tr. ipf.
+22315\tprivoliti\t\tv.pf.
+22314\tprivoljati\t\tv.ipf.
+3470\tprivoziti\t\tv.tr. ipf.
+22588\tprivŕženec\t\tm.anim.
+20086\tprivyčaj\t\tm.
+11519\tprivykati sę\t\tv.refl. ipf.
+1268\tprivykati\t\tv.tr. ipf.
+2392\tprivykly\t\tadj.
+5864\tprivykneny\t\tadj.
+11520\tprivyknųti sę\t\tv.refl. pf.
+351\tprivyknųti\t\tv.tr. pf.
+4564\tprizemjati sę\t\tv.refl. ipf.
+22750\tprizemje\t\tn.
+36734\tprizemjeńje\t\tn.
+4565\tprizemjiti sę\t\tv.refl. pf.
+3014\tprizemny\t\tadj.
+22875\tpriznak\t\tm.
+11524\tpriznańje\t\tn.
+2287\tpriznati\t\tv.tr. pf.
+1214\tpriznavati\t\tv.tr. ipf.
+22899\tprizrak\t\tm.
+22916\tprizvańje\t\tn.
+22917\tprizvańje\t\tn.
+20087\tprizvati\t\tv.tr. pf.
+20088\tprizyvati\t\tv.tr. ipf.
+22941\tpriživnik\t\tm.anim.
+3069\tpŕnik\t\tm.
+1210\tpro-\t\tprefix
+23307\tproba\t\tf.
+20659\tproběg\t\tm.
+17015\tproběgańje\t\tn.
+36021\tprobijati sę\t\tv.refl. ipf.
+36017\tprobiti sę\t\tv.refl. pf.
+5414\tprobiti\t\tv.tr. pf.
+5413\tprobivati\t\tv.tr. ipf.
+18503\tprobkovańje\t\tn.
+745\tproblem\t\tm.
+20660\tproblematičny\t\tadj.
+11538\tprobna jezda\t\tf.
+18504\tprobny\t\tadj.
+18506\tprobȯk\t\tm.
+11542\tprobovati snova\t\tv.tr. ipf.
+238\tprobovati\t\tv.tr. ipf.
+3165\tprobuditi sę\t\tv.refl. pf.
+23312\tprobuđeny\t\tadj.
+804\tprocedura\t\tf.
+2406\tprocent\t\tm.
+6184\tproces\t\tm.
+33192\tprocesija\t\tf.
+139\tprocitovati\t\tv.tr. pf.
+32803\tprȯč iz drågy!\t\tphrase
+1217\tprȯč\t\tadv.
+23912\tpročistiti\t\tv.tr. pf.
+23911\tpročišćati\t\tv.tr. ipf.
+1190\tpročitati\t\tv.tr. pf.
+4263\tprodati\t\tv.tr. pf.
+4262\tprodavati\t\tv.tr. ipf.
+4264\tprodavec\t\tm.anim.
+11549\tprodavica\t\tf.
+2262\tprodaž\t\tf.
+36020\tprodirati sę\t\tv.refl. ipf.
+1007\tprodȯlžati\t\tv.tr. ipf.
+4594\tprodȯlžati\t\tv.tr. ipf.
+4384\tprodȯlžeńje\t\tn.
+4385\tprodȯlžeńje\t\tn.
+36294\tprodȯlžeńje\t\tn.
+1872\tprodȯlžiti\t\tv.tr. pf.
+4595\tprodȯlžiti\t\tv.tr. pf.
+36018\tprodreti sę\t\tv.refl. pf.
+35178\tproducent\t\tm.anim.
+20089\tprodukcija\t\tf.
+3078\tprodukovati\t\tv.tr. ipf.
+5328\tprodukt\t\tm.
+35174\tproduktivny\t\tadj.
+11558\tprodumati\t\tv.tr. pf.
+20090\tprofanacija\t\tf.
+20091\tprofanovati\t\tv.tr. ipf.
+4650\tprofesija\t\tf.
+34919\tprofesional\t\tm.anim.
+35325\tprofesionalizacija\t\tf.
+35326\tprofesionalizovati\t\tv.tr. ipf./pf.
+4652\tprofesionaľnosť\t\tf.
+4651\tprofesionaľny\t\tadj.
+48\tprofesor\t\tm.anim.
+23227\tprofil\t\tm.
+14943\tproganjańje\t\tn.
+14944\tproganjany\t\tadj.
+14942\tproganjati\t\tv.tr. ipf.
+18511\tproglås\t\tm.
+18514\tproglåsiti\t\tv.tr. pf.
+18512\tproglašati\t\tv.tr. ipf.
+18513\tproglåšeńje\t\tn.
+33731\tprognoza\t\tf.
+21461\tprogȯltati\t\tv.tr. ipf.
+18413\tprogȯltnųti sȯlzy\t\tv.pf.
+18412\tprogȯltnųti\t\tv.tr. pf.
+31\tprograma\t\tf.
+23618\tprogramist\t\tm.anim.
+11564\tprogramovati\t\tv.tr. ipf.
+6237\tprogres\t\tm.
+6238\tprogresivny\t\tadj.
+18515\tprohlåda\t\tf.
+18520\tprohlåditi sę\t\tv.refl. pf.
+18517\tprohlåditi\t\tv.tr. pf.
+18521\tprohlådnosť\t\tf.
+18522\tprohlådny\t\tadj.
+15503\tprohod\t\tm.
+35586\tprohoditi sę\t\tv.refl. ipf.
+5480\tprohoditi\t\tv.tr. ipf.
+35587\tprohoďka\t\tf.
+20661\tprohodny\t\tadj.
+23361\tproigranec\t\tm.anim.
+5422\tproigrati\t\tv.tr. pf.
+5423\tproigryvati\t\tv.tr. ipf.
+11566\tproizhoditi iz\t\tv.ipf.
+4843\tproizhođeńje\t\tn.
+22082\tproiztěkati\t\tv.intr. ipf.
+22084\tproiztekti\t\tv.intr. pf.
+11568\tproizvesti\t\tv.tr. pf.
+22261\tproizvod\t\tm.
+35569\tproizvoditelj\t\tm.anim.
+11569\tproizvoditi\t\tv.tr. ipf.
+22259\tproizvodstvo\t\tn.sg.
+22318\tproizvoljny\t\tadj.
+19919\tprojav\t\tm.
+5325\tprojaviti\t\tv.tr. pf.
+5326\tprojavjati\t\tv.tr. ipf.
+35349\tprojavjeńje\t\tn.
+5481\tprojdti\t\tv.tr. pf.
+5488\tprojehati\t\tv.intr. pf.
+5651\tprojekcija\t\tf.
+430\tprojekt\t\tm.
+5099\tprojektant\t\tm.anim.
+4362\tprojektovańje\t\tn.
+4361\tprojektovati\t\tv.tr. ipf.
+18524\tprojęti\t\tv.tr. pf.
+5489\tproježđati\t\tv.intr. ipf.
+18525\tprojmati\t\tv.tr. ipf.
+18526\tproklęti\t\tv.tr. pf.
+18527\tproklęti\t\tv.intr. pf.
+20093\tproklęťje\t\tn.
+35990\tproklęto\t\tadv.
+18528\tproklętstvo\t\tn.
+36704\tproklęty\t\tadj.
+1221\tprokontrolovati\t\tv.tr. pf.
+2269\tprokrijumčariti\t\tv.tr. pf.
+6295\tprokuratura\t\tf.
+2943\tprokuror\t\tm.anim.
+5588\tprolamyvati\t\tv.tr. ipf.
+5519\tproletariat\t\tm.sg.
+5520\tproletaŕsky\t\tadj.
+1223\tproleženina\t\tf.
+6152\tproliti\t\tv.tr. pf.
+6151\tprolivati\t\tv.tr. ipf.
+20662\tprolom\t\tm.
+36301\tprolom\t\tm.
+4614\tprolomiti\t\tv.tr. pf.
+1211\tpromysl\t\tm.
+2315\tpromysľnik\t\tm.anim.
+35179\tpromysľny\t\tadj.
+32301\tpromyti mozg\t\tv.tr. pf.
+32300\tpromyvati mozg\t\tv.tr. ipf.
+6298\tpronevěriti\t\tv.tr. pf.
+6296\tpronevěrjati\t\tv.tr. ipf.
+18530\tpronevěrjeńje\t\tn.
+4456\tpronikańje\t\tn.
+4454\tpronikati\t\tv.intr. ipf.
+35552\tproniklivy\t\tadj.
+4455\tproniknųti\t\tv.intr. pf.
+4310\tpropadati\t\tv.intr. ipf.
+21085\tpropadati\t\tv.intr. ipf.
+21086\tpropadati\t\tv.intr. ipf.
+5329\tpropaganda\t\tf.
+5330\tpropagovati\t\tv.tr. ipf.
+11592\tpropasť\t\tf.
+11594\tpropasť\t\tf.
+21088\tpropasť\t\tf.
+4311\tpropasti\t\tv.intr. pf.
+21089\tpropasti\t\tv.intr. pf.
+21090\tpropasti\t\tv.intr. pf.
+18532\tpropeler\t\tm.
+35765\tpropiti\t\tv.tr. pf.
+35764\tpropivati\t\tv.tr. ipf.
+4081\tproponovati\t\tv.tr. ipf.
+23784\tproporcija\t\tf.
+23783\tproporcionaľno\t\tadv.
+23782\tproporcionaľny\t\tadj.
+22233\tpropověď\t\tf.
+5124\tpropozicija\t\tf.
+21092\tpropust\t\tm.
+21093\tpropust\t\tm.
+35643\tpropust\t\tm.
+18534\tpropustiti\t\tv.tr. pf.
+18533\tpropušćati\t\tv.tr. ipf.
+33585\tproročsky\t\tadj.
+2235\tprorok\t\tm.anim.
+36300\tproryv\t\tm.
+22794\tprośak\t\tm.anim.
+1232\tprośba\t\tf.
+3353\tprosim\t\tintj.
+1853\tprositi\t\tv.tr. ipf.
+36582\tproslaviti sę\t\tv.refl. pf.
+1227\tproslaviti\t\tv.tr. pf.
+36578\tproslaviti\t\tv.tr. pf.
+36581\tproslavjati sę\t\tv.refl. ipf.
+36576\tproslavjati\t\tv.tr. ipf.
+36579\tproslavjati\t\tv.tr. ipf.
+428\tproslavjeny\t\tadj.
+3937\tproso\t\tn.
+4197\tprospati\t\tv.intr. pf.
+33222\tprospati\t\tv.tr. pf.
+36453\tprostačsky\t\tadj.
+21096\tprostak\t\tm.anim.
+21098\tprostak\t\tm.anim.
+21765\tprostata\t\tf.
+18540\tprostějši\t\tadj.
+21885\tprostirati\t\tv.tr. ipf.
+21886\tprostirati\t\tv.tr. ipf.
+21100\tprostiti sę\t\tv.refl. pf.
+21099\tprostiti\t\tv.tr. pf.
+1748\tprostitutka\t\tf.
+3753\tprosto\t\tadv.
+5531\tprostor\t\tm.
+1437\tprostosť\t\tf.
+11611\tprostrånna klaviša\t\tf.
+16478\tprostrånny\t\tadj.
+21889\tprostrånny\t\tadj.
+21890\tprostrånny\t\tadj.
+11610\tprostrånstvo\t\tn.
+21887\tprostrěti\t\tv.tr. pf.
+21888\tprostrěti\t\tv.tr. pf.
+11613\tprostrina\t\tf.
+33418\tprostuditi sę\t\tv.refl. pf.
+33419\tprostuđati sę\t\tv.refl. ipf.
+2334\tprosty\t\tadj.
+22013\t#prosvěćańje\t\tn.
+22014\tprosvěćańje\t\tn.
+5783\tprosvěćati\t\tv.tr. ipf.
+3642\tprosvět\t\tm.
+6202\tprosvěta\t\tf.
+5784\tprosvětiti\t\tv.tr. pf.
+30030\tprošćaľny\t\tadj.
+18535\tprošćańje\t\tn.
+36523\tprošćati sę\t\tv.refl. ipf.
+547\tprošćati\t\tv.tr. ipf.
+2288\tprošedšesť\t\tf.sg.
+981\tprošedši\t\tadj.
+5945\tprošlogodišnji, prošlogodišny\t\tadj.
+11622\tprošloročny\t\tadj.
+11623\tprošlosť\t\tf.sg.
+11624\tprošly\t\tadj.
+11626\tprošų\t\tintj.
+34752\tprotagonist\t\tm.anim.
+23915\tprotęga\t\tf.
+23916\tprotęgati sę\t\tv.refl. ipf.
+23917\tprotęgnųti sę\t\tv.refl. pf.
+23619\tprotein\t\tm.
+5419\tprotěkati\t\tv.intr. ipf.
+5418\tprotekti\t\tv.intr. pf.
+36491\tprotektorat\t\tm.
+46\tprotest\t\tm.
+361\tprotestant\t\tm.anim.
+4609\tprotestant\t\tm.anim.
+33729\tprotestantsky\t\tadj.
+898\tprotestovati\t\tv.intr. ipf.
+17016\tprotetičny\t\tadj.
+17087\tproteza\t\tf.
+22047\tprotęžeńje\t\tn.
+22048\tprotęžny\t\tadj.
+362\tprotiv\t\tprep.
+5479\tprotivdějati\t\tv.intr. ipf.
+1073\tprotivdějstvo\t\tn.sg.
+2331\tprotiviti sę\t\tv.refl. ipf.
+20666\tprotivlegly\t\tadj.
+2881\tprotivnik\t\tm.anim.
+4389\tprotivno\t\tadv.
+17017\tprotivnosť\t\tf.
+4388\tprotivny\t\tadj.
+20667\tprotivpoloženy\t\tadj.
+4206\tprotivpožarny\t\tadj.
+36117\tprotivraketna obråna\t\tf.
+21484\tprotivrěčiti\t\tv.intr. ipf.
+23802\tprotivrěčnosť\t\tf.
+23804\tprotivrěčny\t\tadj.
+975\tprotokol\t\tm.
+4657\tproton\t\tm.
+34841\tprototip\t\tm.
+34842\tprototipičny\t\tadj.
+21485\tprotreti\t\tv.tr. pf.
+18545\tprověriti\t\tv.tr. pf.
+18544\tprověrjati\t\tv.tr. ipf.
+36697\tprověrka\t\tf.
+5506\tprovesti\t\tv.tr. pf.
+18546\tprovesti\t\tv.tr. pf.
+4623\tprovětriti\t\tv.tr. pf.
+4624\tprovětrjati\t\tv.tr. ipf.
+22427\tproviděńje\t\tn.
+22428\tProviděńje\t\tn.
+35466\tprovinciaľny\t\tadj.
+1733\tprovincija\t\tf.
+11645\tprovod\t\tm.
+22255\tprovod\t\tm.
+3279\tprovoditi\t\tv.tr. ipf.
+3537\tprovoditi\t\tv.tr. ipf.
+4230\tprovoditi\t\tv.intr. ipf.
+11651\tprovodnik želěznice\t\tm.anim.
+22256\tprovodnik\t\tm.anim.
+22257\tprovodnik\t\tm.anim.
+22258\tprovodnik\t\tm.
+18548\tprovođati\t\tv.tr. ipf.
+14950\tprovođeńje\t\tn.
+18549\tprovođeńje\t\tn.
+707\tprovokacija\t\tf.
+175\tprovokatorsky\t\tadj.
+4978\tprovokovati\t\tv.tr. ipf.
+23921\tprovŕćati\t\tv.tr. ipf.
+20094\tprovŕgati\t\tv.tr. ipf.
+20095\tprovŕgnųti\t\tv.tr. pf.
+23920\tprovŕtiti\t\tv.tr. pf.
+20096\tproza\t\tf.
+11656\tprozråčno\t\tadv.
+6214\tprozråčnosť\t\tf.
+6213\tprozråčny\t\tadj.
+18551\tproživati\t\tv.intr. ipf.
+1450\tpŕś\t\tf.
+21486\tprskati\t\tv.intr. ipf.
+21686\tprsknųti\t\tv.intr. pf.
+1723\tpŕst\t\tm.
+30033\tpŕstenj\t\tm.
+21103\tprųga\t\tf.
+35634\tPrusija\t\tf.sg.
+16760\tprųt\t\tm.
+3833\tprųžina\t\tf.
+21105\tprųžiti\t\tv.tr. ipf.
+21107\tprųžny\t\tadj.
+18553\tpŕva světova vojna\t\tf.
+16912\tpŕvak\t\tm.anim.
+16913\tpŕvenstvo\t\tn.
+18554\tpŕvěstȯk\t\tm.
+20097\tpŕvo\t\tadv.
+21488\tpŕvobraz\t\tm.
+18555\tpŕvobytny\t\tadj.
+10506\tpŕvonačęľno\t\tadv.
+10508\tpŕvonačęľnosť\t\tf.
+10509\tpŕvonačęľny\t\tadj.
+22353\tpŕvorędny\t\tadj.
+21489\tpŕvorodstvo\t\tn.sg.
+18559\tpŕvotny\t\tadj.
+20098\tpŕvovzor\t\tm.
+3621\tpŕvy raz\t\tm.
+1572\tpŕvy\t\tnum.ord.
+18563\tpryšč\t\tm.
+35977\tpsalm\t\tm.
+35978\tpsaltyŕ\t\tm.
+35406\tpsevdo-\t\tprefix
+35407\tpsevdonauka\t\tf.
+18564\tpsevdonim\t\tm.
+33734\tpsica\t\tf.
+20099\tpsihiatričny\t\tadj.
+20100\tpsihičny\t\tadj.
+16819\tpsiholog\t\tm.anim.
+16820\tpsihologičny\t\tadj.
+16818\tpsihologija\t\tf.sg.
+16817\tpsihopat\t\tm.anim.
+3264\tpsihopatičny\t\tadj.
+36701\tpsihovati\t\tv.intr. ipf.
+1224\tpšenica\t\tf.
+15507\tptačę\t\tn.
+14952\tptačji\t\tadj.
+14951\tptak\t\tm.anim.
+1111\tptica\t\tf.
+4478\tptičji\t\tadj.
+15508\tptička\t\tf.
+36163\tpubertet\t\tm.
+23991\tpubličny dom\t\tm.
+1213\tpubličny\t\tadj.
+18565\tpublika\t\tf.
+4979\tpublikacija\t\tf.
+1212\tpublikovati\t\tv.tr. ipf.
+3250\tpuč\t\tm.
+31813\tpuding\t\tm.
+21108\tpųditi\t\tv.tr. ipf.
+11669\tpuh\t\tm.
+4773\tpuhnųti\t\tv.intr. ipf.
+11670\tpuhovy\t\tadj.
+32275\tpųhyŕ\t\tm.
+30415\tpųkati\t\tv.intr. ipf.
+30417\tpųknųti\t\tv.intr. pf.
+36031\tpulover\t\tm.
+21110\tpult\t\tm.
+32475\tpuma\t\tf.
+2095\tpunkt\t\tm.
+23806\tpųp\t\tm.
+18566\tpųpȯk\t\tm.
+30041\tpurizm\t\tm.sg.
+23765\tpurpur\t\tm.
+30042\tpurpurny\t\tadj.
+32541\tpustěti\t\tv.intr. ipf.
+11676\t#pustina\t\tf.
+18568\tpustiti\t\tv.tr. pf.
+21119\tpustošiti\t\tv.tr. ipf.
+1083\tpusty\t\tadj.
+21121\tpusty\t\tadj.
+2154\tpustynja\t\tf.
+18570\tpustynnik\t\tm.anim.
+18567\tpušćati\t\tv.tr. ipf.
+14954\tpušiti\t\tv.tr. ipf.
+16814\tpuška\t\tf.
+2155\tpųť\t\tm./f.
+18571\tpųť\t\tm./f.
+4357\tpųtnik\t\tm.anim.
+11681\tpųtovańje\t\tn.
+5937\tpųtovatelj\t\tm.anim.
+11685\tpųtovateljka\t\tf.
+2156\tpųtovati\t\tv.intr. ipf.
+4356\tpųtujųći\t\tm.anim.
+2246\tpyl\t\tm.
+10553\tpyliti\t\tv.intr. ipf.
+23362\tpylȯk\t\tm.
+6090\tpyšnosť\t\tf.
+6091\tpyšny\t\tadj.
+32559\tpytaľnik\t\tm.
+32560\tpytaľny znak\t\tm.
+5768\tpytańje\t\tn.
+17021\tpytateljny zaimennik\t\tm.
+5938\tpytati\t\tv.tr. ipf.
+10592\tpytlivy\t\tadj.
+21122\tpytlivy\t\tadj.
+5331\tråb\t\tm.anim.
+30047\trabarbara\t\tf.
+30048\trabat\t\tm.
+11987\tråbimy\t\tadj.
+30050\trabin\t\tm.anim.
+2955\tråbiti\t\tv.tr. ipf.
+3701\tråbota\t\tf.
+1250\tråbotati\t\tv.intr. ipf.
+20101\tråbotči\t\tadj.
+35374\tråbotna sila\t\tf.
+30621\tråbotnica\t\tf.
+19507\tråbotničsky\t\tadj.
+11992\tråbotničstvo\t\tn.sg.
+5332\tråbotnik\t\tm.anim.
+30623\tråbotny\t\tadj.
+18579\tråbotodatelj\t\tm.anim.
+30051\tråbsky\t\tadj.
+1080\tråbstvo\t\tn.sg.
+30053\tråbynja\t\tf.
+55\tracionalizacija\t\tf.
+36351\tracionalizovany\t\tadj.
+34862\tracionalizovati\t\tv.tr. ipf./pf.
+36350\tracionalizovati\t\tv.tr. ipf./pf.
+20102\tracionaľno\t\tadv.
+16337\tracionaľny\t\tadj.
+30056\trad\t\tadj.
+4108\trada\t\tf.
+2301\tradar\t\tm.
+7209\tradca\t\tm.anim.
+11697\traděje\t\tadv.
+30057\tradi\t\tprep.
+887\tradiacija\t\tf.
+22636\tradij\t\tm.sg.
+174\tradikaľny\t\tadj.
+171\tradio\t\tn.
+731\tradioaktivny\t\tadj.
+23288\tradiolog\t\tm.anim.
+23287\tradiologija\t\tf.sg.
+22015\tradioskopija\t\tf.
+36221\tradiotelevizijna korporacija\t\tf.
+17022\tradiovy\t\tadj.
+4109\traditi\t\tv.tr. ipf.
+11702\tradničstvo\t\tn.sg.
+3316\tradosť\t\tf.
+11706\tradostno\t\tadv.
+803\tradostny\t\tadj.
+3455\tradovati sę\t\tv.refl. ipf.
+30061\tradovati\t\tv.tr. ipf.
+5179\trady\t\tadj.
+32347\trafinerija\t\tf.
+20103\trafinovany\t\tadj.
+35540\trahunȯk\t\tm.
+1496\traj\t\tm.
+30064\trajsky\t\tadj.
+18581\trak pustynnik\t\tm.anim.
+18580\trak\t\tm.
+30066\trak\t\tm.anim.
+30067\tRak\t\tm.anim.
+172\traketa\t\tf.
+30075\tralo\t\tn.
+5158\trama, ramka\t\tf.
+16343\tramę\t\tn.
+30077\tramenny\t\tadj.
+18582\trana\t\tf.
+14958\tranec\t\tm.
+11716\tranečnik\t\tm.anim.
+4061\traněje\t\tadv.
+11719\trang\t\tm.
+16072\trang\t\tm.
+35562\tranimosť\t\tf.
+35561\tranimy\t\tadj.
+1381\traniti\t\tv.tr. ipf.
+30079\tranji\t\tadj.
+1383\trano\t\tadv.
+4060\tranši\t\tadj.
+517\trany\t\tadj.
+902\traport\t\tm.
+11725\trasa\t\tf.
+23623\trasist\t\tm.anim.
+23624\trasističny\t\tadj.
+23622\trasizm\t\tm.sg.
+11726\trasovo stereotipovańje\t\tn.
+11727\trasovo unižeńje\t\tn.
+11729\trasovy\t\tadj.
+3684\tråst\t\tm.
+21491\tråst\t\tm.
+3037\tråsti\t\tv.intr. ipf.
+6245\tråstlina\t\tf.
+35508\tråstlinovod\t\tm.anim.
+22947\tråstlinožerec\t\tm.anim.
+22948\tråstlinožerny\t\tadj.
+21493\tråstly\t\tadj.
+23923\tråstȯk\t\tm.
+1382\tratifikacija\t\tf.
+1119\tratifikovati\t\tv.tr. ipf.
+1118\tratuš\t\tm.
+1331\traund\t\tm.
+11737\tråvěsničska sěť\t\tf.
+15509\tråvěsničsky\t\tadj.
+30086\tråvěsnik\t\tm.anim.
+12023\tråvnako\t\tadv.
+21494\tråvnańje\t\tn.
+2248\tråvnina\t\tf.
+6059\tråvniti sę\t\tv.refl. ipf.
+15511\tråvniti\t\tv.tr. ipf.
+5860\tråvno kako\t\tconj.
+3592\tråvno\t\tadv.
+23205\tråvnoběžny\t\tadj.
+18584\tråvnodenstvo\t\tn.
+11740\tråvnodušnosť\t\tf.
+21496\tråvnodušny\t\tadj.
+18585\tråvnohalo\t\tn.
+35148\tråvnoliko\t\tadv.
+23780\tråvnoměrno\t\tadv.
+20669\tråvnoměrnosť\t\tf.
+20670\tråvnoměrny\t\tadj.
+32281\tråvnonogy\t\tf.pl.
+18586\tråvnopravnosť\t\tf.
+18588\tråvnopravny\t\tadj.
+30091\tråvnosť\t\tf.
+21497\tråvnovaga\t\tf.
+21499\tråvnověśje\t\tn.
+12030\tråvnoznačnik\t\tm.
+36134\tråvnoznačny\t\tadj.
+1242\tråvny\t\tadj.
+2239\tråvny\t\tadj.
+3877\tråvny\t\tadj.
+489\traz\t\tm.
+11745\traz\t\tadv.
+30100\tråzběgati sę\t\tv.refl. ipf.
+30101\tråzběgati sę\t\tv.refl. ipf.
+30103\tråzběgti sę\t\tv.refl. pf.
+35356\tråzběsniti\t\tv.tr. pf.
+35355\tråzběsnjati\t\tv.tr. ipf.
+11748\tråzbirati\t\tv.tr. ipf.
+16472\tråzbirati\t\tv.tr. ipf.
+11750\tråzbiti\t\tv.tr. pf.
+3473\tråzbity\t\tadj.
+30104\tråzbivati\t\tv.tr. ipf.
+20674\tråzboj\t\tm.
+30116\tråzbojnica\t\tf.
+20675\tråzbojnik\t\tm.anim.
+30118\tråzbojny napad\t\tm.
+34929\tråzbojny\t\tadj.
+11752\tråzbolěti sę\t\tv.refl. pf.
+33753\tråzbolěvati sę\t\tv.refl. ipf.
+11753\tråzbor\t\tm.
+11749\tråzbrati\t\tv.tr. pf.
+16473\tråzbrati\t\tv.tr. pf.
+3878\tråzbuditi\t\tv.tr. pf.
+2295\tråzcvěsti\t\tv.intr. pf.
+15372\tråzcvět\t\tm.
+1103\tråzcvětati\t\tv.intr. ipf.
+30131\tråzčesati\t\tv.tr. pf.
+30134\tråzčistiti\t\tv.tr. pf.
+33774\tråzčišćati\t\tv.tr. ipf.
+30136\tråzčuliti\t\tv.tr. pf.
+33777\tråzčuljati\t\tv.tr. ipf.
+3675\tråzdati\t\tv.tr. pf.
+3652\tråzdavati\t\tv.tr. ipf.
+6053\tråzděl\t\tm.
+595\tråzděliti\t\tv.tr. pf.
+2249\tråzděljati\t\tv.tr. ipf.
+33755\tråzděti sę\t\tv.refl. pf.
+30143\tråzděti\t\tv.tr. pf.
+33756\tråzděvati sę\t\tv.refl. ipf.
+30145\tråzděvati\t\tv.tr. ipf.
+30147\tråzdirańje\t\tn.
+20104\tråzdirati\t\tv.tr. ipf.
+30150\tråzdniti sę\t\tv.refl. pf.
+33787\tråzdȯlbati\t\tv.tr. ipf.
+30151\tråzdȯlbti\t\tv.tr. pf.
+30152\tråzdor\t\tm.
+23221\tråzdražlivosť\t\tf.
+759\tråzdražlivy\t\tadj.
+11771\tråzdražniti\t\tv.tr. pf.
+11772\tråzdražnjati\t\tv.tr. ipf.
+2409\tråzdražnjeńje\t\tn.
+23799\tråzdražnjeno\t\tadv.
+23797\tråzdražnjeny\t\tadj.
+20105\tråzdreti\t\tv.tr. pf.
+20106\tråzdrety\t\tadj.
+30158\tråzdrobiti\t\tv.tr. pf.
+30159\tråzdrobjati\t\tv.tr. ipf.
+30160\tråzdrobjeńje\t\tn.
+2847\tråzdųti\t\tv.tr. pf.
+1558\tråzdųvati\t\tv.tr. ipf.
+18592\tråzdvajati\t\tv.tr. ipf.
+30165\tråzdvojeńje\t\tn.
+18593\tråzdvojiti\t\tv.tr. pf.
+30167\tråzgadati\t\tv.tr. pf.
+33765\tråzgadyvati\t\tv.tr. ipf.
+30168\tråzganjati\t\tv.tr. ipf.
+30169\tråzgarjati sę\t\tv.refl. ipf.
+30170\tråzgladiti\t\tv.tr. pf.
+32662\tråzglađati\t\tv.tr. ipf.
+18596\tråzglåsiti\t\tv.tr. pf.
+18594\tråzglašati\t\tv.tr. ipf.
+30174\tråzględ\t\tm.
+5822\tråzględati sę\t\tv.refl. ipf.
+11776\tråzględati\t\tv.tr. ipf.
+5823\tråzględěti sę\t\tv.refl. pf.
+11777\tråzględěti\t\tv.tr. pf.
+30176\tråzgnati\t\tv.tr. pf.
+23924\tråzgněvany\t\tadj.
+2349\tråzgněvati\t\tv.tr. pf.
+30180\tråzgon\t\tm.
+30182\tråzgorěti sę\t\tv.refl. pf.
+5426\tråzgovarjati\t\tv.intr. ipf.
+720\tråzgovor\t\tm.
+30184\tråzgovoriti sę\t\tv.refl. pf.
+18598\tråzgovornik\t\tm.
+32664\tråzgovorny język\t\tm.
+30186\tråzgovorny\t\tadj.
+30187\tråzgrabiti\t\tv.tr. pf.
+30188\tråzgrabiti\t\tv.tr. pf.
+30189\tråzgrabjati\t\tv.tr. ipf.
+33921\tråzgrabjati\t\tv.tr. ipf.
+30191\tråzgråditi\t\tv.tr. pf.
+33820\tråzgrađati\t\tv.tr. pf.
+33759\tråzgraničati\t\tv.tr. ipf.
+30192\tråzgraničiti\t\tv.tr. pf.
+30196\tråzgrěti\t\tv.tr. pf.
+30197\tråzgrěvańje\t\tn.
+30198\tråzgrěvati\t\tv.tr. ipf.
+30200\tråzgrom\t\tm.
+30201\tråzgromiti\t\tv.tr. pf.
+30203\tråzgryzati\t\tv.tr. ipf.
+30204\tråzgryzti\t\tv.tr. pf.
+18600\tråzhod\t\tm.
+5424\tråzhoditi sę\t\tv.refl. ipf.
+30210\tråzhodny\t\tadj.
+30214\tråzigrati sę\t\tv.refl. pf.
+33792\tråzigrati\t\tv.tr. pf.
+33796\tråzigryvati sę\t\tv.refl. ipf.
+33794\tråzigryvati\t\tv.tr. ipf.
+11787\tråziskati\t\tv.tr. pf.
+18602\tråziskyvańje dȯlgoživosti\t\tn.
+11788\tråziskyvańje\t\tn.
+11789\tråziskyvatelj\t\tm.anim.
+11790\tråziskyvati\t\tv.tr. ipf.
+21503\traziteljny\t\tadj.
+21505\traziti\t\tv.tr. ipf.
+35358\tråzjariti\t\tv.tr. pf.
+35357\tråzjarjati\t\tv.tr. ipf.
+18605\tråzjasniti\t\tv.tr. pf.
+18603\tråzjasnjati\t\tv.tr. ipf.
+11791\tråzjebany\t\tadj.
+4266\tråzjebati\t\tv.tr. pf.
+11793\tråzjebyvati\t\tv.tr. ipf.
+36908\tråzjedati\t\tv.tr. ipf.
+30215\tråzjediniti\t\tv.tr. pf.
+33824\tråzjedinjati\t\tv.tr. ipf.
+33771\tråzjehati sę\t\tv.refl. pf.
+36909\tråzjesti\t\tv.tr. pf.
+30218\tråzježđati sę\t\tv.refl. ipf.
+30219\tråzkajańje\t\tn.
+30220\tråzkajati sę\t\tv.refl. pf.
+30221\tråzkalati\t\tv.tr. ipf.
+33887\tråzkaz\t\tm.
+21507\tråzkazati\t\tv.tr. pf.
+17023\tråzkaznik\t\tm.
+36295\tråzkaznik\t\tm.anim.
+20126\tråzkazyvati\t\tv.tr. ipf.
+5532\tråzklad\t\tm.
+5781\tråzklad\t\tm.
+18607\tråzkladati\t\tv.tr. ipf.
+32691\tråzkladati\t\tv.tr. ipf.
+30233\tråzklåti\t\tv.tr. pf.
+33828\tråzklejati\t\tv.tr. ipf.
+30234\tråzklejiti\t\tv.tr. pf.
+11797\tråzkodovati\t\tv.tr. ipf.
+30237\tråzkol\t\tm.
+30238\tråzkopati\t\tv.tr. pf.
+33829\tråzkopyvati\t\tv.tr. ipf.
+30239\tråzkoš\t\tf.
+30240\tråzkoš\t\tf.
+30242\tråzkošny\t\tadj.
+30243\tråzkošny\t\tadj.
+30244\tråzkovati\t\tv.tr. pf.
+33868\tråzkovyvati\t\tv.tr. ipf.
+33866\tråzkrajati\t\tv.tr. ipf.
+30247\tråzkričati sę\t\tv.refl. pf.
+30251\tråzkrojiti\t\tv.tr. pf.
+30253\tråzkrȯšiti\t\tv.tr. pf.
+33855\tråzkrųćati sę\t\tv.tr. ipf.
+33853\tråzkrųćati\t\tv.tr. ipf.
+33852\tråzkrųtiti sę\t\tv.tr. pf.
+30254\tråzkrųtiti\t\tv.tr. pf.
+30256\tråzkryti\t\tv.tr. pf.
+30257\tråzkryťje\t\tn.
+30258\tråzkryvati\t\tv.tr. ipf.
+36412\tråzkvartirovańje\t\tn.sg.
+36411\tråzkvartirovati\t\tv.tr. pf.
+24162\tråzkvartirovyvati\t\tv.tr. ipf.
+30226\tråzkydati\t\tv.tr. pf.
+33826\tråzkydyvati\t\tv.tr. ipf.
+30261\tråzlad\t\tm.
+33836\tråzladiti\t\tv.tr. pf.
+33840\tråzlađati\t\tv.tr. ipf.
+30263\tråzlagati\t\tv.tr. ipf.
+32692\tråzlagati\t\tv.tr. ipf.
+30264\tråzlajati sę\t\tv.refl. pf.
+5589\tråzlamyvati\t\tv.tr. ipf.
+20677\tråzlegati sę\t\tv.refl. ipf.
+20678\tråzlegti sę\t\tv.refl. pf.
+30269\tråzlěniti sę\t\tv.refl. pf.
+30270\tråzlětati sę\t\tv.refl. ipf.
+30271\tråzletěti sę\t\tv.refl. pf.
+17024\tråzličajųći čislovnik\t\tm.
+4695\tråzličati sę\t\tv.refl. ipf.
+11804\tråzličati\t\tv.tr. ipf.
+20107\tråzličeńje\t\tn.
+30276\tråzličiti\t\tv.tr. pf.
+27\tråzličje\t\tn.
+11802\tråzličnosť\t\tf.
+2211\tråzličny\t\tadj.
+14963\tråzlika\t\tf.
+14964\tråzlikovati sę\t\tv.refl. ipf.
+30278\tråzliti\t\tv.tr. pf.
+30279\tråzliťje\t\tn.
+30280\tråzliv\t\tm.
+30282\tråzlivati\t\tv.tr. ipf.
+14965\tråzlog\t\tm.
+30286\tråzlom\t\tm.
+4615\tråzlomiti\t\tv.tr. pf.
+36217\tråzložeńje klaviatury\t\tn.
+18608\tråzložiti\t\tv.tr. pf.
+30231\tråzložiti\t\tv.tr. pf.
+20108\tråzlųčati\t\tv.tr. ipf.
+30290\tråzlųčeńje\t\tn.
+20109\tråzlųčiti\t\tv.tr. pf.
+30292\tråzlųčnik\t\tm.anim.
+30293\tråzlųka\t\tf.
+11807\tråzmah krila\t\tn.
+20681\tråzmah\t\tm.
+30298\tråzmazati\t\tv.tr. pf.
+33894\tråzmazyvati\t\tv.tr. ipf.
+30300\tråzmękčati\t\tv.tr. ipf.
+30301\tråzmękčiti\t\tv.tr. pf.
+3596\tråzměna\t\tf.
+17\tråzměniti\t\tv.tr. pf.
+324\tråzměnjati\t\tv.tr. ipf.
+36\tråzměr\t\tm.
+30308\tråzměriti\t\tv.tr. pf.
+30309\tråzměrjati\t\tv.tr. ipf.
+30317\tråzmesti\t\tv.tr. pf.
+128\tråzměstiti\t\tv.tr. pf.
+5973\tråzměšany\t\tadj.
+23250\tråzměšany\t\tadj.
+1041\tråzměšati\t\tv.tr. pf.
+12376\tråzměšati\t\tv.tr. pf.
+1262\tråzměšćati\t\tv.tr. ipf.
+11817\tråzměšćeńje\t\tn.
+3004\tråzměšivati\t\tv.tr. ipf.
+16898\tråzměšivati\t\tv.tr. ipf.
+30315\tråzmětati\t\tv.tr. ipf.
+30316\tråzmetati\t\tv.tr. pf.
+32245\tråzmęti\t\tv.tr. pf.
+32599\tråzmetyvati\t\tv.tr. ipf.
+33900\tråzminovati sę\t\tv.refl. ipf.
+30318\tråzminųti sę\t\tv.refl. pf.
+30320\tråzmlåtiti\t\tv.tr. pf.
+30321\tråzmlěti\t\tv.tr. pf.
+23626\tråzmnažańje\t\tn.
+33291\tråzmnažati sę\t\tv.refl. ipf.
+30322\tråzmnažati\t\tv.tr. ipf.
+30323\tråzmnožeńje\t\tn.
+33293\tråzmnožiti sę\t\tv.refl. pf.
+30324\tråzmnožiti\t\tv.tr. pf.
+30326\tråzmokati\t\tv.intr. ipf.
+30327\tråzmoknųti\t\tv.intr. pf.
+5633\tråzmontovati\t\tv.tr. pf.
+30329\tråzmotati\t\tv.tr. pf.
+23065\tråzmråziti\t\tv.tr. pf.
+23066\tråzmražati\t\tv.tr. ipf.
+5046\tråzmysliti\t\tv.tr. pf.
+11827\tråzmysljańje\t\tn.
+3348\tråzmysljati\t\tv.tr. ipf.
+20112\tråzmysljeńje\t\tn.
+30337\tråzmyti\t\tv.tr. pf.
+30338\tråzmyvati\t\tv.tr. ipf.
+20686\tråznesti sę\t\tv.refl. pf.
+5501\tråznesti\t\tv.tr. pf.
+11834\tråznica\t\tf.
+30345\tråzniti sę\t\tv.refl. ipf.
+21508\tråznorodnosť\t\tf.
+21509\tråznorodny\t\tadj.
+30349\tråznos\t\tm.
+20687\tråznositi sę\t\tv.refl. ipf.
+5499\tråznositi\t\tv.tr. ipf.
+2034\tråzny\t\tadj.
+41\tråzočarovańje\t\tn.
+5900\tråzočarovany\t\tadj.
+5898\tråzočarovati\t\tv.tr. pf.
+5899\tråzočarovyvati\t\tv.tr. ipf.
+35645\tråzȯjdti sę\t\tv.refl. pf.
+14960\trazȯm\t\tadv.
+21510\trazȯm\t\tadv.
+30357\tråzorati\t\tv.tr. pf.
+30359\tråzoriti\t\tv.tr. pf.
+33803\tråzorjati\t\tv.tr. ipf.
+30358\tråzorjeńje\t\tn.
+23010\tråzorųžati\t\tv.tr. ipf.
+6240\tråzorųžeńje\t\tn.
+23009\tråzorųžiti\t\tv.tr. pf.
+20114\tråzpad\t\tm.
+2271\tråzpadati sę\t\tv.refl. ipf.
+18610\tråzpakovati\t\tv.tr. pf.
+18612\tråzpakovyvati\t\tv.tr. ipf.
+30374\tråzpaliti sę\t\tv.refl. pf.
+30370\tråzpaliti\t\tv.tr. pf.
+33934\tråzpaljati sę\t\tv.refl. ipf.
+33930\tråzpaljati\t\tv.tr. ipf.
+30377\tråzparjati\t\tv.tr. ipf.
+2050\tråzpasti sę\t\tv.refl. pf.
+30379\tråzpěniti\t\tv.intr. pf.
+30381\tråzpęti na križ\t\tv.tr. pf.
+30380\tråzpęti\t\tv.tr. pf.
+33944\tråzpęti\t\tv.tr. pf.
+21124\tråzpęťje\t\tn.
+21125\tråzpęťje\t\tn.
+33952\tråzpinati na križ\t\tv.tr. ipf.
+33947\tråzpinati\t\tv.tr. ipf.
+33950\tråzpinati\t\tv.tr. ipf.
+34338\tråzplesti\t\tv.tr. pf.
+34334\tråzpletati\t\tv.tr. ipf.
+34905\tråzplyvati sę\t\tv.refl. ipf.
+34906\tråzplyvti sę\t\tv.refl. pf.
+20839\tråzpoložeńje\t\tn.
+30389\tråzpoložeńje\t\tn.
+2914\tråzpor\t\tm.
+23927\tråzporęditi\t\tv.tr. pf.
+23929\tråzporęđati\t\tv.tr. ipf.
+22363\tråzporęđeńje\t\tn.
+22364\tråzporęđeńje\t\tn.
+22883\tråzpoznańje\t\tn.
+11844\tråzpoznati\t\tv.tr. pf.
+22882\tråzpoznati\t\tv.tr. pf.
+36455\tråzpoznavajemosť\t\tf.sg.
+36454\tråzpoznavajemy\t\tv.tr. ipf.
+30398\tråzpoznavańje\t\tn.
+11845\tråzpoznavati\t\tv.tr. ipf.
+22880\tråzpoznavati\t\tv.tr. ipf.
+33955\tråzprašati\t\tv.tr. ipf.
+33954\tråzpråšiti\t\tv.tr. pf.
+30401\tråzpråti\t\tv.tr. pf.
+21129\tråzprava\t\tf.
+21130\tråzprava\t\tf.
+23069\tråzprava\t\tf.
+21126\tråzprja\t\tf.
+32671\tråzprodati\t\tv.tr. pf.
+30404\tråzprodavati\t\tv.tr. ipf.
+30406\tråzprostirati sę\t\tv.refl. ipf.
+21892\tråzprostirati\t\tv.tr. ipf.
+33907\tråzprostråniti sę\t\tv.refl. pf.
+20123\tråzprostråniti\t\tv.tr. pf.
+33908\tråzprostranjati sę\t\tv.refl. ipf.
+20117\tråzprostranjati\t\tv.tr. ipf.
+20120\tråzprostrånjeńje\t\tn.
+20122\tråzprostrånjeny\t\tadj.
+21893\tråzprostrěti\t\tv.tr. pf.
+30416\tråzpųklina\t\tf.
+1887\tråzpustiti\t\tv.tr. pf.
+21139\tråzpustiti\t\tv.tr. pf.
+21141\tråzpustiti\t\tv.tr. pf.
+2362\tråzpušćati\t\tv.tr. ipf.
+21134\tråzpušćati\t\tv.tr. ipf.
+21136\tråzpušćati\t\tv.tr. ipf.
+3564\tråzpušćeńje\t\tn.
+3530\tråzpųťje\t\tn.
+5989\tråzpytati\t\tv.tr. pf.
+11851\tråzpytyvańje\t\tn.
+5988\tråzpytyvati\t\tv.tr. ipf.
+5144\tråzråbotati\t\tv.tr. pf.
+5543\tråzråbotyvati\t\tv.tr. ipf.
+11855\tråzradovati\t\tv.tr. pf.
+30426\tråzrastańje\t\tn.
+30427\tråzrastati sę\t\tv.refl. ipf.
+30428\tråzråsti sę\t\tv.refl. pf.
+18618\tråzråzniti\t\tv.tr. pf.
+18617\tråzraznjati\t\tv.tr. ipf.
+22362\tråzręd\t\tm.
+18619\tråzrěšati\t\tv.tr. ipf.
+17025\tråzrěšeńje\t\tn.
+18621\tråzrěšiti\t\tv.tr. pf.
+30432\tråzrěz\t\tm.
+30434\tråzrězati\t\tv.tr. pf.
+18623\tråzrųbati\t\tv.tr. pf.
+18625\tråzrųbyvati\t\tv.tr. ipf.
+30439\tråzruměniti sę\t\tv.refl. pf.
+4777\tråzrušati\t\tv.tr. ipf.
+14967\tråzrušeńje\t\tn.
+30441\tråzrušitelj\t\tm.
+3553\tråzrušiti\t\tv.tr. pf.
+14968\tråzrušnosť\t\tf.
+30443\tråzrvati\t\tv.tr. pf.
+30444\tråzryti\t\tv.tr. pf.
+30445\tråzryv\t\tm.
+30446\tråzryvati\t\tv.tr. ipf.
+30447\tråzryvati\t\tv.tr. ipf.
+11858\tråzsada\t\tf.
+30449\tråzsaditi\t\tv.tr. pf.
+30450\tråzsadnik\t\tm.
+30451\tråzsađati\t\tv.tr. ipf.
+30135\tråzsčitati\t\tv.tr. pf.
+35903\tråzsčityvati\t\tv.tr. ipf.
+30453\tråzsedlati\t\tv.tr. pf.
+34000\tråzsedlyvati\t\tv.tr. ipf.
+36751\tråzsějany professor\t\tm.anim.
+36750\tråzsějany\t\tadj.
+33244\tråzsějati\t\tv.tr. pf.
+33242\tråzsějivati\t\tv.tr. ipf.
+21517\tråzselina\t\tf.
+30361\tråzslati\t\tv.tr. pf.
+6236\tråzslěditi\t\tv.tr. pf.
+6235\tråzslědovańje\t\tn.
+6234\tråzslědovati\t\tv.tr. ipf.
+34013\tråzsmatrjati\t\tv.tr. pf.
+30462\tråzsmějati sę\t\tv.refl. pf.
+4055\tråzsměliti\t\tv.tr. pf.
+4059\tråzsměljati\t\tv.tr. ipf.
+23930\tråzsměšati\t\tv.tr. ipf.
+23931\tråzsměšiti\t\tv.tr. pf.
+30464\tråzsmotriti\t\tv.tr. pf.
+18627\tråzsŕditi\t\tv.tr. pf.
+21780\tråzstati sę\t\tv.refl. pf.
+21778\tråzstavati sę\t\tv.refl. ipf.
+5632\tråzstaviti\t\tv.tr. pf.
+21787\tråzstaviti\t\tv.tr. pf.
+5631\tråzstavjati\t\tv.tr. ipf.
+21784\tråzstavjati\t\tv.tr. ipf.
+5630\tråzstavjeńje\t\tn.
+33449\tråzsteliti\t\tv.tr. pf.
+33452\t#råzstlati\t\tv.tr. pf.
+21782\tråzstojańje\t\tn.
+21913\tråzstrajati\t\tv.tr. ipf.
+30476\tråzstrěl\t\tm.
+34016\tråzstrěliti\t\tv.tr. pf.
+30477\tråzstrěljati\t\tv.tr. ipf.
+30480\tråzstroj\t\tm.
+21918\tråzstrojiti\t\tv.tr. pf.
+36194\tråzstrojstvo\t\tn.
+23933\tråzsųditi\t\tv.intr. pf.
+3311\tråzsųdny\t\tadj.
+3312\tråzsųdȯk\t\tm.sg.
+22011\tråzsųdȯk\t\tm.sg.
+34021\tråzsųđati\t\tv.intr. ipf.
+11868\tråzsųđeńje\t\tn.
+22016\tråzsvět\t\tm.
+21687\tråzsvětliti sę\t\tv.refl. pf.
+21519\tråzsvětljati sę\t\tv.refl. ipf.
+30499\tråzsvirěpěti\t\tv.intr. pf.
+30517\tråzsylati\t\tv.tr. ipf.
+30518\tråzsylka\t\tf.
+22001\tråzsyp\t\tm.
+11859\tråzsypany\t\tadj.
+1149\tråzsypati\t\tv.tr. pf.
+1866\tråzsypyvati\t\tv.tr. ipf.
+30504\tråzščep\t\tm.
+30505\tråzščepiti\t\tv.tr. pf.
+30506\tråzščepjati\t\tv.tr. ipf.
+11871\tråzšifrovati\t\tv.tr. ipf.
+11877\tråzširiti sę\t\tv.refl. pf.
+1162\tråzširiti\t\tv.tr. pf.
+36388\tråzširjati sę\t\tv.refl. ipf.
+587\tråzširjati\t\tv.tr. ipf.
+3601\tråzširjeńje\t\tn.
+11873\tråzširjeny\t\tadj.
+23484\tråzšnurovati\t\tv.tr. pf.
+23483\tråzšnurovyvati\t\tv.tr. ipf.
+30522\tråztajati\t\tv.tr. pf.
+30523\tråztapjati\t\tv.tr. ipf.
+3025\tråztęgati sę\t\tv.refl. ipf.
+30525\tråztęgati\t\tv.tr. ipf.
+1290\tråztęgnųti sę\t\tv.refl. pf.
+30526\tråztęgnųti\t\tv.tr. pf.
+30527\tråztěkati sę\t\tv.refl. ipf.
+30528\tråztekti sę\t\tv.refl. pf.
+30530\tråztirati\t\tv.tr. ipf.
+33461\tråztȯlkati\t\tv.tr. ipf.
+30536\tråztȯlkti\t\tv.tr. pf.
+30537\tråztȯlstěti\t\tv.intr. pf.
+817\tråztopiti\t\tv.tr. pf.
+30539\tråztȯptati\t\tv.tr. pf.
+34038\tråztȯptyvati\t\tv.tr. ipf.
+16768\tråztraćati\t\tv.tr. ipf.
+30541\tråztrata\t\tf.
+34041\tråztrata\t\tf.
+16771\tråztratiti\t\tv.tr. pf.
+30546\tråztrěskati\t\tv.tr. ipf.
+30547\tråztrěsknųti\t\tv.tr. pf.
+30549\tråztreti\t\tv.tr. pf.
+30550\tråztrgati\t\tv.tr. ipf.
+30551\tråztrgnųti\t\tv.tr. pf.
+17026\tråztrojiti\t\tv.tr. pf.
+23426\tråztrųbiti\t\tv.tr. pf.
+22153\tråztvarjati\t\tv.tr. ipf.
+22155\tråztvor\t\tm.
+22154\tråztvoriti\t\tv.tr. pf.
+657\tråzum\t\tm.
+30562\tråzuměje sę\t\tphrase
+4347\tråzumějemo\t\tadv.
+4348\tråzumějemosť\t\tf.
+4346\tråzumějemy\t\tadj.
+23071\tråzuměńje\t\tn.
+2102\tråzuměti\t\tv.tr. ipf.
+11894\tråzumlivo\t\tadv.
+11895\tråzumlivosť\t\tf.
+11896\tråzumlivy\t\tadj.
+30566\tråzumnica\t\tf.
+30567\tråzumnik\t\tm.anim.
+3807\tråzumno\t\tadv.
+11914\tråzumno\t\tadv.
+4169\tråzumnosť\t\tf.
+4167\tråzumny\t\tadj.
+11915\tråzumny\t\tadj.
+4166\tråzumovati\t\tv.intr. ipf.
+30570\tråzuti sę\t\tv.refl. pf.
+30571\tråzuvati sę\t\tv.refl. ipf.
+22188\tråzvaliny\t\tf.pl.
+30575\tråzvaliti sę\t\tv.refl. pf.
+34056\tråzvaliti sę\t\tv.refl. pf.
+34050\tråzvaliti\t\tv.tr. pf.
+34051\tråzvaliti\t\tv.tr. pf.
+34058\tråzvaljati sę\t\tv.refl. ipf.
+34060\tråzvaljati sę\t\tv.refl. ipf.
+34052\tråzvaljati\t\tv.tr. ipf.
+34053\tråzvaljati\t\tv.tr. ipf.
+35114\tråzvažańje\t\tn.
+6010\tråzvažati\t\tv.tr. ipf.
+6011\tråzvažiti\t\tv.tr. pf.
+30576\tråzvědati\t\tv.tr. pf.
+3255\tråzvědka\t\tf.
+34034\tråzvědyvati\t\tv.tr. ipf.
+30580\tråzveseliti\t\tv.tr. pf.
+30581\tråzveseljati\t\tv.tr. ipf.
+22264\tråzvesti sę\t\tv.refl. pf.
+5507\tråzvesti\t\tv.tr. pf.
+35506\tråzvesti\t\tv.tr. pf.
+22198\tråzvęzati\t\tv.tr. pf.
+30582\tråzvezti\t\tv.tr. pf.
+22199\tråzvęzyvati\t\tv.tr. ipf.
+23554\tråzviti sę\t\tv.refl. pf.
+1282\tråzviti\t\tv.tr. pf.
+30584\tråzviti\t\tv.tr. pf.
+5100\tråzviťje\t\tn.
+11909\tråzvivajųći\t\tadj.
+2318\tråzvivańje\t\tn.
+23553\tråzvivati sę\t\tv.refl. ipf.
+2101\tråzvivati\t\tv.tr. ipf.
+30583\tråzvivati\t\tv.tr. ipf.
+22262\tråzvod\t\tm.
+22263\tråzvoditi sę\t\tv.refl. ipf.
+3565\tråzvoditi\t\tv.tr. ipf.
+35505\tråzvoditi\t\tv.tr. ipf.
+22552\tråzvoďje\t\tn.
+30586\tråzvodny\t\tadj.
+18631\tråzvoj\t\tm.
+34062\tråzvoziti\t\tv.tr. ipf.
+22703\tråzvråt\t\tm.
+22708\tråzvråt\t\tm.
+22713\tråzvråtnica\t\tf.
+22709\tråzvråtnik\t\tm.anim.
+22712\tråzvråtnosť\t\tf.
+14832\tråzvråtny\t\tadj.
+30590\tråžen\t\tm.
+30593\tråzžegti\t\tv.tr. pf.
+22966\tråzžerati\t\tv.tr. ipf.
+32646\tråzžigati\t\tv.tr. ipf.
+22970\tråzžrěti\t\tv.tr. pf.
+30594\tråzžuvati\t\tv.tr. pf.
+25365\trdest\t\tm.
+1235\trđa\t\tf.
+3828\trđavy\t\tadj.
+3803\treagovati\t\tv.intr. ipf.
+712\treakcija\t\tf.
+6093\treaktor\t\tm.
+35080\trealist\t\tm.anim.
+35082\trealističny\t\tadj.
+3102\trealizacija\t\tf.
+35081\trealizm\t\tm.sg.
+4980\trealizovati\t\tv.tr. ipf.
+16077\treaľnosť\t\tf.
+2216\treaľny\t\tadj.
+1045\trebro\t\tn.
+1046\trecept\t\tm.
+1999\trecesija\t\tf.
+2196\trěč\t\tf.
+11984\trěč\t\tf.
+3758\trěčeńje\t\tn.
+14973\trěčnik\t\tm.
+2283\tręd\t\tm.
+3798\tręd\t\tm.
+22350\tręd\t\tm.
+36016\tręd\t\tm.
+20690\tredagovati\t\tv.tr. ipf.
+4859\tredakcija\t\tf.
+18633\tredakcijny\t\tadj.
+4858\tredaktor\t\tm.anim.
+4860\tredaktovati\t\tv.tr. ipf.
+20128\trědko\t\tadv.
+23778\trědkosť\t\tf.
+23766\tredkȯvka\t\tf.
+2272\trědky\t\tadj.
+11927\trędnosť\t\tf.
+17027\trędny\t\tadj.
+36143\trędȯk\t\tm.
+36025\trędovy\t\tm.anim.
+30601\tredukcija\t\tf.
+5644\tredukovati\t\tv.tr. ipf.
+17028\treferencija\t\tf.
+2197\treferendum\t\tm.
+17029\trefleksivny zaimennik\t\tm.
+1243\treforma\t\tf.
+4981\treformacija\t\tf.
+4848\treformovati\t\tv.tr. ipf.
+1279\trefren\t\tm.
+34875\trefundacija\t\tf.
+3048\tregion\t\tm.
+2973\tregionaľny\t\tadj.
+4982\tregistracija\t\tf.
+36299\tregistracijna tablica\t\tf.
+36298\tregistracijny znak\t\tm.
+2140\tregistrovati\t\tv.tr. ipf.
+20130\tregresija\t\tf.
+17030\tregularizacija\t\tf.
+23775\tregularno\t\tadv.
+5672\tregularnosť\t\tf.
+5671\tregularny\t\tadj.
+20131\tregulator ritma sŕdca\t\tm.
+20691\tregulovati\t\tv.tr. ipf.
+36887\tRejn\t\tm.sg.
+2285\trěka\t\tf.
+3422\treklama\t\tf.
+30605\treklamacija\t\tf.
+11941\treklamny\t\tadj.
+11942\treklamodatelj\t\tm.anim.
+11939\treklamovańje\t\tn.
+3421\treklamovati\t\tv.tr. ipf.
+35212\trekomendacija\t\tf.
+5126\trekomendovati\t\tv.tr. ipf./pf.
+4874\trekonstrukcija\t\tf.
+2332\trekonstruovati\t\tv.tr. ipf.
+1241\trekord\t\tm.
+1550\trekreacija\t\tf.
+5014\trěkti\t\tv.tr. ipf.
+35770\trektor\t\tm.anim.
+33697\trekviem\t\tm.
+17031\trelativny zaimennik\t\tm.
+1074\treligija\t\tf.
+88\treligiozny\t\tadj.
+30608\trelikt\t\tm.
+32289\trelikvija\t\tf.
+18634\tremenj\t\tm.
+3233\tremesľnik\t\tm.anim.
+1566\tremeslo\t\tn.
+33724\tremont\t\tm.
+1519\tremontovati\t\tv.tr. ipf.
+36227\trenegat\t\tm.anim.
+2949\trenesansa\t\tf.
+23285\trentgenovy luč\t\tm.
+23286\trentgenovy snimȯk\t\tm.
+35185\treorganizacija\t\tf.
+35184\treorganizovati\t\tv.tr. ipf./pf.
+14974\trěpa\t\tf.
+36379\trěpa\t\tf.
+36078\trěpka\t\tf.
+36333\treplika\t\tf.
+6300\trepresija\t\tf.
+19508\treprezentovati\t\tv.tr. ipf.
+20132\treprodukovati\t\tv.tr. ipf.
+2945\trepublika\t\tf.
+35519\trepublikanec\t\tm.anim.
+35520\trepublikansky\t\tadj.
+21522\treputacija\t\tf.
+18639\tręsa\t\tf.
+35737\trespekt\t\tm.sg.
+30610\trestavracija\t\tf.
+34930\trestavrovati\t\tv.tr. ipf./pf.
+30611\trestoran\t\tm.
+1759\tresurs\t\tm.
+11952\trěšajųći\t\tadj.
+2338\trěšati\t\tv.tr. ipf.
+11954\trěšati\t\tv.tr. ipf.
+1238\trěšeńje\t\tn.
+11957\trěšeńje\t\tn.
+18635\trěšeny\t\tadj.
+23777\trěšiteljno\t\tadv.
+35522\trěšiteljnosť\t\tf.
+11955\trěšiteljny\t\tadj.
+1256\trěšiti\t\tv.tr. pf.
+11960\trěšiti\t\tv.tr. pf.
+1251\trešta\t\tf.
+20692\tretoromansky\t\tadj.
+36505\trev\t\tm.
+36521\trevanš\t\tm.
+30612\trevenj\t\tm.
+35433\treverans\t\tm.
+4074\trevidovati\t\tv.tr. ipf.
+4077\trevizija\t\tf.
+23768\trevmatičny\t\tadj.
+23767\trevmatizm\t\tm.sg.
+1945\trevnivosť\t\tf.
+1668\trevnivy\t\tadj.
+2860\trevolucija\t\tf.
+11966\trevolucijna boŕba\t\tf.
+11967\trevolucijna gvardija\t\tf.
+14975\trevolucijnizm\t\tm.sg.
+11969\trevolucijnosť\t\tf.
+4078\trevolucijny\t\tadj.
+3266\trevolucioner\t\tm.anim.
+36503\trevti\t\tv.intr. ipf.
+3397\trězati\t\tv.tr. ipf.
+1244\trezerva\t\tf.
+35860\trezervacija\t\tf.
+35861\trezervat\t\tm.
+35858\trezervovati\t\tv.tr. ipf.
+18637\trezjume\t\tn.indecl.
+35521\trezolucija\t\tf.
+1259\trezultat\t\tm.
+3023\trezumovati\t\tv.tr. ipf.
+2123\trežim\t\tm.
+3741\trežim\t\tm.
+35752\trežiser\t\tm.anim.
+23525\tRim\t\tm.sg.
+23524\tRimska imperija\t\tf.sg.
+18640\trimskokatoličsky\t\tadj.
+838\trimsky\t\tadj.
+11979\triť\t\tf.
+20133\tritm\t\tm.
+32240\tritmičny\t\tadj.
+36127\tritual\t\tm.
+36128\trituaľny\t\tadj.
+14978\trizično\t\tadv.
+1253\trizičny\t\tadj.
+1254\trizik\t\tm.
+1366\trizikovati\t\tv.tr. ipf.
+3948\trobot\t\tm.
+18641\tročnica\t\tf.
+11995\tročno\t\tadv.
+11996\tročny\t\tadj.
+1246\trod\t\tm.
+3222\trod\t\tm.
+11998\trod\t\tm.
+21523\trod\t\tm.
+20134\trodimy\t\tadj.
+4690\trodina\t\tf.
+1947\troditelj\t\tm.anim.
+1946\troditeljnik, roditeljny padež\t\tm.
+36241\troditeljsky\t\tadj.
+2198\troditi sę\t\tv.refl. ipf.
+2325\troditi\t\tv.tr. ipf.
+5184\trodna nazva\t\tf.
+20693\trodny\t\tadj.
+6097\trodobijstvo\t\tn.sg.
+21142\trodopis\t\tm.sg.
+21143\trodopisec\t\tm.anim.
+21526\trodoslovje\t\tn.
+36378\trodoslovje\t\tn.
+2122\trodstveny\t\tadj.
+12010\trodstvo\t\tn.sg.
+12001\trođeńje\t\tn.
+18644\tRođeńje\t\tn.
+2207\trođeny\t\tadj.
+400\trog\t\tm.
+36806\trogaty\t\tadj.
+33966\troj\t\tm.
+34355\trojiti sę\t\tv.refl. ipf.
+12014\trok\t\tm.
+18647\trokada\t\tf.
+31863\trokenrol\t\tm.sg.
+18648\trokirovati\t\tv.intr. ipf./pf.
+23628\trok-muzika\t\tf.
+2063\trolja\t\tf.
+35283\troljeva igra\t\tf.
+23601\troman\t\tm.
+4735\tromansky\t\tadj.
+1240\tromanš\t\tm.sg.
+2182\tromantičny\t\tadj.
+34931\tRomantizm\t\tm.sg.
+36174\tromb\t\tm.
+18649\troptańje\t\tn.sg.
+18651\troptati\t\tv.intr. ipf.
+36658\tropuha\t\tf.
+18653\trosa\t\tf.
+1044\tRosija\t\tf.sg.
+30630\tRosijska Federacija\t\tf.sg.
+3036\trosijsky\t\tadj.
+26\trotacija\t\tf.
+12022\trov\t\tm.
+149\troza\t\tf.
+30632\trozga\t\tf.
+5268\trozovy\t\tadj.
+12035\troževy\t\tadj.
+22633\trtųť\t\tf.sg.
+18657\trųbati\t\tv.tr. ipf.
+23467\trubin\t\tm.
+32081\trublj\t\tm.
+5845\trųčiti sę\t\tv.refl. pf.
+21528\trųčka\t\tf.
+21529\trųčka\t\tf.
+18660\trųčnik\t\tm.
+18661\trųčno\t\tadv.
+18662\trųčny\t\tadj.
+5640\truda\t\tf.
+35209\trudimentarny\t\tadj.
+36777\trudnik\t\tm.
+32675\trudy\t\tadj.
+3186\truh\t\tm.
+20135\truina\t\tf.
+20136\truinovati\t\tv.tr. ipf.
+12039\trujenj\t\tm.sg.
+34176\trųka v rųkě\t\tadv.
+2357\trųka\t\tf.
+21531\trųkav\t\tm.
+21532\trųkav\t\tm.
+18664\trųkavica\t\tf.
+21533\trųkoděľstvo\t\tn.sg.
+18667\trųkojęť\t\tf.
+16412\trųkopis\t\tm.
+18669\trųkopleskańje\t\tn.sg.
+18670\trųkopleskati\t\tv.intr. ipf.
+18672\trųkoplesknųti\t\tv.intr. pf.
+20694\trųkopoložeńje\t\tn.
+5891\trųkovati\t\tv.tr. ipf.
+3696\trųkovoditelj\t\tm.anim.
+18675\trųkovoditi\t\tv.tr. ipf.
+3697\trųkovodstvo\t\tn.
+18666\trųky do gory!\t\tphrase
+7812\trukzak\t\tm.
+33404\truletka\t\tf.
+4646\trum\t\tm.
+23890\truměnec\t\tm.
+33919\truměněti\t\tv.intr. ipf.
+370\tRumunija\t\tf.sg.
+4433\trumunsky\t\tadj.
+36648\truna\t\tf.
+33397\truno\t\tn.
+1269\tRus\t\tm.anim.
+35346\trusifikacija\t\tf.
+35347\trusifikovati\t\tv.tr. ipf./pf.
+1272\trusinsky\t\tadj.
+2311\trussky\t\tadj.
+32674\trusy\t\tadj.
+21536\trušiti\t\tv.tr. ipf.
+20137\trutensky\t\tadj.
+32067\trutina\t\tf.
+32069\trutinny\t\tadj.
+36531\truž\t\tm.
+21539\trvati sę\t\tv.refl. ipf.
+21537\trvati\t\tv.tr. ipf.
+21538\trvati\t\tv.tr. ipf.
+1682\tryba\t\tf.
+2339\trybak\t\tm.anim.
+12059\trybaŕ\t\tm.anim.
+2304\trybnik\t\tm.
+27310\trybolov\t\tm.
+12058\trybolovstvo\t\tn.sg.
+30648\tRyby\t\tf.pl.
+12062\trycaŕ\t\tm.anim.
+18676\trydati\t\tv.intr. ipf.
+30650\tryđi\t\tadj.
+34356\trygati\t\tv.intr. ipf.
+34358\trygnųti\t\tv.intr. pf.
+34360\trylo\t\tn.
+32131\tryma\t\tf.
+32133\trymovati sę\t\tv.refl. ipf.
+32132\trymovati\t\tv.tr. ipf.
+1252\tryś\t\tm.anim.
+21542\trysovanka\t\tf.
+3568\trysovati\t\tv.tr. ipf.
+33969\tryti\t\tv.intr. ipf.
+3821\tryž\t\tm.sg.
+5827\ts izključeńjem\t\tprep.
+4947\ts obzirȯm na\t\tprep.
+1267\ts pomoćjų\t\tprep.
+12070\ts prijemnosťjų\t\tintj.
+1280\ts, so\t\tprep.
+2061\ts, so\t\tprep.
+35960\tsablja\t\tf.
+35961\tsabljevańje\t\tn.sg.
+2157\tsad\t\tm.
+12075\tsaditi\t\tv.tr. ipf.
+34405\tsadovnik\t\tm.anim.
+18761\tsađa\t\tf.
+36540\tsafari\t\tn.
+21548\tSahara\t\tf.sg.
+30653\tsajt\t\tm.
+36155\tsako\t\tn.
+35130\tsakraľny\t\tadj.
+35829\tsakristija\t\tf.
+23453\tsaksofon\t\tm.
+35633\tSaksonija\t\tf.sg.
+269\tsala\t\tf.
+32183\tsalata\t\tf.
+20723\tsalo\t\tn.
+5719\tsalon\t\tm.
+22466\tSalvador\t\tm.sg.
+22467\tsalvadorsky\t\tadj.
+2219\tsam\t\tpron.pers.
+5253\tsamec\t\tm.anim.
+5222\tsamica\t\tf.
+169\tsamit\t\tm.
+20170\tsamo\t\tadv.
+35502\tsamo-\t\tprefix
+12084\tsamoanaliza\t\tf.
+18769\tsamobytny\t\tadj.
+35149\tsamodostatȯčnosť\t\tf.
+35150\tsamodostatȯčny\t\tadj.
+18771\tsamodŕžec\t\tm.anim.
+16490\tsamoglåska\t\tf.
+18772\tsamogon\t\tm.sg.
+33788\tsamohvaľstvo\t\tn.sg.
+35041\tsamokat\t\tm.
+35040\tsamokritika\t\tf.
+814\tsamolet\t\tm.
+23809\tsamoljubec\t\tm.anim.
+23808\tsamoljubny\t\tadj.
+12083\tsamoobsluga\t\tf.
+16356\tsamoobsluga\t\tf.
+18774\tsamoocěna\t\tf.
+12089\tsamoposmatrjańje\t\tn.
+5342\tsamoråzumno\t\tadv.
+5690\tsamoråzumny\t\tadj.
+813\tsamorod\t\tm.
+18775\tsamostojno\t\tadv.
+18776\tsamostojnosť\t\tf.
+18777\tsamostojny\t\tadj.
+21549\tsamosųd\t\tm.sg.
+21551\tsamota\t\tf.
+21553\tsamotnosť\t\tf.
+1362\tsamotny\t\tadj.
+36135\tsamoubijny\t\tadj.
+4154\tsamoubijstvo\t\tn.
+15528\tsamoubiti\t\tv.intr. pf.
+30657\tsamouk\t\tm.anim.
+16737\tsamovar\t\tm.
+21554\tsamovlada\t\tf.
+22482\tsamovlasťje\t\tn.sg.
+21557\tsamovoljny\t\tadj.
+21558\tsamozvanec\t\tm.anim.
+270\tsamy\t\tadj.
+36818\tsanatorij\t\tm.
+36469\tsandala\t\tf.
+36500\tsanje\t\tf.pl.
+6241\tsankcija\t\tf.
+36501\tsańky\t\tf.pl.
+35203\tsanskrit, sanskrt\t\tm.sg.
+30659\tsarafan\t\tm.
+32251\tSarajevo\t\tn.sg.
+36140\tsaranča\t\tf.
+35855\tsarkastičny\t\tadj.
+35856\tsarkazm\t\tm.sg.
+35708\tsarkofag\t\tm.
+16094\tsatelit\t\tm.
+36129\tsatira\t\tf.
+36130\tsatiričny\t\tadj.
+23629\tSaturn\t\tm.sg.
+32446\tSaudijec\t\tm.anim.
+5929\tSaudovska Arabija\t\tf.sg.
+33521\tsauna\t\tf.
+30660\tsaundtrek\t\tm.
+18677\t#sběgati sę\t\tv.refl. ipf.
+18679\tsběgti sę\t\tv.refl. pf.
+2236\tsbirańje\t\tn.sg.
+3788\tsbirati sę\t\tv.refl. ipf.
+2918\tsbirati\t\tv.tr. ipf.
+35138\tsbirka\t\tf.
+20138\tsbližańje\t\tn.sg.
+18681\tsbližati sę\t\tv.refl. ipf.
+18682\tsbližiti sę\t\tv.refl. pf.
+5229\tsbogom!\t\tintj.
+3738\tsbor\t\tm.
+4704\tsborka\t\tf.
+18683\tsbornik\t\tm.
+17034\tsborny čislovnik\t\tm.
+1978\t#sbože\t\tn.
+5442\tsbudovati\t\tv.tr. pf.
+34135\tscati\t\tv.intr. ipf.
+20726\tscena\t\tf.
+20727\tscenarij\t\tm.
+35539\tsčet\t\tm.
+35617\tsčisliti\t\tv.tr. pf.
+1285\tsčitati\t\tv.tr. pf.
+5619\t#sčityvati\t\tv.tr. ipf.
+18685\tsdanlivo\t\tadv.
+18686\tsdanlivy\t\tadj.
+14204\tsdavati sę\t\tv.refl. ipf.
+14987\tsde\t\tadv.
+2874\tsdeformovati\t\tv.tr. pf.
+5441\tsdělati\t\tv.tr. pf.
+35851\tsdešnji, sdešny\t\tadj.
+34353\tsdirati\t\tv.tr. ipf.
+17520\tsdȯhnųti\t\tv.intr. pf.
+18688\tsdrěmnųti\t\tv.intr. pf.
+34351\tsdreti\t\tv.tr. pf.
+17522\tsdyhati\t\tv.intr. ipf.
+4025\tsę\t\tpron.refl.
+4812\tsebe\t\tpron.refl.
+35503\tsebe-\t\tprefix
+21560\tseběčnjak\t\tm.anim.
+18790\tseběčno\t\tadv.
+18791\tseběčnosť\t\tf.
+18792\tseběčny\t\tadj.
+21561\tsebeljubje\t\tn.sg.
+15530\tsebesmŕtiti\t\tv.intr. ipf.
+21562\tsěča\t\tf.
+21563\tsěča\t\tf.
+22811\tsěčenj\t\tm.sg.
+4441\tsědališče\t\tn.
+18793\tsědati\t\tv.intr. ipf.
+12124\tsěděńje\t\tn.sg.
+1286\tsěděti\t\tv.intr. ipf.
+15532\tsědiljnja\t\tf.
+33999\tsedlati\t\tv.tr. ipf.
+16489\tsedlo\t\tn.
+1287\tsedm\t\tnum.card.
+2052\tsedmdesęt\t\tnum.card.
+12116\tsedmdesęty\t\tnum.ord.
+34562\tsedmerka\t\tnum.subst.
+16434\tsedmero\t\tnum.coll.
+1288\tsedmica\t\tf.
+18794\tsedmično\t\tadv.
+18795\tsedmičny\t\tadj.
+16403\tsedmina\t\tnum.fract.
+16461\tsedmka\t\tnum.subst.
+1107\tsedmnadsęť\t\tnum.card.
+12119\tsedmnadsętina\t\tnum.fract.
+12120\tsedmnadsęty\t\tnum.ord.
+1367\tsedmsȯt, sedmsto\t\tnum.card.
+50\tsedmy\t\tnum.ord.
+18796\tsědnųti\t\tv.intr. pf.
+12818\tsědy\t\tadj.
+21568\tsęgati\t\tv.intr. ipf.
+19523\tsegda, segdy\t\tadv.
+35151\tsegdašnji, segdašny\t\tadj.
+35625\tsegment\t\tm.
+21570\tsęgnųti\t\tv.intr. pf.
+166\tsego dnja\t\tadv.
+1536\tsegodenny\t\tadj.
+35805\tsegregacija\t\tf.
+1347\tsej\t\tpron.dem.
+5334\tsějati\t\tv.tr. ipf.
+1604\tsejčas\t\tadv.
+3789\tsejčasno\t\tadv.
+5117\tsejčasno\t\tadv.
+12135\tsejčasnosť\t\tf.
+3532\tsejčasny\t\tadj.
+12138\tsejčasny\t\tadj.
+18798\tsěkati\t\tv.tr. ipf.
+1270\tsekcija\t\tf.
+18800\tsěknųti\t\tv.tr. pf.
+3879\tsekret\t\tm.
+6094\tsekretaŕ\t\tm.anim.
+35614\tsekretariat\t\tm.
+18802\tsekretaŕka\t\tf.
+3880\tsekretny\t\tadj.
+16355\tseks\t\tm.sg.
+32853\tseksi\t\tadj.
+35106\tseksist\t\tm.anim.
+35105\tseksizm\t\tm.sg.
+36840\tseksta\t\tf.
+32852\tseksuaľno privlěkateljny\t\tadj.
+35244\tseksuaľnosť\t\tf.
+1784\tseksuaľny\t\tadj.
+35538\tsekta\t\tf.
+3398\tsěkti\t\tv.tr. ipf.
+35518\tsektor\t\tm.
+21567\tsěkųća\t\tf.
+170\tsekunda\t\tf.
+36836\tsekunda\t\tf.
+35321\tsekundarny\t\tadj.
+35772\tsekvencija\t\tf.
+2947\tsěkyra\t\tf.
+35491\tselfi\t\tm.indecl.
+19581\tseliko\t\tadv.
+19596\tselikråt\t\tadv.
+19588\tseliky\t\tadj.
+21565\tseliti sę\t\tv.refl. ipf.
+3166\tseljan, seljanin\t\tm.anim.
+18806\tseljanka\t\tf.
+187\tselo\t\tn.
+20173\tseľsky\t\tadj.
+35043\tsemafor\t\tm.
+20174\tsemantičny\t\tadj.
+35935\tsemantika\t\tf.
+12152\tsěmę\t\tn.
+34767\tsěmę\t\tn.
+35892\tsěmejstvo\t\tn.
+2987\tsěmja\t\tf.
+5764\tsenat\t\tm.
+35553\tsenator\t\tm.anim.
+4994\tsěno\t\tn.sg.
+35163\tsentimentaľny\t\tadj.
+15713\tsenzor\t\tm.
+22826\tseparatist\t\tm.anim.
+3267\tseparatističny\t\tadj.
+22825\tseparatizm\t\tm.sg.
+1156\tseptembr\t\tm.sg.
+36841\tseptima\t\tf.
+22612\tsěra\t\tf.sg.
+31758\tserenada\t\tf.
+35286\tserial\t\tm.
+5522\tserija\t\tf.
+4840\tseriozno\t\tadv.
+4839\tseriozny\t\tadj.
+30679\tserpentin\t\tm.
+35591\tserver\t\tm.
+1375\tservis\t\tm.
+1560\tsěry\t\tadj.
+36096\tseržant\t\tm.anim.
+12168\tsesterska ljubȯv\t\tf.
+6025\tsestersky\t\tadj.
+5610\tsęsti\t\tv.intr. pf.
+7401\tsestra bliznečka\t\tf.
+1389\tsestra\t\tf.
+4244\tsestrinstvo\t\tn.sg.
+1373\tsěť\t\tf.
+30682\tsětevy\t\tadj.
+1311\tsětka\t\tf.
+2411\tsěver\t\tm.sg.
+4744\tSěverna Amerika\t\tf.sg.
+12184\tSěverna Dakota\t\tf.sg.
+12185\tSěverna Irlandija\t\tf.sg.
+12186\tSěverna Karolina\t\tf.sg.
+22771\tSěverna Koreja\t\tf.sg.
+36815\tSěverna Makedonija\t\tf.
+12187\tsěverna polsfera\t\tf.sg.
+12190\tSěverne Marijanske Ostrovi\t\tm.pl.
+656\tSěverno morje\t\tn.sg.
+14998\tsěverno sijańje\t\tn.sg.
+4183\tsěverno\t\tadv.
+4745\tsěvernoamerikansky\t\tadj.
+35135\tsěvernoevropejsky\t\tadj.
+12181\tsěvernoirlandsky\t\tadj.
+22773\tsěvernokorejsky\t\tadj.
+15534\tsěvernomorsky\t\tadj.
+618\tsěvernoslovinsky\t\tadj.
+20729\tsěverny jelenj\t\tm.anim.
+1938\tsěverny polus\t\tm.sg.
+4182\tsěverny\t\tadj.
+16467\tSěveroatlantičsky Alians\t\tm.sg.
+12200\tsěveroiztočny\t\tadj.
+12201\tsěveroiztok\t\tm.sg.
+12203\tsěverovȯzhod\t\tm.sg.
+12205\tsěverovȯzhodny\t\tadj.
+12206\tsěverozapad\t\tm.sg.
+12208\tsěverozapadny\t\tadj.
+1943\tsezon\t\tm.
+4457\tsezonny\t\tadj.
+21572\tsęženj\t\tf.
+35760\tsfera\t\tf.
+35761\tsferičny\t\tadj.
+5591\tsgnesti\t\tv.tr. pf.
+3630\tsgnųti\t\tv.tr. pf.
+14231\tsgodno s\t\tprep.
+5559\tsgrěšiti\t\tv.intr. pf.
+3629\tsgybati\t\tv.tr. ipf.
+18814\tshema\t\tf.
+32282\tshematičny plan\t\tm.
+18815\tshematičny\t\tadj.
+31982\tshizma\t\tf.
+5445\tshoditi sę\t\tv.refl. ipf.
+5433\tshoditi\t\tv.intr. ipf.
+18689\tshodka\t\tf.
+23994\tshodnosť\t\tf.
+18691\tshodny\t\tadj.
+18692\tshovati\t\tv.tr. pf.
+36792\tshråniti sę\t\tv.refl. pf.
+18696\tshråniti\t\tv.tr. pf.
+18694\tshranjati\t\tv.tr. ipf.
+18695\tshrånjeńje\t\tn.sg.
+36252\tshudnųti\t\tv.intr. pf.
+1051\tshvatiti\t\tv.tr. pf.
+4811\tsi\t\tpron.refl.
+19509\tSiberija\t\tf.sg.
+35735\tsidr\t\tm.
+18816\tsignal\t\tm.
+1196\tsignalizovati\t\tv.tr. ipf.
+12214\tsikati\t\tv.intr. ipf.
+36293\tsikvel\t\tm.
+12218\tsila volje\t\tf.
+1309\tsila\t\tf.
+30684\tsilaba\t\tf.
+30685\tsilabičny\t\tadj.
+22610\tsilicij\t\tm.sg.
+21573\tsiliti sę\t\tv.refl. ipf.
+697\tsiľno\t\tadv.
+1312\tsiľno\t\tadv.
+1310\tsiľny\t\tadj.
+12221\tsimbol\t\tm.
+3138\tsimboličny\t\tadj.
+35395\tsimbolika\t\tf.
+35394\tsimbolizm\t\tm.sg.
+1392\tsimbolizovati\t\tv.tr. ipf.
+20730\tsimetričnosť\t\tf.
+20731\tsimetričny\t\tadj.
+4783\tsimfonija\t\tf.
+30688\tsimpatičny\t\tadj.
+31760\tsimpatija\t\tf.
+35732\tsimpatizant\t\tm.anim.
+32112\tsimptom\t\tm.
+35362\tsimulacija\t\tf.
+35363\tsimulovati\t\tv.tr. ipf./pf.
+34740\tsinhronizacija\t\tf.
+34741\tsinhronizovati\t\tv.tr. ipf./pf.
+23471\tsinica\t\tf.
+12226\tsinji ekran smŕti\t\tm.
+511\tsinji\t\tadj.
+16102\tsinonim\t\tm.
+3140\tsintaksa\t\tf.
+17035\tsintetičny\t\tadj.
+19516\tsinteza\t\tf.
+32500\tsintezator\t\tm.
+30692\tsinusit\t\tm.sg.
+35951\tsionizm\t\tm.sg.
+34750\tsirena\t\tf.
+34751\tsirena\t\tf.
+32340\tSirija\t\tf.sg.
+32341\tsirijsky\t\tadj.
+30693\tSirin\t\tm.anim.
+22799\tsirota\t\tf.
+32542\tsirotěti\t\tv.intr. ipf.
+22802\tsirotišče\t\tn.
+1317\tsistema\t\tf.
+1316\tsistematičny\t\tadj.
+1360\tsituacija\t\tf.
+33375\tsivěti\t\tv.intr. ipf.
+12231\tsivy\t\tadj.
+36738\tsjedati\t\tv.tr. ipf.
+8260\tsjedeny\t\tadj.
+3705\tsjediniti sę\t\tv.refl. pf.
+2085\tsjediniti\t\tv.tr. pf.
+15556\tsjediniti\t\tv.tr. pf.
+3704\tsjedinjati sę\t\tv.refl. ipf.
+2942\tsjedinjati\t\tv.tr. ipf.
+15557\tsjedinjati\t\tv.tr. ipf.
+1895\tSjedinjene Štaty Ameriky\t\tm.pl.
+3513\tsjedinjeńje\t\tn.
+12433\tsjedinjenosť\t\tf.
+12432\tsjedinjeny\t\tadj.
+18697\tsjem\t\tm.
+19492\tsjesti\t\tv.tr. pf.
+20139\t#sjęti\t\tv.tr. pf.
+1384\tsjezd\t\tm.
+18701\tsjezd\t\tm.
+12234\tskakańje\t\tn.sg.
+12233\tskakanna dȯska\t\tf.
+3707\tskakati\t\tv.intr. ipf.
+729\tskala\t\tf.
+35468\tskamenělosť\t\tf.
+35467\tskameněly\t\tadj.
+35405\tskandal\t\tm.
+36468\tskandaľny\t\tadj.
+22617\tskandij\t\tm.sg.
+35721\tSkandinavija\t\tf.sg.
+35722\tskandinavsky\t\tadj.
+3882\tskarb\t\tm.
+18818\tskarbnica\t\tf.
+3883\tskarbnik\t\tm.anim.
+12239\tskaredno\t\tadv.
+4776\tskaredny\t\tadj.
+15000\tskarga\t\tf.
+15001\tskaržiti sę\t\tv.refl. ipf.
+1318\tskazati\t\tv.tr. pf.
+12242\tskazka\t\tf.
+33525\tskeč\t\tm.
+35092\tskelet\t\tm.
+18819\tskenovati\t\tv.tr. ipf.
+3080\tskeptičny\t\tadj.
+30698\tskica\t\tf.
+23562\tskipetr\t\tm.
+20144\tsklad\t\tm.
+4463\tskladati sę iz\t\tv.refl. ipf.
+20695\tskladati sę\t\tv.refl. ipf.
+3628\tskladati\t\tv.tr. ipf.
+20145\tskladišče\t\tn.
+4555\tskladovati\t\tv.tr. ipf.
+18703\tsklanjati sę k\t\tv.refl. ipf.
+18702\tsklanjati\t\tv.tr. ipf.
+32025\tsklejiti\t\tv.tr. pf.
+30700\tskljanka\t\tf.
+12252\tsklon\t\tm.
+20150\tsklon\t\tm.
+18707\tskloniti sę k\t\tv.refl. pf.
+18706\tskloniti\t\tv.tr. pf.
+17038\tsklonjeńje\t\tn.
+12253\tsklonnosť\t\tf.
+12255\tsklonny\t\tadj.
+3750\tskočiti\t\tv.intr. pf.
+33272\tskok\t\tm.
+34936\tskȯlzavka\t\tf.
+16967\tskombinovati\t\tv.tr. pf.
+1321\tskompensovati\t\tv.tr. pf.
+6135\tskomplikovati\t\tv.tr. pf.
+23364\tskončiti sę\t\tv.refl. pf.
+12258\tskončiti\t\tv.tr. pf.
+12259\tskonfiskovati\t\tv.tr. pf.
+23365\tskonstruovany język\t\tm.
+34588\tskopiti\t\tv.tr. ipf.
+32250\tSkopje\t\tn.sg.
+36782\tskora pomoć\t\tf.sg.
+12261\tskorěje abo/ili pozdněje\t\tadv.
+12260\tskorěje\t\tadv.
+15004\tskorěje\t\tadv.
+4065\tskorlupa\t\tf.
+1324\tskoro\t\tadv.
+3208\tskoro\t\tadv.
+3747\tskoro\t\tadv.
+20732\tskorpion\t\tm.anim.
+30705\tSkorpion\t\tm.anim.
+32342\tskory\t\tadj.
+3726\tskot\t\tm.sg.
+32038\tskotnik\t\tm.anim.
+36314\tskotobojnja\t\tf.
+20733\tskovrånȯk\t\tm.anim.
+3139\tskraćati\t\tv.tr. ipf.
+953\tskråćeńje\t\tn.
+17039\tskråćeny\t\tadj.
+647\tskråtiti\t\tv.tr. pf.
+18820\tskrb\t\tf.
+18821\tskrběti\t\tv.intr. ipf.
+35637\tskrinja s orųďjami\t\tf.
+18822\tskrinja\t\tf.
+12269\tskripač\t\tm.anim.
+18823\tskripačka\t\tf.
+12850\tskripěńje\t\tn.sg.
+18824\tskripěti\t\tv.intr. ipf.
+12270\tskripka\t\tf.
+18827\tskripnųti\t\tv.intr. pf.
+36611\tskript\t\tm.
+20157\tskriviti\t\tv.tr. pf.
+23332\tskrob\t\tm.sg.
+5871\tskromno\t\tadv.
+5709\tskromnosť\t\tf.
+5029\tskromny\t\tadj.
+12275\tskroz\t\tadv.
+35607\tskrupulozny\t\tadj.
+18710\tskryti sę\t\tv.refl. pf.
+20160\tskryti\t\tv.tr. pf.
+36172\tskryto\t\tadv.
+23369\tskryty\t\tadj.
+36506\tskryvališče\t\tn.
+18711\tskryvati sę\t\tv.refl. ipf.
+20161\tskryvati\t\tv.tr. ipf.
+34595\tskubnųti\t\tv.intr. pf.
+29624\tskubti\t\tv.intr. ipf.
+12276\tskuhati\t\tv.tr. pf.
+36926\tskulptor\t\tm.anim.
+1322\tskulptura\t\tf.
+20734\tskunks\t\tm.anim.
+32144\tskųpec\t\tm.anim.
+3647\tskupina\t\tf.
+36793\tskųpiti sę\t\tv.refl. ipf.
+12278\tskųposť\t\tf.
+12280\tskųpy\t\tadj.
+36220\tskųpy\t\tadj.
+35038\tskuter\t\tm.
+20735\tskvorec\t\tm.anim.
+36208\tskvoter\t\tm.anim.
+23372\tskvrčati\t\tv.intr. ipf.
+12281\tslabec\t\tm.anim.
+34616\tslaběti\t\tv.intr. ipf.
+12282\tslabo\t\tadv.
+12283\tslabosť\t\tf.
+23204\tslaboumny\t\tadj.
+1341\tslaby\t\tadj.
+35725\tslåd\t\tm.sg.
+33279\tslåditi\t\tv.tr. ipf.
+23734\tslådko\t\tadv.
+12287\tslådkosť\t\tf.
+447\tslådky\t\tadj.
+15006\tslådnica\t\tf.
+15536\tslådnik\t\tm.anim.
+12286\tslådoled\t\tm.sg.
+34935\tslajd\t\tm.
+3886\tslåma\t\tf.
+35727\tslåmka\t\tf.
+33028\tslåny\t\tadj.
+21575\tslati\t\tv.tr. ipf.
+1339\tslava\t\tf.
+21576\tslava\t\tf.
+1329\tslåvej\t\tm.anim.
+23979\tSlavija\t\tf.sg.
+34557\tslavist\t\tm.anim.
+34556\tslavistika\t\tf.
+36580\tslaviti sę\t\tv.refl. ipf.
+1315\tslaviti\t\tv.tr. ipf.
+36583\tslaviti\t\tv.tr. ipf.
+1340\tslavjeńje\t\tn.sg.
+36584\tslavjeńje\t\tn.sg.
+12295\tslavno\t\tadv.
+1338\tslavny\t\tadj.
+21577\tslěd\t\tm.
+3380\tslěditi\t\tv.tr. ipf.
+21579\tslěditi\t\tv.tr. ipf.
+12301\tslědny\t\tadj.
+35139\tslědovateljno\t\tadv.
+1939\tslědovati\t\t#v.tr. ipf.
+866\tslědstvo\t\tn.
+1378\tslědujųći\t\tadj.
+1293\tslegka\t\tadv.
+35904\tsleng\t\tm.
+12305\tslěpec\t\tm.anim.
+12306\tslěpica\t\tf.
+34571\tslěpnųti\t\tv.intr. ipf.
+2941\tslěpy\t\tadj.
+32346\tslězena\t\tf.
+35984\tslězi iz mene!\t\tintj.
+4733\tSlęzk\t\tm.sg.
+4734\tslęzsky\t\tadj.
+18712\tslgati\t\tv.intr. pf.
+18839\tslimak\t\tm.anim.
+1292\tslina\t\tf.
+18713\tsliti sę\t\tv.refl. pf.
+36393\tsliti\t\tv.tr. pf.
+36906\tsliv rěky\t\tm.
+446\tsliva\t\tf.
+18714\tslivańje\t\tn.
+20698\tslivańje\t\tn.
+18715\tslivati sę\t\tv.refl. ipf.
+36394\tslivati\t\tv.tr. ipf.
+30713\tslivovica\t\tf.
+31883\tsliź\t\tm./f.
+12246\tslizgalka\t\tf.
+12249\tslizgati\t\tv.intr. ipf.
+16358\tslizgnųti\t\tv.intr. pf.
+12250\tslizky\t\tadj.
+35986\tsljuda\t\tf.
+17040\tslog\t\tm.
+35950\tslogan\t\tm.
+32848\tsloj\t\tm.
+3460\tslomiti\t\tv.tr. pf.
+3462\tslomjeny\t\tadj.
+1684\tslon\t\tm.anim.
+15539\tSlovačka\t\tf.
+1390\tslovačsky\t\tadj.
+4731\tSlovak\t\tm.anim.
+1350\tSlovakija\t\tf.sg.
+1349\tslovenačsky\t\tadj.
+12320\tSlovenec\t\tm.anim.
+3082\tSlovenija\t\tf.sg.
+12319\tSlovenka\t\tf.
+16228\tslovensky\t\tadj.
+23118\tslovesnosť\t\tf.
+18840\tslovesny\t\tadj.
+1357\tSlovjan, Slovjanin\t\tm.anim.
+34555\tslovjanizacija\t\tf.
+10294\tslovjanizovati\t\tv.tr. ipf./pf.
+12325\tSlovjanka\t\tf.
+1355\tslovjansky\t\tadj.
+4719\tslovjanstvo\t\tn.sg.
+23980\tSlovjanščina\t\tf.sg.
+15011\tslovničstvo\t\tn.
+1328\tslovnik\t\tm.
+32840\tslovny\t\tadj.
+1361\tslovo\t\tn.
+17041\tslovosbor\t\tm.
+1370\tsloženo slovo\t\tn.
+12336\tsloženosť\t\tf.
+6145\tsloženy\t\tadj.
+20701\tsložiti sę\t\tv.refl. pf.
+3627\tsložiti\t\tv.tr. pf.
+1333\tslučaj\t\tm.
+16360\tslučajno\t\tadv.
+35381\tslučajnosť\t\tf.
+3943\tslučajny\t\tadj.
+20740\tslučati sę\t\tv.refl. ipf.
+20162\tslųčati\t\tv.tr. ipf.
+15013\tslučiti sę\t\tv.refl. pf.
+20166\tslųčiti\t\tv.tr. pf.
+12341\tslučka\t\tf.
+1334\tsluga\t\tm.anim.
+6042\tsluh\t\tm.
+30722\tslum\t\tm.
+16749\tslušalky\t\tf.pl.
+12343\tslušatelj\t\tm.anim.
+1247\tslušati\t\tv.tr. ipf.
+1327\tslužba\t\tf.
+18843\tslužebnik\t\tm.anim.
+33532\tslužebno pųtovańje\t\tn.
+30724\tslužebny\t\tadj.
+2121\tslužiti\t\tv.intr. ipf.
+21580\tslynųti\t\tv.intr. ipf.
+1335\tslyšati\t\tv.tr. ipf.
+21581\tslyti\t\tv.intr. ipf.
+20741\tsmalec\t\tm.
+35175\tsmaragd\t\tm.
+20742\tsmatrjati\t\tv.intr. ipf.
+34637\tsmažiti\t\tv.tr. ipf.
+12349\tsmęčkati\t\tv.tr. pf.
+425\tsměh\t\tm.
+2237\tsmějati sę\t\tv.refl. ipf.
+18720\tsmękčati\t\tv.tr. ipf.
+18721\tsmękčiti\t\tv.tr. pf.
+4058\tsmělosť\t\tf.
+4056\tsměly\t\tadj.
+20703\tsměna\t\tf.
+2062\tsmenšati\t\tv.tr. ipf.
+5634\tsmenšeńje\t\tn.
+1297\tsmenšiti\t\tv.tr. pf.
+5214\tsměr\t\tm.
+20704\tsměr\t\tm.
+20705\tsměrnica\t\tf.
+3740\tsměs\t\tm.
+5092\tsměsta\t\tadv.
+12372\tsměšany\t\tadj.
+14273\tsměšany\t\tadj.
+1817\tsměšati\t\tv.tr. pf.
+14274\tsměšati\t\tv.tr. pf.
+18845\tsměšivati\t\tv.tr. ipf.
+36508\tsměška\t\tf.
+15551\tsměšnosť\t\tf.
+5227\tsměšny\t\tadj.
+30730\tsmeť\t\tf.
+5972\tsmetana\t\tf.
+35450\tsmęteńje\t\tn.sg.
+18847\tsmeti\t\tf.pl.
+21582\tsměti\t\tv.tr. ipf.
+36736\tsmetjaŕ\t\tm.anim.
+36737\tsmetjaŕsky voz\t\tm.
+36729\tsmetnik\t\tm.
+32259\tsmlåtiti\t\tv.tr. pf.
+5620\tsmlěti\t\tv.tr. pf.
+30731\tsmogti\t\tv.aux. pf.
+30732\tsmokva\t\tf.
+2071\tsmola\t\tf.
+33283\tsmoliti\t\tv.tr. ipf.
+20744\t#smotriti\t\tv.intr. ipf.
+33175\tsmråd\t\tm.
+20177\tsmŕditi\t\tv.intr. ipf.
+26370\tsmrěk\t\tm.
+34763\tsmrf\t\tm.anim.
+33659\tsmrkač\t\tm.anim.
+33657\tsmrkati sę\t\tv.refl. ipf.
+33656\tsmrkati\t\tv.intr. ipf.
+32888\tsmrščeny\t\tadj.
+32890\tsmrščiti brvi\t\tv.intr. pf.
+32891\tsmrščiti sę\t\tv.refl. pf.
+32889\tsmrščiti\t\tv.tr. pf.
+2070\tsmŕť\t\tf.
+34939\tsmŕteljny\t\tadj.
+18851\tsmŕteľna hvoroba\t\tf.
+15552\tsmŕteopasny\t\tadj.
+23515\tsmŕtna kaznj\t\tf.
+12382\tsmŕtny\t\tadj.
+12384\tsmŕtonosny\t\tadj.
+16739\tsms\t\tm.
+14067\tsmućati\t\tv.tr. ipf.
+20708\tsmųćati\t\tv.tr. ipf.
+14066\t#smųćeny\t\tadj.
+23832\tsmųćeny\t\tadj.
+20711\tsmųtiti\t\tv.tr. pf.
+20712\tsmųtiti\t\tv.tr. pf.
+23834\tsmųtno\t\tadv.
+617\t#smųtny\t\tadj.
+23833\tsmųtȯk\t\tm.
+36106\tsmyček\t\tm.
+20715\tsmykati\t\tv.tr. ipf.
+3324\tsmysl\t\tm.
+20716\tsmysľny\t\tadj.
+12388\tsmysly\t\tm.pl.
+12389\tsnabděti\t\tv.tr. pf.
+16357\tsnabděvati\t\tv.tr. ipf.
+12390\tsnaha\t\tf.
+18852\tsnědańje\t\tn.
+18853\tsnědati\t\tv.intr. ipf.
+2209\tsněg\t\tm.
+30736\tSněgurȯčka\t\tf.
+5439\tsnesti\t\tv.tr. pf.
+15678\tsnetvarjati\t\tv.tr. ipf.
+15677\tsnetvoriti\t\tv.tr. pf.
+12395\tsněženj\t\tm.sg.
+30737\tsněžinka\t\tf.
+4160\tsněžiti\t\tv.intr. ipf.
+23290\tsněžnoběly\t\tadj.
+36125\tsněžny člověk\t\tm.
+32473\tsněžny leopard\t\tm.anim.
+18722\tsnimȯk\t\tm.
+5215\tsniti\t\tv.tr. ipf.
+5636\tsniziti\t\tv.tr. pf.
+33527\tsnizu\t\tadv.
+5635\tsnižati\t\tv.tr. ipf.
+5637\tsnižeńje\t\tn.
+2127\tsnižka\t\tf.
+5440\tsnositi\t\tv.tr. ipf.
+20718\tsnosny\t\tadj.
+15019\tsnova i snova\t\tadv.
+3104\tsnova\t\tadv.
+34003\tsnovati\t\tv.tr. ipf.
+18723\tsnuđeny\t\tadj.
+337\tsobě, si\t\tpron.refl.
+30739\tsȯbrańje\t\tn.
+3784\tsȯbrati sę\t\tv.refl. pf.
+1494\tsȯbrati\t\tv.tr. pf.
+24013\tsobstvenik\t\tm.anim.
+21583\tsobstvenosť\t\tf.
+21585\tsobstveny\t\tadj.
+2350\tsȯbyťje\t\tn.
+22822\tsocialist\t\tm.anim.
+2223\tsocialističny\t\tadj.
+22821\tsocializm\t\tm.sg.
+20178\tsociaľny\t\tadj.
+23631\tsociolog\t\tm.anim.
+23632\tsociologičny\t\tadj.
+23630\tsociologija\t\tf.sg.
+30740\tsočevica\t\tf.
+36205\tsočevica\t\tf.
+34940\tsȯčuvstvovati\t\tv.intr. ipf.
+23276\tsoda\t\tf.
+35379\tSȯdružstvo narodov\t\tn.sg.
+35402\tSȯdružstvo Nezavisnyh Dŕžav\t\tn.sg.
+3942\tsȯdŕžańje\t\tn.
+23751\tsȯdŕžanosť\t\tf.
+72\tsȯdŕžati\t\tv.tr. pf.
+2163\tsȯdŕživati\t\tv.tr. ipf.
+12103\tsȯdŕživati\t\tv.tr. ipf.
+12106\tsȯdŕžnik\t\tm.
+18857\tSofija\t\tf.sg.
+35249\tsoftver\t\tm.sg.
+4191\tsȯglåsiti sę, sųglåsiti sę\t\tv.refl. ipf.
+20196\tsȯglåśje, sųglåśje\t\tn.sg.
+16491\tsȯglåska, sųglåska\t\tf.
+364\tsȯglåsno, sųglåsno\t\tprep.
+6301\tsȯglåsnosť, sųglåsnosť\t\tf.
+20198\tsȯglåsny, sųglåsny\t\tadj.
+18858\tsȯglašati sę, sųglašati sę\t\tv.refl. ipf.
+4193\tsȯglåšeńje, sųglåšeńje\t\tn.
+34119\tsȯhnųti\t\tv.intr. ipf.
+34121\tsȯhnųti\t\tv.intr. ipf.
+35100\tsoja\t\tf.
+5446\tsȯjdti sę\t\tv.refl. pf.
+5434\tsȯjdti\t\tv.intr. pf.
+36535\tsojka\t\tf.
+1385\tsȯjųz\t\tm.
+1387\tsȯjųznik\t\tm.anim.
+2075\tsok\t\tm.
+35999\tsokoiztiskivačka\t\tf.
+20746\tsokol\t\tm.anim.
+35998\tsokovnik\t\tm.
+12441\tsolarny\t\tadj.
+19510\tsolidarnosť\t\tf.
+19511\tsolidarny\t\tadj.
+20179\tsolidny\t\tadj.
+33026\tsoliti\t\tv.tr. ipf.
+1441\tsolj\t\tf.
+33030\tsoljeny\t\tadj.
+33031\tsoljnica\t\tf.
+560\tsȯlnce\t\tn.
+18860\tsȯlncevråt\t\tm.
+23633\tsȯlnečna sistema\t\tf.
+3887\tsȯlnečny\t\tadj.
+35199\tsolo\t\tn.
+548\tsȯlza\t\tf.
+32324\tsȯlzotvorny gaz\t\tm.
+20707\tsȯmknųti\t\tv.tr. pf.
+2057\tsȯn\t\tm.
+4784\tsonata\t\tf.
+30747\tsonda\t\tf.
+30748\tsondovati\t\tv.tr. ipf./pf.
+36110\tsonet\t\tm.
+23055\tsȯobćati sę\t\tv.refl. ipf.
+21169\tsȯobćati\t\tv.tr. ipf.
+21171\tsȯobčeńje\t\tn.
+21172\tsȯobčiti\t\tv.tr. pf.
+36052\tsȯočati sę s, sųočati sę s\t\tv.refl. ipf.
+36053\tsȯočiti sę s, sųočiti sę s\t\tv.refl. ipf.
+33699\tsopelj\t\tm.
+33000\tsopran\t\tm.
+3223\tsort\t\tm.
+34894\tsortovati\t\tv.tr. ipf./pf.
+4150\tsȯsati\t\tv.tr. ipf.
+23591\tsȯsavec\t\tm.anim.
+35995\tsosiska\t\tf.
+12739\tsȯska\t\tf.
+30750\tsosna\t\tf.
+21794\tsȯstav\t\tm.
+4202\tsȯstaviti\t\tv.tr. pf.
+4201\tsȯstavjati\t\tv.tr. ipf.
+18867\tsȯstavjeńje\t\tn.
+35557\tsȯstavna čęsť\t\tf.
+35556\tsȯstavny\t\tadj.
+1874\tsȯstojati sę iz\t\tv.refl. ipf.
+16405\tsȯtina\t\tnum.fract.
+5793\tsȯtka, sȯtnja\t\tf.
+34857\tsȯtkati\t\tv.tr. pf.
+2915\tsȯtny\t\tnum.ord.
+18868\tsȯučęsťje\t\tn.sg.
+15715\tsȯučęstnica\t\tf.
+12459\tsȯučęstničstvo\t\tn.sg.
+4301\tsȯučęstnik\t\tm.anim.
+454\tsova\t\tf.
+4474\tsȯvět\t\tm.
+5149\tsȯvětničstvo\t\tn.sg.
+4341\tsȯvětnik\t\tm.anim.
+4475\tsȯvětovati\t\tv.tr. ipf.
+2080\tSovětsky Sȯjųz\t\tm.sg.
+30757\tSovětsky Svęź\t\tm.sg.
+1398\tsovětsky\t\tadj.
+16729\tsovka\t\tf.
+22506\tsȯvladnųti\t\tv.tr. pf.
+22508\tsȯvladnųti\t\tv.tr. pf.
+22505\tsȯvladyvati\t\tv.tr. ipf.
+22507\tsȯvladyvati\t\tv.tr. ipf.
+35382\tsȯvpadeńje\t\tn.
+15026\tsȯvrěmennik\t\tm.anim.
+5903\tsȯvrěmennosť\t\tf.
+5902\tsȯvrěmenny\t\tadj.
+22569\tsȯvŕšati\t\tv.tr. ipf.
+36808\tsȯvŕšati\t\tv.intr. ipf.
+12764\t#sȯvŕšenosť\t\tf.
+1742\tsȯvŕšeny vid\t\tm.
+15052\tsȯvŕšeny\t\tadj.
+22571\tsȯvŕšiti\t\tv.tr. pf.
+36809\tsȯvŕšiti\t\tv.intr. pf.
+20180\tsȯvsěm, sȯvsim\t\tadv.
+22744\tsȯzdati\t\tv.tr. pf.
+22743\tsȯzdavati\t\tv.tr. ipf.
+5431\tsȯzvati\t\tv.tr. pf.
+5429\tsȯzyvati\t\tv.tr. ipf.
+32632\t#sȯžegti\t\tv.tr. pf.
+5607\tsȯžrati\t\tv.tr. pf.
+21144\tspad\t\tm.
+21146\tspad\t\tm.
+5661\tspadati\t\tv.intr. ipf.
+18724\tspakovati sę\t\tv.refl. pf.
+5472\tspakovati\t\tv.tr. pf.
+455\tspaliti\t\tv.tr. pf.
+5197\tspaljnja\t\tf.
+4194\tspańje\t\tn.sg.
+21147\tspasati\t\tv.tr. ipf.
+23373\tspaseńje\t\tn.
+12481\tspasitelj\t\tm.anim.
+5660\tspasti\t\tv.intr. pf.
+21150\tspasti\t\tv.tr. pf.
+2224\tspati\t\tv.intr. ipf.
+5129\tspecialist\t\tm.anim.
+36306\tspecializacija\t\tf.
+564\tspeciaľno\t\tadv.
+31716\tspeciaľnosť\t\tf.
+1907\tspeciaľny\t\tadj.
+4404\tspecifičny\t\tadj.
+35668\tspecifika\t\tf.
+36911\tspektakl\t\tm.
+35364\tspektr\t\tm.
+2902\tspekulacija\t\tf.
+35925\tspekulativny\t\tadj.
+16361\tspekulovati\t\tv.intr. ipf.
+33655\tsperma\t\tf.
+33654\tspermatozoid\t\tm.
+3254\tspěšiti\t\tv.intr. ipf.
+12490\tspěšny\t\tadj.
+30761\tspěvańje\t\tn.sg.
+12491\tspěvati\t\tv.tr. pf.
+21151\tspirati sę\t\tv.refl. ipf.
+4541\tspis\t\tm.
+5525\t#spisati\t\tv.tr. pf.
+2895\tspisȯk\t\tm.
+5526\tspisyvati\t\tv.tr. ipf.
+34330\tsplesti\t\tv.tr. pf.
+23026\tsploditi\t\tv.tr. pf.
+30763\tspod\t\tm.
+26226\tspodnica\t\tf.
+36557\tspodobati sę\t\tv.refl. pf.
+461\tspokojno\t\tadv.
+463\tspokojny\t\tadj.
+12502\tspokojstvo\t\tn.sg.
+17043\tspokrȯvnjeny\t\tadj.
+1479\tspoľny\t\tadj.
+2254\tspolȯčenstvo\t\tn.
+3509\tspolȯčnosť\t\tf.
+3393\tspolȯčny\t\tadj.
+18879\tspolupracovati\t\tv.intr. ipf.
+18880\tspoluråbotyvati\t\tv.intr. ipf.
+14157\tspomaliti\t\tv.tr. pf.
+14158\tspomaljati\t\tv.tr. ipf.
+10891\tspomaljeńje\t\tn.
+12515\tspominati\t\tv.tr. ipf.
+12514\tspomněti\t\tv.tr. pf.
+21152\tspona\t\tf.
+34175\tsponka\t\tf.
+1477\tsponsor\t\tm.anim.
+20183\tspontanno\t\tadv.
+2319\tspontanny\t\tadj.
+2385\tspor\t\tm.
+36305\tsporadično\t\tadv.
+35464\tsporadičny\t\tadj.
+12520\tsporåzuměvańje\t\tn.sg.
+20184\tsporiti\t\tv.intr. ipf.
+12521\tsporlivy\t\tadj.
+12522\tsporno\t\tadv.
+2021\tsporny\t\tadj.
+2022\tsport\t\tm.
+18882\tsportivny\t\tadj.
+2387\tsportnik\t\tm.anim.
+3237\tsposob\t\tm.
+422\tsposobnosť\t\tf.
+2386\tsposobny\t\tadj.
+34873\tspotěti\t\tv.intr. pf.
+34872\tspotiti sę\t\tv.refl. pf.
+22123\tspotknųti sę\t\tv.refl. pf.
+35524\tspotrěbitelj\t\tm.anim.
+5714\tspotrěbiti\t\tv.tr. pf.
+5715\tspotrěbjeńje\t\tn.sg.
+5713\tspotrěbovati\t\tv.tr. ipf.
+22122\tspotykati sę\t\tv.refl. ipf.
+34520\tspozdniti sę\t\tv.refl. pf.
+34522\tspozdnjati sę\t\tv.refl. ipf.
+34524\tspozdnjeńje\t\tn.
+3443\tspoznati\t\tv.tr. pf.
+3418\tspoznavati\t\tv.tr. ipf.
+2072\tsprašati\t\tv.tr. ipf.
+2879\tspravědlivosť\t\tf.
+661\tspravědlivy\t\tadj.
+30768\tsprědu\t\tadv.
+18727\tspręgati\t\tv.tr. ipf.
+29545\tspręsti\t\tv.tr. pf.
+21154\tsprěti sę\t\tv.refl. pf.
+21155\tspręžeńje\t\tn.
+4132\tsprijateliti sę\t\tv.refl. pf.
+2238\tsprositi\t\tv.tr. pf.
+86\tsprotiviti sę\t\tv.refl. pf.
+5708\tsprotivjeńje\t\tn.
+5622\tspuhnųti\t\tv.intr. pf.
+21160\tspust\t\tm.
+21161\tspust\t\tm.
+35821\tspusť\t\tf.
+2692\tspustiti sę\t\tv.refl. pf.
+21162\tspustiti\t\tv.tr. pf.
+21165\tspustiti\t\tv.tr. pf.
+1503\tspušćati sę\t\tv.refl. ipf.
+21156\tspušćati\t\tv.tr. ipf.
+21159\tspušćati\t\tv.tr. ipf.
+12547\tspųtnik\t\tm.
+8086\tspytati\t\tv.tr. pf.
+23468\t#sråka\t\tf.
+23824\tsråm\t\tm.sg.
+23825\tsråmęžlivy\t\tadj.
+23816\tsråmiti\t\tv.tr. ipf.
+23817\tsråmiti\t\tv.tr. ipf.
+23821\tsråmny\t\tadj.
+23822\tsråmny\t\tadj.
+23818\tsråmota\t\tf.
+23819\tsråmotny\t\tadj.
+35958\tsråst\t\tm.
+33075\tsrastańje\t\tn.
+33072\tsrastati sę\t\tv.refl. ipf.
+18730\tsråsti sę\t\tv.refl. pf.
+479\tsrati\t\tv.intr. ipf.
+20168\tsråvnimy\t\tadj.
+35220\tsråvniteljny\t\tadj.
+1142\tsråvniti\t\tv.tr. pf.
+679\tsråvnjati\t\tv.tr. ipf.
+3510\tsråvnjeńje\t\tn.
+26242\tsråzumělosť\t\tf.
+2693\tsråzuměti\t\tv.tr. pf.
+2410\tSŕb\t\tm.anim.
+2200\tSŕbija\t\tf.sg.
+20186\tsŕbohrvatsky\t\tadj.
+20187\tsŕbolužičan, sŕbolužičanin\t\tm.anim.
+20188\tsŕbolužičsky\t\tadj.
+591\tsŕbskohrvatsky\t\tadj.
+145\tsŕbsky\t\tadj.
+32224\tsŕdca\t\tn.pl.
+3081\tsŕdce\t\tn.
+865\tsŕdcevina\t\tf.
+22816\tsŕdcevina\t\tf.
+36877\tsŕdėčna komora\t\tf.
+12553\tsŕdečno\t\tadv.
+18884\tsŕdečnosȯsųdny\t\tadj.
+12554\tsŕdečnosť\t\tf.
+18886\tsŕdečny napad\t\tm.
+3167\tsŕdečny\t\tadj.
+21586\tsŕdečny\t\tadj.
+14993\tsŕditi\t\tv.tr. ipf.
+23752\tsŕdity\t\tadj.
+14994\tsŕdnosť\t\tf.
+30771\tsrěbristy\t\tadj.
+3941\tsrěbrny\t\tadj.
+2260\tsrěbro\t\tn.sg.
+3117\tsrěd\t\tprep.
+3107\tsrěda\t\tf.
+2188\tsrědina\t\tf.
+12563\tsrědišče\t\tn.
+12566\tsrědnje\t\tn.
+1712\tsrědnjevěčje\t\tn.sg.
+18890\tsrědnjevěčny\t\tadj.
+12571\tSrědnji Iztok\t\tm.sg.
+2065\tsrědnji rod\t\tm.
+12572\tSrědnji Vȯzhod\t\tm.sg.
+1544\tsrědnji, srědny\t\tadj.
+5191\tsrědnji, srědny\t\tadj.
+21588\tsrědoběžny\t\tadj.
+21589\tsrědotěčny\t\tadj.
+2432\tsrědstvo\t\tn.
+21590\tsrědstvo\t\tn.
+2433\tSrědzemno morje\t\tn.sg.
+20748\tsrna\t\tf.
+18643\tsrodnica\t\tf.
+12577\tsrodnik\t\tm.anim.
+15033\tsrodno slovo\t\tn.
+12578\tsrodny\t\tadj.
+21543\tsrodstvo\t\tn.
+1364\tsŕp\t\tm.
+12165\tsŕpenj\t\tm.sg.
+18891\tsŕsť\t\tf.
+18731\tsrųbati\t\tv.tr. pf.
+18733\tsrųbyvati\t\tv.tr. ipf.
+14305\tsrųčny\t\tadj.
+20169\tsruinovati\t\tv.tr. pf.
+21546\tssědati sę\t\tv.refl. ipf.
+21547\tssęsti sę\t\tv.refl. pf.
+35351\tSSSR\t\tm.sg.
+30777\tSŠA\t\tm.pl.
+36304\tstabilizacija\t\tf.
+34701\tstabilizovati\t\tv.tr. ipf./pf.
+35928\tstabiľnosť\t\tf.
+577\tstabiľny\t\tadj.
+7236\tstačiti\t\tv.intr. ipf.
+35818\tstadija\t\tf.
+21703\tstado\t\tn.
+21705\tstaja\t\tf.
+22820\tstalinizm\t\tm.sg.
+1395\tstalj\t\tf.sg.
+35328\tstalosť\t\tf.
+35329\tstalosť\t\tf.
+18892\tstalovy\t\tadj.
+20749\tstaly\t\tadj.
+21709\tstaly\t\tadj.
+1403\tstancija\t\tf.
+1394\tstandard\t\tm.
+20752\tstandardizacija\t\tf.
+20753\tstandardizovati\t\tv.tr. ipf.
+20754\tstandardny\t\tadj.
+16479\tstańje\t\tn.
+21700\tstanȯk\t\tm.
+18893\tstanovišče\t\tn.
+21696\tstanoviti\t\tv.tr. ipf.
+6303\tstanųti\t\tv.intr. pf.
+5617\tstapjati\t\tv.tr. ipf.
+23936\tstaranno\t\tadv.
+730\tstaranny\t\tadj.
+21591\tstarati sę\t\tv.refl. ipf.
+15566\tstarci\t\tm.pl.
+15564\tstarec\t\tm.anim.
+3581\tstarějši, starši\t\tadj.
+12587\tstarěńje\t\tn.sg.
+12589\tstarěti\t\tv.intr. ipf.
+12592\tstarinna infrastruktura\t\tf.
+12591\tstarinny\t\tadj.
+17044\tstarocrkȯvnoslovjansky\t\tadj.
+16365\tstarodavny\t\tadj.
+36450\tstarogrėčsky\t\tadj.
+20755\tstarohebrejsky\t\tadj.
+23049\tstaromodny\t\tadj.
+17045\tstaroslovjansky\t\tadj.
+12595\tstarosť\t\tf.
+22791\tstart\t\tm.
+22792\tstartovati\t\tv.tr. ipf./pf.
+30783\tStary Svět\t\tm.sg.
+1399\tstary\t\tadj.
+4563\tstati sę\t\tv.refl. pf.
+2952\tstati\t\tv.aux. pf.
+18896\tstatičny\t\tadj.
+1405\tstatija\t\tf.
+18897\tstatističny\t\tadj.
+18898\tstatistika\t\tf.
+12603\t#statnosť\t\tf.
+21698\tstatny\t\tadj.
+1402\tstatuja\t\tf.
+1023\tstatus\t\tm.
+30787\tstatut\t\tm.
+1810\tstavati\t\tv.aux. ipf.
+35624\tstaviti na něčto\t\tv.tr. ipf.
+35000\tstaviti pytańje\t\tv.ipf.
+21692\tstaviti\t\tv.tr. ipf.
+21694\tstavjati\t\tv.tr. ipf.
+21710\tstavka\t\tf.
+21711\tstavka\t\tf.
+4710\tsteblo\t\tn.
+22086\tstečeńje\t\tn.
+36632\tstegozavr\t\tm.
+33526\tsteklěna čaša\t\tf.
+23719\tsteklěny\t\tadj.
+32349\tstekľnik\t\tm.
+1408\tsteklo\t\tn.
+18737\tstekti\t\tv.intr. pf.
+33437\tsteliti\t\tv.tr. ipf.
+1406\tstěna\t\tf.
+18900\tstěnj\t\tm.
+6304\tstereotip\t\tm.
+35847\tsterilizacija\t\tf.
+35846\tsterilizovati\t\tv.tr. ipf./pf.
+35845\tsteriľny\t\tadj.
+18901\tstežka\t\tf.
+21849\tstigati\t\tv.tr. ipf.
+21852\tstigati\t\tv.tr. ipf.
+21848\tstignųti\t\tv.tr. pf.
+21850\tstignųti\t\tv.tr. pf.
+18907\tstih\t\tm.
+30790\tstihija\t\tf.
+239\tstil, stilj\t\tm.
+35418\tstimul\t\tm.
+4985\tstimulacija\t\tf.
+723\tstimulovati\t\tv.tr. ipf.
+30791\tstiskati\t\tv.tr. ipf.
+33545\tstisknųti\t\tv.tr. pf.
+33440\tstlati\t\tv.tr. ipf.
+2184\tsto\t\tnum.card.
+36058\tstodola\t\tf.
+32077\tstog\t\tm.
+12618\tStoj!\t\tintj.
+2083\tstojati\t\tv.intr. ipf.
+21688\tstojati\t\tv.tr. ipf.
+32732\tstojišče\t\tn.
+32733\tstojišče\t\tn.
+32734\tstojišče\t\tn.
+21708\tstojka na rųkah\t\tf.
+21706\tstojka\t\tf.
+36401\tstojka\t\tf.
+36814\tStokholm\t\tm.
+16449\tstokråtno\t\tadv.
+1414\tstol\t\tm.
+30795\tstol\t\tm.
+1562\tstolěťje\t\tn.
+30798\tstolica\t\tf.
+18908\tstoličny\t\tadj.
+35096\tstoljaŕ\t\tm.anim.
+1663\tstolka\t\tf.
+32767\tstoľny tenis\t\tm.
+35627\tstolova lȯžica\t\tf.
+30799\tstȯlp\t\tm.
+4255\tston\t\tm.
+12626\tstonańje\t\tn.sg.
+4254\tstonati\t\tv.intr. ipf.
+32616\tstonožka\t\tf.
+16111\tstop\t\tintj.
+3996\tstopa\t\tf.
+670\tstopiti\t\tv.tr. pf.
+5618\tstopjeńje\t\tn.
+12632\tstoročnik\t\tm.anim.
+16406\tstotina\t\tnum.fract.
+61\tstoty\t\tnum.ord.
+21894\tstradati\t\tv.intr. ipf.
+767\tstrah\t\tm.
+4469\tstrahlivec\t\tm.anim.
+12645\tstrahlivo\t\tadv.
+4471\tstrahlivosť\t\tf.
+4470\tstrahlivy\t\tadj.
+1416\tstrahovańje\t\tn.
+1169\tstrahovati\t\tv.tr. ipf.
+1894\tstrajk\t\tm.
+24554\tstrajkovati\t\tv.intr. ipf.
+30804\tstråna světa\t\tf.
+1412\tstråna\t\tf.
+21865\tstråna\t\tf.
+21866\tstråna\t\tf.
+1098\tstrånica\t\tf.
+21871\tstråniti sę od\t\tv.refl. ipf.
+6305\tstrånnik\t\tm.anim.
+21593\tstrånny\t\tadj.
+21895\tstrasť\t\tf.
+35454\tstrastny\t\tadj.
+12655\tstrašeny\t\tadj.
+36855\tstrašilo za ptice\t\tn.
+36854\tstrašilo\t\tn.
+1818\tstrašiti\t\tv.tr. ipf.
+12659\tstrašno\t\tadv.
+35989\tstrašno\t\tadv.
+250\tstrašny\t\tadj.
+1186\tstrategičny\t\tadj.
+16370\tstrategija\t\tf.
+20756\tstraus\t\tm.anim.
+18910\tstråž\t\tm.anim.
+5792\tstraža\t\tf.
+938\tstrčiti\t\tv.intr. ipf.
+36398\tstrěćati sę\t\tv.refl. ipf.
+1954\tstrěćati\t\tv.tr. ipf.
+21901\tstrěgti sę\t\tv.refl. ipf.
+21899\tstrěgti\t\tv.tr. ipf.
+36013\tstrěha\t\tf.
+20757\tstrekoza\t\tf.
+1096\tstrěla\t\tf.
+4248\tstrěľba\t\tf.
+30809\tStrělec\t\tm.anim.
+34942\tstrělec\t\tm.anim.
+18912\tstrělišče\t\tn.
+1442\tstrěliti\t\tv.intr. ipf.
+743\tstrěljati\t\tv.intr. ipf.
+35769\tstrěľka\t\tf.
+12672\tstrěľnik\t\tm.anim.
+34897\tstrělȯčnik\t\tm.anim.
+35891\tstremę\t\tn.
+34961\tstres\t\tm.
+13034\tstręseńje mozga\t\tn.
+13056\tstręseńje\t\tn.
+34962\tstresovy\t\tadj.
+36399\tstrěsti sę\t\tv.refl. pf.
+1345\tstrěsti\t\tv.tr. pf.
+36014\tstrěšna krytina\t\tf.
+12664\tstrěteńje\t\tn.
+5021\tstrigti\t\tv.tr. ipf.
+15042\tstrimati\t\tv.tr. pf.
+15044\tstrimyvati\t\tv.tr. ipf.
+12675\tstrižik\t\tm.anim.
+20189\tstrogo\t\tadv.
+33305\tstrogosť\t\tf.
+12676\tstrogy\t\tadj.
+21910\tstroj\t\tm.
+21907\tstrojiti\t\tv.tr. ipf.
+21909\tstrojiti\t\tv.tr. ipf.
+5203\tstrop\t\tm.
+34283\tstrugati\t\tv.tr. ipf.
+4989\tstruja\t\tf.
+16363\tstruktura\t\tf.
+36307\tstrukturny\t\tadj.
+1097\tstruna\t\tf.
+5680\tstrunny instrument\t\tm.
+5681\tstrunny kvartet\t\tm.
+34288\tstružka\t\tf.
+1192\tstryjec\t\tm.anim.
+15040\tstryjenka\t\tf.
+1061\tstudent\t\tm.anim.
+30811\tstudeny\t\tadj.
+4714\tstudija\t\tf.
+34943\tstudio\t\tn.
+20190\tstudiovati\t\tv.tr. ipf.
+33551\tstuditi\t\tv.tr. ipf.
+2047\tstudnja\t\tf.
+18916\tstukati do/na/v dveri\t\tv.ipf.
+18913\tstukati\t\tv.intr. ipf.
+18917\tstuknųti\t\tv.intr. pf.
+3494\tstul\t\tm.
+21926\tstųpati\t\tv.intr. ipf.
+3890\tstųpenišče\t\tn.
+3252\tstųpenj\t\tm.
+21927\tstųpenj\t\tm.
+21925\tstųpiti\t\tv.intr. pf.
+36151\tstųpnica\t\tf.
+17046\tstųpnjevańje\t\tn.sg.
+12688\tstvår\t\tm.
+6306\tstvarjati\t\tv.tr. ipf.
+3293\tstvårno\t\tadv.
+20191\tstvårnosť\t\tf.
+3382\tstvor\t\tm.
+6307\tstvoriti\t\tv.tr. pf.
+3381\tstvorjeńje\t\tn.
+18738\t#stvŕditi\t\tv.tr. pf.
+12612\tstyčenj\t\tm.sg.
+1404\tstyd\t\tm.sg.
+22121\tstyk\t\tm.
+36707\tsųbesědnik\t\tm.anim.
+36617\tsubjekt\t\tm.
+30812\tsubjektivizm\t\tm.sg.
+32933\tsubjektivnosť\t\tf.
+32932\tsubjektivny\t\tadj.
+30813\tsublimacija\t\tf.
+1062\tsųbota\t\tf.
+5336\tsubstancija\t\tf.
+34844\tsubtiľnosť\t\tf.
+34843\tsubtiľny\t\tadj.
+33717\tsubtitry\t\tm.pl.
+17048\tsųći\t\tadj.
+36616\tsųćnosť\t\tf.
+20192\tsųćstveno\t\tadv.
+20193\tsųćstveny\t\tadj.
+35116\tsųčasnik\t\tm.anim.
+20758\tsųčasnosť\t\tf.
+17047\tsųčasny\t\tadj.
+1487\tsųd\t\tm.
+3636\tsųďba\t\tf.
+2097\tsųditi\t\tv.tr. ipf.
+22003\tsųditi\t\tv.tr. ipf.
+21595\tsųďja\t\tm.anim.
+6183\tsųdny denj\t\tm.
+6195\tsųdny pozȯv\t\tm.
+30814\tsųdny\t\tadj.
+12700\tsųđeńje\t\tn.
+1475\tsufiks\t\tm.
+3524\tsuhaŕ\t\tm.
+14307\tsųharmonizovati\t\tv.intr. pf.
+3571\tsuhoplod\t\tm.
+1775\tsuhy\t\tadj.
+22324\tsujevěŕje\t\tn.
+33733\tsuka\t\tf.
+36237\t#suknja\t\tf.
+35922\tsultan\t\tm.anim.
+35923\tsultanat\t\tm.
+1427\tsuma\t\tf.
+35378\tsųměstimosť\t\tf.
+35377\tsųměstimy\t\tadj.
+3323\tsųmněńje\t\tn.
+15047\tsųmněńje\t\tn.
+3322\tsųmněvati sę\t\tv.refl. ipf.
+18921\tsųmniteljny\t\tadj.
+12709\tsųmnlivo\t\tadv.
+12710\tsųmnlivy\t\tadj.
+5042\tsųmråk\t\tm.
+1304\tsųmŕkati sę\t\tv.refl. ipf.
+565\tsųmŕknųti sę\t\tv.refl. pf.
+21174\tsunųti\t\tv.tr. pf.
+20199\tsųp\t\tm.anim.
+32086\tsupa\t\tf.
+15048\tsuper-\t\tprefix
+35211\tsuperdŕžava\t\tf.
+35239\tsuperheroj\t\tm.anim.
+1445\tsupermarket\t\tm.
+35050\tsųperničstvo\t\tn.sg.
+1431\tsųpernik\t\tm.anim.
+36869\tsupersila\t\tf.
+35459\tsųpostaviti\t\tv.tr. pf.
+35458\tsųpostavjati\t\tv.tr. ipf.
+4922\tsųprotiv\t\tprep.
+5134\tsųprovađati\t\tv.tr. ipf.
+5135\tsųprovoditi\t\tv.tr. pf.
+5136\tsųprovođeńje\t\tn.sg.
+12724\tsųprųg\t\tm.anim.
+12725\tsųprųga\t\tf.
+21176\tsųprųgi\t\tm.pl.
+18922\tsųprųžstvo\t\tn.
+21167\tsųpųtnik\t\tm.anim.
+35140\tsųråbota\t\tf.
+5443\tsųråbotati\t\tv.intr. ipf.
+5137\tsųråbotničstvo\t\tn.sg.
+5335\tsųråbotnik\t\tm.anim.
+20759\tsųråzměrnosť\t\tf.
+20760\tsųråzměrny\t\tadj.
+12727\tsurfist\t\tm.anim.
+12726\tsurfovańje\t\tn.sg.
+15050\tsurfovati\t\tv.intr. ipf.
+22446\tSurinam\t\tm.sg.
+22447\tsurinamsky\t\tadj.
+16807\tsurovy\t\tadj.
+1446\tsurpriz\t\tm.
+35457\tsurrealizm\t\tm.sg.
+1873\tsųsěd\t\tm.anim.
+12734\tsųsědno do\t\tprep.
+5731\tsųsědny\t\tadj.
+5732\tsųsědsky\t\tadj.
+5625\tsųsědstvo\t\tn.
+34944\tsųsrědotočati sę\t\tv.refl. ipf.
+16774\tsųsrědotočati\t\tv.tr. ipf.
+36706\tsųsrědotočeny\t\tadj.
+34945\tsųsrědotočiti sę\t\tv.refl. pf.
+16775\tsųsrědotočiti\t\tv.tr. pf.
+21796\tsųstav\t\tm.
+21898\tsųstradańje\t\tn.
+5168\tsųstrěća\t\tf.
+20761\tsųstrěćati\t\tv.tr. ipf.
+20762\tsųstrěsti\t\tv.tr. pf.
+36636\tsuša\t\tf.
+18925\tsušiti\t\tv.tr. ipf.
+23008\tsųt\t\tv.aux. ipf.
+18926\tsutener\t\tm.anim.
+35497\tsuteren\t\tm.
+566\tsųtruditi\t\tv.intr. ipf.
+4536\tsųtrudničsky\t\tadj.
+12513\tsųtrudničstvo\t\tn.sg.
+36822\tsųtstvo\t\tn.
+36821\tsųtstvovati\t\tv.intr. ipf.
+21178\tsuvati\t\tv.tr. ipf.
+148\tsuvenir\t\tm.
+5765\tsuverenitet\t\tm.sg.
+1433\tsuverenny\t\tadj.
+22432\tsųvisly\t\tadj.
+4462\tsųvlađeńje\t\tn.
+32991\tsuzafon\t\tm.
+22884\tsųznačny\t\tadj.
+22942\tsųzvězďje\t\tn.
+18927\tsųžalosť\t\tf.
+23165\tsvabiti\t\tv.tr. pf.
+35954\tsvahili\t\tm.indecl.
+12754\tsvariti\t\tv.tr. pf.
+22563\tsvariti\t\tv.tr. pf.
+22564\tsvarjati\t\tv.tr. ipf.
+18928\tsvat\t\tm.anim.
+3734\tsvaťba\t\tf.
+12750\tsvaťbena obrųčka\t\tf.
+12752\tsvaťbena zabava\t\tf.
+12753\tsvaťbeni sųprųgi\t\tm.pl.
+12749\tsvaťbeny konvoj\t\tm.
+15051\tsvaťbeny kostjum\t\tm.
+12751\tsvaťbeny oděv\t\tm.
+4287\tsvaťbeny\t\tadj.
+15581\tsvaťbeny\t\tadj.
+15723\tsvatiti sę\t\tv.refl. ipf.
+16791\tSvazilend\t\tm.sg.
+1744\tsvěća\t\tf.
+2089\tsvęćennik\t\tm.anim.
+18929\tsvęćeny\t\tadj.
+35579\tsvědčiti\t\tv.intr. ipf.
+22237\tsvědȯčstvo\t\tn.
+21168\tsvědȯk\t\tm.anim.
+12757\tsvědomje\t\tn.sg.
+6219\tsvědomo\t\t#adv.
+6217\tsvědomosť\t\tf.
+6218\tsvědomy\t\tadj.
+24005\tsvekr\t\tm.anim.
+24006\tsvekrȯv\t\tf.
+23721\tsvěriti sę\t\tv.refl. pf.
+23720\tsvěrjati sę\t\tv.refl. ipf.
+586\tsvěsť\t\tf.
+35606\tsvěstny\t\tadj.
+3137\tsvět\t\tm.
+15054\t#Svět\t\tm.
+35709\tsvętilišče\t\tn.
+5237\tsvětilka\t\tf.
+4892\tsvětiľnik\t\tm.
+1440\tsvętiti\t\tv.tr. ipf.
+23586\tsvětľny god\t\tm.
+23587\tsvětľny rok\t\tm.
+12770\tsvětlo luny\t\tn.sg.
+12771\tsvětlo měsęca\t\tn.sg.
+3284\tsvětlo\t\tn.
+35044\tsvětlofor\t\tm.
+35653\tsvětluška\t\tf.
+30825\tsvětly\t\tadj.
+22012\tsvětoběžnik\t\tm.anim.
+30822\tsvętȯčny\t\tadj.
+20200\tsvětoględ\t\tm.
+20201\tsvętogrđeńje\t\tn.
+12788\tsvętȯk\t\tm.
+23659\tSvětova trgova organizacija\t\tf.sg.
+36527\tsvětova vojna\t\tf.
+23658\tSvětova zdråvstvena organizacija\t\tf.sg.
+36526\tsvětovy\t\tadj.
+36030\tsvetr\t\tm.
+12772\tsvětsky\t\tadj.
+36122\tSvęty Graal\t\tm.
+3891\tsvęty hrånitelj\t\tm.anim.
+2090\tsvęty\t\tadj.
+15058\tsvęź\t\tm./f.
+18741\tsvęź\t\tm./f.
+3512\tsvęzany\t\tadj.
+18749\tsvęzati šnurom\t\tv.tr. pf.
+3538\tsvęzati\t\tv.tr. pf.
+36359\tsvęznik\t\tm.
+2320\tsvęzȯk\t\tm.
+18752\tsvęzȯk\t\tm.
+22205\tsvęzȯk\t\tm.
+22206\tsvęzȯk\t\tm.
+18758\tsvęzyvati šnurom\t\tv.ipf.
+3514\tsvęzyvati\t\tv.tr. ipf.
+5225\tsvěži\t\tadj.
+15056\tsvila\t\tf.
+22634\tsvinec\t\tm.sg.
+1438\tsvinja\t\tf.
+1439\tsvinovod\t\tm.anim.
+18934\tsvinsky\t\tadj.
+32216\tsvirěposť\t\tf.
+32217\tsvirěposť\t\tf.
+32212\tsvirěpy\t\tadj.
+32219\tsvirěpy\t\tadj.
+5689\tsvist\t\tm.
+5686\tsvistati\t\tv.intr. ipf.
+5687\tsvistnųti\t\tv.intr. pf.
+5688\tsvistȯk\t\tm.
+12787\tsvitańje\t\tn.
+33575\tsviti\t\tv.tr. pf.
+33576\tsviti\t\tv.tr. pf.
+33577\tsviti\t\tv.tr. pf.
+33578\tsviti\t\tv.tr. pf.
+33579\tsviti\t\tv.tr. pf.
+30829\tsvitȯk\t\tm.
+1258\tsvoboda\t\tf.
+23556\tsvobodna volja\t\tf.
+13741\tsvobodno vrěmę\t\tn.sg.
+20202\tsvobodno\t\tadv.
+6041\tsvobodnomyslitelj\t\tm.anim.
+12792\tsvobodnomysljny\t\tadj.
+1977\tsvobodny\t\tadj.
+22265\tsvod\t\tm.
+22267\tsvod\t\tm.
+22268\tsvodnik\t\tm.anim.
+1099\tsvoj\t\tpron.poss.
+22017\tsvojak\t\tm.anim.
+22020\tsvojevlastny\t\tadj.
+22304\tsvojevoljny\t\tadj.
+34877\tsvojevrěmenno\t\tadv.
+18387\tsvojevrěmennosť\t\tf.
+34876\tsvojevrěmenny\t\tadj.
+15059\tsvojnosť\t\tf.
+18936\tsvojsko\t\tadv.
+18935\tsvojsky\t\tadj.
+18937\tsvojstvo\t\tn.
+22019\tsvojstvo\t\tn.
+22557\tsvorenj\t\tm.
+18759\tsvråtno\t\tadv.
+18760\tsvråtny\t\tadj.
+26271\tsvråtny\t\tadj.
+35023\tsvŕbęći\t\tadj.
+35022\tsvŕběti\t\tv.tr. ipf.
+35089\tsvŕček\t\tm.anim.
+30833\tsvŕdlo\t\tn.
+22590\tsvŕgati\t\tv.tr. ipf.
+22592\tsvŕgnųti\t\tv.tr. pf.
+12762\tsvŕh-\t\tprefix
+12763\t#svŕhny\t\tadj.
+30834\tsvŕhu\t\tadv.
+783\tsyn\t\tm.anim.
+21996\t#sypati\t\tv.tr. ipf.
+1822\tsyr\t\tm.
+36273\tsyrovatka\t\tf.
+17572\tsyrovina\t\tf.
+14999\tsyrovy\t\tadj.
+33424\tsytiti\t\tv.tr. ipf.
+35605\tsyty\t\tadj.
+1474\tšablon\t\tm.
+34385\tszadu\t\tadv.
+35102\tšafa\t\tf.
+33732\tšafran\t\tm.sg.
+18763\tšah i mat\t\tm.
+18764\tšahovnica\t\tf.
+36776\tšahta\t\tf.
+1054\tšahy\t\tm.pl.
+23838\tšal, šalik\t\tm.
+30839\tšal\t\tm.
+18765\tšalěti\t\tv.intr. ipf.
+22814\tšalěti\t\tv.intr. ipf.
+23160\tšampansko\t\tn.
+16910\tšampion\t\tm.anim.
+16911\tšampionat\t\tm.
+23159\tšampon\t\tm.
+632\tšans\t\tm.
+4354\tšantaž\t\tm.sg.
+12799\tšantažovati\t\tv.tr. ipf.
+1053\tšapka\t\tf.
+22833\tšarlatan\t\tm.anim.
+22834\tšarlatanstvo\t\tn.sg.
+16843\tšarm\t\tm.sg.
+30841\tšator\t\tm.
+34895\tščęditi\t\tv.tr. ipf.
+18778\tščedro\t\tadv.
+18781\tščedrosť\t\tf.
+18784\tščedry\t\tadj.
+36035\tščekotati\t\tv.tr. ipf.
+32117\tščenę\t\tn.
+34186\tščeniti sę\t\tv.refl. ipf.
+1463\tščęsťje\t\tn.
+3653\tščęstlivo\t\tadv.
+1545\tščęstlivy\t\tadj.
+12812\tščęstno\t\tadv.
+12814\tŠčęstnogo dnja rođeńja!\t\tintj.
+12815\tŠčęstnogo Novogo Goda!\t\tintj.
+12810\tŠčęstnogo Velikdnja!\t\tintj.
+15060\tščęstnosť\t\tf.
+12803\tščęstny\t\tadj.
+12811\tŠčęstnyh svętkov!\t\tintj.
+30844\tščetina\t\tf.
+4780\tščetka\t\tf.
+34644\tščigȯl\t\tm.anim.
+18787\tščipati\t\tv.tr. ipf.
+18788\tščipnųti\t\tv.tr. pf.
+12816\tščit\t\tm.
+12817\tščititi\t\tv.tr. ipf.
+23661\tščitna žlěza\t\tf.
+16378\tščrba\t\tf.
+18789\tščur\t\tm.anim.
+12821\tšef policije\t\tm.anim.
+1468\tšef\t\tm.anim.
+33271\tšepot\t\tm.
+33270\tšeptati\t\tv.tr. pf.
+18807\tšeršenj\t\tm.anim.
+1739\tšesť\t\tnum.card.
+3111\tšesťdesęt\t\tnum.card.
+23688\tšesťdesęty\t\tnum.ord.
+16456\tšesteraky\t\tnum.diff.
+15592\tšesterčęta\t\tn.pl.
+34563\tšesterka\t\tnum.subst.
+16445\tšesterny\t\tnum.mult.
+16433\tšestero\t\tnum.coll.
+12832\tšestikųtnik\t\tm.
+16402\tšestina\t\tnum.fract.
+18808\tšestinožka\t\tf.
+12831\tšestivųgȯľnik\t\tm.
+16460\tšestka\t\tnum.subst.
+1583\tšestnadsęť\t\tnum.card.
+23684\tšestnadsęty\t\tnum.ord.
+1582\tšesťsȯt, šesťsto\t\tnum.card.
+1581\tšesty\t\tnum.ord.
+23260\tšev\t\tm.
+12835\tšifrovańje\t\tn.sg.
+12840\tšifrovany\t\tadj.
+12838\t#šifrovati\t\tv.tr. ipf.
+12839\tšifrovati\t\tv.tr. ipf.
+12841\tšija\t\tf.
+34978\tšikarny\t\tadj.
+34428\tšimpanz\t\tm.anim.
+30851\tšina\t\tf.
+36076\tšipka\t\tf.
+4280\tširina\t\tf.
+35766\tširiti\t\tv.tr. ipf.
+4279\tširoko\t\tadv.
+4281\tširokosť\t\tf.
+196\tširoky\t\tadj.
+20175\tširši\t\tadj.
+36470\tšiška\t\tf.
+23254\tšiti\t\tv.tr. ipf.
+6149\tšizofreničny\t\tadj.
+6148\tšizofrenija\t\tf.
+35101\tškaf\t\tm.
+34840\tškala, skala\t\tf.
+23264\tškarpetka\t\tf.
+3546\tškoda\t\tf.
+4472\tškoditi\t\tv.intr. ipf.
+6225\tškodlivy\t\tadj.
+36097\tškodnik\t\tm.anim.
+1584\tškola\t\tf.
+4844\tškoliti\t\tv.tr. ipf.
+35583\tškoľna tabla\t\tf.
+15593\tškoľnik\t\tm.anim.
+3884\tškoľny\t\tadj.
+35055\tŠkot\t\tm.anim.
+35056\tŠkotka\t\tf.
+35053\tŠkotska\t\tf.sg.
+35054\tškotsky\t\tadj.
+5111\tšlěm\t\tm.
+3885\tšlepati\t\tv.tr. ipf.
+4713\tšlepnųti\t\tv.tr. pf.
+34951\tšlifovati\t\tv.tr. ipf.
+18830\tšljahetnosť\t\tf.
+18831\tšljahetny\t\tadj.
+18833\tšljahta\t\tf.
+18837\tšljahtić\t\tm.anim.
+18836\tšljahtička\t\tf.
+36377\tšljuz\t\tm.
+4303\tšlupa\t\tf.
+34786\tšminka\t\tf.
+18854\tšnur\t\tm.
+12859\tšnurka\t\tf.
+287\tšofer\t\tm.anim.
+32668\tšofersko dozvoljeńje\t\tn.
+1585\tšok\t\tm.
+5727\tšokovany\t\tadj.
+5726\tšokovati\t\tv.tr. ipf.
+5728\tšokujųći\t\tadj.
+263\tšolk\t\tm.sg.
+36913\tšou\t\tm.indecl.
+33663\tšovinist\t\tm.anim.
+33664\tšovinističny\t\tadj.
+33662\tšovinizm\t\tm.sg.
+35886\t#špala\t\tf.
+408\tŠpanija\t\tf.sg.
+1980\tšpansky\t\tadj.
+34845\tšpinat\t\tm.
+3269\tšpion\t\tm.anim.
+30857\tšpionaž\t\tm.sg.
+32867\tšruba\t\tf.
+30858\tštanga\t\tf.
+1586\tštat\t\tm.
+728\tštopati\t\tv.tr. ipf.
+1476\tštučny\t\tadj.
+18920\tšuba\t\tf.
+2079\tšum\t\tm.
+36820\tšuměti\t\tv.intr. ipf.
+2346\tšumny\t\tadj.
+3672\tšunka\t\tf.
+1391\tŠvecija\t\tf.sg.
+1420\tšvedsky\t\tadj.
+2220\tŠvejcarija\t\tf.sg.
+32452\tšvejcarsky\t\tadj.
+1501\ttabak\t\tm.sg.
+12884\ttabela\t\tf.
+33409\ttabletka\t\tf.
+13716\ttablo s izslědkami\t\tn.indecl.
+36801\ttablo\t\tn.indecl.
+30863\ttabor\t\tm.
+20203\ttabu\t\tm.indecl.
+23646\ttadžičsky, tadžiksky\t\tadj.
+5996\tTadžikistan\t\tm.sg.
+34023\ttajati\t\tv.tr. ipf.
+30864\ttajemny\t\tadj.
+4460\ttajeńje\t\tn.sg.
+23302\ttajenstveny\t\tadj.
+23303\ttajenstvo\t\tn.
+32345\ttajfun\t\tm.
+12886\ttajiti\t\tv.tr. ipf.
+22767\tTajland\t\tm.sg.
+12893\ttajna služba\t\tf.
+6339\ttajna vojna\t\tf.
+3892\ttajna\t\tf.
+18940\ttajnica\t\tf.
+12889\ttajnik\t\tm.anim.
+4288\ttajnišče\t\tn.
+21180\ttajnopis\t\tm.
+21181\ttajnopisec\t\tm.anim.
+4289\ttajnosť\t\tf.
+12891\ttajny batalion\t\tm.
+2957\ttajny\t\tadj.
+4908\ttajsky\t\tadj.
+6110\tTajvan\t\tm.sg.
+3320\ttak, tako\t\tadv.
+12905\ttako ... onako\t\tconj.
+12909\ttako kako\t\tconj.
+18941\ttako kazati\t\tphrase
+625\ttako mnogo\t\tadv.
+18942\ttako rěčeny\t\tadj.
+12904\ttako skoro kako\t\tconj.
+12915\ttako zvany\t\tadj.
+12906\ttako že\t\tconj.
+6311\ttakovy\t\tadj.
+1716\ttakože\t\tadv.
+23313\ttaksi\t\tm.indecl.
+23314\ttaksometr\t\tm.
+33583\ttaksonomičny\t\tadj.
+33582\ttaksonomija\t\tf.
+20205\ttaktika\t\tf.
+12914\ttakto\t\tadv.
+3099\ttaky\t\tadj.
+20206\ttalent\t\tm.
+32160\ttalija\t\tf.
+4667\ttaliŕka\t\tf.
+20207\ttalisman\t\tm.
+1883\ttam\t\tadv.
+32993\ttamburin\t\tm.
+19560\ttamo\t\tadv.
+2263\ttamtoj\t\tpron.dem.
+20208\ttancevati\t\tv.intr. ipf.
+36553\ttancor\t\tm.anim.
+36554\ttancorka\t\tf.
+23531\ttanec\t\tm.
+845\ttank\t\tm.
+22807\tTanzanija\t\tf.sg.
+20763\ttarantula\t\tf.
+1944\ttaśma\t\tf.
+18956\ttata\t\tm.anim.
+36568\ttatarsky\t\tadj.
+36567\tTatarstan\t\tm.sg.
+35689\ttatuaž\t\tm.
+35688\ttatuovati\t\tv.tr. ipf./pf.
+1816\ttę\t\tpron.pers.
+5702\tte\t\tpron.dem.
+3123\tteatr\t\tm.
+32987\tteatraľny\t\tadj.
+4805\ttebe\t\tpron.pers.
+6069\ttečeńje\t\tn.
+12935\ttečeńje\t\tn.
+12936\ttečno\t\tadv.
+12937\ttečnosť\t\tf.
+12938\ttečny\t\tadj.
+3793\ttęgati\t\tv.tr. ipf.
+22027\ttęglivy\t\tadj.
+49\ttęgnųti\t\tv.tr. ipf.
+3124\ttehničny\t\tadj.
+16348\ttehnik\t\tm.anim.
+16349\ttehnika\t\tf.
+16350\ttehnologičny\t\tadj.
+1204\ttehnologija\t\tf.
+32503\ttekila\t\tf.
+30874\tTeksas\t\tm.sg.
+2963\ttekst\t\tm.
+1484\ttekstilj\t\tm.
+5417\ttekti\t\tv.intr. ipf.
+6078\ttekųći\t\tadj.
+22062\ttekųći\t\tadj.
+5242\ttekųtina\t\tf.
+15074\ttelę\t\tn.
+4640\ttelefon\t\tm.
+16351\ttelefonovati\t\tv.intr. ipf.
+5795\ttelegrama\t\tf.
+23637\ttelekomunikacija\t\tf.
+21596\tteleskop\t\tm.
+5646\ttělesny\t\tadj.
+3100\ttelętko\t\tn.
+16353\tteleviděńje\t\tn.sg.
+4399\ttelevizija\t\tf.
+4400\ttelevizijny program\t\tm.
+36770\ttelevizijny\t\tadj.
+36571\ttelevizor\t\tm.
+34672\tteliti sę\t\tv.refl. ipf.
+36088\ttělo samoleta\t\tn.
+1485\ttělo\t\tn.
+459\ttělohrånitelj\t\tm.anim.
+3330\ttema\t\tf.
+17049\ttematičny\t\tadj.
+35137\ttematika\t\tf.
+34670\ttemněti\t\tv.intr. ipf.
+30879\ttemnica\t\tf.
+18958\ttemnolavandovy\t\tadj.
+5116\ttemnosť\t\tf.
+15075\ttemnota\t\tf.
+30880\ttemnota\t\tf.
+1749\ttemny\t\tadj.
+1486\ttemperatura\t\tf.
+36824\ttempo\t\tn.
+16119\ttendencija\t\tf.
+1483\ttenis\t\tm.sg.
+2110\tteniska\t\tf.
+18959\ttěnj\t\tm./f.
+1577\ttenky\t\tadj.
+32997\ttenor\t\tm.anim.
+18960\tteolog\t\tm.anim.
+18961\tteologija\t\tf.sg.
+16822\tteoretično\t\tadv.
+16821\tteoretičny\t\tadj.
+4739\tteorija\t\tf.
+32350\tteplica\t\tf.
+12960\tteplo\t\tn.sg.
+20764\tteploměr\t\tm.
+15076\tteplota\t\tf.
+35034\tteplovaty\t\tadj.
+344\tteply\t\tadj.
+32497\tterapevt\t\tm.anim.
+18962\tterapija materskoj klětki\t\tf.
+4740\tterapija\t\tf.
+36837\ttercija\t\tf.
+35451\tterier\t\tm.anim.
+16121\tteritoriaľno\t\tadv.
+529\tteritoriaľny\t\tadj.
+3101\tteritorija\t\tf.
+36149\ttermin dostojenstva\t\tm.
+2091\ttermin\t\tm.
+36593\ttermin\t\tm.
+20765\ttermit\t\tm.anim.
+23638\ttermodinamika\t\tf.
+5107\tteror\t\tm.
+34948\tterorist\t\tm.anim.
+262\tterorističny\t\tadj.
+16354\tterorizm\t\tm.sg.
+36161\ttesati\t\tv.tr. ipf.
+22093\ttěsnina\t\tf.
+3894\ttěsno\t\tadv.
+416\ttěsny\t\tadj.
+2388\ttest\t\tm.
+24003\ttesť\t\tm.anim.
+4759\ttestament\t\tm.
+18963\ttěsto\t\tn.
+1443\ttestovati\t\tv.tr. ipf.
+24004\ttešća\t\tf.
+23785\ttěšiti sę iz\t\tv.refl. ipf.
+15078\ttetenka\t\tf.
+18965\ttętiva\t\tf.
+2376\ttetka\t\tf.
+15734\ttęznitelj\t\tm.anim.
+6190\ttęžba\t\tf.
+12971\ttęžina\t\tf.
+20209\ttęžko\t\tadv.
+22032\ttęžko\t\tadv.
+22034\ttęžko\t\tadv.
+22038\ttęžko\t\tadv.
+18966\ttęžkosť\t\tf.
+22039\ttęžkosť\t\tf.
+5\ttęžky\t\tadj.
+1970\ttęžky\t\tadj.
+3654\ttęžky\t\tadj.
+3895\ttęžky\t\tadj.
+22036\ttęžky\t\tadj.
+15737\ttęžnica\t\tf.
+15736\ttęžnik\t\tm.anim.
+21597\tthoŕ\t\tm.anim.
+4809\tti\t\tpron.pers.
+1969\ttigr\t\tm.anim.
+1411\ttiho\t\tadv.
+23499\tTihy okean\t\tm.sg.
+1844\ttihy\t\tadj.
+32992\ttimpany\t\tm.pl.
+18967\ttinejdžer\t\tm.anim.
+30888\ttinktura\t\tf.
+3224\ttip\t\tm.
+12989\ttipično\t\tadv.
+12990\ttipičnosť\t\tf.
+12991\ttipičny\t\tadj.
+12992\ttipka\t\tf.
+15080\ttipkati\t\tv.tr. ipf.
+18970\ttipkovnica\t\tf.
+1567\ttipografija\t\tf.
+35973\ttipologičny\t\tadj.
+35972\ttipologija\t\tf.
+4665\ttir\t\tm.
+32477\ttiran\t\tm.anim.
+30889\ttiranija\t\tf.
+36631\ttiranozavr\t\tm.
+23615\ttiskaŕ\t\tm.anim.
+23614\ttiskaŕstvo\t\tn.sg.
+22091\ttiskati\t\tv.tr. ipf.
+22090\ttisknųti\t\tv.tr. pf.
+3360\ttišina\t\tf.
+1492\ttitan\t\tm.sg.
+35453\ttjulenj\t\tm.anim.
+19008\ttjuŕma\t\tf.
+30920\ttjutjun\t\tm.sg.
+18971\ttkanina\t\tf.
+35429\ttkanj\t\tf.
+34856\ttkati\t\tv.tr. ipf.
+22108\ttknųti sę\t\tv.refl. pf.
+22099\ttknųti\t\tv.tr. pf.
+22101\ttknųti\t\tv.tr. pf.
+30892\ttlěńje\t\tn.sg.
+30893\ttlěti\t\tv.intr. ipf.
+16888\ttlo\t\tn.
+34949\ttlo\t\tn.
+1126\tťma\t\tf.
+30894\ttoalet\t\tm.
+34754\ttoaletny papir\t\tm.sg.
+1507\ttobě\t\tpron.pers.
+6312\ttočiti sę\t\tv.refl. ipf.
+36477\ttočiti sę\t\tv.refl. ipf.
+22055\ttočiti\t\tv.tr. ipf.
+22057\ttočiti\t\tv.tr. ipf.
+22058\ttočiti\t\tv.tr. ipf.
+22059\ttočiti\t\tv.tr. ipf.
+23447\ttočka s komojų\t\tf.
+23446\ttočka s zapętojų\t\tf.
+20211\ttočka zrěńja\t\tf.
+5271\ttočka\t\tf.
+13009\ttočno\t\tadv.
+18975\ttočnosť\t\tf.
+3593\ttočny\t\tadj.
+35442\ttofi\t\tn.indecl.
+2120\ttȯgda, tȯgdy\t\tadv.
+2893\t#toj\t\tpron.dem.
+20212\ttojže\t\tpron.dem.
+3533\ttok\t\tm.
+22060\ttok\t\tm.
+22061\ttok\t\tm.
+22063\ttokaŕ\t\tm.anim.
+35317\ttokråtno\t\tadv.
+18977\ttolerancija\t\tf.
+34952\ttolerantny\t\tadj.
+12901\ttoliko kako\t\tconj.
+2144\ttoliko\t\tadv.
+15082\ttoliko\t\tadv.
+19597\ttolikråt\t\tadv.
+19589\ttoliky\t\tadj.
+33459\ttȯlkti\t\tv.intr. ipf.
+18979\ttȯlmač\t\tm.anim.
+873\ttȯlmačeńje\t\tn.
+3896\ttȯlmačiti\t\tv.tr. ipf.
+22\ttȯlpa\t\tf.
+32229\ttȯlsto piśmo\t\tn.
+13017\ttȯlstosť\t\tf.
+2313\ttȯlsty\t\tadj.
+30897\ttomat\t\tm.
+4036\ttomu že\t\tconj.
+4031\ttomu\t\tadv.
+13020\ttomu\t\tadv.
+3383\tton\t\tm.
+368\ttona\t\tf.
+30898\ttȯnky\t\tadj.
+5337\ttonųti\t\tv.intr. ipf.
+21598\ttonųti\t\tv.intr. ipf.
+30899\ttopinambur\t\tm.
+18982\ttopišče\t\tn.
+1719\ttopiti\t\tv.tr. ipf.
+36490\ttopografičny\t\tadj.
+36489\ttopografija\t\tf.sg.
+34561\ttopolja\t\tf.
+36771\ttoponim\t\tm.
+34035\ttȯptati\t\t#v.intr. ipf.
+15560\ttorba do spańja\t\tf.
+32241\ttorba\t\tf.
+35480\ttorf\t\tm.
+35108\ttornado\t\tn.
+32489\ttors\t\tm.
+33720\ttort\t\tm.
+36541\ttost\t\tm.
+36542\ttoster\t\tm.
+32742\ttotalitarizm\t\tm.sg.
+32743\ttotalitarny\t\tadj.
+32744\ttotaľny\t\tadj.
+15594\ttotožny\t\tadj.
+2192\ttovar\t\tm.
+4211\ttovariš\t\tm.anim.
+34764\ttovariška\t\tf.
+15073\ttovarna\t\tf.
+13032\ttȯž\t\tadv.
+2314\ttradicija\t\tf.
+1458\ttradicijny\t\tadj.
+16728\ttradicionalist\t\tm.anim.
+2424\ttragedija\t\tf.
+4401\ttragičny\t\tadj.
+18984\ttrajati\t\tv.intr. ipf.
+32481\ttrajny\t\tadj.
+35712\tTrakija\t\tf.sg.
+35713\ttrakijsky\t\tadj.
+35141\ttraktat\t\tm.
+35465\ttraktor\t\tm.
+3103\ttramvaj\t\tm.
+36650\ttrankvilizator\t\tm.
+36329\ttranskribovati\t\tv.tr. ipf./pf.
+16823\ttranskripcija\t\tf.
+3947\ttransliteracija\t\tf.
+3946\ttransliterovati\t\tv.tr. ipf.
+6314\ttransparent\t\tm.
+35430\ttransplantacija\t\tf.
+18986\ttransport\t\tm.
+36408\ttransportovati\t\tv.tr. ipf./pf.
+36022\ttranzitna viza\t\tf.
+35590\ttrasa\t\tf.
+3602\ttrata\t\tf.
+3276\ttratiti\t\tv.tr. ipf.
+18987\ttratiti\t\tv.tr. ipf.
+34953\ttratiti\t\tv.tr. ipf.
+12\ttrava\t\tf.
+13039\ttravenj\t\tm.sg.
+21182\ttravimy\t\tadj.
+21183\ttravjeńje\t\tn.sg.
+31869\ttravma\t\tf.
+31870\ttravmatizovati\t\tv.tr. ipf./pf.
+18988\ttravnik\t\tm.
+18989\ttravojed\t\tm.anim.
+22949\ttravojedny\t\tadj.
+13040\ttŕbuh\t\tm.
+13041\ttŕbušny\t\tadj.
+13048\ttrěba by bylo\t\tadv.
+13049\ttrěba priznati\t\tphrase
+13042\ttrěba\t\tadv.
+18990\ttrěbovańje\t\tn.
+1942\ttrěbovati\t\tv.aux. ipf.
+32222\ttrefy\t\tf.pl.
+36659\ttrejler\t\tm.
+14736\ttrend\t\tm.
+13052\ttrener\t\tm.anim.
+3898\ttrening\t\tm.
+3899\ttreningovy\t\tadj.
+3897\ttrenovati\t\tv.tr. ipf.
+16909\ttrepetati\t\tv.intr. ipf.
+13058\ttręseńje\t\tn.
+3523\ttrěsk\t\tm.
+13064\ttręsti sę\t\tv.refl. ipf.
+3902\ttręsti\t\tv.tr. ipf.
+3826\ttreti\t\tv.tr. ipf.
+13087\ttretina\t\tnum.fract.
+20213\ttreťje\t\tadv.
+439\ttreťji\t\tnum.ord.
+2961\ttrevoga\t\tf.
+3900\ttrevožiti sę\t\tv.refl. ipf.
+34829\ttrevožiti\t\tv.tr. ipf.
+32486\ttrevožny\t\tadj.
+34673\ttrězvěti\t\tv.intr. ipf.
+18991\ttrězvy\t\tadj.
+2348\ttrg\t\tm.
+22130\ttrgati\t\tv.tr. ipf.
+22134\ttrgati\t\tv.tr. ipf.
+22136\ttrgnųti\t\tv.tr. pf.
+22137\ttrgnųti\t\tv.tr. pf.
+36875\ttrgova komora\t\tf.
+20216\ttrgovańje\t\tn.
+3326\ttrgovati\t\tv.intr. ipf.
+1413\ttrgovec\t\tm.anim.
+20221\ttrgovišče\t\tn.
+2300\ttrgovja\t\tf.
+4260\ttrgovy\t\tadj.
+1466\ttri\t\tnum.card.
+36594\ttribuna\t\tf.
+36633\ttriceratops\t\tm.
+1774\ttridesęť, tridesęti\t\tnum.card.
+23686\ttridesęty\t\tnum.ord.
+16756\ttrik\t\tm.
+2014\ttrikråtno\t\tadv.
+4411\ttrikųtnik\t\tm.
+4412\ttrikųtny\t\tadj.
+36292\ttriler\t\tm.
+20222\ttrilětny\t\tadj.
+18992\ttrimati sę nečego\t\tv.refl. ipf.
+15083\ttrimati\t\tv.tr. ipf.
+986\ttrinadsęť\t\tnum.card.
+23681\ttrinadsęty\t\tnum.ord.
+274\ttrista, tristo\t\tnum.card.
+36032\ttriumfaľny lųk\t\tm.
+20223\ttriumfaľny\t\tadj.
+35284\ttriviaľny\t\tadj.
+15605\ttrivųgȯľnik\t\tm.
+31871\ttrivyměrny\t\tadj.
+34643\ttrizųbec\t\tm.
+23724\ttŕn\t\tm.
+23402\ttrofej\t\tm.
+33555\ttroha\t\tf.
+35111\ttrohy, trohų\t\tadv.
+34541\tTroja\t\tf.sg.
+16453\ttrojaky\t\tnum.diff.
+34542\ttrojansky konj\t\tm.anim.
+18994\ttrojce toliko\t\tadv.
+15601\ttrojčęta\t\tn.pl.
+16430\ttroje\t\tnum.coll.
+16457\ttrojka\t\tnum.subst.
+16439\ttrojny\t\tnum.mult.
+18996\ttrojskok\t\tm.
+32440\ttrolejbus\t\tm.
+32442\ttrolj\t\tm.anim.
+23435\ttrombon\t\tm.
+988\ttron\t\tm.
+974\ttropičny ciklon\t\tm.
+34963\ttropičny\t\tadj.
+5997\ttrotuar\t\tm.
+18999\ttŕpělivosť\t\tf.
+23990\ttŕpělivy\t\tadj.
+36708\ttŕpěńje\t\tn.sg.
+742\ttŕpěti\t\tv.intr. ipf.
+3448\ttŕpěti\t\tv.tr. ipf.
+18997\ttŕpimosť\t\tf.
+18998\ttŕpimy\t\tadj.
+5269\ttrųba\t\tf.
+23424\ttrųba\t\tf.
+976\ttrųbiti\t\tv.tr. ipf.
+13095\ttrųbka poživjeńja\t\tf.
+32851\ttrųbkozųb\t\tm.anim.
+5270\ttrųboprovod\t\tm.
+215\ttrud\t\tm.
+1525\ttruditi\t\tv.intr. ipf.
+13099\ttrudnosť\t\tf.
+3093\ttrudny\t\tadj.
+19001\ttrudoljubivo\t\tadv.
+19002\ttrudoljubivosť\t\tf.
+19004\ttrudoljubivy\t\tadj.
+19000\ttrudoljubje\t\tn.sg.
+5338\ttrup\t\tm.
+23171\ttrutenj\t\tm.anim.
+30913\ttrvaly\t\tadj.
+35939\ttrvańje\t\tn.
+1055\ttrvati\t\tv.intr. ipf.
+33342\ttu i tam\t\tadv.
+1758\ttu\t\tadv.
+23436\ttuba\t\tf.
+410\ttuberkuloza\t\tf.
+4717\ttųdy\t\tadv.
+36929\ttųga\t\tf.
+22041\ttųgy\t\tadj.
+20769\ttuk\t\tm.
+1601\ttulipan\t\tm.
+30916\ttulov\t\tm.
+20770\ttunec\t\tm.anim.
+34927\ttunel\t\tm.
+5995\tTunizija\t\tf.sg.
+34680\ttųpěti\t\tv.intr. ipf.
+4775\ttųpy\t\tadj.
+3095\tTurcija\t\tf.sg.
+1691\tturečsky\t\tadj.
+1598\tturist\t\tm.anim.
+34965\tturističny\t\tadj.
+34964\tturizm\t\tm.sg.
+23641\tTurkmenistan\t\tm.sg.
+23642\tturkmensky\t\tadj.
+30890\tturkysovy\t\tadj.
+13110\tturnir\t\tm.
+3694\ttuš\t\tm.
+15606\ttut\t\tadv.
+15607\ttutčas\t\tadv.
+15609\ttutčasno\t\tadv.
+15610\ttutčasnosť\t\tadv.
+15611\ttutčasny\t\tadj.
+15612\ttutčasny\t\tadj.
+15613\ttutdenj\t\tadv.
+15614\ttutdenny\t\tadj.
+1534\ttutoj\t\tpron.dem.
+36086\ttutovo drěvo\t\tn.
+22749\ttuzemec\t\tm.anim.
+22043\ttųžiti sę\t\tv.refl. ipf.
+22042\ttųžiti\t\tv.intr. ipf.
+36093\ttvarog\t\tm.
+35976\ttvid\t\tm.
+2231\ttvoj\t\tpron.poss.
+20224\ttvor\t\tm.
+19010\ttvoŕba\t\tf.
+19011\ttvorčestvo\t\tn.sg.
+1548\ttvorčji\t\tadj.
+35771\ttvorec\t\tm.anim.
+4841\ttvoritelj\t\tm.anim.
+5976\ttvoriteljnik, tvoriteljny padež\t\tm.
+3030\ttvoriti\t\tv.tr. ipf.
+22144\ttvorivo\t\tn.
+17051\ttvorjeńje\t\tn.sg.
+34703\ttvŕděti\t\tv.intr. ipf.
+6111\ttvŕditi\t\tv.tr. ipf.
+13118\ttvŕdnųti\t\tv.intr. ipf.
+30923\ttvŕdo\t\tadv.
+19015\ttvŕdoglåvy\t\tadj.
+13119\ttvŕdosť\t\tf.
+1532\ttvŕdy\t\tadj.
+16802\ttvŕđa\t\tf.
+1087\ttvŕđeńje\t\tn.
+675\tty\t\tpron.pers.
+19016\ttyčkoskok\t\tm.
+13003\ttydenj\t\tm.
+16128\ttydnjeva gazeta\t\tf.
+12980\ttydnjevo\t\tadv.
+13006\ttydnjevy žurnal\t\tm.
+12981\ttydnjevy\t\tadj.
+22111\ttykalo\t\tn.
+22107\ttykati sę\t\tv.refl. ipf.
+22098\ttykati\t\tv.tr. ipf.
+22100\ttykati\t\tv.tr. ipf.
+36405\ttykati\t\tv.tr. ipf.
+30927\ttykva\t\tf.
+19018\ttyl\t\tm.
+16835\ttym ne menje\t\tadv.
+31792\ttymijan\t\tm.
+2389\ttysęć\t\tnum.card.
+4694\ttysęćlěťje\t\tn.
+20226\ttysęćlětny\t\tadj.
+12999\ttysęćročje\t\tn.
+4395\ttysęčny\t\tnum.ord.
+4923\tu\t\tprep.
+13142\tubědimy\t\tadj.
+36667\tuběditi sę\t\tv.refl. pf.
+4450\tuběditi\t\tv.tr. pf.
+13145\tubědlivy\t\tadj.
+20227\tuběđajųći\t\tadj.
+36669\tuběđati sę\t\tv.refl. ipf.
+4449\tuběđati\t\tv.tr. ipf.
+13140\tuběđeńje\t\tn.
+13141\tuběđenosť\t\tf.
+23753\tuběđeny\t\tadj.
+5448\tuběgati\t\tv.intr. ipf.
+5449\tuběgti\t\tv.intr. pf.
+23986\tuběžišče\t\tn.
+277\tubijca\t\tm.anim.
+279\tubijstvo\t\tn.
+2129\tubiti\t\tv.tr. pf.
+2130\tubivati\t\tv.tr. ipf.
+13159\tubo\t\tconj.
+19019\tubogy\t\tadj.
+30934\tubrus\t\tm.
+32790\tubrus\t\tm.
+32792\tubrus\t\tm.
+16873\tučarovany\t\tadj.
+16871\tučarovati\t\tv.tr. pf.
+16872\tučarovyvati\t\tv.tr. ipf.
+19022\tučebnik\t\tm.
+13160\tučebny\t\tadj.
+2128\tučenica\t\tf.
+13167\tučeničsky\t\tadj.
+13161\tučenik\t\tm.anim.
+17057\tučeńje\t\tn.sg.
+22159\tučeńje\t\tn.sg.
+13168\tučeny\t\tm.anim.
+3767\tučęsťje\t\tn.sg.
+13171\tučęstnica\t\tf.
+774\tučęstničstvo\t\tn.sg.
+5609\tučęstnik\t\tm.anim.
+2948\tučęstvovati\t\tv.intr. ipf.
+3327\tučet\t\tm.
+16377\tučilišče\t\tn.
+4448\tučinitelj\t\tm.anim.
+2966\t#učiniti\t\tv.tr. pf.
+19025\tučinȯk\t\tm.
+916\tučitelj\t\tm.anim.
+36678\tučiteljka\t\tf.
+1531\tučiti sę\t\tv.refl. ipf.
+1526\tučiti\t\tv.tr. ipf.
+19026\tučtivy\t\tadj.
+15097\tudača\t\tf.
+15100\tudačlivy\t\tadj.
+34973\tudačnik\t\tm.anim.
+15099\tudačno\t\tadv.
+34972\tudačny\t\tadj.
+17095\tudaliti\t\tv.tr. pf.
+17096\tudaliti\t\tv.tr. pf.
+17052\tudaljati\t\tv.tr. ipf.
+17094\tudaljati\t\tv.tr. ipf.
+19028\tudaljeńje\t\tn.sg.
+3394\tudaljenosť\t\tf.
+3754\tudar\t\tm.
+3710\tudariti\t\tv.tr. pf.
+3709\tudarjati\t\tv.tr. ipf.
+13955\tudarjeńje\t\tn.
+34971\tudati sę\t\tv.refl. pf.
+21184\tudav\t\tm.anim.
+34970\tudavati sę\t\tv.refl. ipf.
+31819\tudaviti\t\tv.tr. pf.
+20228\tuděl\t\tm.
+19031\tuděliti\t\tv.tr. pf.
+19030\tuděljati\t\tv.tr. ipf.
+20230\tudiviteljno\t\tadv.
+35204\tudiviteljny\t\tadj.
+3909\tudiviti\t\tv.tr. pf.
+13199\tudivjajųći\t\tadj.
+3349\t#udivjati sę\t\tv.refl. ipf.
+3910\tudivjati\t\tv.tr. ipf.
+4219\tudivjeńje\t\tn.sg.
+5966\tudivjeny\t\tadj.
+15102\tudobno\t\tadv.
+19034\tudobnosť\t\tf.
+19035\tudobny\t\tadj.
+35884\tudobstvo\t\tn.
+4209\tudoskonaliti\t\tv.tr. pf.
+19039\tudŕžati sę od\t\tv.refl. pf.
+19037\tudŕžati\t\tv.tr. pf.
+19043\tudŕživati sę od\t\tv.refl. ipf.
+19041\tudŕživati\t\tv.tr. ipf.
+15222\tudušeny\t\tadj.
+5562\tudušiti\t\tv.tr. pf.
+13203\tudvojeny\t\tadj.
+13202\tudvojiti\t\tv.tr. pf.
+23937\tugadati\t\tv.tr. pf.
+23939\tugadyvańje\t\tn.sg.
+23938\tugadyvati\t\tv.tr. ipf.
+2291\tugasnųti\t\tv.intr. pf.
+1542\tugašati\t\tv.intr. ipf.
+5820\tuględati\t\tv.tr. ipf.
+5821\tuględěti\t\tv.tr. pf.
+19045\tugodny\t\tadj.
+13210\tugovor\t\tm.
+5595\tugryzti\t\tv.tr. pf.
+33407\tuhađati za\t\tv.intr. ipf.
+36054\tuho, uško [@]\t\tn.
+830\tuho\t\tn.
+5482\tuhoditi\t\tv.intr. ipf.
+32521\tuhovŕtka\t\tf.
+13898\tuj, ujec\t\tm.anim.
+5483\tujdti\t\tv.intr. pf.
+13223\tujediniti\t\tv.tr. pf.
+13224\tujedinjati\t\tv.tr. ipf.
+5495\tujehati\t\tv.intr. pf.
+15166\tujenka\t\tf.
+19048\tujęti\t\tv.tr. pf.
+5496\tuježđati\t\tv.intr. ipf.
+5930\tUjgur\t\tm.anim.
+5931\tujgursky\t\tadj.
+19050\tujmati\t\tv.tr. ipf.
+13227\tukaz\t\tm.
+20238\tukazańje\t\tn.
+20239\tukazatelj\t\tm.
+17053\tukazateljny zaimennik\t\tm.
+20241\tukazati\t\tv.tr. pf.
+20242\tukazyvati\t\tv.tr. ipf.
+32011\tuklåti\t\tv.tr. pf.
+17054\tukončeny\t\tadj.
+19052\tukrađeńje\t\tn.
+3049\tUkrajina\t\tf.sg.
+596\tUkrajinec\t\tm.anim.
+831\tukrajinsky\t\tadj.
+23168\tukrasiti\t\tv.tr. pf.
+941\tukrasti\t\tv.tr. pf.
+23167\tukrašati\t\tv.tr. ipf.
+23169\tukrašeńje\t\tn.
+32100\tukrěpiti\t\tv.tr. pf.
+32101\tukrěpjati\t\tv.tr. ipf.
+31993\tukrotiti\t\tv.tr. pf.
+4176\tukryti\t\tv.tr. pf.
+36507\tukryťje\t\tn.
+13236\tukryty\t\tadj.
+4177\tukryvańje\t\tn.sg.
+13238\tukryvatelj\t\tm.anim.
+4175\tukryvati\t\tv.tr. ipf.
+17719\tukųsiti\t\tv.tr. pf.
+23841\tulagađati\t\tv.tr. ipf.
+23839\tulagoditi\t\tv.tr. pf.
+35072\tulegšati\t\tv.tr. ipf.
+35071\tulegšiti\t\tv.tr. pf.
+4849\tulěpšati\t\tv.tr. ipf.
+6055\tulěpšeńje\t\tn.
+4850\tulěpšiti\t\tv.tr. pf.
+5450\tulětati\t\tv.intr. ipf.
+5451\tuletěti\t\tv.intr. pf.
+2098\tulica\t\tf.
+24015\tulična lampa\t\tf.
+20243\tulja\t\tf.
+5743\tulomȯk\t\tm.
+5744\tulomȯk\t\tm.
+36550\tulov\t\tm.
+23647\tultrafioletovo světlo\t\tn.sg.
+35757\tultrafioletovy\t\tadj.
+20771\tulučati\t\tv.tr. ipf.
+20772\tulučiti\t\tv.tr. pf.
+35312\tulučšati\t\tv.tr. ipf.
+35313\tulučšeńje\t\tn.
+35311\tulučšiti\t\tv.tr. pf.
+13252\tum\t\tm.
+21599\tumarjajųći\t\tadj.
+20774\tumarjati\t\tv.tr. ipf.
+13531\tuměńje\t\tn.
+4101\tumenšati\t\tv.tr. ipf.
+4099\tumenšiti\t\tv.tr. pf.
+23047\tuměriti\t\tv.tr. pf.
+34979\tuměrjati\t\tv.tr. ipf.
+20775\tuměrjeny\t\tadj.
+3963\tuměstiti\t\tv.tr. pf.
+30950\tuměstno\t\tadv.
+32794\tuměstny\t\tadj.
+3965\tuměšćati\t\tv.tr. ipf.
+19055\tuměšćeńje\t\tn.
+389\tuměti\t\tv.aux. ipf.
+23046\tumětna inteligencija\t\tf.
+19056\tumětnica\t\tf.
+19057\tumětničsko\t\tadv.
+13267\tumětničsky\t\tadj.
+13268\tumětnik\t\tm.anim.
+2290\tumětnosť\t\tf.
+4842\tumětny\t\tadj.
+872\tumirati\t\tv.intr. ipf.
+13271\tumnik\t\tm.anim.
+13272\tumno\t\tadv.
+13273\tumnosť\t\tf.
+13274\tumny\t\tadj.
+22167\tumny\t\tadj.
+22168\tumny\t\tadj.
+15111\tumoliti\t\tv.tr. pf.
+15112\tumoljati\t\tv.tr. ipf.
+2980\tumoriti sę\t\tv.refl. pf.
+20778\tumoriti\t\tv.tr. pf.
+21601\tumorjeńje\t\tn.sg.
+13277\tumorjenosť\t\tf.
+594\tumorjeny\t\tadj.
+4543\tumožniti\t\tv.tr. pf.
+4542\tumožnjati\t\tv.tr. ipf.
+35384\tumrěly\t\tadj.
+977\tumreti\t\tv.intr. pf.
+20779\tumŕtviti\t\tv.tr. pf.
+20781\tumŕtvjati\t\tv.tr. ipf.
+20783\tumysl\t\tm.
+20245\tumysľno\t\tadv.
+20246\tumysľny\t\tadj.
+5290\tumyti\t\tv.tr. pf.
+5285\tumyvaľnik\t\tm.
+16380\tumyvati\t\tv.tr. ipf.
+13286\tunarodniti\t\tv.tr. pf.
+13289\tunarodnjati\t\tv.tr. ipf.
+13284\tunarodnjeńje\t\tn.
+13292\tunemožniti\t\tv.tr. pf.
+13293\tunemožnjati\t\tv.tr. ipf.
+2100\tuneviniti\t\tv.tr. pf.
+1131\tunevinjati\t\tv.tr. ipf.
+35913\tuniforma\t\tf.
+13296\tunija\t\tf.
+35322\tunikaľnosť\t\tf.
+35026\tunikaľny\t\tadj.
+1708\tUnikod\t\tm.sg.
+33260\tuniščeńje\t\tn.
+978\tuniščiti\t\tv.tr. pf.
+3072\tuniversaľny\t\tadj.
+1547\tuniversitet\t\tm.
+4508\tuniziti\t\tv.tr. pf.
+4223\tunižajųći\t\tadj.
+4507\tunižati\t\tv.tr. ipf.
+4509\tunižeńje\t\tn.
+19059\t#unižnosť\t\tf.
+36186\tuosobjeńje\t\tn.
+4662\tupad\t\tm.
+21185\tupadȯk\t\tm.
+19060\tupakovati\t\tv.tr. pf.
+19061\tupakovyvati\t\tv.tr. ipf.
+1060\tupasti\t\tv.intr. pf.
+5537\tupekti\t\tv.tr. pf.
+13312\tuperiti\t\tv.tr. pf.
+5579\tupiti sę\t\tv.refl. pf.
+438\tupity\t\tadj.
+5578\tupivati sę\t\tv.refl. ipf.
+19064\tupodabnjati sę\t\tv.refl. ipf.
+19062\tupodabnjati\t\tv.tr. ipf.
+19068\tupodobniti sę\t\tv.refl. pf.
+19066\tupodobniti\t\tv.tr. pf.
+5897\tupokarnjati\t\tv.tr. ipf.
+5896\tupokorniti\t\tv.tr. pf.
+3778\tupȯlnomoćeny\t\tadj.
+1419\tupȯlnomoćevati\t\tv.tr. ipf.
+1779\tupȯlnomoćiti\t\tv.tr. pf.
+19070\tuporny\t\tadj.
+35654\tupotrěba\t\tf.
+4539\tupotrěbimy\t\tadj.
+4374\tupotrěbitelj\t\tm.anim.
+3092\tupotrěbiti\t\tv.tr. pf.
+1388\tupotrěbjati\t\tv.tr. ipf.
+1505\tupotrěbjeńje\t\tn.
+13330\tuprava\t\tf.
+5077\tupravitelj\t\tm.anim.
+21194\tupraviti\t\tv.tr. pf.
+13332\tupravjati\t\tv.tr. ipf.
+21198\tupravjati\t\tv.tr. ipf.
+20247\tupravjeńje\t\tn.
+32775\tupręž\t\tf.
+30955\tupyŕ\t\tm.anim.
+35097\turagan\t\tm.
+35064\tUral\t\tm.sg.
+35063\turaľsky\t\tadj.
+1569\turan\t\tm.sg.
+23648\tUran\t\tm.sg.
+3749\turåvenj\t\tm./f.
+20252\turåvniti\t\tv.tr. pf.
+20248\turåvnjati\t\tv.tr. ipf.
+1028\turaza\t\tf.
+1030\turaziti\t\tv.tr. pf.
+33390\turazlivy\t\tadj.
+622\turažati\t\tv.tr. ipf.
+33392\turaženy\t\tadj.
+3762\turęd\t\tm.
+22369\turęditi\t\tv.tr. pf.
+21203\turędnik\t\tm.anim.
+22366\turęđati\t\tv.tr. ipf.
+21603\turěkati\t\tv.tr. ipf.
+21605\turěkti\t\tv.tr. pf.
+6330\t#urězati\t\tv.tr. pf.
+6332\turězyvati\t\tv.tr. ipf.
+32789\turna\t\tf.
+34981\turod\t\tm.
+1896\turoditi sę\t\tv.refl. pf.
+1556\turoditi\t\tv.tr. pf.
+21608\turoditi\t\tv.tr. pf.
+1660\turodlivy\t\tadj.
+21607\turođaj\t\tm.
+15116\turođeńje\t\tn.
+21609\turok\t\tm.
+22448\tUrugvaj\t\tm.sg.
+22449\turugvajsky\t\tadj.
+23943\turvati\t\tv.tr. pf.
+23940\turyvati\t\tv.tr. ipf.
+19076\tusęsti\t\tv.intr. pf.
+1100\tusiliti\t\tv.tr. pf.
+1432\tusiljati\t\tv.tr. ipf.
+1614\tusiľje\t\tn.
+6317\tusiljeńje\t\tn.
+4246\tusilovati\t\tv.intr. ipf.
+35318\tuskoriti\t\tv.tr. pf.
+35319\tuskorjati\t\tv.tr. ipf.
+36313\tuskorjeńje\t\tn.
+3094\tuslovje\t\tn.
+1618\tuslovny\t\tadj.
+15117\tusložniti\t\tv.tr. pf.
+15118\tusložnjati\t\tv.tr. ipf.
+5128\tusluga\t\tf.
+1552\tuslyšati\t\tv.tr. pf.
+1624\tusměh\t\tm.
+1634\tusměhati sę\t\tv.refl. ipf.
+1615\tusměhnųti sę\t\tv.refl. pf.
+20789\tusmŕćati\t\tv.tr. ipf.
+20790\tusmŕtiti\t\tv.tr. pf.
+21615\tusnųti\t\tv.intr. pf.
+5453\tusȯhnųti\t\tv.intr. pf.
+1616\tuspěh\t\tm.
+13362\tuspěhlivy\t\tadj.
+15631\tuspěšnica\t\tf.
+15632\tuspěšnik\t\tm.anim.
+3912\tuspěšno\t\tadv.
+3911\tuspěšny\t\tadj.
+4042\tuspěti\t\tv.intr. pf.
+5565\tuspěvati\t\tv.intr. ipf.
+1590\tuspokajati\t\tv.tr. ipf.
+5877\tuspokojeńje\t\tn.sg.
+13373\tuspokojeny\t\tadj.
+1589\tuspokojiti\t\tv.tr. pf.
+3830\tusposabjati\t\tv.tr. ipf.
+3831\tusposobiti\t\tv.tr. pf.
+20256\tuspravědliviti\t\tv.tr. pf.
+36409\tuspravědlivjati\t\tv.tr. ipf.
+20257\tuspravědlivjeńje\t\tn.
+21618\tusŕdny\t\tadj.
+1530\tusta\t\tn.pl.
+21808\tustaliti\t\tv.tr. pf.
+21801\tustaljati\t\tv.tr. ipf.
+23293\tustaljeny\t\tadj.
+13386\tustalosť\t\tf.
+13387\tustaly\t\tadj.
+5132\tustanavjati\t\tv.tr. ipf.
+34983\tustanovitelj\t\tm.anim.
+5133\tustanoviti\t\tv.tr. pf.
+13384\tustanovjeny\t\tadj.
+16470\tustati\t\tv.intr. pf.
+21799\tustati\t\tv.intr. pf.
+21809\tustav\t\tm.
+21810\tustav\t\tm.
+13388\tustavati\t\tv.intr. ipf.
+21798\tustavati\t\tv.intr. ipf.
+3952\tustaviti\t\tv.tr. pf.
+3951\tustavjati\t\tv.tr. ipf.
+3953\tustavjeńje\t\tn.
+35232\tustavny\t\tadj.
+33597\tusťje\t\tn.
+5169\tustny\t\tadj.
+21923\tustrajati\t\tv.tr. ipf.
+31998\tustrica\t\tf.
+3913\tustroj\t\tm.
+19090\tustrojitelj\t\tm.anim.
+21924\tustrojiti\t\tv.tr. pf.
+19095\tustrojstvo\t\tn.sg.
+732\tustųpati\t\tv.tr. ipf.
+21973\tustųpati\t\tv.intr. ipf.
+1648\tustųpiti\t\tv.tr. pf.
+21977\tustųpiti\t\tv.intr. pf.
+15120\tustųpjeńje\t\tn.
+1650\tustųpka\t\tf.
+6047\tustųpny\t\tadj.
+5452\tusyhati\t\tv.intr. ipf.
+4877\tuši\t\tf.pl.
+5421\tutěkati\t\tv.intr. ipf.
+6067\tutěkati\t\tv.intr. ipf.
+5420\tutekti\t\tv.intr. pf.
+6068\tutekti\t\tv.intr. pf.
+19097\tutekųćiniti\t\tv.tr. pf.
+19096\tutekųćinjati\t\tv.tr. ipf.
+36193\tutělesniti\t\tv.tr. pf.
+36192\tutělesnjati\t\tv.tr. ipf.
+13409\tutes\t\tm.
+23664\tutěšati\t\tv.tr. ipf.
+23668\tutěšeńje\t\tn.
+23665\tutěšiti\t\tv.tr. pf.
+13410\tutęžati\t\tv.tr. ipf.
+13411\tutęžiti\t\tv.tr. pf.
+36461\tutilitarny\t\tadj.
+13412\tutirak\t\tm.
+13414\tutirati\t\tv.tr. ipf.
+34180\tutišati\t\tv.tr. ipf.
+34183\tutišiti\t\tv.tr. pf.
+35669\tutočniti\t\tv.tr. pf.
+35670\tutočnjati\t\tv.tr. ipf.
+35671\tutočnjeńje\t\tn.
+3834\tutomljeny\t\tadj.
+21620\tutonųti\t\tv.intr. pf.
+32389\tutopičny\t\tadj.
+32388\tutopija\t\tf.
+32390\tutopist\t\tm.anim.
+35924\tutopizm\t\tm.sg.
+12635\tutraćati čas\t\tv.ipf.
+21621\tutraćati sę\t\tv.refl. ipf.
+12636\tutraćati udobnomožnosť\t\tv.ipf.
+12637\tutraćati vrěmę\t\tv.ipf.
+12638\tutraćati vse\t\tv.ipf.
+2939\tutraćati\t\tv.tr. ipf.
+5068\tutraćeny\t\tadj.
+3730\tutrata\t\tf.
+21623\tutratiti sę\t\tv.refl. pf.
+12663\tutratiti\t\tv.tr. pf.
+34029\tutreti\t\tv.tr. pf.
+8365\tutrišnji, utrišny\t\tadj.
+392\tutro\t\tn.
+23793\tutrom\t\tadv.
+3818\tutŕpěti\t\tv.tr. pf.
+13417\tutrudniti\t\tv.tr. pf.
+13418\tutrudnjati\t\tv.tr. ipf.
+1651\tutvŕditi\t\tv.tr. pf.
+36404\tutvŕditi\t\tv.tr. pf.
+393\tutvŕđati\t\tv.tr. ipf.
+36403\tutvŕđati\t\tv.tr. ipf.
+13421\tutvŕđeńje\t\tn.
+13422\tuvadnjati\t\tv.tr. ipf.
+5188\tuvaga\t\tf.
+19100\tuvaljnjati sę od\t\tv.refl. ipf.
+19099\tuvaljnjati sę\t\tv.refl. ipf.
+3555\tuvaljnjati\t\tv.tr. ipf.
+3562\tuvaljnjati\t\tv.tr. ipf.
+13423\tuvažańje\t\tn.sg.
+4483\tuvažati\t\tv.tr. ipf.
+22178\tuvažati\t\tv.tr. ipf.
+19102\tuvažiti\t\tv.tr. pf.
+19104\tuvažny\t\tadj.
+1620\tuvědamjati\t\tv.tr. ipf.
+23949\tuvędati\t\tv.intr. ipf.
+23951\tuvędnųti\t\tv.intr. pf.
+1619\tuvědomiti\t\tv.tr. pf.
+5853\tuvědomjeńje\t\tn.
+1611\tuvědomjeny\t\tadj.
+30958\tuvěkověčiti\t\tv.tr. pf.
+22289\tuveličati\t\tv.tr. ipf.
+35060\tuveličeńje\t\tn.
+22290\tuveličiti\t\tv.tr. pf.
+36668\tuvěriti sę\t\tv.refl. pf.
+199\tuvěriti\t\tv.tr. pf.
+200\tuvěriti\t\tv.tr. pf.
+36670\tuvěrjati sę\t\tv.refl. ipf.
+1649\tuvěrjati\t\tv.tr. ipf.
+3200\tuvěrjeno\t\tadv.
+13434\tuvěrjenosť\t\tf.
+1599\tuvěrjeny\t\tadj.
+23438\tuvertura\t\tf.
+36555\tuvęznųti\t\tv.intr. pf.
+5555\tuviděti\t\tv.tr. pf.
+13444\tuvodniti\t\tv.tr. pf.
+19108\tuvoljniti sę od\t\tv.refl. pf.
+19107\tuvoljniti sę\t\tv.refl. pf.
+3558\tuvoljniti\t\tv.tr. pf.
+3560\tuvoljniti\t\tv.tr. pf.
+30961\tuvularny\t\tadj.
+23643\tuzbečsky, uzbeksky\t\tadj.
+5932\tUzbek\t\tm.anim.
+5933\tUzbekistan\t\tm.sg.
+32759\tuzda\t\tf.
+13455\tuzdråvitelj\t\tm.anim.
+15123\tuzdråviti\t\tv.tr. pf.
+15124\tuzdravjati\t\tv.tr. ipf.
+35065\tuznańje\t\tn.sg.
+3805\tuznati\t\tv.tr. pf.
+3804\tuznavati\t\tv.tr. ipf.
+4044\tuzrěti\t\tv.tr. pf.
+36459\tuzurpator\t\tm.anim.
+36458\tuzurpovati\t\tv.tr. ipf./pf.
+16917\tuž ne\t\tadv.
+114\tuž, uže\t\tadv.
+13461\tužas\t\tm.
+5105\tužasati\t\tv.tr. ipf.
+5865\tužasneny\t\tadj.
+20258\tužasno\t\tadv.
+5106\tužasnųti\t\tv.tr. pf.
+13465\tužasny\t\tadj.
+22932\tužiti\t\tv.tr. pf.
+30964\tuživańje\t\tn.
+22931\tuživati\t\tv.tr. ipf.
+1606\tv času\t\tprep.
+19109\tv domu\t\tadv.
+4945\tv imenu\t\tprep.
+3615\tv koncu\t\tadv.
+13474\tv mig oka\t\tadv.
+13472\tv mig\t\tadv.
+13476\tv obličju prava\t\tadv.
+13478\tv obličju trudnostij\t\tadv.
+19113\tv odnošeńju k\t\tprep.
+13480\tv odråzlikě od\t\tprep.
+35517\tv porędku\t\tadv.
+5954\tv prošlȯm godu\t\tadv.
+17089\tv protivnosti k\t\tprep.
+5156\tv ramkah\t\tprep.
+3245\tv råzličji od\t\tprep.
+36234\tv směru strělky časovnika\t\tadv.
+30967\tv sumě\t\tadv.
+4948\tv svęzi s\t\tprep.
+19117\tv tečeńju\t\tprep.
+13485\tv tom samom vrěmenu\t\tadv.
+5829\tv vrěmenu\t\tprep.
+13486\tv vśakom slučaju\t\tadv.
+15193\tv zaměn za\t\tprep.
+13990\tv zaměn\t\tadv.
+1607\tv, vo\t\tprep.
+3982\tv, vo\t\tprep.
+23166\tvabik\t\tm.
+23164\tvabiti\t\tv.tr. ipf.
+30970\tvaflja\t\tf.
+5645\tvaga\t\tf.
+22173\tvaga\t\tf.
+21638\tvagati sę\t\tv.refl. ipf.
+35086\tvagina\t\tf.
+1608\tvagon\t\tm.
+30973\tvagonetka\t\tf.
+30974\tVagy\t\tf.pl.
+36927\tvajatelj\t\tm.anim.
+36914\tvajati\t\tv.tr. ipf.
+30978\tvakacije\t\tf.pl.
+30979\tvakancija\t\tf.
+30980\tvakantny\t\tadj.
+30981\tvakcina\t\tf.
+30983\tvakuum\t\tm.
+22184\tval\t\tm.
+30984\tval\t\tm.
+13489\tvala\t\tf.
+20283\tvalec\t\tm.
+30987\tvalenky\t\tm.pl.
+30988\tvalentnosť\t\tf.
+30989\tvaleriana\t\tf.
+30990\tvalerianka\t\tf.
+31853\tvalet\t\tm.anim.
+34976\tvalisty papugajek\t\tm.anim.
+3472\tvaliti\t\tv.tr. ipf.
+30996\tvaljati sę\t\tv.refl. ipf.
+22181\tvaljati\t\tv.tr. ipf.
+30997\tvaljcevati\t\tv.intr. ipf./pf.
+30998\tvalkirija\t\tf.
+30999\tvals\t\tm.
+31000\tvalsovati\t\tv.intr. ipf.
+23462\tvaltorna\t\tf.
+31005\tvaltornist\t\tm.anim.
+1698\tvaluta\t\tf.
+1553\tvam\t\tpron.pers.
+31007\tvampir\t\tm.anim.
+22619\tvanadij\t\tm.sg.
+31009\tvandal\t\tm.anim.
+31010\tvandalizm\t\tm.sg.
+31012\tvanilin\t\tm.sg.
+31011\tvanilja\t\tf.
+3450\tvanna\t\tf.
+31014\tvanta\t\tf.
+31015\tvapno\t\tn.
+17058\tvariacija\t\tf.
+17059\tvariant\t\tm.
+31021\tvariete\t\tn.indecl.
+31022\tvariovati\t\tv.intr. ipf./pf.
+5210\tvariti\t\tv.tr. ipf.
+31024\tVarjag\t\tm.anim.
+21211\tvarjeńje\t\tn.sg.
+21212\tvarlivy\t\tadj.
+23518\tVaršava\t\tf.sg.
+19513\tVaršavsky Dogovor\t\tm.sg.
+31025\tvarvar\t\tm.anim.
+31026\tvarvarizm\t\tm.sg.
+31027\tvarvarsky\t\tadj.
+2413\tvas\t\tpron.pers.
+31028\tvasal\t\tm.anim.
+32779\tvasaľna dŕžava\t\tf.
+1631\tvaš\t\tpron.poss.
+31032\tvat\t\tm.
+31033\tvata\t\tf.
+31035\tvaterlinija\t\tf.
+31038\tVatikan\t\tm.sg.
+31039\tvavilonsky\t\tadj.
+31040\tvaza\t\tf.
+19160\tvazektomija\t\tf.
+31041\tvazelin\t\tm.
+13495\tvažeńje\t\tn.
+6005\tvažiti\t\tv.tr. ipf.
+20808\tvažka\t\tf.
+13502\tvažno\t\tadv.
+19161\tvažnosť\t\tf.
+1632\tvažny\t\tadj.
+34878\tvčasno\t\tadv.
+34879\tvčasnosť\t\tf.
+34880\tvčasny\t\tadj.
+1067\tvčera\t\tadv.
+35266\tvčerašnji, včerašny\t\tadj.
+19119\tvčleniti\t\tv.tr. pf.
+19118\tvčlenjati\t\tv.tr. ipf.
+13505\tvdęčno\t\tadv.
+4902\tvdęčnosť\t\tf.
+4900\tvdęčny\t\tadj.
+31046\tvděti niť v iglų\t\tv.tr. pf.
+32941\tvděvati niť v iglų\t\tv.tr. ipf.
+23788\tvdȯhnųti\t\tv.tr. pf.
+3075\tvdol\t\tadv.
+464\tvdova\t\tf.
+4284\tvdovec\t\tm.anim.
+23787\tvdyhati\t\tv.tr. ipf.
+3916\tvebmaster\t\tm.anim.
+3074\tveb-sajt, vebsajt\t\tm.
+35238\tveb-strånica\t\tf.
+1635\tvěć\t\tf.
+34902\tvęće ili menje\t\tadv.
+4546\tvęće\t\tadv.
+22402\tvěće\t\tn.
+2264\tvęćinstvo\t\tn.
+412\tvęćši\t\tadj.
+1653\tvečer\t\tm.
+2416\tvečerja\t\tf.
+13519\tvečerjati\t\tv.intr. ipf.
+23796\tvečerny\t\tadj.
+1637\tvečerȯm\t\tadv.
+13524\tvěčno\t\tadv.
+15634\tvěčnosť\t\tf.
+1657\tvěčny\t\tadj.
+15126\tvěda\t\tf.
+15127\tvěděńje\t\tn.sg.
+15128\tvěděti\t\tv.tr. ipf.
+31102\tvędly\t\tadj.
+4829\tvěďma\t\tf.
+13647\tvěďmak\t\tm.anim.
+13644\tvędneńje\t\tn.sg.
+13642\tvędneny\t\tadj.
+15130\tvědnosť\t\tf.
+13643\tvędnųti\t\tv.intr. ipf.
+36420\tvědomo\t\tadv.
+22209\tvědomosť\t\tf.
+20284\tvědomy\t\tadj.
+1306\tvědro\t\tn.
+31063\tvegetacija\t\tf.
+31064\tvegetarianec\t\tm.anim.
+32754\tvegetarianka\t\tf.
+31065\tvegetariansky\t\tadj.
+31066\tvegetativny\t\tadj.
+36311\tvějalo\t\tn.
+36312\tvějaŕ\t\tm.
+31068\tvějati\t\tv.intr. ipf.
+4110\tvěk\t\tm.
+4616\tvěk\t\tm.
+31073\tvěko\t\tn.
+31074\tvěko\t\tn.
+31075\tveksel\t\tm.
+31076\tvektor\t\tm.
+31092\tvelarny\t\tadj.
+3047\tvelblųd\t\tm.anim.
+19165\tvelebny\t\tadj.
+22283\tvelebny\t\tadj.
+31078\tvelen\t\tm.
+36868\tvelesila\t\tf.
+31079\t#velěti\t\tv.tr. ipf.
+13545\tveličejši\t\tadj.
+5286\tveličina\t\tf.
+31083\tveličje\t\tn.sg.
+22284\tveličstveny\t\tadj.
+22285\tveličstvo\t\tn.
+31084\tVelika Britanija\t\tf.sg.
+16374\tVelika Noć\t\tf.
+13539\tvelikan\t\tm.anim.
+16373\tVelikdenj\t\tm.
+19169\tvelikodušno\t\tadv.
+19170\tvelikodušnosť\t\tf.
+19172\tvelikodušny\t\tadj.
+22286\tvelikolěpny\t\tadj.
+35595\tvelikosť\t\tf.
+31091\tvelikosvetsky\t\tadj.
+689\tveliky gråd\t\tm.
+130\tveliky palec\t\tm.
+10461\tVeliky Pętȯk\t\tm.
+19168\tveliky šlem\t\tm.
+6\tveliky\t\tadj.
+21639\tvelje\t\tadv.
+21641\tvelje\t\tadv.
+13547\tveľmi rano\t\tadv.
+13549\tVeľmi Važna Osoba\t\tf.
+13546\tveľmi\t\tadv.
+20809\tveľmoža\t\tm.anim.
+4476\tvelosiped\t\tm.
+31101\tvelosipedist\t\tm.anim.
+20811\tveľryb\t\tm.anim.
+35057\tVels\t\tm.sg.
+35058\tvelssky\t\tadj.
+31097\tvelur\t\tm.
+13558\tvely\t\tadj.
+4239\tvelžnosť\t\tf.
+4238\tvelžny\t\tadj.
+31103\tvena\t\tf.
+31105\tvendeta\t\tf.
+704\tvěnec\t\tm.
+19177\tVenera\t\tf.
+31107\tveneričny\t\tadj.
+16792\tVenezuela\t\tf.sg.
+22451\tvenezueľsky\t\tadj.
+31116\tvenozny\t\tadj.
+31118\tventilacija\t\tf.
+5830\tventilator\t\tm.
+31117\tventilj\t\tm.
+31120\tventilovati\t\tv.tr. ipf./pf.
+31123\tvepŕ\t\tm.anim.
+2429\tvěra\t\tf.
+31125\tveranda\t\tf.
+31126\tverbaľny\t\tadj.
+31127\tverbena\t\tf.
+31128\tverbovati\t\tv.tr. ipf./pf.
+31129\tverdikt\t\tm.
+35333\tvěręći\t\tm.anim.
+1897\tverf\t\tm.
+32836\tverifikacija\t\tf.
+20285\tverifikovajemy\t\tadj.
+20286\tverifikovati\t\tv.tr. ipf.
+19179\tveriga\t\tf.
+22554\tverigy\t\tf.pl.
+22322\tvěritelj\t\tm.anim.
+3106\tvěriti\t\tv.tr. ipf.
+31133\tvermišelj\t\tf.
+31134\tvermut\t\tm.
+35334\tvěrnik\t\tm.anim.
+31135\tvernisaž\t\tm.
+3308\tvěrny\t\tadj.
+3917\tvěrny\t\tadj.
+19181\tvěrodostojnosť\t\tf.
+19184\tvěrodostojny\t\tadj.
+19187\tvěrogodnosť\t\tf.
+19190\tvěrogodny\t\tadj.
+1102\tvěrojętno\t\tadv.
+13576\tvěrojętnosť\t\tf.
+3405\tvěrojętny\t\tadj.
+36225\tvěrolomnik\t\tm.anim.
+20812\tvěrolomnosť\t\tf.
+20814\tvěrolomny\t\tadj.
+13564\tvěrozakon\t\tm.
+13578\tvěrozakonny\t\tadj.
+959\tversija, verzija\t\tf.
+31143\tversta\t\tf.
+31144\tverš\t\tm.
+20287\tvertikaľny\t\tadj.
+1676\tveś\t\tpron.indef.
+31150\tveś\t\tf.
+22342\tvesde\t\tadv.
+3583\tveseliti sę\t\tv.refl. ipf.
+13581\tveseliti\t\tv.tr. ipf.
+980\tveseljańje\t\tn.sg.
+6039\tveseľje\t\tn.sg.
+19196\tVeselogo Rođeńja!\t\tintj.
+13588\tveselosť\t\tf.
+16383\tvesely\t\tadj.
+19200\tVeselyh Svętkov!\t\tintj.
+4046\tvěsiti\t\t#v.tr. ipf.
+31151\tveslo\t\tn.
+328\tvesna\t\tf.
+3073\tvěsť\t\tf.
+13592\tvěsti\t\tf.pl.
+13593\tvesti\t\tv.tr. ipf.
+31155\tvestibulj\t\tm.
+19201\tvěstnik\t\tm.anim.
+22211\tvěstnik\t\tm.
+22212\tvěstnik\t\tm.anim.
+19193\tvěšalka\t\tf.
+4045\tvěšati\t\tv.tr. ipf.
+3270\tveteran\t\tm.anim.
+13962\tveteranka\t\tf.
+31163\tveterinaŕ\t\tm.anim.
+32431\tveterinaŕny\t\tadj.
+31165\tvethy\t\tadj.
+2153\tvětka\t\tf.
+1677\tveto\t\tn.
+1678\tvětr\t\tm.
+13599\tvětrak\t\tm.
+33033\tvětrec\t\tm.
+33032\tvětrik\t\tm.
+19202\tvětrilo\t\tn.
+19203\tvětriti\t\tv.tr. ipf.
+15137\tvětrnica\t\tf.
+19205\tvětrno plåtno\t\tn.
+19206\tvětrnoplåtnica\t\tf.
+13596\tvětrny mlyn\t\tm.
+13595\tvětrny\t\tadj.
+5000\tvětva\t\tf.
+1681\tveverica\t\tf.
+31170\tvęz\t\tm.
+19210\tvęzalo\t\tn.
+19215\tvęzati šnurom\t\tv.ipf.
+2509\tvęzati\t\tv.tr. ipf.
+1702\tvęzenj\t\tm.anim.
+2161\tvęzeńje\t\tn.
+31172\tvezir\t\tm.anim.
+19216\tvęzka\t\tf.
+22189\tvęznųti\t\tv.intr. ipf.
+36270\tvezti sę\t\tv.refl. pf.
+1683\tvezti\t\tv.tr. ipf.
+2032\tvěža\t\tf.
+19208\tvěža\t\tf.
+34984\tvględati sę\t\tv.refl. ipf.
+13607\tvględěti sę\t\tv.refl. pf.
+31176\tvgorų\t\tadv.
+5294\tvhod\t\tm.
+65\tvhoditi\t\tv.intr. ipf.
+19123\tvhodna karta\t\tf.
+19120\tvhođeńje\t\tn.sg.
+31177\tviadukt\t\tm.
+31178\tvibracija\t\tf.
+32988\tvibrafon\t\tm.
+31179\tvibrator\t\tm.
+31181\tvibrovati\t\tv.intr. ipf./pf.
+1689\tvid\t\tm.
+22419\tvid\t\tm.
+23074\tvid\t\tm.
+31183\tvid\t\tm.
+31186\tviděńje\t\tn.
+13616\tviděny\t\tadj.
+2151\tvideo\t\tn.
+36778\tvideokarta\t\tf.
+2185\tviděti\t\tv.tr. ipf.
+20288\tvidimo\t\tadv.
+19219\tvidimy\t\tadj.
+22423\tvidnokrųg\t\tm.
+13619\tvidny\t\tadj.
+19220\tViena\t\tf.sg.
+4750\tVietnam\t\tm.sg.
+4751\tvietnamsky\t\tadj.
+31190\tvigvam\t\tm.
+31191\tvihȯr\t\tm.
+33586\tvihȯr\t\tm.
+33587\tvihȯr\t\tm.
+31193\tvika\t\tf.
+31194\tvikarij\t\tm.anim.
+3096\tvikend\t\tm.
+16139\tvikendovy\t\tadj.
+35076\tviki\t\tf.indecl.
+31195\tviking\t\tm.anim.
+35277\tVikipedija\t\tf.
+31196\tvikont\t\tm.anim.
+31197\tvikontesa\t\tf.
+31189\tvikunja\t\tf.
+31199\tvila\t\tf.
+4666\tvilica\t\tf.
+31201\tvily\t\tf.pl.
+2604\tvina\t\tf.
+31204\tvinegret\t\tm.
+1159\tviniteljnik, viniteljny padež\t\tm.
+2605\tviniti za\t\tv.tr. ipf.
+31205\tvinjetka\t\tf.
+36157\tvinna loza\t\tf.
+15140\tvinnik\t\tm.anim.
+15141\tvinnosť\t\tf.
+1009\tvinny\t\tadj.
+1400\tvino\t\tn.
+13626\tvinobrańje\t\tn.
+13627\tvinogråd, vinogrådnik\t\tm.
+13628\tvinogrådny\t\tadj.
+13629\tvinogrådstvo\t\tn.sg.
+23733\tvinovaty\t\tadj.
+721\tvinovnik\t\tm.anim.
+31209\tvint\t\tm.
+4148\tvintovka\t\tf.
+23442\tviola\t\tf.
+16140\tviolina\t\tf.
+16141\tviolinist\t\tm.anim.
+31212\tviolončelist\t\tm.anim.
+23440\tviolončelo\t\tn.
+31214\tviraž\t\tm.
+31215\tVirdžinija\t\tf.sg.
+31867\tvirolog\t\tm.anim.
+31868\tvirologija\t\tf.sg.
+5173\tvirtuaľny\t\tadj.
+31216\tvirtuoz\t\tm.anim.
+23654\tvirus\t\tm.
+32780\tvisęći zamȯk\t\tm.
+22431\tvisělica\t\tf.
+1163\tvisěti\t\tv.intr. ipf.
+23161\tviski\t\tm./f.
+31221\tviskoza\t\tf.
+23663\t#Visla\t\tf.sg.
+21225\tvisokosny god\t\tm.
+31224\tvist\t\tm.
+19221\tvišnja\t\tf.
+31225\tvišnjevy\t\tadj.
+15146\tVitaj!\t\tintj.
+15147\tVitajte!\t\tintj.
+31227\tvitalist\t\tm.anim.
+31228\tvitalističny\t\tadj.
+31229\tvitalizm\t\tm.sg.
+16303\tvitamin\t\tm.
+15148\tvitańje\t\tn.
+2981\tvitati\t\tv.tr. ipf.
+19222\tvitęź\t\tm.anim.
+695\tvitęzstvo\t\tn.
+33580\tviti gnězdo\t\tphrase
+5627\tviti sę\t\tv.refl. ipf.
+31233\tviti\t\tv.tr. ipf.
+33571\tviti\t\tv.tr. ipf.
+33572\tviti\t\tv.tr. ipf.
+33573\tviti\t\tv.tr. ipf.
+33574\tviti\t\tv.tr. ipf.
+36104\tVitlejem\t\tm.
+31234\tvitraž\t\tm.
+31235\tvitrina\t\tf.
+20289\tvivisekcija\t\tf.
+666\tviza\t\tf.
+31239\tvizavi\t\tprep.
+33002\tvizažist\t\tm.anim.
+33003\tvizažistka\t\tf.
+23075\tvizija\t\tf.
+3035\tvizita\t\tf.
+31242\tvizuaľny\t\tadj.
+5493\tvjehati\t\tv.intr. pf.
+5492\tvježđati\t\tv.intr. ipf.
+3956\tvklad\t\tm.
+3954\tvkladati\t\tv.tr. ipf.
+20263\tvključajųći\t\tprep.
+1699\tvključati\t\tv.tr. ipf.
+3923\tvključati\t\tv.tr. ipf.
+20264\tvključeńje\t\tn.sg.
+35221\tvključiteljny\t\tadj.
+2162\tvključiti\t\tv.tr. pf.
+3926\tvključiti\t\tv.tr. pf.
+35330\tvključno\t\tadv.
+31244\tvkupě\t\tadv.
+2160\tvkųs\t\tm.
+2542\tvkųsiti\t\tv.tr. pf.
+31248\tvkųsny\t\tadj.
+1814\tvkųšati\t\tv.tr. ipf.
+22517\tvlåčiti\t\tv.tr. ipf.
+22518\tvlåčiti\t\tv.tr. ipf.
+2528\tvlada\t\tf.
+22468\tvlada\t\tf.
+13668\tvladaŕ\t\tm.anim.
+13669\tvladaŕka\t\tf.
+569\tvladati, vlåděti\t\tv.intr. ipf.
+13670\tvladati, vlåděti\t\tv.intr. ipf.
+22476\tvladati, vlåděti\t\tv.intr. ipf.
+22477\tvladati, vlåděti\t\tv.intr. ipf.
+22478\tvladati, vlåděti\t\tv.intr. ipf.
+22479\tvladati, vlåděti\t\tv.intr. ipf.
+33612\tvladati, vlåděti\t\tv.intr. ipf.
+33615\tvladati, vlåděti\t\tv.intr. ipf.
+22471\tvladec\t\tm.anim.
+35392\tvladny\t\tadj.
+22473\tvladyka\t\tm.anim.
+19224\tvlåga\t\tf.
+13242\tvlagańje\t\tn.
+13243\tvlagatelj\t\tm.anim.
+15103\tvlagati\t\tv.tr. ipf.
+6196\tvlåk\t\tm.
+2530\tvlåkno\t\tn.
+23398\tvlamyvatelj\t\tm.anim.
+5590\tvlamyvati sę\t\tv.refl. ipf.
+2529\tvlås\t\tm.
+19225\tvlåsaty\t\tadj.
+6320\tvlasť\t\tf.
+13677\tvlasť\t\tf.
+15741\tvlastnica\t\tf.
+22481\tvlastničstvo\t\tn.
+24014\tvlastničstvo\t\tn.
+3363\tvlastnik\t\tm.anim.
+13678\tvlastnik\t\tm.anim.
+13681\tvlastniti\t\tv.tr. ipf.
+13685\tvlastno imę\t\tn.
+13683\tvlastnosť\t\tf.
+1913\tvlastny\t\tadj.
+22480\tvlastny\t\tadj.
+34713\tvlåžiti\t\tv.tr. pf.
+19228\tvlåžnosť\t\tf.
+19231\tvlåžny\t\tadj.
+3570\tvlěkti\t\tv.tr. ipf.
+5280\tvlěvo\t\tadv.
+579\tvlězti\t\tv.intr. pf.
+20791\tvliv\t\tm.
+20792\tvlivati\t\tv.intr. ipf.
+23397\tvlivny\t\tadj.
+4612\tvlomiti sę\t\tv.refl. pf.
+4613\tvlomjeńje\t\tn.
+3955\tvložiti\t\tv.tr. pf.
+35545\tvměsati\t\tv.tr. pf.
+31258\tvměstiti\t\tv.tr. pf.
+2531\tvměsto\t\tprep.
+15151\tvměstu\t\tadv.
+20270\tvměšańje\t\tn.
+2532\tvměšati sę\t\tv.refl. pf.
+32434\tvměšćati\t\tv.tr. ipf.
+2533\tvměšivati sę\t\tv.refl. ipf.
+35546\tvměšivati\t\tv.tr. ipf.
+16902\tvně\t\tadv.
+16904\tvně\t\tprep.
+5455\tvnesti\t\tv.tr. pf.
+16903\tvněšnji, vněšny\t\tadj.
+35762\tvnězemny\t\tadj.
+20795\tvnikati\t\tv.intr. ipf.
+20798\tvniknųti\t\tv.intr. pf.
+19234\tvnimańje\t\tn.sg.
+36795\tvnimateljny\t\tadj.
+23378\tvniz\t\tadv.
+5454\tvnositi\t\tv.tr. ipf.
+35619\tvnučę\t\tn.
+15644\tvnučka\t\tf.
+1430\tvnuk\t\tm.anim.
+2540\tvnųtri\t\tprep.
+21642\tvnųtri\t\tadv.
+22378\tvnųtrišnji, vnųtrišny\t\tadj.
+19235\tvnųtrna valuta\t\tf.
+2950\tvnųtrnosť\t\tf.
+22376\tvnųtrnosti\t\tf.pl.
+19237\tvnųtrny produkt\t\tm.
+19238\tvnųtrny spor\t\tm.
+2534\tvnųtrny\t\tadj.
+16484\tvȯ vśakom slučaju\t\tadv.
+2537\tvoda\t\tf.
+31270\tvodevilj\t\tm.
+22208\tvodič\t\tm.
+15152\tvoditelj\t\tm.anim.
+13717\tvoditeljstvo\t\tn.sg.
+13719\tvoditi k\t\tv.ipf.
+2536\tvoditi\t\tv.tr. ipf.
+4644\tvodka\t\tf.
+31273\tvȯdle\t\tprep.
+2538\tvodno polo\t\tn.sg.
+33823\tvodny znak\t\tm.
+36769\tvodny\t\tadj.
+22547\t#vodobojaznj\t\tf.
+31274\tvododěl\t\tm.
+19240\tvodojem\t\tm.
+20816\tVodolěj\t\tm.anim.
+33822\tvodoodporny\t\tadj.
+4991\tvodopad\t\tm.
+31278\tvodopoj\t\tm.
+3425\tvodoråsť\t\tf.
+22548\tvodoråvny\t\tadj.
+22545\tvodorod\t\tm.sg.
+36907\tvodosborny basen\t\tm.
+4992\tvodoskok\t\tm.
+4990\tvodotok\t\tm.
+22243\tvodovod\t\tm.
+22549\tvodozemny\t\tadj.
+13723\tvodstvo\t\tn.sg.
+2541\tvođ\t\tm.anim.
+31282\tvođa\t\tf.
+20290\tvođeńje\t\tn.sg.
+3108\tvȯjdti\t\tv.intr. pf.
+35493\tvojenna aviacija\t\tf.
+13731\tvojenne igry\t\tf.pl.
+5056\tvojenno-moŕske sily\t\tf.pl.
+35492\tvojenno-vȯzdušne sily\t\tf.pl.
+36229\tvojenny stan\t\tm.
+2124\tvojenny\t\tadj.
+13732\tvojenny\t\tadj.
+5340\tvojevati\t\tv.intr. ipf.
+15153\tvojevničji\t\tadj.
+19241\tvojevnik\t\tm.anim.
+22247\tvojevoda\t\tm.anim.
+36775\tvojevodstvo\t\tn.
+5752\tvojin\t\tm.anim.
+31286\tvojinsky\t\tadj.
+13727\tvojna ljudij\t\tf.
+2535\tvojna\t\tf.
+13734\tvojsko\t\tn.
+31293\tvokabula\t\tf.
+31295\tvokalist\t\tm.anim.
+31296\tvokaliza\t\tf.
+4790\tvokaľny\t\tadj.
+17061\tvokativ\t\tm.
+20271\tvokrųg\t\tadv.
+2539\tvol\t\tm.anim.
+31303\tvolan\t\tm.
+31304\tvolapuk\t\tm.sg.
+31306\tvȯlčje lyko\t\tn.
+31307\tvolejbol\t\tm.sg.
+23367\tvolěti\t\tv.tr. ipf.
+31312\tvolfram\t\tm.sg.
+23655\tVolga\t\tf.sg.
+31308\tvȯlga\t\tf.
+19245\tvȯlgkosť\t\tf.
+19242\tvȯlgky\t\tadj.
+31309\tvȯlgnųti\t\tv.intr. ipf.
+31311\tvoliera\t\tf.
+1518\tvolja\t\tf.
+3928\tvoljny čas\t\tm.
+4127\tvoljny\t\tadj.
+456\tvȯlk\t\tm.anim.
+31322\tvȯlkodav\t\tm.anim.
+415\tvȯlkolak\t\tm.anim.
+2138\tvȯlna\t\tf.
+4999\tvȯlna\t\tf.
+34977\tvȯlnisty papugajek\t\tm.anim.
+2516\tvolt\t\tm.
+31318\tvoltmetr\t\tm.
+31319\tvoluntarist\t\tm.anim.
+31320\tvoluntarizm\t\tm.anim.
+2517\tvon\t\tadv.
+31327\tvonj\t\tf.
+33173\tvonj\t\tf.
+33169\tvonjati\t\tv.intr. ipf.
+33170\tvonjati\t\tv.intr. ipf.
+20817\tvȯobće\t\tadv.
+23983\tvȯobražati sobě\t\tv.tr. ipf.
+21643\tvȯobražeńje\t\tn.
+563\tvȯorųženy\t\tadj.
+33024\tvȯorųžiti\t\tv.tr. pf.
+32913\tvȯphati\t\tv.tr. pf.
+36187\tvȯplȯćati\t\tv.tr. ipf.
+36188\tvȯplȯtiti\t\tv.tr. pf.
+554\tvȯpros\t\tm.
+15646\tvȯprosnik\t\tm.
+557\tvosk\t\tm.
+1926\tvȯš\t\tf.
+32609\tvoščiti\t\tv.tr. ipf.
+20291\tvot\t\tintj.
+3929\tvoz\t\tm.
+19250\tvoz\t\tm.
+34988\tvȯzbita smetana\t\tf.
+19127\tvȯzbito těsto\t\tn.sg.
+20278\tvȯzbogaćati\t\tv.tr. ipf.
+20279\tvȯzbogatiti\t\tv.tr. pf.
+19130\tvȯzbråniti\t\tv.tr. pf.
+19128\tvȯzbranjati\t\tv.tr. ipf.
+19129\tvȯzbrånjeny\t\tadj.
+13450\tvȯzbudimy\t\tadj.
+5466\tvȯzbuditi\t\tv.tr. pf.
+13765\tvȯzbudlivo\t\tadv.
+5652\tvȯzbudlivy\t\tadj.
+13766\tvȯzbudlivy\t\tadj.
+5464\tvȯzbuđati\t\tv.tr. ipf.
+13760\tvȯzbuđeńje\t\tn.sg.
+13761\tvȯzbuđeny\t\tadj.
+5061\tvȯzdati česť\t\tv.pf.
+5062\tvȯzdavati česť\t\tv.ipf.
+19132\tvȯzdȯhnųti\t\tv.intr. pf.
+3321\tvȯzdȯlž\t\tprep.
+556\tvȯzdŕžati sę\t\tv.refl. pf.
+2891\tvȯzdŕživati sę\t\tv.refl. ipf.
+1914\tvȯzduh\t\tm.
+19133\tvȯzduholoď\t\tf.
+13778\tvȯzduhonosima bolěznj\t\tf.
+13776\tvȯzduhonosima hvoroba\t\tf.
+13781\tvȯzduhonosima infekcija\t\tf.
+13777\tvȯzduhonosimo zabolěvańje\t\tn.
+4622\tvȯzduhonosimy\t\tadj.
+19135\tvȯzduhoplavstvo\t\tn.sg.
+13779\tvȯzdušna divizija\t\tf.
+5753\tvȯzdušny prostor\t\tm.
+4621\tvȯzdušny\t\tadj.
+19136\t#vȯzdvigati\t\tv.tr. ipf.
+19139\tvȯzdvignųti\t\tv.tr. pf.
+4256\tvȯzdyh\t\tm.
+19140\tvȯzdyhati\t\tv.intr. ipf.
+26176\tvȯzglåvje\t\tn.
+19141\tvȯzględ\t\tm.
+31463\tvȯzhod sȯlnca\t\tm.
+555\tvȯzhod\t\tm.sg.
+5462\tvȯzhoditi\t\tv.intr. ipf.
+23537\tVȯzhodna Evropa\t\tf.sg.
+4185\tvȯzhodno\t\tadv.
+35133\tvȯzhodnoevropejsky\t\tadj.
+4424\tvȯzhodnoslovjansky\t\tadj.
+4184\tvȯzhodny\t\tadj.
+36204\tvozilo na vȯzdušnoj poduškě\t\tn.
+22412\tvozilo\t\tn.
+23955\tvȯzimati\t\tv.tr. ipf.
+36269\tvoziti sę\t\tv.refl. ipf.
+516\tvoziti\t\tv.tr. ipf.
+23957\tvȯzjęti\t\tv.tr. pf.
+32557\tvȯzklicaľnik\t\tm.
+32558\tvȯzklicaľny znak\t\tm.
+32583\tvȯzklicaľny\t\tadj.
+32589\tvȯzklicańje\t\tn.
+32584\tvȯzklicati\t\tv.tr. ipf.
+32586\tvȯzklik\t\tm.
+32585\tvȯzkliknųti\t\tv.tr. pf.
+32435\tvȯzkresati\t\tv.intr. ipf.
+32439\tvȯzkresiti\t\tv.tr. pf.
+31339\tvȯzkresnųti\t\tv.intr. pf.
+32438\tvȯzkrešati\t\tv.tr. ipf.
+36560\tvȯzkrešeńje\t\tn.
+20280\t#vȯzkypyvati\t\tv.intr. ipf.
+5460\tvȯzlětati\t\tv.intr. ipf.
+5461\tvȯzletěti\t\tv.intr. pf.
+20799\tVȯzneseńje\t\tn.sg.
+20800\tvȯznesti\t\tv.tr. pf.
+15156\tvȯznikati\t\tv.intr. ipf.
+20801\tvȯznikati\t\tv.intr. ipf.
+33155\tvȯznikneńje\t\tn.
+20803\tvȯzniknųti\t\tv.intr. pf.
+20804\tvȯzniknųti\t\tv.intr. pf.
+20805\tvȯznositi\t\tv.tr. ipf.
+19251\tvozny\t\tadj.
+5463\tvȯzȯjdti\t\tv.intr. pf.
+3492\tvozȯk\t\tm.
+19145\tvȯzpamętati\t\tv.tr. ipf.
+19146\tvȯzpitańje\t\tn.sg.
+19149\tvȯzpitati\t\tv.tr. pf.
+5949\tvȯzpominati\t\tv.tr. ipf.
+19153\tvȯzpomněńje\t\tn.
+5950\tvȯzpomněti\t\tv.tr. pf.
+16776\tvȯzprijęťje\t\tn.
+802\tvȯzråst\t\tm.
+21636\tvȯzråst\t\tm.
+13810\tvȯzrastati\t\tv.intr. ipf.
+16419\tvȯzråsti\t\tv.intr. pf.
+19155\tvȯzråstka\t\tf.
+23051\tvȯzråstla\t\tf.
+626\tvȯzråstlosť\t\tf.
+180\tvȯzråstly\t\tadj.
+22991\tvȯzråstly\t\tm.anim.
+19156\t#vȯzråstȯk\t\tm.anim.
+19158\tvȯzroditi\t\tv.tr. pf.
+17065\tvȯzrođeńje\t\tn.sg.
+17098\tvȯzrođeńje\t\tn.sg.
+19157\t#vȯzrođeńje\t\tn.sg.
+34725\tvȯzsiliti\t\tv.tr. pf.
+34723\tvȯzsilovač\t\tm.
+34724\tvȯzsilovati\t\tv.tr. ipf.
+23919\tvȯzskakati\t\tv.intr. ipf.
+23918\tvȯzskočiti\t\tv.intr. pf.
+21826\tvȯzstańje\t\tn.
+13881\tvȯzstati\t\tv.intr. pf.
+21822\tvȯzstavati\t\tv.intr. ipf.
+34959\tvȯztręsati\t\tv.tr. ipf.
+34960\tvȯztręsti\t\tv.tr. pf.
+22294\tvȯzveličati\t\tv.tr. pf.
+22293\tvȯzveličivati\t\tv.tr. ipf.
+19159\tvȯzvesti\t\tv.tr. pf.
+31267\tvȯzvod\t\tm.
+31955\tvȯzvoditi\t\tv.tr. ipf.
+22646\tvȯzvraćati\t\tv.tr. ipf.
+18360\tvȯzvråćeńje\t\tn.
+22647\tvȯzvråtiti\t\tv.tr. pf.
+22718\tvȯzvråtny\t\tadj.
+13400\tvȯzvŕšati\t\tv.tr. ipf.
+13401\tvȯzvŕšeńje\t\tn.
+13402\tvȯzvŕšiti\t\tv.tr. pf.
+22737\tvȯzvysiti\t\tv.tr. pf.
+22742\tvȯzvysiti\t\tv.tr. pf.
+22736\tvȯzvyšati\t\tv.tr. ipf.
+22739\tvȯzvyšati\t\tv.tr. ipf.
+31342\tvȯzvyšeńje\t\tn.
+20281\tvȯzvyšenosť\t\tf.
+31343\tvȯzvyšeny\t\tadj.
+36559\tvȯzvyšeny\t\tadj.
+22925\tvȯzzvańje\t\tn.
+21205\tvpad\t\tm.
+21207\tvpadati\t\tv.intr. ipf.
+29828\tvpaly\t\tadj.
+21209\tvpasti\t\tv.intr. pf.
+23845\t#vpečętlivy\t\tadj.
+19252\tvpečętljeńje\t\tn.
+32911\tvpihati\t\tv.tr. ipf.
+6201\tvpis\t\tm.
+6200\tvpisati\t\tv.tr. pf.
+6199\tvpisyvati\t\tv.tr. ipf.
+23376\tvpiti\t\tv.tr. pf.
+23377\tvpivańje\t\tn.sg.
+23375\tvpivati\t\tv.tr. ipf.
+20272\tvplesti\t\tv.tr. pf.
+34327\tvpletati\t\tv.tr. ipf.
+2871\tvplyv\t\tm.
+1833\tvplyvati\t\tv.intr. ipf.
+23396\tvplyvny\t\tadj.
+1836\tvplyvti\t\tv.intr. pf.
+4566\tvpȯlně, vpȯlno\t\tadv.
+5279\tvpravo\t\tadv.
+3369\tvprěd\t\tadv.
+21199\tvpręgati\t\tv.tr. ipf.
+21200\tvpręgti\t\tv.tr. pf.
+17062\tvpŕvo\t\tadv.
+1837\tvråbec\t\tm.anim.
+22658\tvraćati sę\t\tv.refl. ipf.
+5917\tvraćati v otčinų\t\tv.ipf.
+1839\tvraćati\t\tv.tr. ipf.
+13825\tvråg\t\tm.anim.
+31350\tvrån\t\tm.anim.
+1838\tvråna\t\tf.
+1911\tvråta\t\tn.pl.
+3109\tvråta\t\tn.pl.
+23252\tvråtaŕ\t\tm.anim.
+32443\tvråtaŕ\t\tm.anim.
+31355\tvråtič\t\tm.
+22654\tvråtiti sę\t\tv.refl. pf.
+5918\tvråtiti v otčinų\t\tv.tr. pf.
+1773\tvråtiti\t\tv.tr. pf.
+13844\tvråtiti\t\tv.tr. pf.
+15162\tvråtnik\t\tm.anim.
+19124\tvražeńje\t\tn.
+31357\tvråžiti\t\tv.intr. ipf.
+19253\tvråžka\t\tf.
+13565\tvŕba\t\tf.
+31359\tvrčati\t\tv.intr. ipf.
+36257\tvrěća\t\tf.
+31360\tvrěd\t\tm.
+23953\tvrědny\t\tadj.
+13829\tvrěmę goda\t\tn.
+13830\tvrěmę roka\t\tn.
+2330\tvrěmę\t\tn.
+13827\tvrěmę\t\tn.
+13828\tvrěmę\t\tn.
+22573\tvrěmenny\t\tadj.
+31361\tvrěs\t\tm.
+13832\tvresenj\t\tm.sg.
+31362\tvrěsk\t\tm.
+31363\tvrěščati\t\tv.intr. ipf.
+22644\tvrěteno\t\tn.
+22561\tvrěti\t\tv.intr. ipf.
+22576\tvŕgati\t\tv.tr. ipf.
+22577\tvŕgnųti\t\tv.tr. pf.
+3076\tvŕh\t\tm.
+13568\tvŕhnik\t\tm.anim.
+13838\tvŕhny načeľnik\t\tm.anim.
+13569\tvŕhny voditelj\t\tm.anim.
+13570\tvŕhny vođ\t\tm.anim.
+1666\tvŕhny\t\tadj.
+31366\tvŕhovje\t\tn.
+22565\tvŕhovny\t\tadj.
+22653\tvŕnųti sę\t\tv.refl. pf.
+22645\tvŕnųti\t\tv.tr. pf.
+21628\tvrođeny\t\tadj.
+31370\tvŕša\t\tf.
+31145\tvrštat\t\tm.
+22640\tvŕtěti\t\tv.tr. ipf.
+22641\tvŕtěti\t\tv.tr. ipf.
+22643\tvŕtěti\t\tv.intr. ipf.
+19254\tvŕtka\t\tf.
+6083\tvŕtolet\t\tm.
+19125\tvrųbati\t\tv.tr. pf.
+19126\tvrųbyvati\t\tv.tr. ipf.
+21629\tvrųčati\t\tv.tr. ipf.
+21631\tvrųčiti\t\tv.tr. pf.
+5679\tvŕvka\t\tf.
+13847\tvsaditi\t\tv.tr. pf.
+13848\tvsadȯk\t\tm.
+13849\tvsađati\t\tv.tr. ipf.
+243\tvśako\t\tadv.
+20295\tvśakodenno, vśakodnevno\t\tadv.
+93\tvśakodenny, vśakodnevny\t\tadj.
+13853\tvśakogodišnje\t\tadv.
+13854\tvśakogodišnji, vśakogodišny\t\tadj.
+13855\tvśakoročno\t\tadv.
+13856\tvśakoročny\t\tadj.
+4326\tvśaky\t\tadj.
+13864\tvśaky\t\tadj.
+19571\tvśamo\t\tadv.
+32764\tvse bolje\t\tadv.
+19255\tvse jedno\t\tadv.
+32765\tvse lěpje\t\tadv.
+19256\tvse råvno\t\tadv.
+3098\tvse\t\tpron.indef.
+31379\tvse\t\tadv.
+1675\tvsečto\t\tpron.indef.
+780\tvsegda, vsegdy\t\tadv.
+23789\tvsěgo\t\tadv.
+22951\tvsejed\t\tm.anim.
+22950\tvsejedny\t\tadj.
+35154\tvsekako\t\tadv.
+35153\tvsekaky\t\tadj.
+2672\tvsekde\t\tadv.
+23853\tvsekråtno\t\tadv.
+1823\tvsekto\t\tpron.indef.
+19586\tvseliko\t\tadv.
+19593\tvseliky\t\tadj.
+20819\tvsemir\t\tm.
+20820\tvsemogųći\t\tadj.
+35620\tvseprisųtny\t\tadj.
+17056\tvseslovjansky\t\tadj.
+34916\tvsestrånny\t\tadj.
+19257\tvsesvět\t\tm.
+20294\tvsesvětny\t\tadj.
+13879\tVsesvětova pavųčina [VSP]\t\tf.
+19258\tvsesvětovy\t\tadj.
+36119\tvsevědųći\t\tadj.
+36118\tvseznajųći\t\tadj.
+22952\tvsežerec\t\tm.anim.
+22347\tvsežerny\t\tadj.
+23790\tvsi\t\tpron.indef.
+21633\tvskočiti\t\tv.intr. pf.
+1039\tvslěd\t\tprep.
+13352\tvslědno\t\tadv.
+13353\tvslědny\t\tadj.
+20273\t#vsosati\t\tv.tr. pf.
+13377\tvsrěd\t\tprep.
+21634\tvsrěd\t\tadv.
+6322\tvstati\t\tv.intr. pf.
+6321\tvstavati\t\tv.intr. ipf.
+13882\tvstaviti\t\tv.tr. pf.
+16385\tvstavjati\t\tv.tr. ipf.
+31388\tvstavka\t\tf.
+3702\tvstųpati\t\tv.intr. ipf.
+3347\tvstųpiti\t\tv.intr. pf.
+3587\tvstųpjeńje\t\tn.sg.
+775\tvśųdy\t\tadv.
+35547\tvtęgati\t\tv.tr. ipf.
+35548\tvtęgnųti\t\tv.tr. pf.
+36189\tvtěljeńje\t\tn.
+35649\tvtičnica\t\tf.
+20274\tvtiskati\t\tv.tr. ipf.
+20276\tvtisknųti\t\tv.tr. pf.
+13889\tvtȯgda, vtȯgdy\t\tadv.
+19259\t#vtora světova vojna\t\tf.
+16249\tvtornik\t\tm.
+17064\tvtorny\t\tadj.
+20296\tvtoro\t\tadv.
+1266\tvtorȯk\t\tm.
+16401\tvtory\t\tnum.ord.
+2414\tvtrgati\t\tv.intr. ipf.
+3097\tvtrgnųti\t\tv.intr. pf.
+31394\tvualj\t\tf.
+35701\tvųglaty\t\tadj.
+1737\tvųglerod\t\tm.sg.
+22546\tvųglovodan\t\tm.
+13208\tvųgȯl\t\tm.
+1453\tvųgȯlj\t\tm.sg.
+32763\tvųgȯljny\t\tadj.
+2152\tvųgoŕ\t\tm.anim.
+3115\tVųgrec\t\tm.anim.
+2430\tVųgrija\t\tf.sg.
+78\tvųgrsky\t\tadj.
+31395\tvulgarizacija\t\tf.
+31397\tvulgarizm\t\tm.
+32762\tvulgarnosť\t\tf.
+31399\tvulgarny\t\tadj.
+23722\tvulkan\t\tm.
+23723\tvulkaničny\t\tadj.
+31402\tvulkanizacija\t\tf.
+31404\tvulkanizovati\t\tv.tr. ipf./pf.
+3743\tvųsy\t\tm.pl.
+15168\tvųtråba\t\tf.
+1671\tvųtråby\t\tf.pl.
+1057\tvųzel\t\tm.
+22191\tvųzel\t\tm.
+22193\tvųzel\t\tm.
+36000\tvųzkokolejka\t\tf.
+36001\tvųzkokolejna dråga\t\tf.
+66\tvųzky\t\tadj.
+1523\tvųž\t\tm.anim.
+3685\tvvedeńje\t\tn.
+3678\tvvesti\t\tv.tr. pf.
+5504\tvvezti\t\tv.tr. pf.
+22417\tvvezti\t\tv.tr. pf.
+22271\tvvod\t\tm.
+3677\tvvoditi\t\tv.tr. ipf.
+22269\tvvodny\t\tadj.
+22415\tvvoz\t\tm.
+5505\tvvoziti\t\tv.tr. ipf.
+22416\tvvoziti\t\tv.tr. ipf.
+22594\tvvŕgati\t\tv.tr. ipf.
+22596\tvvŕgati\t\tv.tr. ipf.
+22595\tvvŕgnųti\t\tv.tr. pf.
+22597\tvvŕgnųti\t\tv.tr. pf.
+35439\tvvŕh\t\tadv.
+1629\tvy\t\tpron.pers.
+15172\tvy-\t\tprefix
+31407\tvyboj\t\tm.
+5011\tvydra\t\tf.
+4375\tvygoda\t\tf.
+15139\tvygoda\t\tf.
+13925\tvygodno\t\tadv.
+4376\tvygodny\t\tadj.
+16541\tvyjdti\t\tv.intr. pf.
+16530\tvyjmati\t\tv.tr. ipf.
+36406\t#vykati\t\tv.tr. ipf.
+19308\tvymę\t\tn.
+31426\tvypad\t\tm.
+21215\tvypis\t\tm.
+21649\tvyrok\t\tm.
+34159\tvyryti\t\tv.tr. pf.
+33658\t#vysmrkati sę\t\tv.refl. pf.
+22723\tVysočstvo\t\tn.
+34765\tvysoko\t\tadv.
+13633\tvysokogorsky\t\tadj.
+22724\tvysokoparny\t\tadj.
+19333\tvysokoskok\t\tm.
+409\tvysoky\t\tadj.
+31439\tvysota\t\tf.
+20830\tvysotoměr\t\tm.
+33216\t#vyspati sę\t\tv.refl. pf.
+20302\tvysši\t\tadj.
+2610\tvyše pozdno\t\tadv.
+705\tvyše veliky\t\tadj.
+2508\tvyše\t\tadv.
+2680\tvyše\t\tadv.
+13638\tvyšina\t\tf.
+20300\tvyšnosť\t\tf.
+20301\tvyšny\t\tadj.
+31446\tvyti\t\tv.intr. ipf.
+16716\t#vytŕpěti\t\tv.tr. pf.
+31448\tvyvěska\t\tf.
+22885\t#vyznavati\t\tv.tr. ipf.
+13981\tvzad\t\tadv.
+13983\tvzadny sklon\t\tm.
+15655\tvzadny\t\tadj.
+3459\tvzadu\t\tadv.
+13986\tvzajemno\t\tadv.
+23052\tvzajemnosť\t\tf.
+1804\tvzajemny\t\tadj.
+15656\tvzajemodějańje\t\tn.
+13989\tvzajemodějati\t\tv.intr. ipf.
+562\tvzajemodějstvo\t\tn.
+9090\tvzajemodějstvovati\t\tv.intr. ipf.
+467\tvzęti\t\tv.tr. pf.
+16386\tvzor\t\tm.
+15195\tvzorny\t\tadj.
+34985\tvžiti sę\t\tv.refl. pf.
+3673\tvživati sę\t\tv.refl. ipf.
+34995\tykańje\t\tn.sg.
+14002\tza drěva lěs ne viděti\t\tphrase
+19341\tza vśakų cěnų\t\tadv.
+31598\tza živo\t\tadv.
+33329\tza živo\t\tadv.
+833\tza\t\tprep.
+1033\tza\t\tprep.
+1171\tza\t\tprep.
+4936\tza\t\tprep.
+4937\tza\t\tprep.
+4938\tza\t\tprep.
+34989\tza\t\tprep.
+36471\tzabarikadovati\t\tv.tr. pf.
+3432\tzabava\t\tf.
+3768\tzabava\t\tf.
+14014\tzabavitelj\t\tm.anim.
+3444\tzabaviti\t\tv.tr. pf.
+3414\tzabavjati\t\tv.tr. ipf.
+4498\tzabavjeńje\t\tn.sg.
+15199\tzabavnik\t\tm.anim.
+21650\tzabavny\t\tadj.
+3633\tzabezpamęćati\t\tv.tr. ipf.
+3634\tzabezpamętiti\t\tv.tr. pf.
+36613\tzabezpečati\t\tv.tr. ipf.
+36615\tzabezpečeńje\t\tn.
+36614\tzabezpečiti\t\tv.tr. pf.
+31476\tzabijaka\t\tm.anim.
+35980\tzabiraj sę!\t\tintj.
+23959\tzabirati\t\tv.tr. ipf.
+940\tzablokovati\t\tv.tr. pf.
+14022\tzablųda\t\tf.
+21655\tzablųditi\t\tv.intr. pf.
+36657\tzablųditi\t\tv.intr. pf.
+14025\tzablųdny\t\tadj.
+21652\tzablųđati\t\tv.intr. ipf.
+36656\tzablųđati\t\tv.intr. ipf.
+19343\tzabobonnosť\t\tf.
+19344\tzabobonny\t\tadj.
+14027\tzabolěti\t\tv.intr. pf.
+36692\tzabolěti\t\tv.intr. pf.
+36695\tzabolěvajemosť\t\tf.sg.
+15200\tzabolěvańje\t\tn.
+36693\tzabolěvati\t\tv.intr. ipf.
+14029\tzabolěvši\t\tadj.
+14030\tzabråna\t\tf.
+2286\tzabråniti\t\tv.tr. pf.
+1834\tzabranjati\t\tv.tr. ipf.
+23960\tzabrati\t\tv.tr. pf.
+2170\tzabyti\t\tv.tr. pf.
+2169\tzabyvati\t\tv.tr. ipf.
+14037\tzačarovany\t\tadj.
+14038\tzačarovati\t\tv.tr. pf.
+14039\tzačasny\t\tadj.
+14040\tzačęti\t\tv.tr. pf.
+35843\tzačęťje\t\tn.
+32365\tzačętȯk\t\tm.
+14041\tzačinati\t\tv.tr. ipf.
+5724\tzačrveniti sę\t\tv.refl. pf.
+5725\tzačrvenjati sę\t\tv.refl. ipf.
+3987\tzačto\t\tadv.
+19619\tzačtokoli\t\tadv.
+15197\tzačto-libo\t\tadv.
+2328\tzačto-nebųď\t\tadv.
+36630\tzačuditi sę\t\tv.refl. pf.
+36635\tzačuditi\t\tv.tr. pf.
+15201\tzad\t\tm.
+3958\tzadańje\t\tn.
+25120\tzadarmo\t\tadv.
+5524\tzadati\t\tv.tr. pf.
+5523\tzadavati\t\tv.tr. ipf.
+14052\tzadnica\t\tf.
+14053\tzadnik\t\tm.anim.
+15202\tzadnja stråna\t\tf.
+33561\tzadnjepodnebny\t\tadj.
+15203\tzadnjeprohodny\t\tadj.
+2317\tzadnji dvor\t\tm.
+15204\tzadnji prohod\t\tm.
+5192\tzadnji, zadny\t\tadj.
+36516\tzadovaljati sę\t\tv.refl. ipf.
+444\tzadovaljati\t\tv.tr. ipf.
+36517\tzadovoliti sę\t\tv.refl. pf.
+3356\tzadovoliti\t\tv.tr. pf.
+526\tzadovoljeny\t\tadj.
+3318\tzadovoljstvo\t\tn.sg.
+19351\tzadrěmati\t\tv.intr. pf.
+16488\tzadŕžati dyh\t\tv.pf.
+19352\tzadŕžati sę\t\tv.refl. pf.
+297\tzadŕžati\t\tv.tr. pf.
+19353\tzadŕžati\t\tv.tr. pf.
+19356\tzadŕžati\t\tv.tr. pf.
+34659\tzadržati\t\tv.intr. pf.
+35630\tzadŕžati\t\tv.tr. pf.
+36514\tzadŕžati\t\tv.tr. pf.
+16487\tzadŕživati dyh\t\tv.ipf.
+19355\tzadŕživati sę\t\tv.refl. ipf.
+2221\tzadŕživati\t\tv.tr. ipf.
+19359\tzadŕživati\t\tv.tr. ipf.
+19360\tzadŕživati\t\tv.tr. ipf.
+35629\tzadŕživati\t\tv.tr. ipf.
+36515\tzadŕživati\t\tv.tr. ipf.
+19361\tzadŕžnik\t\tm.
+31855\tzaduha\t\tf.
+33698\tzadušna mša\t\tf.
+5969\tzagadka\t\tf.
+15205\tzagadka\t\tf.
+14068\tzagadȯčny\t\tadj.
+33625\tzagladiti\t\tv.tr. pf.
+33626\tzaglađati\t\tv.tr. ipf.
+6051\tzaglåvje\t\tn.
+31492\tzagorěti\t\tv.intr. pf.
+35915\tzagospodariti\t\tv.tr. pf.
+31493\tzagovor\t\tm.
+36048\tzagovornik\t\tm.anim.
+36047\tzagrabnik\t\tm.anim.
+31494\tzagranica\t\tf.
+14072\tzagraničnik\t\tm.anim.
+14071\tzagraničny\t\tadj.
+32249\tZagreb\t\tm.sg.
+33631\tzagrobno žiťje\t\tn.sg.
+33630\tzagrobny\t\tadj.
+2190\tzagroziti\t\tv.tr. pf.
+31497\tzahod sȯlnca\t\tm.
+5475\tzahoditi\t\tv.intr. ipf.
+23961\tzahvaćajųći\t\tadj.
+2292\tzahvaćati\t\tv.tr. ipf.
+19363\tzahvat\t\tm.
+34990\tzahvat\t\tm.
+34991\tzahvat\t\tm.
+571\tzahvatiti\t\tv.tr. pf.
+6659\tzahvorěly\t\tadj.
+36694\tzahvorěti\t\tv.intr. pf.
+36696\tzahvorěvajemosť\t\tf.sg.
+26048\tzahvorěvańje\t\tn.
+14077\tzahvorěvati\t\tv.intr. ipf.
+2270\tzaimę, zaimennik\t\tm.
+5175\tzainteresovany\t\tadj.
+16147\tzainteresovati sę\t\tv.refl. pf.
+34993\tzainteresovati\t\tv.tr. pf.
+3294\tzaisto\t\tadv.
+35516\tzajavjeńje\t\tn.
+5476\tzajdti\t\tv.intr. pf.
+35509\tzajebancija\t\tf.
+1803\tzajęc\t\tm.anim.
+14080\tzajęc\t\tm.anim.
+14081\tzajęčlivo\t\tadv.
+14083\tzajęčlivosť\t\tf.
+14082\tzajęčlivy\t\tadj.
+914\tzajedlivosť\t\tf.
+36827\tzajedlivy\t\tadj.
+1741\tzajedno\t\tadv.
+19366\tzajem\t\tm.
+19367\tzajęti sę\t\tv.refl. pf.
+5002\tzajęti\t\tv.tr. pf.
+5008\tzajęťje\t\tn.
+19373\tzajęty\t\tadj.
+19370\tzajezd\t\tm.
+31503\tzajikati sę\t\tv.refl. ipf.
+19378\tzajmati sę\t\tv.refl. ipf.
+5001\tzajmati\t\tv.tr. ipf.
+14129\tzajmlivy\t\tadj.
+23390\tzajmodatelj\t\tm.anim.
+23391\tzajmoprijmatelj\t\tm.anim.
+23715\tzakašljati\t\tv.intr. pf.
+14088\tzakaz\t\tm.
+14089\t#zakazati\t\tv.tr. pf.
+19379\tzakaznik\t\tm.anim.
+16388\tzakazyvati\t\tv.tr. ipf.
+3449\tzaklad\t\tm.
+35623\tzaklad\t\tm.
+939\tzakladati\t\tv.tr. ipf.
+32698\tzakladati\t\tv.tr. ipf.
+32007\tzaklåti\t\tv.tr. pf.
+33647\tzaklęti\t\tv.tr. pf.
+33653\tzaklęty vråg\t\tm.anim.
+31507\tzaklęty\t\tadj.
+31506\tzaklinańje\t\tn.
+31508\tzaklinati\t\tv.tr. ipf.
+31509\tzakliniti\t\tv.tr. pf.
+33665\tzaklinovati\t\tv.tr. ipf.
+5162\tzaključati\t\tv.intr. ipf.
+20305\tzaključati\t\tv.tr. ipf.
+34997\tzaključati\t\tv.tr. ipf.
+20306\tzaključeńje\t\tn.
+36497\tzaključeńje\t\tn.
+19382\tzaključiljnja\t\tf.
+19384\tzaključiľnik\t\tm.anim.
+5163\tzaključiti\t\tv.intr. pf.
+20307\tzaključiti\t\tv.tr. pf.
+34998\tzaključiti\t\tv.tr. pf.
+1901\tzakon\t\tm.
+14095\tzakončeńje\t\tn.
+2551\tzakončiti\t\tv.tr. pf.
+1747\tzakonny\t\tadj.
+1921\tzakonodatelj\t\tm.anim.
+3717\tzakonodateljny\t\tadj.
+2082\tzakonodateljstvo\t\tn.
+31513\tzakonoměrny\t\tadj.
+4030\tzakopati\t\tv.tr. pf.
+4029\tzakopyvati\t\tv.tr. ipf.
+17067\tzakoreněly\t\tadj.
+35117\tzakoreniti sę\t\tv.refl. pf.
+36796\tzakričati\t\tv.tr. pf.
+14105\tzakrvavjeny\t\tadj.
+20309\tzakryti\t\tv.tr. pf.
+20310\tzakryti\t\tv.tr. pf.
+20312\tzakryvati\t\tv.tr. ipf.
+20313\tzakryvati\t\tv.tr. ipf.
+14106\tzakulisne mahinacije\t\tf.pl.
+15659\tzakulisne ombany\t\tm.pl.
+14107\tzakulisny\t\tadj.
+32115\tzakupka\t\tf.
+31515\tzakųska\t\tf.
+20314\tzakųtȯk\t\tm.
+36797\tzalajati\t\tv.intr. pf.
+36590\tzaležno\t\tadv.
+36589\tzaležnosť\t\tf.sg.
+36588\tzaležny\t\tadj.
+2552\tzaliv\t\tm.
+35403\tzaljubiti sę\t\tv.refl. pf.
+35404\tzaljubjeny\t\tadj.
+20316\tzalog\t\tm.
+19391\tzaložeńje\t\tn.
+14111\tzaložiljnja\t\tf.
+1740\tzaložiti\t\tv.tr. pf.
+14112\tzaložiti\t\tv.tr. pf.
+31520\tzaložnik\t\tm.anim.
+14113\tzaložny\t\tadj.
+31521\tzalp\t\tm.
+36510\tZambija\t\tf.
+24011\tzamedliti\t\tv.tr. pf.
+24012\tzamedljati\t\tv.tr. ipf.
+9026\tzamedljeńje\t\tn.
+1627\tzaměna\t\tf.
+36101\tzaměna\t\tf.
+3811\tzaměniti\t\tv.tr. pf.
+3810\tzaměnjati\t\tv.tr. ipf.
+19395\tzaměnlivy\t\tadj.
+22183\tzaměsiti\t\tv.tr. pf.
+1808\tzamesti\t\tv.tr. pf.
+14117\tzaměsto\t\tprep.
+5965\tzaměšańje\t\tn.
+35449\tzaměšańje\t\tn.
+16900\tzaměšati\t\tv.tr. pf.
+16901\tzaměšivajųći\t\tadj.
+16899\tzaměšivati\t\tv.tr. ipf.
+32598\tzamětati\t\tv.tr. ipf.
+14120\tzamglati\t\tv.tr. pf.
+33669\tzamirati\t\tv.intr. ipf.
+23970\tzamknųti\t\tv.tr. pf.
+31523\tzamknųty\t\tadj.
+36518\tzamknųty\t\tadj.
+14121\tzamnogo\t\tadv.
+213\tzamȯk\t\tm.
+19396\tzamȯk\t\tm.
+20832\tzamȯk\t\tm.
+34479\tzamȯlknųti\t\tv.intr. pf.
+36785\tzamȯlviti\t\tv.tr. pf.
+36786\tzamȯlvjati\t\tv.tr. ipf.
+36789\tzamȯlvjeńje\t\tf.
+31526\tzamoŕsky\t\tadj.
+19398\tzamotany\t\tadj.
+2168\tzamråziti\t\tv.tr. pf.
+2342\tzamražati\t\tv.tr. ipf.
+31527\tzamreti\t\tv.intr. pf.
+33675\tzamrzati\t\tv.intr. ipf.
+31528\tzamrznųti\t\tv.intr. pf.
+31529\tzamša\t\tf.
+32716\tzamševy\t\tadj.
+23967\tzamykati\t\tv.tr. ipf.
+14125\tzamysl\t\tm.
+19400\tzamysliti\t\tv.tr. pf.
+19399\tzamysljati\t\tv.tr. ipf.
+14126\tzamysljeny\t\tadj.
+14128\tzanečišćeńje vȯzduha\t\tn.
+4297\tzanečišćeńje\t\tn.
+1371\tzaněčto\t\tadv.
+14754\tzanedbańje\t\tn.
+14755\tzanedbati sę\t\tv.refl. pf.
+16256\tzanedbati\t\tv.tr. pf.
+14758\tzanedbyvati sę\t\tv.refl. ipf.
+16257\tzanedbyvati\t\tv.tr. ipf.
+35853\tzanepokojeny\t\tadj.
+35852\tzanepokojiti\t\tv.tr. pf.
+796\tzaničto\t\tadv.
+16389\tzanuriti\t\tv.tr. pf.
+14130\tzanurjati\t\tv.tr. ipf.
+34513\tzaostalosť\t\tf.
+34512\tzaostaly\t\tadj.
+1776\tzapad\t\tm.sg.
+23973\tzapadati\t\tv.intr. ipf.
+23539\tZapadna Evropa\t\tf.sg.
+31534\tzapadnik\t\tm.anim.
+4187\tzapadno\t\tadv.
+35134\tzapadnoevropejsky\t\tadj.
+4423\tzapadnoslovjansky\t\tadj.
+842\tzapadny\t\tadj.
+14136\tzapah\t\tm.
+5473\tzapakovati\t\tv.tr. pf.
+5474\tzapakovyvati\t\tv.tr. ipf.
+23795\tzapaliti\t\tv.tr. pf.
+23794\tzapaljati\t\tv.tr. ipf.
+14138\tzapaljeńje apendeka\t\tn.
+16476\tzapaljeńje\t\tn.
+36432\tzapaljeńje\t\tn.
+5254\tzapalka\t\tf.
+35118\tzapaľnička\t\tf.
+23054\tzapaľnik\t\tm.
+17068\tzapamętati\t\tv.tr. pf.
+17099\tzapamętyvati\t\tv.tr. ipf.
+3817\tzapas\t\tm.
+23976\tzapasti\t\tv.intr. pf.
+31537\tzapęsťje\t\tn.
+23429\tzapęta\t\tf.
+32910\tzaphati v něčto\t\tv.tr. pf.
+32909\tzapihati v něčto\t\tv.tr. ipf.
+3806\tzapis\t\tm.
+36116\tzapis\t\tm.
+14144\tzapisańje\t\tn.
+14147\tzapisati sę\t\tv.refl. pf.
+5527\tzapisati\t\tv.tr. pf.
+6250\tzapisati\t\tv.tr. pf.
+6251\tzapiska\t\tf.
+6252\tzapisnik\t\tm.
+14150\tzapisyvati sę\t\tv.refl. ipf.
+5528\tzapisyvati\t\tv.tr. ipf.
+6249\tzapisyvati\t\tv.tr. ipf.
+5477\tzaplakati\t\tv.intr. pf.
+36874\tzaplanovati\t\tv.tr. pf.
+31538\tzaplata\t\tf.
+2983\tzaplatiti\t\tv.tr. pf.
+14153\tzaplěniti\t\tv.tr. pf.
+14154\tzaplěnjati\t\tv.tr. ipf.
+32371\tzapočęti\t\tv.tr. pf.
+19401\tzapočinati\t\tv.tr. ipf.
+31539\tzapoj\t\tm.
+725\tzapȯlniti\t\tv.tr. pf.
+24\tzapȯlnjati\t\tv.tr. ipf.
+21226\tzapona\t\tf.
+21229\tzaponka\t\tf.
+21230\tzapor\t\tm.
+21231\tzapor\t\tm.
+22241\tzapověď\t\tf.
+34510\tzapozdněly\t\tadj.
+21659\tzapoznati\t\tv.tr. pf.
+21660\tzapoznavati\t\tv.tr. ipf.
+14159\tzapråšiti\t\tv.tr. pf.
+14160\tzapravdų\t\tadv.
+21232\tzapraviti\t\tv.tr. pf.
+21234\tzapravjati\t\tv.tr. ipf.
+34888\tzaprěčiti\t\tv.tr. pf.
+21236\tzapręgati\t\tv.tr. ipf.
+21237\tzapręgti\t\tv.tr. pf.
+20833\tzaprojektovati\t\tv.tr. pf.
+21238\tzapropastiti sę\t\tv.refl. pf.
+21243\tzapustiti\t\tv.tr. pf.
+21239\tzapušćati\t\tv.tr. ipf.
+21240\tzapušćeny\t\tadj.
+4766\tzapytańje\t\tn.
+3438\tzapytati\t\tv.tr. pf.
+5535\tzapytyvati\t\tv.tr. ipf.
+21661\tzaråbotati\t\tv.tr. pf.
+21662\tzaråbotyvati\t\tv.tr. ipf.
+21663\tzaradi\t\tprep.
+33069\tzarastati\t\tv.intr. ipf.
+14162\tzaråsti\t\tv.intr. pf.
+31546\tzaraza\t\tf.
+21246\tzaraziti\t\tv.tr. pf.
+14163\tzarazny\t\tadj.
+21244\tzaražati\t\tv.tr. ipf.
+5841\tzaražeńje\t\tn.
+31548\tzarđavěly\t\tadj.
+25\tzaregistrovati\t\tv.tr. pf.
+21665\tzarěkati sę\t\tv.refl. ipf.
+21667\tzarěkti sę\t\tv.refl. pf.
+36504\tzarevti\t\tv.intr. pf.
+35859\tzarezervovati\t\tv.tr. pf.
+14165\tzaroditelj\t\tm.anim.
+14166\tzaroditi sę\t\tv.refl. pf.
+21669\tzarodȯk\t\tm.
+21670\tzarodȯk\t\tm.anim.
+21672\tzarodȯk\t\tm.anim.
+31550\tzarok\t\tm.
+21674\tzarųčati sę\t\tv.refl. ipf.
+21673\tzarųčati\t\tv.tr. ipf.
+33332\tzarųčeńje\t\tn.
+21676\tzarųčiti sę\t\tv.refl. pf.
+21675\tzarųčiti\t\tv.tr. pf.
+19407\tzarydati\t\tv.intr. pf.
+21677\tzasada\t\tf.
+36410\tzasada\t\tf.
+14167\tzasaditi\t\tv.tr. pf.
+16390\tzasađati\t\tv.tr. ipf.
+21678\tzasědańje\t\tn.
+33240\tzasějati\t\tv.tr. pf.
+33686\tzaslanjati\t\tv.tr. ipf.
+31554\tzaslon\t\tm.
+31555\tzasloniti\t\tv.tr. pf.
+31557\tzasluga\t\tf.
+2903\tzasluženy\t\tadj.
+20319\tzaslužiti\t\tv.tr. pf.
+20320\tzasluživati\t\tv.tr. ipf.
+19408\tzasmějati sę\t\tv.refl. pf.
+19411\tzasměška\t\tf.
+19412\tzasnųti\t\tv.intr. pf.
+19413\tzaspanec\t\tm.anim.
+19414\tzaspanica\t\tf.
+19415\tzaspany\t\tadj.
+33220\tzaspati sę\t\tv.refl. pf.
+19416\tzaspati\t\tv.intr. pf.
+23843\tzasråmiti\t\tv.tr. pf.
+23842\tzasramjati\t\tv.tr. ipf.
+23844\tzasråmjeny\t\tadj.
+1932\tzasrati\t\tv.intr. pf.
+5826\tzastarěly\t\tadj.
+4112\tzastariti\t\tv.intr. pf.
+4111\tzastarjati\t\tv.intr. ipf.
+21830\tzastati\t\tv.tr. pf.
+21831\tzastati\t\tv.tr. pf.
+21842\tzastav\t\tm.
+15210\tzastava\t\tf.
+21828\tzastavati\t\tv.tr. ipf.
+21829\tzastavati\t\tv.tr. ipf.
+21837\tzastaviti\t\tv.tr. pf.
+21841\tzastaviti\t\tv.tr. pf.
+21834\tzastavjati\t\tv.tr. ipf.
+21840\tzastavjati\t\tv.tr. ipf.
+21832\tzastoj\t\tm.
+35003\tzastoj\t\tm.
+19417\tzastrašańje\t\tn.
+19418\tzastrašati\t\tv.tr. ipf.
+19419\tzastrašiti\t\tv.tr. pf.
+3268\tzastrěliti\t\tv.tr. pf.
+5113\tzastrěljati\t\tv.tr. ipf.
+19420\tzastųpati\t\tv.tr. ipf.
+21994\tzastųpati\t\tv.tr. ipf.
+19421\tzastųpiti\t\tv.tr. pf.
+21995\tzastųpiti\t\tv.tr. pf.
+1807\tzastųpnik\t\tm.anim.
+23716\tzasuvka\t\tf.
+21680\tzasvěćati\t\tv.intr. ipf.
+21682\t#zasvětiti\t\tv.intr. pf.
+36419\tzaščićati\t\tv.tr. ipf.
+14176\tzaščita\t\tf.
+14177\tzaščititi\t\tv.tr. pf.
+31565\tzaščitnik\t\tm.anim.
+36050\tzašijka\t\tf.
+23255\tzašiti\t\tv.tr. pf.
+5616\tzaštopati\t\tv.tr. pf.
+1170\tzatemniti\t\tv.tr. pf.
+3090\tzatemnjati\t\tv.tr. ipf.
+31881\tzatišje\t\tn.
+33093\tzatknųti sę\t\tv.refl. pf.
+31567\tzatknųti\t\tv.tr. pf.
+33692\tzatměvati\t\tv.tr. ipf.
+31569\tzatmiti\t\tv.tr. pf.
+31568\tzatmjeńje\t\tn.
+4035\tzato že, zatože\t\tconj.
+3056\tzato\t\tadv.
+3832\tzatom\t\tadv.
+14183\tzatopiti\t\tv.tr. pf.
+15211\tzatopjeńje\t\tn.
+35002\tzator\t\tm.
+22128\tzatraćenec\t\tm.anim.
+13062\tzatręsti\t\tv.tr. pf.
+14186\tzatrimati\t\tv.tr. pf.
+14185\tzatrimyvati\t\tv.tr. ipf.
+31571\tzatųhly\t\tadj.
+5204\tzatvarjati\t\tv.tr. ipf.
+19422\tzatvor\t\tm.
+22556\tzatvor\t\tm.
+5205\tzatvoriti\t\tv.tr. pf.
+2894\tzatvorjeny\t\tadj.
+35498\tzatvorka\t\tf.
+22124\tzatyčka\t\tf.
+33092\tzatykati sę\t\tv.refl. ipf.
+33089\tzatykati\t\tv.tr. ipf.
+31573\tzatylȯk\t\tm.
+35005\tzaustaviti sę\t\tv.refl. pf.
+5656\tzaustaviti\t\tv.tr. pf.
+5655\tzaustavjati sę\t\tv.refl. ipf.
+35004\tzaustavjati\t\tv.tr. ipf.
+1933\tzautra\t\tadv.
+14192\tzautraka\t\tf.
+14193\tzautrakati\t\tv.intr. ipf.
+14195\tzautrišnji, zautrišny\t\tadj.
+23977\tzauvažati\t\tv.tr. ipf.
+23978\tzauvažiti\t\tv.tr. pf.
+3469\tzavaliti\t\tv.tr. pf.
+31576\tzavčera\t\tadv.
+22408\tzavěćańje\t\tn.
+31583\tzavěćati\t\tv.tr. ipf./pf.
+22239\tzavědyvati\t\tv.tr. ipf.
+2901\tzavěsa\t\tf.
+22410\tzavět\t\tm.
+19423\tzavětrny\t\tadj.
+19424\tzavęzati\t\tv.tr. pf.
+19426\tzavęzyvati\t\tv.tr. ipf.
+36089\tzaviděti\t\tv.intr. ipf.
+31587\tzavidny\t\tadj.
+20321\tzavisěti od\t\tv.intr. ipf.
+31589\tzavisnosť\t\tf.
+36324\tzavisnosť\t\tf.
+17069\tzavisny\t\tadj.
+36325\tzavisny\t\tadj.
+22429\tzavisť\t\tf.
+22430\tzavistny\t\tadj.
+31592\tzavitȯk\t\tm.
+22514\tzavladnųti\t\tv.tr. pf.
+22513\tzavladyvati\t\tv.tr. ipf.
+4653\tzavod\t\tm.
+2355\tzavojevati\t\tv.tr. pf.
+2294\tzavojevyvati\t\tv.tr. ipf.
+19428\tzavraćati\t\tv.intr. ipf.
+19429\tzavråćeńje\t\tn.
+19430\tzavråtiti\t\tv.intr. pf.
+22720\tzavråtny\t\tadj.
+19431\tzavŕšati\t\tv.tr. ipf.
+19435\tzavŕšiti\t\tv.tr. pf.
+31596\tzavŕtěti\t\tv.intr. pf.
+33351\tzavyti\t\tv.intr. pf.
+31597\tzavzęty\t\tadj.
+22906\tzazor\t\tm.
+22907\tzazor\t\tm.
+19439\tzažartovati\t\tv.intr. pf.
+32639\tzažegti\t\tv.tr. pf.
+32642\tzažegti\t\tv.tr. pf.
+32644\tzažegti\t\tv.tr. pf.
+32633\tzažigati\t\tv.tr. ipf.
+32636\tzažigati\t\tv.tr. ipf.
+32638\tzažigati\t\tv.tr. ipf.
+14201\tzdar!\t\tintj.
+4881\tzdråv!\t\tintj.
+34731\tzdråvěti\t\tv.intr. ipf.
+32965\tzdråvica\t\tf.
+576\tzdråvje\t\tn.
+3024\tzdråvoohrånjeńje\t\tn.sg.
+14210\tzdråvotničstvo\t\tn.sg.
+2167\tzdråvy\t\tadj.
+23475\tzęba\t\tf.
+20834\tzebra\t\tf.
+31602\tzębti\t\tv.intr. ipf.
+31604\tzebu\t\tm.anim.
+31605\tzefir\t\tm.
+31623\tzějati\t\tv.intr. ipf.
+32185\tzelena salata\t\tf.
+19442\tzelenina\t\tf.
+21248\tzeleninaŕ\t\tm.anim.
+31606\tzelenj\t\tf.
+752\tzeleny\t\tadj.
+14217\tzemisty\t\tadj.
+2255\tzemja\t\tf.
+14218\tZemja\t\tf.
+22746\tzemjak\t\tm.anim.
+31609\tzemjanka\t\tf.
+14222\tzemjany\t\tadj.
+4691\tzemjedělec\t\tm.anim.
+19444\tzemjedělišče\t\tn.
+16777\tzemjeděľstvo\t\tn.sg.
+20835\tzemjeměr\t\tm.anim.
+21249\tzemjepis\t\tm.
+21250\tzemjepisec\t\tm.anim.
+3577\tzemjetręseńje\t\tn.
+31614\tzemnovodny\t\tadj.
+5983\tzemny orěh\t\tm.
+3765\tzemny\t\tadj.
+35806\tzemsky\t\tadj.
+31617\tzěnica\t\tf.
+31618\tzenit\t\tm.
+1925\tzęť\t\tm.anim.
+23717\tzěvati\t\tv.intr. ipf.
+23718\tzěvnųti\t\tv.intr. pf.
+31622\tzigzag\t\tm.
+1513\tzima\t\tf.
+14232\tzima\t\tf.
+36511\tZimbabve\t\tn.
+14234\tzimnějši\t\tadj.
+14236\tzimnosť\t\tf.
+4467\tzimny\t\tadj.
+31625\tzimorodȯk\t\tm.anim.
+19455\tzimovy sȯlncevråt\t\tm.
+14238\tzimovy\t\tadj.
+36150\tzip u nogavic\t\tm.
+35401\tzip\t\tm.
+22900\tzirkati\t\tv.intr. ipf.
+22901\tzirknųti\t\tv.intr. pf.
+35121\tzlåta rybka\t\tf.
+31626\tzlåtaŕ\t\tm.anim.
+31627\tzlåtisty\t\tadj.
+32974\tzlåtiti\t\tv.tr. ipf.
+3046\tzlåto\t\tn.sg.
+31630\tzlåtousty\t\tadj.
+877\tzlåty\t\tadj.
+4557\tzlo\t\tn.
+14244\tzlo\t\tadv.
+14250\tzloba\t\tf.
+36861\tzloba\t\tf.
+36858\tzlobiti sę\t\tv.refl. ipf.
+34744\tzlobiti\t\tv.tr. ipf.
+14247\tzlobnica\t\tf.
+14248\tzlobnik\t\tm.anim.
+4285\tzlobny\t\tadj.
+2226\tzločin\t\tm.
+124\tzločinec\t\tm.anim.
+3526\tzločinnik\t\tm.anim.
+17218\tzločinstvo\t\tn.
+3935\tzlodějatelj\t\tm.anim.
+36860\tzlonaměrnosť\t\tf.sg.
+31636\tzlonaměrny\t\tadj.
+22755\tzloradno\t\tadv.
+35009\tzloradny\t\tadj.
+35007\tzloradosť\t\tf.
+35008\tzloradovati sę\t\tv.refl. ipf.
+22758\tzlosť\t\tf.
+36862\tzlosť\t\tf.sg.
+19462\tzlostlivy\t\tadj.
+16738\tzloty\t\tm.
+15673\tzloumysľnosť\t\tf.
+15674\tzloumysľny\t\tadj.
+1495\tzloupotrěbiti\t\tv.tr. pf.
+1892\tzloupotrěbjati\t\tv.tr. ipf.
+14262\tzlověsť\t\tf.
+14263\tzlověstno\t\tadv.
+15219\tzlověstny priznak\t\tm.
+15218\tzlověstny znak\t\tm.
+14264\tzlověstny\t\tadj.
+31640\tzlověšći\t\tadj.
+3089\tzly\t\tadj.
+22751\tzly\t\tadj.
+36863\tzly\t\tadj.
+3045\tzmija\t\tf.
+7508\tzmiji\t\tadj.
+22840\tznaček\t\tm.
+22841\tznaček\t\tm.
+3736\tznačeńje\t\tn.
+35272\tznačimosť\t\tf.
+35273\tznačimy\t\tadj.
+1886\tznačiti\t\tv.tr. ipf.
+14280\tznačka\t\tf.
+19464\tznačno\t\tadv.
+4316\tznačnosť\t\tf.
+1520\tznačny\t\tadj.
+22835\tznahaŕ\t\tm.anim.
+22830\tznajema\t\tf.
+17070\tznajemy\t\tadj.
+22829\tznajemy\t\tm.anim.
+36124\tznak citovańja\t\tf.
+4086\tznak\t\tm.
+15220\tznak\t\tm.
+22839\tznak\t\tm.
+22836\tznalec\t\tm.anim.
+14290\tznalosť\t\tf.
+15675\tznamę\t\tn.
+22844\tznamę\t\tn.
+35380\tznamenitosť\t\tf.
+36519\tznamenitosť\t\tf.
+2125\tznamenity\t\tadj.
+22845\tznameńje\t\tn.
+22846\tznameńje\t\tn.
+22850\tznamenovati\t\tv.tr. ipf.
+22851\tznamenovati\t\tv.tr. ipf.
+2126\tznanec\t\tm.anim.
+3712\tznańje\t\tn.sg.
+477\tznany\t\tadj.
+372\tznati\t\tv.tr. ipf.
+22832\tznatny\t\tadj.
+31656\tzodiak\t\tm.sg.
+31657\tzodiakaľny\t\tadj.
+24007\tzȯlva\t\tf.
+36297\tzombi\t\tm.anim.
+17100\tzona\t\tf.
+17071\tzonaľny\t\tadj.
+31661\tzoolog\t\tm.anim.
+251\tzoologičny park\t\tm.
+31662\tzoologičny\t\tadj.
+19467\tzorja\t\tf.
+31664\tzȯv\t\tm.
+31665\tzrazy\t\tm.pl.
+1777\tzŕcalo\t\tn.
+36912\tzrělišče\t\tn.
+31667\tzrělosť\t\tf.
+31668\tzrěly\t\tadj.
+20328\tzrěńje\t\tn.sg.
+4043\tzrěti\t\tv.intr. ipf.
+19468\tzrěti\t\tv.intr. ipf.
+34886\tzritelj\t\tm.anim.
+36246\tzŕneno-žitne kuľtury\t\tf.pl.
+1363\tzŕno\t\tn.
+31673\tzuav\t\tm.anim.
+1848\tzųb\t\tm.
+31675\tzųbec\t\tm.
+23157\tzųbna pasta\t\tf.
+23156\tzųbna ščetka\t\tf.
+23158\tzųbny lěkaŕ\t\tm.anim.
+31676\tzubr\t\tm.anim.
+36431\tzubrova trava\t\tf.
+31677\tzubrovka\t\tf.
+22912\tzvańje\t\tn.
+16494\tzvateljnik, zvateljny padež\t\tm.
+1994\tzvati\t\tv.tr. ipf.
+22909\tzvati\t\tv.tr. ipf.
+932\tzvěŕ\t\tm.anim.
+15223\tzvěŕ\t\tm.anim.
+34748\tzvěrěti\t\tv.intr. ipf.
+14311\tzvěŕsky\t\tadj.
+1924\tzvěŕstvo\t\tn.
+1889\tzvězda\t\tf.
+23006\tzvězdaŕ\t\tm.anim.
+23007\tzvězdaŕstvo\t\tn.sg.
+31684\tzvězdny\t\tadj.
+22888\tzvězdoznavec\t\tm.anim.
+22887\tzvězdoznavstvo\t\tn.sg.
+3824\tzvon\t\tm.
+36430\tzvon\t\tm.
+31687\tzvonica\t\tf.
+3822\tzvoniti\t\tv.intr. ipf.
+31689\tzvonȯk\t\tm.
+14320\tzvony\t\tm.pl.
+1890\tzvųčati\t\tv.intr. ipf.
+5851\tzvųčnik\t\tm.
+5039\tzvųčny\t\tadj.
+31692\tzvųčny\t\tadj.
+843\tzvųk\t\tm.
+36152\tzvukoręd\t\tm.
+23415\tzvųkozapis\t\tm.
+2626\tžaba\t\tf.
+35651\tžabra\t\tf.
+14327\tžaden\t\tpron.indef.
+14334\tžaliti sę\t\tv.refl. ipf.
+3772\tžaliti\t\tv.tr. ipf.
+3931\tžalj\t\tadv.
+19386\tžalj\t\tm.
+19387\tžaljeńje\t\tn.
+14336\tžaloba\t\tf.
+3773\tžalosť\t\tf.
+3389\tžalostny\t\tadj.
+1923\tžalovati sę\t\tv.refl. ipf.
+2562\tžar\t\tm.
+17075\tžargon\t\tm.
+19402\tžariti\t\tv.tr. ipf.
+19403\tžarky\t\tadj.
+19404\tžarovka\t\tf.
+31700\tŽar-ptica\t\tf.
+19405\tžart\t\tm.
+19406\tžartovati\t\tv.intr. ipf.
+12871\tže by\t\tconj.
+4037\t#že\t\tconj.
+22795\tžebrak\t\tm.anim.
+19448\tžędajųći\t\tadj.
+665\tžędati\t\tv.tr. ipf.
+4637\tžędati\t\tv.tr. ipf.
+4632\tžędnosť\t\tf.
+14349\tžędny\t\tadj.
+34884\tžędny\t\tadj.
+3930\tžęđa\t\tf.
+36429\tžęđa\t\tf.
+32631\tžegti\t\tv.tr. ipf.
+3238\tželańje\t\tn.
+1047\tželati\t\tv.tr. ipf.
+23280\tželatin\t\tm.sg.
+23279\tžele\t\tn.indecl.
+394\tželěznica\t\tf.
+14369\tželězničaŕ\t\tm.anim.
+5668\tželěznična stancija\t\tf.
+34898\tželězničny prěvod\t\tm.
+14366\tželězničny\t\tadj.
+3940\tželězny\t\tadj.
+395\tželězo\t\tn.sg.
+31702\tželězobeton\t\tm.sg.
+702\tžęlo\t\tn.
+2208\tželųď\t\tm.
+16\tželųdȯk\t\tm.
+2910\tžena\t\tf.
+3231\tžena\t\tf.
+3399\tženiti sę\t\tv.refl. ipf.
+669\tžensky rod\t\tm.
+5220\tžensky\t\tadj.
+1201\tžerav\t\tm.anim.
+36160\tžestoky\t\tadj.
+36520\tžestoky\t\tadj.
+1809\tžęti\t\tv.tr. ipf.
+32982\tžętva\t\tf.
+23561\tžezlo\t\tn.
+31486\tžgaga\t\tf.
+14383\tŽid\t\tm.anim.
+14384\tžidovsky\t\tadj.
+1997\tžila\t\tf.
+35223\tžilet\t\tm.
+20322\tžilišče\t\tn.
+32837\tžiľny\t\tadj.
+20836\tžirafa\t\tf.
+15228\tžitelj\t\tm.anim.
+28\tžiti\t\tv.intr. ipf.
+7191\tžiti\t\tv.intr. ipf.
+14387\tžiťje\t\tn.
+15684\tžiťjeopasny\t\tadj.
+36492\tžiťjesposobnosť\t\tf.sg.
+35596\tžiťjesposobny\t\tadj.
+22929\tžito\t\tn.
+22930\tžito\t\tn.
+22639\tživo srěbro\t\tn.sg.
+14392\tživo\t\tadv.
+19460\tživobyťje\t\tn.
+21251\tživopis\t\tm.
+21253\tživopisec\t\tm.anim.
+20327\tživosť\t\tf.
+1996\tživot\t\tm.
+1464\tživotina\t\tf.
+35507\tživotinovod\t\tm.anim.
+36766\tživotinsky\t\tadj.
+21254\tživotopis\t\tm.
+14398\tživy TV-pokaz\t\tm.
+970\tživy\t\tadj.
+1843\tžlěb\t\tm.
+427\tžlěza\t\tf.
+31713\tžmuriti oči\t\tv.tr. ipf.
+31714\tžmurky\t\tf.pl.
+1670\tžȯlč\t\tf.
+34739\tžȯltěti\t\tv.intr. ipf.
+1499\tžȯlty\t\tadj.
+20837\tžȯlv\t\tf.
+14403\tžopa\t\tf.
+32986\tžoviaľnosť\t\tf.
+32985\tžoviaľny\t\tadj.
+22962\tžravy\t\tadj.
+16346\tžrěbę\t\tn.
+35265\tžrěbec\t\tm.anim.
+1867\tžrěbętko\t\tn.
+34178\tžrěbiti sę\t\tv.refl. ipf.
+35703\tžrec\t\tm.anim.
+15686\tžrěńje\t\tn.sg.
+91\tžrěti\t\tv.tr. ipf.
+35704\tžrica\t\tf.
+2940\tžrlo\t\tn.
+22963\tžrlo\t\tn.
+5064\tžrtva\t\tf.
+21255\tžrtva\t\tf.
+14407\t#žrtvena koza\t\tf.
+14409\tžrtveny byk\t\tm.anim.
+32022\tžrtveny kozel\t\tm.anim.
+14408\tžrtveny\t\tadj.
+1490\tžrtvovati\t\tv.tr. ipf.
+15744\t#žučji\t\tadj.
+15743\tžuk\t\tm.anim.
+32020\tžuravina\t\tf.
+22433\tžuri\t\tm.indecl.
+4856\tžurnal\t\tm.
+1974\tžurnalist\t\tm.anim.
+23581\tžurnalistika\t\tf.
+34067\tžuvačka\t\tf.
+34068\tžuvaľna gumka\t\tf.
+2627\tžuvati\t\tv.intr. ipf.
+19473\tžužati\t\tv.intr. ipf.
+19475\tžuželka\t\tf.
 `);
 
 export function getCases(nth: number, outOf: number) {

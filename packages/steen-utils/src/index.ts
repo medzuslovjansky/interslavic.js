@@ -60,6 +60,7 @@ export const wordsAddLang = new TSVParser<WordsAddLangRecord>({
 export const bare = new TSVParser<BareRecord>({
   id: parsers.id,
   isv: parsers.synset,
+  genesis: parsers.genesis,
   partOfSpeech: parsers.partOfSpeech,
 });
 

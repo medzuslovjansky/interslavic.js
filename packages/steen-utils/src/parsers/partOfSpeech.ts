@@ -22,7 +22,7 @@ export function parsePartOfSpeech(rawAbbr: string): PartOfSpeech | null {
         };
     }
 
-    if (abbr.startsWith('m.') || abbr.startsWith('f.') || abbr.startsWith('n.')) {
+    if (abbr.startsWith('noun') || abbr.startsWith('m.') || abbr.startsWith('f.') || abbr.startsWith('n.')) {
         return {
             name: 'noun',
             masculine: abbr.includes('m.'),

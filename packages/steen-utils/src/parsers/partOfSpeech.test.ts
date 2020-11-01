@@ -21,6 +21,7 @@ describe('parsePartOfSpeech', () => {
         ["n.indecl.", { name: 'noun', neuter: true, indeclinable: true }],
         ["n.pl.", { name: 'noun', neuter: true, plural: true }],
         ["n.sg.", { name: 'noun', neuter: true, singular: true }],
+        ["noun indecl.", { name: 'noun', indeclinable: true }],
         ["num.", { name: 'numeral' }],
         ["num.card.", { name: 'numeral', cardinal: true }],
         ["num.coll.", { name: 'numeral', collective: true }],

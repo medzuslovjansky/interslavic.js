@@ -6,6 +6,7 @@ module.exports = {
       'always',
       [
         // workspace packages
+        'gsheets-flavorization',
         'odometer',
         'presets',
         'steen-utils',

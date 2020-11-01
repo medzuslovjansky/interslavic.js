@@ -1,13 +1,13 @@
 import {PropertyMapper} from "../types/ParserMappersT1";
 import {parseSynset} from "./synset";
 import {parsePartOfSpeech} from "./partOfSpeech";
-import {Genesis} from "../types/columns/Genesis";
 import {SimpleSynset} from "../types/columns/SimpleSynset";
 import {PartOfSpeech} from "../types/columns/PartOfSpeech";
 import {CrudeFrequency} from "../types/atomic/CrudeFrequency";
 import {CrudeIntelligibilityReport} from "../types/columns/CrudeIntelligibilityReport";
 import {parseIntelligibility} from "./sameInLanguages";
 import {VoteStatus} from "../types/columns/VoteStatus";
+import {parseGenesis} from "./genesis";
 
 export const id: PropertyMapper<any, number> = (context) => {
   const result = Number(context.value.trim());
@@ -40,29 +40,7 @@ export const partOfSpeech: PropertyMapper<any, PartOfSpeech | null> = (context) 
   return pos;
 };
 
-export const genesis: PropertyMapper<any, Genesis | null> = (context) => {
-  const value = context.value.toUpperCase();
-  if (!value) {
-    return null;
-  }
-
-  switch (value) {
-    case Genesis.Arabic:
-    case Genesis.Deutsch:
-    case Genesis.English:
-    case Genesis.French:
-    case Genesis.German:
-    case Genesis.International:
-    case Genesis.Netherlands:
-    case Genesis.Oriental:
-    case Genesis.Slavic:
-    case Genesis.Turkic:
-    case Genesis.Artificial:
-      return value;
-    default:
-      throw new Error();
-  }
-};
+export const genesis = parseGenesis;
 
 export const voteStatus: PropertyMapper<any, VoteStatus | null> = (context) => {
   const value = +context.value;

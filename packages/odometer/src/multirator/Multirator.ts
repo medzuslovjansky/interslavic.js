@@ -1,4 +1,4 @@
-import {PartOfSpeech} from "@interslavic/steen-utils";
+import {BareRecord, PartOfSpeech} from "@interslavic/steen-utils";
 import {RuntimeMultiratorRule} from "./RuntimeMultiratorRule";
 import {MultiratorRule} from "./MultiratorRule";
 
@@ -15,7 +15,7 @@ export class Multirator {
   protected readonly rules: RuntimeMultiratorRule[] = [];
   protected readonly ruleIDs = new Set<string>();
 
-  constructor(rules: MultiratorRule[]) {
+  constructor(rules: MultiratorRule[] = []) {
     this.add(...rules);
   }
 
@@ -37,12 +37,20 @@ export class Multirator {
     }
   }
 
-  public process(lemma: string | string[], partOfSpeech?: PartOfSpeech): ProcessedLemma[] {
-    let uniqueResults = new Set<string>(Array.isArray(lemma) ? lemma : [lemma]);
+  public process(record: BareRecord): ProcessedLemma[] {
+    if (!record.isv) {
+      return [];
+    }
+
+    let uniqueResults = new Set<string>();
+    for (const option of record.isv.options) {
+      uniqueResults.add(option.value);
+    }
+
     const triggers = new Map<string, string[]>();
 
     for (const rule of this.rules) {
-      if (!rule.applies(partOfSpeech)) {
+      if (!rule.applies(record)) {
         continue;
       }
 
@@ -56,15 +64,23 @@ export class Multirator {
             intermediates.add(processedString);
             // @ts-ignore
             processedString = processedString.replace(rule.match, replacement);
-          } while (!intermediates.has(processedString));
+          } while (!intermediates.has(processedString) && intermediates.size < 50);
+
+          if (intermediates.size >= 50) {
+            throw new Error(`Infinite loop detected for the rule ${JSON.stringify(rule.id)} on record ${record.id}`);
+          }
 
           finalReplacements.add(processedString);
 
           const replaceCount = intermediates.size - 1;
           if (!triggers.has(processedString)) {
+            const ruleMarker = rule.replaceWith.length > 1
+              ? `${rule.id}:${rule.replaceWith.indexOf(replacement) + 1}`
+              : rule.id;
+
             const appliedRules: string[] = triggers.get(sourceString) || [];
             for (let i = 0; i < replaceCount; i++) {
-              appliedRules.push(rule.id);
+              appliedRules.push(ruleMarker);
             }
             triggers.set(processedString, appliedRules);
           }

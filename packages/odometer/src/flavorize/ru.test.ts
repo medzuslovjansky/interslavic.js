@@ -12,11 +12,7 @@ describe('Russian multirator', () => {
         }),
       ])
     )('should convert %s', (entry: BareRecord) => {
-        const result = russian.process(
-          entry.isv?.options.map(o => o.value) ?? [],
-          entry.partOfSpeech || undefined
-        );
-
+        const result = russian.process(entry);
         expect(result.map(l => l.value).join('; ')).toMatchSnapshot('value');
         expect(result.map(l => l.appliedRules.join(',')).join('\n')).toMatchSnapshot('rules');
     });
