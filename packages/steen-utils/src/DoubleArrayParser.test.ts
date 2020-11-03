@@ -1,8 +1,21 @@
 import {interslavicRangeParser} from "./googleSheets";
 
 test('DoubleArrayParser should skip empty line', () => {
-  expect(interslavicRangeParser.parse([
+  const rows = [
     [],
     ['123', 'abo', '', 'conj.'],
-  ])).toEqual(1234);
-})
+  ];
+  expect(interslavicRangeParser.parse(rows)).toEqual([
+    {
+      "genesis": null,
+      "id": 123,
+      "isv": {
+        "meta": {"autotranslated": false, "debatable": false},
+        "options": [
+          {"value": "abo"}
+        ]
+      },
+      "partOfSpeech": {"name": "conjunction"}
+    }
+  ]);
+});

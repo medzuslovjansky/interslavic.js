@@ -19,7 +19,7 @@ export class RuntimeMultiratorRule  {
 
   constructor(rule: MultiratorRule) {
     this.id = rule.id;
-    this.match = new RegExp(rule.match, 'i');
+    this.match = new RegExp(rule.match, 'ig');
     this.replaceWith = rule.replaceWith.filter(Boolean).map(mapReplacement);
 
     this.predicates = [

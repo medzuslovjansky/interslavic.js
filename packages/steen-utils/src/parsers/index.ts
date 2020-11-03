@@ -19,7 +19,8 @@ export const id: PropertyMapper<any, number> = (context) => {
 };
 
 export const synset: PropertyMapper<any, SimpleSynset | null> = (context) => {
-  return parseSynset(context.value);
+  // @ts-ignore
+  return parseSynset(context);
 };
 
 export const sameInLanguages: PropertyMapper<any, CrudeIntelligibilityReport> = (context) => {

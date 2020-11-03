@@ -86,6 +86,23 @@ Object {
 }
 `;
 
+exports[`parseSynset should parse synset: Добрий ранок!; Доброго ранку! 1`] = `
+Object {
+  "meta": Object {
+    "autotranslated": false,
+    "debatable": false,
+  },
+  "options": Array [
+    Object {
+      "value": "Добрий ранок!",
+    },
+    Object {
+      "value": "Доброго ранку!",
+    },
+  ],
+}
+`;
+
 exports[`parseSynset should parse synset: будет / будут 1`] = `
 Object {
   "meta": Object {
@@ -112,6 +129,30 @@ Object {
   "options": Array [
     Object {
       "value": "з'явитися",
+    },
+  ],
+}
+`;
+
+exports[`parseSynset should parse synset: и; а, зато (смысл2) 1`] = `
+Object {
+  "meta": Object {
+    "autotranslated": false,
+    "debatable": false,
+  },
+  "options": Array [
+    Object {
+      "index": 0,
+      "value": "и",
+    },
+    Object {
+      "index": 1,
+      "value": "а",
+    },
+    Object {
+      "annotation": "смысл2",
+      "index": 1,
+      "value": "зато",
     },
   ],
 }

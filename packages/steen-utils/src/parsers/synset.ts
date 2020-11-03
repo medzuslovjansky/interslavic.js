@@ -1,8 +1,24 @@
 import {cartesianProduct} from "../utils/cartesianProduct";
 import {SimpleSynset} from "../types/columns/SimpleSynset";
 import {Lemma} from "../types/atomic/Lemma";
+import {PropertyMapper} from "../types/ParserMappersT1";
+import {PartOfSpeech} from "../types";
+import {flatten2} from "../utils/flatten2";
 
-export function parseSynset(rawStr: string): SimpleSynset | null {
+type MaybeNully<T> = T | null | undefined;
+
+type HasPartOfSpeech = {
+  partOfSpeech: MaybeNully<PartOfSpeech>;
+  [key: string]: any;
+};
+
+type GroupItem = {
+  index?: number;
+  value: string;
+};
+
+export const parseSynset: PropertyMapper<HasPartOfSpeech, SimpleSynset | null> = (entry) => {
+  const rawStr = entry.value;
   const annotationsMap = new Map<string, string>();
   const meta = {
     autotranslated: isAutotranslated(rawStr),
@@ -23,9 +39,8 @@ export function parseSynset(rawStr: string): SimpleSynset | null {
     });
   }
 
-  const separator = str.indexOf(';') >= 0 ? ';' : ',';
-  const lemmas = str.split(separator).map<Lemma>(part => {
-    let value = part.trim();
+  const lemmas = smartSplit(str, entry.record.partOfSpeech).map<Lemma>((item) => {
+    let value = item.value.trim();
 
     let annotation: string | undefined;
     if (annotationsMap.size > 0) {
@@ -36,6 +51,7 @@ export function parseSynset(rawStr: string): SimpleSynset | null {
     }
 
     const result: Lemma = {
+      ...item,
       value: value.trim(),
     };
 
@@ -111,4 +127,33 @@ function stripMetacharacters(str: string) {
   }
 
   return str;
+}
+
+function smartSplit(value: string, partOfSpeech: MaybeNully<PartOfSpeech>): GroupItem[] {
+  const hasSemicolon = value.indexOf(';') >= 0;
+  const hasComma = value.indexOf(',') >= 0;
+  const isPhrase = partOfSpeech?.name === 'phrase';
+
+  if (isPhrase) {
+    return value.split(';').map(toValue);
+  }
+
+  if (hasSemicolon && hasComma) {
+    return flatten2(value.split(';').map(semiColonGroupSplit));
+  }
+
+  return value.split(hasComma ? ',' : ';').map(toValue);
+}
+
+function semiColonGroupSplit(words: string, index: number): GroupItem[] {
+  const result: GroupItem[] = [];
+  for (const value of words.split(',')) {
+    result.push(({value, index}));
+  }
+
+  return result;
+}
+
+function toValue(value: string): GroupItem {
+  return { value };
 }

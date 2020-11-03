@@ -19,5 +19,7 @@ test('rule pos', () => {
     'v. intr.pf.',
   ]])
 
-  expect(multirator.process(word)).toBe(true);
+  expect(multirator.process(word)).toEqual([
+    {"appliedRules": ["1"], "value": "braться"}
+  ]);
 });
