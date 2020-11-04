@@ -2,6 +2,7 @@ import Sheet = GoogleAppsScript.Spreadsheet.Sheet;
 
 import {Multirator} from "@interslavic/odometer";
 import {interslavicRangeParser} from "@interslavic/steen-utils/dist/googleSheets";
+import {compressToRanges} from "./compressToRanges";
 
 export class RunFlavorizationScript {
   protected readonly activeSpreadSheet = SpreadsheetApp.getActive();
@@ -160,6 +161,29 @@ export class RunFlavorizationScript {
 
       partialWriteRange.setValues(batchedValues);
       partialWriteRange.setNotes(batchedNotes);
+    }
+
+    this.updateStats();
+  }
+
+  updateStats() {
+    const stats = this.multirator.getStats();
+    const totalRows = this.ruleSheet.getLastRow();
+    const ids = this.ruleSheet.getSheetValues(2, 1, totalRows - 1, 1);
+    const maxApplyCount = Math.max(0, ...[...stats.values()].map(a => a.length));
+
+    for (let i = 0; i < ids.length; i++) {
+      const id: string = ids[i][0];
+      const ruleStats = stats.get(id);
+
+      if (ruleStats) {
+        const cell = this.ruleSheet.getRange(2 + i, 2);
+        const percentage = ruleStats.length / maxApplyCount;
+        const ranges = compressToRanges(ruleStats).join(', ');
+        const pixelColor = 255 - Math.round(percentage * 125);
+        cell.setNote(`Applied ${ruleStats.length} times on:\n${ranges}`)
+        cell.setBackgroundRGB(pixelColor, 255, pixelColor);
+      }
     }
   }
 }

@@ -15,6 +15,7 @@ export type ProcessedLemma = {
 export class Multirator {
   protected readonly rules: RuntimeMultiratorRule[] = [];
   protected readonly ruleIDs = new Set<string>();
+  protected readonly applyCounters = new Map<RuntimeMultiratorRule, number[]>();
 
   constructor(rules: MultiratorRule[] = []) {
     this.add(...rules);
@@ -24,7 +25,10 @@ export class Multirator {
     for (const rule of rules) {
       this.validateRule(rule);
       this.ruleIDs.add(rule.id);
-      this.rules.push(new RuntimeMultiratorRule(rule));
+
+      const runtimeRule = new RuntimeMultiratorRule(rule);
+      this.rules.push(runtimeRule);
+      this.applyCounters.set(runtimeRule, []);
     }
   }
 
@@ -56,6 +60,7 @@ export class Multirator {
         continue;
       }
 
+      let applied = false;
       const nextReplacements = new Set<string>();
       for (const sourceString of currentReplacements) {
         for (const replacement of rule.replaceWith) {
@@ -76,10 +81,15 @@ export class Multirator {
             const appliedRules: string[] = triggers.get(sourceString) || [];
             appliedRules.push(ruleMarker);
             triggers.set(processedString, appliedRules);
+            applied = true;
           }
         }
       }
       currentReplacements = nextReplacements;
+
+      if (applied) {
+        this.applyCounters.get(rule)?.push(record.id);
+      }
     }
 
     const result: ProcessedLemma[] = [];
@@ -90,6 +100,14 @@ export class Multirator {
       });
     }
 
+    return result;
+  }
+
+  public getStats(): Map<string, number[]> {
+    const result = new Map<string, number[]>();
+    for (const [rule, value] of this.applyCounters) {
+      result.set(rule.id, value);
+    }
     return result;
   }
 }
