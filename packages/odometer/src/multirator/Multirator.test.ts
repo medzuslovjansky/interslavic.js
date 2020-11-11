@@ -1,4 +1,4 @@
-import {interslavicRangeParser} from "@interslavic/steen-utils/dist/googleSheets";
+import {createInterslavicRangeParser} from "@interslavic/steen-utils/dist/googleSheets";
 import {Multirator} from "./Multirator";
 
 test('rule pos', () => {
@@ -8,18 +8,30 @@ test('rule pos', () => {
       match: 'ti se$',
       genesis: '',
       partOfSpeech: 'v.',
-      replaceWith: ['ться'],
+      replaceWith: ['тися'],
+    },
+    {
+      id: '2',
+      match: 'bra',
+      genesis: '',
+      partOfSpeech: '',
+      replaceWith: ['бра'],
     }
   ]);
 
-  const [word] = interslavicRangeParser.parse([[], [
+  const [word] = createInterslavicRangeParser('ru').parse([[], [
     '1000',
     'brati se',
     '',
     'v. intr.pf.',
+    'браться',
   ]])
 
-  expect(multirator.process(word)).toEqual([
-    {"appliedRules": ["1"], "value": "braться"}
+  const flavor = multirator.process(word);
+  const difference = multirator.getDifference(flavor, word.ru);
+
+  expect(difference).toBeCloseTo(0.15, 1);
+  expect(flavor).toEqual([
+    {"appliedRules": ["1", "2"], "value": "братися"},
   ]);
 });

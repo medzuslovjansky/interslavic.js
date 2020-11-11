@@ -1,34 +1,23 @@
-function createPairMatcher(expected1: string, expected2: string) {
-  return function isPair(a: string, b: string): boolean {
-    return (
-      (a === expected1 && b === expected2) ||
-      (a === expected2 && b === expected1)
-    );
-  };
-}
-
-const isAO = createPairMatcher('å', 'o');
-
-function difference(chr1: string, chr2: string): number {
-  if (chr1 === chr2) {
-    return 0;
+function difference(a: string, b: string): number {
+  if (a[0] !== b[0]) {
+    return 1;
   }
 
-  if (isAO(chr1, chr2)) {
+  if (a.length !== b.length) {
     return 0.5;
   }
 
-  const base1 = chr1.normalize('NFD')[0];
-  const base2 = chr2.normalize('NFD')[0];
-
-  if (base1 === base2) {
-    return 0.5;
+  const n = a.length;
+  for (let i = 0; i < n; i++) {
+    if (a[i] !== b[i]) {
+      return 0.5;
+    }
   }
 
-  return 1;
+  return 0;
 }
 
-export function getEditingDistance(a: string, b: string): number {
+function getEditingDistanceForCharSequences(a: string[], b: string[]): number {
     if (a.length === 0) {
         return b.length;
     }
@@ -53,7 +42,7 @@ export function getEditingDistance(a: string, b: string): number {
     // Fill in the rest of the matrix
     for (i = 1; i <= b.length; i++) {
         for (j = 1; j <= a.length; j++) {
-            const delta = difference(b.charAt(i - 1), a.charAt(j - 1));
+            const delta = difference(b[i - 1], a[j - 1]);
             if (delta === 0) {
                 matrix[i][j] = matrix[i - 1][j - 1];
             } else {
@@ -65,4 +54,44 @@ export function getEditingDistance(a: string, b: string): number {
     }
 
     return matrix[b.length][a.length];
+}
+
+function splitByDiacritics(s: string): string[] {
+  const normalized = s.normalize('NFD');
+  const result: string[] = [];
+  const regex = /\p{Letter}\p{Mark}*/ug;
+  let group: string[] | null;
+  let n = 0;
+
+  while ((group = regex.exec(normalized)) !== null) {
+    const charSequence = group[0];
+    result.push(charSequence);
+    n += charSequence.length;
+  }
+
+  if (n < normalized.length) {
+    result.push(normalized.slice(n))
+  }
+
+  return result;
+}
+
+function processDigrafs(s: string): string {
+  return s
+    // .replace(/ы/g, 'ӥ')
+    // .replace(/y/g, 'ǐ')
+    .replace(/(.)я/g, '$1ьа')
+    .replace(/(.)ю/g, '$1ьу')
+    .replace(/(.)ё/g, '$1ьо')
+    .replace(/љ/g, 'ль')
+    .replace(/њ/g, 'нь')
+    .replace(/(.)ь/g, '$1\u032d')
+    .replace(/(.)ъ/g, '\u0323');
+}
+
+export function getEditingDistance(a: string, b: string) {
+  return getEditingDistanceForCharSequences(
+    splitByDiacritics(processDigrafs(a)),
+    splitByDiacritics(processDigrafs(b)),
+  );
 }

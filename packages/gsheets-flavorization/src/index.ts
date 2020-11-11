@@ -1,14 +1,15 @@
 import Sheet = GoogleAppsScript.Spreadsheet.Sheet;
 
 import {Multirator} from "@interslavic/odometer";
-import {interslavicRangeParser} from "@interslavic/steen-utils/dist/googleSheets";
+import {createInterslavicRangeParser} from "@interslavic/steen-utils/dist/googleSheets";
 import {compressToRanges} from "./compressToRanges";
+import {SimpleSynset, SlavicLanguage} from "@interslavic/steen-utils";
 
 export class RunFlavorizationScript {
   protected readonly activeSpreadSheet = SpreadsheetApp.getActive();
   protected readonly ruleSheet = this.activeSpreadSheet.getActiveSheet();
   protected readonly wordsSheet = this.getSheet('Example words');
-  protected readonly wordsSheetHeaders = this.getWordsSheetsHeaders();
+  protected readonly playgroundSheet = this.getSheet('Playground');
   protected readonly debugSheet = this.getSheet('Debug Console');
   protected readonly multirator: Multirator;
 
@@ -29,10 +30,10 @@ export class RunFlavorizationScript {
     return sheet;
   }
 
-  protected getRulesLanguage(): string {
+  protected getRulesLanguage(): SlavicLanguage {
     const name = this.ruleSheet.getName();
     if (name.startsWith('Rules [') && name.endsWith(']')) {
-      return name.slice(name.indexOf('[') + 1, -1);
+      return name.slice(name.indexOf('[') + 1, -1) as any;
     }
 
     throw new Error('Cannot run on sheets different from Rules[<lang>]');
@@ -82,32 +83,22 @@ export class RunFlavorizationScript {
     return multirator;
   }
 
-  protected getWordsSheetsHeaders(): string[] {
-    const [headers] = this.wordsSheet.getSheetValues(1, 1, 1, this.wordsSheet.getLastColumn());
-    if (!headers.join(',').startsWith('id,isv,genesis,partOfSpeech,')) {
-      throw new Error(
-        'Invalid structure of Example words sheets.\n' +
-        'Expected: id,isv,genesis,partOfSpeech,...'
-      );
-    }
-
-    return headers;
-  }
-
-  protected getWordsSheetsLanguageColumnIndex(language: string = this.getRulesLanguage()): number {
-    const index = this.wordsSheetHeaders.indexOf(language);
+  protected getLangColumnIndex(sheetKey: 'wordsSheet' | 'playgroundSheet', language: string): number {
+    const sheet = this[sheetKey];
+    const [headers] = sheet.getSheetValues(1, 1, 1, this.wordsSheet.getLastColumn());
+    const index = headers.indexOf(language);
     if (index === -1) {
       throw new Error(
-        `Invalid structure of Example words sheets.\n` +
+        `Invalid structure of "${sheet.getName()}" sheet.\n` +
         `Expected to find column ${language}, but found only:\n` +
-        this.wordsSheetHeaders.join(',')
+        headers.join(',')
       );
     }
 
     return index + 1;
   }
 
-  public execute(language?: string): void {
+  public execute(language: string = this.getRulesLanguage()): void {
     const R = this.wordsSheet.getLastRow();
 
     const readRange = this.wordsSheet.getSheetValues(
@@ -117,7 +108,7 @@ export class RunFlavorizationScript {
       4,
     );
 
-    const langColumnIndex = this.getWordsSheetsLanguageColumnIndex(language);
+    const langColumnIndex = this.getLangColumnIndex('wordsSheet', language);
     const fullWriteRange = this.wordsSheet.getRange(
       2,
       langColumnIndex,
@@ -125,15 +116,21 @@ export class RunFlavorizationScript {
       1,
     );
 
-    fullWriteRange.clearContent();
+    const fullWriteRangeRows = fullWriteRange.getValues();
+    /* add translation column */
+    for (let i = 0; i < fullWriteRangeRows.length; i++) {
+      readRange[i].push(fullWriteRangeRows[i][0]);
+    }
+
     fullWriteRange.clearNote();
 
+    const readParser = createInterslavicRangeParser(language as any);
     const maxBatchSize = 100;
     for (let i = 2; i <= R; i += maxBatchSize) {
       const batchSize = Math.min(R + 1, i + maxBatchSize) - i;
-      const batchedValues = new Array<[string]>(batchSize);
+      const batchedBackgrounds = new Array<[string]>(batchSize);
       const batchedNotes = new Array<[string]>(batchSize);
-      batchedValues.fill(['']);
+      batchedBackgrounds.fill(['']);
       batchedNotes.fill(['']);
 
       const partialWriteRange = this.wordsSheet.getRange(
@@ -149,21 +146,75 @@ export class RunFlavorizationScript {
           continue;
         }
 
-        const [record] = interslavicRangeParser.parse([[], row])
-        if (!record.isv) {
+        const [record] = readParser.parse([[], row])
+        // @ts-ignore
+        const targetTranslation: SimpleSynset | null = record[language];
+        if (!record.isv || !targetTranslation) {
           continue;
         }
 
         const result = this.multirator.process(record);
-        batchedValues[j] = [result.map(r => r.value).join('; ')];
-        batchedNotes[j] = [result.map(r => `${r.value}: ${r.appliedRules}`).join('\n')];
+        const distance = this.multirator.getDifference(result, targetTranslation);
+        batchedBackgrounds[j] = [
+          (distance > 0.5) ? '#f4bfbe' :
+          (distance > 0.4) ? '#f2c5a6' :
+          (distance > 0.25) ? '#f0f5bb' :
+          (distance > 0.1) ? '#d5fcad' : '#98fb98'
+        ];
+
+        batchedNotes[j] = [
+          [
+            `D = ${distance}`,
+            ...result.map(r => `${r.value}: ${r.appliedRules}`)
+          ].join('\n')
+        ];
       }
 
-      partialWriteRange.setValues(batchedValues);
+      partialWriteRange.setBackgrounds(batchedBackgrounds);
       partialWriteRange.setNotes(batchedNotes);
     }
 
     this.updateStats();
+  }
+
+  public flavorize(): void {
+    const language = this.getRulesLanguage();
+    const recordsCount = this.playgroundSheet.getLastRow() - 1;
+    const isvColumnIndex = this.getLangColumnIndex('playgroundSheet', 'isv');
+    const langColumnIndex = this.getLangColumnIndex('playgroundSheet', language);
+
+    const readRange = this.playgroundSheet.getSheetValues(2, isvColumnIndex, recordsCount, 1);
+    const fullWriteRange = this.playgroundSheet.getRange(2, langColumnIndex, recordsCount, 1);
+    fullWriteRange.clear();
+
+    const flyweightSynset: SimpleSynset = {
+      meta: {
+        autotranslated: false,
+        debatable: false,
+      },
+      options: [
+        {
+          value: '',
+        }
+      ]
+    };
+
+    const values: [string][] = [];
+    for (let i = 0; i < recordsCount; i++) {
+      const [phrase] = readRange[i];
+      flyweightSynset.options[0].value = phrase;
+
+      const [firstResult] = this.multirator.process({
+        id: i,
+        isv: flyweightSynset,
+        genesis: null,
+        partOfSpeech: null,
+      });
+
+      values.push([firstResult.value]);
+    }
+
+    fullWriteRange.setValues(values);
   }
 
   updateStats() {

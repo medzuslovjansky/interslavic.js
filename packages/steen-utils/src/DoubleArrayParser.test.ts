@@ -1,11 +1,11 @@
-import {interslavicRangeParser} from "./googleSheets";
+import {createInterslavicRangeParser} from "./googleSheets";
 
 test('DoubleArrayParser should skip empty line', () => {
   const rows = [
     [],
-    ['123', 'abo', '', 'conj.'],
+    ['123', 'abo', '', 'conj.', 'або'],
   ];
-  expect(interslavicRangeParser.parse(rows)).toEqual([
+  expect(createInterslavicRangeParser('uk').parse(rows)).toEqual([
     {
       "genesis": null,
       "id": 123,
@@ -15,7 +15,13 @@ test('DoubleArrayParser should skip empty line', () => {
           {"value": "abo"}
         ]
       },
-      "partOfSpeech": {"name": "conjunction"}
+      "partOfSpeech": {"name": "conjunction"},
+      "uk": {
+        "meta": {"autotranslated": false, "debatable": false},
+        "options": [
+          {"value": "або"}
+        ]
+      },
     }
   ]);
 });
